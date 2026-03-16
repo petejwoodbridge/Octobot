@@ -24,30 +24,27 @@
     padding: 10px 20px;
     background: #0a0020;
     border-bottom: 3px solid #ff2d9b;
-    box-shadow: 0 4px 20px #ff2d9b55;
   }
   #header-left { display: flex; align-items: center; gap: 12px; }
   #logo-canvas {
     width: 48px; height: 48px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
-    filter: drop-shadow(0 0 6px #ff2d9b) drop-shadow(0 0 12px #bf00ff88);
   }
   #header h1 {
-    font-size: 16px; color: #ff2d9b;
-    text-shadow: 0 0 10px #ff2d9b, 0 0 24px #ff2d9b88, 2px 2px 0 #000;
-    letter-spacing: 5px; margin-bottom: 5px;
+    font-size: 22px; color: #ff2d9b;
+    letter-spacing: 6px; margin-bottom: 5px;
+    text-transform: uppercase;
   }
   #header .subtitle {
     font-size: 7px; color: #00f7ff;
-    text-shadow: 0 0 6px #00f7ff; letter-spacing: 4px;
+    letter-spacing: 4px;
   }
   #score-display {
     text-align: right;
   }
   #score-value {
     font-size: 18px; color: #00f7ff;
-    text-shadow: 0 0 12px #00f7ff, 0 0 28px #00f7ff66;
     letter-spacing: 2px;
   }
   #level-badge {
@@ -56,29 +53,53 @@
   }
   #level-badge .level-name {
     color: #bf00ff;
-    text-shadow: 0 0 6px #bf00ff;
   }
 
   /* ── Main Layout ── */
   #main {
     display: flex; gap: 8px; padding: 8px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 80px);
   }
 
   /* ── Left: Canvas ── */
   #canvas-col {
-    flex: 0 0 500px; display: flex; flex-direction: column; gap: 6px;
+    flex: 1 1 50%; display: flex; flex-direction: column;
+    min-width: 0; max-width: 50%; overflow: hidden;
+  }
+  #left-top {
+    flex-shrink: 0;
   }
   #canvas-wrap {
-    position: relative; display: inline-block;
+    position: relative;
+    flex: 1; min-height: 0;
     border: 3px solid #ff2d9b;
-    box-shadow: 0 0 16px #ff2d9b, 0 0 40px #ff2d9b55, inset 0 0 16px #00000088;
+    overflow: hidden;
   }
   #game-canvas {
+    display: block;
+    width: 100%; height: 100%;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
-    display: block; image-rendering: pixelated; image-rendering: crisp-edges;
-    background: #05000f; width: 100%; height: auto;
+    background: #05000f;
+  }
+  #fullscreen-btn {
+    position: absolute; top: 6px; right: 6px; z-index: 10;
+    background: #0a002088; border: 1px solid #ff2d9b88;
+    color: #ff2d9b; font-size: 16px; cursor: pointer;
+    width: 28px; height: 28px; line-height: 26px; text-align: center;
+    border-radius: 4px; padding: 0;
+    transition: all 0.15s; opacity: 0.5;
+  }
+  #fullscreen-btn:hover { opacity: 1; background: #1a003088; }
+  #canvas-wrap:fullscreen, #canvas-wrap:-webkit-full-screen {
+    background: #000; border: none; box-shadow: none;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #canvas-wrap:fullscreen #game-canvas, #canvas-wrap:-webkit-full-screen #game-canvas {
+    width: 100vw; height: 100vh; object-fit: contain;
+  }
+  #canvas-wrap:fullscreen #fullscreen-btn, #canvas-wrap:-webkit-full-screen #fullscreen-btn {
+    position: fixed; top: 12px; right: 12px;
   }
   #scanline {
     pointer-events: none; position: absolute;
@@ -88,17 +109,10 @@
       rgba(0,0,0,0.15) 2px, rgba(0,0,0,0.15) 4px);
     z-index: 2;
   }
-  #status-bar {
-    font-size: 7px; color: #00f7ff;
-    text-shadow: 0 0 6px #00f7ff;
-    padding: 4px 8px; min-height: 20px; letter-spacing: 1px;
-    background: #03000a; border: 1px solid #00f7ff44;
-  }
-
   /* ── Stats Bar ── */
   #stats-bar {
     display: flex; gap: 10px; flex-wrap: wrap;
-    padding: 6px 8px;
+    padding: 4px 8px;
     background: #08001a; border: 1px solid #bf00ff44;
   }
   .stat {
@@ -106,7 +120,7 @@
     font-size: 7px; color: #ff99ee;
   }
   .stat-val {
-    color: #00f7ff; text-shadow: 0 0 6px #00f7ff;
+    color: #00f7ff;
     font-size: 8px;
   }
   .curiosity-bar {
@@ -117,7 +131,6 @@
   .curiosity-fill {
     height: 100%; background: linear-gradient(90deg, #ff2d9b, #00f7ff);
     transition: width 0.5s ease;
-    box-shadow: 0 0 6px #ff2d9b;
   }
   .score-bar {
     width: 80px; height: 8px;
@@ -127,13 +140,16 @@
   .score-fill {
     height: 100%; background: linear-gradient(90deg, #bf00ff, #00f7ff);
     transition: width 0.8s ease;
-    box-shadow: 0 0 6px #bf00ff;
   }
 
   /* ── Right: Panels ── */
   #right-col {
-    flex: 1; display: flex; flex-direction: column; gap: 6px;
-    min-width: 280px;
+    flex: 1 1 50%; display: flex; flex-direction: column;
+    min-width: 0; max-width: 50%; overflow: hidden;
+  }
+  #right-top {
+    flex-shrink: 0;
+    display: flex; flex-direction: column; justify-content: flex-end;
   }
 
   /* ── Tab system ── */
@@ -145,12 +161,11 @@
     background: transparent; border: none; color: #00f7ff;
     font-family: 'Press Start 2P', monospace;
     font-size: 7px; padding: 7px 10px; cursor: pointer;
-    text-shadow: 0 0 6px #00f7ff; letter-spacing: 1px;
+    letter-spacing: 1px;
     transition: all 0.15s;
   }
   .tab-btn:hover, .tab-btn.active {
     color: #ff2d9b; background: #1a0030;
-    text-shadow: 0 0 10px #ff2d9b;
     border-bottom: 2px solid #ff2d9b;
   }
 
@@ -173,7 +188,12 @@
   .msg.bot {
     background: #1a0030; color: #ffccee;
     border-radius: 12px 12px 12px 0;
+    display: flex; gap: 8px; align-items: flex-start;
   }
+  .msg.bot .octo-avatar {
+    flex-shrink: 0; width: 24px; height: 24px; margin-top: 2px;
+  }
+  .msg.bot .octo-text { flex: 1; }
   .msg.system {
     background: transparent; color: #bf00ff88;
     font-family: 'Press Start 2P', monospace;
@@ -249,23 +269,28 @@
     white-space: pre-wrap; word-break: break-word;
   }
 
-  /* ── Library Panel ── */
+  /* ── Ideas Panel ── */
   #library-list {
-    max-height: 140px; overflow-y: auto; padding: 4px;
+    max-height: 180px; overflow-y: auto; padding: 6px;
     background: #08001a; border: 1px solid #bf00ff44;
     margin-bottom: 6px;
+    display: flex; flex-wrap: wrap; gap: 4px;
   }
   .lib-item {
-    font-size: 7px; color: #00f7ff; padding: 3px 6px;
-    cursor: pointer; transition: background 0.1s;
-    text-shadow: 0 0 4px #00f7ff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 10px; color: #00f7ff; padding: 5px 10px;
+    cursor: pointer; transition: all 0.15s;
+    background: #0a0030; border: 1px solid #bf00ff44;
+    border-radius: 4px; line-height: 1.3;
+    text-transform: capitalize;
   }
-  .lib-item:hover { background: #1a0040; color: #ff2d9b; }
+  .lib-item:hover { background: #1f0055; color: #ff2d9b; border-color: #ff2d9b88; }
+  .lib-item.active { background: #2a0060; color: #ff2d9b; border-color: #ff2d9b; }
   #library-preview {
-    flex: 1; overflow-y: auto; padding: 8px;
+    flex: 1; overflow-y: auto; padding: 12px;
     background: #08001a; border: 1px solid #00f7ff22;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    font-size: 13px; color: #cc99ff; line-height: 1.6;
+    font-size: 13px; color: #cc99ff; line-height: 1.7;
     white-space: pre-wrap;
   }
 
@@ -390,7 +415,7 @@
     <canvas id="logo-canvas" width="48" height="48"></canvas>
     <div>
       <h1>DreamLab OctoBot</h1>
-      <div class="subtitle">ORIGINAL IDEA GENERATOR</div>
+      <div class="subtitle">AGENTIC IDEA GENERATOR</div>
     </div>
   </div>
   <div id="model-selector">
@@ -406,60 +431,56 @@
 <!-- Main Layout -->
 <div id="main">
 
-  <!-- Left: Game Canvas + Stats -->
+  <!-- Left: Stats + Game Canvas -->
   <div id="canvas-col">
+    <div id="left-top">
+      <div id="stats-bar">
+        <div class="stat">⭐ SCORE: <span class="stat-val" id="stat-score">0</span></div>
+        <div class="stat">💡 IDEAS: <span class="stat-val" id="stat-library">0</span></div>
+        <div class="stat">🧠 CREATIVITY:
+          <div class="curiosity-bar"><div class="curiosity-fill" id="curiosity-fill" style="width:50%"></div></div>
+          <span class="stat-val" id="stat-curiosity">50</span>
+        </div>
+        <div class="stat">🔬 INVENTED: <span class="stat-val" id="stat-research">0</span></div>
+        <div class="stat">🌟: <span class="stat-val" id="stat-discoveries">0</span></div>
+        <div class="stat">⛓️: <span class="stat-val" id="stat-chains">0</span></div>
+      </div>
+      <div id="stats-bar" style="border-top:none;padding-top:2px;">
+        <div class="stat">LEVEL:
+          <div class="score-bar"><div class="score-fill" id="level-fill" style="width:0%"></div></div>
+          <span class="stat-val" id="stat-level-name">Napkin Sketcher</span>
+        </div>
+        <div class="stat">🔗 REFS: <span class="stat-val" id="stat-refs">0</span></div>
+        <div class="stat">💬: <span class="stat-val" id="stat-comments">0</span></div>
+        <div class="stat">🔄: <span class="stat-val" id="stat-cycles">0</span></div>
+      </div>
+    </div>
     <div id="canvas-wrap">
       <canvas id="game-canvas" width="480" height="320"></canvas>
       <div id="scanline"></div>
-    </div>
-    <div id="status-bar">INITIALISING IDEA MACHINE…</div>
-    <div id="stats-bar">
-      <div class="stat">⭐ SCORE: <span class="stat-val" id="stat-score">0</span></div>
-      <div class="stat">💡 IDEAS: <span class="stat-val" id="stat-library">0</span></div>
-      <div class="stat">🧠 CREATIVITY:
-        <div class="curiosity-bar"><div class="curiosity-fill" id="curiosity-fill" style="width:50%"></div></div>
-        <span class="stat-val" id="stat-curiosity">50</span>
-      </div>
-      <div class="stat">🔬 INVENTED: <span class="stat-val" id="stat-research">0</span></div>
-      <div class="stat">🌟:
-        <span class="stat-val" id="stat-discoveries">0</span>
-      </div>
-      <div class="stat">⛓️:
-        <span class="stat-val" id="stat-chains">0</span>
-      </div>
-    </div>
-    <div id="stats-bar" style="border-top:none;padding-top:2px;">
-      <div class="stat">LEVEL:
-        <div class="score-bar"><div class="score-fill" id="level-fill" style="width:0%"></div></div>
-        <span class="stat-val" id="stat-level-name">Napkin Sketcher</span>
-      </div>
-      <div class="stat">🔗 REFS: <span class="stat-val" id="stat-refs">0</span></div>
-      <div class="stat">💬: <span class="stat-val" id="stat-comments">0</span></div>
-      <div class="stat">🔄: <span class="stat-val" id="stat-cycles">0</span></div>
-    </div>
-    <div style="display:flex;gap:4px;padding:2px 0;">
-      <button class="btn btn-secondary" onclick="runCycle()">▶ RUN CYCLE</button>
-      <button class="btn btn-secondary" onclick="refreshAll()">🔄 REFRESH</button>
+      <button id="fullscreen-btn" onclick="toggleFullscreen()" title="Toggle fullscreen">⛶</button>
     </div>
   </div>
 
   <!-- Right: Tabbed Panels -->
   <div id="right-col">
-    <div id="tabs">
-      <button class="tab-btn active" data-tab="chat">💬 CHAT</button>
-      <button class="tab-btn" data-tab="log">📋 LOG</button>
-      <button class="tab-btn" data-tab="library">💡 IDEAS</button>
-      <button class="tab-btn" data-tab="journal">📖 JOURNAL</button>
-      <button class="tab-btn" data-tab="graph">🕸️ GRAPH</button>
-      <button class="tab-btn" data-tab="achievements">🏅 BADGES</button>
-      <button class="tab-btn" data-tab="chains">⛓️ CHAINS</button>
-      <button class="tab-btn" data-tab="help">❓ HELP</button>
+    <div id="right-top">
+      <div id="tabs">
+        <button class="tab-btn active" data-tab="chat">💬 CHAT</button>
+        <button class="tab-btn" data-tab="log">📋 LOG</button>
+        <button class="tab-btn" data-tab="library">💡 IDEAS</button>
+        <button class="tab-btn" data-tab="journal">📖 JOURNAL</button>
+        <button class="tab-btn" data-tab="graph">🕸️ GRAPH</button>
+        <button class="tab-btn" data-tab="achievements">🏅 BADGES</button>
+        <button class="tab-btn" data-tab="chains">⛓️ CHAINS</button>
+        <button class="tab-btn" data-tab="help">❓ HELP</button>
+      </div>
     </div>
 
     <!-- Chat -->
     <div class="tab-panel active" id="panel-chat">
       <div id="chat-messages">
-        <div class="msg system">🐙 OctoBot is awake and ready to chat!</div>
+        <div class="msg system">OctoBot is awake and ready to invent!</div>
       </div>
       <div id="file-preview" style="display:none"></div>
       <div id="chat-input-row">
@@ -534,7 +555,7 @@
 
         <div class="help-section">
           <h3>⭐ Scoring</h3>
-          <p><strong>Idea Score</strong> goes up as OctoBot generates ideas, fuses concepts, and completes idea chains. Higher scores unlock new inventor levels (1–5).</p>
+          <p><strong>Idea Score</strong> goes up as OctoBot generates ideas, fuses concepts, and completes idea chains. Higher scores unlock 20 inventor levels — from Napkin Sketcher to Infinite Idea Engine.</p>
         </div>
 
         <div class="help-section">
@@ -612,10 +633,37 @@ async function fetchJSON(url, opts) {
 const chatBox = document.getElementById('chat-messages');
 const chatInput = document.getElementById('chat-input');
 
+const OCTO_SVG = `<svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="12" cy="9" rx="8" ry="7" fill="#ff6ec7"/>
+  <ellipse cx="12" cy="9" rx="8" ry="7" fill="none" stroke="#ff2d9b" stroke-width="0.5"/>
+  <circle cx="9" cy="8" r="1.8" fill="white"/><circle cx="15" cy="8" r="1.8" fill="white"/>
+  <circle cx="9.4" cy="8.2" r="0.9" fill="#1a0030"/><circle cx="15.4" cy="8.2" r="0.9" fill="#1a0030"/>
+  <ellipse cx="12" cy="11.5" rx="2" ry="0.8" fill="#ff2d9b66"/>
+  <path d="M4,14 Q3,20 5,22" stroke="#ff6ec7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M6,15 Q4,21 6,23" stroke="#ff6ec7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M8,15.5 Q7,21 8,23" stroke="#ff6ec7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M10,16 Q10,22 11,23" stroke="#ff6ec7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M14,16 Q14,22 13,23" stroke="#ff6ec7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M16,15.5 Q17,21 16,23" stroke="#ff6ec7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M18,15 Q20,21 18,23" stroke="#ff6ec7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M20,14 Q21,20 19,22" stroke="#ff6ec7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>`;
+
 function addMsg(role, text) {
   const d = document.createElement('div');
   d.className = 'msg ' + role;
-  d.textContent = text;
+  if (role === 'bot') {
+    const avatar = document.createElement('div');
+    avatar.className = 'octo-avatar';
+    avatar.innerHTML = OCTO_SVG;
+    const txt = document.createElement('div');
+    txt.className = 'octo-text';
+    txt.textContent = text;
+    d.appendChild(avatar);
+    d.appendChild(txt);
+  } else {
+    d.textContent = text;
+  }
   chatBox.appendChild(d);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
@@ -637,7 +685,7 @@ async function sendChat() {
   }
 
   addMsg('user', msg || '📎 (sent attached files)');
-  addMsg('system', '🐙 OctoBot is thinking…');
+  addMsg('system', 'OctoBot is thinking…');
 
   const data = await fetchJSON('/api/chat', {
     method: 'POST',
@@ -734,6 +782,28 @@ loadModels();
 // POLLING — State, Log, Stats, Score
 // =====================================================================
 let currentAction = 'idle';
+let _lastIdeaTopic = '';
+let _loopStatus = '';
+let _gameStatus = '';
+let _lastThought = '';
+let _statusRotateIdx = 0;
+let _speechBubbleText = 'Idea machine warming up...';
+
+// Rotate the speech bubble content every 10 seconds
+setInterval(function() {
+  const msgs = [];
+  if (_gameStatus && !_gameStatus.includes('Resting') && !_gameStatus.includes('Stopped'))
+    msgs.push(_gameStatus.replace(/[✅🔄⚙️🤔🔬💤⚠️❌]/g,'').trim());
+  if (_lastIdeaTopic)
+    msgs.push('Last idea: ' + _lastIdeaTopic.replace(/_/g,' ').slice(0,120));
+  if (_lastThought)
+    msgs.push(_lastThought.slice(0,140));
+  if (_loopStatus && !_loopStatus.includes('Resting') && !_loopStatus.includes('Stopped'))
+    msgs.push(_loopStatus.replace(/[✅🔄⚙️🤔🔬💤⚠️❌]/g,'').trim());
+  if (msgs.length === 0) msgs.push('Idea machine humming...');
+  _statusRotateIdx = (_statusRotateIdx + 1) % msgs.length;
+  _speechBubbleText = msgs[_statusRotateIdx];
+}, 10000);
 
 async function pollState() {
   const data = await fetchJSON('/api/state');
@@ -741,7 +811,17 @@ async function pollState() {
 
   currentAction = data.action || 'idle';
 
-  document.getElementById('status-bar').textContent = data.status || 'IDLE';
+  // Store status info for the rotating speech bubble
+  _gameStatus = data.status || '';
+  _lastIdeaTopic = data.last_idea_topic || _lastIdeaTopic;
+  _loopStatus = data.loop_status || '';
+  _lastThought = data.thought || '';
+
+  // Show live status immediately in speech bubble when active
+  const status = data.status || 'IDLE';
+  if (!status.includes('Resting') && !status.includes('Stopped') && !status.includes('Idle')) {
+    _speechBubbleText = status.replace(/[✅🔄⚙️🤔🔬💤⚠️❌]/g,'').trim();
+  }
 
   const s = data.stats || {};
   const score = s.knowledge_score || 0;
@@ -754,6 +834,7 @@ async function pollState() {
   const lvl = data.level || {};
   document.getElementById('level-num').textContent = lvl.level || 1;
   document.getElementById('level-name').textContent = lvl.name || 'Napkin Sketcher';
+  setMapLevel(lvl.level || 1);
 
   // Stats bar
   document.getElementById('stat-score').textContent = score;
@@ -797,7 +878,7 @@ async function pollAutoMessages() {
   if (!data || !data.messages || data.messages.length === 0) return;
   autoMsgIndex = data.next_index;
   for (const msg of data.messages) {
-    addMsg('bot', msg.content || '🐙 *tentacle wiggle*');
+    addMsg('bot', msg.content || '*tentacle wiggle*');
   }
 }
 
@@ -811,15 +892,22 @@ async function loadLibrary() {
   if (!data) return;
   const list = document.getElementById('library-list');
   if (!data.files || data.files.length === 0) {
-    list.innerHTML = '<div style="color:#bf00ff88;font-size:7px;padding:4px;">(Idea vault is empty — time to invent!)</div>';
+    list.innerHTML = '<div style="color:#bf00ff88;font-size:10px;padding:8px;font-family:Segoe UI,sans-serif;">(Idea vault is empty — time to invent!)</div>';
     return;
   }
-  list.innerHTML = data.files.map(f =>
-    `<div class="lib-item" onclick="previewFile('${f.replace(/'/g,"\\'")}')">${f.replace('library/','')}</div>`
-  ).join('');
+  list.innerHTML = data.files.map(f => {
+    const raw = f.replace('library/','').replace('.md','');
+    // Convert slug to readable name: underscores/hyphens to spaces, capitalize words, truncate
+    const name = raw.replace(/[_-]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase()).slice(0, 60);
+    return `<div class="lib-item" data-file="${f.replace(/"/g,'&quot;')}" onclick="previewFile(this, '${f.replace(/'/g,"\\'")}')">${name}</div>`;
+  }).join('');
 }
 
-async function previewFile(filename) {
+async function previewFile(el, filename) {
+  // Highlight active card
+  document.querySelectorAll('.lib-item.active').forEach(e => e.classList.remove('active'));
+  if (el) el.classList.add('active');
+
   const safe = filename.startsWith('library/') ? filename.slice(8) : filename;
   const data = await fetchJSON('/api/library/' + encodeURIComponent(safe));
   if (data && data.content) {
@@ -1107,7 +1195,7 @@ async function loadGraph(){
   graphData=data; gGraphBuilt=false; gSelected=null; gHoverNode=null;
   const shown=data.nodes.length, total=data.total_nodes||shown;
   document.getElementById('graph-info').textContent=
-    `${shown} of ${total} concepts \u00b7 ${data.edges.length} connections \u00b7 scroll=zoom \u00b7 drag=pan \u00b7 click=select \u00b7 dbl=reset`;
+    `${shown} of ${total} idea concepts \u00b7 ${data.edges.length} idea connections \u00b7 scroll=zoom \u00b7 drag=pan \u00b7 click=select \u00b7 dbl=reset`;
   setupGraphInteraction();
   gStartAnimLoop();
 }
@@ -1172,12 +1260,11 @@ async function loadChains() {
 // MANUAL CYCLE
 // =====================================================================
 async function runCycle() {
-  document.getElementById('status-bar').textContent = '▶ RUNNING MANUAL CYCLE…';
+  _speechBubbleText = 'Running manual cycle...';
   const data = await fetchJSON('/api/cycle', {method: 'POST'});
   if (data && data.result) {
-    document.getElementById('status-bar').textContent = '✅ ' + data.result;
+    _speechBubbleText = data.result.slice(0, 80);
   }
-  // Refresh all data after manual cycle
   setTimeout(refreshAll, 1000);
 }
 
@@ -1186,6 +1273,36 @@ function refreshAll() {
   loadLibrary();
   loadJournal();
 }
+
+function toggleFullscreen() {
+  const wrap = document.getElementById('canvas-wrap');
+  if (document.fullscreenElement || document.webkitFullscreenElement) {
+    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+  } else {
+    (wrap.requestFullscreen || wrap.webkitRequestFullscreen).call(wrap);
+  }
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && (document.fullscreenElement || document.webkitFullscreenElement)) {
+    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+  }
+});
+
+// Align left-top and right-top heights so canvas and chat line up
+function alignTopSections() {
+  const lt = document.getElementById('left-top');
+  const rt = document.getElementById('right-top');
+  if (!lt || !rt) return;
+  // Reset to natural height first
+  lt.style.minHeight = '';
+  rt.style.minHeight = '';
+  // Set both to the taller one
+  const h = Math.max(lt.offsetHeight, rt.offsetHeight);
+  lt.style.minHeight = h + 'px';
+  rt.style.minHeight = h + 'px';
+}
+window.addEventListener('resize', alignTopSections);
+setTimeout(alignTopSections, 100);
 
 // Initial load
 loadLibrary();
@@ -1551,6 +1668,208 @@ const THEMES = {
     rugCenter:'#ddaa55', rugInner:'#cc8844', rugOuter:'#886622', rugDot:'#ffddaa',
     rugFill:'#282018',
   },
+  volcano: {
+    name: 'Volcano Lair',
+    tileColors: { 0:'#1a0800', 1:'#2a0c00', 2:'#200a00', 3:'#180800', 4:'#0c0400', 5:'#301000' },
+    drawBg: function(ctx, W, H) {
+      const g=ctx.createLinearGradient(0,0,0,H);
+      g.addColorStop(0,'#0c0400'); g.addColorStop(0.6,'#1a0800'); g.addColorStop(1,'#301000');
+      ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+      const t=Date.now()/1000;
+      // Lava flow at bottom
+      ctx.fillStyle='#ff440044';
+      ctx.fillRect(0,H*0.85,W,H*0.15);
+      ctx.fillStyle='#ff660033';
+      for(let i=0;i<8;i++){
+        const lx=(i*W/8)+Math.sin(t*0.8+i)*10;
+        ctx.beginPath(); ctx.ellipse(lx,H*0.88,18,6,0,0,Math.PI*2); ctx.fill();
+      }
+      // Ember particles rising
+      ctx.fillStyle='#ff440088';
+      for(let i=0;i<15;i++){
+        const ex=(i*137+Math.sin(t*0.5+i)*12)%W;
+        const ey=H-(((t*25+i*45)%H));
+        const sz=1+i%2;
+        ctx.fillRect(ex,ey,sz,sz);
+      }
+      // Orange glow from below
+      const glow=ctx.createRadialGradient(W*0.5,H,0,W*0.5,H,H*0.6);
+      glow.addColorStop(0,'#ff440022'); glow.addColorStop(1,'transparent');
+      ctx.fillStyle=glow; ctx.fillRect(0,0,W,H);
+    },
+    wallTop:'#0c0400', wallAccent:'#ff440033', wallHoriz:'#ff440022',
+    floorDot:'#ff660044', floorLine:'#ff440018',
+    shelfBooks:['#ff4400','#ff6600','#cc3300','#ff8800','#dd4400','#ff5500'],
+    shelfShelf:'#ff440066', shelfBot:'#1a0800',
+    rugCenter:'#ff6600', rugInner:'#ff4400', rugOuter:'#cc330066', rugDot:'#ffaa66',
+    rugFill:'#301000',
+  },
+  neon: {
+    name: 'Neon City',
+    tileColors: { 0:'#05000f', 1:'#0a0020', 2:'#080018', 3:'#060012', 4:'#020008', 5:'#100030' },
+    drawBg: function(ctx, W, H) {
+      ctx.fillStyle='#020008'; ctx.fillRect(0,0,W,H);
+      const t=Date.now()/1000;
+      // Rain
+      ctx.strokeStyle='#00f7ff11'; ctx.lineWidth=1;
+      for(let i=0;i<30;i++){
+        const rx=(i*97+t*40)%W;
+        const ry=(i*137+t*200)%H;
+        ctx.beginPath(); ctx.moveTo(rx,ry); ctx.lineTo(rx-1,ry+8); ctx.stroke();
+      }
+      // Neon signs on wall
+      const signs=[{x:0.15,c:'#ff2d9b'},{x:0.45,c:'#00f7ff'},{x:0.75,c:'#bf00ff'}];
+      signs.forEach(s=>{
+        const pulse=0.6+0.4*Math.sin(t*2+s.x*10);
+        ctx.strokeStyle=s.c+Math.floor(pulse*255).toString(16).padStart(2,'0');
+        ctx.lineWidth=2;
+        const sx=W*s.x, sy=H*0.08;
+        ctx.strokeRect(sx-12,sy,24,10);
+        // Glow
+        const ng=ctx.createRadialGradient(sx,sy+5,0,sx,sy+5,30);
+        ng.addColorStop(0,s.c+'33'); ng.addColorStop(1,'transparent');
+        ctx.fillStyle=ng; ctx.fillRect(sx-40,sy-20,80,50);
+      });
+      // Wet floor reflections
+      ctx.fillStyle='#ff2d9b08';
+      ctx.fillRect(0,H*0.7,W,H*0.3);
+      ctx.fillStyle='#00f7ff08';
+      ctx.fillRect(0,H*0.75,W,H*0.25);
+    },
+    wallTop:'#020008', wallAccent:'#ff2d9b44', wallHoriz:'#00f7ff33',
+    floorDot:'#ff2d9b44', floorLine:'#00f7ff18',
+    shelfBooks:['#ff2d9b','#00f7ff','#bf00ff','#ff6ec7','#00cfff','#ff0077'],
+    shelfShelf:'#ff2d9b66', shelfBot:'#05000f',
+    rugCenter:'#ff2d9b', rugInner:'#00f7ff', rugOuter:'#bf00ff66', rugDot:'#ffffff',
+    rugFill:'#100030',
+  },
+  mushroom: {
+    name: 'Mushroom Cave',
+    tileColors: { 0:'#0a0818', 1:'#100c20', 2:'#0c0a18', 3:'#0e0c1a', 4:'#060410', 5:'#1a1030' },
+    drawBg: function(ctx, W, H) {
+      const g=ctx.createLinearGradient(0,0,0,H);
+      g.addColorStop(0,'#060410'); g.addColorStop(1,'#0a0818');
+      ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+      const t=Date.now()/1000;
+      // Bioluminescent mushrooms
+      const shrooms=[
+        {x:0.1,h:0.3,c:'#00ffaa'},{x:0.25,h:0.2,c:'#ff66cc'},{x:0.5,h:0.35,c:'#00ccff'},
+        {x:0.7,h:0.25,c:'#ffcc00'},{x:0.85,h:0.28,c:'#bf00ff'},{x:0.4,h:0.15,c:'#00ff66'},
+      ];
+      shrooms.forEach(s=>{
+        const sx=W*s.x, sy=H*(1-s.h);
+        const pulse=0.5+0.5*Math.sin(t*1.5+s.x*8);
+        // Stem
+        ctx.fillStyle='#44335566';
+        ctx.fillRect(sx-2,sy,4,H*s.h);
+        // Cap
+        ctx.fillStyle=s.c+'88';
+        ctx.beginPath(); ctx.ellipse(sx,sy,10+pulse*3,6+pulse*2,0,Math.PI,0); ctx.fill();
+        // Glow
+        const mg=ctx.createRadialGradient(sx,sy,0,sx,sy,20+pulse*10);
+        mg.addColorStop(0,s.c+'33'); mg.addColorStop(1,'transparent');
+        ctx.fillStyle=mg; ctx.fillRect(sx-40,sy-30,80,60);
+      });
+      // Floating spores
+      ctx.fillStyle='#ffcc0044';
+      for(let i=0;i<12;i++){
+        const px=(i*173+Math.sin(t*0.3+i)*15)%W;
+        const py=(i*211+Math.cos(t*0.4+i*0.7)*10)%H;
+        ctx.beginPath(); ctx.arc(px,py,1.5,0,Math.PI*2); ctx.fill();
+      }
+    },
+    wallTop:'#060410', wallAccent:'#00ffaa33', wallHoriz:'#bf00ff22',
+    floorDot:'#00ffaa44', floorLine:'#bf00ff18',
+    shelfBooks:['#00ffaa','#ff66cc','#00ccff','#ffcc00','#bf00ff','#00ff66'],
+    shelfShelf:'#00ffaa44', shelfBot:'#0a0818',
+    rugCenter:'#00ffaa', rugInner:'#ff66cc', rugOuter:'#bf00ff66', rugDot:'#ffffff',
+    rugFill:'#1a1030',
+  },
+  arctic: {
+    name: 'Arctic Station',
+    tileColors: { 0:'#0c1420', 1:'#101c2c', 2:'#0e1824', 3:'#0c1620', 4:'#081018', 5:'#142438' },
+    drawBg: function(ctx, W, H) {
+      const g=ctx.createLinearGradient(0,0,0,H);
+      g.addColorStop(0,'#1a2838'); g.addColorStop(1,'#0c1420');
+      ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+      const t=Date.now()/1000;
+      // Aurora borealis
+      ctx.globalAlpha=0.3;
+      const colors=['#00ff88','#00ccff','#bf00ff'];
+      for(let i=0;i<3;i++){
+        ctx.strokeStyle=colors[i]; ctx.lineWidth=4;
+        ctx.beginPath();
+        for(let x=0;x<W;x+=4){
+          const y=H*0.12+i*12+Math.sin(x/30+t*0.5+i*2)*12+Math.sin(x/60+t*0.3)*8;
+          x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+        }
+        ctx.stroke();
+      }
+      ctx.globalAlpha=1;
+      // Snow on ground
+      ctx.fillStyle='#ccddeee8';
+      ctx.fillRect(0,H*0.82,W,H*0.18);
+      // Snowflakes
+      ctx.fillStyle='#ffffff66';
+      for(let i=0;i<20;i++){
+        const sx=(i*157+t*8)%W;
+        const sy=((i*211+t*20)%(H*0.82));
+        ctx.fillRect(sx,sy,2,2);
+      }
+    },
+    wallTop:'#081018', wallAccent:'#00ccff33', wallHoriz:'#00ff8822',
+    floorDot:'#00ccff44', floorLine:'#00ff8818',
+    shelfBooks:['#88ccff','#aaddff','#66aadd','#99ccee','#77bbdd','#bbddff'],
+    shelfShelf:'#88ccff44', shelfBot:'#0c1420',
+    rugCenter:'#88ccff', rugInner:'#aaddff', rugOuter:'#66aadd66', rugDot:'#ffffff',
+    rugFill:'#142438',
+  },
+  dreamscape: {
+    name: 'Dreamscape',
+    tileColors: { 0:'#0f0020', 1:'#180030', 2:'#120028', 3:'#100024', 4:'#080014', 5:'#200040' },
+    drawBg: function(ctx, W, H) {
+      const t=Date.now()/1000;
+      // Shifting gradient background
+      const hue1=(t*10)%360, hue2=(t*10+120)%360;
+      const g=ctx.createLinearGradient(0,0,W,H);
+      g.addColorStop(0,`hsla(${hue1},60%,8%,1)`);
+      g.addColorStop(1,`hsla(${hue2},60%,5%,1)`);
+      ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+      // Floating geometric shapes
+      ctx.strokeStyle='#ff2d9b33'; ctx.lineWidth=1;
+      for(let i=0;i<5;i++){
+        const cx=(W*0.2+i*W*0.15+Math.sin(t*0.3+i)*20);
+        const cy=(H*0.3+Math.cos(t*0.4+i*1.5)*H*0.2);
+        const sz=8+Math.sin(t+i)*4;
+        ctx.save(); ctx.translate(cx,cy); ctx.rotate(t*0.5+i);
+        ctx.strokeRect(-sz/2,-sz/2,sz,sz);
+        ctx.restore();
+      }
+      // Floating circles
+      ctx.strokeStyle='#00f7ff22';
+      for(let i=0;i<4;i++){
+        const cx=W*0.3+i*W*0.15+Math.cos(t*0.2+i*2)*15;
+        const cy=H*0.5+Math.sin(t*0.35+i)*H*0.15;
+        const r=5+Math.sin(t*0.8+i)*3;
+        ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2); ctx.stroke();
+      }
+      // Sparkle dust
+      ctx.fillStyle='#ffffff33';
+      for(let i=0;i<25;i++){
+        const flash=Math.sin(t*3+i*2.7)>0.6?1:0;
+        if(flash){
+          const px=(i*193)%W, py=(i*157)%H;
+          ctx.fillRect(px,py,1,1);
+        }
+      }
+    },
+    wallTop:'#080014', wallAccent:'#ff2d9b33', wallHoriz:'#00f7ff22',
+    floorDot:'#ff2d9b44', floorLine:'#00f7ff18',
+    shelfBooks:['#ff2d9b','#00f7ff','#bf00ff','#ff66cc','#00ccff','#9966ff'],
+    shelfShelf:'#ff2d9b44', shelfBot:'#0f0020',
+    rugCenter:'#ff2d9b', rugInner:'#00f7ff', rugOuter:'#bf00ff44', rugDot:'#ffaaff',
+    rugFill:'#200040',
+  },
   testtube: {
     name: 'Inside a Test Tube',
     tileColors: { 0:'#081828', 1:'#0c2438', 2:'#102030', 3:'#0a1c30', 4:'#040c18', 5:'#143040' },
@@ -1616,7 +1935,7 @@ const THEMES = {
   },
 };
 
-const THEME_ORDER = ['library','sciencelab','aquarium','classroom','space','underwater','testtube','office','park','beach'];
+const THEME_ORDER = ['library','sciencelab','neon','aquarium','classroom','volcano','space','mushroom','underwater','arctic','testtube','dreamscape','office','park','beach'];
 const THEME_DURATION = 45000; // 45 seconds per environment
 let currentThemeIdx = 0;
 let themeTimer = 0;
@@ -1745,7 +2064,7 @@ let currentLevel = 1;
 let MAP = MAPS[1];
 
 function setMapLevel(level) {
-  const l = Math.max(1, Math.min(5, level));
+  const l = Math.max(1, Math.min(5, level));  // room maps cap at 5, levels go to 20
   if (l !== currentLevel) {
     currentLevel = l;
     MAP = MAPS[l] || MAPS[1];
@@ -2091,6 +2410,13 @@ function gameLoop(ts) {
   const dt = Math.min(ts - lastTime, 50); // cap dt to avoid big jumps
   lastTime = ts;
 
+  // Resize canvas buffer to fill container — no letterboxing
+  const cw = canvas.clientWidth, ch = canvas.clientHeight;
+  if (cw > 0 && ch > 0 && (canvas.width !== cw || canvas.height !== ch)) {
+    canvas.width = cw;
+    canvas.height = ch;
+  }
+
   // Movement
   const dx = targetX - octoX;
   const dy = targetY - octoY;
@@ -2221,19 +2547,76 @@ function gameLoop(ts) {
 
   ctx.restore();
 
-  // Environment name HUD (screen space)
-  if (themeTimer < 3000 && !nextTheme) {
-    const alpha = Math.max(0, 1 - themeTimer / 2500);
+  // Speech bubble HUD (screen space) — shows status/idea updates
+  if (_speechBubbleText) {
+    ctx.save();
+    const W = canvas.width, H = canvas.height;
+    const maxW = W - 16;
+    ctx.font = '8px "Press Start 2P"';
+
+    // Word-wrap the text — allow up to 6 lines
+    const words = _speechBubbleText.split(' ');
+    const lines = [];
+    let line = '';
+    for (const w of words) {
+      const test = line ? line + ' ' + w : w;
+      if (ctx.measureText(test).width > maxW - 16) {
+        if (line) lines.push(line);
+        line = w;
+      } else {
+        line = test;
+      }
+    }
+    if (line) lines.push(line);
+    if (lines.length > 6) lines.length = 6;
+
+    const lineH = 13;
+    const bubbleH = lines.length * lineH + 14;
+    const bubbleW = Math.min(maxW, Math.max(...lines.map(l => ctx.measureText(l).width)) + 20);
+    const bx = W/2 - bubbleW/2;
+    const by = H - bubbleH - 10;
+
+    // Bubble background
+    ctx.fillStyle = '#0a0020ee';
+    ctx.strokeStyle = '#00f7ff66';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    const r = 5;
+    ctx.moveTo(bx+r, by);
+    ctx.lineTo(bx+bubbleW-r, by);
+    ctx.quadraticCurveTo(bx+bubbleW, by, bx+bubbleW, by+r);
+    ctx.lineTo(bx+bubbleW, by+bubbleH-r);
+    ctx.quadraticCurveTo(bx+bubbleW, by+bubbleH, bx+bubbleW-r, by+bubbleH);
+    // Speech tail
+    ctx.lineTo(bx+bubbleW*0.55, by+bubbleH);
+    ctx.lineTo(bx+bubbleW*0.5, by+bubbleH+5);
+    ctx.lineTo(bx+bubbleW*0.45, by+bubbleH);
+    ctx.lineTo(bx+r, by+bubbleH);
+    ctx.quadraticCurveTo(bx, by+bubbleH, bx, by+bubbleH-r);
+    ctx.lineTo(bx, by+r);
+    ctx.quadraticCurveTo(bx, by, bx+r, by);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+
+    // Text
+    ctx.fillStyle = '#ffffffdd';
+    ctx.textAlign = 'center';
+    for (let i = 0; i < lines.length; i++) {
+      ctx.fillText(lines[i], W/2, by + 12 + i * lineH);
+    }
+    ctx.restore();
+  }
+
+  // Environment name flash (brief, on theme change)
+  if (themeTimer < 2000 && !nextTheme) {
+    const alpha = Math.max(0, 1 - themeTimer / 1800);
     ctx.save();
     ctx.globalAlpha = alpha;
-    ctx.fillStyle = '#000000aa';
-    const label = '📍 ' + currentTheme.name;
-    ctx.font = '8px "Press Start 2P"';
-    const tw = ctx.measureText(label).width;
-    ctx.fillRect(canvas.width/2 - tw/2 - 8, canvas.height - 28, tw+16, 18);
-    ctx.fillStyle = '#ffffffcc';
-    ctx.textAlign = 'center';
-    ctx.fillText(label, canvas.width/2, canvas.height - 14);
+    ctx.font = '6px "Press Start 2P"';
+    ctx.fillStyle = '#ffffff66';
+    ctx.textAlign = 'left';
+    ctx.fillText(currentTheme.name, 6, 10);
     ctx.restore();
   }
 

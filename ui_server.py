@@ -101,6 +101,8 @@ def api_state():
         "level": level_info,
         "log": log_lines + agent_log,
         "library_count": tools.get_knowledge_count(),
+        "last_idea_topic": agent.last_research_topic or "",
+        "loop_status": agent.loop_status or "",
     })
 
 

@@ -48,11 +48,26 @@ SCORE_DISCOVERY = 100
 # Inventor levels  (threshold, name, level_number)
 # ---------------------------------------------------------------------------
 LIBRARY_LEVELS = [
-    (0,    "Napkin Sketcher",      1),
-    (100,  "Garage Tinkerer",      2),
-    (500,  "Mad Scientist",        3),
-    (1500, "Patent Machine",       4),
-    (4000, "Visionary Inventor",   5),
+    (0,      "Napkin Sketcher",           1),
+    (50,     "Shower Thinker",            2),
+    (120,    "Garage Tinkerer",           3),
+    (250,    "Caffeinated Dreamer",       4),
+    (450,    "Prototype Gremlin",         5),
+    (700,    "Mad Scientist",             6),
+    (1000,   "Patent Pending",            7),
+    (1400,   "Chaos Engineer",            8),
+    (1900,   "Moonshot Architect",        9),
+    (2500,   "Frankenstein's Mentor",     10),
+    (3200,   "Interdimensional Tinkerer", 11),
+    (4000,   "Perpetual Motion Machine",  12),
+    (5000,   "Idea Supercollider",        13),
+    (6200,   "Rogue Inventor General",    14),
+    (7500,   "Dream Reactor",             15),
+    (9000,   "Octopus Prime",             16),
+    (11000,  "Reality Bender",            17),
+    (13500,  "Singularity Whisperer",     18),
+    (16500,  "God of Small Things",       19),
+    (20000,  "Infinite Idea Engine",      20),
 ]
 
 
@@ -100,18 +115,58 @@ def get_score() -> int:
 # ---------------------------------------------------------------------------
 
 _ACHIEVEMENT_DEFS = [
-    {"id": "first_idea",        "name": "First Spark",         "desc": "Generate your very first idea",        "key": "knowledge_count",  "target": 1},
-    {"id": "10_ideas",          "name": "Idea Machine",        "desc": "Generate 10 original ideas",           "key": "research_count",   "target": 10},
-    {"id": "100_ideas",         "name": "100 Ideas Club",      "desc": "Generate 100 original ideas",          "key": "research_count",   "target": 100},
-    {"id": "10_chains",         "name": "Chain Reactor",       "desc": "Complete 10 idea chains",              "key": "chains_completed", "target": 10},
-    {"id": "mad_scientist",     "name": "Mad Scientist",       "desc": "Reach Inventor Level 3",               "key": "knowledge_score",  "target": 500},
-    {"id": "visionary",         "name": "Visionary Inventor",  "desc": "Reach Inventor Level 5",               "key": "knowledge_score",  "target": 4000},
-    {"id": "first_discovery",   "name": "Eureka!",             "desc": "Fuse two ideas into a discovery",      "key": "discoveries",      "target": 1},
-    {"id": "score_500",         "name": "Prolific Thinker",    "desc": "Reach 500 idea score",                 "key": "knowledge_score",  "target": 500},
-    {"id": "score_1000",        "name": "World Changer",       "desc": "Reach 1000 idea score",                "key": "knowledge_score",  "target": 1000},
-    {"id": "curious_max",       "name": "Maximum Overdrive",   "desc": "Reach 100 curiosity",                  "key": "curiosity_level",  "target": 100},
-    {"id": "5_cross_refs",      "name": "Idea Fusionist",      "desc": "Create 5 cross-references between ideas", "key": "cross_refs",   "target": 5},
-    {"id": "first_chain",       "name": "Chain Starter",       "desc": "Complete your first idea chain",       "key": "chains_completed", "target": 1},
+    # === IDEA COUNT MILESTONES ===
+    {"id": "first_idea",         "name": "First Spark",              "desc": "Generate your very first idea — every empire starts with a napkin",                    "key": "knowledge_count",  "target": 1},
+    {"id": "5_ideas",            "name": "Handful of Genius",        "desc": "Generate 5 ideas — one for each arm (you have 3 spares)",                              "key": "research_count",   "target": 5},
+    {"id": "10_ideas",           "name": "Idea Machine",             "desc": "Generate 10 ideas — you're officially a threat to the status quo",                     "key": "research_count",   "target": 10},
+    {"id": "25_ideas",           "name": "Quarter-Century Brain",    "desc": "Generate 25 ideas — your vault needs a bigger door",                                   "key": "research_count",   "target": 25},
+    {"id": "50_ideas",           "name": "Half-Century Inventor",    "desc": "Generate 50 ideas — patent offices tremble at your name",                              "key": "research_count",   "target": 50},
+    {"id": "100_ideas",          "name": "100 Ideas Club",           "desc": "Generate 100 ideas — you have officially out-invented most humans",                    "key": "research_count",   "target": 100},
+    {"id": "200_ideas",          "name": "Idea Avalanche",           "desc": "Generate 200 ideas — at this point you're a natural disaster of creativity",           "key": "research_count",   "target": 200},
+    {"id": "500_ideas",          "name": "500 and Counting",         "desc": "Generate 500 ideas — this is no longer a hobby, it's a condition",                     "key": "research_count",   "target": 500},
+    {"id": "1000_ideas",         "name": "The Thousand",             "desc": "Generate 1000 ideas — you are now statistically guaranteed at least one world-changer", "key": "research_count",   "target": 1000},
+
+    # === IDEA CHAINS ===
+    {"id": "first_chain",        "name": "Chain Starter",            "desc": "Complete your first idea chain — one thought leading to another, like dominoes",       "key": "chains_completed", "target": 1},
+    {"id": "5_chains",           "name": "Chain Reaction",           "desc": "Complete 5 idea chains — your thoughts are becoming an assembly line",                  "key": "chains_completed", "target": 5},
+    {"id": "10_chains",          "name": "Chain Reactor",            "desc": "Complete 10 idea chains — you've built a nuclear reactor of creativity",                "key": "chains_completed", "target": 10},
+    {"id": "25_chains",          "name": "Daisy Chain Gang",         "desc": "Complete 25 idea chains — at this point the chains are chaining themselves",            "key": "chains_completed", "target": 25},
+
+    # === DISCOVERIES (idea fusions) ===
+    {"id": "first_discovery",    "name": "Eureka!",                  "desc": "Fuse two ideas into a discovery — Archimedes would be proud (and wet)",                "key": "discoveries",      "target": 1},
+    {"id": "5_discoveries",      "name": "Collision Course",         "desc": "Make 5 discoveries — your ideas are crashing into each other beautifully",             "key": "discoveries",      "target": 5},
+    {"id": "10_discoveries",     "name": "Particle Accelerator",     "desc": "Make 10 discoveries — you're smashing concepts together at near-light speed",          "key": "discoveries",      "target": 10},
+    {"id": "25_discoveries",     "name": "Fusion Chef",              "desc": "Make 25 discoveries — Gordon Ramsay of ideas, except everything is raw and brilliant",  "key": "discoveries",      "target": 25},
+
+    # === CROSS-REFERENCES ===
+    {"id": "5_cross_refs",       "name": "Idea Fusionist",           "desc": "Create 5 cross-references — your ideas are beginning to talk to each other",           "key": "cross_refs",       "target": 5},
+    {"id": "15_cross_refs",      "name": "Web Weaver",               "desc": "Create 15 cross-references — you've built an idea spider web (but prettier)",          "key": "cross_refs",       "target": 15},
+    {"id": "50_cross_refs",      "name": "Mycelium Mind",            "desc": "Create 50 cross-references — your idea network is a living fungal organism now",       "key": "cross_refs",       "target": 50},
+    {"id": "100_cross_refs",     "name": "Hivemind Achieved",        "desc": "Create 100 cross-references — every idea connects to every other idea. You are the internet.", "key": "cross_refs", "target": 100},
+
+    # === SCORE MILESTONES ===
+    {"id": "score_100",          "name": "Triple Digits",            "desc": "Reach 100 idea score — you're not messing around anymore",                             "key": "knowledge_score",  "target": 100},
+    {"id": "score_500",          "name": "Prolific Thinker",         "desc": "Reach 500 idea score — your brain runs hotter than a gaming laptop",                   "key": "knowledge_score",  "target": 500},
+    {"id": "score_1000",         "name": "World Changer",            "desc": "Reach 1000 idea score — somewhere, a venture capitalist just felt a disturbance",       "key": "knowledge_score",  "target": 1000},
+    {"id": "score_2500",         "name": "Force of Nature",          "desc": "Reach 2500 idea score — you are no longer generating ideas, ideas are generating you",  "key": "knowledge_score",  "target": 2500},
+    {"id": "score_5000",         "name": "Supercollider",            "desc": "Reach 5000 idea score — CERN called, they want their energy back",                     "key": "knowledge_score",  "target": 5000},
+    {"id": "score_10000",        "name": "Idea Singularity",         "desc": "Reach 10000 idea score — you have collapsed into a black hole of pure creativity",     "key": "knowledge_score",  "target": 10000},
+    {"id": "score_20000",        "name": "Infinite Engine",          "desc": "Reach 20000 idea score — you have become the idea. There is no spoon.",                "key": "knowledge_score",  "target": 20000},
+
+    # === LEVEL MILESTONES ===
+    {"id": "lvl_5",              "name": "Prototype Gremlin",        "desc": "Reach Level 5 — you're the kind of gremlin investors love and fear",                   "key": "knowledge_score",  "target": 450},
+    {"id": "lvl_10",             "name": "Frankenstein's Mentor",    "desc": "Reach Level 10 — even your mistakes have spin-off potential",                          "key": "knowledge_score",  "target": 2500},
+    {"id": "lvl_15",             "name": "Dream Reactor Online",     "desc": "Reach Level 15 — your subconscious is now a registered business",                     "key": "knowledge_score",  "target": 7500},
+    {"id": "lvl_20",             "name": "Final Form",               "desc": "Reach Level 20 — you are the Infinite Idea Engine. Reality is your whiteboard.",       "key": "knowledge_score",  "target": 20000},
+
+    # === CREATIVITY / CURIOSITY ===
+    {"id": "curious_50",         "name": "Buzzing",                  "desc": "Reach 50 curiosity — you can feel the ideas vibrating in your tentacles",              "key": "curiosity_level",  "target": 50},
+    {"id": "curious_max",        "name": "Maximum Overdrive",        "desc": "Reach 100 curiosity — you are a danger to yourself and everyone's assumptions",        "key": "curiosity_level",  "target": 100},
+
+    # === COMMENTS / SOCIAL ===
+    {"id": "first_chat",         "name": "Hello Human",              "desc": "Read your first human comment — they're strange but we love them",                     "key": "comments_read",    "target": 1},
+    {"id": "10_chats",           "name": "Co-Inventor",              "desc": "Read 10 human comments — at this point you're basically business partners",            "key": "comments_read",    "target": 10},
+    {"id": "50_chats",           "name": "Idea Soulmates",           "desc": "Read 50 human comments — you finish each other's inventions",                          "key": "comments_read",    "target": 50},
 ]
 
 

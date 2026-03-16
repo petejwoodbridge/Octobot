@@ -1,8 +1,12 @@
 <p align="center">
-  <img src="assets/octopus_pixel_art.svg" alt="OctoBot" width="128">
+  <img src="assets/interface.png" alt="OctoBot Interface" width="800">
 </p>
 
 # OctoBot — Infinite Idea Generator 🐙
+
+<p align="center">
+  <img src="assets/octopus_pixel_art.svg" alt="OctoBot" width="64">
+</p>
 
 > *A restless pink octopus inventor AI that never stops generating original ideas. Products, gadgets, services, creative projects, scientific experiments, solutions to problems you didn't know you had — it invents them all.*
 
@@ -143,8 +147,8 @@ python main.py --gradio --share   # Gradio with public link
 ## The Game Interface
 
 The browser shows a **pixel-art invention lab** where OctoBot — a pink octopus — roams across
-10 different environments (library, science lab, classroom, inside a test tube, aquarium, space,
-underwater, office, park, beach).
+15 different environments (library, science lab, neon city, aquarium, classroom, volcano lair,
+space, mushroom cave, underwater, arctic station, inside a test tube, dreamscape, office, park, beach).
 
 **OctoBot reacts to what it's doing:**
 

@@ -34,7 +34,7 @@ import scoring
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-CYCLE_INTERVAL = 60         # seconds between game cycles
+CYCLE_INTERVAL = 30         # seconds between game cycles
 _loop_running = False
 _loop_thread: threading.Thread | None = None
 
