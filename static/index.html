@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DreamLab OctoBot — Knowledge Creature Game 🐙</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #05000f;
+    font-family: 'Press Start 2P', monospace;
+    color: #ff99ee;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 31px, #0ff1 32px),
+      repeating-linear-gradient(90deg, transparent, transparent 31px, #0ff1 32px);
+  }
+
+  /* ── Header ── */
+  #header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 20px;
+    background: #0a0020;
+    border-bottom: 3px solid #ff2d9b;
+    box-shadow: 0 4px 20px #ff2d9b55;
+  }
+  #header-left { display: flex; align-items: center; gap: 12px; }
+  #logo-canvas {
+    width: 48px; height: 48px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    filter: drop-shadow(0 0 6px #ff2d9b) drop-shadow(0 0 12px #bf00ff88);
+  }
+  #header h1 {
+    font-size: 16px; color: #ff2d9b;
+    text-shadow: 0 0 10px #ff2d9b, 0 0 24px #ff2d9b88, 2px 2px 0 #000;
+    letter-spacing: 5px; margin-bottom: 5px;
+  }
+  #header .subtitle {
+    font-size: 7px; color: #00f7ff;
+    text-shadow: 0 0 6px #00f7ff; letter-spacing: 4px;
+  }
+  #score-display {
+    text-align: right;
+  }
+  #score-value {
+    font-size: 18px; color: #00f7ff;
+    text-shadow: 0 0 12px #00f7ff, 0 0 28px #00f7ff66;
+    letter-spacing: 2px;
+  }
+  #level-badge {
+    font-size: 7px; color: #ff99ee;
+    margin-top: 4px; letter-spacing: 1px;
+  }
+  #level-badge .level-name {
+    color: #bf00ff;
+    text-shadow: 0 0 6px #bf00ff;
+  }
+
+  /* ── Main Layout ── */
+  #main {
+    display: flex; gap: 8px; padding: 8px;
+    height: calc(100vh - 60px);
+  }
+
+  /* ── Left: Canvas ── */
+  #canvas-col {
+    flex: 0 0 500px; display: flex; flex-direction: column; gap: 6px;
+  }
+  #canvas-wrap {
+    position: relative; display: inline-block;
+    border: 3px solid #ff2d9b;
+    box-shadow: 0 0 16px #ff2d9b, 0 0 40px #ff2d9b55, inset 0 0 16px #00000088;
+  }
+  #game-canvas {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    display: block; image-rendering: pixelated; image-rendering: crisp-edges;
+    background: #05000f; width: 100%; height: auto;
+  }
+  #scanline {
+    pointer-events: none; position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(to bottom,
+      transparent 0px, transparent 2px,
+      rgba(0,0,0,0.15) 2px, rgba(0,0,0,0.15) 4px);
+    z-index: 2;
+  }
+  #status-bar {
+    font-size: 7px; color: #00f7ff;
+    text-shadow: 0 0 6px #00f7ff;
+    padding: 4px 8px; min-height: 20px; letter-spacing: 1px;
+    background: #03000a; border: 1px solid #00f7ff44;
+  }
+
+  /* ── Stats Bar ── */
+  #stats-bar {
+    display: flex; gap: 10px; flex-wrap: wrap;
+    padding: 6px 8px;
+    background: #08001a; border: 1px solid #bf00ff44;
+  }
+  .stat {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 7px; color: #ff99ee;
+  }
+  .stat-val {
+    color: #00f7ff; text-shadow: 0 0 6px #00f7ff;
+    font-size: 8px;
+  }
+  .curiosity-bar {
+    width: 60px; height: 8px;
+    background: #1a0040; border: 1px solid #bf00ff;
+    position: relative; overflow: hidden;
+  }
+  .curiosity-fill {
+    height: 100%; background: linear-gradient(90deg, #ff2d9b, #00f7ff);
+    transition: width 0.5s ease;
+    box-shadow: 0 0 6px #ff2d9b;
+  }
+  .score-bar {
+    width: 80px; height: 8px;
+    background: #1a0040; border: 1px solid #00f7ff;
+    position: relative; overflow: hidden;
+  }
+  .score-fill {
+    height: 100%; background: linear-gradient(90deg, #bf00ff, #00f7ff);
+    transition: width 0.8s ease;
+    box-shadow: 0 0 6px #bf00ff;
+  }
+
+  /* ── Right: Panels ── */
+  #right-col {
+    flex: 1; display: flex; flex-direction: column; gap: 6px;
+    min-width: 280px;
+  }
+
+  /* ── Tab system ── */
+  #tabs {
+    display: flex; border-bottom: 2px solid #ff2d9b;
+    background: #0a0020; flex-wrap: wrap;
+  }
+  .tab-btn {
+    background: transparent; border: none; color: #00f7ff;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 7px; padding: 7px 10px; cursor: pointer;
+    text-shadow: 0 0 6px #00f7ff; letter-spacing: 1px;
+    transition: all 0.15s;
+  }
+  .tab-btn:hover, .tab-btn.active {
+    color: #ff2d9b; background: #1a0030;
+    text-shadow: 0 0 10px #ff2d9b;
+    border-bottom: 2px solid #ff2d9b;
+  }
+
+  .tab-panel { display: none; flex: 1; flex-direction: column; overflow: hidden; }
+  .tab-panel.active { display: flex; }
+
+  /* ── Chat Panel ── */
+  #chat-messages {
+    flex: 1; overflow-y: auto; padding: 8px;
+    background: #08001a; border: 1px solid #00f7ff44;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 14px; line-height: 1.5;
+  }
+  .msg { margin: 6px 0; padding: 8px 12px; border-radius: 12px; max-width: 90%; word-wrap: break-word; }
+  .msg.user {
+    background: #003a47; color: #d0ffff;
+    border-radius: 12px 12px 0 12px;
+    margin-left: auto; text-align: right;
+  }
+  .msg.bot {
+    background: #1a0030; color: #ffccee;
+    border-radius: 12px 12px 12px 0;
+  }
+  .msg.system {
+    background: transparent; color: #bf00ff88;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 7px; text-align: center;
+    padding: 4px;
+  }
+  #chat-input-row { display: flex; gap: 4px; padding: 6px 0; }
+  #chat-input {
+    flex: 1; background: #0a001f; border: 1px solid #bf00ff;
+    color: #ff99ee; padding: 8px; font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    outline: none;
+  }
+  #chat-input:focus { border-color: #00f7ff; box-shadow: 0 0 8px #00f7ff88; }
+
+  /* ── Model Selector ── */
+  #model-selector {
+    display: flex; align-items: center; gap: 8px;
+  }
+  #model-selector label {
+    font-size: 7px; color: #00f7ff;
+    text-shadow: 0 0 6px #00f7ff; letter-spacing: 1px;
+  }
+  #model-select {
+    background: #0a001f; border: 1px solid #bf00ff;
+    color: #ff99ee; padding: 4px 8px; font-size: 10px;
+    font-family: 'Press Start 2P', monospace;
+    outline: none; cursor: pointer;
+    max-width: 220px;
+  }
+  #model-select:focus { border-color: #00f7ff; box-shadow: 0 0 8px #00f7ff88; }
+
+  /* ── File Upload ── */
+  #file-upload-btn {
+    display: flex; align-items: center; justify-content: center;
+    padding: 6px 10px !important; font-size: 14px !important;
+    cursor: pointer; min-width: 36px;
+  }
+  #file-preview {
+    padding: 4px 8px; background: #0a001f;
+    border: 1px solid #bf00ff44; font-size: 11px;
+    color: #ff99ee; max-height: 60px; overflow-y: auto;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
+  #file-preview .fp-item {
+    display: flex; align-items: center; gap: 6px; padding: 2px 0;
+  }
+  #file-preview .fp-remove {
+    color: #ff2d9b; cursor: pointer; font-size: 10px;
+  }
+  .btn {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 7px; padding: 8px 14px; cursor: pointer;
+    border: 2px solid; letter-spacing: 1px;
+    text-transform: uppercase; transition: all 0.1s;
+  }
+  .btn-primary {
+    background: #ff2d9b; color: #000; border-color: #ff99cc;
+    box-shadow: 0 0 10px #ff2d9b, 3px 3px 0 #000;
+  }
+  .btn-primary:hover { background: #ff66bb; transform: translate(-1px,-1px); }
+  .btn-secondary {
+    background: #001830; color: #00f7ff; border-color: #00f7ff;
+    box-shadow: 0 0 8px #00f7ff55, 3px 3px 0 #000;
+  }
+  .btn-secondary:hover { background: #002840; }
+
+  /* ── Log Panel ── */
+  #log-content {
+    flex: 1; overflow-y: auto; padding: 8px;
+    background: #03000a; border: 1px solid #00f7ff44;
+    font-size: 7px; color: #00f7ff; line-height: 1.8;
+    white-space: pre-wrap; word-break: break-word;
+  }
+
+  /* ── Library Panel ── */
+  #library-list {
+    max-height: 140px; overflow-y: auto; padding: 4px;
+    background: #08001a; border: 1px solid #bf00ff44;
+    margin-bottom: 6px;
+  }
+  .lib-item {
+    font-size: 7px; color: #00f7ff; padding: 3px 6px;
+    cursor: pointer; transition: background 0.1s;
+    text-shadow: 0 0 4px #00f7ff;
+  }
+  .lib-item:hover { background: #1a0040; color: #ff2d9b; }
+  #library-preview {
+    flex: 1; overflow-y: auto; padding: 8px;
+    background: #08001a; border: 1px solid #00f7ff22;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 13px; color: #cc99ff; line-height: 1.6;
+    white-space: pre-wrap;
+  }
+
+  /* ── Journal Panel ── */
+  #journal-content {
+    flex: 1; overflow-y: auto; padding: 8px;
+    background: #08001a; border: 1px solid #bf00ff44;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 13px; color: #ffccee; line-height: 1.6;
+    white-space: pre-wrap;
+  }
+
+  /* ── Graph Panel ── */
+  #panel-graph { position: relative; }
+  #graph-canvas {
+    flex: 1; display: block; background: #03000a; border: 1px solid #bf00ff44;
+  }
+  #graph-info {
+    font-size: 7px; color: #00f7ff; padding: 4px 8px; flex-shrink: 0;
+    background: #08001a; border: 1px solid #00f7ff22;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
+
+  /* ── Achievements Panel ── */
+  #achievements-list {
+    flex: 1; overflow-y: auto; padding: 8px;
+    background: #08001a; border: 1px solid #bf00ff44;
+  }
+  .ach-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px; margin: 4px 0;
+    border: 1px solid #bf00ff33;
+    background: #0a0020;
+    transition: background 0.2s;
+  }
+  .ach-item.unlocked {
+    border-color: #00f7ff; background: #001830;
+    box-shadow: 0 0 8px #00f7ff33;
+  }
+  .ach-icon {
+    font-size: 20px; width: 32px; text-align: center;
+  }
+  .ach-info { flex: 1; }
+  .ach-name {
+    font-size: 8px; color: #ff2d9b;
+    text-shadow: 0 0 6px #ff2d9b;
+  }
+  .ach-item.unlocked .ach-name { color: #00f7ff; text-shadow: 0 0 6px #00f7ff; }
+  .ach-desc {
+    font-size: 7px; color: #ff99ee88;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin-top: 2px;
+  }
+  .ach-item.unlocked .ach-desc { color: #ff99ee; }
+  .ach-locked { font-size: 7px; color: #bf00ff44; }
+
+  /* ── Chains Panel ── */
+  #chains-content {
+    flex: 1; overflow-y: auto; padding: 8px;
+    background: #08001a; border: 1px solid #bf00ff44;
+  }
+  .chain-item {
+    padding: 8px; margin: 4px 0;
+    border: 1px solid #bf00ff33;
+    background: #0a0020;
+  }
+  .chain-item.completed {
+    border-color: #00f7ff;
+    background: #001830;
+  }
+  .chain-root {
+    font-size: 8px; color: #ff2d9b;
+    text-shadow: 0 0 6px #ff2d9b;
+  }
+  .chain-steps {
+    font-size: 7px; color: #cc99ff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin-top: 4px; line-height: 1.6;
+  }
+  .chain-step { color: #bf00ff88; }
+  .chain-step.done { color: #00f7ff; text-shadow: 0 0 4px #00f7ff; }
+  .chain-step.active { color: #ff2d9b; text-shadow: 0 0 4px #ff2d9b; }
+
+  /* ── Help Panel ── */
+  #help-content {
+    flex: 1; overflow-y: auto; padding: 12px 16px;
+    background: #08001a; border: 1px solid #bf00ff44;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.7;
+  }
+  .help-section {
+    margin: 0 0 14px; padding: 10px 12px;
+    background: #0a0020; border: 1px solid #bf00ff22;
+    border-radius: 4px;
+  }
+  .help-section h3 {
+    font-size: 10px; color: #00f7ff; margin: 0 0 6px;
+    font-family: 'Press Start 2P', monospace;
+    text-shadow: 0 0 6px #00f7ff;
+    letter-spacing: 1px;
+  }
+  .help-section p, .help-section li {
+    font-size: 12px; color: #cc99ff;
+    margin: 0; line-height: 1.8;
+  }
+  .help-section ul { padding-left: 18px; }
+  .help-section li { margin: 3px 0; }
+  .help-section strong { color: #ff66cc; }
+  .help-section em { color: #80ffff; font-style: italic; }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #05000f; }
+  ::-webkit-scrollbar-thumb { background: #ff2d9b; box-shadow: 0 0 6px #ff2d9b; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+  <div id="header-left">
+    <canvas id="logo-canvas" width="48" height="48"></canvas>
+    <div>
+      <h1>DreamLab OctoBot</h1>
+      <div class="subtitle">KNOWLEDGE CREATURE GAME</div>
+    </div>
+  </div>
+  <div id="model-selector">
+    <label for="model-select">🧠 MODEL</label>
+    <select id="model-select"><option>loading…</option></select>
+  </div>
+  <div id="score-display">
+    <div>⭐ <span id="score-value">0</span></div>
+    <div id="level-badge">LVL <span id="level-num">1</span> — <span class="level-name" id="level-name">Small Study</span></div>
+  </div>
+</div>
+
+<!-- Main Layout -->
+<div id="main">
+
+  <!-- Left: Game Canvas + Stats -->
+  <div id="canvas-col">
+    <div id="canvas-wrap">
+      <canvas id="game-canvas" width="480" height="320"></canvas>
+      <div id="scanline"></div>
+    </div>
+    <div id="status-bar">INITIALISING DREAM LIBRARY…</div>
+    <div id="stats-bar">
+      <div class="stat">⭐ SCORE: <span class="stat-val" id="stat-score">0</span></div>
+      <div class="stat">📚 LIBRARY: <span class="stat-val" id="stat-library">0</span></div>
+      <div class="stat">🧠 CURIOSITY:
+        <div class="curiosity-bar"><div class="curiosity-fill" id="curiosity-fill" style="width:50%"></div></div>
+        <span class="stat-val" id="stat-curiosity">50</span>
+      </div>
+      <div class="stat">🔬 RESEARCH: <span class="stat-val" id="stat-research">0</span></div>
+      <div class="stat">💡:
+        <span class="stat-val" id="stat-discoveries">0</span>
+      </div>
+      <div class="stat">⛓️:
+        <span class="stat-val" id="stat-chains">0</span>
+      </div>
+    </div>
+    <div id="stats-bar" style="border-top:none;padding-top:2px;">
+      <div class="stat">LEVEL:
+        <div class="score-bar"><div class="score-fill" id="level-fill" style="width:0%"></div></div>
+        <span class="stat-val" id="stat-level-name">Small Study</span>
+      </div>
+      <div class="stat">🔗 REFS: <span class="stat-val" id="stat-refs">0</span></div>
+      <div class="stat">💬: <span class="stat-val" id="stat-comments">0</span></div>
+      <div class="stat">🔄: <span class="stat-val" id="stat-cycles">0</span></div>
+    </div>
+    <div style="display:flex;gap:4px;padding:2px 0;">
+      <button class="btn btn-secondary" onclick="runCycle()">▶ RUN CYCLE</button>
+      <button class="btn btn-secondary" onclick="refreshAll()">🔄 REFRESH</button>
+    </div>
+  </div>
+
+  <!-- Right: Tabbed Panels -->
+  <div id="right-col">
+    <div id="tabs">
+      <button class="tab-btn active" data-tab="chat">💬 CHAT</button>
+      <button class="tab-btn" data-tab="log">📋 LOG</button>
+      <button class="tab-btn" data-tab="library">📚 LIBRARY</button>
+      <button class="tab-btn" data-tab="journal">📖 JOURNAL</button>
+      <button class="tab-btn" data-tab="graph">🕸️ GRAPH</button>
+      <button class="tab-btn" data-tab="achievements">🏅 BADGES</button>
+      <button class="tab-btn" data-tab="chains">⛓️ CHAINS</button>
+      <button class="tab-btn" data-tab="help">❓ HELP</button>
+    </div>
+
+    <!-- Chat -->
+    <div class="tab-panel active" id="panel-chat">
+      <div id="chat-messages">
+        <div class="msg system">🐙 OctoBot is awake and ready to chat!</div>
+      </div>
+      <div id="file-preview" style="display:none"></div>
+      <div id="chat-input-row">
+        <input id="chat-input" type="text" placeholder="Message OctoBot…" autocomplete="off">
+        <label id="file-upload-btn" class="btn btn-secondary" title="Upload file (.pdf, .md, .txt)">
+          📎
+          <input type="file" id="file-upload" accept=".pdf,.md,.txt,.csv,.json" style="display:none" multiple>
+        </label>
+        <button class="btn btn-primary" onclick="sendChat()">SEND</button>
+      </div>
+    </div>
+
+    <!-- Log -->
+    <div class="tab-panel" id="panel-log">
+      <div id="log-content">Waiting for activity…</div>
+    </div>
+
+    <!-- Library -->
+    <div class="tab-panel" id="panel-library">
+      <div id="library-list">(loading…)</div>
+      <div id="library-preview">Select a file from the list above to preview it.</div>
+    </div>
+
+    <!-- Journal -->
+    <div class="tab-panel" id="panel-journal">
+      <div id="journal-content">(loading…)</div>
+    </div>
+
+    <!-- Knowledge Graph -->
+    <div class="tab-panel" id="panel-graph">
+      <div id="graph-info">Nodes: 0 | Edges: 0</div>
+      <canvas id="graph-canvas" width="600" height="400" style="cursor:grab;"></canvas>
+      <div id="graph-tooltip" style="display:none;position:absolute;background:#1a0033ee;border:1px solid #bf00ff;color:#ff99ee;padding:6px 10px;font-size:10px;font-family:'Press Start 2P',monospace;pointer-events:none;z-index:100;max-width:260px;border-radius:4px;box-shadow:0 0 12px #bf00ff44;"></div>
+      <div id="node-detail" style="display:none;position:absolute;bottom:8px;left:8px;right:8px;background:#0d001aee;border:1px solid #00f7ff;color:#cceeff;padding:8px 10px;font-size:9px;font-family:'Press Start 2P',monospace;z-index:99;border-radius:4px;max-height:120px;overflow-y:auto;">
+        <span id="node-detail-close" style="float:right;cursor:pointer;color:#ff66cc;">[x]</span>
+        <div id="node-detail-content"></div>
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="tab-panel" id="panel-achievements">
+      <div id="achievements-list">(loading…)</div>
+    </div>
+
+    <!-- Research Chains -->
+    <div class="tab-panel" id="panel-chains">
+      <div id="chains-content">(loading…)</div>
+    </div>
+
+    <!-- Help / Instructions -->
+    <div class="tab-panel" id="panel-help">
+      <div id="help-content">
+        <h2 style="color:#ff2d9b;font-size:12px;margin:0 0 12px;text-shadow:0 0 8px #ff2d9b;">🐙 DreamLab OctoBot</h2>
+        <p style="color:#cc99ff;font-size:12px;line-height:1.8;font-family:'Segoe UI',Tahoma,sans-serif;margin:0 0 16px;">
+          You are the caretaker of <strong style="color:#ff66cc;">OctoBot</strong>, a curious knowledge-hungry octopus that lives inside a digital library. Your goal: <em>help it grow its mind</em>.
+        </p>
+
+        <div class="help-section">
+          <h3>🎯 Goal</h3>
+          <p>Grow OctoBot’s knowledge library, unlock achievements, and watch it evolve from a <em>Small Study</em> into a <em>Great Archive</em>. The more it learns, the bigger its world becomes.</p>
+        </div>
+
+        <div class="help-section">
+          <h3>💬 Chat</h3>
+          <p>Talk to OctoBot! Ask it questions, give it topics to research, or just chat. You can also <strong>upload files</strong> (PDF, Markdown, TXT) using the 📎 button — OctoBot will read and discuss them.</p>
+        </div>
+
+        <div class="help-section">
+          <h3>🔬 Research</h3>
+          <p>OctoBot autonomously researches topics that interest it. Each piece of research becomes an article in the <strong>Library</strong>. Watch it work in the game canvas — it moves to shelves to read and desks to write!</p>
+        </div>
+
+        <div class="help-section">
+          <h3>⭐ Scoring</h3>
+          <p><strong>Knowledge Score</strong> goes up as OctoBot writes articles, discovers cross-references, and completes research chains. Higher scores unlock bigger library rooms (levels 1–5).</p>
+        </div>
+
+        <div class="help-section">
+          <h3>📚 Library</h3>
+          <p>Every research article OctoBot writes appears here. Click any file to read it. This is OctoBot’s growing brain!</p>
+        </div>
+
+        <div class="help-section">
+          <h3>📖 Journal</h3>
+          <p>OctoBot’s personal diary. It records thoughts, discoveries, and reflections about its research.</p>
+        </div>
+
+        <div class="help-section">
+          <h3>🕸️ Knowledge Graph</h3>
+          <p>A visual map of concepts and how they connect. Zoom with scroll wheel, drag to pan, click a node to see its connections. Bigger nodes = more connections.</p>
+        </div>
+
+        <div class="help-section">
+          <h3>🏅 Badges &amp; ⛓️ Chains</h3>
+          <p><strong>Badges</strong> are achievements unlocked by milestones (first article, 10 articles, cross-references, etc.). <strong>Chains</strong> are multi-step research sequences — OctoBot follows one topic deeper and deeper.</p>
+        </div>
+
+        <div class="help-section">
+          <h3>🧠 Model Selector</h3>
+          <p>Use the dropdown at the top to switch between locally installed Ollama models. Different models give OctoBot different personalities and capabilities.</p>
+        </div>
+
+        <div class="help-section">
+          <h3>💡 Tips</h3>
+          <ul style="margin:6px 0 0 16px;">
+            <li>Suggest specific topics in chat to steer OctoBot’s research</li>
+            <li>Upload papers or notes for OctoBot to analyse</li>
+            <li>Check the Log tab to see what OctoBot is doing right now</li>
+            <li>OctoBot talks to you even when you’re not chatting — watch the chat for idle thoughts!</li>
+            <li>The curiosity bar shows how eager OctoBot is to learn more</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// =====================================================================
+// TAB SWITCHING
+// =====================================================================
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+    // Load data for newly opened tab
+    const tab = btn.dataset.tab;
+    if (tab === 'graph') { loadGraph(); gStartAnimLoop(); }
+    else gStopAnimLoop();
+    if (tab === 'achievements') loadAchievements();
+    if (tab === 'chains') loadChains();
+  });
+});
+
+// =====================================================================
+// API HELPERS
+// =====================================================================
+async function fetchJSON(url, opts) {
+  try {
+    const r = await fetch(url, opts);
+    return await r.json();
+  } catch(e) { console.error('API error:', e); return null; }
+}
+
+// =====================================================================
+// CHAT
+// =====================================================================
+const chatBox = document.getElementById('chat-messages');
+const chatInput = document.getElementById('chat-input');
+
+function addMsg(role, text) {
+  const d = document.createElement('div');
+  d.className = 'msg ' + role;
+  d.textContent = text;
+  chatBox.appendChild(d);
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+async function sendChat() {
+  const msg = chatInput.value.trim();
+  if (!msg && !pendingFiles.length) return;
+  chatInput.value = '';
+
+  // Build message with any attached file context
+  let fullMsg = msg;
+  if (pendingFiles.length) {
+    const attachments = pendingFiles.map(f =>
+      `[Attached file: ${f.name}]\n${f.text.slice(0, 4000)}`
+    ).join('\n\n');
+    fullMsg = (msg ? msg + '\n\n' : 'Please review these files:\n\n') + attachments;
+    pendingFiles = [];
+    renderFilePreview();
+  }
+
+  addMsg('user', msg || '📎 (sent attached files)');
+  addMsg('system', '🐙 OctoBot is thinking…');
+
+  const data = await fetchJSON('/api/chat', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({message: fullMsg})
+  });
+
+  chatBox.lastChild.remove();
+
+  if (data && data.response) {
+    addMsg('bot', data.response);
+  } else {
+    addMsg('system', '❌ Failed to get response');
+  }
+}
+
+chatInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter') sendChat();
+});
+
+// ── File upload handling ──
+let pendingFiles = [];  // {name, text} objects
+const fileUpload = document.getElementById('file-upload');
+const filePreview = document.getElementById('file-preview');
+
+fileUpload.addEventListener('change', async () => {
+  for (const file of fileUpload.files) {
+    const formData = new FormData();
+    formData.append('file', file);
+    addMsg('system', `📎 Uploading ${file.name}…`);
+    try {
+      const resp = await fetch('/api/upload', {method:'POST', body: formData});
+      if (!resp.ok) {
+        const txt = await resp.text().catch(()=>'');
+        addMsg('system', `❌ Upload error ${resp.status}: ${txt.slice(0,120)}`); continue;
+      }
+      const data = await resp.json();
+      if (data.error) { addMsg('system', '❌ ' + data.error); continue; }
+      pendingFiles.push({name: data.filename, text: data.text});
+      renderFilePreview();
+      addMsg('system', `✅ ${data.filename} loaded (${data.chars} chars)`);
+    } catch(e) { addMsg('system', '❌ Upload error: ' + (e.message||e)); }
+  }
+  fileUpload.value = '';
+});
+
+function renderFilePreview() {
+  if (!pendingFiles.length) { filePreview.style.display = 'none'; return; }
+  filePreview.style.display = 'block';
+  filePreview.innerHTML = pendingFiles.map((f,i) =>
+    `<div class="fp-item"><span class="fp-remove" onclick="removePendingFile(${i})">✕</span> 📄 ${f.name}</div>`
+  ).join('');
+}
+function removePendingFile(i) { pendingFiles.splice(i,1); renderFilePreview(); }
+
+// ── Model selector ──
+const modelSelect = document.getElementById('model-select');
+async function loadModels() {
+  const data = await fetchJSON('/api/models');
+  if (!data || !data.models || !data.models.length) {
+    // Retry once after 3 seconds (server may still be starting)
+    setTimeout(loadModels, 3000);
+    return;
+  }
+  modelSelect.innerHTML = '';
+  data.models.forEach(m => {
+    const opt = document.createElement('option');
+    opt.value = m; opt.textContent = m;
+    if (m === data.current) opt.selected = true;
+    modelSelect.appendChild(opt);
+  });
+  // Ensure current model is reflected even if not in list
+  if (data.current && !data.models.includes(data.current)) {
+    const opt = document.createElement('option');
+    opt.value = data.current; opt.textContent = data.current;
+    opt.selected = true;
+    modelSelect.prepend(opt);
+  }
+}
+modelSelect.addEventListener('change', async () => {
+  const model = modelSelect.value;
+  addMsg('system', `🧠 Switching model to ${model}…`);
+  const data = await fetchJSON('/api/models/select', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({model})
+  });
+  if (data && data.ok) addMsg('system', `✅ Now using ${model}`);
+  else addMsg('system', '❌ Failed to switch model');
+});
+loadModels();
+
+// =====================================================================
+// POLLING — State, Log, Stats, Score
+// =====================================================================
+let currentAction = 'idle';
+
+async function pollState() {
+  const data = await fetchJSON('/api/state');
+  if (!data) return;
+
+  currentAction = data.action || 'idle';
+
+  document.getElementById('status-bar').textContent = data.status || 'IDLE';
+
+  const s = data.stats || {};
+  const score = s.knowledge_score || 0;
+  const curiosity = s.curiosity_level || 50;
+
+  // Header score
+  document.getElementById('score-value').textContent = score;
+
+  // Level info
+  const lvl = data.level || {};
+  document.getElementById('level-num').textContent = lvl.level || 1;
+  document.getElementById('level-name').textContent = lvl.name || 'Small Study';
+
+  // Stats bar
+  document.getElementById('stat-score').textContent = score;
+  document.getElementById('stat-library').textContent = data.library_count || s.knowledge_count || 0;
+  document.getElementById('stat-curiosity').textContent = curiosity;
+  document.getElementById('stat-research').textContent = s.research_count || 0;
+  document.getElementById('stat-discoveries').textContent = s.discoveries || 0;
+  document.getElementById('stat-chains').textContent = s.chains_completed || 0;
+  document.getElementById('stat-refs').textContent = s.cross_refs || 0;
+  document.getElementById('stat-comments').textContent = s.comments_read || 0;
+  document.getElementById('stat-cycles').textContent = s.total_cycles || 0;
+
+  document.getElementById('curiosity-fill').style.width = curiosity + '%';
+  document.getElementById('stat-level-name').textContent = lvl.name || 'Small Study';
+
+  // Level progress bar
+  const nextThresh = lvl.next_threshold;
+  const currThresh = lvl.threshold || 0;
+  if (nextThresh && nextThresh > currThresh) {
+    const pct = Math.min(100, ((score - currThresh) / (nextThresh - currThresh)) * 100);
+    document.getElementById('level-fill').style.width = pct + '%';
+  } else {
+    document.getElementById('level-fill').style.width = '100%';
+  }
+
+  // Log panel
+  if (data.log && data.log.length) {
+    document.getElementById('log-content').textContent = data.log.join('\n');
+  }
+}
+
+setInterval(pollState, 2500);
+
+// =====================================================================
+// AUTO-MESSAGES — Autonomous activity feed in chat
+// =====================================================================
+let autoMsgIndex = 0;
+
+async function pollAutoMessages() {
+  const data = await fetchJSON('/api/auto-messages?since=' + autoMsgIndex);
+  if (!data || !data.messages || data.messages.length === 0) return;
+  autoMsgIndex = data.next_index;
+  for (const msg of data.messages) {
+    addMsg('bot', msg.content || '🐙 *tentacle wiggle*');
+  }
+}
+
+setInterval(pollAutoMessages, 4000);
+
+// =====================================================================
+// LIBRARY
+// =====================================================================
+async function loadLibrary() {
+  const data = await fetchJSON('/api/library');
+  if (!data) return;
+  const list = document.getElementById('library-list');
+  if (!data.files || data.files.length === 0) {
+    list.innerHTML = '<div style="color:#bf00ff88;font-size:7px;padding:4px;">(Library is empty)</div>';
+    return;
+  }
+  list.innerHTML = data.files.map(f =>
+    `<div class="lib-item" onclick="previewFile('${f.replace(/'/g,"\\'")}')">${f.replace('library/','')}</div>`
+  ).join('');
+}
+
+async function previewFile(filename) {
+  const safe = filename.startsWith('library/') ? filename.slice(8) : filename;
+  const data = await fetchJSON('/api/library/' + encodeURIComponent(safe));
+  if (data && data.content) {
+    document.getElementById('library-preview').textContent = data.content;
+  }
+}
+
+// =====================================================================
+// JOURNAL
+// =====================================================================
+async function loadJournal() {
+  const data = await fetchJSON('/api/journal');
+  if (data && data.content) {
+    document.getElementById('journal-content').textContent = data.content;
+  }
+}
+
+// =====================================================================
+// KNOWLEDGE GRAPH — Force-directed · Fluid · Interactive
+// =====================================================================
+let graphData = {nodes:[], edges:[], total_nodes:0, total_edges:0};
+let gZoom = 0.55, gPanX = 0, gPanY = 0;
+let gDragging = false, gDragStart={x:0,y:0}, gPanStart={x:0,y:0};
+let gSelected = null;
+let gHoverNode = null;
+let gNodePos = {};        // {x,y,vx,vy,r,baseR}
+let gDegree  = {};
+let gNeighbors = {};      // node -> Set of neighbors
+let gGraphBuilt = false;
+let gSettleIter = 0;
+const G_SETTLE = 120;     // physics iterations before settling to idle drift
+let gScaleCur = {};       // per-node current displayed scale (lerped)
+let gAnimRAF = null;
+let gAnimRunning = false;
+
+function gW2S(wx,wy,gc){ return {x:(wx+gPanX)*gZoom+gc.width/2, y:(wy+gPanY)*gZoom+gc.height/2}; }
+function gS2W(sx,sy,gc){ return {x:(sx-gc.width/2)/gZoom-gPanX, y:(sy-gc.height/2)/gZoom-gPanY}; }
+
+function gHitTest(sx,sy,gc){
+  let best=null, bestD=Infinity;
+  for(const [n,p] of Object.entries(gNodePos)){
+    const sp=gW2S(p.x,p.y,gc);
+    const sr=Math.max(p.r*(gScaleCur[n]||1)*gZoom, 5);
+    const d=(sx-sp.x)**2+(sy-sp.y)**2;
+    if(d<=sr*sr*2.5 && d<bestD){best=n;bestD=d;}
+  }
+  return best;
+}
+
+function gBuildLayout(nodes, edges, gc){
+  gDegree={}; gNeighbors={};
+  nodes.forEach(n=>{ gDegree[n]=0; gNeighbors[n]=new Set(); });
+  edges.forEach(e=>{
+    gDegree[e.from]=(gDegree[e.from]||0)+1; gDegree[e.to]=(gDegree[e.to]||0)+1;
+    if(gNeighbors[e.from]) gNeighbors[e.from].add(e.to);
+    if(gNeighbors[e.to])   gNeighbors[e.to].add(e.from);
+  });
+  const maxDeg=Math.max(1,...Object.values(gDegree));
+  const sorted=[...nodes].sort((a,b)=>(gDegree[b]||0)-(gDegree[a]||0));
+  const N=sorted.length;
+  // Golden-angle spiral — guarantees even spread with no clumping
+  const PHI=Math.PI*(3-Math.sqrt(5));
+  const spreadR=Math.sqrt(N)*34+100;
+  gNodePos={}; gScaleCur={};
+  sorted.forEach((n,i)=>{
+    const r = i===0 ? 0 : spreadR*Math.sqrt(i/N);
+    const a = i*PHI;
+    const br=2.5+7*((gDegree[n]||0)/maxDeg);
+    gNodePos[n]={x:r*Math.cos(a)+(Math.random()-0.5)*8, y:r*Math.sin(a)+(Math.random()-0.5)*8, vx:0,vy:0, r:br, baseR:br};
+    gScaleCur[n]=1.0;
+  });
+  gGraphBuilt=true; gSettleIter=0;
+}
+
+function gForceStep(nodes, edges){
+  const KR=1200, KS=0.03, KC=0.0015, DAMP=0.82, MIN_D=20, IDEAL=80;
+  nodes.forEach(n=>{ const p=gNodePos[n]; if(p){p.fx=0;p.fy=0;} });
+  // Repulsion — skip pairs > 400 world-units apart for perf
+  for(let i=0;i<nodes.length;i++){
+    const pi=gNodePos[nodes[i]]; if(!pi) continue;
+    for(let j=i+1;j<nodes.length;j++){
+      const pj=gNodePos[nodes[j]]; if(!pj) continue;
+      let dx=pi.x-pj.x, dy=pi.y-pj.y;
+      let d=Math.sqrt(dx*dx+dy*dy)||0.01;
+      if(d>420) continue;
+      if(d<MIN_D){dx=(Math.random()-0.5)*MIN_D;dy=(Math.random()-0.5)*MIN_D;d=MIN_D;}
+      const f=KR/(d*d);
+      pi.fx+=(dx/d)*f; pi.fy+=(dy/d)*f;
+      pj.fx-=(dx/d)*f; pj.fy-=(dy/d)*f;
+    }
+  }
+  // Edge spring attraction
+  const edgeCap=Math.min(edges.length,2000);
+  for(let i=0;i<edgeCap;i++){
+    const e=edges[i], a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
+    const dx=b.x-a.x, dy=b.y-a.y, d=Math.sqrt(dx*dx+dy*dy)||0.01;
+    const ideal=IDEAL+(a.r+b.r)*3;
+    const f=KS*(d-ideal);
+    a.fx+=(dx/d)*f; a.fy+=(dy/d)*f;
+    b.fx-=(dx/d)*f; b.fy-=(dy/d)*f;
+  }
+  // Center gravity
+  nodes.forEach(n=>{ const p=gNodePos[n]; if(!p) return; p.fx-=p.x*KC; p.fy-=p.y*KC; });
+  // Integrate
+  nodes.forEach(n=>{
+    const p=gNodePos[n]; if(!p) return;
+    p.vx=(p.vx+p.fx)*DAMP; p.vy=(p.vy+p.fy)*DAMP;
+    p.x+=p.vx; p.y+=p.vy;
+  });
+}
+
+function drawGraphFrame(){
+  const gc=document.getElementById('graph-canvas'); if(!gc||!gc.parentElement) return;
+  const pw=gc.parentElement.clientWidth||600;
+  const ph=Math.max(200,(gc.parentElement.clientHeight||480)-36);
+  if(gc.width!==pw||gc.height!==ph){gc.width=pw;gc.height=ph;}
+  const gctx=gc.getContext('2d');
+  gctx.clearRect(0,0,gc.width,gc.height);
+  const nodes=graphData.nodes||[], edges=graphData.edges||[];
+  if(!nodes.length){
+    gctx.fillStyle='#bf00ff44'; gctx.font='11px "Press Start 2P"'; gctx.textAlign='center';
+    gctx.fillText('No concepts yet \u2014 feed OctoBot knowledge!',gc.width/2,gc.height/2); return;
+  }
+  if(!gGraphBuilt||Object.keys(gNodePos).length!==nodes.length) gBuildLayout(nodes,edges,gc);
+
+  // Physics settling (rapid at first, then slows)
+  if(gSettleIter<G_SETTLE){
+    const steps=gSettleIter<30?4:gSettleIter<60?2:1;
+    for(let s=0;s<steps;s++) gForceStep(nodes,edges);
+    gSettleIter+=steps;
+  }
+
+  // Per-node hover scale interpolation
+  const t=performance.now()*0.001;
+  const hovNeigh=gHoverNode?(gNeighbors[gHoverNode]||new Set()):new Set();
+  nodes.forEach(n=>{
+    const isH=n===gHoverNode, isN=hovNeigh.has(n);
+    const target=isH?1.5:isN?1.2:1.0;
+    const spd=isH?0.20:0.09;
+    gScaleCur[n]=(gScaleCur[n]||1)+(target-(gScaleCur[n]||1))*spd;
+  });
+
+  const selN=new Set();
+  if(gSelected) edges.forEach(e=>{ if(e.from===gSelected) selN.add(e.to); if(e.to===gSelected) selN.add(e.from); });
+  const maxDeg=Math.max(1,...Object.values(gDegree));
+
+  // Draw edges
+  const ecap=Math.min(edges.length,4000);
+  for(let i=0;i<ecap;i++){
+    const e=edges[i], a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
+    const sa=gW2S(a.x,a.y,gc), sb=gW2S(b.x,b.y,gc);
+    if(Math.max(sa.x,sb.x)<-20||Math.min(sa.x,sb.x)>gc.width+20||
+       Math.max(sa.y,sb.y)<-20||Math.min(sa.y,sb.y)>gc.height+20) continue;
+    const hiS=gSelected&&(e.from===gSelected||e.to===gSelected);
+    const hiH=gHoverNode&&(e.from===gHoverNode||e.to===gHoverNode);
+    gctx.globalAlpha=hiS?0.9:hiH?0.55:0.10;
+    gctx.strokeStyle=hiS?'#ff66cc':hiH?'#cc55ff':'#bf00ff';
+    gctx.lineWidth=hiS?1.8:hiH?1.1:0.5;
+    gctx.beginPath(); gctx.moveTo(sa.x,sa.y); gctx.lineTo(sb.x,sb.y); gctx.stroke();
+  }
+  gctx.globalAlpha=1;
+
+  // Draw nodes
+  nodes.forEach(n=>{
+    const p=gNodePos[n]; if(!p) return;
+    // Subtle idle drift after physics settles
+    const hash=n.charCodeAt(0)*7+(n.charCodeAt(n.length-1)||0)*13;
+    const drift=gSettleIter>=G_SETTLE?1.5:0;
+    const ox=Math.sin(t*0.38+hash*0.09)*drift, oy=Math.cos(t*0.27+hash*0.12)*drift;
+    const sp=gW2S(p.x+ox,p.y+oy,gc);
+    if(sp.x<-80||sp.x>gc.width+80||sp.y<-80||sp.y>gc.height+80) return;
+    const sc=gScaleCur[n]||1.0;
+    const sr=Math.max(p.r*sc*gZoom,2);
+    const isSel=n===gSelected, isNeigh=selN.has(n), isHov=n===gHoverNode;
+    // Glow
+    if(isSel||isNeigh||isHov){
+      const glowR=sr+(isHov?20:12);
+      const g2=gctx.createRadialGradient(sp.x,sp.y,sr*0.2,sp.x,sp.y,glowR);
+      g2.addColorStop(0,(isSel?'#ff2d9b':isHov?'#cc44ff':'#00f7ff')+'70');
+      g2.addColorStop(1,'transparent');
+      gctx.fillStyle=g2; gctx.beginPath(); gctx.arc(sp.x,sp.y,glowR,0,Math.PI*2); gctx.fill();
+    }
+    const d=gDegree[n]||0;
+    gctx.fillStyle=isSel?'#ff2d9b':isHov?'#dd44ff':isNeigh?'#00f7ff':d>maxDeg*0.6?'#ff66cc':d>maxDeg*0.3?'#00ccff':'#7755bb';
+    gctx.beginPath(); gctx.arc(sp.x,sp.y,sr,0,Math.PI*2); gctx.fill();
+    if(gZoom>0.20&&(isHov||isSel||isNeigh||d>maxDeg*0.07||nodes.length<80)){
+      const fs=Math.max(5,Math.min(12,Math.round((isHov?8:7)*gZoom)));
+      gctx.fillStyle=isSel?'#fff':isHov?'#eeddff':'#ff99ee';
+      gctx.font=`${fs}px "Press Start 2P"`; gctx.textAlign='center';
+      const lbl=n.length>26?n.slice(0,24)+'\u2026':n;
+      gctx.fillText(lbl,sp.x,sp.y-sr-3);
+    }
+  });
+  gctx.fillStyle='#00f7ff33'; gctx.font='7px "Press Start 2P"'; gctx.textAlign='right';
+  gctx.fillText(`\u00d7${gZoom.toFixed(2)}  dbl=reset`,gc.width-6,gc.height-4);
+}
+
+// RAF animation loop — only runs while graph tab is visible
+function gStartAnimLoop(){
+  if(gAnimRunning) return;
+  gAnimRunning=true;
+  function loop(){
+    if(!document.getElementById('panel-graph').classList.contains('active')){
+      gAnimRunning=false; return;
+    }
+    drawGraphFrame();
+    gAnimRAF=requestAnimationFrame(loop);
+  }
+  gAnimRAF=requestAnimationFrame(loop);
+}
+function gStopAnimLoop(){
+  gAnimRunning=false;
+  if(gAnimRAF){cancelAnimationFrame(gAnimRAF);gAnimRAF=null;}
+}
+
+let gSetup=false;
+function setupGraphInteraction(){
+  if(gSetup) return; gSetup=true;
+  const gc=document.getElementById('graph-canvas');
+  const tip=document.getElementById('graph-tooltip');
+  const nd =document.getElementById('node-detail');
+  const ndc=document.getElementById('node-detail-content');
+  document.getElementById('node-detail-close').addEventListener('click',()=>{
+    gSelected=null; nd.style.display='none';
+  });
+  function pos(e){const r=gc.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top};}
+  gc.addEventListener('wheel',e=>{
+    e.preventDefault();
+    const p=pos(e),wb=gS2W(p.x,p.y,gc);
+    gZoom=Math.max(0.04,Math.min(30,gZoom*(e.deltaY<0?1.15:1/1.15)));
+    const wa=gS2W(p.x,p.y,gc); gPanX+=wa.x-wb.x; gPanY+=wa.y-wb.y;
+  },{passive:false});
+  gc.addEventListener('mousedown',e=>{
+    const p=pos(e); gDragging=true; gDragStart=p; gPanStart={x:gPanX,y:gPanY};
+    gc.style.cursor='grabbing';
+  });
+  window.addEventListener('mousemove',e=>{
+    if(!document.getElementById('panel-graph').classList.contains('active')) return;
+    const r=gc.getBoundingClientRect(),sx=e.clientX-r.left,sy=e.clientY-r.top;
+    if(gDragging){
+      gPanX=gPanStart.x+(sx-gDragStart.x)/gZoom; gPanY=gPanStart.y+(sy-gDragStart.y)/gZoom;
+      tip.style.display='none';
+    } else if(sx>=0&&sy>=0&&sx<=gc.width&&sy<=gc.height){
+      const h=gHitTest(sx,sy,gc);
+      if(h){
+        gHoverNode=h;
+        tip.textContent=`${h} (${gDegree[h]||0} links)`;
+        tip.style.cssText=`display:block;position:absolute;left:${sx+14}px;top:${Math.max(0,sy-10)}px;background:#1a0033ee;border:1px solid #bf00ff;color:#ff99ee;padding:6px 10px;font-size:10px;font-family:'Segoe UI',sans-serif;pointer-events:none;z-index:100;max-width:260px;border-radius:4px;`;
+        gc.style.cursor='pointer';
+      } else { gHoverNode=null; tip.style.display='none'; gc.style.cursor='grab'; }
+    } else { gHoverNode=null; tip.style.display='none'; }
+  });
+  window.addEventListener('mouseup',e=>{
+    if(!gDragging) return;
+    const r=gc.getBoundingClientRect(),sx=e.clientX-r.left,sy=e.clientY-r.top;
+    const moved=Math.hypot(sx-gDragStart.x,sy-gDragStart.y);
+    gDragging=false; gc.style.cursor='grab';
+    if(moved<5){
+      const clicked=gHitTest(sx,sy,gc);
+      if(clicked){
+        gSelected=gSelected===clicked?null:clicked;
+        if(gSelected){
+          const deg=gDegree[gSelected]||0;
+          const nbrs=[...new Set((graphData.edges||[]).flatMap(e=>
+            e.from===gSelected?[e.to]:e.to===gSelected?[e.from]:[]
+          ))].slice(0,30);
+          ndc.innerHTML=`<strong style="color:#ff66cc">${gSelected}</strong> &mdash; <span style="color:#00f7ff">${deg} connections</span><br><br>`+
+            (nbrs.length?'<em style="color:#bf00ffaa">Connected:</em><br>'+nbrs.map(n=>`<span style="color:#00f7ff;font-size:9px">${n}</span>`).join(' <span style="color:#bf00ff44">&middot;</span> '):'(none in current view)');
+          nd.style.display='block';
+        } else nd.style.display='none';
+      } else { gSelected=null; nd.style.display='none'; }
+    }
+  });
+  gc.addEventListener('dblclick',()=>{
+    gZoom=0.55; gPanX=0; gPanY=0; gSelected=null; nd.style.display='none';
+  });
+}
+
+async function loadGraph(){
+  const data=await fetchJSON('/api/graph?max=500'); if(!data) return;
+  graphData=data; gGraphBuilt=false; gSelected=null; gHoverNode=null;
+  const shown=data.nodes.length, total=data.total_nodes||shown;
+  document.getElementById('graph-info').textContent=
+    `${shown} of ${total} concepts \u00b7 ${data.edges.length} connections \u00b7 scroll=zoom \u00b7 drag=pan \u00b7 click=select \u00b7 dbl=reset`;
+  setupGraphInteraction();
+  gStartAnimLoop();
+}
+
+// =====================================================================
+// ACHIEVEMENTS
+// =====================================================================
+async function loadAchievements() {
+  const data = await fetchJSON('/api/achievements');
+  if (!data) return;
+  const list = document.getElementById('achievements-list');
+  const achs = data.achievements || [];
+  if (achs.length === 0) {
+    list.innerHTML = '<div style="color:#bf00ff88;font-size:7px;padding:4px;">No achievements defined</div>';
+    return;
+  }
+  list.innerHTML = achs.map(a => {
+    const cls = a.unlocked ? 'ach-item unlocked' : 'ach-item';
+    const icon = a.unlocked ? '🏅' : '🔒';
+    const time = a.unlocked_at ? `<div class="ach-desc">Unlocked: ${a.unlocked_at}</div>` : '';
+    return `<div class="${cls}">
+      <div class="ach-icon">${icon}</div>
+      <div class="ach-info">
+        <div class="ach-name">${a.name}</div>
+        <div class="ach-desc">${a.desc}</div>
+        ${time}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// =====================================================================
+// RESEARCH CHAINS
+// =====================================================================
+async function loadChains() {
+  const data = await fetchJSON('/api/chains');
+  if (!data) return;
+  const el = document.getElementById('chains-content');
+  const chains = data.chains || [];
+  if (chains.length === 0) {
+    el.innerHTML = '<div style="color:#bf00ff88;font-size:7px;padding:4px;">No research chains yet — curiosity will trigger them!</div>';
+    return;
+  }
+  el.innerHTML = chains.map(c => {
+    const cls = c.completed ? 'chain-item completed' : 'chain-item';
+    const stepsHtml = c.steps.map((s, i) => {
+      let stepCls = 'chain-step';
+      if (i < c.current_step) stepCls = 'chain-step done';
+      else if (i === c.current_step && !c.completed) stepCls = 'chain-step active';
+      const icon = i < c.current_step ? '✅' : (i === c.current_step && !c.completed ? '▶' : '○');
+      return `<div class="${stepCls}">${icon} ${s}</div>`;
+    }).join('');
+    const status = c.completed ? '✅ COMPLETE' : `Step ${c.current_step + 1}/${c.steps.length}`;
+    return `<div class="${cls}">
+      <div class="chain-root">⛓️ ${c.root} <span style="color:#00f7ff;font-size:6px;">${status}</span></div>
+      <div class="chain-steps">${stepsHtml}</div>
+    </div>`;
+  }).join('');
+}
+
+// =====================================================================
+// MANUAL CYCLE
+// =====================================================================
+async function runCycle() {
+  document.getElementById('status-bar').textContent = '▶ RUNNING MANUAL CYCLE…';
+  const data = await fetchJSON('/api/cycle', {method: 'POST'});
+  if (data && data.result) {
+    document.getElementById('status-bar').textContent = '✅ ' + data.result;
+  }
+  // Refresh all data after manual cycle
+  setTimeout(refreshAll, 1000);
+}
+
+function refreshAll() {
+  pollState();
+  loadLibrary();
+  loadJournal();
+}
+
+// Initial load
+loadLibrary();
+loadJournal();
+pollState();
+loadAchievements();
+loadChains();
+
+// Periodic refresh
+setInterval(loadLibrary, 15000);
+setInterval(loadJournal, 10000);
+
+// =====================================================================
+// PIXEL-ART GAME CANVAS
+// =====================================================================
+const canvas = document.getElementById('game-canvas');
+const ctx = canvas.getContext('2d');
+ctx.imageSmoothingEnabled = false;
+const TILE = 16;
+const COLS = 30;
+const ROWS = 20;
+
+// Tile IDs
+const T = { FLOOR:0, SHELF:1, DESK:2, TABLE:3, WALL:4, RUG:5 };
+const TILE_COLORS = {
+  0:'#0d0830', 1:'#0a0050', 2:'#1a0035',
+  3:'#001830', 4:'#030010', 5:'#200040'
+};
+
+// Library level maps — the room expands with level
+const MAPS = {
+  1: [ // Small Study
+    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,4],
+    [4,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,2,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,2,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+  ],
+  2: [ // Library Room
+    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+    [4,1,1,1,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,1,1,4],
+    [4,1,1,1,0,0,0,2,0,0,4,0,0,0,0,0,0,0,0,0,4,0,0,0,2,0,0,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,2,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,2,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,4],
+    [4,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+  ],
+  3: [ // Large Library
+    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+    [4,1,1,1,1,1,0,0,0,0,4,0,0,0,0,0,4,0,0,0,0,0,4,1,1,1,1,1,1,4],
+    [4,1,1,1,1,1,0,0,2,0,4,0,0,3,3,0,4,0,3,3,0,0,4,1,1,1,1,1,1,4],
+    [4,1,1,1,1,1,0,0,2,0,0,0,0,3,3,0,0,0,3,3,0,0,4,1,1,1,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,1,1,1,0,0,0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,0,1,1,1,0,4],
+    [4,1,1,1,0,0,0,2,2,0,0,0,0,0,5,5,5,5,0,0,0,0,2,2,0,1,1,1,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,1,1,1,1,0,0,0,0,0,3,3,3,0,0,0,0,3,3,3,0,0,0,0,0,1,1,1,1,4],
+    [4,1,1,1,1,0,0,0,0,0,3,3,3,0,0,0,0,3,3,3,0,0,0,0,0,1,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,1,1,1,1,1,0,0,0,0,4,0,0,0,0,0,4,0,0,0,0,0,4,1,1,1,1,1,1,4],
+    [4,1,1,1,1,1,0,0,2,0,4,0,0,3,3,0,4,0,3,3,0,0,4,1,1,1,1,1,1,4],
+    [4,1,1,1,1,1,0,0,2,0,0,0,0,3,3,0,0,0,3,3,0,0,4,1,1,1,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+  ],
+  4: [ // Research Institute
+    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+    [4,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,4],
+    [4,1,1,1,1,1,0,2,2,0,1,1,0,3,3,3,3,0,1,1,0,2,2,0,1,1,1,1,1,4],
+    [4,1,1,1,1,1,0,2,2,0,0,0,0,3,3,3,3,0,0,0,0,2,2,0,1,1,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,1,1,1,0,0,2,0,0,0,0,0,5,5,5,5,5,5,0,0,0,0,0,2,0,0,1,1,1,4],
+    [4,1,1,1,0,0,2,0,0,0,0,0,5,5,5,5,5,5,0,0,0,0,0,2,0,0,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,1,1,1,1,1,0,0,0,3,3,3,3,0,0,0,0,3,3,3,3,0,0,0,1,1,1,1,1,4],
+    [4,1,1,1,1,1,0,0,0,3,3,3,3,0,0,0,0,3,3,3,3,0,0,0,1,1,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,4],
+    [4,1,1,1,1,1,0,2,2,0,1,1,0,3,3,3,3,0,1,1,0,2,2,0,1,1,1,1,1,4],
+    [4,1,1,1,1,1,0,2,2,0,0,0,0,3,3,3,3,0,0,0,0,2,2,0,1,1,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+  ],
+  5: [ // Great Archive
+    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+    [4,1,1,1,1,1,1,0,0,1,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,1,1,1,1,4],
+    [4,1,1,1,1,1,1,0,2,1,1,1,0,3,3,3,3,0,1,1,1,2,0,1,1,1,1,1,1,4],
+    [4,1,1,1,1,1,1,0,2,0,0,0,0,3,3,3,3,0,0,0,0,2,0,1,1,1,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,1,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,1,4],
+    [4,1,0,2,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,2,0,1,4],
+    [4,1,0,2,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,2,0,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,1,1,1,1,1,1,0,0,3,3,3,3,3,0,0,3,3,3,3,3,0,0,1,1,1,1,1,1,4],
+    [4,1,1,1,1,1,1,0,0,3,3,3,3,3,0,0,3,3,3,3,3,0,0,1,1,1,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,1,1,1,1,1,1,0,0,1,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,1,1,1,1,4],
+    [4,1,1,1,1,1,1,0,2,1,1,1,0,3,3,3,3,0,1,1,1,2,0,1,1,1,1,1,1,4],
+    [4,1,1,1,1,1,1,0,2,0,0,0,0,3,3,3,3,0,0,0,0,2,0,1,1,1,1,1,1,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4],
+    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+  ]
+};
+
+let currentLevel = 1;
+let MAP = MAPS[1];
+
+function setMapLevel(level) {
+  const l = Math.max(1, Math.min(5, level));
+  if (l !== currentLevel) {
+    currentLevel = l;
+    MAP = MAPS[l] || MAPS[1];
+  }
+}
+
+// Waypoints (tile coords)
+const WP = {
+  HOME:    {x:14, y:9},
+  SHELF_L: {x:2,  y:3},
+  SHELF_R: {x:25, y:3},
+  DESK_L:  {x:8,  y:7},
+  DESK_R:  {x:22, y:7},
+  TABLE_C: {x:14, y:6},
+  SHELF_B: {x:2,  y:15},
+};
+
+function actionToWP(action) {
+  switch(action) {
+    case 'reading':    return Math.random()<0.5 ? WP.SHELF_L : WP.SHELF_R;
+    case 'writing':    return Math.random()<0.5 ? WP.DESK_L : WP.DESK_R;
+    case 'thinking':   return WP.TABLE_C;
+    case 'researching':return WP.TABLE_C;
+    case 'research':   return WP.TABLE_C;
+    case 'read_file':  return WP.SHELF_L;
+    case 'write_file': return WP.DESK_L;
+    case 'list_files': return WP.SHELF_R;
+    case 'update_notes': return WP.DESK_R;
+    case 'update_tasks': return WP.DESK_R;
+    default:           return WP.HOME;
+  }
+}
+
+// ── Tile rendering ──
+function drawTile(col, row, tileId) {
+  const px = col*TILE, py = row*TILE;
+  ctx.fillStyle = TILE_COLORS[tileId] || '#0d0830';
+  ctx.fillRect(px, py, TILE, TILE);
+
+  if (tileId === T.FLOOR) {
+    ctx.fillStyle = '#00f7ff18';
+    ctx.fillRect(px, py, 1, TILE);
+    ctx.fillRect(px, py, TILE, 1);
+    if ((col+row)%7 === 0) {
+      ctx.fillStyle = '#00f7ff44';
+      ctx.fillRect(px+7, py+7, 2, 2);
+    }
+  }
+  if (tileId === T.SHELF) {
+    const bc = ['#ff2d9b','#00f7ff','#bf00ff','#ff6ec7','#00cfff','#ff0077'];
+    for (let b=0; b<5; b++) {
+      ctx.fillStyle = bc[(col+b+row)%bc.length];
+      ctx.fillRect(px+1+b*3, py+3, 2, 10);
+      ctx.fillStyle = '#ffffff55';
+      ctx.fillRect(px+1+b*3, py+3, 2, 1);
+    }
+    ctx.fillStyle = '#110030';
+    ctx.fillRect(px, py+13, TILE, 2);
+    ctx.fillStyle = '#ff2d9b88';
+    ctx.fillRect(px, py+13, TILE, 1);
+  }
+  if (tileId === T.DESK) {
+    ctx.fillStyle = '#200040';
+    ctx.fillRect(px+1, py+4, TILE-2, TILE-6);
+    ctx.fillStyle = '#bf00ff';
+    ctx.fillRect(px+1, py+4, TILE-2, 1);
+    ctx.fillStyle = '#00f7ff22';
+    ctx.fillRect(px+3, py+5, 5, 6);
+    ctx.fillStyle = '#00f7ff';
+    ctx.fillRect(px+4, py+7, 3, 1);
+    ctx.fillRect(px+4, py+9, 3, 1);
+  }
+  if (tileId === T.TABLE) {
+    ctx.fillStyle = '#001828';
+    ctx.fillRect(px+1, py+4, TILE-2, TILE-6);
+    ctx.fillStyle = '#00f7ff';
+    ctx.fillRect(px+1, py+4, TILE-2, 1);
+    ctx.fillStyle = '#00f7ff22';
+    ctx.fillRect(px+2, py+5, 6, 5);
+    ctx.fillStyle = '#00f7ff';
+    ctx.fillRect(px+7, py+5, 1, 5);
+    ctx.fillStyle = '#ff2d9b';
+    ctx.fillRect(px+3, py+6, 2, 1);
+    ctx.fillRect(px+3, py+8, 2, 1);
+  }
+  if (tileId === T.WALL) {
+    ctx.fillStyle = '#030010';
+    ctx.fillRect(px, py, TILE, TILE);
+    ctx.fillStyle = '#bf00ff22';
+    ctx.fillRect(px+1, py+1, TILE-2, TILE-2);
+    if (row%2 === 0) {
+      ctx.fillStyle = '#bf00ff44';
+      ctx.fillRect(px, py+7, TILE, 1);
+    }
+  }
+  if (tileId === T.RUG) {
+    ctx.fillStyle = '#200040';
+    ctx.fillRect(px, py, TILE, TILE);
+    ctx.fillStyle = '#ff2d9b66';
+    ctx.fillRect(px+2, py+2, TILE-4, TILE-4);
+    ctx.fillStyle = '#00f7ff';
+    ctx.fillRect(px+5, py+5, 6, 6);
+    ctx.fillStyle = '#ff2d9b';
+    ctx.fillRect(px+6, py+6, 4, 4);
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(px+7, py+7, 2, 2);
+  }
+}
+
+// ── OctoBot sprite (24x24 base, clearer design) ──
+function drawOctoBot(px, py, frame) {
+  const f = frame % 4;
+  const bounce = (f===1||f===3) ? -1 : 0;
+  const oy = py + bounce;
+
+  // Glow aura
+  const aura = ctx.createRadialGradient(px+12, oy+12, 2, px+12, oy+12, 22);
+  aura.addColorStop(0, '#ff2d9b55');
+  aura.addColorStop(0.5, '#bf00ff22');
+  aura.addColorStop(1, 'transparent');
+  ctx.fillStyle = aura;
+  ctx.fillRect(px-12, oy-12, 48, 48);
+
+  // Head — rounded dome shape
+  ctx.fillStyle = '#110020'; // outline
+  ctx.fillRect(px+6,  oy+0, 12, 1);
+  ctx.fillRect(px+4,  oy+1, 16, 1);
+  ctx.fillRect(px+3,  oy+2, 18, 1);
+  ctx.fillRect(px+2,  oy+3, 20, 10);
+  ctx.fillRect(px+3,  oy+13, 18, 1);
+
+  // Body fill — hot pink
+  ctx.fillStyle = '#ff2d9b';
+  ctx.fillRect(px+7,  oy+1, 10, 1);
+  ctx.fillRect(px+5,  oy+2, 14, 1);
+  ctx.fillRect(px+4,  oy+3, 16, 9);
+  ctx.fillRect(px+5,  oy+12, 14, 1);
+
+  // Top highlight (shine)
+  ctx.fillStyle = '#ff80cc';
+  ctx.fillRect(px+8, oy+1, 5, 1);
+  ctx.fillRect(px+6, oy+2, 6, 1);
+  ctx.fillRect(px+5, oy+3, 5, 2);
+  ctx.fillStyle = '#ffaadd';
+  ctx.fillRect(px+7, oy+2, 2, 1);
+
+  // Left eye socket
+  ctx.fillStyle = '#0a0020';
+  ctx.fillRect(px+5, oy+4, 5, 5);
+  // Right eye socket
+  ctx.fillRect(px+14, oy+4, 5, 5);
+
+  // Left eye — cyan glow
+  ctx.fillStyle = '#00f7ff';
+  ctx.fillRect(px+6, oy+5, 3, 3);
+  ctx.fillStyle = '#80ffff';
+  ctx.fillRect(px+6, oy+5, 2, 2);
+  // Left pupil
+  ctx.fillStyle = '#003344';
+  ctx.fillRect(px+7+(f===0?0:f===2?1:0), oy+6, 2, 2);
+  // Left eye sparkle
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(px+6, oy+5, 1, 1);
+
+  // Right eye — cyan glow
+  ctx.fillStyle = '#00f7ff';
+  ctx.fillRect(px+15, oy+5, 3, 3);
+  ctx.fillStyle = '#80ffff';
+  ctx.fillRect(px+15, oy+5, 2, 2);
+  // Right pupil
+  ctx.fillStyle = '#003344';
+  ctx.fillRect(px+16+(f===0?0:f===2?1:0), oy+6, 2, 2);
+  // Right eye sparkle
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(px+15, oy+5, 1, 1);
+
+  // Mouth / smile
+  ctx.fillStyle = '#cc0066';
+  ctx.fillRect(px+10, oy+10, 4, 1);
+  ctx.fillRect(px+9, oy+9, 1, 1);
+  ctx.fillRect(px+14, oy+9, 1, 1);
+
+  // Cheek blush
+  ctx.fillStyle = '#ff006666';
+  ctx.fillRect(px+4, oy+8, 2, 2);
+  ctx.fillRect(px+18, oy+8, 2, 2);
+
+  // 8 tentacles — 4 on each side, animated
+  const tentY = oy + 13;
+  const armCols = ['#ff2d9b','#ff5eb5','#00f7ff','#00ccdd','#ff2d9b','#ff5eb5','#00f7ff','#00ccdd'];
+  const armXs = [px+2, px+4, px+6, px+9, px+13, px+16, px+18, px+20];
+  for (let i = 0; i < 8; i++) {
+    const phase = (f + i) % 4;
+    const wave = phase === 0 ? 0 : phase === 1 ? -1 : phase === 2 ? 0 : 1;
+    const wave2 = phase === 0 ? 1 : phase === 1 ? 0 : phase === 2 ? -1 : 0;
+    const ax = armXs[i];
+    ctx.fillStyle = armCols[i];
+    // Segment 1 (top)
+    ctx.fillRect(ax, tentY, 2, 3);
+    // Segment 2 (mid, offset)
+    ctx.fillRect(ax + wave, tentY + 3, 2, 3);
+    // Segment 3 (bottom, more offset)
+    ctx.fillRect(ax + wave + wave2, tentY + 6, 2, 2);
+    // Sucker dots
+    ctx.fillStyle = '#ffccee';
+    ctx.fillRect(ax + wave, tentY + 4, 1, 1);
+    ctx.fillRect(ax + wave + wave2, tentY + 7, 1, 1);
+    // Tip
+    ctx.fillStyle = armCols[i];
+    ctx.fillRect(ax + wave + wave2, tentY + 8, 1, 1);
+  }
+
+  // Book on frame 2
+  if (f === 2) {
+    ctx.fillStyle = '#00f7ff';
+    ctx.fillRect(px+8, oy-2, 8, 4);
+    ctx.fillStyle = '#001830';
+    ctx.fillRect(px+12, oy-2, 1, 4);
+    ctx.fillStyle = '#ffffff88';
+    ctx.fillRect(px+8, oy-2, 1, 1);
+    ctx.fillRect(px+9, oy-1, 2, 1);
+  }
+}
+
+// ── Logo sprite (header) ──
+(function drawLogoSprite() {
+  const lc = document.getElementById('logo-canvas');
+  if (!lc) return;
+  const lx = lc.getContext('2d');
+  lx.imageSmoothingEnabled = false;
+  let logoFrame = 0;
+  function renderLogo() {
+    lx.clearRect(0, 0, 48, 48);
+    const _ctx = ctx;  // save game ctx
+    // Temporarily redirect drawOctoBot to use logo canvas context
+    const origFill = lx.fillRect.bind(lx);
+    const origStyle = Object.getOwnPropertyDescriptor(CanvasRenderingContext2D.prototype, 'fillStyle');
+    // Just draw directly with the logo context
+    const f = logoFrame % 4;
+    const bounce = (f===1||f===3) ? -1 : 0;
+    const px = 12, oy = 10 + bounce;
+    // Head outline
+    lx.fillStyle = '#110020';
+    lx.fillRect(px+6,  oy+0, 12, 1);
+    lx.fillRect(px+4,  oy+1, 16, 1);
+    lx.fillRect(px+3,  oy+2, 18, 1);
+    lx.fillRect(px+2,  oy+3, 20, 10);
+    lx.fillRect(px+3,  oy+13, 18, 1);
+    // Body fill
+    lx.fillStyle = '#ff2d9b';
+    lx.fillRect(px+7,  oy+1, 10, 1);
+    lx.fillRect(px+5,  oy+2, 14, 1);
+    lx.fillRect(px+4,  oy+3, 16, 9);
+    lx.fillRect(px+5,  oy+12, 14, 1);
+    // Highlight
+    lx.fillStyle = '#ff80cc';
+    lx.fillRect(px+8, oy+1, 5, 1);
+    lx.fillRect(px+6, oy+2, 6, 1);
+    lx.fillRect(px+5, oy+3, 5, 2);
+    lx.fillStyle = '#ffaadd';
+    lx.fillRect(px+7, oy+2, 2, 1);
+    // Eyes
+    lx.fillStyle = '#0a0020';
+    lx.fillRect(px+5, oy+4, 5, 5);
+    lx.fillRect(px+14, oy+4, 5, 5);
+    lx.fillStyle = '#00f7ff';
+    lx.fillRect(px+6, oy+5, 3, 3);
+    lx.fillStyle = '#80ffff';
+    lx.fillRect(px+6, oy+5, 2, 2);
+    lx.fillStyle = '#003344';
+    lx.fillRect(px+7, oy+6, 2, 2);
+    lx.fillStyle = '#ffffff';
+    lx.fillRect(px+6, oy+5, 1, 1);
+    lx.fillStyle = '#00f7ff';
+    lx.fillRect(px+15, oy+5, 3, 3);
+    lx.fillStyle = '#80ffff';
+    lx.fillRect(px+15, oy+5, 2, 2);
+    lx.fillStyle = '#003344';
+    lx.fillRect(px+16, oy+6, 2, 2);
+    lx.fillStyle = '#ffffff';
+    lx.fillRect(px+15, oy+5, 1, 1);
+    // Mouth
+    lx.fillStyle = '#cc0066';
+    lx.fillRect(px+10, oy+10, 4, 1);
+    lx.fillRect(px+9, oy+9, 1, 1);
+    lx.fillRect(px+14, oy+9, 1, 1);
+    // Cheeks
+    lx.fillStyle = '#ff006666';
+    lx.fillRect(px+4, oy+8, 2, 2);
+    lx.fillRect(px+18, oy+8, 2, 2);
+    // Tentacles
+    const tentY = oy + 13;
+    const armCols = ['#ff2d9b','#ff5eb5','#00f7ff','#00ccdd','#ff2d9b','#ff5eb5','#00f7ff','#00ccdd'];
+    const armXs = [px+2, px+4, px+6, px+9, px+13, px+16, px+18, px+20];
+    for (let i = 0; i < 8; i++) {
+      const phase = (f + i) % 4;
+      const wave = phase===0?0:phase===1?-1:phase===2?0:1;
+      const wave2 = phase===0?1:phase===1?0:phase===2?-1:0;
+      const ax = armXs[i];
+      lx.fillStyle = armCols[i];
+      lx.fillRect(ax, tentY, 2, 3);
+      lx.fillRect(ax+wave, tentY+3, 2, 3);
+      lx.fillRect(ax+wave+wave2, tentY+6, 2, 2);
+      lx.fillStyle = '#ffccee';
+      lx.fillRect(ax+wave, tentY+4, 1, 1);
+      lx.fillRect(ax+wave+wave2, tentY+7, 1, 1);
+      lx.fillStyle = armCols[i];
+      lx.fillRect(ax+wave+wave2, tentY+8, 1, 1);
+    }
+    logoFrame++;
+  }
+  renderLogo();
+  setInterval(renderLogo, 400);
+})();
+
+// ── Game state ──
+let octoX = WP.HOME.x * TILE;
+let octoY = WP.HOME.y * TILE;
+let targetX = octoX;
+let targetY = octoY;
+let frame = 0;
+let frameTimer = 0;
+let wanderTimer = 0;
+
+function setDest(wp) { targetX = wp.x * TILE; targetY = wp.y * TILE; }
+
+// ── Main render loop ──
+const ZOOM_CLOSE = 14;        // close-up scale (sprite is now 24px base, 14x = 336px)
+const ZOOM_FAR = 2.5;         // zoomed-out: see most of the map
+const ZOOM_CLOSE_DURATION = 12000;  // ms in close-up
+const ZOOM_FAR_DURATION = 6000;     // ms in zoomed-out
+const ZOOM_TRANSITION = 2000;       // ms to smoothly transition
+let currentZoom = ZOOM_CLOSE;
+let targetZoom = ZOOM_CLOSE;
+let zoomTimer = 0;
+let zoomPhase = 'close';  // 'close' | 'far'
+let lastTime = 0;
+let camX = 0, camY = 0;
+
+function gameLoop(ts) {
+  const dt = ts - lastTime;
+  lastTime = ts;
+
+  // Movement
+  const dx = targetX - octoX;
+  const dy = targetY - octoY;
+  const dist = Math.sqrt(dx*dx + dy*dy);
+  if (dist > 2) {
+    octoX += (dx/dist) * 1.2;
+    octoY += (dy/dist) * 1.2;
+  } else {
+    octoX = targetX;
+    octoY = targetY;
+  }
+
+  frameTimer += dt;
+  if (frameTimer > 83) {
+    frameTimer = 0;
+    if (dist > 2) frame = (frame + 1) % 4;
+  }
+
+  const wp = actionToWP(currentAction);
+  if (currentAction !== 'idle') {
+    setDest(wp);
+  }
+
+  if (currentAction === 'idle') {
+    wanderTimer--;
+    if (wanderTimer <= 0) {
+      wanderTimer = 180 + Math.floor(Math.random() * 240);
+      const wps = Object.values(WP);
+      setDest(wps[Math.floor(Math.random() * wps.length)]);
+    }
+  }
+
+  // Zoom cycling: close-up → zoomed-out → close-up
+  zoomTimer += dt;
+  if (zoomPhase === 'close' && zoomTimer > ZOOM_CLOSE_DURATION) {
+    zoomPhase = 'far';
+    targetZoom = ZOOM_FAR;
+    zoomTimer = 0;
+  } else if (zoomPhase === 'far' && zoomTimer > ZOOM_FAR_DURATION) {
+    zoomPhase = 'close';
+    targetZoom = ZOOM_CLOSE;
+    zoomTimer = 0;
+  }
+  // Smooth zoom interpolation
+  const zoomSpeed = 0.03;
+  currentZoom += (targetZoom - currentZoom) * zoomSpeed;
+
+  // Camera: center on OctoBot
+  const octoCX = octoX + 12;  // center of 24px sprite
+  const octoCY = octoY + 12;
+  const targetCamX = canvas.width / 2 - octoCX * currentZoom;
+  const targetCamY = canvas.height / 2 - octoCY * currentZoom;
+  camX += (targetCamX - camX) * 0.08;
+  camY += (targetCamY - camY) * 0.08;
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  ctx.save();
+  ctx.translate(camX, camY);
+  ctx.scale(currentZoom, currentZoom);
+
+  // Draw tiles
+  for (let r = 0; r < ROWS; r++)
+    for (let c = 0; c < COLS; c++)
+      drawTile(c, r, MAP[r][c]);
+
+  // Floor glow around OctoBot
+  const pulse = 0.5 + 0.5 * Math.sin(Date.now() / 600);
+  const flr = ctx.createRadialGradient(octoX+12, octoY+12, 2, octoX+12, octoY+12, 24);
+  flr.addColorStop(0, `rgba(0,247,255,${0.12*pulse})`);
+  flr.addColorStop(0.5, `rgba(255,45,155,${0.08*pulse})`);
+  flr.addColorStop(1, 'transparent');
+  ctx.fillStyle = flr;
+  ctx.fillRect(octoX-20, octoY-20, 64, 64);
+
+  drawOctoBot(octoX, octoY, frame);
+
+  ctx.restore();
+
+  requestAnimationFrame(gameLoop);
+}
+
+requestAnimationFrame(gameLoop);
+</script>
+</body>
+</html>
