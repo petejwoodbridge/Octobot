@@ -520,3 +520,14 @@ Add your first knowledge file
 ## 🏅 Achievement Unlocked: First Book!
 
 Add your first knowledge file
+
+
+---
+
+## 2026-03-16 11:11
+
+## 🧠 Curiosity Sparked!
+
+I keep seeing the term **physical**. I should investigate this!
+
+I'm planning a research chain: Here are three subtopics that build upon each other: → • Morphology: Explore the unique physical characteristics of octopuses, such as their shape-shifting abilities, camouflage capabilities, and flexible bodies. → • Anatomy: Delve into the intricate details of an octopus's internal structure, including its eight arms, suckers, and radula, as well as its circulatory and nervous systems. → • Biomechanics: Investigate how an octopus's physical attributes enable it to thrive in a variety of environments, from coral reefs to deep-sea trenches, examining topics such as propulsion, manipulation, and sensory perception.
