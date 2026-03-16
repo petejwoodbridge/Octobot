@@ -1210,10 +1210,267 @@ const ROWS = 20;
 
 // Tile IDs
 const T = { FLOOR:0, SHELF:1, DESK:2, TABLE:3, WALL:4, RUG:5 };
-const TILE_COLORS = {
-  0:'#0d0830', 1:'#0a0050', 2:'#1a0035',
-  3:'#001830', 4:'#030010', 5:'#200040'
+
+// ── Environment themes ──
+// Each theme has tile colors and a custom sky/background draw function
+const THEMES = {
+  library: {
+    name: 'Library',
+    tileColors: { 0:'#0d0830', 1:'#0a0050', 2:'#1a0035', 3:'#001830', 4:'#030010', 5:'#200040' },
+    drawBg: null, // uses default tile fill
+    wallTop: '#030010', wallAccent: '#bf00ff44', wallHoriz: '#bf00ff44',
+    floorDot: '#00f7ff44', floorLine: '#00f7ff18',
+    shelfBooks: ['#ff2d9b','#00f7ff','#bf00ff','#ff6ec7','#00cfff','#ff0077'],
+    shelfShelf: '#ff2d9b88', shelfBot: '#110030',
+    rugCenter: '#00f7ff', rugInner: '#ff2d9b', rugOuter: '#ff2d9b66', rugDot: '#ffffff',
+    rugFill: '#200040',
+  },
+  aquarium: {
+    name: 'Aquarium',
+    tileColors: { 0:'#001830', 1:'#003060', 2:'#003040', 3:'#002040', 4:'#000820', 5:'#003050' },
+    drawBg: function(ctx, W, H) {
+      // Deep blue water gradient
+      const g = ctx.createLinearGradient(0,0,0,H);
+      g.addColorStop(0,'#000830'); g.addColorStop(1,'#002050');
+      ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+      // Bubbles
+      const t=Date.now()/1000;
+      ctx.fillStyle='#00f7ff33';
+      for(let i=0;i<18;i++){
+        const bx=(i*137+Math.sin(t*0.3+i)*8)%W;
+        const by=H-(((t*20+i*60)%H));
+        const br=1+i%3;
+        ctx.beginPath(); ctx.arc(bx,by,br,0,Math.PI*2); ctx.fill();
+      }
+      // Caustic light rays
+      ctx.strokeStyle='#00f7ff18'; ctx.lineWidth=0.5*TILE;
+      for(let i=0;i<6;i++){
+        const rx=W*i/6+Math.sin(t*0.2+i)*16;
+        ctx.beginPath(); ctx.moveTo(rx,0); ctx.lineTo(rx+24,H); ctx.stroke();
+      }
+    },
+    wallTop:'#000820', wallAccent:'#00f7ff22', wallHoriz:'#00f7ff22',
+    floorDot:'#00f7ff55', floorLine:'#00f7ff22',
+    shelfBooks:['#00c8ff','#0066ff','#00ffcc','#0088cc','#33ddff','#006688'],
+    shelfShelf:'#00ccff66', shelfBot:'#001830',
+    rugCenter:'#00ccff', rugInner:'#0066ff', rugOuter:'#0044aa66', rugDot:'#aaffff',
+    rugFill:'#002040',
+  },
+  space: {
+    name: 'Space',
+    tileColors: { 0:'#020008', 1:'#0a0030', 2:'#080020', 3:'#050018', 4:'#000005', 5:'#0f0040' },
+    drawBg: function(ctx, W, H) {
+      ctx.fillStyle='#000008'; ctx.fillRect(0,0,W,H);
+      // Stars
+      const seed=42;
+      for(let i=0;i<80;i++){
+        const sx=((i*1234+seed)%W);
+        const sy=((i*5678+seed*2)%H);
+        const bright=0.3+0.7*((i*997)%100)/100;
+        const twinkle=0.5+0.5*Math.sin(Date.now()/400+i*2.1);
+        ctx.fillStyle=`rgba(255,255,255,${bright*twinkle})`;
+        ctx.fillRect(sx,sy,i%5===0?2:1,i%5===0?2:1);
+      }
+      // Nebula glow
+      const t=Date.now()/2000;
+      const ng=ctx.createRadialGradient(W*0.7,H*0.3,0,W*0.7,H*0.3,W*0.4);
+      ng.addColorStop(0,'#bf00ff18'); ng.addColorStop(1,'transparent');
+      ctx.fillStyle=ng; ctx.fillRect(0,0,W,H);
+      const ng2=ctx.createRadialGradient(W*0.2,H*0.7,0,W*0.2,H*0.7,W*0.3);
+      ng2.addColorStop(0,'#00f7ff12'); ng2.addColorStop(1,'transparent');
+      ctx.fillStyle=ng2; ctx.fillRect(0,0,W,H);
+    },
+    wallTop:'#000005', wallAccent:'#bf00ff33', wallHoriz:'#bf00ff22',
+    floorDot:'#bf00ff44', floorLine:'#bf00ff18',
+    shelfBooks:['#bf00ff','#9900cc','#7700ff','#cc00ff','#aa44ff','#ff00cc'],
+    shelfShelf:'#aa00ff66', shelfBot:'#050015',
+    rugCenter:'#bf00ff', rugInner:'#7700ff', rugOuter:'#aa00ff66', rugDot:'#ffaaff',
+    rugFill:'#0f0040',
+  },
+  underwater: {
+    name: 'Under the Sea',
+    tileColors: { 0:'#002820', 1:'#003828', 2:'#003030', 3:'#002828', 4:'#001010', 5:'#004040' },
+    drawBg: function(ctx, W, H) {
+      const g=ctx.createLinearGradient(0,0,0,H);
+      g.addColorStop(0,'#001820'); g.addColorStop(1,'#003828');
+      ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+      // Seaweed
+      const t=Date.now()/1000;
+      ctx.strokeStyle='#00aa5588'; ctx.lineWidth=0.8*TILE;
+      for(let i=0;i<8;i++){
+        const sx=(i*(W/8)+24);
+        ctx.beginPath(); ctx.moveTo(sx,H);
+        for(let j=0;j<5;j++){
+          const wave=Math.sin(t*1.2+i*0.9+j*0.7)*8;
+          ctx.lineTo(sx+wave, H-j*H/6);
+        }
+        ctx.stroke();
+      }
+      // Light dapples from above
+      ctx.fillStyle='#00ffaa18';
+      for(let i=0;i<12;i++){
+        const dx=(i*157+Math.sin(t*0.4+i)*12)%W;
+        const r=4+i%4;
+        ctx.beginPath(); ctx.ellipse(dx,8,r,r*3,0,0,Math.PI*2); ctx.fill();
+      }
+      // Bubbles
+      ctx.fillStyle='#aaffdd33';
+      for(let i=0;i<10;i++){
+        const bx=(i*193)%W;
+        const by=H-(((t*15+i*50)%H));
+        ctx.beginPath(); ctx.arc(bx,by,1.5,0,Math.PI*2); ctx.fill();
+      }
+    },
+    wallTop:'#001010', wallAccent:'#00ffaa22', wallHoriz:'#00cc8822',
+    floorDot:'#00ffaa44', floorLine:'#00cc8818',
+    shelfBooks:['#00cc88','#00aa66','#00ff99','#008855','#33cc88','#00dd77'],
+    shelfShelf:'#00aa6666', shelfBot:'#001818',
+    rugCenter:'#00cc88', rugInner:'#00aa66', rugOuter:'#00884466', rugDot:'#aaffcc',
+    rugFill:'#004040',
+  },
+  office: {
+    name: 'Office',
+    tileColors: { 0:'#101820', 1:'#0c1822', 2:'#181020', 3:'#102030', 4:'#080c10', 5:'#182030' },
+    drawBg: function(ctx, W, H) {
+      // Fluorescent ceiling glow
+      ctx.fillStyle='#ffffff08'; ctx.fillRect(0,0,W,8);
+      ctx.fillStyle='#ffffff04'; ctx.fillRect(0,8,W,4);
+      // Window
+      const ww=W*0.25, wh=H*0.45;
+      const wx=W*0.65, wy=H*0.08;
+      // Outside view (blue sky / city)
+      const sky=ctx.createLinearGradient(wx,wy,wx,wy+wh);
+      sky.addColorStop(0,'#88aadd'); sky.addColorStop(1,'#aac8ff');
+      ctx.fillStyle=sky; ctx.fillRect(wx,wy,ww,wh);
+      // City silhouette
+      ctx.fillStyle='#334466';
+      ctx.fillRect(wx,wy+wh*0.5,ww*0.15,wh*0.5);
+      ctx.fillRect(wx+ww*0.2,wy+wh*0.3,ww*0.1,wh*0.7);
+      ctx.fillRect(wx+ww*0.4,wy+wh*0.55,ww*0.12,wh*0.45);
+      ctx.fillRect(wx+ww*0.6,wy+wh*0.4,ww*0.08,wh*0.6);
+      ctx.fillRect(wx+ww*0.75,wy+wh*0.6,ww*0.25,wh*0.4);
+      // Window frame
+      ctx.strokeStyle='#334466'; ctx.lineWidth=2;
+      ctx.strokeRect(wx,wy,ww,wh);
+      ctx.beginPath(); ctx.moveTo(wx+ww/2,wy); ctx.lineTo(wx+ww/2,wy+wh); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(wx,wy+wh/2); ctx.lineTo(wx+ww,wy+wh/2); ctx.stroke();
+    },
+    wallTop:'#080c10', wallAccent:'#334466aa', wallHoriz:'#33446666',
+    floorDot:'#4488ff44', floorLine:'#334466aa',
+    shelfBooks:['#446688','#334466','#667799','#2255aa','#4477cc','#335577'],
+    shelfShelf:'#44668866', shelfBot:'#101820',
+    rugCenter:'#4466aa', rugInner:'#334488', rugOuter:'#2244776', rugDot:'#aabbcc',
+    rugFill:'#182030',
+  },
+  park: {
+    name: 'Park',
+    tileColors: { 0:'#0a2010', 1:'#0a1e08', 2:'#102218', 3:'#0c1e10', 4:'#050f04', 5:'#1a3a10' },
+    drawBg: function(ctx, W, H) {
+      // Sky
+      const sky=ctx.createLinearGradient(0,0,0,H*0.45);
+      sky.addColorStop(0,'#4488cc'); sky.addColorStop(1,'#88bbee');
+      ctx.fillStyle=sky; ctx.fillRect(0,0,W,H*0.45);
+      // Clouds
+      const t=Date.now()/6000;
+      ctx.fillStyle='#ffffffcc';
+      for(let i=0;i<3;i++){
+        const cx=((i*280+t*30)%(W+100))-50, cy=H*0.08+i*H*0.07;
+        ctx.beginPath(); ctx.ellipse(cx,cy,32,16,0,0,Math.PI*2); ctx.fill();
+        ctx.beginPath(); ctx.ellipse(cx+20,cy-8,20,12,0,0,Math.PI*2); ctx.fill();
+        ctx.beginPath(); ctx.ellipse(cx-16,cy-4,18,10,0,0,Math.PI*2); ctx.fill();
+      }
+      // Grass
+      const grass=ctx.createLinearGradient(0,H*0.42,0,H);
+      grass.addColorStop(0,'#338822'); grass.addColorStop(1,'#225511');
+      ctx.fillStyle=grass; ctx.fillRect(0,H*0.42,W,H*0.58);
+      // Trees
+      ctx.fillStyle='#224411';
+      for(let i=0;i<4;i++){
+        const tx=W*0.12+i*W*0.24, ty=H*0.25;
+        ctx.beginPath(); ctx.arc(tx,ty,20,0,Math.PI*2); ctx.fill();
+        ctx.fillStyle='#1a3308';
+        ctx.fillRect(tx-3,ty+16,6,20);
+        ctx.fillStyle='#224411';
+      }
+      // Flowers
+      const fc=['#ff6688','#ffcc00','#ff88cc','#ffaa44'];
+      for(let i=0;i<20;i++){
+        const fx=(i*157)%W, fy=H*0.44+((i*311)%(H*0.5));
+        ctx.fillStyle=fc[i%fc.length];
+        ctx.beginPath(); ctx.arc(fx,fy,2,0,Math.PI*2); ctx.fill();
+      }
+    },
+    wallTop:'#050f04', wallAccent:'#44aa2233', wallHoriz:'#44aa2244',
+    floorDot:'#88cc4444', floorLine:'#44aa2222',
+    shelfBooks:['#44aa22','#336611','#66cc33','#228811','#55bb22','#339900'],
+    shelfShelf:'#44aa2266', shelfBot:'#0a2010',
+    rugCenter:'#66cc33', rugInner:'#44aa22', rugOuter:'#33881166', rugDot:'#bbffaa',
+    rugFill:'#1a3a10',
+  },
+  beach: {
+    name: 'Beach',
+    tileColors: { 0:'#302820', 1:'#3a2c18', 2:'#2c2418', 3:'#2a2c18', 4:'#181408', 5:'#3a3018' },
+    drawBg: function(ctx, W, H) {
+      // Sky
+      const sky=ctx.createLinearGradient(0,0,0,H*0.4);
+      sky.addColorStop(0,'#3399ff'); sky.addColorStop(1,'#aaddff');
+      ctx.fillStyle=sky; ctx.fillRect(0,0,W,H*0.4);
+      // Sun
+      ctx.fillStyle='#ffee88';
+      ctx.beginPath(); ctx.arc(W*0.75,H*0.12,12,0,Math.PI*2); ctx.fill();
+      ctx.fillStyle='#ffee8844';
+      ctx.beginPath(); ctx.arc(W*0.75,H*0.12,20,0,Math.PI*2); ctx.fill();
+      // Ocean
+      const t=Date.now()/1000;
+      const ocean=ctx.createLinearGradient(0,H*0.38,0,H*0.55);
+      ocean.addColorStop(0,'#0088cc'); ocean.addColorStop(1,'#00559a');
+      ctx.fillStyle=ocean; ctx.fillRect(0,H*0.38,W,H*0.18);
+      // Waves
+      ctx.strokeStyle='#aaddff88'; ctx.lineWidth=1;
+      for(let i=0;i<3;i++){
+        ctx.beginPath();
+        for(let x=0;x<W;x+=4){
+          const wy=H*0.42+i*8+Math.sin((x/30)+t*1.5+i)*3;
+          i===0&&x===0?ctx.moveTo(x,wy):ctx.lineTo(x,wy);
+        }
+        ctx.stroke();
+      }
+      // Sand
+      const sand=ctx.createLinearGradient(0,H*0.54,0,H);
+      sand.addColorStop(0,'#ddbb66'); sand.addColorStop(1,'#cc9944');
+      ctx.fillStyle=sand; ctx.fillRect(0,H*0.54,W,H*0.46);
+      // Sand texture
+      ctx.fillStyle='#cc994466';
+      for(let i=0;i<30;i++){
+        ctx.fillRect((i*179)%W,(H*0.55)+((i*237)%(H*0.4)),2,1);
+      }
+      // Palm tree
+      ctx.fillStyle='#885522';
+      ctx.fillRect(W*0.12-3,H*0.2,6,H*0.36);
+      ctx.fillStyle='#338822';
+      ctx.beginPath(); ctx.ellipse(W*0.12,H*0.2,28,12,-0.3,0,Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.ellipse(W*0.12,H*0.22,20,10,0.4,0,Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.ellipse(W*0.12,H*0.2,16,8,1.0,0,Math.PI*2); ctx.fill();
+    },
+    wallTop:'#181408', wallAccent:'#cc994433', wallHoriz:'#aa773344',
+    floorDot:'#ddbb6644', floorLine:'#cc994422',
+    shelfBooks:['#ddaa44','#cc8833','#eebb55','#aa7722','#ffcc66','#bb9933'],
+    shelfShelf:'#cc994466', shelfBot:'#302820',
+    rugCenter:'#ddbb66', rugInner:'#cc9944', rugOuter:'#aa773366', rugDot:'#ffeeaa',
+    rugFill:'#3a3018',
+  },
 };
+
+const THEME_ORDER = ['library','aquarium','space','underwater','office','park','beach'];
+const THEME_DURATION = 45000; // 45 seconds per environment
+let currentThemeIdx = 0;
+let themeTimer = 0;
+let currentTheme = THEMES[THEME_ORDER[0]];
+let nextTheme = null;
+let themeFade = 0; // 0-1 blend during transition
+const THEME_FADE_DURATION = 3000;
+
+function TILE_COLORS_FOR(theme) { return theme.tileColors; }
 
 // Library level maps — the room expands with level
 const MAPS = {
@@ -1368,77 +1625,78 @@ function actionToWP(action) {
 }
 
 // ── Tile rendering ──
-function drawTile(col, row, tileId) {
+function drawTile(col, row, tileId, theme) {
   const px = col*TILE, py = row*TILE;
-  ctx.fillStyle = TILE_COLORS[tileId] || '#0d0830';
+  const tc = theme.tileColors;
+  ctx.fillStyle = tc[tileId] || tc[0];
   ctx.fillRect(px, py, TILE, TILE);
 
   if (tileId === T.FLOOR) {
-    ctx.fillStyle = '#00f7ff18';
+    ctx.fillStyle = theme.floorLine;
     ctx.fillRect(px, py, 1, TILE);
     ctx.fillRect(px, py, TILE, 1);
     if ((col+row)%7 === 0) {
-      ctx.fillStyle = '#00f7ff44';
+      ctx.fillStyle = theme.floorDot;
       ctx.fillRect(px+7, py+7, 2, 2);
     }
   }
   if (tileId === T.SHELF) {
-    const bc = ['#ff2d9b','#00f7ff','#bf00ff','#ff6ec7','#00cfff','#ff0077'];
+    const bc = theme.shelfBooks;
     for (let b=0; b<5; b++) {
       ctx.fillStyle = bc[(col+b+row)%bc.length];
       ctx.fillRect(px+1+b*3, py+3, 2, 10);
       ctx.fillStyle = '#ffffff55';
       ctx.fillRect(px+1+b*3, py+3, 2, 1);
     }
-    ctx.fillStyle = '#110030';
+    ctx.fillStyle = theme.shelfBot;
     ctx.fillRect(px, py+13, TILE, 2);
-    ctx.fillStyle = '#ff2d9b88';
+    ctx.fillStyle = theme.shelfShelf;
     ctx.fillRect(px, py+13, TILE, 1);
   }
   if (tileId === T.DESK) {
-    ctx.fillStyle = '#200040';
+    ctx.fillStyle = tc[2];
     ctx.fillRect(px+1, py+4, TILE-2, TILE-6);
-    ctx.fillStyle = '#bf00ff';
+    ctx.fillStyle = theme.shelfBooks[0];
     ctx.fillRect(px+1, py+4, TILE-2, 1);
-    ctx.fillStyle = '#00f7ff22';
+    ctx.fillStyle = theme.floorDot;
     ctx.fillRect(px+3, py+5, 5, 6);
-    ctx.fillStyle = '#00f7ff';
+    ctx.fillStyle = theme.shelfBooks[1];
     ctx.fillRect(px+4, py+7, 3, 1);
     ctx.fillRect(px+4, py+9, 3, 1);
   }
   if (tileId === T.TABLE) {
-    ctx.fillStyle = '#001828';
+    ctx.fillStyle = tc[3];
     ctx.fillRect(px+1, py+4, TILE-2, TILE-6);
-    ctx.fillStyle = '#00f7ff';
+    ctx.fillStyle = theme.shelfBooks[2];
     ctx.fillRect(px+1, py+4, TILE-2, 1);
-    ctx.fillStyle = '#00f7ff22';
+    ctx.fillStyle = theme.floorDot;
     ctx.fillRect(px+2, py+5, 6, 5);
-    ctx.fillStyle = '#00f7ff';
+    ctx.fillStyle = theme.shelfBooks[2];
     ctx.fillRect(px+7, py+5, 1, 5);
-    ctx.fillStyle = '#ff2d9b';
+    ctx.fillStyle = theme.shelfBooks[0];
     ctx.fillRect(px+3, py+6, 2, 1);
     ctx.fillRect(px+3, py+8, 2, 1);
   }
   if (tileId === T.WALL) {
-    ctx.fillStyle = '#030010';
+    ctx.fillStyle = theme.wallTop;
     ctx.fillRect(px, py, TILE, TILE);
-    ctx.fillStyle = '#bf00ff22';
+    ctx.fillStyle = theme.wallAccent;
     ctx.fillRect(px+1, py+1, TILE-2, TILE-2);
     if (row%2 === 0) {
-      ctx.fillStyle = '#bf00ff44';
+      ctx.fillStyle = theme.wallHoriz;
       ctx.fillRect(px, py+7, TILE, 1);
     }
   }
   if (tileId === T.RUG) {
-    ctx.fillStyle = '#200040';
+    ctx.fillStyle = theme.rugFill;
     ctx.fillRect(px, py, TILE, TILE);
-    ctx.fillStyle = '#ff2d9b66';
+    ctx.fillStyle = theme.rugOuter;
     ctx.fillRect(px+2, py+2, TILE-4, TILE-4);
-    ctx.fillStyle = '#00f7ff';
+    ctx.fillStyle = theme.rugCenter;
     ctx.fillRect(px+5, py+5, 6, 6);
-    ctx.fillStyle = '#ff2d9b';
+    ctx.fillStyle = theme.rugInner;
     ctx.fillRect(px+6, py+6, 4, 4);
-    ctx.fillStyle = '#ffffff';
+    ctx.fillStyle = theme.rugDot;
     ctx.fillRect(px+7, py+7, 2, 2);
   }
 }
@@ -1661,20 +1919,21 @@ let wanderTimer = 0;
 function setDest(wp) { targetX = wp.x * TILE; targetY = wp.y * TILE; }
 
 // ── Main render loop ──
-const ZOOM_CLOSE = 14;        // close-up scale (sprite is now 24px base, 14x = 336px)
+const ZOOM_CLOSE = 14;        // close-up scale
 const ZOOM_FAR = 2.5;         // zoomed-out: see most of the map
-const ZOOM_CLOSE_DURATION = 12000;  // ms in close-up
-const ZOOM_FAR_DURATION = 6000;     // ms in zoomed-out
-const ZOOM_TRANSITION = 2000;       // ms to smoothly transition
+const ZOOM_CLOSE_DURATION = 12000;
+const ZOOM_FAR_DURATION = 6000;
+const ZOOM_TRANSITION = 2000;
 let currentZoom = ZOOM_CLOSE;
 let targetZoom = ZOOM_CLOSE;
 let zoomTimer = 0;
-let zoomPhase = 'close';  // 'close' | 'far'
+let zoomPhase = 'close';
 let lastTime = 0;
 let camX = 0, camY = 0;
+let camInitialized = false;
 
 function gameLoop(ts) {
-  const dt = ts - lastTime;
+  const dt = Math.min(ts - lastTime, 50); // cap dt to avoid big jumps
   lastTime = ts;
 
   // Movement
@@ -1721,27 +1980,78 @@ function gameLoop(ts) {
     zoomTimer = 0;
   }
   // Smooth zoom interpolation
-  const zoomSpeed = 0.03;
+  const zoomSpeed = 0.04;
   currentZoom += (targetZoom - currentZoom) * zoomSpeed;
 
-  // Camera: center on OctoBot
-  const octoCX = octoX + 12;  // center of 24px sprite
+  // Camera: always center on OctoBot — snap immediately on init, smooth thereafter
+  const octoCX = octoX + 12;
   const octoCY = octoY + 12;
   const targetCamX = canvas.width / 2 - octoCX * currentZoom;
   const targetCamY = canvas.height / 2 - octoCY * currentZoom;
-  camX += (targetCamX - camX) * 0.08;
-  camY += (targetCamY - camY) * 0.08;
+  if (!camInitialized) {
+    camX = targetCamX;
+    camY = targetCamY;
+    camInitialized = true;
+  } else {
+    // Tighter follow when zoomed in (fast), looser when zoomed out (cinematic)
+    const followSpeed = 0.12 + (1 - (currentZoom - ZOOM_FAR) / (ZOOM_CLOSE - ZOOM_FAR)) * 0.06;
+    camX += (targetCamX - camX) * followSpeed;
+    camY += (targetCamY - camY) * followSpeed;
+  }
 
+  // Theme cycling
+  themeTimer += dt;
+  if (themeTimer > THEME_DURATION && !nextTheme) {
+    currentThemeIdx = (currentThemeIdx + 1) % THEME_ORDER.length;
+    nextTheme = THEMES[THEME_ORDER[currentThemeIdx]];
+    themeFade = 0;
+    themeTimer = 0;
+  }
+  if (nextTheme) {
+    themeFade += dt / THEME_FADE_DURATION;
+    if (themeFade >= 1) {
+      currentTheme = nextTheme;
+      nextTheme = null;
+      themeFade = 0;
+    }
+  }
+
+  // ── Drawing ──
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Draw background environment (behind tiles, in screen space)
+  if (currentTheme.drawBg) {
+    ctx.save();
+    currentTheme.drawBg(ctx, canvas.width, canvas.height);
+    ctx.restore();
+  }
+  if (nextTheme && nextTheme.drawBg) {
+    ctx.save();
+    ctx.globalAlpha = themeFade;
+    nextTheme.drawBg(ctx, canvas.width, canvas.height);
+    ctx.globalAlpha = 1;
+    ctx.restore();
+  }
 
   ctx.save();
   ctx.translate(camX, camY);
   ctx.scale(currentZoom, currentZoom);
 
-  // Draw tiles
-  for (let r = 0; r < ROWS; r++)
-    for (let c = 0; c < COLS; c++)
-      drawTile(c, r, MAP[r][c]);
+  // Draw tiles with current theme (blend to next if transitioning)
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {
+      drawTile(c, r, MAP[r][c], currentTheme);
+    }
+  }
+  if (nextTheme) {
+    ctx.globalAlpha = themeFade;
+    for (let r = 0; r < ROWS; r++) {
+      for (let c = 0; c < COLS; c++) {
+        drawTile(c, r, MAP[r][c], nextTheme);
+      }
+    }
+    ctx.globalAlpha = 1;
+  }
 
   // Floor glow around OctoBot
   const pulse = 0.5 + 0.5 * Math.sin(Date.now() / 600);
@@ -1755,6 +2065,22 @@ function gameLoop(ts) {
   drawOctoBot(octoX, octoY, frame);
 
   ctx.restore();
+
+  // Environment name HUD (screen space)
+  if (themeTimer < 3000 && !nextTheme) {
+    const alpha = Math.max(0, 1 - themeTimer / 2500);
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.fillStyle = '#000000aa';
+    const label = '📍 ' + currentTheme.name;
+    ctx.font = '8px "Press Start 2P"';
+    const tw = ctx.measureText(label).width;
+    ctx.fillRect(canvas.width/2 - tw/2 - 8, canvas.height - 28, tw+16, 18);
+    ctx.fillStyle = '#ffffffcc';
+    ctx.textAlign = 'center';
+    ctx.fillText(label, canvas.width/2, canvas.height - 14);
+    ctx.restore();
+  }
 
   requestAnimationFrame(gameLoop);
 }
