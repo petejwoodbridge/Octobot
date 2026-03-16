@@ -27,7 +27,7 @@ import scoring
 # LLM helper — delegates to the shared provider (Ollama / OpenAI / Anthropic)
 # ---------------------------------------------------------------------------
 
-MODEL = "llama3"   # synced with agent.MODEL at startup via main.py
+MODEL = "gemma3:4b"  # synced with agent.MODEL at startup via main.py
 
 RESEARCH_SYSTEM_PROMPT = """You are OctoBot's research arm — a meticulous, curious librarian scientist.
 When asked to research a topic, you write clear, well-structured markdown notes.

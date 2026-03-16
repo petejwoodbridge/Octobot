@@ -23,6 +23,7 @@ GET  /assets/<path> → Static asset files
 
 import json
 import os
+import time
 from pathlib import Path
 
 from flask import Flask, request, jsonify, send_from_directory, send_file
@@ -180,32 +181,57 @@ def api_score():
 # API — Knowledge Graph
 # ---------------------------------------------------------------------------
 
+_graph_resp_cache = None   # cached JSON-serialisable dict
+_graph_resp_time  = 0      # time.time() of last computation
+_graph_resp_ncount = 0     # node count at cache time (invalidation key)
+
 @app.route("/api/graph")
 def api_graph():
     """Return a filtered knowledge graph for visualization.
-    Returns the top-connected nodes and their edges to keep rendering fast."""
+    Caches the result for 30s to avoid expensive recomputation."""
+    global _graph_resp_cache, _graph_resp_time, _graph_resp_ncount
+
     max_nodes = request.args.get("max", 120, type=int)
     max_nodes = min(max_nodes, 500)  # hard cap
+
     graph = scoring.get_knowledge_graph()
     all_nodes = graph.get("nodes", [])
     all_edges = graph.get("edges", [])
+    now = time.time()
+
+    # Return cache if fresh (same node count and < 30s old)
+    if (_graph_resp_cache is not None
+            and now - _graph_resp_time < 30
+            and len(all_nodes) == _graph_resp_ncount):
+        return jsonify(_graph_resp_cache)
 
     if len(all_nodes) <= max_nodes:
-        return jsonify({"nodes": all_nodes, "edges": all_edges,
-                        "total_nodes": len(all_nodes), "total_edges": len(all_edges)})
+        result = {"nodes": all_nodes, "edges": all_edges,
+                  "total_nodes": len(all_nodes), "total_edges": len(all_edges)}
+    else:
+        # Rank nodes by edge count (degree)
+        degree = {}
+        for e in all_edges:
+            degree[e["from"]] = degree.get(e["from"], 0) + 1
+            degree[e["to"]] = degree.get(e["to"], 0) + 1
 
-    # Rank nodes by edge count (degree)
-    degree = {}
-    for e in all_edges:
-        degree[e["from"]] = degree.get(e["from"], 0) + 1
-        degree[e["to"]] = degree.get(e["to"], 0) + 1
+        top = sorted(all_nodes, key=lambda n: degree.get(n, 0), reverse=True)[:max_nodes]
+        top_set = set(top)
+        filtered_edges = [e for e in all_edges if e["from"] in top_set and e["to"] in top_set]
 
-    top = sorted(all_nodes, key=lambda n: degree.get(n, 0), reverse=True)[:max_nodes]
-    top_set = set(top)
-    filtered_edges = [e for e in all_edges if e["from"] in top_set and e["to"] in top_set]
+        # Cap edges to 5000 — frontend only draws 4000 max anyway
+        if len(filtered_edges) > 5000:
+            # Keep edges connecting highest-degree nodes
+            filtered_edges.sort(key=lambda e: degree.get(e["from"], 0) + degree.get(e["to"], 0), reverse=True)
+            filtered_edges = filtered_edges[:5000]
 
-    return jsonify({"nodes": top, "edges": filtered_edges,
-                    "total_nodes": len(all_nodes), "total_edges": len(all_edges)})
+        result = {"nodes": top, "edges": filtered_edges,
+                  "total_nodes": len(all_nodes), "total_edges": len(all_edges)}
+
+    _graph_resp_cache = result
+    _graph_resp_time = now
+    _graph_resp_ncount = len(all_nodes)
+    return jsonify(result)
 
 
 @app.route("/api/auto-messages")

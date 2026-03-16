@@ -1099,7 +1099,11 @@ function setupGraphInteraction(){
 }
 
 async function loadGraph(){
-  const data=await fetchJSON('/api/graph?max=500'); if(!data) return;
+  document.getElementById('graph-info').textContent='Loading knowledge graph\u2026';
+  const data=await fetchJSON('/api/graph?max=500'); if(!data) {
+    document.getElementById('graph-info').textContent='Failed to load graph \u2014 retrying on next tab switch';
+    return;
+  }
   graphData=data; gGraphBuilt=false; gSelected=null; gHoverNode=null;
   const shown=data.nodes.length, total=data.total_nodes||shown;
   document.getElementById('graph-info').textContent=

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/octobot.png" alt="OctoBot" width="128">
+  <img src="assets/octopus_pixel_art.svg" alt="OctoBot" width="128">
 </p>
 
 # OctoBot — Knowledge Creature Game 🐙
@@ -93,7 +93,7 @@ octobot/
 Download from [https://ollama.com/download](https://ollama.com/download), then pull the default model:
 
 ```bash
-ollama pull llama3
+ollama pull gemma3:4b
 ```
 
 Keep Ollama running in the background.

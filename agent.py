@@ -44,7 +44,7 @@ _CHAT_LOG_FILE    = Path(__file__).parent / "workspace" / "chat_log.md"
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-MODEL = "llama3"            # Ollama model — overridden by UI selector or --model flag
+MODEL = "gemma3:4b"         # Ollama model — overridden by UI selector or --model flag
 LOOP_INTERVAL = 30          # seconds between autonomous cycles
 MAX_LOOP_RETRIES = 3        # retries if Ollama is unavailable
 

@@ -21,6 +21,20 @@ import memory as mem
 import tools
 import llm_provider
 
+# In-memory graph cache — avoids re-reading the 100MB+ memory.json on every API call
+_graph_cache: dict | None = None
+
+def _init_graph_cache():
+    """Load graph into memory cache on startup."""
+    global _graph_cache
+    data = mem._load_raw()
+    _graph_cache = data.get("knowledge_graph", {"nodes": [], "edges": []})
+
+def _update_graph_cache(graph: dict):
+    """Update the in-memory graph cache after a write."""
+    global _graph_cache
+    _graph_cache = graph
+
 # ---------------------------------------------------------------------------
 # Score values
 # ---------------------------------------------------------------------------
@@ -202,6 +216,7 @@ def update_knowledge_graph(filename: str, text: str) -> dict:
 
         graph["nodes"] = sorted(nodes)
         mem._save_raw(data)
+        _update_graph_cache(graph)
 
     return {"new_nodes": new_nodes, "new_edges": new_edges}
 
@@ -233,8 +248,9 @@ def find_cross_references(new_concepts: list[str], exclude_file: str = "") -> li
 
 def get_knowledge_graph() -> dict:
     """Return the full knowledge graph {nodes: [...], edges: [...]}."""
-    data = mem._load_raw()
-    return data.get("knowledge_graph", {"nodes": [], "edges": []})
+    if _graph_cache is None:
+        _init_graph_cache()
+    return dict(_graph_cache)
 
 
 def backfill_graph_from_library() -> dict:
@@ -272,6 +288,7 @@ def backfill_graph_from_library() -> dict:
     graph["nodes"] = sorted(nodes)
     with mem._lock:
         mem._save_raw(data)
+    _update_graph_cache(graph)
     return {
         "total_nodes": len(graph["nodes"]),
         "total_edges": len(graph["edges"]),
@@ -283,7 +300,7 @@ def backfill_graph_from_library() -> dict:
 # Research Chains
 # ---------------------------------------------------------------------------
 
-def start_research_chain(root_topic: str, model: str = "llama3") -> dict:
+def start_research_chain(root_topic: str, model: str = "gemma3:4b") -> dict:
     """
     Start a multi-step research chain from *root_topic*.
     The LLM suggests 3-4 subtopics to explore sequentially.
@@ -371,7 +388,7 @@ def get_all_chains() -> list[dict]:
 # ---------------------------------------------------------------------------
 
 def check_for_discovery(new_concepts: list[str], filename: str,
-                        model: str = "llama3") -> dict | None:
+                        model: str = "gemma3:4b") -> dict | None:
     """
     Check if adding *new_concepts* creates a surprising cross-document connection.
     Returns a discovery dict or None.
@@ -466,7 +483,7 @@ def extract_curious_terms(text: str) -> list[str]:
     return list(terms)[:10]
 
 
-def pick_curiosity_topic(terms: list[str], model: str = "llama3") -> str | None:
+def pick_curiosity_topic(terms: list[str], model: str = "gemma3:4b") -> str | None:
     """Given a list of curious terms, pick one for OctoBot to research."""
     if not terms:
         return None

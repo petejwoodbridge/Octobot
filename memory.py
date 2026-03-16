@@ -22,6 +22,8 @@ Memory is split into two layers:
 """
 
 import json
+import os
+import time
 import threading
 from datetime import datetime
 from pathlib import Path
@@ -96,11 +98,25 @@ def _load_raw() -> dict:
 
 
 def _save_raw(data: dict) -> None:
-    """Persist *data* to disk."""
+    """Persist *data* to disk (atomic: write tmp then replace)."""
     WORKSPACE_ROOT.mkdir(exist_ok=True)
-    MEMORY_FILE.write_text(
-        json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
+    content = json.dumps(data, indent=2, ensure_ascii=False)
+    tmp = MEMORY_FILE.with_suffix('.tmp')
+    tmp.write_text(content, encoding="utf-8")
+    # On Windows os.replace can fail if another thread has the file open;
+    # retry a few times then fall back to a direct overwrite.
+    for attempt in range(5):
+        try:
+            os.replace(str(tmp), str(MEMORY_FILE))
+            return
+        except PermissionError:
+            time.sleep(0.05 * (attempt + 1))
+    # Fallback — direct write (not atomic but won't crash)
+    MEMORY_FILE.write_text(content, encoding="utf-8")
+    try:
+        tmp.unlink(missing_ok=True)
+    except OSError:
+        pass
 
 
 # ---------------------------------------------------------------------------

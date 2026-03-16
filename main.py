@@ -116,7 +116,7 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--model",
-        default="llama3",
+        default="gemma3:4b",
         help="Ollama model name",
     )
     return p.parse_args()
