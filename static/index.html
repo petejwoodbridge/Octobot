@@ -445,15 +445,12 @@
         <div class="stat">🌟: <span class="stat-val" id="stat-discoveries">0</span></div>
         <div class="stat">⛓️: <span class="stat-val" id="stat-chains">0</span></div>
       </div>
-      <div id="stats-bar" style="border-top:none;padding-top:2px;">
-        <div class="stat">LEVEL:
-          <div class="score-bar"><div class="score-fill" id="level-fill" style="width:0%"></div></div>
-          <span class="stat-val" id="stat-level-name">Napkin Sketcher</span>
-        </div>
-        <div class="stat">🔗 REFS: <span class="stat-val" id="stat-refs">0</span></div>
-        <div class="stat">💬: <span class="stat-val" id="stat-comments">0</span></div>
-        <div class="stat">🔄: <span class="stat-val" id="stat-cycles">0</span></div>
-      </div>
+      <!-- hidden stat elements for JS updates -->
+      <span id="stat-level-name" style="display:none">Napkin Sketcher</span>
+      <span id="stat-refs" style="display:none">0</span>
+      <span id="stat-comments" style="display:none">0</span>
+      <span id="stat-cycles" style="display:none">0</span>
+      <div id="level-fill" style="display:none"></div>
     </div>
     <div id="canvas-wrap">
       <canvas id="game-canvas" width="480" height="320"></canvas>
@@ -649,7 +646,7 @@ const OCTO_SVG = `<svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://
   <path d="M20,14 Q21,20 19,22" stroke="#ff6ec7" stroke-width="1.5" fill="none" stroke-linecap="round"/>
 </svg>`;
 
-function addMsg(role, text) {
+function addMsg(role, text, typewriter) {
   const d = document.createElement('div');
   d.className = 'msg ' + role;
   if (role === 'bot') {
@@ -658,14 +655,35 @@ function addMsg(role, text) {
     avatar.innerHTML = OCTO_SVG;
     const txt = document.createElement('div');
     txt.className = 'octo-text';
-    txt.textContent = text;
     d.appendChild(avatar);
     d.appendChild(txt);
+    if (typewriter && text.length > 10) {
+      typewriteText(txt, text);
+    } else {
+      txt.textContent = text;
+    }
   } else {
     d.textContent = text;
   }
   chatBox.appendChild(d);
   chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+function typewriteText(el, text) {
+  let i = 0;
+  el.textContent = '';
+  const speed = Math.max(8, Math.min(25, 1200 / text.length)); // adaptive speed
+  function tick() {
+    if (i < text.length) {
+      // Add 1-3 chars per tick for natural feel
+      const chunk = Math.random() < 0.3 ? 3 : Math.random() < 0.5 ? 2 : 1;
+      el.textContent += text.slice(i, i + chunk);
+      i += chunk;
+      chatBox.scrollTop = chatBox.scrollHeight;
+      setTimeout(tick, speed + (text[i-1] === '.' || text[i-1] === '!' ? 120 : 0));
+    }
+  }
+  tick();
 }
 
 async function sendChat() {
@@ -696,7 +714,7 @@ async function sendChat() {
   chatBox.lastChild.remove();
 
   if (data && data.response) {
-    addMsg('bot', data.response);
+    addMsg('bot', data.response, true);
   } else {
     addMsg('system', '❌ Failed to get response');
   }
@@ -878,7 +896,7 @@ async function pollAutoMessages() {
   if (!data || !data.messages || data.messages.length === 0) return;
   autoMsgIndex = data.next_index;
   for (const msg of data.messages) {
-    addMsg('bot', msg.content || '*tentacle wiggle*');
+    addMsg('bot', msg.content || '*tentacle wiggle*', true);
   }
 }
 
@@ -2551,8 +2569,8 @@ function gameLoop(ts) {
   if (_speechBubbleText) {
     ctx.save();
     const W = canvas.width, H = canvas.height;
-    const maxW = W - 16;
-    ctx.font = '8px "Press Start 2P"';
+    const maxW = W - 8;
+    ctx.font = '10px "Press Start 2P"';
 
     // Word-wrap the text — allow up to 6 lines
     const words = _speechBubbleText.split(' ');
@@ -2570,11 +2588,11 @@ function gameLoop(ts) {
     if (line) lines.push(line);
     if (lines.length > 6) lines.length = 6;
 
-    const lineH = 13;
-    const bubbleH = lines.length * lineH + 14;
+    const lineH = 17;
+    const bubbleH = lines.length * lineH + 16;
     const bubbleW = Math.min(maxW, Math.max(...lines.map(l => ctx.measureText(l).width)) + 20);
     const bx = W/2 - bubbleW/2;
-    const by = H - bubbleH - 10;
+    const by = H - bubbleH - 6;
 
     // Bubble background
     ctx.fillStyle = '#0a0020ee';
