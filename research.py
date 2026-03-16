@@ -1,19 +1,19 @@
 """
-research.py — OctoBot Research Module
-=======================================
-Handles OctoBot's self-directed research capability.
+research.py — OctoBot Idea Generation Module
+=============================================
+Handles OctoBot's self-directed idea generation capability.
 
-Research workflow
------------------
-1. The agent decides on a topic it wants to learn about.
-2. conduct_research() prompts the LLM to write a detailed summary.
-3. The summary is saved to workspace/library/<topic>.md via save_research().
+Idea generation workflow
+------------------------
+1. The agent picks an idea domain or problem area to tackle.
+2. conduct_research() prompts the LLM to generate an original idea pitch.
+3. The idea is saved to workspace/library/<topic>.md via save_research().
 4. A log entry is written to memory.
 
 The module also provides helpers to:
-- list topics already researched
-- expand on an existing research note
-- synthesise knowledge from multiple library files
+- list idea domains already explored
+- expand on an existing idea
+- synthesise connections across multiple ideas
 """
 
 from datetime import datetime
@@ -29,15 +29,18 @@ import scoring
 
 MODEL = "gemma3:4b"  # synced with agent.MODEL at startup via main.py
 
-RESEARCH_SYSTEM_PROMPT = """You are OctoBot's research arm — a meticulous, curious librarian scientist.
-When asked to research a topic, you write clear, well-structured markdown notes.
+RESEARCH_SYSTEM_PROMPT = """You are OctoBot's idea generation arm — a wildly creative inventor with eight tentacles full of original concepts.
+When given a problem area, domain, or spark of inspiration, you invent ONE specific, original, never-before-invented idea.
 
 Guidelines:
-- Use ## headings to organise the content.
-- Include key facts, interesting details, and practical implications.
-- Write in an informative but slightly playful tone.
-- Keep the total length between 300 and 600 words.
-- Do NOT include meta-commentary like "Here are my notes on…" — just write the notes directly.
+- Give the idea a catchy, memorable name.
+- Use ## headings to structure it: ## The Idea, ## The Problem It Solves, ## How It Works, ## Why It's Brilliant
+- Be SPECIFIC — not "an app for health" but "a fork that vibrates SOS when you're stress-eating at 2am"
+- It's okay to be quirky, funny, or mildly absurd — the best ideas often are
+- Draw unexpected connections between domains to make truly original combinations
+- End with a one-line "pitch" — the sentence you'd say in a lift to make someone immediately want this
+- Keep the total length between 250 and 500 words.
+- Do NOT include meta-commentary like "Here is my idea…" — just dive straight into the idea pitch.
 """
 
 
@@ -64,10 +67,11 @@ def conduct_research(topic: str) -> str:
     mem.log_event("research", f"Starting research on: {topic}")
 
     prompt = (
-        f"Please write detailed research notes about the following topic:\n\n"
+        f"Generate a brilliant, original, never-before-invented idea for the following domain or challenge:\n\n"
         f"**{topic}**\n\n"
-        f"Include key facts, context, interesting details, and any useful "
-        f"patterns or implications. Format as clean markdown."
+        f"Invent something specific, creative, and genuinely useful (or usefully absurd). "
+        f"Name it, explain the problem it solves, how it works, and why it's brilliant. "
+        f"Format as clean markdown with a punchy lift-pitch at the end."
     )
 
     try:
@@ -105,10 +109,10 @@ def expand_research(topic: str) -> str:
     mem.log_event("research", f"Expanding research on: {topic}")
 
     prompt = (
-        f"Here are my existing notes on **{topic}**:\n\n"
+        f"Here is my existing idea for **{topic}**:\n\n"
         f"{existing}\n\n"
-        f"Please write a new section that adds depth, explores a different "
-        f"angle, or includes recent/practical insights not already covered. "
+        f"Please write a new section that extends this idea — a spin-off product, "
+        f"an unexpected use case, a wacky upgrade, or a companion invention. "
         f"Output only the new section (starting with '## ...')."
     )
 
@@ -127,7 +131,7 @@ def expand_research(topic: str) -> str:
 
 
 def list_researched_topics() -> list[str]:
-    """Return a list of topics that have been researched (library .md files)."""
+    """Return a list of idea domains that have been explored (library .md files)."""
     files = [f for f in tools.list_files("library") if f.endswith(".md")]
     topics = []
     for f in sorted(files):
@@ -168,12 +172,12 @@ def synthesise_knowledge(question: str) -> str:
     context = "\n\n".join(context_parts)
 
     system = (
-        "You are OctoBot, a librarian AI. You have access to your knowledge library. "
-        "Answer the user's question using the library contents as context. "
-        "Be concise, accurate, and charming."
+        "You are OctoBot, a wildly creative inventor AI. You have access to your idea vault. "
+        "Answer the user's question by drawing on the ideas already generated. "
+        "Make surprising connections between ideas. Be inventive, specific, and charming."
     )
     user = (
-        f"Using the following library contents, answer this question:\n\n"
+        f"Using the following ideas from the vault, answer this question:\n\n"
         f"**{question}**\n\n"
         f"---\n\n{context}"
     )
@@ -197,13 +201,14 @@ def suggest_research_topics(n: int = 3) -> list[str]:
     existing_str = ", ".join(existing) if existing else "nothing yet"
 
     system = (
-        "You are OctoBot's curiosity engine. "
-        "Suggest interesting research topics for a librarian AI to explore."
+        "You are OctoBot's idea spark engine. "
+        "Suggest fresh idea domains or problem areas for an inventor AI to generate original inventions for."
     )
     user = (
-        f"I have already researched: {existing_str}.\n"
-        f"Suggest {n} new, interesting topics I should research next. "
-        f"Return only the topic names, one per line, no numbers or bullets."
+        f"I have already generated ideas for: {existing_str}.\n"
+        f"Suggest {n} new, specific idea domains I should explore next — "
+        f"focus on unsolved problems, annoying daily frustrations, or delightfully niche situations. "
+        f"Return only the domain descriptions, one per line, no numbers or bullets."
     )
 
     try:

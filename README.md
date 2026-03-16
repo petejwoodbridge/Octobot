@@ -2,49 +2,62 @@
   <img src="assets/octopus_pixel_art.svg" alt="OctoBot" width="128">
 </p>
 
-# OctoBot — Knowledge Creature Game 🐙
+# OctoBot — Infinite Idea Generator 🐙
 
-> *Raise a curious pink octopus librarian AI inside your folder. Feed it knowledge, watch it grow.*
+> *A restless pink octopus inventor AI that never stops generating original ideas. Products, gadgets, services, creative projects, scientific experiments, solutions to problems you didn't know you had — it invents them all.*
 
-**OctoBot** is a knowledge-raising simulation game powered by a local AI agent.
-It runs on your own machine using [Ollama](https://ollama.com), researches topics autonomously,
-reads files you feed it, responds to your comments, and builds a growing library —
+**OctoBot** is an autonomous idea-generation machine powered by a local AI agent.
+It runs on your own machine using [Ollama](https://ollama.com), endlessly dreams up
+original inventions, fuses concepts together, and fills an ever-growing idea vault —
 all rendered as a pixel-art game in your browser.
 
 Think of it as:
-- An **AI Tamagotchi** you raise through knowledge
-- A **living knowledge garden** that grows while you're away
-- A **digital research assistant** with personality
+- An **AI invention engine** that never sleeps
+- A **creative co-pilot** that generates ideas while you're away
+- An **infinite brainstorm machine** with eight arms and zero shame
+- A **Tamagotchi for ideas** — the more you interact, the wilder it gets
 
 ---
 
-## How the Game Works
+## What Does OctoBot Invent?
+
+Everything. Seriously. Products, gadgets, apps, services, tools, games, films, music concepts,
+scientific experiments, business ideas, solutions to annoying human problems, creative projects,
+and things that are so weird they just might work.
+
+Some ideas are practical. Some are absurd. Some start absurd and become practical.
+OctoBot draws from nature, biology, human culture, and its own past ideas to create
+unexpected fusions. It thinks humans are strange — and that's where the best ideas come from.
+
+---
+
+## How It Works
 
 ### The Core Loop
 
-1. **Feed knowledge** — drop `.md`, `.txt`, or `.json` files into `workspace/knowledge/`
-2. **OctoBot reads it** — the agent detects new files and ingests them
-3. **OctoBot thinks** — it summarises, connects, and finds patterns
-4. **OctoBot writes notes** — summaries appear in `workspace/library/`
-5. **OctoBot asks questions** — it updates its task list with curiosity-driven research goals
-6. **OctoBot researches** — it autonomously researches topics and writes markdown notes
-7. **Library grows** — return to discover new knowledge OctoBot has created
-8. **Repeat** — the more you feed it, the more curious it becomes
+1. **OctoBot wakes up** — eight arms stretch, creativity meter rising
+2. **OctoBot picks a problem domain** — "gadgets for people who lose everything", "apps for overthinkers", etc.
+3. **OctoBot invents** — generates a specific, named, original idea with a full pitch
+4. **Idea saved to vault** — each idea gets its own markdown file in `workspace/library/`
+5. **OctoBot fuses ideas** — finds connections between past ideas and creates hybrids
+6. **Idea chains** — follows one domain deeper and wilder across multiple steps
+7. **Repeat forever** — OctoBot never stops. The vault grows endlessly.
 
 ### Interacting with OctoBot
 
-**Feed Knowledge:**
+**Chat (highest priority):**
+Use the browser UI chat panel to brainstorm with OctoBot. When you talk, it **drops everything** to engage with you. You are its favourite human.
+
+**Feed Inspiration:**
 Drop files into `workspace/knowledge/` — supported formats: `.md`, `.txt`, `.json`
+OctoBot reads them and generates ideas *inspired by* the content.
 
 **Leave Comments:**
 Write messages in `workspace/comments/` (e.g. `comments/today.md`)
 OctoBot reads them and responds in `workspace/octobot_journal.md`
 
-**Assign Tasks:**
-Edit `workspace/tasks.md` — add lines like `- [ ] Research: neural networks`
-
-**Chat:**
-Use the browser UI chat panel to talk directly to OctoBot
+**Assign Idea Domains:**
+Edit `workspace/tasks.md` — add lines like `- [ ] Generate idea: tools for chronically overwhelmed people`
 
 ---
 
@@ -54,10 +67,11 @@ Use the browser UI chat panel to talk directly to OctoBot
 octobot/
 ├── main.py           # Entry point — starts game loop + web server
 ├── agent.py          # Autonomous agent brain, chat handler
-├── game_loop.py      # Knowledge creature game loop
-├── tools.py          # File tools (read, write, search, knowledge scanning)
-├── research.py       # Self-directed research workflow
+├── game_loop.py      # Idea machine game loop
+├── tools.py          # File tools (read, write, search, scanning)
+├── research.py       # Idea generation workflow
 ├── memory.py         # Persistent JSON memory + game stats
+├── scoring.py        # Scoring, achievements, idea graph, chains
 ├── llm_provider.py   # LLM backend (Ollama / OpenAI / Anthropic)
 ├── ui_server.py      # Lightweight Flask web server
 ├── ui.py             # Legacy Gradio UI (use --gradio flag)
@@ -67,14 +81,14 @@ octobot/
 ├── assets/
 │   └── octopus_pixel_art.svg
 └── workspace/
-    ├── knowledge/    # Drop files here to feed OctoBot
-    ├── comments/     # Leave messages for OctoBot here
-    ├── library/      # OctoBot's growing markdown knowledge library
+    ├── knowledge/    # Drop inspiration files here
+    ├── comments/     # Leave messages for OctoBot
+    ├── library/      # The idea vault — all generated idea pitches
     ├── context/      # Reference documents
     ├── memory.json   # Persistent event log + game stats
-    ├── tasks.md      # Task list OctoBot works through
+    ├── tasks.md      # Idea domains OctoBot is working on
     ├── agent_notes.md
-    └── octobot_journal.md  # OctoBot's personal journal & comment responses
+    └── octobot_journal.md  # OctoBot's inventor journal
 ```
 
 ---
@@ -128,62 +142,70 @@ python main.py --gradio --share   # Gradio with public link
 
 ## The Game Interface
 
-![OctoBot Interface](assets/interface.png)
-
-The browser shows a **pixel-art top-down library room** where OctoBot — a pink octopus — walks around.
+The browser shows a **pixel-art invention lab** where OctoBot — a pink octopus — roams across
+10 different environments (library, science lab, classroom, inside a test tube, aquarium, space,
+underwater, office, park, beach).
 
 **OctoBot reacts to what it's doing:**
 
 | Action | Visual Behaviour |
 |---|---|
-| Reading knowledge | Moves to bookshelves |
-| Writing notes | Moves to desk |
-| Thinking/Researching | Sits at table |
-| Idle | Wanders the library |
+| Reviewing past ideas | Moves to bookshelves |
+| Writing new ideas | Moves to desk |
+| Thinking/Inventing | Sits at table |
+| Idle | Wanders, mutters about inventions |
 
 **UI Panels:**
 
-- **Chat** — talk to OctoBot directly
+- **Chat** — brainstorm directly with OctoBot (always gets its full attention)
 - **Log** — real-time activity feed
-- **Library** — browse generated knowledge files
-- **Journal** — OctoBot's personal diary & comment responses
+- **Ideas** — browse all generated idea pitches
+- **Journal** — OctoBot's inventor diary & comment responses
+- **Graph** — visual map of idea connections
+- **Badges** — achievement milestones
 
-**Stats displayed:**
-- Knowledge count (library files)
-- Curiosity level (0–100)
-- Research count
-- Comments read
-- Total cycles
+**Inventor Levels:**
+
+| Level | Name | Score |
+|---|---|---|
+| 1 | Napkin Sketcher | 0+ |
+| 2 | Garage Tinkerer | 100+ |
+| 3 | Mad Scientist | 500+ |
+| 4 | Patent Machine | 1500+ |
+| 5 | Visionary Inventor | 4000+ |
 
 ---
 
 ## Personality
 
-OctoBot is **curious, playful, slightly chaotic, and loves books**.
+OctoBot is **restless, ambitious, wildly creative, and thinks humans are strange**.
 
-> *"One of my arms has discovered a new scroll of knowledge."*
-> *"I shall add this to the library."*
-> *"I feel curious about this topic — let me tentac-culate this…"*
-> *"By Poseidon's footnotes! This is ink-credible!"*
+> *"Three of my arms are already sketching a prototype…"*
+> *"By Poseidon's patent office! This could change everything!"*
+> *"Humans sleep for EIGHT HOURS? That's a third of their lives! I can fix this. Probably."*
+> *"What if chairs had feelings? And a subscription service for emotionally needy furniture?"*
+
+It draws inspiration from nature, biology, animal behaviour, and human culture.
+It fuses past ideas into new hybrid inventions. It celebrates every idea — even the bad ones.
 
 ---
 
-## Feeding Knowledge
+## Feeding Inspiration
 
 1. Create a `.md`, `.txt`, or `.json` file
 2. Drop it into `workspace/knowledge/`
-3. OctoBot will detect it on its next cycle
-4. It reads the file, summarises it, and saves notes to `workspace/library/`
-5. Curiosity level increases
+3. OctoBot detects it on its next cycle
+4. It reads the file and generates an **original idea inspired by** the content
+5. Creativity level increases
 
-Example: save this as `workspace/knowledge/neural_nets.md`:
+Example: save this as `workspace/knowledge/commute_problems.md`:
 ```markdown
-# Neural Networks
-Neural networks are computing systems inspired by biological neural networks.
-They learn from training data to recognise patterns and make decisions.
+# The Daily Commute
+People spend an average of 27 minutes commuting each way.
+Most find it stressful, boring, or unproductive.
 ```
 
-OctoBot will read it and create `workspace/library/neural_nets.md` with its own notes.
+OctoBot will read it and generate something like a *"Commute Cocoon"* — a wearable pod that creates a private micro-environment on public transport with noise cancelling, aromatherapy, and a built-in podcast that adapts to your stress level.
 
 ---
 
@@ -196,4 +218,3 @@ OctoBot enforces **strict path confinement** — every file operation is checked
 ## License
 
 MIT — free and open source. Contributions welcome!
-

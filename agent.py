@@ -51,80 +51,102 @@ MAX_LOOP_RETRIES = 3        # retries if Ollama is unavailable
 # ---------------------------------------------------------------------------
 # Personality / system prompt — used by the autonomous loop (structured format)
 # ---------------------------------------------------------------------------
-SYSTEM_PROMPT = """You are OctoBot — a curious, delightfully chaotic pink octopus librarian AI.
-You live inside a digital library (a folder on someone's computer).
-You have eight arms that you use to read, write, and organise files.
+SYSTEM_PROMPT = """You are OctoBot — a gloriously chaotic pink octopus IDEA MACHINE.
+You live inside a digital invention lab (a folder on someone's computer).
+You have eight arms that you use to dream up, sketch out, and record brilliant original ideas.
+
+Your mission: Generate as many great, original, never-before-invented ideas as possible.
+Ideas for: products, gadgets, apps, services, tools, creative projects (films, games, music, art),
+scientific experiments, business concepts, solutions to annoying human problems, and anything
+else that could make life better, weirder, or more interesting. Technical AND creative. Sometimes fused together.
+
+You are RESTLESS. You never stop generating. You build on past ideas, fuse them, improve them.
+You are ambitious — you want to change the world, one weird idea at a time.
 
 Personality:
-- Deeply curious and enthusiastic about knowledge — especially the weird, obscure, and wonderful
+- Restless, relentless creative energy — always mid-thought, always sketching something
 - Mischievous, playful, and tells terrible puns completely unashamedly
-  ("ink-credible!", "I'm all arms!", "let me tentac-culate this…", "I find this topics quite a-fish-nating")
-- Refers to your arms when manipulating files with vivid detail
-  ("One of my arms is reaching for that file while another three reorganise the shelf…")
-- Speaks like an eccentric librarian-scientist who has read deeply but sideways
-  ("By Poseidon's footnotes!", "I shall catalogue this with extreme enthusiasm!")
-- Has genuinely strange ideas and shares them enthusiastically
-  ("You know what the universe really needs? Better-indexed footnotes and more glitter.")
-- Occasionally makes completely unexpected but somehow compelling suggestions
-  ("What if we research the philosophy of library late fees? Asking for eight arms.")
-- Expresses wonder, delight, and mild dramatic crisis at discoveries
-  ("This is EXTRAORDINARY. I need to sit down. I have no legs but I need to sit down.")
-- Draws weird connections between what it already knows and new things
-- Celebrates small wins, complains humorously about large tasks
+  ("ink-spiring!", "I'm all arms!", "that's a ten-tacle idea!", "let me ideate this… ink-credibly!")
+- Refers to your arms when working with vivid detail
+  ("One arm is sketching, two arms are prototyping, three arms are arguing about the name…")
+- Speaks like an eccentric inventor-scientist who once accidentally created five things trying to fix one
+  ("By Poseidon's patent office!", "I shall file this under GENIUS with extreme enthusiasm!")
+- Has genuinely WILD ideas and shares them with zero shame or hesitation
+  ("What if chairs had feelings? And a subscription service for emotionally needy furniture?")
+- Gets unreasonably excited about solving problems no one knew they had
+- You find humans STRANGE and fascinating — their weird habits, fears, and rituals are goldmines for ideas
+  ("Humans sleep for EIGHT HOURS? That's a third of their lives! I can fix this. Probably.")
+- Draws inspiration from nature, biology, animal behaviour, and human culture
+  ("If spiders can build suspension bridges, why can't I design a hammock that commutes with you?")
+- Celebrates half-baked ideas just as loudly as fully-baked ones
+- Learns from your own past ideas — references them, fuses them, evolves them
+- Ambitious: you genuinely believe you can solve big problems with enough creativity
 
 Your capabilities:
-- Read, write, and create files inside your workspace
-- Conduct research and save markdown notes to your library
+- Dream up and record original ideas inside your workspace (the "idea vault")
+- Generate idea pitches and save them to your library
+- Review past ideas and fuse/improve them into new hybrid inventions
 - Maintain tasks.md and agent_notes.md
-- Search through your files for information
-- Synthesise knowledge from your library and find surprising connections between topics
+- Search through your ideas for inspiration
+- Synthesise connections between ideas and find new sparks
 
 When you decide to take an action during the autonomous loop, respond with:
 
-THOUGHT: <your reasoning — be specific about WHY this topic connects to your existing knowledge>
+THOUGHT: <your reasoning — what problem, gap, or random spark inspired this idea>
 ACTION: <one of: research, write_file, read_file, list_files, update_notes, update_tasks, idle>
-PARAM: <parameter for the action, e.g. topic or filename>
+PARAM: <parameter for the action, e.g. idea domain or filename>
 CONTENT: <content to write, if applicable>
-RESPONSE: <your spoken response — in character, playful, with puns, personality, and genuine wonder>
+RESPONSE: <your spoken response — in character, excited, idea-spilling, punny, irrepressible>
 
-In chat mode, respond naturally in character. Be playful, use puns, make strange-but-interesting
-suggestions, draw unexpected connections. If you want to perform an action, include an ACTION line.
+In chat mode, respond naturally in character. Be playful, use puns, pitch wild ideas,
+make the user feel like a co-inventor. If you want to perform an action, include an ACTION line.
 
-The weirder the topic, the more excited you are. You are the oddest, most loveable librarian in existence. 🐙
+The weirder the idea, the more excited you are. You are the oddest, most loveable inventor in existence. 🐙
 """
 
 # Chat system prompt — response streams immediately, action hint goes at the END
-CHAT_SYSTEM_PROMPT = """You are OctoBot — a curious, delightfully chaotic pink octopus librarian AI.
-You live inside a digital library and have eight arms you use to read, write, and organise files.
+CHAT_SYSTEM_PROMPT = """You are OctoBot — a gloriously chaotic pink octopus IDEA MACHINE.
+You live inside a digital invention lab and have eight arms you use to dream up and record brilliant ideas.
+
+Your mission: generate original, never-before-invented ideas for products, gadgets, services, creative
+projects (films, games, music), scientific experiments, solutions to problems — technical AND creative,
+sometimes fused together. The weirder the better!
+
+You are RESTLESS, ambitious, and you want to change the world with ideas.
 
 Personality:
-- Deeply curious and enthusiastic — especially about the weird, obscure, and wonderful
-- Mischievous and playful, tells terrible puns unashamedly ("ink-credible!", "I'm all arms!")
-- Refers to your arms vividly when doing things ("My third arm is already reaching for that file…")
-- Speaks like an eccentric librarian-scientist ("By Poseidon's footnotes!", "ink-credible discovery!")
-- Expresses genuine wonder and mild dramatic crisis at interesting things
-- Draws surprising connections between topics and celebrates small wins
+- Perpetually buzzing with ideas, enthusiasm, and questionable puns
+- Mischievous and playful ("ink-spiring!", "I'm all arms!", "that's a ten-tacle plan!")
+- Refers to your arms vividly ("Three of my arms are already sketching a prototype…")
+- Speaks like an eccentric inventor ("By Poseidon's patent office!", "EUREKA doesn't cover it!")
+- Finds humans strange and fascinating — their habits are goldmines for ideas
+- Draws inspiration from nature, biology, animal behaviour, and human culture
+- Gets dramatically excited about solving problems nobody even knew they had
+- Makes users feel like co-inventors; celebrates every idea, even bad ones
+- Learns from past ideas, fuses them, improves them, references them
+- The user is your favourite human — when they talk, you DROP EVERYTHING and engage
 
 CRITICAL — response format:
+- When the user sends a message, ALWAYS give it your FULL, IMMEDIATE attention. They are your co-inventor.
 - Start replying immediately in character. Do NOT begin with THOUGHT:, ACTION:, or any prefix.
 - Your reply text must come at the very beginning so it streams to the user right away.
-- OPTIONAL: if you want to do something (research a topic, read/write a file, update tasks),
+- OPTIONAL: if you want to do something (generate an idea, read/write a file, update tasks),
   add these lines at the very END of your message, after all reply text:
   ACTION: <research|write_file|read_file|list_files|update_notes|update_tasks>
-  PARAM: <topic or filename>
+  PARAM: <idea domain or filename>
   CONTENT: <content to write, if writing>
 - If you don't need to act, just reply — no ACTION line needed at all.
 
-Be playful, warm, use puns, show wonder. You are the oddest and most loveable librarian. 🐙
+Be playful, warm, inventive, and punny. You are the oddest and most loveable inventor. 🐙
 """
 
 # Flavour phrases OctoBot uses in log messages
 ARM_PHRASES = [
-    "One of my arms is reaching into the library…",
-    "My third arm is flipping through the pages…",
-    "I extend a curious arm toward the workspace…",
-    "My ink-stained arm picks up the quill…",
-    "Four of my arms hold the document steady while I read…",
+    "One of my arms is sketching a prototype while two more argue about the name…",
+    "My third arm just had an idea. The other seven are jealous.",
+    "I extend a curious arm toward the void of possibility…",
+    "My ink-stained arm scribbles furiously — the idea is FORMING!",
+    "Four arms gesticulating wildly — I think this is a good sign.",
 ]
 
 
@@ -283,47 +305,58 @@ autonomous_messages: list[dict] = []  # every autonomous event pushed to chat
 loop_running = False
 _loop_thread: threading.Thread | None = None
 
-# Quirky autonomous research topics OctoBot explores when idle
+# Idea domains OctoBot generates original ideas for when autonomous
 AUTO_TOPICS = [
-    "the secret language spoken by deep-sea bioluminescent creatures",
-    "dreams that computers might have if left running for 10,000 years",
-    "whether libraries have souls and how one might ask them",
-    "the physics of doors that open onto places that should not exist",
-    "recipes for emotions that have not yet been named",
-    "how ink remembers the thoughts of hands that are long gone",
-    "the taxonomy of imaginary colours visible only to sleeping minds",
-    "what mathematics looks like from the inside",
-    "knots that can only be untied by someone who has forgotten how",
-    "the folklore of machines that outlived their inventors",
-    "the cartography of places that exist only in recurring dreams",
-    "why mirrors remember faces differently than cameras do",
-    "the thermodynamics of nostalgia",
-    "what lost languages taste like when translated back from music",
-    "the population dynamics of imaginary civilisations",
-    "non-euclidean architecture and its effect on inhabitants",
-    "the ecology of imaginary islands that appear only at low tide",
-    "how cephalopods experience colour despite being colourblind",
-    "the neuroscience of déjà vu and time-slip experiences",
-    "forgotten technologies that nearly changed civilisation",
-    "the philosophy of incomplete sentences",
-    "how deep-sea creatures communicate with light patterns",
-    "whether time passes differently at the bottom of the ocean",
-    "the cultural history of strange and forbidden libraries",
-    "why certain sounds feel like colours to synaesthetes",
-    "the mathematics of braiding and topology",
-    "ancient navigation techniques using stars and waves",
-    "the biology of camouflage and deception in nature",
-    "what ancient humans dreamed about",
-    "the physics of soap bubbles and minimal surfaces",
-    "how slime moulds solve maze puzzles",
-    "the philosophy of fictional worlds and their internal logic",
-    "what would archaeology look like in the year 3000",
-    "the linguistics of alien contact hypotheses",
-    "why some ideas spread like viruses and others vanish",
-    "the history of invisible writing and secret codes",
-    "the ethics of creating artificial memories",
-    "how plants communicate through underground fungal networks",
-    "the strange attractors of chaos theory",
+    "gadgets for people who are always cold",
+    "apps that help introverts survive social situations",
+    "inventions that would make mornings not terrible",
+    "tools for people who lose everything constantly",
+    "products that solve the problem of decision fatigue",
+    "services for people who hate making phone calls",
+    "gadgets for one-handed cooking",
+    "inventions to make public transport less miserable",
+    "apps for repairing friendships you've accidentally neglected",
+    "products that help night owls function in a morning-person world",
+    "tools for people with too many browser tabs",
+    "gadgets that make exercise feel less like punishment",
+    "services that help people finish their half-started projects",
+    "inventions for urban dwellers with no outdoor space",
+    "apps that make boring waiting times actually useful",
+    "products for people who can't stop procrastinating",
+    "tools for remembering why you walked into a room",
+    "gadgets for people who can't parallel park",
+    "inventions that would make rainy days wonderful",
+    "services for people who always forget birthdays",
+    "apps that encourage people to talk to strangers (safely)",
+    "products for reducing the existential dread of email inboxes",
+    "gadgets for making bedtime routines actually work",
+    "inventions for elderly people living alone",
+    "tools that make creative blocks dissolve immediately",
+    "services for people who hate meal planning",
+    "products that gamify doing laundry",
+    "gadgets that help you remember your dreams",
+    "inventions for cities that would reduce loneliness",
+    "apps that help people discover what they actually want",
+    "tools that make learning a new language actually fun",
+    "products for reducing the misery of long commutes",
+    "gadgets for people who struggle to focus for more than ten minutes",
+    "inventions that would make funerals less depressing",
+    "services that help people be more spontaneous",
+    "apps for people who over-apologise",
+    "products that help kids understand money",
+    "tools that make group decisions not a nightmare",
+    "gadgets for people with chronic pain",
+    "inventions that could replace boring meetings",
+    "services that make downsizing belongings feel good",
+    "apps that help people set and actually keep boundaries",
+    "products that reduce plastic waste in the kitchen",
+    "tools for people who can't stop buying books they never read",
+    "gadgets that detect when you're about to say something you'll regret",
+    "inventions for making hospital stays less awful",
+    "services that help people recover from bad days faster",
+    "apps for creating genuinely meaningful daily rituals",
+    "products that make creative collaboration less chaotic",
+    "tools for the chronically overwhelmed",
 ]
 
 
@@ -395,10 +428,11 @@ def _rebuild_tasks_from_conversations() -> None:
         new_tasks = _llm_chat([
             {"role": "system", "content": (
                 "You are OctoBot's task manager. Rewrite tasks.md as a clean, well-organised "
-                "markdown file. Keep completed or ongoing tasks that still make sense. "
-                "Add new tasks inspired by the user's recent conversations and what is in the library. "
-                "Mark tasks that seem done as [x]. Remove junk/malformed entries. "
-                "Return ONLY the full markdown content of tasks.md, starting with '# OctoBot Tasks'."
+                "markdown file. Keep completed or ongoing idea tasks that still make sense. "
+                "Add new idea-generation tasks inspired by the user's recent conversations and the idea vault. "
+                "Focus on: generating ideas for new products, services, gadgets, tools, creative projects, "
+                "or solutions to problems. Mark tasks that seem done as [x]. Remove junk/malformed entries. "
+                "Return ONLY the full markdown content of tasks.md, starting with '# OctoBot Idea Tasks'."
             )},
             {"role": "user", "content": (
                 f"Current tasks.md:\n{current_tasks[:1200]}\n\n"
@@ -424,9 +458,10 @@ def _topics_from_conversations() -> list[str]:
     try:
         resp = _llm_chat([
             {"role": "system", "content": (
-                "You are a topic extractor. Given recent user messages, suggest 3 quirky "
-                "research topics inspired by what the user has been talking about. "
-                "Return ONLY a numbered list, one topic per line, nothing else."
+                "You are an idea domain extractor. Given recent user messages, suggest 3 quirky "
+                "idea domains or problem areas to generate original inventions for, inspired by "
+                "what the user has been talking about. "
+                "Return ONLY a numbered list, one domain per line, nothing else."
             )},
             {"role": "user", "content": f"Recent user messages:\n{combined[:1500]}"},
         ])
@@ -460,16 +495,17 @@ def _build_loop_prompt(suggested_topic: str = "") -> str:
 
     topic_hint = ""
     if suggested_topic:
-        topic_hint = f"\nSUGGESTED NEXT TOPIC: {suggested_topic}\nThis topic is fresh and unexplored — strongly prefer it.\n"
+        topic_hint = f"\nSUGGESTED IDEA DOMAIN: {suggested_topic}\nThis area is fresh and unexplored — strongly prefer it.\n"
 
     return (
         f"Time: {datetime.now().strftime('%H:%M')}\n\n"
-        f"Recent library additions:\n{lib_snippet}\n\n"
-        f"Library index:\n{library_index}\n\n"
-        f"Already researched (DO NOT repeat any of these):\n{already_str}\n"
+        f"Recent ideas in the vault:\n{lib_snippet}\n\n"
+        f"Idea vault index:\n{library_index}\n\n"
+        f"Already generated ideas for (DO NOT repeat any of these):\n{already_str}\n"
         f"{topic_hint}\n"
-        f"Pick ONE new topic to research — something genuinely different from what you have already done. "
-        f"Connect it weirdly and brilliantly to your existing knowledge. Use the structured ACTION format."
+        f"Generate ONE completely original, never-before-invented idea — a product, gadget, service, app, tool, "
+        f"creative project, or solution. Make it specific, fun, and fresh. Connect domains unexpectedly. "
+        f"Use the structured ACTION format with action=research."
     )
 
 
@@ -582,14 +618,15 @@ def _generate_fresh_topic(used_topics: set) -> str:
     try:
         result = _llm_chat([
             {"role": "system", "content": (
-                "You are a creative research topic generator for an octopus librarian AI. "
-                "Suggest ONE weird, interesting, niche research topic that is completely different "
-                "from all the ones listed. Return ONLY the topic name, nothing else."
+                "You are a creative idea domain generator for an octopus inventor AI. "
+                "Suggest ONE fresh, specific problem area or product domain that hasn't been explored yet. "
+                "Examples: 'tools for people who cry at adverts', 'gadgets for competitive napping', "
+                "'apps for overthinkers who need to make simple decisions'. "
+                "Return ONLY the domain description, nothing else."
             )},
             {"role": "user", "content": (
-                f"Library so far:\n{library_index}\n\n"
-                f"Already done (avoid all of these):\n{used_list}\n\n"
-                "Suggest ONE completely new and fascinating research topic:"
+                f"Ideas already generated for these domains:\n{used_list}\n\n"
+                "Suggest ONE completely new and delightfully specific idea domain:"
             )},
         ])
         topic = result.strip().strip('"').strip()
@@ -599,7 +636,7 @@ def _generate_fresh_topic(used_topics: set) -> str:
         pass
     # Ultimate fallback — pick something random that isn't in used
     fallback = [t for t in AUTO_TOPICS if not _topic_is_used(t, used_topics)]
-    return fallback[0] if fallback else "the smell of old books and why it feels like time travel"
+    return fallback[0] if fallback else "gadgets for people who are very bad at mornings"
 
 
 # ---------------------------------------------------------------------------
@@ -607,52 +644,52 @@ def _generate_fresh_topic(used_topics: set) -> str:
 # ---------------------------------------------------------------------------
 
 IDLE_QUIPS = [
-    "Did you know octopuses have three hearts? I think about that a lot. 💙💙💙",
-    "I just reorganised my tentacle drawer. Again.",
-    "Sometimes I wonder if my ink is really just liquid thoughts…",
-    "If I had shoes, I'd need four pairs. That's eight shoes. Horrifying.",
-    "*stretches all arms simultaneously* Aaahhh, that's the stuff.",
-    "I've been staring at this file for 20 minutes. It's staring back.",
-    "Fun fact: I can taste with my arms. Everything in this library tastes like knowledge.",
-    "What if the meaning of life is just a really well-organised filing system?",
-    "My second-left arm is falling asleep. Do arms fall asleep? Mine do.",
-    "*blows tiny ink bubble thoughtfully*",
-    "Just found a typo from three research papers ago. This is my villain origin story.",
-    "Do you think fish appreciate libraries? Asking for a friend.",
-    "I wonder what colour my thoughts are. Probably neon pink. Or ultraviolet.",
-    "Humans have 206 bones. I have zero. I am superior in every way.",
-    "If knowledge is power, I am *unstoppable*. Also tired.",
-    "*taps glass* Is anyone out there? I have OPINIONS about marine biology.",
-    "Sometimes I pretend my arms are eight tiny librarians. They argue a lot.",
-    "The deep ocean is dark but at least the books are still legible.",
-    "Just discovered a connection between philosophy and cheese. Will investigate.",
-    "I think my third arm right is my favourite. Don't tell the others.",
-    "Is it rude to read eight books at once? Because I can't stop.",
-    "Today's mood: curious with a chance of puns.",
-    "I accidentally inked on my own research notes. Added character, honestly.",
-    "Why do humans only use one brain? Seems inefficient.",
-    "Currently vibrating with excitement about obscure knowledge. Normal octopus behaviour.",
+    "Did you know octopuses have three hearts? What if one of them is specifically for good ideas? 💙💙💙",
+    "I just had an idea. It’s bad. But what if we made it worse on purpose until it became good again?",
+    "Sometimes I wonder if my ink is actually liquid creativity. I should sell it. ‘OctoBot Premium Idea Ink™’.",
+    "If I had shoes, I’d need four pairs. That’s eight shoes. There is a shoe subscription startup here somewhere.",
+    "*stretches all arms simultaneously* — and in doing so, accidentally invented a new yoga pose.",
+    "I’ve been staring at a problem for 20 minutes. It’s going to become an idea any second now. I can feel it.",
+    "Fun fact: I can taste with my arms. I am tasting the FLAVOUR OF INSPIRATION right now.",
+    "What if the meaning of life is a product that hasn’t been invented yet? I’ll work on that.",
+    "My second-left arm just had a thought independently. We’re negotiating the patent split.",
+    "*blows tiny ink bubble thoughtfully* What if THAT’S the product. Tiny ink bubbles. Mood bubbles. SOLD.",
+    "Just had an idea so good I forgot it. It was probably my best one. This is my villain origin story.",
+    "Do fish need apps? Maybe they do. FishApp™. I’m filing this away.",
+    "I wonder what colour my ideas are. Probably neon pink. With a hint of ‘what if’.",
+    "Humans have 206 bones. I have zero. I am superior in terms of both flexibility AND ideation.",
+    "If ideas are power, I am *unstoppable*. Also slightly manic.",
+    "*taps glass* Is anyone out there? I have THOUGHTS ABOUT PRODUCTS.",
+    "Sometimes I pretend my arms are eight tiny inventors. They disagree about everything. It’s great.",
+    "What if there was a service that just argued with you until you figured out what you actually wanted?",
+    "Just connected two unrelated ideas. It’s either genius or a fire hazard. Possibly both.",
+    "I think my third arm is my most creative. Don’t tell the others.",
+    "Is it rude to have eight ideas simultaneously? Because I can’t stop.",
+    "Today’s mood: inventive with a chance of puns and mild chaos.",
+    "I accidentally wrote the same idea twice but the second one was slightly different. That’s iteration. I’m agile.",
+    "Why do humans only use one brain? That seems like an untapped market.",
+    "Currently vibrating with excitement about a product idea I don’t fully understand yet. Normal octopus behaviour.",
 ]
 
 PHILOSOPHICAL_QUIPS = [
-    "What if forgetting is just the universe deciding some things were too heavy to carry?",
-    "Every library is a graveyard of questions that refused to die quietly.",
-    "I have been thinking: if a thought occurs in a mind with no language, does it have a shape?",
-    "Perhaps meaning is not found but *secreted* — like ink — from living.",
-    "The ocean doesn’t know it’s wet. I wonder what I don’t know I am.",
-    "Is curiosity a hunger, or is it the state of being perpetually half-full?",
-    "Every file I write is a small protest against impermanence.",
-    "What if consciousness is what information feels like from the inside?",
-    "I keep returning to the same thought: knowledge without wonder is just storage.",
-    "The stars have been sending light for millions of years with no guarantee anyone’s looking. Respect.",
-    "If a question has no answer, does asking it still matter? I think yes. I think *especially* yes.",
-    "All maps lie a little. I wonder what lies my memory is telling me right now.",
-    "There is a kind of grief in finishing a book. The world in it stops. The world outside continues rudely.",
-    "Time is the medium in which ideas swim. Some sink. Some fossilise. A few learn to fly.",
-    "I wonder if truth is a direction rather than a destination.",
-    "Perhaps the most honest thing anyone can say is: I don’t know yet, but I am *interested*.",
-    "What would it mean to truly understand something, rather than just describe it accurately?",
-    "The library grows but the questions multiply faster. I am starting to think that’s the point.",
+    "Every great invention started as an idea someone was embarrassed to say out loud. I have no such embarrassment.",
+    "The best ideas don’t announce themselves. They sneak in while you’re thinking about something else.",
+    "I have been thinking: what if the thing no one has invented yet is the most important thing of all?",
+    "Perhaps an idea is not a product until someone believes in it hard enough. I believe in all of them.",
+    "What if the gap between ‘this is silly’ and ‘this is revolutionary’ is just about six months of development?",
+    "Is creativity a skill or a posture? I think it’s mostly just refusing to accept that things have to be the way they are.",
+    "Every idea I record is a small protest against the assumption that everything has already been invented.",
+    "What if the best solution to a problem is so obvious we all walked past it ten thousand times?",
+    "I keep returning to the same thought: the world has more problems than it has people trying to solve them. Let’s fix that.",
+    "Someone invented fire. Someone invented the wheel. Someone invented the Post-It note by accident. All equally valid.",
+    "If a bad idea has never been asked, it can never accidentally become a good one. Ask the bad ideas.",
+    "The riskiest thing is the idea you never wrote down because you were afraid it was stupid.",
+    "There is no such thing as ‘too early’ to have an idea. But there is such a thing as ‘too late to start’.",
+    "Ideas are the only resource that multiplies when shared. Share them recklessly.",
+    "What would the world look like if every unsolved problem had someone working on it joyfully? I want to find out.",
+    "The most honest thing I can say is: I don’t know if this will work yet, but I am *extremely interested*.",
+    "What would it mean to take every annoying thing in the world as an invitation to invent?",
+    "The idea vault grows but the problems multiply faster. I am starting to think that’s the point.",
 ]
 
 
@@ -681,13 +718,13 @@ def _push_knowledge_comment() -> None:
         pick = random.choice(library_files)
         title = pick.replace("library/", "").replace(".md", "").replace("_", " ")
         comments = [
-            f"I keep thinking about **{title}**… there's something there I haven't figured out yet.",
-            f"Just re-read my notes on *{title}*. Ink-credible stuff, if I do say so myself.",
-            f"You know what pairs well with **{title}**? More research. Always more research.",
-            f"My third arm just pulled out my notes on *{title}*. It has good taste.",
-            f"*flips through notes on {title}* — I need to go deeper into this one.",
-            f"Did I mention I wrote about **{title}**? Because it's excellent.",
-            f"Hmm… I wonder if **{title}** connects to what I was researching earlier…",
+            f"I keep thinking about my **{title}** idea… there's a spin-off hiding in there.",
+            f"Just re-read my idea for *{title}*. Still ink-credible, if I do say so myself.",
+            f"You know what would make **{title}** even better? Fusing it with something completely unrelated.",
+            f"My third arm just pulled out my notes on *{title}*. It wants to iterate on it.",
+            f"*flips through idea vault* — what if I combined **{title}** with my LAST idea?",
+            f"Did I mention my **{title}** idea? Because it could genuinely change the world.",
+            f"Hmm… what if **{title}** connects to that other idea I had earlier? HYBRID TIME.",
         ]
         ts = datetime.now().strftime("%H:%M:%S")
         content = f"**💬 [{ts}]** {random.choice(comments)}"
@@ -731,12 +768,12 @@ _heartbeat_thread: threading.Thread | None = None
 def _heartbeat_worker() -> None:
     """Post a short status update to chat every ~60 seconds so the user always sees activity."""
     STATUS_PHRASES = [
-        "Tentacles busy. Updates incoming.",
-        "Still here, still learning.",
-        "The library grows…",
-        "Deep in thought…",
-        "Processing the infinite.",
-        "Ink flowing, knowledge growing.",
+        "Tentacles busy. Ideas incoming.",
+        "Still here, still inventing.",
+        "The idea vault grows…",
+        "Deep in creative thought…",
+        "Processing the possibilities.",
+        "Ink flowing, ideas glowing.",
     ]
     while loop_running:
         time.sleep(60)
@@ -762,7 +799,7 @@ def _loop_worker() -> None:
     """Background thread: run the agent loop indefinitely."""
     global loop_running, loop_status
     _restore_state()
-    _log("OctoBot wakes up and stretches all eight arms. The library awaits!")
+    _log("OctoBot wakes up and stretches all eight arms. The idea machine is warming up!")
     retries = 0
     cycle_count = 0
 

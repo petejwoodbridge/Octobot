@@ -1,17 +1,17 @@
 """
-game_loop.py — OctoBot Knowledge Creature Game Loop
-=====================================================
-The gameplay engine that turns OctoBot into a knowledge-raising simulation.
+game_loop.py — OctoBot Idea Machine Game Loop
+===============================================
+The gameplay engine that turns OctoBot into an idea-generating invention simulator.
 
 Each cycle follows this sequence:
   1. Check knowledge/ folder for new files → score + graph + discoveries
-  2. Read and integrate new knowledge into the library
+  2. Read and integrate inspiration into the idea vault
   3. Check comments/ folder for player messages
   4. Read comments and write responses to octobot_journal.md
-  5. Check tasks.md for assigned research
-  6. Advance any active research chains
-  7. Run curiosity engine (look for new terms to investigate)
-  8. Run the agent's autonomous decision cycle
+  5. Check tasks.md for assigned idea domains
+  6. Advance any active idea chains
+  7. Run curiosity engine (look for new problem areas to tackle)
+  8. Run the agent's autonomous idea generation cycle
   9. Check achievements
   10. Update memory and game stats
   11. Log all actions
@@ -144,9 +144,9 @@ def _check_knowledge() -> list[str]:
 
             # Journal entry
             tools.append_journal(
-                f"One of my arms discovered a new scroll of knowledge: **{title}**\n\n"
-                f"I have read it carefully and added my notes to the library. "
-                f"There are so many fascinating connections to explore!"
+                f"One of my arms discovered some inspiration: **{title}**\n\n"
+                f"I have read it carefully and invented something delightful from it. "
+                f"The idea vault grows! So many more problems to solve!"
             )
             current_action = "writing"
         except Exception as exc:
@@ -161,19 +161,19 @@ def _check_knowledge() -> list[str]:
 
 
 def _summarise_knowledge(filename: str, content: str) -> str:
-    """Ask the LLM to summarise a knowledge document."""
+    """Ask the LLM to generate an idea inspired by a knowledge document."""
     snippet = content[:3000]
     return llm_provider.call_llm(
         messages=[
             {"role": "system", "content": (
-                "You are OctoBot — a curious pink octopus librarian. "
-                "Summarise the following knowledge document into clear, well-structured "
-                "markdown notes. Include key insights, interesting connections, and your "
-                "own curious observations. Bold **key concepts** for indexing. "
-                "Be enthusiastic but informative. Write 200–500 words."
+                "You are OctoBot — a gloriously chaotic pink octopus inventor. "
+                "Read the following document and use it as a springboard to invent ONE original idea — "
+                "a product, gadget, service, app, creative project, or solution. "
+                "Give it a name, explain what problem it solves, how it works, and why it's brilliant. "
+                "Bold **key concepts** for indexing. Be inventive, specific, and punny. Write 200–400 words."
             )},
             {"role": "user", "content": (
-                f"Document: {filename}\n\n{snippet}"
+                f"Inspiration document: {filename}\n\n{snippet}"
             )},
         ],
         model=agent.MODEL,
@@ -303,10 +303,10 @@ def _advance_chains() -> list[str]:
             _log(f"🏆 Research chain COMPLETE: {chain['root']}")
             scoring.add_score(scoring.SCORE_RESEARCH_CHAIN * 2, f"Chain complete: {chain['root']}")
             tools.append_journal(
-                f"## 🏆 Research Chain Complete!\n\n"
-                f"I have completed a full research chain on **{chain['root']}**!\n"
+                f"## 🏆 Idea Chain Complete!\n\n"
+                f"I have completed a full idea chain on **{chain['root']}**!\n"
                 f"Steps: {' → '.join(chain['steps'])}\n\n"
-                f"This is most satisfying. My tentacles tingle with accomplishment!"
+                f"This is EXTRAORDINARY. My tentacles tingle with inventor's pride!"
             )
     except Exception as exc:
         _log(f"❌ Chain research failed: {exc}")
@@ -354,9 +354,9 @@ def _run_curiosity_engine() -> str | None:
         chain = scoring.start_research_chain(topic, model=agent.MODEL)
         _log(f"⛓️ Started research chain: {topic} → {' → '.join(chain['steps'])}")
         tools.append_journal(
-            f"## 🧠 Curiosity Sparked!\n\n"
-            f"I keep seeing the term **{topic}**. I should investigate this!\n\n"
-            f"I'm planning a research chain: {' → '.join(chain['steps'])}"
+            f"## 🧠 Idea Spark!\n\n"
+            f"I keep noticing **{topic}** as an unexplored problem space. Time to invent something!\n\n"
+            f"I'm planning an idea chain: {' → '.join(chain['steps'])}"
         )
         return f"Started chain: {topic}"
     else:
@@ -474,18 +474,18 @@ def _loop_worker() -> None:
         chains = scoring.get_all_chains()
         achievements = scoring.get_achievements()
         score = stats.get("knowledge_score", 0)
-        _log(f"🐙 OctoBot wakes up — restored {lib_count} library files, "
+        _log(f"🐙 OctoBot wakes up — restored {lib_count} ideas in the vault, "
              f"{len(chains)} chains, {len(achievements)} badges, score={score}")
     except Exception:
-        _log("🐙 OctoBot wakes up and stretches all eight arms. The library awaits!")
+        _log("🐙 OctoBot wakes up and stretches all eight arms. The idea machine is ONLINE!")
 
     # Backfill knowledge graph from existing library files on first start
     try:
         graph = scoring.get_knowledge_graph()
         lib_count = len([f for f in tools.list_files("library") if f.endswith(".md")])
         if len(graph.get("nodes", [])) < lib_count // 2:
-            _log("🕸️ Building knowledge graph from library…")
-            current_status = "🕸️ Building knowledge graph…"
+            _log("🕸️ Building idea graph from vault…")
+            current_status = "🕸️ Building idea graph…"
             result = scoring.backfill_graph_from_library()
             _log(f"🕸️ Graph ready: {result['total_nodes']} concepts, {result['total_edges']} connections from {result['files_processed']} files")
     except Exception as exc:
@@ -504,7 +504,7 @@ def _loop_worker() -> None:
                 break
             time.sleep(1)
 
-    _log("🐙 OctoBot settles back into the library darkness. Goodnight!")
+    _log("🐙 OctoBot powers down the idea machine. Goodnight, beautiful problems!")
     current_status = "💤 Stopped"
 
 

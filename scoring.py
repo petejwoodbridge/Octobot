@@ -1,13 +1,13 @@
 """
-scoring.py — OctoBot Game Scoring, Progression & Knowledge Graph
-==================================================================
+scoring.py — OctoBot Game Scoring, Progression & Idea Graph
+=============================================================
 Central module for all gameplay scoring and progression systems:
 
-  - Knowledge Score  (points for every library action)
-  - Library Levels   (Small Study → Great Archive)
+  - Idea Score       (points for every invention)
+  - Inventor Levels  (Napkin Sketcher → Visionary Inventor)
   - Achievements     (milestone badges)
-  - Knowledge Graph  (concept nodes + edges)
-  - Research Chains  (multi-step deep-dive research)
+  - Idea Graph       (concept nodes + edges)
+  - Idea Chains      (multi-step deep-dive invention)
   - Discovery Events (bonus when ideas connect)
 
 All persistent state is stored through memory.py so it survives restarts.
@@ -45,14 +45,14 @@ SCORE_RESEARCH_CHAIN = 50
 SCORE_DISCOVERY = 100
 
 # ---------------------------------------------------------------------------
-# Library levels  (threshold, name, level_number)
+# Inventor levels  (threshold, name, level_number)
 # ---------------------------------------------------------------------------
 LIBRARY_LEVELS = [
-    (0,    "Small Study",        1),
-    (100,  "Library Room",       2),
-    (500,  "Large Library",      3),
-    (1500, "Research Institute", 4),
-    (4000, "Great Archive",      5),
+    (0,    "Napkin Sketcher",      1),
+    (100,  "Garage Tinkerer",      2),
+    (500,  "Mad Scientist",        3),
+    (1500, "Patent Machine",       4),
+    (4000, "Visionary Inventor",   5),
 ]
 
 
@@ -60,7 +60,7 @@ def get_library_level(score: int | None = None) -> dict:
     """Return {level, name, threshold, next_threshold} for the given or current score."""
     if score is None:
         score = mem.get_game_stats().get("knowledge_score", 0)
-    result = {"level": 1, "name": "Small Study", "threshold": 0, "next_threshold": 100}
+    result = {"level": 1, "name": "Napkin Sketcher", "threshold": 0, "next_threshold": 100}
     for threshold, name, lvl in LIBRARY_LEVELS:
         if score >= threshold:
             result = {"level": lvl, "name": name, "threshold": threshold}
@@ -100,18 +100,18 @@ def get_score() -> int:
 # ---------------------------------------------------------------------------
 
 _ACHIEVEMENT_DEFS = [
-    {"id": "first_book",        "name": "First Book",          "desc": "Add your first knowledge file",    "key": "knowledge_count",  "target": 1},
-    {"id": "10_summaries",      "name": "Scribe",              "desc": "Write 10 research notes",          "key": "research_count",   "target": 10},
-    {"id": "100_summaries",     "name": "100 Notes Written",   "desc": "Write 100 research notes",         "key": "research_count",   "target": 100},
-    {"id": "10_chains",         "name": "10 Research Chains",  "desc": "Complete 10 research chains",      "key": "chains_completed", "target": 10},
-    {"id": "library_architect", "name": "Library Architect",   "desc": "Reach Library Level 3",            "key": "knowledge_score",  "target": 500},
-    {"id": "master_archivist",  "name": "Master Archivist",    "desc": "Reach Library Level 5",            "key": "knowledge_score",  "target": 4000},
-    {"id": "first_discovery",   "name": "Eureka!",             "desc": "Make your first discovery",        "key": "discoveries",      "target": 1},
-    {"id": "score_500",         "name": "Scholar",             "desc": "Reach 500 knowledge score",        "key": "knowledge_score",  "target": 500},
-    {"id": "score_1000",        "name": "Professor",           "desc": "Reach 1000 knowledge score",       "key": "knowledge_score",  "target": 1000},
-    {"id": "curious_max",       "name": "Maximum Curiosity",   "desc": "Reach 100 curiosity",              "key": "curiosity_level",  "target": 100},
-    {"id": "5_cross_refs",      "name": "Web Weaver",          "desc": "Create 5 cross-references",        "key": "cross_refs",       "target": 5},
-    {"id": "first_chain",       "name": "Chain Starter",       "desc": "Complete your first research chain","key": "chains_completed", "target": 1},
+    {"id": "first_idea",        "name": "First Spark",         "desc": "Generate your very first idea",        "key": "knowledge_count",  "target": 1},
+    {"id": "10_ideas",          "name": "Idea Machine",        "desc": "Generate 10 original ideas",           "key": "research_count",   "target": 10},
+    {"id": "100_ideas",         "name": "100 Ideas Club",      "desc": "Generate 100 original ideas",          "key": "research_count",   "target": 100},
+    {"id": "10_chains",         "name": "Chain Reactor",       "desc": "Complete 10 idea chains",              "key": "chains_completed", "target": 10},
+    {"id": "mad_scientist",     "name": "Mad Scientist",       "desc": "Reach Inventor Level 3",               "key": "knowledge_score",  "target": 500},
+    {"id": "visionary",         "name": "Visionary Inventor",  "desc": "Reach Inventor Level 5",               "key": "knowledge_score",  "target": 4000},
+    {"id": "first_discovery",   "name": "Eureka!",             "desc": "Fuse two ideas into a discovery",      "key": "discoveries",      "target": 1},
+    {"id": "score_500",         "name": "Prolific Thinker",    "desc": "Reach 500 idea score",                 "key": "knowledge_score",  "target": 500},
+    {"id": "score_1000",        "name": "World Changer",       "desc": "Reach 1000 idea score",                "key": "knowledge_score",  "target": 1000},
+    {"id": "curious_max",       "name": "Maximum Overdrive",   "desc": "Reach 100 curiosity",                  "key": "curiosity_level",  "target": 100},
+    {"id": "5_cross_refs",      "name": "Idea Fusionist",      "desc": "Create 5 cross-references between ideas", "key": "cross_refs",   "target": 5},
+    {"id": "first_chain",       "name": "Chain Starter",       "desc": "Complete your first idea chain",       "key": "chains_completed", "target": 1},
 ]
 
 
@@ -310,11 +310,12 @@ def start_research_chain(root_topic: str, model: str = "gemma3:4b") -> dict:
         subtopics_raw = llm_provider.call_llm(
             messages=[
                 {"role": "system", "content": (
-                    "You are a research planner for an octopus librarian AI. "
-                    "Given a root topic, suggest exactly 3 subtopics to explore in sequence, "
-                    "each building on the previous. Return ONLY 3 lines, one subtopic per line."
+                    "You are an idea chain planner for an octopus inventor AI. "
+                    "Given a root idea domain, suggest exactly 3 related idea angles to explore in sequence, "
+                    "each building on the previous, getting wilder and more inventive. "
+                    "Return ONLY 3 lines, one idea angle per line."
                 )},
-                {"role": "user", "content": f"Root topic: {root_topic}\n\nSuggest 3 subtopics:"},
+                {"role": "user", "content": f"Root idea domain: {root_topic}\n\nSuggest 3 idea angles:"},
             ],
             model=model,
         )
@@ -409,10 +410,10 @@ def check_for_discovery(new_concepts: list[str], filename: str,
         insight = llm_provider.call_llm(
             messages=[
                 {"role": "system", "content": (
-                    "You are OctoBot, a curious pink octopus librarian. "
-                    "You just noticed two concepts from different documents are connected. "
-                    "Write a short, excited discovery note (2-3 sentences) about this connection. "
-                    "Be enthusiastic and use your personality."
+                    "You are OctoBot, a gloriously chaotic pink octopus inventor. "
+                    "You just noticed two concepts from different ideas are connected — this is a FUSION moment! "
+                    "Write a short, excited discovery note (2-3 sentences) about this new hybrid idea. "
+                    "Be enthusiastic, inventive, and suggest what the fusion could become."
                 )},
                 {"role": "user", "content": (
                     f"Concept '{ref_a['concept']}' from {ref_a['found_in']} "
