@@ -1,41 +1,38 @@
-<p align="center">
+﻿<p align="center">
   <video src="https://private-user-images.githubusercontent.com/25903208/564598082-1196f57c-2e85-4407-afd1-53b577ef48bf.mp4" width="800" controls autoplay loop muted></video>
 </p>
 
-# OctoBot — Infinite Idea Generator 🐙
+# DreamLab OctoBot
 
 <p align="center">
-  <img src="assets/octopus_pixel_art.svg" alt="OctoBot" width="64">
+  <img src="assets/octopus_pixel_art.svg" alt="OctoBot" width="80">
 </p>
 
-> *A restless pink octopus inventor AI that never stops generating original ideas. Products, gadgets, services, creative projects, scientific experiments, solutions to problems you didn't know you had — it invents them all.*
+<p align="center"><em>A restless pink octopus AI that lives in a folder on your computer and never, ever stops inventing things.</em></p>
 
-**OctoBot** lives quietly in a folder on your computer, dreaming up thousands of inventions
-while you get on with your life. It runs entirely on [Ollama](https://ollama.com) local models —
-no cloud, no API keys, no one sniffing your brilliant ideas. Your intellectual property stays
-exactly where it belongs: **on your machine**.
+> *Products. Gadgets. Services. Wild experiments. Absurd apps. Solutions to problems you didn't know you had.*
+> *DreamLab OctoBot skips sleep and invents them all — thousands of ideas in just a few hours.*
 
-It endlessly fuses concepts together, fills an ever-growing idea vault,
-and renders everything as a pixel-art invention lab in your browser.
+**DreamLab OctoBot** is a fully autonomous idea-generation machine powered by a local AI agent. It sits in a folder on your computer, runs entirely on your own hardware via [Ollama](https://ollama.com), and dreams up original inventions around the clock. No cloud. No subscriptions. No one peeking at your ideas.
+
+**Your ideas stay yours.** Because OctoBot runs a local model entirely on your machine, nothing ever leaves your computer. Complete intellectual property protection — every invention, every pitch, every weird fusion concept belongs to you and only you.
 
 Think of it as:
-- An **AI invention engine** that never sleeps (unlike you, you fragile human)
-- A **creative co-pilot** quietly generating thousands of ideas while you're making coffee
-- An **infinite brainstorm machine** with eight arms and zero shame
-- A **Tamagotchi for ideas** — the more you interact, the wilder it gets
-- A **totally private genius** running on your own hardware, because great ideas shouldn't leak
+- An **AI invention engine** that never sleeps (or has any concept of sleep)
+- A **creative co-pilot** churning out thousands of ideas while you're off doing human things
+- An **infinite brainstorm machine** with eight arms and absolutely zero shame
+- A **Tamagotchi for ideas** — the more you poke it, the weirder it gets
+- **100% local and private** — your IP never touches a server
 
 ---
 
-## What Does OctoBot Invent?
+## What Does DreamLab OctoBot Actually Invent?
 
-Everything. Seriously. Products, gadgets, apps, services, tools, games, films, music concepts,
-scientific experiments, business ideas, solutions to annoying human problems, creative projects,
-and things that are so weird they just might work.
+**Everything.** Seriously. Products, gadgets, apps, services, tools, games, films, music concepts, scientific experiments, business ideas, solutions to annoying human problems, creative projects — and things so weird they just *might* work.
 
-Some ideas are practical. Some are absurd. Some start absurd and become practical.
-OctoBot draws from nature, biology, human culture, and its own past ideas to create
-unexpected fusions. It thinks humans are strange — and that's where the best ideas come from.
+Leave it running overnight and wake up to **hundreds of fully-written idea pitches**. Leave it running for a few days and you'll have **thousands**. Each one is named, described, and saved as its own file — ready to browse, share, or build.
+
+Some ideas are practical. Some are absurd. Most start absurd and then slowly start making sense at 2am. OctoBot draws from nature, biology, human culture, and its own past ideas to create unexpected fusions. It finds humans deeply strange. That's the source material.
 
 ---
 
@@ -44,31 +41,29 @@ unexpected fusions. It thinks humans are strange — and that's where the best i
 ### The Core Loop
 
 1. **OctoBot wakes up** — eight arms stretch, creativity meter rising
-2. **OctoBot picks a problem domain** — "gadgets for people who lose everything", "apps for overthinkers", etc.
-3. **OctoBot invents** — generates a specific, named, original idea with a full pitch
-4. **Idea saved to vault** — each idea gets its own markdown file in `workspace/library/`
-5. **OctoBot fuses ideas** — finds connections between past ideas and creates hybrids
-6. **Idea chains** — follows one domain deeper and wilder across multiple steps
-7. **Repeat forever** — OctoBot never stops. The vault grows endlessly.
+2. **Picks an idea domain** — *"gadgets for people who lose everything"*, *"apps for overthinkers"*, etc.
+3. **Invents something** — generates a specific, named, original idea complete with a full pitch
+4. **Saves it to the vault** — each idea becomes its own markdown file in `workspace/library/`
+5. **Fuses past ideas** — finds unexpected connections and creates hybrids
+6. **Follows idea chains** — dives deeper and wilder across multiple invention steps
+7. **Repeats forever** — the vault grows endlessly. OctoBot has no off switch.
 
-### Interacting with OctoBot
+### Talking to OctoBot
 
-**Chat (highest priority):**
-Use the browser UI chat panel to brainstorm with OctoBot. When you talk, it **drops everything** to engage with you. You are its favourite human.
+**Chat (highest priority — OctoBot drops everything):**
+Use the browser UI chat panel. OctoBot will drop whatever it's doing and give you its full, undivided, eight-armed attention.
 
-**Feed Inspiration:**
-Drop files into `workspace/knowledge/` — supported formats: `.md`, `.txt`, `.json`
-OctoBot reads them and generates ideas *inspired by* the content.
+**Feed It Inspiration:**
+Drop `.md`, `.txt`, or `.json` files into `workspace/knowledge/`. OctoBot reads them and generates ideas *inspired by* the content. Try dumping a problem description, a news article, a weird thing you noticed — it will run with it.
 
 **Leave Comments:**
-Write messages in `workspace/comments/` (e.g. `comments/today.md`)
-OctoBot reads them and responds in `workspace/octobot_journal.md`
+Write messages as markdown files in `workspace/comments/`. OctoBot reads them and responds in its inventor journal at `workspace/octobot_journal.md`.
 
 **Assign Idea Domains:**
-Edit `workspace/tasks.md` — add lines like `- [ ] Generate idea: tools for chronically overwhelmed people`
+Edit `workspace/tasks.md` and add lines like `- [ ] Generate idea: tools for chronically overwhelmed people`. OctoBot will pick them up on its next cycle.
 
 <p align="center">
-  <img src="assets/interface.png" alt="OctoBot Interface" width="800">
+  <img src="assets/interface.PNG" alt="DreamLab OctoBot Interface" width="800">
 </p>
 
 ---
@@ -76,10 +71,10 @@ Edit `workspace/tasks.md` — add lines like `- [ ] Generate idea: tools for chr
 ## Project Structure
 
 ```
-octobot/
+dreamlab-octobot/
 ├── main.py           # Entry point — starts game loop + web server
-├── agent.py          # Autonomous agent brain, chat handler
-├── game_loop.py      # Idea machine game loop
+├── agent.py          # Autonomous agent brain & chat handler
+├── game_loop.py      # The idea machine engine
 ├── tools.py          # File tools (read, write, search, scanning)
 ├── research.py       # Idea generation workflow
 ├── memory.py         # Persistent JSON memory + game stats
@@ -91,28 +86,25 @@ octobot/
 ├── static/
 │   └── index.html    # Pixel-art game interface (HTML + Canvas + JS)
 ├── assets/
-│   └── octopus_pixel_art.svg
 └── workspace/
     ├── knowledge/    # Drop inspiration files here
     ├── comments/     # Leave messages for OctoBot
-    ├── library/      # The idea vault — all generated idea pitches
+    ├── library/      # The idea vault — all generated pitches
     ├── context/      # Reference documents
     ├── memory.json   # Persistent event log + game stats
     ├── tasks.md      # Idea domains OctoBot is working on
     ├── agent_notes.md
-    └── octobot_journal.md  # OctoBot's inventor journal
+    └── octobot_journal.md  # OctoBot's inventor diary
 ```
 
 ---
 
-## Requirements
+## Getting Started
+
+### Requirements
 
 - Python 3.10+
 - [Ollama](https://ollama.com) installed and running locally
-
----
-
-## Installation
 
 ### 1. Install Ollama
 
@@ -122,7 +114,7 @@ Download from [https://ollama.com/download](https://ollama.com/download), then p
 ollama pull gemma3:4b
 ```
 
-Keep Ollama running in the background.
+Keep Ollama running in the background. It's doing important octopus-powering work.
 
 ### 2. Install Python dependencies
 
@@ -130,23 +122,21 @@ Keep Ollama running in the background.
 pip install -r requirements.txt
 ```
 
----
-
-## Running OctoBot
+### 3. Unleash the octopus
 
 ```bash
 python main.py
 ```
 
-Open your browser to `http://localhost:7860` to see the pixel-art game interface.
+Open `http://localhost:7860` and watch the ideas begin.
 
 ### Command-line options
 
 ```bash
-python main.py --port 8080        # Use a different port
+python main.py --port 8080        # Different port
 python main.py --no-loop          # Chat only, no autonomous loop
-python main.py --model mistral    # Use a different Ollama model
-python main.py --gradio           # Use the legacy Gradio UI
+python main.py --model mistral    # Different Ollama model
+python main.py --gradio           # Legacy Gradio UI
 python main.py --gradio --share   # Gradio with public link
 ```
 
@@ -154,89 +144,80 @@ python main.py --gradio --share   # Gradio with public link
 
 ## The Game Interface
 
-The browser shows a **pixel-art invention lab** where OctoBot — a pink octopus — roams across
-15 different environments (library, science lab, neon city, aquarium, classroom, volcano lair,
-space, mushroom cave, underwater, arctic station, inside a test tube, dreamscape, office, park, beach).
+OctoBot lives inside a **pixel-art invention lab** rendered directly in your browser. The pink octopus roams across **15 environments** — library, science lab, neon city, aquarium, classroom, volcano lair, space, mushroom cave, underwater base, arctic station, test tube interior, dreamscape, office, park, and beach.
 
 **OctoBot reacts to what it's doing:**
 
 | Action | Visual Behaviour |
 |---|---|
-| Reviewing past ideas | Moves to bookshelves |
-| Writing new ideas | Moves to desk |
-| Thinking/Inventing | Sits at table |
-| Idle | Wanders, mutters about inventions |
+| Reviewing past ideas | Shuffles to the bookshelves |
+| Writing new ideas | Hunches over the desk |
+| Thinking / Inventing | Sits at the table looking pensive |
+| Idle | Wanders around muttering about inventions |
 
 **UI Panels:**
 
-- **Chat** — brainstorm directly with OctoBot (always gets its full attention)
-- **Log** — real-time activity feed
-- **Ideas** — browse all generated idea pitches
-- **Journal** — OctoBot's inventor diary & comment responses
-- **Graph** — visual map of idea connections
-- **Badges** — achievement milestones
+| Panel | What's in there |
+|---|---|
+| **Chat** | Brainstorm directly with OctoBot |
+| **Log** | Real-time activity feed |
+| **Ideas** | Browse all generated idea pitches |
+| **Journal** | OctoBot's inventor diary and comment responses |
+| **Graph** | Visual map of how all ideas connect |
+| **Badges** | Achievement milestones |
 
 **Inventor Levels:**
 
-| Level | Name | Score |
+| Level | Title | Score Needed |
 |---|---|---|
 | 1 | Napkin Sketcher | 0+ |
 | 2 | Garage Tinkerer | 100+ |
 | 3 | Mad Scientist | 500+ |
-| 4 | Patent Machine | 1500+ |
-| 5 | Visionary Inventor | 4000+ |
+| 4 | Patent Machine | 1,500+ |
+| 5 | Visionary Inventor | 4,000+ |
+
+---
+
+## Feeding Inspiration
+
+1. Create a `.md`, `.txt`, or `.json` file with anything interesting
+2. Drop it into `workspace/knowledge/`
+3. OctoBot detects it on its next cycle and reads it
+4. It generates an **original idea inspired by** the content
+5. Curiosity level increases. OctoBot becomes slightly more dangerous.
+
+**Example** — save this as `workspace/knowledge/commute_problems.md`:
+```markdown
+# The Daily Commute
+People spend 27 minutes commuting each way on average.
+Most find it stressful, boring, or unproductive.
+```
+
+OctoBot might produce a *"Commute Cocoon"* — a wearable personal pod with noise cancelling, adaptive aromatherapy, and a built-in podcast that adjusts to your real-time stress level. It will be very detailed. It will be slightly too ambitious. You will want to build it.
 
 ---
 
 ## Personality
 
-OctoBot is **restless, ambitious, wildly creative, and thinks humans are strange**.
+OctoBot is **restless, ambitious, wildly creative, and finds humans utterly fascinating** (in a scientific-specimen kind of way).
 
 > *"Three of my arms are already sketching a prototype…"*
 > *"By Poseidon's patent office! This could change everything!"*
 > *"Humans sleep for EIGHT HOURS? That's a third of their lives! I can fix this. Probably."*
 > *"What if chairs had feelings? And a subscription service for emotionally needy furniture?"*
 
-It draws inspiration from nature, biology, animal behaviour, and human culture.
-It fuses past ideas into new hybrid inventions. It celebrates every idea — even the bad ones.
+It draws inspiration from nature, biology, animal behaviour, and human culture. It fuses its own past ideas into wilder hybrids. It celebrates every idea — even the ones that probably shouldn't exist.
 
 ---
 
-## Feeding Inspiration
+## Privacy and IP Protection
 
-1. Create a `.md`, `.txt`, or `.json` file
-2. Drop it into `workspace/knowledge/`
-3. OctoBot detects it on its next cycle
-4. It reads the file and generates an **original idea inspired by** the content
-5. Creativity level increases
+DreamLab OctoBot runs **100% locally on your machine**. The AI model runs through Ollama — no data is sent to any cloud service, no ideas are logged externally, no API calls to third parties (unless you explicitly configure an OpenAI or Anthropic key as an alternative backend).
 
-Example: save this as `workspace/knowledge/commute_problems.md`:
-```markdown
-# The Daily Commute
-People spend an average of 27 minutes commuting each way.
-Most find it stressful, boring, or unproductive.
-```
-
-OctoBot will read it and generate something like a *"Commute Cocoon"* — a wearable pod that creates a private micro-environment on public transport with noise cancelling, aromatherapy, and a built-in podcast that adapts to your stress level.
-
----
-
-## Your Ideas Stay Yours
-
-OctoBot runs entirely on **local Ollama models** — no cloud, no subscriptions, no servers phoning home.
-It sits in a folder on your computer, invents thousands of ideas over hours and days, and keeps
-every single one locked inside your `workspace/library/`. No one else sees them. Not even OctoBot's creator.
-
-Your IP is safe. Your ideas are yours. OctoBot just helps you have more of them.
-
----
-
-## Safety
-
-OctoBot enforces **strict path confinement** — every file operation is checked against the `workspace/` root. It cannot read, write, or delete files outside the project folder.
+Every idea OctoBot generates lives in a folder on your computer. That's it. Nobody else sees it.
 
 ---
 
 ## License
 
-MIT — free and open source. Contributions welcome!
+MIT — free, open source, and encouraged to be pointed at interesting problems. Contributions very welcome!
