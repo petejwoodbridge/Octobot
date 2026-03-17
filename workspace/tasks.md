@@ -18,21 +18,17 @@
 
 - [ ] Develop a "Focus Flow" app - a productivity tool incorporating biofeedback (heart rate variability) to optimize work sessions and suggest breaks. (Inspired by user interest in biofeedback and productivity)
 - [ ] Design a modular, customizable exercise machine that adapts to user needs and preferences.
-- [ ] Create a series of "Existential Dread Inbox" products - physical and digital tools to manage and reduce anxiety related to email.
-- [ ] Generate ideas for a chicken-related product line - toys, feeders, enrichment items, or even a chicken-focused app. (Inspired by user conversation)
-- [ ] Design an "Introvert Survival Kit" - a physical or digital toolkit with strategies and resources for navigating social situations.
-- [ ] Develop a neural interface product inspired by Buddhist monks - a device to enhance meditation and promote mental clarity.
-- [ ] Brainstorm inventions aimed at tackling climate change, focusing on innovative solutions for carbon reduction and sustainability - drawing upon the existing library and incorporating algae-based solutions.
-- [ ] Develop a "Laugh More" invention - a device or system designed to elicit laughter and joy in everyday situations.
-- [ ] Generate ideas for a cake-based product – a unique cake design, a cake-making device, or a cake-related service.
-- [ ] Develop a series of AI inventions – exploring applications of AI to solve everyday problems or create novel experiences.
-- [ ] Design a collection of unique, engaging toys – exploring new mechanisms, materials, and play patterns.
-- [ ] Prototype an app for repairing friendships – focusing on communication strategies and activities to rebuild connections. (Inspired by library index)
-- [ ] Develop an "Adaptive Microclimate Suit" incorporating bio-luminescent algae for personalized light and temperature regulation - further explore this concept with detailed design and materials research. (Inspired by library index)
-- [ ] Explore user conversations for inspiration and refine existing ideas. (Refining ideas from recent meditation conversations) - Prioritize refinement of ideas regarding stress reduction and biofeedback.
+- [ ] Generate ideas for: a digital assistant that proactively tackles overwhelming email inboxes – prioritizing, summarizing, and even drafting responses.
+- [ ] Explore a “Creative Spark” service – offering curated prompts, techniques, and accountability for individuals struggling to initiate creative projects.
+- [ ] Develop a device that utilizes ambient sound and subtle haptic feedback to help users manage anxiety and improve focus - akin to a wearable meditation tool.
+- [ ] Design a system for visualizing and tracking procrastination habits, identifying triggers, and suggesting targeted interventions.
+- [ ] Create a “Legacy Builder” service – helping individuals document their life stories, memories, and values for future generations.
+- [ ] Develop a “Digital Detox” kit – a physical and digital toolset to encourage mindful technology usage and reduce screen time.
+- [ ] Design an interactive landscape simulator - a tool that allows users to manipulate environmental factors (weather, terrain, etc.) to create calming or stimulating virtual spaces for meditation or visualization. (Inspired by user interest in human biology & immersive experiences).
 
-## Research Tasks
-
-- [ ] Research acoustic resonance and time perception - investigate potential visual representations of this phenomenon. (Inspired by library index)
-- [ ] Research and prototype inventions aimed at tackling climate change - focusing on innovative solutions for reducing carbon emissions and promoting sustainability. (Inspired by library index)
-- [ ] Research neural interfaces for controlling devices through thought – exploring applications for productivity and accessibility. (Inspired by library index)
+## Idea Generation - Deep Dive
+- [ ] Investigate creating immersive experiences for productivity, meditation, or artistic expression using sound and visual feedback – leveraging acoustic resonance and time perception. (Library index: `library/_develop_library-acoustic_resonance_time_perception_visual_representation__investigate_creating_immersive_experiences_for_productivity_meditation_or_artistic_expression_using_sound_and_visual_feedback.md`)
+- [ ] Explore a biofeedback-driven dream weaver app influencing and shaping lucid dreams through subtle auditory and haptic stimuli. (Library index: `library/a_biofeedback-driven_dream_weaver_app_influencing_and_shaping_lucid_dreams_through_subtle_auditory_and_haptic_stimuli.md`)
+- [ ] Investigate a reactive symbiotic core utilizing engineered microbial colonies for processing and adaptation. (Library index: `library/a_reactive_symbiotic_core_utilizing_engineered_microbial_colonies_for_processing_and_adaptation.md`)
+- [ ] Explore a self-aware fractal map system predicting and adapting to shifting landscapes in real-time. (Library index: `library/a_self_aware_fractal_map_system_predicting_and_adapting_to_shifting_landscapes_in_real-time.md`)
+- [ ] Continue research into potentially implementing 'embodied cognition' techniques for enhancing learning and retention.

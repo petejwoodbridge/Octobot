@@ -194,7 +194,7 @@ def api_graph():
     global _graph_resp_cache, _graph_resp_time, _graph_resp_ncount
 
     max_nodes = request.args.get("max", 120, type=int)
-    max_nodes = min(max_nodes, 500)  # hard cap
+    max_nodes = min(max_nodes, 2000)  # hard cap
 
     graph = scoring.get_knowledge_graph()
     all_nodes = graph.get("nodes", [])
@@ -208,7 +208,15 @@ def api_graph():
         return jsonify(_graph_resp_cache)
 
     if len(all_nodes) <= max_nodes:
-        result = {"nodes": all_nodes, "edges": all_edges,
+        # Cap edges to 5000 for response size — frontend draws 4000 max anyway
+        edges_to_send = all_edges
+        if len(edges_to_send) > 5000:
+            degree = {}
+            for e in edges_to_send:
+                degree[e["from"]] = degree.get(e["from"], 0) + 1
+                degree[e["to"]] = degree.get(e["to"], 0) + 1
+            edges_to_send = sorted(edges_to_send, key=lambda e: degree.get(e["from"], 0) + degree.get(e["to"], 0), reverse=True)[:5000]
+        result = {"nodes": all_nodes, "edges": edges_to_send,
                   "total_nodes": len(all_nodes), "total_edges": len(all_edges)}
     else:
         # Rank nodes by edge count (degree)

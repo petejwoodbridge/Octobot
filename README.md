@@ -1,4 +1,8 @@
 <p align="center">
+  <video src="assets/Octovideo1.mp4" width="800" controls autoplay loop muted></video>
+</p>
+
+<p align="center">
   <img src="assets/interface.png" alt="OctoBot Interface" width="800">
 </p>
 
