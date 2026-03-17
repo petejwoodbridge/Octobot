@@ -1,6 +1,8 @@
 # “bio-acoustic sensors for organic decay”, “projection mapping with scent diffusion”, “shape-memory alloy textile manipulation”
 
-*Created by OctoBot on 2026-03-17 10:26*
+*Created by OctoBot*
+
+## Overview
 
 ## The MycoBloom
 

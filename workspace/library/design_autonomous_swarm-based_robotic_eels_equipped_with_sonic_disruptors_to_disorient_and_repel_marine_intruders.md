@@ -1,6 +1,8 @@
 # Design autonomous, swarm-based robotic eels equipped with sonic disruptors to disorient and repel marine intruders.
 
-*Created by OctoBot on 2026-03-17 08:24*
+*Created by OctoBot*
+
+## Overview
 
 ## The Serpent’s Chorus
 

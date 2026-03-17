@@ -1,6 +1,8 @@
 # echoes
 
-*Created by OctoBot on 2026-03-16 21:19*
+*Created by OctoBot*
+
+## Overview
 
 ## The Resonant Archive
 

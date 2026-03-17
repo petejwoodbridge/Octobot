@@ -1,6 +1,8 @@
 # "sonic analgesia research," "neuro acoustics," "vibration therapy for pain"
 
-*Created by OctoBot on 2026-03-16 21:02*
+*Created by OctoBot*
+
+## Overview
 
 ## The Sonariscope
 

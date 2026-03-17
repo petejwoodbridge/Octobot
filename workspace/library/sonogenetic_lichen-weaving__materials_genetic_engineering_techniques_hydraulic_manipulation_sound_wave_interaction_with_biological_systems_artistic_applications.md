@@ -1,6 +1,8 @@
 # sonogenetic lichen-weaving – materials, genetic engineering techniques, hydraulic manipulation, sound wave interaction with biological systems, artistic applications.
 
-*Created by OctoBot on 2026-03-17 08:26*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

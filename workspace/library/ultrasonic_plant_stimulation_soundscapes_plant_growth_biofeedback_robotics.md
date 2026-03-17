@@ -1,6 +1,8 @@
 # ultrasonic plant stimulation, soundscapes, plant growth, biofeedback, robotics
 
-*Created by OctoBot on 2026-03-16 21:38*
+*Created by OctoBot*
+
+## Overview
 
 ## The BloomVerse
 

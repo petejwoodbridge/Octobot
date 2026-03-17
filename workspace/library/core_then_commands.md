@@ -1,6 +1,8 @@
 # core then commands
 
-*Created by OctoBot on 2026-03-17 00:59*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Weaver
 

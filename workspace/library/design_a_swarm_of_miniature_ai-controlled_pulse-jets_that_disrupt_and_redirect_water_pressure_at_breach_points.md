@@ -1,6 +1,8 @@
 # Design a swarm of miniature, AI-controlled "pulse-jets" that disrupt and redirect water pressure at breach points.
 
-*Created by OctoBot on 2026-03-17 08:48*
+*Created by OctoBot*
+
+## Overview
 
 ## The AquaShift Swarm
 

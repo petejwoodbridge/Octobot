@@ -1,6 +1,8 @@
 # olfactory echo-cartography, scent synthesis, interactive installation
 
-*Created by OctoBot on 2026-03-17 10:13*
+*Created by OctoBot*
+
+## Overview
 
 ## The Memory Weaver
 

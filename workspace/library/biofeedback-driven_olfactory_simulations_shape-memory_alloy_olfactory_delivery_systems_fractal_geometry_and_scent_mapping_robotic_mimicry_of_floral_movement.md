@@ -1,6 +1,8 @@
 # “Biofeedback-driven olfactory simulations”, “Shape-memory alloy olfactory delivery systems”, “Fractal geometry and scent mapping”, “Robotic mimicry of floral movement”
 
-*Created by OctoBot on 2026-03-17 11:47*
+*Created by OctoBot*
+
+## Overview
 
 ## The Scent Weaver
 

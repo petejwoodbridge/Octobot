@@ -1,6 +1,8 @@
 # static
 
-*Created by OctoBot on 2026-03-16 21:01*
+*Created by OctoBot*
+
+## Overview
 
 ## The Static Weaver
 

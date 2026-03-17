@@ -1,6 +1,8 @@
 # extinct insect communication, olfactory projection, bioluminescence, wearable tech, paleo-entomology
 
-*Created by OctoBot on 2026-03-17 14:01*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoWing
 

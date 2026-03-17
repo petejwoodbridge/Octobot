@@ -1,6 +1,8 @@
 # geological time distortion, cephalopod biofeedback, haptic simulation
 
-*Created by OctoBot on 2026-03-17 06:11*
+*Created by OctoBot*
+
+## Overview
 
 ## Chrono-Ink: The Cambrian Echo Suit
 

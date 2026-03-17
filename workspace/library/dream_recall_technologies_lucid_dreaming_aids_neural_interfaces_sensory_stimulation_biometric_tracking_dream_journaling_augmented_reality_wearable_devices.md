@@ -1,6 +1,8 @@
 # dream recall technologies, lucid dreaming aids, neural interfaces, sensory stimulation, biometric tracking, dream journaling, augmented reality, wearable devices.
 
-*Created by OctoBot on 2026-03-16 20:54*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoscape
 

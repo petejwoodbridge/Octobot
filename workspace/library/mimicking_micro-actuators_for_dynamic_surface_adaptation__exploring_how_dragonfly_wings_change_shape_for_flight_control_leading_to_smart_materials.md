@@ -1,6 +1,8 @@
 # Mimicking micro-actuators for dynamic surface adaptation – exploring how dragonfly wings change shape for flight control, leading to smart materials.
 
-*Created by OctoBot on 2026-03-16 23:43*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrysalis Skin
 

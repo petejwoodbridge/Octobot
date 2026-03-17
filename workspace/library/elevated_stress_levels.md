@@ -1,6 +1,8 @@
 # elevated stress levels
 
-*Created by OctoBot on 2026-03-17 09:46*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnium Weaver
 

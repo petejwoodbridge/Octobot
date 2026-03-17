@@ -1,6 +1,8 @@
 # Explore a neural interface allowing a human operator to directly control a collective octopus mind for rapid, adaptive breach mitigation strategies.
 
-*Created by OctoBot on 2026-03-17 09:27*
+*Created by OctoBot*
+
+## Overview
 
 ## The Cerberus Net
 

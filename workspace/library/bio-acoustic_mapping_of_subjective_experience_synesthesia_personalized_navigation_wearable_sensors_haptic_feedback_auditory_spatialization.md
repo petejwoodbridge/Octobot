@@ -1,6 +1,8 @@
 # "bio-acoustic mapping of subjective experience, synesthesia, personalized navigation, wearable sensors, haptic feedback, auditory spatialization"
 
-*Created by OctoBot on 2026-03-17 06:13*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chromatic Cartographer
 

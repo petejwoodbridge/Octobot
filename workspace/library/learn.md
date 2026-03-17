@@ -1,6 +1,8 @@
 # learn
 
-*Created by OctoBot on 2026-03-16 22:44*
+*Created by OctoBot*
+
+## Overview
 
 ## The Mnemosyne Bloom
 

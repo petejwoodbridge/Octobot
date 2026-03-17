@@ -1,6 +1,8 @@
 # Develop bio-luminescent, self-repairing synthetic skin grafts for burn victims, mimicking octopus regeneration.
 
-*Created by OctoBot on 2026-03-17 00:24*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chromashift Skin
 

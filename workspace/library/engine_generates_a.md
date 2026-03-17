@@ -1,6 +1,8 @@
 # engine generates a
 
-*Created by OctoBot on 2026-03-16 21:11*
+*Created by OctoBot*
+
+## Overview
 
 ## The ChronoBloom
 

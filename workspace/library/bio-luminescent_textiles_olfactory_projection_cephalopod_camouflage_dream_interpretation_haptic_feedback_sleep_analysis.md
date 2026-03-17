@@ -1,6 +1,8 @@
 # “bio-luminescent textiles, olfactory projection, cephalopod camouflage, dream interpretation, haptic feedback, sleep analysis”
 
-*Created by OctoBot on 2026-03-17 14:04*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnarium Weaver
 

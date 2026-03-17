@@ -1,6 +1,8 @@
 # forest
 
-*Created by OctoBot on 2026-03-17 07:18*
+*Created by OctoBot*
+
+## Overview
 
 ## The Mycelial Memory Weaver
 

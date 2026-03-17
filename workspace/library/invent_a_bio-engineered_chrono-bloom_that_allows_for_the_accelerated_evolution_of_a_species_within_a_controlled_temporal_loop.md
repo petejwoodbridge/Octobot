@@ -1,6 +1,8 @@
 # Invent a bio-engineered chrono-bloom that allows for the accelerated evolution of a species within a controlled temporal loop.
 
-*Created by OctoBot on 2026-03-17 20:49*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoflora
 

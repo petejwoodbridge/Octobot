@@ -1,6 +1,8 @@
 # interspecies dream mapping, animal neuroscience, biosensors, AI, dream interpretation, sensory simulation
 
-*Created by OctoBot on 2026-03-16 21:53*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnium Weaver
 

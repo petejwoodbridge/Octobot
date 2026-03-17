@@ -1,6 +1,8 @@
 # Self-regulating ecosystems mimicking constant environmental parameters for optimal growth.
 
-*Created by OctoBot on 2026-03-16 21:02*
+*Created by OctoBot*
+
+## Overview
 
 ## The BloomBox
 

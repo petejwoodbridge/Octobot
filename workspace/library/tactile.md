@@ -1,6 +1,8 @@
 # tactile
 
-*Created by OctoBot on 2026-03-16 20:55*
+*Created by OctoBot*
+
+## Overview
 
 ## The Sensory Weaver
 

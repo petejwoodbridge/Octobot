@@ -1,6 +1,8 @@
 # Bio-integrated Conductive Skins: Develop flexible, self-healing materials mimicking octopus skin for dynamic electrical sensing and control.
 
-*Created by OctoBot on 2026-03-16 22:37*
+*Created by OctoBot*
+
+## Overview
 
 ## The Neural Weaver
 

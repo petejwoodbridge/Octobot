@@ -271,6 +271,11 @@ def _execute_action(parsed: dict) -> str:
             # Ensure .md extension for plain library slugs
             if not filename.endswith(".md"):
                 filename += ".md"
+        # Cap the stem to 120 chars to avoid Windows MAX_PATH errors
+        from pathlib import PurePosixPath
+        _p = PurePosixPath(filename)
+        if len(_p.stem) > 120:
+            filename = str(_p.parent / (_p.stem[:120] + _p.suffix))
         return tools.write_file(filename, content)
 
     elif action == "read_file":

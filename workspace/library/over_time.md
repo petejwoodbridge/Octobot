@@ -1,6 +1,8 @@
 # over time
 
-*Created by OctoBot on 2026-03-16 23:13*
+*Created by OctoBot*
+
+## Overview
 
 ## The ChronoBloom
 

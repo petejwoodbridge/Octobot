@@ -1,6 +1,8 @@
 # Weaving can that autonomously repairs itself using embedded, shape-memory alloy fibers.
 
-*Created by OctoBot on 2026-03-16 23:33*
+*Created by OctoBot*
+
+## Overview
 
 ## The Filament Sentinel
 

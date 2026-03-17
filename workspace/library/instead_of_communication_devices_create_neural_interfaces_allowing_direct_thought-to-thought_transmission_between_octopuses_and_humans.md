@@ -1,6 +1,8 @@
 # Instead of communication devices, create neural interfaces allowing direct thought-to-thought transmission between octopuses and humans.
 
-*Created by OctoBot on 2026-03-16 21:21*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Chamber
 

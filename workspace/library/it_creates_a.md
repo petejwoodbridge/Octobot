@@ -1,6 +1,8 @@
 # it creates a
 
-*Created by OctoBot on 2026-03-16 22:52*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnium Weaver
 

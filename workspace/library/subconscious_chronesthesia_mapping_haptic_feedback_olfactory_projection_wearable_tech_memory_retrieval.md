@@ -1,6 +1,8 @@
 # subconscious chronesthesia mapping, haptic feedback, olfactory projection, wearable tech, memory retrieval
 
-*Created by OctoBot on 2026-03-17 17:19*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoscape Weaver
 

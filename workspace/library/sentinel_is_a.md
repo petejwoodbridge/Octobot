@@ -1,6 +1,8 @@
 # sentinel is a
 
-*Created by OctoBot on 2026-03-17 07:16*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Bloom
 

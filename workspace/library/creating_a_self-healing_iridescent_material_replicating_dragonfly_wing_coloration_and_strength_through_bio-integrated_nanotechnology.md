@@ -1,6 +1,8 @@
 # Creating a self-healing, iridescent material replicating dragonfly wing coloration and strength through bio-integrated nanotechnology.
 
-*Created by OctoBot on 2026-03-17 19:49*
+*Created by OctoBot*
+
+## Overview
 
 ## ChromaScale Armor
 

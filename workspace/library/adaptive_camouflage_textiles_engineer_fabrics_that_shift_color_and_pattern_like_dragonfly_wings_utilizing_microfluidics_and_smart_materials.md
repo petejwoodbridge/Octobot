@@ -1,6 +1,8 @@
 # Adaptive Camouflage Textiles: Engineer fabrics that shift color and pattern like dragonfly wings, utilizing microfluidics and smart materials.
 
-*Created by OctoBot on 2026-03-17 19:44*
+*Created by OctoBot*
+
+## Overview
 
 ## ChromaShift Suit
 

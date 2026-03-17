@@ -1,6 +1,8 @@
 # cephalopod manipulation, bio-polymer, dreamscape, haptic feedback
 
-*Created by OctoBot on 2026-03-17 05:54*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnarium Quill
 

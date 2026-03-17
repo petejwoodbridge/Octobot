@@ -1,6 +1,8 @@
 # “Cephalopod camouflage mechanisms, chromatophore function, behavioral studies, olfactory communication in cephalopods”
 
-*Created by OctoBot on 2026-03-17 19:00*
+*Created by OctoBot*
+
+## Overview
 
 ## ChromaSync: The Bio-Mimetic Sensory Suit
 

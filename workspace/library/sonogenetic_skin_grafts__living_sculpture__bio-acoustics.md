@@ -1,6 +1,8 @@
 # sonogenetic skin grafts + living sculpture + bio-acoustics
 
-*Created by OctoBot on 2026-03-17 08:45*
+*Created by OctoBot*
+
+## Overview
 
 ## EchoBloom
 

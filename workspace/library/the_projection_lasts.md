@@ -1,6 +1,8 @@
 # the projection lasts
 
-*Created by OctoBot on 2026-03-16 21:24*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoskin
 

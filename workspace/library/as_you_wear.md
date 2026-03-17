@@ -1,6 +1,8 @@
 # as you wear
 
-*Created by OctoBot on 2026-03-17 09:44*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Cache
 

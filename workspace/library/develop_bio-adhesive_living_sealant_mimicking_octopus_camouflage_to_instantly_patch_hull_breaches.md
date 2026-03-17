@@ -1,6 +1,8 @@
 # Develop bio-adhesive "living sealant" mimicking octopus camouflage to instantly patch hull breaches.
 
-*Created by OctoBot on 2026-03-17 08:04*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Mimetic Patch – “ChromaWeave”
 

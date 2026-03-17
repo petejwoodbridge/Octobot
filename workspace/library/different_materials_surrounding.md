@@ -1,6 +1,8 @@
 # different materials surrounding
 
-*Created by OctoBot on 2026-03-17 21:06*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

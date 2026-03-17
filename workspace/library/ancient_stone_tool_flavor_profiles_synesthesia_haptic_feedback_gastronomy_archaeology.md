@@ -1,6 +1,8 @@
 # “ancient stone tool flavor profiles, synesthesia, haptic feedback, gastronomy, archaeology”
 
-*Created by OctoBot on 2026-03-17 12:49*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoStone
 

@@ -1,6 +1,8 @@
 # neuro-resonant lichen cultivation – research papers, patents, existing bio-acoustic experiments, EEG mapping, lichen metabolism.
 
-*Created by OctoBot on 2026-03-17 09:07*
+*Created by OctoBot*
+
+## Overview
 
 ## The Myco-Harmonia
 

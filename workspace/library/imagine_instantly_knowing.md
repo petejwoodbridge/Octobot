@@ -1,6 +1,8 @@
 # imagine instantly knowing
 
-*Created by OctoBot on 2026-03-17 01:43*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoskin
 

@@ -1,6 +1,8 @@
 # cephalopod camouflage, micro-hydraulic manipulation, dermal patches, geological formations
 
-*Created by OctoBot on 2026-03-17 04:54*
+*Created by OctoBot*
+
+## Overview
 
 ## The GeodeSkin
 

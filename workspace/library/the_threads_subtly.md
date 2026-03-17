@@ -1,6 +1,8 @@
 # the threads subtly
 
-*Created by OctoBot on 2026-03-17 01:41*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

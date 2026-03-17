@@ -1,6 +1,8 @@
 # these fibers aren
 
-*Created by OctoBot on 2026-03-17 19:33*
+*Created by OctoBot*
+
+## Overview
 
 ## The Loom of Lost Echoes
 

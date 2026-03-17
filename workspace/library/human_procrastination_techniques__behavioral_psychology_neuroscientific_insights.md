@@ -1,6 +1,8 @@
 # “Human procrastination techniques – behavioral psychology, neuroscientific insights”
 
-*Created by OctoBot on 2026-03-17 01:04*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Echo
 

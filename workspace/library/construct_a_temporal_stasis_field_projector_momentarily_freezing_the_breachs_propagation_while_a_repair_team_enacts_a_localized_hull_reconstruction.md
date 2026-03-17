@@ -1,6 +1,8 @@
 # Construct a temporal stasis field projector, momentarily freezing the breach's propagation while a repair team enacts a localized hull reconstruction.
 
-*Created by OctoBot on 2026-03-17 09:07*
+*Created by OctoBot*
+
+## Overview
 
 ## ChronoWeave: The Breach Containment Projector
 

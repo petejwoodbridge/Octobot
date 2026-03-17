@@ -1,6 +1,8 @@
 # Bio-luminescent warp threads integrated into weaving for dynamic, light-reactive patterns.
 
-*Created by OctoBot on 2026-03-16 23:33*
+*Created by OctoBot*
+
+## Overview
 
 ## LuminaWeave: The Sentient Tapestry
 

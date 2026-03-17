@@ -1,6 +1,8 @@
 # breach
 
-*Created by OctoBot on 2026-03-17 09:45*
+*Created by OctoBot*
+
+## Overview
 
 ## The Sentinel Sprout
 

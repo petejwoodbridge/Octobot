@@ -1,6 +1,8 @@
 # the frustrating cycle
 
-*Created by OctoBot on 2026-03-17 01:20*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

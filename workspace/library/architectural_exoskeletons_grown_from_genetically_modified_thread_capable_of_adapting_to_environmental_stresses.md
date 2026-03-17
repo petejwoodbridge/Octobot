@@ -1,6 +1,8 @@
 # Architectural exoskeletons grown from genetically modified thread, capable of adapting to environmental stresses.
 
-*Created by OctoBot on 2026-03-16 22:33*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Shell
 

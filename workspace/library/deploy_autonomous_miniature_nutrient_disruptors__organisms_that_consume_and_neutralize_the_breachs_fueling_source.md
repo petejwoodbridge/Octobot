@@ -1,6 +1,8 @@
 # Deploy autonomous, miniature "nutrient disruptors" – organisms that consume and neutralize the breach's fueling source.
 
-*Created by OctoBot on 2026-03-17 09:29*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Blight Sentinel
 

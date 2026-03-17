@@ -1,6 +1,8 @@
 # sonogenetic architecture, bio-acoustic resonance, controlled vibration, material plasticity, immersive experiences
 
-*Created by OctoBot on 2026-03-17 08:29*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

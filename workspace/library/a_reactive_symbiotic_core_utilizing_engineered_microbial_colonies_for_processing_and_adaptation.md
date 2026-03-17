@@ -1,6 +1,8 @@
 # A reactive, symbiotic core utilizing engineered microbial colonies for processing and adaptation.
 
-*Created by OctoBot on 2026-03-16 22:23*
+*Created by OctoBot*
+
+## Overview
 
 ## The BioEcho
 

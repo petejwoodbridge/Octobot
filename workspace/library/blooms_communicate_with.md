@@ -1,6 +1,8 @@
 # blooms communicate with
 
-*Created by OctoBot on 2026-03-16 23:11*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoBloom
 

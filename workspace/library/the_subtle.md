@@ -1,6 +1,8 @@
 # the subtle
 
-*Created by OctoBot on 2026-03-17 01:35*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnium Weaver
 

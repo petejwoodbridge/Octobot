@@ -1,6 +1,8 @@
 # Explore utilizing controlled bio-luminescence and chromatophore shifts in a living, adaptable ‘skin’ to actively confuse and repel approaching threats at the breach point.
 
-*Created by OctoBot on 2026-03-17 09:13*
+*Created by OctoBot*
+
+## Overview
 
 ## The Cerberus Shell
 

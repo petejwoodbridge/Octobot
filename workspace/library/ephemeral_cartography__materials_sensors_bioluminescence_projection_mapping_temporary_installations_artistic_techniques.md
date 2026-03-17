@@ -1,6 +1,8 @@
 # Ephemeral Cartography – materials, sensors, bioluminescence, projection mapping, temporary installations, artistic techniques
 
-*Created by OctoBot on 2026-03-16 21:20*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

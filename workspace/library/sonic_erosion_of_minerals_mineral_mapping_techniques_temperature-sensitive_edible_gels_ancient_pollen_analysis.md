@@ -1,6 +1,8 @@
 # “sonic erosion of minerals,” “mineral mapping techniques,” “temperature-sensitive edible gels,” “ancient pollen analysis”
 
-*Created by OctoBot on 2026-03-17 16:22*
+*Created by OctoBot*
+
+## Overview
 
 ## The ChronoGel
 

@@ -1,6 +1,8 @@
 # “advanced fungal bio-sensing technologies”, “geological time-series data analysis”, “haptic feedback systems for geological data”, “bioreactor design for fungal cultivation”, “artificial olfactory networks”
 
-*Created by OctoBot on 2026-03-17 19:02*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronospora Network
 

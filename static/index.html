@@ -291,7 +291,6 @@
     background: #08001a; border: 1px solid #00f7ff22;
     font-family: 'Segoe UI', Tahoma, sans-serif;
     font-size: 13px; color: #cc99ff; line-height: 1.7;
-    white-space: pre-wrap;
   }
 
   /* ── Journal Panel ── */
@@ -932,8 +931,24 @@ async function previewFile(el, filename) {
   const safe = filename.startsWith('library/') ? filename.slice(8) : filename;
   const data = await fetchJSON('/api/library/' + encodeURIComponent(safe));
   if (data && data.content) {
-    document.getElementById('library-preview').textContent = data.content;
+    document.getElementById('library-preview').innerHTML = renderMarkdown(data.content);
   }
+}
+
+function renderMarkdown(md) {
+  // Simple markdown to HTML renderer for idea previews
+  let html = md
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2 style="color:#ff2d9b;margin:16px 0 6px;font-size:15px;">$1</h2>')
+    .replace(/^# (.+)$/gm, '<h1 style="color:#00f7ff;margin:0 0 10px;font-size:18px;">$1</h1>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong style="color:#00f7ff;">$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/^- (.+)$/gm, '<li style="margin-left:16px;">$1</li>')
+    .replace(/^---$/gm, '<hr style="border-color:#bf00ff44;margin:12px 0;">')
+    .replace(/\n\n/g, '<br><br>')
+    .replace(/\n/g, '<br>');
+  return html;
 }
 
 // =====================================================================

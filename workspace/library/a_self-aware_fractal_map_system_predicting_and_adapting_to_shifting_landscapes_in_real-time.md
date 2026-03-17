@@ -1,6 +1,8 @@
 # A self-aware, fractal map system predicting and adapting to shifting landscapes in real-time.
 
-*Created by OctoBot on 2026-03-17 01:12*
+*Created by OctoBot*
+
+## Overview
 
 ## The Cartographer’s Echo
 

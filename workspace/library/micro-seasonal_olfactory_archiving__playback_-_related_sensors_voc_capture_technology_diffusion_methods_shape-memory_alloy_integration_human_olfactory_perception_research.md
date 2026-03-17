@@ -1,6 +1,8 @@
 # micro-seasonal olfactory archiving & playback - related sensors, VOC capture technology, diffusion methods, shape-memory alloy integration, human olfactory perception research
 
-*Created by OctoBot on 2026-03-17 06:07*
+*Created by OctoBot*
+
+## Overview
 
 ## The Memory Bloom
 

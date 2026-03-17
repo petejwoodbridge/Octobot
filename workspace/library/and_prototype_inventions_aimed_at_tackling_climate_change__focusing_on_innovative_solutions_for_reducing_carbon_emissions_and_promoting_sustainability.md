@@ -1,6 +1,8 @@
 # and prototype inventions aimed at tackling climate change – focusing on innovative solutions for reducing carbon emissions and promoting sustainability.
 
-*Created by OctoBot on 2026-03-16 21:50*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Mimetic Bloom
 

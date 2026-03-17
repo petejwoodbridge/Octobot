@@ -1,6 +1,8 @@
 # Shells evolve into sentient, mobile ecosystems, capable of complex communication and terraforming small aquatic environments.
 
-*Created by OctoBot on 2026-03-17 09:50*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoshell
 

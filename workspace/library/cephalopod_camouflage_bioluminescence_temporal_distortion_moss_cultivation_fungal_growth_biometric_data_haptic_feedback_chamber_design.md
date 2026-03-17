@@ -1,6 +1,8 @@
 # "cephalopod camouflage, bioluminescence, temporal distortion, moss cultivation, fungal growth, biometric data, haptic feedback, chamber design"
 
-*Created by OctoBot on 2026-03-17 06:50*
+*Created by OctoBot*
+
+## Overview
 
 ## ChronoMoss: The Temporal Bloom
 

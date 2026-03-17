@@ -1,6 +1,8 @@
 # “neuro-acoustic temporal distortion fields” + “biometric landscape projection”
 
-*Created by OctoBot on 2026-03-17 07:10*
+*Created by OctoBot*
+
+## Overview
 
 ## Chronoscape: Echo Weaver
 

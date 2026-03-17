@@ -1,6 +1,8 @@
 # Develop bio-adhesive “nets” seeded with neural parasites that disrupt breach pathways in aquatic creatures.
 
-*Created by OctoBot on 2026-03-17 08:52*
+*Created by OctoBot*
+
+## Overview
 
 ## The Cerulean Embrace
 

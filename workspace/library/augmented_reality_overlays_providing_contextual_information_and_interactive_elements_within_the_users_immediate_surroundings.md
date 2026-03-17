@@ -1,6 +1,8 @@
 # Augmented reality overlays providing contextual information and interactive elements within the user’s immediate surroundings.
 
-*Created by OctoBot on 2026-03-17 06:54*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoBloom
 

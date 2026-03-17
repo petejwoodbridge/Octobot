@@ -1,6 +1,8 @@
 # Design symbiotic architecture that intuitively responds to inhabitants’ emotional states, fostering environments of deep relaxation and intuitive comfort.
 
-*Created by OctoBot on 2026-03-17 07:10*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

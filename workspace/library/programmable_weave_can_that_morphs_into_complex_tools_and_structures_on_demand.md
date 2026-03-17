@@ -1,6 +1,8 @@
 # Programmable weave can that morphs into complex tools and structures on demand.
 
-*Created by OctoBot on 2026-03-17 00:44*
+*Created by OctoBot*
+
+## Overview
 
 ## The LoomVerse
 

@@ -1,6 +1,8 @@
 # Self-assembling, thread-based robotic swarms capable of manipulating objects and constructing miniature environments.
 
-*Created by OctoBot on 2026-03-17 00:30*
+*Created by OctoBot*
+
+## Overview
 
 ## The NanoWeave
 

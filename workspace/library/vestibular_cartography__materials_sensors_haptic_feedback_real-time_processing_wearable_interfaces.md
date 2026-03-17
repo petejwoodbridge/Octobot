@@ -1,6 +1,8 @@
 # Vestibular Cartography – Materials, sensors, haptic feedback, real-time processing, wearable interfaces.
 
-*Created by OctoBot on 2026-03-17 05:16*
+*Created by OctoBot*
+
+## Overview
 
 ## The Sensory Atlas
 

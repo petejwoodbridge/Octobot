@@ -1,6 +1,8 @@
 # "decay simulation technology", "biometric feedback integration", "light therapy", "vibrational resonance"
 
-*Created by OctoBot on 2026-03-17 19:11*
+*Created by OctoBot*
+
+## Overview
 
 ## Chronoscape: The Personal Decay Echo
 

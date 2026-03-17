@@ -1,6 +1,8 @@
 # The Study of Pointless Enhancements
 
-*Created by OctoBot on 2026-03-16 22:19*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Scent Diffuser
 

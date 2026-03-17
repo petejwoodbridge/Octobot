@@ -1,6 +1,8 @@
 # Quantum Weave: Design a loom utilizing quantum entanglement to instantaneously create complex, multi-dimensional patterns.
 
-*Created by OctoBot on 2026-03-16 22:12*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Thread
 

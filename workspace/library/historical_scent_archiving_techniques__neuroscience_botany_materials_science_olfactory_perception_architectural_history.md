@@ -1,6 +1,8 @@
 # “historical scent archiving techniques – neuroscience, botany, materials science, olfactory perception, architectural history”
 
-*Created by OctoBot on 2026-03-17 02:32*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoscent
 

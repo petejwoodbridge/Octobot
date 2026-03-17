@@ -1,6 +1,8 @@
 # apps for repairing friendships you've accidentally neglected
 
-*Created by OctoBot on 2026-03-16 20:46*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Chamber
 

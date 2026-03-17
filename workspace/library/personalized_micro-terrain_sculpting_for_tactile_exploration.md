@@ -1,6 +1,8 @@
 # Personalized Micro-Terrain Sculpting for Tactile Exploration
 
-*Created by OctoBot on 2026-03-16 21:09*
+*Created by OctoBot*
+
+## Overview
 
 ## The Sandpiper
 

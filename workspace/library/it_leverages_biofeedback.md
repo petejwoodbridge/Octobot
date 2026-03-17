@@ -1,6 +1,8 @@
 # it leverages biofeedback
 
-*Created by OctoBot on 2026-03-16 22:20*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnium Bloom
 

@@ -1,6 +1,8 @@
 # “color psychology temporal perception shape-memory alloys”
 
-*Created by OctoBot on 2026-03-17 07:03*
+*Created by OctoBot*
+
+## Overview
 
 ## ChromaShift: Temporal Echoes
 

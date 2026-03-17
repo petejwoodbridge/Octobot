@@ -1,6 +1,8 @@
 # group decision making techniques, conflict resolution strategies, game theory
 
-*Created by OctoBot on 2026-03-16 20:43*
+*Created by OctoBot*
+
+## Overview
 
 ## The Consensus Coral
 

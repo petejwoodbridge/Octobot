@@ -1,6 +1,8 @@
 # conductance
 
-*Created by OctoBot on 2026-03-16 23:19*
+*Created by OctoBot*
+
+## Overview
 
 ## The Resonance Weaver
 

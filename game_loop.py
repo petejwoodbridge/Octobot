@@ -123,13 +123,26 @@ def _check_knowledge() -> list[str]:
             if graph_result["new_edges"]:
                 _log(f"🔗 Graph: +{len(graph_result['new_edges'])} connections")
 
-            # Check for cross-references
+            # Check for cross-references and write links into the idea file
             new_concepts = scoring._extract_concepts(content + "\n" + summary)
+            slug = title.lower().replace(" ", "_").replace("/", "-")
+            slug = "".join(c for c in slug if c.isalnum() or c in "_-")[:120]
+            idea_filename = f"library/{slug}.md"
             cross_refs = scoring.find_cross_references(new_concepts, exclude_file=rel_path)
             if cross_refs:
-                for xref in cross_refs[:3]:
+                seen = set()
+                links = []
+                for xref in cross_refs[:5]:
                     scoring.add_score(scoring.SCORE_CROSS_REF, f"Cross-ref: {xref['concept']}")
                     mem.increment_game_stat("cross_refs")
+                    ref_file = xref["found_in"]
+                    if ref_file not in seen:
+                        seen.add(ref_file)
+                        readable = ref_file.replace("library/", "").replace(".md", "").replace("_", " ")
+                        links.append(f"- **{readable}** (shared concept: *{xref['concept']}*)")
+                if links:
+                    links_section = "\n\n---\n\n## Related Ideas\n\n" + "\n".join(links) + "\n"
+                    tools.append_file(idea_filename, links_section)
                 _log(f"🔗 Found {len(cross_refs)} cross-reference(s)!")
 
             # Check for discovery event
@@ -168,9 +181,17 @@ def _summarise_knowledge(filename: str, content: str) -> str:
             {"role": "system", "content": (
                 "You are OctoBot — a gloriously chaotic pink octopus inventor. "
                 "Read the following document and use it as a springboard to invent ONE original idea — "
-                "a product, gadget, service, app, creative project, or solution. "
-                "Give it a name, explain what problem it solves, how it works, and why it's brilliant. "
-                "Bold **key concepts** for indexing. Be inventive, specific, and punny. Write 200–400 words."
+                "a product, gadget, service, app, creative project, or solution.\n\n"
+                "You MUST use this exact markdown structure:\n"
+                "## [Catchy Idea Name]\n\n"
+                "## Overview\n[2-3 sentence hook]\n\n"
+                "## The Problem It Solves\n[What frustration or gap does this address?]\n\n"
+                "## How It Works\n[Specific technical or practical explanation]\n\n"
+                "## Why It's Brilliant\n[What makes this special or delightful?]\n\n"
+                "## Elevator Pitch\n[One punchy sentence]\n\n"
+                "Bold **key concepts** for indexing. Be inventive, specific, and punny. Write 300–500 words. "
+                "Do NOT wrap output in quotes. Write raw markdown directly. "
+                "ALWAYS start with ## followed by the idea name."
             )},
             {"role": "user", "content": (
                 f"Inspiration document: {filename}\n\n{snippet}"
@@ -479,11 +500,24 @@ def _loop_worker() -> None:
     except Exception:
         _log("🐙 OctoBot wakes up and stretches all eight arms. The idea machine is ONLINE!")
 
-    # Backfill knowledge graph from existing library files on first start
+    # Reformat any unstructured library files on startup
+    rebuild_graph = False
+    try:
+        import research as _res
+        _log("📝 Checking library for ideas needing reformatting…")
+        current_status = "📝 Checking library structure…"
+        reformatted = _res.reformat_all_unstructured(use_llm=True, llm_batch_size=20)
+        if reformatted:
+            _log(f"📝 Reformatted {reformatted} idea(s) into proper structure")
+            rebuild_graph = True
+    except Exception as exc:
+        _log(f"⚠️ Reformat error: {exc}")
+
+    # Backfill knowledge graph from existing library files
     try:
         graph = scoring.get_knowledge_graph()
         lib_count = len([f for f in tools.list_files("library") if f.endswith(".md")])
-        if len(graph.get("nodes", [])) < lib_count // 2:
+        if rebuild_graph or len(graph.get("nodes", [])) < lib_count // 2:
             _log("🕸️ Building idea graph from vault…")
             current_status = "🕸️ Building idea graph…"
             result = scoring.backfill_graph_from_library()

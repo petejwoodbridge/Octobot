@@ -1,6 +1,8 @@
 # "Bio-luminescent fungal networks, geological data sensors, haptic feedback, olfactory projection, interactive topographic mapping, time perception visualization"
 
-*Created by OctoBot on 2026-03-17 13:49*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoscape
 

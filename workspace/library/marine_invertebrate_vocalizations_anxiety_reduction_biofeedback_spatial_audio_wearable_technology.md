@@ -1,6 +1,8 @@
 # marine invertebrate vocalizations, anxiety reduction, biofeedback, spatial audio, wearable technology
 
-*Created by OctoBot on 2026-03-17 09:43*
+*Created by OctoBot*
+
+## Overview
 
 ## The Sonaris Shell
 

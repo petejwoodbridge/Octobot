@@ -1,6 +1,8 @@
 # “geochemical mapping techniques – geological time scales – microbial biosignatures – haptic feedback design – taste simulation technologies”
 
-*Created by OctoBot on 2026-03-17 11:17*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Palate
 

@@ -1,6 +1,8 @@
 # Shells generate localized weather phenomena – miniature storms or calming mists – triggered by emotional input.
 
-*Created by OctoBot on 2026-03-17 09:49*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

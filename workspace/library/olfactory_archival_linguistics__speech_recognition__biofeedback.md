@@ -1,6 +1,8 @@
 # olfactory archival linguistics + speech recognition + biofeedback
 
-*Created by OctoBot on 2026-03-17 04:09*
+*Created by OctoBot*
+
+## Overview
 
 ## The Memory Bloom
 

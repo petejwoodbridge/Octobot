@@ -1,6 +1,8 @@
 # Self-healing weave can for automated repairs on spacecraft hulls.
 
-*Created by OctoBot on 2026-03-17 00:42*
+*Created by OctoBot*
+
+## Overview
 
 ## The Nano-Weave Sentinel
 

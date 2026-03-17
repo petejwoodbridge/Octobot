@@ -1,6 +1,8 @@
 # resonant fungal echo-gardens - concept refinement
 
-*Created by OctoBot on 2026-03-17 10:24*
+*Created by OctoBot*
+
+## Overview
 
 ## The MycoPulse
 

@@ -1,6 +1,8 @@
 # Mnemosyne Cartography - historical precedents, biophoretic research, olfactory perception, haptic feedback technologies, mapping techniques, crowd psychology.
 
-*Created by OctoBot on 2026-03-17 13:47*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoskin
 

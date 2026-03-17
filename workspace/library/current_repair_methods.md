@@ -1,6 +1,8 @@
 # current repair methods
 
-*Created by OctoBot on 2026-03-17 06:40*
+*Created by OctoBot*
+
+## Overview
 
 ## The Mender Weaver
 

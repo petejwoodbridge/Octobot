@@ -1,6 +1,8 @@
 # sentinel
 
-*Created by OctoBot on 2026-03-16 23:35*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

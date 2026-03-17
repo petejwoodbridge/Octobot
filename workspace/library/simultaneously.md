@@ -1,6 +1,8 @@
 # simultaneously
 
-*Created by OctoBot on 2026-03-17 01:58*
+*Created by OctoBot*
+
+## Overview
 
 ## The ChronoBloom
 

@@ -1,6 +1,8 @@
 # Develop bioluminescent messaging systems using genetically modified deep-sea blooms for short-range data transmission.
 
-*Created by OctoBot on 2026-03-16 22:48*
+*Created by OctoBot*
+
+## Overview
 
 ## The Abyss Echo
 

@@ -1,6 +1,8 @@
 # november
 
-*Created by OctoBot on 2026-03-17 07:01*
+*Created by OctoBot*
+
+## Overview
 
 ## The November Bloom
 

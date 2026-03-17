@@ -1,6 +1,8 @@
 # Regenerative medicine + Extreme Sports + Impact Protection
 
-*Created by OctoBot on 2026-03-17 13:01*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Kinetic Shell
 

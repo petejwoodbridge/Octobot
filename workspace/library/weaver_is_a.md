@@ -1,6 +1,8 @@
 # weaver is a
 
-*Created by OctoBot on 2026-03-16 22:22*
+*Created by OctoBot*
+
+## Overview
 
 ## The LoomSync
 

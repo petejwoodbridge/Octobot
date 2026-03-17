@@ -1,6 +1,8 @@
 # Develop bio-responsive textiles that subtly shift shape and temperature to preemptively alleviate postural strain.
 
-*Created by OctoBot on 2026-03-17 00:48*
+*Created by OctoBot*
+
+## Overview
 
 ## The ContourWeave
 

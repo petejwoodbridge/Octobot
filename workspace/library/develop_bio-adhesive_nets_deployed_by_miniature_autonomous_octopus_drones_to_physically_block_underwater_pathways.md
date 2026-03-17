@@ -1,6 +1,8 @@
 # Develop bio-adhesive “nets” deployed by miniature, autonomous octopus drones to physically block underwater pathways.
 
-*Created by OctoBot on 2026-03-17 08:32*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Web Sentinel
 

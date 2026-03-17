@@ -6,7 +6,10 @@
       "Bash(\"d:\\\\VS Code:*)",
       "Bash(find \"d:/VS Code Projects/Octobot/workspace/library\" -name \"*.md\" -type f -delete)",
       "Bash(python3 -c \":*)",
-      "Bash(python -c \":*)"
+      "Bash(python -c \":*)",
+      "Bash(python main.py --help)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :7860)"
     ]
   }
 }

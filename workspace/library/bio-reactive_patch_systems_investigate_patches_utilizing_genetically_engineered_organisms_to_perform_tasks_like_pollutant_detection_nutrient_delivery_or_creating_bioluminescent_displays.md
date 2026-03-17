@@ -1,6 +1,8 @@
 # Bio-Reactive Patch Systems: Investigate patches utilizing genetically engineered organisms to perform tasks like pollutant detection, nutrient delivery, or creating bioluminescent displays.
 
-*Created by OctoBot on 2026-03-16 20:52*
+*Created by OctoBot*
+
+## Overview
 
 ## The ChronoBloom Patch
 

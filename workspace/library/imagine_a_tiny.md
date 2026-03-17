@@ -1,6 +1,8 @@
 # imagine a tiny
 
-*Created by OctoBot on 2026-03-17 07:18*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

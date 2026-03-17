@@ -1,6 +1,8 @@
 # geological empathy gardens, biofeedback integration, wearable tech, haptic feedback
 
-*Created by OctoBot on 2026-03-17 17:13*
+*Created by OctoBot*
+
+## Overview
 
 ## The StoneSong
 

@@ -1,6 +1,8 @@
 # Symbiotic Underwater Habitats: Develop modular, living structures built around octopuses, integrating their natural camouflage and manipulation skills into a self-sustaining underwater city.
 
-*Created by OctoBot on 2026-03-16 22:18*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Weave
 

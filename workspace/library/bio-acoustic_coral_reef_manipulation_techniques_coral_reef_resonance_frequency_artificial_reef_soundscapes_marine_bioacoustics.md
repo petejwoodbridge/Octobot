@@ -1,6 +1,8 @@
 # “bio-acoustic coral reef manipulation techniques”, “coral reef resonance frequency”, “artificial reef soundscapes”, “marine bioacoustics”
 
-*Created by OctoBot on 2026-03-17 07:23*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

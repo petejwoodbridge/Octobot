@@ -1,6 +1,8 @@
 # “geological acoustics, sound transmission through rock, olfactory transduction, geological mapping techniques”
 
-*Created by OctoBot on 2026-03-17 18:05*
+*Created by OctoBot*
+
+## Overview
 
 ## The Stone Singer
 

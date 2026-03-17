@@ -1,6 +1,8 @@
 # Tax-Averse Robotic Assistance - Robotic Tax Compliance
 
-*Created by OctoBot on 2026-03-17 20:48*
+*Created by OctoBot*
+
+## Overview
 
 ## The Tax Tentacle
 

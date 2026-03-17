@@ -1,6 +1,8 @@
 # “bio-luminescent fungal mycelium”, “EEG mapping”, “interactive art installations”, “neurofeedback”, “mycelial architecture”
 
-*Created by OctoBot on 2026-03-17 02:48*
+*Created by OctoBot*
+
+## Overview
 
 ## LuminaMind
 

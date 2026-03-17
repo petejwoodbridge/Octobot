@@ -1,6 +1,8 @@
 # Implement a “pressure-pulse dampening” system – utilize targeted sonic waves to counteract the force driving the breach, allowing for stabilization.
 
-*Created by OctoBot on 2026-03-17 07:54*
+*Created by OctoBot*
+
+## Overview
 
 ## The Resonator
 

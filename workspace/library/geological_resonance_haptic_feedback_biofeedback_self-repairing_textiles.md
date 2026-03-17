@@ -1,6 +1,8 @@
 # geological resonance, haptic feedback, biofeedback, self-repairing textiles
 
-*Created by OctoBot on 2026-03-17 02:24*
+*Created by OctoBot*
+
+## Overview
 
 ## The Geo-Weave
 

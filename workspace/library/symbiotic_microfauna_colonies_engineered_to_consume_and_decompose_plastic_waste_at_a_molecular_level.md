@@ -1,6 +1,8 @@
 # Symbiotic microfauna colonies engineered to consume and decompose plastic waste at a molecular level.
 
-*Created by OctoBot on 2026-03-16 21:49*
+*Created by OctoBot*
+
+## Overview
 
 ## The Plastivore Pods
 

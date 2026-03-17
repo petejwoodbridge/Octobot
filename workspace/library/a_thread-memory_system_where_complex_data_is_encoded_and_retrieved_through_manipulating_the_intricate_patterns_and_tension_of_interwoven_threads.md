@@ -1,6 +1,8 @@
 # A “thread-memory” system where complex data is encoded and retrieved through manipulating the intricate patterns and tension of interwoven threads.
 
-*Created by OctoBot on 2026-03-17 00:31*
+*Created by OctoBot*
+
+## Overview
 
 ## The Weaver’s Archive
 

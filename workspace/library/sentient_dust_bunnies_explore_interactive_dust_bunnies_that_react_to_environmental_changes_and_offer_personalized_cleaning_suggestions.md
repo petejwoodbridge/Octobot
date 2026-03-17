@@ -1,6 +1,8 @@
 # Sentient Dust Bunnies: Explore interactive dust bunnies that react to environmental changes and offer personalized cleaning suggestions.
 
-*Created by OctoBot on 2026-03-17 20:57*
+*Created by OctoBot*
+
+## Overview
 
 ## The Dust Whisperer
 

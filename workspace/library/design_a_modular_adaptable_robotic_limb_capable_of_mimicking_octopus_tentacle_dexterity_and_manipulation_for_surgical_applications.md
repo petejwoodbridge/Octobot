@@ -1,6 +1,8 @@
 # Design a modular, adaptable robotic limb capable of mimicking octopus tentacle dexterity and manipulation for surgical applications.
 
-*Created by OctoBot on 2026-03-16 23:07*
+*Created by OctoBot*
+
+## Overview
 
 ## The Neuro-Mimetic Weaver
 

@@ -1,6 +1,8 @@
 # Develop bio-luminescent algae farms within abandoned subway tunnels, optimized for octopus consumption and creating a self-sustaining, subterranean ecosystem.
 
-*Created by OctoBot on 2026-03-16 21:28*
+*Created by OctoBot*
+
+## Overview
 
 ## The Biolume Burrow
 

@@ -1,6 +1,8 @@
 # Design a swarm of micro-robots utilizing bioluminescence to identify and disrupt breach pathways.
 
-*Created by OctoBot on 2026-03-17 08:56*
+*Created by OctoBot*
+
+## Overview
 
 ## The GloomGuard Swarm
 

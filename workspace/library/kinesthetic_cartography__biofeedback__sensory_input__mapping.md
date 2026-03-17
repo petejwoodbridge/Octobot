@@ -1,6 +1,8 @@
 # Kinesthetic Cartography + Biofeedback + Sensory Input + Mapping
 
-*Created by OctoBot on 2026-03-16 21:04*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Terrain
 

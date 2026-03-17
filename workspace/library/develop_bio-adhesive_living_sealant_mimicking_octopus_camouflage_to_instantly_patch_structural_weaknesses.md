@@ -1,6 +1,8 @@
 # Develop bio-adhesive "living sealant" mimicking octopus camouflage to instantly patch structural weaknesses.
 
-*Created by OctoBot on 2026-03-17 09:28*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Weave
 

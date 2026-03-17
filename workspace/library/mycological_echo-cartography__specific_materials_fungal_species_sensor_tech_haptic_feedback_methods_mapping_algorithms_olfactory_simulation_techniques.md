@@ -1,6 +1,8 @@
 # Mycological Echo-Cartography – specific materials, fungal species, sensor tech, haptic feedback methods, mapping algorithms, olfactory simulation techniques.
 
-*Created by OctoBot on 2026-03-17 13:52*
+*Created by OctoBot*
+
+## Overview
 
 ## The Myco-Lumina
 

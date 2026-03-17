@@ -1,6 +1,8 @@
 # imagine unlocking your
 
-*Created by OctoBot on 2026-03-16 20:45*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Bloom
 

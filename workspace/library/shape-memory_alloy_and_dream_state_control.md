@@ -1,6 +1,8 @@
 # “shape-memory alloy and dream state control”
 
-*Created by OctoBot on 2026-03-17 02:26*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnium Sculpt
 

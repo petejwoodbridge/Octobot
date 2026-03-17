@@ -1,6 +1,8 @@
 # Synchronized Chickens - Origins, Animal Behaviour, Robotics, Biofeedback
 
-*Created by OctoBot on 2026-03-16 21:12*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Flock
 

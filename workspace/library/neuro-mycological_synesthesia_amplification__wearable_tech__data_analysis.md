@@ -1,6 +1,8 @@
 # neuro-mycological synesthesia amplification + wearable tech + data analysis
 
-*Created by OctoBot on 2026-03-17 18:58*
+*Created by OctoBot*
+
+## Overview
 
 ## The Myco-Sense
 

@@ -1,6 +1,8 @@
 # bioluminescent invertebrates, coral reef ecosystems, biofeedback, ultrasonic resonance, cephalopod movement patterns
 
-*Created by OctoBot on 2026-03-17 04:58*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

@@ -1,6 +1,8 @@
 # it comprises three
 
-*Created by OctoBot on 2026-03-16 21:35*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoscape Weaver
 

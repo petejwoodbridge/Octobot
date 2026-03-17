@@ -1,6 +1,8 @@
 # sonorous petrification – materials, acoustics, crystallization, geological markers
 
-*Created by OctoBot on 2026-03-17 02:29*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

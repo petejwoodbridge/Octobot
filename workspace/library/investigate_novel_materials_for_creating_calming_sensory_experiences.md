@@ -1,6 +1,8 @@
 # Investigate novel materials for creating calming sensory experiences.
 
-*Created by OctoBot on 2026-03-16 20:59*
+*Created by OctoBot*
+
+## Overview
 
 ## The Serenity Shard
 

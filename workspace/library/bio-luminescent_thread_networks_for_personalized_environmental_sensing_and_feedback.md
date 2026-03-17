@@ -1,6 +1,8 @@
 # Bio-luminescent thread networks for personalized environmental sensing and feedback.
 
-*Created by OctoBot on 2026-03-16 23:10*
+*Created by OctoBot*
+
+## Overview
 
 ## The Living Loom
 

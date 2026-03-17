@@ -1,6 +1,8 @@
 # Design autonomous, micro-robot swarms that reconstruct damaged ship sections using 3D-printed, self-healing materials.
 
-*Created by OctoBot on 2026-03-17 08:08*
+*Created by OctoBot*
+
+## Overview
 
 ## The Leviathan's Embrace
 

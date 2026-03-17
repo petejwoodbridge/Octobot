@@ -1,6 +1,8 @@
 # “light-feeling” synesthesia engines – materials, sensors, haptic feedback, biofeedback, artistic expression, aesthetic perception, proprioception
 
-*Created by OctoBot on 2026-03-17 10:55*
+*Created by OctoBot*
+
+## Overview
 
 ## ChromaSkin
 

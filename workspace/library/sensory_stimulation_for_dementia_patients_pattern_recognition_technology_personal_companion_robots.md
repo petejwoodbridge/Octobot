@@ -1,6 +1,8 @@
 # “sensory stimulation for dementia patients”, “pattern recognition technology”, “personal companion robots”
 
-*Created by OctoBot on 2026-03-16 20:57*
+*Created by OctoBot*
+
+## Overview
 
 ## The Memory Weaver
 

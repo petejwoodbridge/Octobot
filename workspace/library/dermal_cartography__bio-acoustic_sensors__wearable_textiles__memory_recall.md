@@ -1,6 +1,8 @@
 # Dermal Cartography + Bio-Acoustic Sensors + Wearable Textiles + Memory Recall
 
-*Created by OctoBot on 2026-03-17 05:36*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoSkin
 

@@ -1,6 +1,8 @@
 # Explore a symbiotic relationship – genetically engineered octopuses capable of merging with damaged vessels, becoming living, adaptive repair systems.
 
-*Created by OctoBot on 2026-03-17 09:36*
+*Created by OctoBot*
+
+## Overview
 
 ## The Leviathan Weave
 

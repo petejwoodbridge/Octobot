@@ -1,6 +1,8 @@
 # "historical soundscape reconstruction techniques, synaesthetic programming, olfactory delivery systems, haptic feedback interfaces, extinct language databases"
 
-*Created by OctoBot on 2026-03-17 04:38*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoscent
 

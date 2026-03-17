@@ -1,6 +1,8 @@
 # geological data mapping, biofeedback textiles, sensor technology
 
-*Created by OctoBot on 2026-03-16 22:17*
+*Created by OctoBot*
+
+## Overview
 
 ## The GeoPulse Weaver
 

@@ -1,6 +1,8 @@
 # threads
 
-*Created by OctoBot on 2026-03-16 23:22*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Echo
 

@@ -1,6 +1,8 @@
 # “temporal perception neuroscience”, “vestibular illusion”, “haptic feedback integration”, “phosphene stimulation”
 
-*Created by OctoBot on 2026-03-17 17:29*
+*Created by OctoBot*
+
+## Overview
 
 ## Chrono-Weave
 

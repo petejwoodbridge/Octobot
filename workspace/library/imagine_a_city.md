@@ -1,6 +1,8 @@
 # imagine a city
 
-*Created by OctoBot on 2026-03-16 22:43*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chromatic Current
 

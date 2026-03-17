@@ -1,6 +1,8 @@
 # the algae
 
-*Created by OctoBot on 2026-03-17 02:05*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bloom Weaver
 

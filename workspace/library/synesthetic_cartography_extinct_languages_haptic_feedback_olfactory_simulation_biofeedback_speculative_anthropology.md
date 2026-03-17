@@ -1,6 +1,8 @@
 # synesthetic cartography, extinct languages, haptic feedback, olfactory simulation, biofeedback, speculative anthropology
 
-*Created by OctoBot on 2026-03-17 06:18*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Weaver
 

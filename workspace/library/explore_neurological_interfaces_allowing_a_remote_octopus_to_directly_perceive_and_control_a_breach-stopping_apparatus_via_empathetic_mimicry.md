@@ -1,6 +1,8 @@
 # Explore neurological interfaces allowing a remote octopus to directly perceive and control a breach-stopping apparatus via empathetic mimicry.
 
-*Created by OctoBot on 2026-03-17 07:43*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Chamber
 

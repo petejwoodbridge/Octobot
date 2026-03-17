@@ -1,6 +1,8 @@
 # the battery life
 
-*Created by OctoBot on 2026-03-16 22:41*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoBloom
 

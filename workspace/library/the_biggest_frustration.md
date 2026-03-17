@@ -1,6 +1,8 @@
 # the biggest frustration
 
-*Created by OctoBot on 2026-03-16 20:51*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

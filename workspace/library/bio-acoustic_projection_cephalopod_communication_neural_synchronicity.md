@@ -1,6 +1,8 @@
 # bio-acoustic projection, cephalopod communication, neural synchronicity
 
-*Created by OctoBot on 2026-03-17 08:05*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Chamber
 

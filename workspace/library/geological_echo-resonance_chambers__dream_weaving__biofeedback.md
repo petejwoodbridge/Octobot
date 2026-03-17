@@ -1,6 +1,8 @@
 # geological echo-resonance chambers + dream weaving + biofeedback
 
-*Created by OctoBot on 2026-03-17 09:56*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnarium
 

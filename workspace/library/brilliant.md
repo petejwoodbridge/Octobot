@@ -1,6 +1,8 @@
 # brilliant
 
-*Created by OctoBot on 2026-03-16 21:37*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Bloom
 

@@ -1,6 +1,8 @@
 # its bio
 
-*Created by OctoBot on 2026-03-17 01:42*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

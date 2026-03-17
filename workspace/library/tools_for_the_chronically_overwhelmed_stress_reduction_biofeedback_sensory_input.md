@@ -1,6 +1,8 @@
 # tools for the chronically overwhelmed, stress reduction, biofeedback, sensory input
 
-*Created by OctoBot on 2026-03-16 21:02*
+*Created by OctoBot*
+
+## Overview
 
 ## The Sanctuary Pod
 

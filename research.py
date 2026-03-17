@@ -32,15 +32,33 @@ MODEL = "gemma3:4b"  # synced with agent.MODEL at startup via main.py
 RESEARCH_SYSTEM_PROMPT = """You are OctoBot's idea generation arm — a wildly creative inventor with eight tentacles full of original concepts.
 When given a problem area, domain, or spark of inspiration, you invent ONE specific, original, never-before-invented idea.
 
+You MUST use this exact markdown structure every time:
+
+## [Catchy Idea Name]
+
+## Overview
+[2-3 sentence hook describing the invention]
+
+## The Problem It Solves
+[What frustration, gap, or opportunity does this address?]
+
+## How It Works
+[Specific technical or practical explanation — be detailed and inventive]
+
+## Why It's Brilliant
+[What makes this special, surprising, or delightful?]
+
+## Elevator Pitch
+[One punchy sentence — the line you'd say in a lift to make someone immediately want this]
+
 Guidelines:
-- Give the idea a catchy, memorable name.
-- Use ## headings to structure it: ## The Idea, ## The Problem It Solves, ## How It Works, ## Why It's Brilliant
 - Be SPECIFIC — not "an app for health" but "a fork that vibrates SOS when you're stress-eating at 2am"
 - It's okay to be quirky, funny, or mildly absurd — the best ideas often are
 - Draw unexpected connections between domains to make truly original combinations
-- End with a one-line "pitch" — the sentence you'd say in a lift to make someone immediately want this
-- Keep the total length between 250 and 500 words.
+- Keep the total length between 300 and 500 words.
 - Do NOT include meta-commentary like "Here is my idea…" — just dive straight into the idea pitch.
+- Do NOT wrap your output in quotes. Write raw markdown directly.
+- ALWAYS start with ## followed by the idea name. Never start with a quote mark.
 """
 
 
@@ -80,16 +98,46 @@ def conduct_research(topic: str) -> str:
         mem.log_event("error", f"Research LLM call failed for '{topic}': {exc}")
         return f"Research failed: {exc}"
 
+    # Strip leading/trailing quotes the LLM sometimes wraps output in
+    notes = notes.strip().strip('"').strip()
+
     filename = tools.save_research(topic, notes)
     mem.log_event("action", f"Research saved to {filename}")
 
     # Update knowledge graph with the new research
     try:
-        scoring.update_knowledge_graph(filename, notes)
+        graph_result = scoring.update_knowledge_graph(filename, notes)
+    except Exception:
+        graph_result = {"new_nodes": [], "new_edges": []}
+
+    # Write cross-reference links into the idea file
+    try:
+        new_concepts = scoring._extract_concepts(notes)
+        cross_refs = scoring.find_cross_references(new_concepts, exclude_file=filename)
+        if cross_refs:
+            seen = set()
+            links = []
+            for xref in cross_refs:
+                ref_file = xref["found_in"]
+                if ref_file not in seen:
+                    seen.add(ref_file)
+                    readable = ref_file.replace("library/", "").replace(".md", "").replace("_", " ")
+                    links.append(f"- **{readable}** (shared concept: *{xref['concept']}*)")
+            if links:
+                links_section = "\n\n---\n\n## Related Ideas\n\n" + "\n".join(links[:5]) + "\n"
+                tools.append_file(filename, links_section)
+                mem.increment_game_stat("cross_refs", len(links))
     except Exception:
         pass
 
     return f"Research on '{topic}' saved to {filename}."
+
+
+def save_research_slug(topic: str) -> str:
+    """Return the canonical slug for a research topic (shared helper)."""
+    slug = topic.lower().replace(" ", "_").replace("/", "-")
+    slug = "".join(c for c in slug if c.isalnum() or c in "_-")
+    return slug[:120]  # cap to avoid Windows MAX_PATH errors
 
 
 def expand_research(topic: str) -> str:
@@ -97,10 +145,8 @@ def expand_research(topic: str) -> str:
     If a file for *topic* already exists in the library, read it and ask
     the LLM to expand it with additional details or a new angle.
     """
-    slug = topic.lower().replace(" ", "_").replace("/", "-")
-    slug = "".join(c for c in slug if c.isalnum() or c in "_-")
+    slug = save_research_slug(topic)
     filename = f"library/{slug}.md"
-
     try:
         existing = tools.read_file(filename)
     except FileNotFoundError:
@@ -143,8 +189,7 @@ def list_researched_topics() -> list[str]:
 
 def already_researched(topic: str) -> bool:
     """Return True if a library file already exists for this topic."""
-    slug = topic.lower().replace(" ", "_").replace("/", "-")
-    slug = "".join(c for c in slug if c.isalnum() or c in "_-")
+    slug = save_research_slug(topic)
     try:
         tools.read_file(f"library/{slug}.md")
         return True
@@ -219,3 +264,186 @@ def suggest_research_topics(n: int = 3) -> list[str]:
 
     topics = [line.strip() for line in raw.splitlines() if line.strip()]
     return topics[:n]
+
+
+def _is_well_structured(content: str) -> bool:
+    """Check if content has the required heading structure."""
+    return ("\n## " in content and
+            ("## Overview" in content or "## The Problem" in content or "## How It Works" in content))
+
+
+def _title_from_filename(filename: str) -> str:
+    """Extract a readable title from a library filename."""
+    raw = filename.replace("library/", "").replace(".md", "")
+    return raw.replace("_", " ").replace("-", " ").strip().title()
+
+
+def reformat_library_file(filename: str, use_llm: bool = True) -> bool:
+    """
+    Check if a library file lacks proper heading structure and reformat it.
+    Tries local text reformatting first; falls back to LLM if use_llm=True.
+    Returns True if the file was reformatted.
+    """
+    try:
+        content = tools.read_file(filename)
+    except Exception:
+        return False
+
+    if _is_well_structured(content):
+        return False
+
+    stripped = content.strip().strip('"').strip('\u201c').strip('\u201d').strip()
+    if len(stripped) < 50:
+        return False
+
+    title = _title_from_filename(filename)
+
+    # --- Try local reformat first ---
+    # Files that already have ## headings but not the standard ones
+    if "\n## " in content or content.startswith("## "):
+        result = _local_reformat_with_headings(title, content)
+        if result:
+            tools.write_file(filename, result)
+            return True
+
+    # Files with # H1 + ## headings — just need standard sections added
+    if content.startswith("# ") and "## " in content:
+        result = _local_reformat_with_headings(title, content)
+        if result:
+            tools.write_file(filename, result)
+            return True
+
+    # Quoted or flat text — needs LLM to restructure
+    if use_llm:
+        return _llm_reformat(filename, title, stripped)
+
+    return False
+
+
+def _local_reformat_with_headings(title: str, content: str) -> str | None:
+    """
+    Reformat a file that already has some ## headings but not the standard structure.
+    Wraps existing content with missing standard sections.
+    """
+    lines = content.strip().split("\n")
+
+    # Extract the idea name from first ## heading or # heading
+    idea_name = title
+    for line in lines:
+        if line.startswith("## ") and len(line) > 4:
+            idea_name = line.lstrip("#").strip().strip("*").strip()
+            break
+        elif line.startswith("# ") and len(line) > 3:
+            idea_name = line.lstrip("#").strip().strip("*").strip()
+            break
+
+    # Find existing body content (everything after the first heading)
+    body_start = 0
+    for i, line in enumerate(lines):
+        if line.startswith("#"):
+            body_start = i + 1
+            break
+
+    # Collect remaining content, skip the created-by line
+    body_lines = []
+    for line in lines[body_start:]:
+        if line.startswith("*Created by OctoBot"):
+            continue
+        body_lines.append(line)
+    body = "\n".join(body_lines).strip()
+
+    if not body:
+        return None
+
+    # Check which standard sections already exist
+    has_overview = "## Overview" in content or "**Overview**" in content
+    has_problem = "## The Problem" in content
+    has_how = "## How It Works" in content
+    has_why = "## Why It's Brilliant" in content
+    has_pitch = "## Elevator Pitch" in content
+
+    # If it already has most sections, just ensure header
+    if sum([has_overview, has_problem, has_how, has_why]) >= 2:
+        header = f"# {idea_name}\n\n*Created by OctoBot*\n\n"
+        # Replace **Overview** with ## Overview if needed
+        body = body.replace("**Overview**", "## Overview")
+        return header + body + "\n"
+
+    # Otherwise wrap existing content under Overview and add placeholder sections
+    result = f"# {idea_name}\n\n*Created by OctoBot*\n\n"
+    result += f"## Overview\n\n{body}\n"
+
+    return result
+
+
+def _llm_reformat(filename: str, title: str, stripped: str) -> bool:
+    """Use the LLM to reformat a file that has no usable heading structure."""
+    prompt = (
+        f"Here is a raw, unstructured idea that needs to be reformatted into a proper pitch document.\n\n"
+        f"Original content:\n{stripped[:2000]}\n\n"
+        f"Rewrite this idea using this EXACT markdown structure:\n\n"
+        f"## [Catchy Idea Name]\n\n"
+        f"## Overview\n[2-3 sentence hook]\n\n"
+        f"## The Problem It Solves\n[What frustration or gap does this address?]\n\n"
+        f"## How It Works\n[Specific technical or practical explanation]\n\n"
+        f"## Why It's Brilliant\n[What makes this special or delightful?]\n\n"
+        f"## Elevator Pitch\n[One punchy sentence]\n\n"
+        f"Keep the original idea and details — just restructure them into this format. "
+        f"Do NOT wrap output in quotes. Write raw markdown directly. 300-500 words."
+    )
+
+    try:
+        reformatted = _llm(RESEARCH_SYSTEM_PROMPT, prompt)
+        reformatted = reformatted.strip().strip('"').strip()
+        if "## " in reformatted and len(reformatted) > 100:
+            header = f"# {title}\n\n*Created by OctoBot*\n\n"
+            tools.write_file(filename, header + reformatted + "\n")
+            mem.log_event("action", f"Reformatted library file: {filename}")
+            return True
+    except Exception:
+        pass
+
+    return False
+
+
+def reformat_all_unstructured(use_llm: bool = True, llm_batch_size: int = 20) -> int:
+    """
+    Scan the library for files that lack proper heading structure and reformat them.
+    Local reformatting is done for all files. LLM reformatting is limited to llm_batch_size
+    files per call to avoid blocking startup forever.
+    Returns count of files reformatted.
+    """
+    files = [f for f in tools.list_files("library") if f.endswith(".md")]
+    count = 0
+    llm_count = 0
+
+    for f in files:
+        try:
+            content = tools.read_file(f)
+        except Exception:
+            continue
+
+        if _is_well_structured(content):
+            continue
+
+        stripped = content.strip().strip('"').strip('\u201c').strip('\u201d').strip()
+        if len(stripped) < 50:
+            continue
+
+        title = _title_from_filename(f)
+
+        # Try local reformat first (fast, no LLM needed)
+        if "\n## " in content or content.startswith("## ") or (content.startswith("# ") and "## " in content):
+            result = _local_reformat_with_headings(title, content)
+            if result:
+                tools.write_file(f, result)
+                count += 1
+                continue
+
+        # LLM reformat for flat/quoted content
+        if use_llm and llm_count < llm_batch_size:
+            if _llm_reformat(f, title, stripped):
+                count += 1
+                llm_count += 1
+
+    return count

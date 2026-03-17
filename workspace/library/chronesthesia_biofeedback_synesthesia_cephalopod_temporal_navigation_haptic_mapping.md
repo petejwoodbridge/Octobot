@@ -1,6 +1,8 @@
 # “chronesthesia”, “biofeedback”, “synesthesia”, “cephalopod temporal navigation”, “haptic mapping”
 
-*Created by OctoBot on 2026-03-17 08:31*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoskin
 

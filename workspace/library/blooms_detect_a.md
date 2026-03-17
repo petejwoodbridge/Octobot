@@ -1,6 +1,8 @@
 # blooms detect a
 
-*Created by OctoBot on 2026-03-16 23:40*
+*Created by OctoBot*
+
+## Overview
 
 ## BloomSense: The Floral Echo Locator
 

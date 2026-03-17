@@ -1,6 +1,8 @@
 # “kinesthetic mnemonic architecture” + “self-repairing textiles” + “breach response”
 
-*Created by OctoBot on 2026-03-17 02:39*
+*Created by OctoBot*
+
+## Overview
 
 ## The Weaver’s Echo
 

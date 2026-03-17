@@ -1,6 +1,8 @@
 # Sentient shell communication devices: Create a system where complex shell structures vibrate and shift to transmit information, forming a novel, organic communication interface.
 
-*Created by OctoBot on 2026-03-17 19:40*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chiton Chorus
 

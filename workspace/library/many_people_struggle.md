@@ -1,6 +1,8 @@
 # many people struggle
 
-*Created by OctoBot on 2026-03-17 01:33*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnium Weaver
 

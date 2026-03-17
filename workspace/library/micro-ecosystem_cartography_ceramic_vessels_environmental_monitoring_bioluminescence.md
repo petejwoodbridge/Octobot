@@ -1,6 +1,8 @@
 # micro-ecosystem cartography, ceramic vessels, environmental monitoring, bioluminescence
 
-*Created by OctoBot on 2026-03-16 21:27*
+*Created by OctoBot*
+
+## Overview
 
 ## LuminaTerra: The Living Cartography Vessel
 

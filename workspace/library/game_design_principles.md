@@ -1,6 +1,8 @@
 # "game design principles"
 
-*Created by OctoBot on 2026-03-16 20:38*
+*Created by OctoBot*
+
+## Overview
 
 ## Game Design Principles: A Deep Dive
 

@@ -1,6 +1,8 @@
 # “neuro-scent technology”, “olfactory memory mapping”, “EEG olfactory stimulation”, “microbiome scent profiles”, “shape-memory alloy olfactory delivery”
 
-*Created by OctoBot on 2026-03-17 16:17*
+*Created by OctoBot*
+
+## Overview
 
 ## The Memory Bloom
 

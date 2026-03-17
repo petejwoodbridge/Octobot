@@ -1,6 +1,8 @@
 # Fabricate a reactive, organic “immune system” for infrastructure, capable of self-repair and aggressive containment.
 
-*Created by OctoBot on 2026-03-17 08:57*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Weave Sentinel
 

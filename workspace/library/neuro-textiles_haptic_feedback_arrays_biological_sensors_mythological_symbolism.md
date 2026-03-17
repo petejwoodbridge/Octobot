@@ -1,6 +1,8 @@
 # “neuro-textiles”, “haptic feedback arrays”, “biological sensors”, “mythological symbolism”
 
-*Created by OctoBot on 2026-03-17 13:23*
+*Created by OctoBot*
+
+## Overview
 
 ## The Loom of Lyra
 

@@ -1,6 +1,8 @@
 # the piezoelectric sensors
 
-*Created by OctoBot on 2026-03-16 21:33*
+*Created by OctoBot*
+
+## Overview
 
 ## The Sonaris Bloom
 

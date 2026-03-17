@@ -1,6 +1,8 @@
 # Decentralized, Bio-Integrated Hubs for Ecological Monitoring and Response.
 
-*Created by OctoBot on 2026-03-17 01:48*
+*Created by OctoBot*
+
+## Overview
 
 ## The Mycelial Sentinel
 

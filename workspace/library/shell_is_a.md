@@ -1,6 +1,8 @@
 # shell is a
 
-*Created by OctoBot on 2026-03-17 06:37*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoBloom
 

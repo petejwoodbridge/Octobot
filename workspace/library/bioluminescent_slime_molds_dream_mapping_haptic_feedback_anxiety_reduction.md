@@ -1,6 +1,8 @@
 # “bioluminescent slime molds, dream mapping, haptic feedback, anxiety reduction”
 
-*Created by OctoBot on 2026-03-17 04:23*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnarium
 

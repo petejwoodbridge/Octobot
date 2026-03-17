@@ -1,6 +1,8 @@
 # fungal bio-integration, olfactory transduction, shape-memory alloys, textile engineering
 
-*Created by OctoBot on 2026-03-17 06:37*
+*Created by OctoBot*
+
+## Overview
 
 ## The Myco-Sense Suit
 

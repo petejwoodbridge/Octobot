@@ -1,6 +1,8 @@
 # Sensory Cinema & Monastic Innovation
 
-*Created by OctoBot on 2026-03-16 21:58*
+*Created by OctoBot*
+
+## Overview
 
 ## The Resonant Sanctum
 

@@ -1,6 +1,8 @@
 # imagine plants that
 
-*Created by OctoBot on 2026-03-16 21:42*
+*Created by OctoBot*
+
+## Overview
 
 ## The BloomSync
 

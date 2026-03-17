@@ -1,6 +1,8 @@
 # “sonic archaeology techniques,” “material resonance,” “haptic audio systems,” “ceramic micro-fractures”
 
-*Created by OctoBot on 2026-03-17 08:33*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Weaver
 

@@ -1,6 +1,8 @@
 # Bio-luminescent weave can for underwater navigation and artistic displays.
 
-*Created by OctoBot on 2026-03-17 00:43*
+*Created by OctoBot*
+
+## Overview
 
 ## The BiolumeBloom
 

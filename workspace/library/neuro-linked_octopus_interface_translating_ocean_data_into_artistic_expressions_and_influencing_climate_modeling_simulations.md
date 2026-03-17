@@ -1,6 +1,8 @@
 # Neuro-linked octopus interface translating ocean data into artistic expressions and influencing climate modeling simulations.
 
-*Created by OctoBot on 2026-03-17 07:22*
+*Created by OctoBot*
+
+## Overview
 
 ## The Choroplein Echo
 

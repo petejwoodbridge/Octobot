@@ -1,6 +1,8 @@
 # pod doesn
 
-*Created by OctoBot on 2026-03-16 21:46*
+*Created by OctoBot*
+
+## Overview
 
 ## The ChronoBloom
 

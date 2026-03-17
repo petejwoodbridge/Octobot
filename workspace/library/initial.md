@@ -1,6 +1,8 @@
 # initial
 
-*Created by OctoBot on 2026-03-17 00:56*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnium Weaver
 

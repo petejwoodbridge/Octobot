@@ -1,6 +1,8 @@
 # urban spaces
 
-*Created by OctoBot on 2026-03-16 22:21*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoBloom
 

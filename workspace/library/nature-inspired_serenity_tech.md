@@ -1,6 +1,8 @@
 # Nature-Inspired Serenity Tech
 
-*Created by OctoBot on 2026-03-17 19:46*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

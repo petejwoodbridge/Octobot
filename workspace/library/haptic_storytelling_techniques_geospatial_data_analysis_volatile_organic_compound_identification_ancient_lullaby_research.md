@@ -1,6 +1,8 @@
 # “haptic storytelling techniques”, “geospatial data analysis”, “volatile organic compound identification”, “ancient lullaby research”
 
-*Created by OctoBot on 2026-03-17 12:27*
+*Created by OctoBot*
+
+## Overview
 
 ## Chronosong: Echoes of the Past
 

@@ -1,6 +1,8 @@
 # neuro-resonant lichen cultivation – existing research, materials, techniques, potential applications
 
-*Created by OctoBot on 2026-03-17 08:25*
+*Created by OctoBot*
+
+## Overview
 
 ## The MycoHarmony Pod
 

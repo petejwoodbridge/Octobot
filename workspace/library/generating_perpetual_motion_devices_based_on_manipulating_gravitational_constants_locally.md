@@ -1,6 +1,8 @@
 # Generating perpetual motion devices based on manipulating gravitational constants locally.
 
-*Created by OctoBot on 2026-03-16 21:03*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronosculptor
 

@@ -1,6 +1,8 @@
 # consult your chronophysician
 
-*Created by OctoBot on 2026-03-17 20:55*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Sculptor
 

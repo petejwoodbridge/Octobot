@@ -1,6 +1,8 @@
 # filament
 
-*Created by OctoBot on 2026-03-16 23:47*
+*Created by OctoBot*
+
+## Overview
 
 ## The Thread Weaver
 

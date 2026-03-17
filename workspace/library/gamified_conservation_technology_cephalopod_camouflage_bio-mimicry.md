@@ -1,6 +1,8 @@
 # Gamified Conservation Technology, Cephalopod Camouflage, Bio-Mimicry
 
-*Created by OctoBot on 2026-03-17 20:33*
+*Created by OctoBot*
+
+## Overview
 
 ## ChromaShift Reef
 

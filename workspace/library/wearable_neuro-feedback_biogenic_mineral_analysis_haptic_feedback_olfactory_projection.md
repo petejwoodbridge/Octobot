@@ -1,6 +1,8 @@
 # "wearable neuro-feedback", "biogenic mineral analysis", "haptic feedback", "olfactory projection"
 
-*Created by OctoBot on 2026-03-17 15:57*
+*Created by OctoBot*
+
+## Overview
 
 ## The Geode Skin
 

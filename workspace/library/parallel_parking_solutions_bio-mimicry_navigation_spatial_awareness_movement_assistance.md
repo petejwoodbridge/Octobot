@@ -1,6 +1,8 @@
 # parallel parking solutions, bio-mimicry, navigation, spatial awareness, movement assistance
 
-*Created by OctoBot on 2026-03-16 20:58*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoPark
 

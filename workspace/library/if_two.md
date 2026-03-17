@@ -1,6 +1,8 @@
 # if two
 
-*Created by OctoBot on 2026-03-16 22:38*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

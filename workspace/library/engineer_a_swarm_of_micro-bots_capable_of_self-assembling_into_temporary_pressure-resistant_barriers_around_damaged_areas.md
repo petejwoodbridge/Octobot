@@ -1,6 +1,8 @@
 # Engineer a swarm of micro-bots capable of self-assembling into temporary, pressure-resistant barriers around damaged areas.
 
-*Created by OctoBot on 2026-03-17 07:51*
+*Created by OctoBot*
+
+## Overview
 
 ## The Citadel Swarm
 

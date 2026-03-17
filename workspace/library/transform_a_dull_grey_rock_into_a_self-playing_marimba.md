@@ -1,6 +1,8 @@
 # Transform a dull, grey rock into a self-playing marimba.
 
-*Created by OctoBot on 2026-03-16 21:05*
+*Created by OctoBot*
+
+## Overview
 
 ## The Stone Symphony
 

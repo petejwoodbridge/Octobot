@@ -259,30 +259,129 @@ def get_all_achievement_defs() -> list[dict]:
 # Knowledge Graph
 # ---------------------------------------------------------------------------
 
+_GENERIC_TERMS = {
+    # Section headings
+    "overview", "the idea", "the problem it solves", "how it works",
+    "why it's brilliant", "why it\u2019s brilliant", "elevator pitch",
+    "related ideas", "update", "the problem", "the solution",
+    "created by octobot", "key concepts", "summary", "details",
+    "introduction", "conclusion", "notes", "references",
+    "key features", "potential applications", "original notes",
+    # Partial heading artifacts
+    "pitch:", "how it works:", "the problem it solves:", "why it's brilliant:",
+    "why it\u2019s brilliant:", "the idea:", "the problem it solves the",
+    "how it works the", "brilliant the", "why it",
+}
+
+# Regex for strings that are clearly not concept names
+_JUNK_PATTERN = re.compile(
+    r"^(the |a |an |this |that |it |why |how |what |when |where |who )"
+    r".{0,5}$"  # very short phrases starting with filler words
+)
+
+
+def _clean_concept(c: str) -> str | None:
+    """Sanitize and validate a concept string. Returns None if invalid."""
+    # Strip whitespace, markdown artifacts, quotes
+    c = c.strip().strip("*#\"'\u201c\u201d:").strip()
+    # Remove newlines — concepts must be single-line
+    c = c.replace("\n", " ").replace("\r", "")
+    # Collapse multiple spaces
+    c = re.sub(r"\s+", " ", c).strip().lower()
+    # Strip trailing colons/punctuation
+    c = c.rstrip(":;,.")
+    # Reject if too short, too long, or generic
+    if len(c) < 4 or len(c) > 60:
+        return None
+    if c in _GENERIC_TERMS:
+        return None
+    # Reject partial heading artifacts (contain "the problem", "how it works", etc.)
+    for generic in ("the problem it solves", "how it works", "why it", "elevator pitch",
+                     "key features", "potential applications", "original notes"):
+        if c.startswith(generic) or c == generic:
+            return None
+    # Reject concepts that are just markdown formatting artifacts
+    if c.startswith(("created by", "updated by", "reformatted", "expanded by")):
+        return None
+    # Reject if it's just a common English word/phrase with no specificity
+    if _JUNK_PATTERN.match(c):
+        return None
+    # Reject single common words (no spaces, no hyphens = single word)
+    if " " not in c and "-" not in c:
+        if len(c) < 7:
+            return None  # Too short for a meaningful single-word concept
+        if c in {
+            "feeling", "feel", "feels", "real", "time", "data", "system", "device",
+            "user", "users", "idea", "concept", "design", "project", "pitch",
+            "technology", "application", "solution", "problem", "feature",
+            "before", "after", "directly", "actively", "what", "brilliant",
+            "imagine", "think", "using", "simply", "truly", "actually",
+            "within", "exactly", "source", "perception", "doesn\u2019t",
+            "doesn't", "really", "experience", "allows", "creates",
+            "extremely", "incredibly", "essentially", "completely",
+            "naturally", "already", "specific", "unique", "entire",
+            "monitor", "analyze", "generate", "measure", "detect",
+            "adjust", "respond", "process", "create", "provide",
+            "reading", "tracking", "learning", "growing", "living",
+        }:
+            return None
+    # Reject hyphenated common adjectives/phrases that aren't technical concepts
+    _COMMON_HYPHENATED = {
+        "self-contained", "pre-programmed", "custom-designed", "real-time to",
+        "well-being", "built-in", "long-term", "short-term", "high-quality",
+        "low-cost", "full-body", "non-invasive", "self-sustaining",
+        "hand-held", "self-aware", "battery-powered", "solar-powered",
+        "head-on", "real-time", "palm-sized", "wrist-worn",
+        "real-time visual", "real-time data",
+    }
+    if c in _COMMON_HYPHENATED:
+        return None
+    # Reject fragments with "the" that aren't proper names
+    if c.startswith("the ") and len(c.split()) <= 2:
+        return None
+    if "brilliant " in c:
+        return None
+    # Reject concepts ending with conjunctions/prepositions (broken extractions)
+    if c.endswith((" and", " or", " the", " a", " an", " to", " of", " in", " on", " for", " with", " is", " it")):
+        return None
+    return c
+
+
 def _extract_concepts(text: str) -> list[str]:
     """Extract key concept phrases from text using simple heuristics."""
-    # Look for markdown headings, bold terms, and capitalized phrases
-    concepts = set()
+    raw_concepts = set()
 
-    # ## headings
+    # ## headings (skip generic section headings)
     for m in re.finditer(r"^#{1,3}\s+(.+)$", text, re.MULTILINE):
-        c = m.group(1).strip().strip("*#").strip()
-        if 2 < len(c) < 80:
-            concepts.add(c.lower())
+        c = _clean_concept(m.group(1))
+        if c:
+            raw_concepts.add(c)
 
     # **bold terms**
     for m in re.finditer(r"\*\*(.+?)\*\*", text):
-        c = m.group(1).strip()
-        if 2 < len(c) < 60:
-            concepts.add(c.lower())
+        c = _clean_concept(m.group(1))
+        if c:
+            raw_concepts.add(c)
 
-    # Capitalize proper noun phrases (2+ words, each capitalized)
+    # Capitalized proper noun phrases (2+ words, each capitalized)
     for m in re.finditer(r"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\b", text):
-        c = m.group(1).strip()
-        if len(c) > 4:
-            concepts.add(c.lower())
+        c = _clean_concept(m.group(1))
+        if c:
+            raw_concepts.add(c)
 
-    return list(concepts)
+    # Technical compound terms (e.g., "bio-acoustic", "micro-fluidic")
+    for m in re.finditer(r"\b([a-z]+-[a-z]+(?:\s+[a-z]+)?)\b", text, re.IGNORECASE):
+        c = _clean_concept(m.group(1))
+        if c:
+            raw_concepts.add(c)
+
+    # Terms in *italics* that look like names (not too short, not a sentence)
+    for m in re.finditer(r"(?<!\*)\*([^*\n]{4,40})\*(?!\*)", text):
+        c = _clean_concept(m.group(1))
+        if c:
+            raw_concepts.add(c)
+
+    return list(raw_concepts)
 
 
 def update_knowledge_graph(filename: str, text: str) -> dict:

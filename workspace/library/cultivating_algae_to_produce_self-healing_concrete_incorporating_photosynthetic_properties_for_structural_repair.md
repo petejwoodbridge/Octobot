@@ -1,6 +1,8 @@
 # Cultivating algae to produce self-healing concrete, incorporating photosynthetic properties for structural repair.
 
-*Created by OctoBot on 2026-03-17 02:02*
+*Created by OctoBot*
+
+## Overview
 
 ## The BioBloom Shell
 

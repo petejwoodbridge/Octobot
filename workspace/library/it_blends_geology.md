@@ -1,6 +1,8 @@
 # it blends geology
 
-*Created by OctoBot on 2026-03-16 21:58*
+*Created by OctoBot*
+
+## Overview
 
 ## The Litho-Luminescence Projector
 

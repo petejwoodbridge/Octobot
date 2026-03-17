@@ -1,6 +1,8 @@
 # Develop bio-adhesive "living seals" utilizing modified octopus tissue to instantly patch and reinforce structural weaknesses.
 
-*Created by OctoBot on 2026-03-17 09:26*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Bond
 

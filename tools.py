@@ -160,6 +160,7 @@ def create_markdown(title: str, content: str, subdir: str = "library") -> str:
     """
     slug = title.lower().replace(" ", "_").replace("/", "-")
     slug = "".join(c for c in slug if c.isalnum() or c in "_-")
+    slug = slug[:120]  # cap to avoid Windows MAX_PATH errors
     filename = f"{subdir}/{slug}.md"
     full_content = f"# {title}\n\n*Created by OctoBot on {datetime.now().strftime('%Y-%m-%d %H:%M')}*\n\n{content}\n"
     write_file(filename, full_content)
@@ -170,21 +171,24 @@ def save_research(topic: str, summary: str) -> str:
     """
     Save a research summary to workspace/library/<topic_slug>.md.
     Appends to the file if it already exists.
+    Returns the relative filename (e.g. "library/my_topic.md").
     """
+    # Strip leading/trailing quotes the LLM sometimes wraps output in
+    summary = summary.strip().strip('"').strip()
+
     slug = topic.lower().replace(" ", "_").replace("/", "-")
     slug = "".join(c for c in slug if c.isalnum() or c in "_-")
+    slug = slug[:120]  # cap to avoid Windows MAX_PATH errors
     filename = f"library/{slug}.md"
-    path = _safe_path(filename)
 
-    if path.exists():
+    if _safe_path(filename).exists():
         append_file(
             filename,
             f"\n---\n\n## Update — {datetime.now().strftime('%Y-%m-%d %H:%M')}\n\n{summary}\n",
         )
-        return f"Research appended: {filename}"
     else:
         create_markdown(topic, summary, subdir="library")
-        return f"Research saved: {filename}"
+    return filename
 
 
 # ---------------------------------------------------------------------------

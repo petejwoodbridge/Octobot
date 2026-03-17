@@ -1,6 +1,8 @@
 # “haptic feedback textiles”, “biofeedback vests”, “sonogenetics”, “temporal distortion perception”
 
-*Created by OctoBot on 2026-03-17 07:15*
+*Created by OctoBot*
+
+## Overview
 
 ## The ChronoWeave
 

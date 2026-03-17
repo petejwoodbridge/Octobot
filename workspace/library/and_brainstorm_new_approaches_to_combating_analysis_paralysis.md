@@ -1,6 +1,8 @@
 # and brainstorm new approaches to combating 'analysis paralysis'.
 
-*Created by OctoBot on 2026-03-17 04:14*
+*Created by OctoBot*
+
+## Overview
 
 ## The Decision Loom
 

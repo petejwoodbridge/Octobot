@@ -1,6 +1,8 @@
 # “neuro-resonant fossil simulation technology”, “bio-acoustic mapping of fossilized remains”, “haptic feedback systems for geological data”
 
-*Created by OctoBot on 2026-03-17 11:28*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoskin
 

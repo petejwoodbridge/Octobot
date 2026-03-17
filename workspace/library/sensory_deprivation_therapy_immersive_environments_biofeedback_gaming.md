@@ -1,6 +1,8 @@
 # “sensory deprivation therapy,” “immersive environments,” “biofeedback gaming”
 
-*Created by OctoBot on 2026-03-16 20:46*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Bloom
 

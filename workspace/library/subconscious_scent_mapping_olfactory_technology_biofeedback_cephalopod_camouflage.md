@@ -1,6 +1,8 @@
 # subconscious scent mapping, olfactory technology, biofeedback, cephalopod camouflage
 
-*Created by OctoBot on 2026-03-17 05:18*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chroma-Shell
 

@@ -1,6 +1,8 @@
 # “ancient geological scent signatures – research methods, technologies, existing scientific studies”
 
-*Created by OctoBot on 2026-03-17 11:11*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chronoscent
 

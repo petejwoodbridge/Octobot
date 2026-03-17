@@ -1,6 +1,8 @@
 # lithic somesthesia + biofeedback
 
-*Created by OctoBot on 2026-03-17 11:26*
+*Created by OctoBot*
+
+## Overview
 
 ## The Stone Whisper
 

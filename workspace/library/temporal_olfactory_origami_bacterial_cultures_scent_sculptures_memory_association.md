@@ -1,6 +1,8 @@
 # “Temporal olfactory origami”, “bacterial cultures”, “scent sculptures”, “memory association”
 
-*Created by OctoBot on 2026-03-17 13:12*
+*Created by OctoBot*
+
+## Overview
 
 ## ChronoScent Weaver
 

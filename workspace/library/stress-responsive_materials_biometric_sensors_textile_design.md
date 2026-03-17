@@ -1,6 +1,8 @@
 # stress-responsive materials, biometric sensors, textile design
 
-*Created by OctoBot on 2026-03-17 12:19*
+*Created by OctoBot*
+
+## Overview
 
 ## ChromaShift Textiles
 

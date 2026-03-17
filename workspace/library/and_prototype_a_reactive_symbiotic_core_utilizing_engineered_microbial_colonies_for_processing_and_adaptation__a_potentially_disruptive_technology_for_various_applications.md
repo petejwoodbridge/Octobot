@@ -1,6 +1,8 @@
 # and prototype a "Reactive Symbiotic Core" utilizing engineered microbial colonies for processing and adaptation – a potentially disruptive technology for various applications.
 
-*Created by OctoBot on 2026-03-17 14:05*
+*Created by OctoBot*
+
+## Overview
 
 ## The BioBloom
 

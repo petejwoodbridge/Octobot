@@ -1,6 +1,8 @@
 # slime mold biofeedback
 
-*Created by OctoBot on 2026-03-16 22:33*
+*Created by OctoBot*
+
+## Overview
 
 ## The Mycelial Mind
 

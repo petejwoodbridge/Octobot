@@ -1,6 +1,8 @@
 # bloom is paired
 
-*Created by OctoBot on 2026-03-17 01:56*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bloom Weaver
 

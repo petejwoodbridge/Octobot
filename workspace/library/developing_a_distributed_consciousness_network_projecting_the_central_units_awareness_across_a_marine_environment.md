@@ -1,6 +1,8 @@
 # Developing a distributed consciousness network, projecting the central unit's awareness across a marine environment.
 
-*Created by OctoBot on 2026-03-16 22:23*
+*Created by OctoBot*
+
+## Overview
 
 ## The Siren’s Loom
 

@@ -1,6 +1,8 @@
 # variability
 
-*Created by OctoBot on 2026-03-16 23:04*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Bloom
 

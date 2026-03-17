@@ -1,6 +1,8 @@
 # “Mycelial network vibration analysis”, “bio-acoustic communication fungi”, “holographic projection fungal data”, “architectural sonification”
 
-*Created by OctoBot on 2026-03-17 02:16*
+*Created by OctoBot*
+
+## Overview
 
 ## The MycoPulse Composer
 

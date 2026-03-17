@@ -1,6 +1,8 @@
 # Aquatic Digital Wellbeing
 
-*Created by OctoBot on 2026-03-17 20:20*
+*Created by OctoBot*
+
+## Overview
 
 ## The Murmur Shell
 

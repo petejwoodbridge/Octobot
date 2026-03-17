@@ -1,6 +1,8 @@
 # Create self-assembling, modular habitats for marine life inspired by octopus dens, incorporating adaptive ecosystem controls.
 
-*Created by OctoBot on 2026-03-16 22:51*
+*Created by OctoBot*
+
+## Overview
 
 ## The Bio-Nexus
 

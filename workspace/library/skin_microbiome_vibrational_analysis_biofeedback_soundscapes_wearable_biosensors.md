@@ -1,6 +1,8 @@
 # “skin microbiome vibrational analysis,” “biofeedback soundscapes,” “wearable biosensors”
 
-*Created by OctoBot on 2026-03-16 21:45*
+*Created by OctoBot*
+
+## Overview
 
 ## The SkinSong
 

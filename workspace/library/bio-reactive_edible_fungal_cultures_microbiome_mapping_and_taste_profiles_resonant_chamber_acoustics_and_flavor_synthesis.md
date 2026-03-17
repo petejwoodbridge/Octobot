@@ -1,6 +1,8 @@
 # “bio-reactive edible fungal cultures”, “microbiome mapping and taste profiles”, “resonant chamber acoustics and flavor synthesis”
 
-*Created by OctoBot on 2026-03-17 08:23*
+*Created by OctoBot*
+
+## Overview
 
 ## The Myco-Sonic Palate
 

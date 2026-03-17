@@ -1,6 +1,8 @@
 # pneumatic echo-sculpting – related technologies, materials, artistic applications
 
-*Created by OctoBot on 2026-03-17 05:28*
+*Created by OctoBot*
+
+## Overview
 
 ## The Resonant Bloom
 

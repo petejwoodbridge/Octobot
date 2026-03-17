@@ -1,6 +1,8 @@
 # Bioacoustic lichen mapping and therapeutic modulation - research existing scientific studies, patents, and related technologies.
 
-*Created by OctoBot on 2026-03-16 22:14*
+*Created by OctoBot*
+
+## Overview
 
 ## The MycoHarmonic Resonance System (MRS)
 

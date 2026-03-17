@@ -1,6 +1,8 @@
 # the image is
 
-*Created by OctoBot on 2026-03-16 22:08*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chroma-Weave
 

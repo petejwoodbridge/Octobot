@@ -1,6 +1,8 @@
 # "neuro-textiles," "haptic feedback dream systems," "REM sleep movement tracking," “bio-sensing sleep technology”
 
-*Created by OctoBot on 2026-03-17 04:18*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnium Weaver
 

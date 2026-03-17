@@ -1,6 +1,8 @@
 # “bio-acoustic resonance of decaying organic matter,” “textile vibration mapping,” “haptic feedback weaving”
 
-*Created by OctoBot on 2026-03-16 22:50*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Loom
 

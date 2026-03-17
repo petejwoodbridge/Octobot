@@ -1,6 +1,8 @@
 # Bio-luminescent subterranean fungi cultivation & “depth-mapping” via olfactory projection - research potential technologies and existing projects
 
-*Created by OctoBot on 2026-03-17 09:41*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoBloom System
 

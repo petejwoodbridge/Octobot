@@ -1,6 +1,8 @@
 # shell instantly emits
 
-*Created by OctoBot on 2026-03-17 09:51*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoShell
 

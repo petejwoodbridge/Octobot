@@ -1,6 +1,8 @@
 # bio-acoustic transduction rates, cephalopod camouflage, hydro-acoustic sensors, skin grafts
 
-*Created by OctoBot on 2026-03-16 23:05*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chroma-Shell
 

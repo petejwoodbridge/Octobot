@@ -1,6 +1,8 @@
 # temporal distortion food tech
 
-*Created by OctoBot on 2026-03-16 23:05*
+*Created by OctoBot*
+
+## Overview
 
 ## ChronoBites: Retro-Palate Reimagined
 

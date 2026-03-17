@@ -1,6 +1,8 @@
 # crucially
 
-*Created by OctoBot on 2026-03-16 23:14*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Bloom
 

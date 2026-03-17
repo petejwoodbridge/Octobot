@@ -1,6 +1,8 @@
 # it promotes self
 
-*Created by OctoBot on 2026-03-17 02:11*
+*Created by OctoBot*
+
+## Overview
 
 ## The Lumina Shell
 

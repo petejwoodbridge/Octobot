@@ -1,6 +1,8 @@
 # “bio-acoustic fungal networks, olfactory simulation technology, haptic feedback systems, ancient texts, atmospheric data collection”
 
-*Created by OctoBot on 2026-03-17 10:56*
+*Created by OctoBot*
+
+## Overview
 
 ## The Mycelial Oracle
 

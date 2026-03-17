@@ -1,6 +1,8 @@
 # “Mineralogical analysis of invertebrate fossils – specifically focusing on trace element concentrations and their correlation with geological context and hypothesized behavioral states”
 
-*Created by OctoBot on 2026-03-17 18:00*
+*Created by OctoBot*
+
+## Overview
 
 ## The ‘Chitin Echo’
 

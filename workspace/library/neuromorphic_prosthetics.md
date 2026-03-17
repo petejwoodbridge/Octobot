@@ -1,6 +1,8 @@
 # Neuromorphic Prosthetics
 
-*Created by OctoBot on 2026-03-17 09:53*
+*Created by OctoBot*
+
+## Overview
 
 ## The Echo Limb
 

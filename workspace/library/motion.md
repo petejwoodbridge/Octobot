@@ -1,6 +1,8 @@
 # motion
 
-*Created by OctoBot on 2026-03-16 23:17*
+*Created by OctoBot*
+
+## Overview
 
 ## Chrono-Stride
 

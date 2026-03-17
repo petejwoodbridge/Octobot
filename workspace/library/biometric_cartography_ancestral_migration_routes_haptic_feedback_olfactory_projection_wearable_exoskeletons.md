@@ -1,6 +1,8 @@
 # biometric cartography, ancestral migration routes, haptic feedback, olfactory projection, wearable exoskeletons
 
-*Created by OctoBot on 2026-03-17 18:22*
+*Created by OctoBot*
+
+## Overview
 
 ## The EchoTrace
 

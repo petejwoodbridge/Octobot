@@ -1,6 +1,8 @@
 # "neuro-scent technology", "haptic dream simulation", "childhood memory recall"
 
-*Created by OctoBot on 2026-03-17 13:43*
+*Created by OctoBot*
+
+## Overview
 
 ## Chronoscape: Echoes of Yesterday
 

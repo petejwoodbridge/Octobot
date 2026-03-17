@@ -1,6 +1,8 @@
 # cephalopod camouflage, microbial scent synthesis, geological time reconstruction, wearable olfactory suits
 
-*Created by OctoBot on 2026-03-17 09:59*
+*Created by OctoBot*
+
+## Overview
 
 ## ChronoScent
 

@@ -1,6 +1,8 @@
 # imagine a shipping
 
-*Created by OctoBot on 2026-03-17 09:47*
+*Created by OctoBot*
+
+## Overview
 
 ## The Chrono-Cart
 

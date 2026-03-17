@@ -1,6 +1,8 @@
 # “bio-electrical field mapping”, “lichen symbiosis”, “shape-memory alloys”, “biofeedback wearable sensors”
 
-*Created by OctoBot on 2026-03-16 23:43*
+*Created by OctoBot*
+
+## Overview
 
 ## The Myco-Sense
 

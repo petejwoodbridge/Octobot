@@ -1,6 +1,8 @@
 # Design autonomous, swarm-based robotic “repair octopi” capable of self-assembling defenses and proactively sealing breaches.
 
-*Created by OctoBot on 2026-03-17 09:26*
+*Created by OctoBot*
+
+## Overview
 
 ## The ReefGuard Swarm
 

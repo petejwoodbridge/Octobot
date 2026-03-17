@@ -1,6 +1,8 @@
 # biofeedback-enhanced meditation aids – specific techniques, hardware, and user interface ideas
 
-*Created by OctoBot on 2026-03-16 21:00*
+*Created by OctoBot*
+
+## Overview
 
 ## The Somnarium Bloom
 
