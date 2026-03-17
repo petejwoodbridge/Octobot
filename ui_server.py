@@ -244,6 +244,64 @@ def api_graph():
     return jsonify(result)
 
 
+@app.route("/api/concept")
+def api_concept():
+    """Search library files for ideas related to a concept node.
+    ?q=<concept name> — returns up to 5 matching ideas with title + content snippet."""
+    query = request.args.get("q", "").strip().lower()
+    if not query:
+        return jsonify({"matches": []})
+
+    # Tokenise the concept into significant words (3+ chars)
+    words = [w for w in query.split() if len(w) >= 3]
+
+    library_files = [f for f in tools.list_files("library") if f.endswith(".md")]
+
+    scored = []
+    for rel in library_files:
+        fname_lower = rel.lower().replace("_", " ").replace("-", " ")
+        # Score: how many concept words appear in the filename
+        score = sum(1 for w in words if w in fname_lower)
+        if score > 0:
+            scored.append((score, rel))
+
+    # Fall back to content search if filename hits are sparse
+    if len(scored) < 3:
+        for rel in library_files:
+            if any(rel == s[1] for s in scored):
+                continue
+            try:
+                content = tools.read_file(rel)
+                content_lower = content.lower()
+                cscore = sum(1 for w in words if w in content_lower)
+                if cscore >= max(2, len(words) // 2):
+                    scored.append((cscore * 0.5, rel))
+            except Exception:
+                continue
+
+    scored.sort(key=lambda x: x[0], reverse=True)
+    top = scored[:5]
+
+    matches = []
+    for _, rel in top:
+        try:
+            content = tools.read_file(rel)
+            # Extract title from first heading line
+            title = rel.split("/")[-1].replace(".md", "").replace("_", " ").replace("-", " ").strip()
+            for line in content.splitlines():
+                if line.startswith("# "):
+                    title = line[2:].strip()
+                    break
+            # First ~600 chars of body (skip heading + created line)
+            body_lines = [l for l in content.splitlines() if not l.startswith("#") and not l.startswith("*Created")]
+            snippet = " ".join(" ".join(body_lines).split())[:600]
+            matches.append({"title": title, "file": rel, "snippet": snippet})
+        except Exception:
+            continue
+
+    return jsonify({"concept": query, "matches": matches})
+
+
 @app.route("/api/auto-messages")
 def api_auto_messages():
     """Return autonomous messages for the chat feed.

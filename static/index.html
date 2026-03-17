@@ -511,8 +511,11 @@
       <div id="graph-info">Nodes: 0 | Edges: 0</div>
       <canvas id="graph-canvas" width="600" height="400" style="cursor:grab;"></canvas>
       <div id="graph-tooltip" style="display:none;position:absolute;background:#1a0033ee;border:1px solid #bf00ff;color:#ff99ee;padding:6px 10px;font-size:10px;font-family:'Press Start 2P',monospace;pointer-events:none;z-index:100;max-width:260px;border-radius:4px;box-shadow:0 0 12px #bf00ff44;"></div>
-      <div id="node-detail" style="display:none;position:absolute;bottom:8px;left:8px;right:8px;background:#0d001aee;border:1px solid #00f7ff;color:#cceeff;padding:8px 10px;font-size:9px;font-family:'Press Start 2P',monospace;z-index:99;border-radius:4px;max-height:120px;overflow-y:auto;">
-        <span id="node-detail-close" style="float:right;cursor:pointer;color:#ff66cc;">[x]</span>
+      <div id="node-detail" style="display:none;position:absolute;top:0;right:0;bottom:0;width:320px;background:#07001aee;border-left:2px solid #00f7ff;color:#cceeff;padding:14px 12px 12px 12px;font-family:'Segoe UI',sans-serif;font-size:12px;z-index:99;overflow-y:auto;backdrop-filter:blur(4px);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+          <span id="node-detail-title" style="font-family:'Press Start 2P',monospace;font-size:8px;color:#ff66cc;word-break:break-word;flex:1;margin-right:8px;"></span>
+          <span id="node-detail-close" style="cursor:pointer;color:#ff66cc;font-family:'Press Start 2P',monospace;font-size:9px;flex-shrink:0;">[x]</span>
+        </div>
         <div id="node-detail-content"></div>
       </div>
     </div>
@@ -1142,6 +1145,43 @@ function gStopAnimLoop(){
 }
 
 let gSetup=false;
+function selectConceptNode(name){
+  gSelected=name;
+  const nd=document.getElementById('node-detail');
+  const ndc=document.getElementById('node-detail-content');
+  const deg=gDegree[name]||0;
+  const nbrs=[...new Set((graphData.edges||[]).flatMap(e=>
+    e.from===name?[e.to]:e.to===name?[e.from]:[]
+  ))].slice(0,40);
+  document.getElementById('node-detail-title').textContent=name;
+  ndc.innerHTML=`<div style="color:#00f7ff;margin-bottom:8px;font-size:11px;"><strong>${deg}</strong> connections</div>`+
+    `<div id="concept-ideas-section"><div style="color:#bf00ffaa;font-size:11px;">Searching ideas\u2026</div></div>`+
+    `<div style="margin-top:12px;"><div style="color:#bf00ffaa;font-size:11px;margin-bottom:6px;">Connected concepts:</div>`+
+    (nbrs.length?nbrs.map(n=>`<span class="nbr-chip" onclick="selectConceptNode('${n.replace(/'/g,"\\'")}')"
+      style="display:inline-block;background:#1a003a;border:1px solid #bf00ff55;color:#00f7ff;font-size:10px;padding:2px 7px;margin:2px;border-radius:3px;cursor:pointer;">${n}</span>`).join('')
+    :'<span style="color:#bf00ff44;font-size:11px;">(none in view)</span>')+'</div>';
+  nd.style.display='block';
+  fetchJSON('/api/concept?q='+encodeURIComponent(name)).then(data=>{
+    const sec=document.getElementById('concept-ideas-section');
+    if(!sec) return;
+    if(!data||!data.matches||!data.matches.length){
+      sec.innerHTML='<div style="color:#bf00ff66;font-size:11px;">No ideas found for this concept.</div>';
+      return;
+    }
+    sec.innerHTML='<div style="color:#ff66cc;font-size:11px;margin-bottom:8px;">Related ideas:</div>'+
+      data.matches.map(m=>`
+        <div style="background:#10003055;border:1px solid #bf00ff44;border-radius:4px;padding:8px;margin-bottom:8px;">
+          <div style="color:#ff99ee;font-size:11px;font-weight:bold;margin-bottom:5px;">${m.title}</div>
+          <div style="color:#cceeffcc;font-size:11px;line-height:1.5;">${m.snippet}</div>
+        </div>`).join('');
+  });
+  // Scroll node into view if possible
+  if(gNodePos[name]){
+    const gc2=document.getElementById('graph-canvas');
+    if(gc2){ gPanX=-gNodePos[name].x; gPanY=-gNodePos[name].y; }
+  }
+}
+
 function setupGraphInteraction(){
   if(gSetup) return; gSetup=true;
   const gc=document.getElementById('graph-canvas');
@@ -1186,16 +1226,8 @@ function setupGraphInteraction(){
     if(moved<5){
       const clicked=gHitTest(sx,sy,gc);
       if(clicked){
-        gSelected=gSelected===clicked?null:clicked;
-        if(gSelected){
-          const deg=gDegree[gSelected]||0;
-          const nbrs=[...new Set((graphData.edges||[]).flatMap(e=>
-            e.from===gSelected?[e.to]:e.to===gSelected?[e.from]:[]
-          ))].slice(0,30);
-          ndc.innerHTML=`<strong style="color:#ff66cc">${gSelected}</strong> &mdash; <span style="color:#00f7ff">${deg} connections</span><br><br>`+
-            (nbrs.length?'<em style="color:#bf00ffaa">Connected:</em><br>'+nbrs.map(n=>`<span style="color:#00f7ff;font-size:9px">${n}</span>`).join(' <span style="color:#bf00ff44">&middot;</span> '):'(none in current view)');
-          nd.style.display='block';
-        } else nd.style.display='none';
+        if(gSelected===clicked){ gSelected=null; nd.style.display='none'; }
+        else { selectConceptNode(clicked); }
       } else { gSelected=null; nd.style.display='none'; }
     }
   });
