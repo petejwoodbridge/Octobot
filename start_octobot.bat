@@ -1,5 +1,5 @@
 @echo off
-title DreamLab OctoBot
+title DreamLab OctoBot — Server
 color 0D
 cd /d "D:\VS Code Projects\Octobot"
 
@@ -14,10 +14,13 @@ echo.
 echo  Starting server on http://localhost:7860 ...
 echo.
 
-:: Wait 2 seconds then open browser
+:: Open browser after a short delay
 start "" cmd /c "timeout /t 3 /nobreak >nul & start http://localhost:7860"
 
-:: Run the server (keeps terminal open)
+:: Launch the live viewer in a separate CMD window
+start "DreamLab OctoBot — Live Viewer" cmd /k "color 0D & cd /d "D:\VS Code Projects\Octobot" & python viewer.py"
+
+:: Run the server in this window (keeps it open)
 python main.py
 
 pause

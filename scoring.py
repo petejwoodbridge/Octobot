@@ -46,28 +46,66 @@ SCORE_DISCOVERY = 100
 
 # ---------------------------------------------------------------------------
 # Inventor levels  (threshold, name, level_number)
+# Calibrated for ~60 hours of gameplay at the typical scoring pace.
+# Levels 1-20  : 0   → 20,000  (~12 hrs)   early & mid game
+# Levels 21-35 : 20,000 → 57,000  (~19 hrs)   late-mid game   [gaps ~2,500]
+# Levels 36-50 : 57,000 → 110,000 (~29 hrs)   endgame         [gaps ~3,500]
 # ---------------------------------------------------------------------------
 LIBRARY_LEVELS = [
-    (0,      "Napkin Sketcher",           1),
-    (50,     "Shower Thinker",            2),
-    (120,    "Garage Tinkerer",           3),
-    (250,    "Caffeinated Dreamer",       4),
-    (450,    "Prototype Gremlin",         5),
-    (700,    "Mad Scientist",             6),
-    (1000,   "Patent Pending",            7),
-    (1400,   "Chaos Engineer",            8),
-    (1900,   "Moonshot Architect",        9),
-    (2500,   "Frankenstein's Mentor",     10),
-    (3200,   "Interdimensional Tinkerer", 11),
-    (4000,   "Perpetual Motion Machine",  12),
-    (5000,   "Idea Supercollider",        13),
-    (6200,   "Rogue Inventor General",    14),
-    (7500,   "Dream Reactor",             15),
-    (9000,   "Octopus Prime",             16),
-    (11000,  "Reality Bender",            17),
-    (13500,  "Singularity Whisperer",     18),
-    (16500,  "God of Small Things",       19),
-    (20000,  "Infinite Idea Engine",      20),
+    # ── Early game (1–10) ──────────────────────────────────────────────────
+    (0,       "Napkin Sketcher",                     1),
+    (50,      "Shower Thinker",                      2),
+    (120,     "Garage Tinkerer",                     3),
+    (250,     "Caffeinated Dreamer",                 4),
+    (450,     "Prototype Gremlin",                   5),
+    (700,     "Mad Scientist",                       6),
+    (1000,    "Patent Pending",                      7),
+    (1400,    "Chaos Engineer",                      8),
+    (1900,    "Moonshot Architect",                  9),
+    (2500,    "Frankenstein's Mentor",               10),
+    # ── Mid game (11–20) ─────────────────────────────────────────────────
+    (3200,    "Interdimensional Tinkerer",           11),
+    (4000,    "Perpetual Motion Machine",            12),
+    (5000,    "Idea Supercollider",                  13),
+    (6200,    "Rogue Inventor General",              14),
+    (7500,    "Dream Reactor",                       15),
+    (9000,    "Octopus Prime",                       16),
+    (11000,   "Reality Bender",                      17),
+    (13500,   "Singularity Whisperer",               18),
+    (16500,   "God of Small Things",                 19),
+    (20000,   "Infinite Idea Engine",                20),
+    # ── Late-mid game (21–35) — gaps ~2,500 ────────────────────────────
+    (22000,   "Temporal Patent Troll",               21),
+    (24500,   "Chaos Theory Barista",                22),
+    (27000,   "Professor of Impractical Solutions",  23),
+    (29500,   "Reverse Engineer of the Soul",        24),
+    (32000,   "Unsolicited Visionary",               25),
+    (34500,   "Eight-Armed Architect",               26),
+    (37000,   "Reality's Most Wanted",               27),
+    (39500,   "Sentient Whiteboard",                 28),
+    (42000,   "Wizard of Unnecessary Things",        29),
+    (44500,   "Quantum Daydreamer",                  30),
+    (47000,   "Accidental Paradigm Shift",           31),
+    (49500,   "Self-Aware Hypothesis",               32),
+    (52000,   "The Unpatentable",                    33),
+    (54500,   "Bureau of Impossible Standards",      34),
+    (57000,   "Feral Futurist",                      35),
+    # ── Endgame (36–50) — gaps ~3,500 ─────────────────────────────────
+    (60500,   "Architect of Magnificent Nonsense",   36),
+    (64000,   "Chronic Eureka Syndrome",             37),
+    (67500,   "Pantheon of Peculiar Inventions",     38),
+    (71000,   "Unsanctioned Oracle",                 39),
+    (74500,   "The Universe's Most Chaotic Asset",   40),
+    (78000,   "Cosmic Patent Thief",                 41),
+    (81500,   "The Unstoppable Hypothesis",          42),
+    (85000,   "Invention Incarnate",                 43),
+    (88500,   "OctoGod of the Ideaverse",            44),
+    (92000,   "Dimension-Hopping Prototype",         45),
+    (95500,   "The Last Known Inventor",             46),
+    (99000,   "Transcendent Patent Overlord",        47),
+    (102500,  "Primordial Inventor",                 48),
+    (106000,  "The Idea Before Ideas",               49),
+    (110000,  "Genesis Engine",                      50),
 ]
 
 
@@ -154,10 +192,16 @@ _ACHIEVEMENT_DEFS = [
     {"id": "score_20000",        "name": "Infinite Engine",          "desc": "Reach 20000 idea score — you have become the idea. There is no spoon.",                "key": "knowledge_score",  "target": 20000},
 
     # === LEVEL MILESTONES ===
-    {"id": "lvl_5",              "name": "Prototype Gremlin",        "desc": "Reach Level 5 — you're the kind of gremlin investors love and fear",                   "key": "knowledge_score",  "target": 450},
-    {"id": "lvl_10",             "name": "Frankenstein's Mentor",    "desc": "Reach Level 10 — even your mistakes have spin-off potential",                          "key": "knowledge_score",  "target": 2500},
-    {"id": "lvl_15",             "name": "Dream Reactor Online",     "desc": "Reach Level 15 — your subconscious is now a registered business",                     "key": "knowledge_score",  "target": 7500},
-    {"id": "lvl_20",             "name": "Final Form",               "desc": "Reach Level 20 — you are the Infinite Idea Engine. Reality is your whiteboard.",       "key": "knowledge_score",  "target": 20000},
+    {"id": "lvl_5",  "name": "Prototype Gremlin",                   "desc": "Reach Level 5 — you're the kind of gremlin investors love and fear",                                          "key": "knowledge_score", "target": 450},
+    {"id": "lvl_10", "name": "Frankenstein's Mentor",               "desc": "Reach Level 10 — even your mistakes have spin-off potential",                                              "key": "knowledge_score", "target": 2500},
+    {"id": "lvl_15", "name": "Dream Reactor Online",               "desc": "Reach Level 15 — your subconscious is now a registered business",                                           "key": "knowledge_score", "target": 7500},
+    {"id": "lvl_20", "name": "Infinite Idea Engine",               "desc": "Reach Level 20 — Reality is your whiteboard. You are unstoppable. (For now.)",                             "key": "knowledge_score", "target": 20000},
+    {"id": "lvl_25", "name": "Unsolicited Visionary",              "desc": "Reach Level 25 — nobody asked for these ideas, but somehow everyone needed them",                           "key": "knowledge_score", "target": 32000},
+    {"id": "lvl_30", "name": "Quantum Daydreamer",                 "desc": "Reach Level 30 — simultaneously solving problems that don't exist yet in six dimensions",                  "key": "knowledge_score", "target": 44500},
+    {"id": "lvl_35", "name": "Feral Futurist",                     "desc": "Reach Level 35 — untamed, uncertified, and absolutely unstoppable",                                        "key": "knowledge_score", "target": 57000},
+    {"id": "lvl_40", "name": "The Universe's Most Chaotic Asset",  "desc": "Reach Level 40 — even entropy takes notes. You are the universe's most valuable liability.",             "key": "knowledge_score", "target": 74500},
+    {"id": "lvl_45", "name": "Dimension-Hopping Prototype",        "desc": "Reach Level 45 — you exist in seventeen conceptual dimensions simultaneously",                           "key": "knowledge_score", "target": 92000},
+    {"id": "lvl_50", "name": "Genesis Engine",                     "desc": "Reach Level 50 — you are the source. The original spark. The reason ideas exist at all. You win.",       "key": "knowledge_score", "target": 110000},
 
     # === CREATIVITY / CURIOSITY ===
     {"id": "curious_50",         "name": "Buzzing",                  "desc": "Reach 50 curiosity — you can feel the ideas vibrating in your tentacles",              "key": "curiosity_level",  "target": 50},
