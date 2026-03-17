@@ -442,8 +442,8 @@
           <span class="stat-val" id="stat-curiosity">50</span>
         </div>
         <div class="stat">🔬 INVENTED: <span class="stat-val" id="stat-research">0</span></div>
-        <div class="stat">🌟: <span class="stat-val" id="stat-discoveries">0</span></div>
-        <div class="stat">⛓️: <span class="stat-val" id="stat-chains">0</span></div>
+        <span id="stat-discoveries" style="display:none">0</span>
+        <span id="stat-chains" style="display:none">0</span>
       </div>
       <!-- hidden stat elements for JS updates -->
       <span id="stat-level-name" style="display:none">Napkin Sketcher</span>
@@ -963,6 +963,9 @@ const G_SETTLE = 120;     // physics iterations before settling to idle drift
 let gScaleCur = {};       // per-node current displayed scale (lerped)
 let gAnimRAF = null;
 let gAnimRunning = false;
+// Camera animation — lerp toward these targets each frame
+let gCamTX = 0, gCamTY = 0, gCamTZ = 0.55;
+let gFocusBlend = 0;      // 0=normal, 1=fully focused — lerps when node selected
 
 function gW2S(wx,wy,gc){ return {x:(wx+gPanX)*gZoom+gc.width/2, y:(wy+gPanY)*gZoom+gc.height/2}; }
 function gS2W(sx,sy,gc){ return {x:(sx-gc.width/2)/gZoom-gPanX, y:(sy-gc.height/2)/gZoom-gPanY}; }
@@ -1032,6 +1035,32 @@ function gForceStep(nodes, edges){
   }
   // Center gravity
   nodes.forEach(n=>{ const p=gNodePos[n]; if(!p) return; p.fx-=p.x*KC; p.fy-=p.y*KC; });
+  // Focus forces: pull neighbours in close, push others away
+  if(gSelected && gFocusBlend>0.05){
+    const sp=gNodePos[gSelected];
+    if(sp){
+      const selNeigh=gNeighbors[gSelected]||new Set();
+      const bl=gFocusBlend;
+      nodes.forEach(n=>{
+        if(n===gSelected) return;
+        const p=gNodePos[n]; if(!p) return;
+        const dx=p.x-sp.x, dy=p.y-sp.y;
+        const d=Math.sqrt(dx*dx+dy*dy)||0.01;
+        if(selNeigh.has(n)){
+          // Pull toward short orbit distance
+          const orbit=60+(p.r+sp.r)*1.8;
+          const f=0.14*bl*(d-orbit);
+          p.fx-=(dx/d)*f; p.fy-=(dy/d)*f;
+        } else {
+          // Push non-neighbours away from selected
+          const f=700*bl/(d*d+10);
+          p.fx+=(dx/d)*f; p.fy+=(dy/d)*f;
+        }
+      });
+      // Anchor the selected node — strongly dampen its movement
+      sp.vx*=0.15; sp.vy*=0.15;
+    }
+  }
   // Integrate
   nodes.forEach(n=>{
     const p=gNodePos[n]; if(!p) return;
@@ -1054,47 +1083,87 @@ function drawGraphFrame(){
   }
   if(!gGraphBuilt||Object.keys(gNodePos).length!==nodes.length) gBuildLayout(nodes,edges,gc);
 
-  // Physics settling (rapid at first, then slows)
-  if(gSettleIter<G_SETTLE){
-    const steps=gSettleIter<30?4:gSettleIter<60?2:1;
+  // Smooth camera lerp
+  const CL=0.055;
+  gZoom+=(gCamTZ-gZoom)*CL;
+  gPanX+=(gCamTX-gPanX)*CL;
+  gPanY+=(gCamTY-gPanY)*CL;
+
+  // Focus blend lerp (0=unfocused, 1=focused)
+  const focusTarget=gSelected?1:0;
+  gFocusBlend+=(focusTarget-gFocusBlend)*0.07;
+
+  // Physics settling: run longer in focus mode so clustering can complete
+  const settleLimit = gSelected ? G_SETTLE*2 : G_SETTLE;
+  if(gSettleIter<settleLimit){
+    const steps=gSettleIter<30?4:gSettleIter<80?2:1;
     for(let s=0;s<steps;s++) gForceStep(nodes,edges);
     gSettleIter+=steps;
   }
 
-  // Per-node hover scale interpolation
   const t=performance.now()*0.001;
+  const pulse=0.5+0.5*Math.sin(t*3.5); // 0‒1 oscillation for selected ring
+
+  // Per-node hover/select scale interpolation
+  const selN=new Set();
+  if(gSelected) edges.forEach(e=>{ if(e.from===gSelected) selN.add(e.to); if(e.to===gSelected) selN.add(e.from); });
   const hovNeigh=gHoverNode?(gNeighbors[gHoverNode]||new Set()):new Set();
   nodes.forEach(n=>{
-    const isH=n===gHoverNode, isN=hovNeigh.has(n);
-    const target=isH?1.5:isN?1.2:1.0;
-    const spd=isH?0.20:0.09;
+    const isSel=n===gSelected, isSelN=selN.has(n), isH=n===gHoverNode, isHN=hovNeigh.has(n);
+    const target=isSel?2.0:isSelN?1.35:isH?1.5:isHN?1.2:1.0;
+    const spd=isSel?0.12:isH?0.20:0.08;
     gScaleCur[n]=(gScaleCur[n]||1)+(target-(gScaleCur[n]||1))*spd;
   });
 
-  const selN=new Set();
-  if(gSelected) edges.forEach(e=>{ if(e.from===gSelected) selN.add(e.to); if(e.to===gSelected) selN.add(e.from); });
   const maxDeg=Math.max(1,...Object.values(gDegree));
 
-  // Draw edges
+  // ── Draw edges ─────────────────────────────────────────────────────
   const ecap=Math.min(edges.length,4000);
+
+  // Pass 1: background (dim) edges
   for(let i=0;i<ecap;i++){
     const e=edges[i], a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
     const sa=gW2S(a.x,a.y,gc), sb=gW2S(b.x,b.y,gc);
     if(Math.max(sa.x,sb.x)<-20||Math.min(sa.x,sb.x)>gc.width+20||
        Math.max(sa.y,sb.y)<-20||Math.min(sa.y,sb.y)>gc.height+20) continue;
     const hiS=gSelected&&(e.from===gSelected||e.to===gSelected);
-    const hiH=gHoverNode&&(e.from===gHoverNode||e.to===gHoverNode);
-    gctx.globalAlpha=hiS?0.9:hiH?0.55:0.10;
-    gctx.strokeStyle=hiS?'#ff66cc':hiH?'#cc55ff':'#bf00ff';
-    gctx.lineWidth=hiS?1.8:hiH?1.1:0.5;
+    const hiH=!gSelected&&gHoverNode&&(e.from===gHoverNode||e.to===gHoverNode);
+    if(hiS) continue; // draw highlighted edges in pass 2
+    const dimmed=gFocusBlend*(1-0.03); // lerp to near-invisible when focused
+    gctx.globalAlpha=hiH?0.55:(0.10-dimmed*0.07);
+    gctx.strokeStyle=hiH?'#cc55ff':'#bf00ff';
+    gctx.lineWidth=hiH?1.1:0.5;
     gctx.beginPath(); gctx.moveTo(sa.x,sa.y); gctx.lineTo(sb.x,sb.y); gctx.stroke();
+  }
+
+  // Pass 2: selected / highlighted edges with glow
+  if(gSelected){
+    for(let i=0;i<ecap;i++){
+      const e=edges[i], a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
+      if(e.from!==gSelected&&e.to!==gSelected) continue;
+      const sa=gW2S(a.x,a.y,gc), sb=gW2S(b.x,b.y,gc);
+      if(Math.max(sa.x,sb.x)<-20||Math.min(sa.x,sb.x)>gc.width+20||
+         Math.max(sa.y,sb.y)<-20||Math.min(sa.y,sb.y)>gc.height+20) continue;
+      // Outer glow pass
+      gctx.globalAlpha=0.25+0.15*pulse;
+      gctx.strokeStyle='#ff66cc';
+      gctx.lineWidth=5;
+      gctx.shadowColor='#ff2d9b'; gctx.shadowBlur=8;
+      gctx.beginPath(); gctx.moveTo(sa.x,sa.y); gctx.lineTo(sb.x,sb.y); gctx.stroke();
+      // Inner bright pass
+      gctx.globalAlpha=0.85+0.15*pulse;
+      gctx.strokeStyle='#ffaadd';
+      gctx.lineWidth=1.5;
+      gctx.shadowBlur=0;
+      gctx.beginPath(); gctx.moveTo(sa.x,sa.y); gctx.lineTo(sb.x,sb.y); gctx.stroke();
+    }
+    gctx.shadowBlur=0;
   }
   gctx.globalAlpha=1;
 
-  // Draw nodes
+  // ── Draw nodes ─────────────────────────────────────────────────────
   nodes.forEach(n=>{
     const p=gNodePos[n]; if(!p) return;
-    // Subtle idle drift after physics settles
     const hash=n.charCodeAt(0)*7+(n.charCodeAt(n.length-1)||0)*13;
     const drift=gSettleIter>=G_SETTLE?1.5:0;
     const ox=Math.sin(t*0.38+hash*0.09)*drift, oy=Math.cos(t*0.27+hash*0.12)*drift;
@@ -1103,24 +1172,45 @@ function drawGraphFrame(){
     const sc=gScaleCur[n]||1.0;
     const sr=Math.max(p.r*sc*gZoom,2);
     const isSel=n===gSelected, isNeigh=selN.has(n), isHov=n===gHoverNode;
-    // Glow
+    const isBackground=gFocusBlend>0.05&&!isSel&&!isNeigh&&!isHov;
+
+    gctx.globalAlpha=isBackground?(1-gFocusBlend*0.75):1.0;
+
+    // Glow halo
     if(isSel||isNeigh||isHov){
-      const glowR=sr+(isHov?20:12);
-      const g2=gctx.createRadialGradient(sp.x,sp.y,sr*0.2,sp.x,sp.y,glowR);
-      g2.addColorStop(0,(isSel?'#ff2d9b':isHov?'#cc44ff':'#00f7ff')+'70');
+      const glowR=sr+(isSel?28+10*pulse:isHov?20:14);
+      const g2=gctx.createRadialGradient(sp.x,sp.y,sr*0.3,sp.x,sp.y,glowR);
+      g2.addColorStop(0,(isSel?'#ff2d9b':isHov?'#cc44ff':'#00f7ff')+(isSel?'99':'70'));
       g2.addColorStop(1,'transparent');
       gctx.fillStyle=g2; gctx.beginPath(); gctx.arc(sp.x,sp.y,glowR,0,Math.PI*2); gctx.fill();
     }
+
+    // Pulsing outer ring for selected node
+    if(isSel){
+      const ringR=sr+6+pulse*8;
+      gctx.strokeStyle='#ff66cc';
+      gctx.lineWidth=1.5+pulse*1.5;
+      gctx.globalAlpha=0.55+0.45*pulse;
+      gctx.shadowColor='#ff2d9b'; gctx.shadowBlur=12;
+      gctx.beginPath(); gctx.arc(sp.x,sp.y,ringR,0,Math.PI*2); gctx.stroke();
+      gctx.shadowBlur=0;
+      gctx.globalAlpha=1;
+    }
+
     const d=gDegree[n]||0;
     gctx.fillStyle=isSel?'#ff2d9b':isHov?'#dd44ff':isNeigh?'#00f7ff':d>maxDeg*0.6?'#ff66cc':d>maxDeg*0.3?'#00ccff':'#7755bb';
     gctx.beginPath(); gctx.arc(sp.x,sp.y,sr,0,Math.PI*2); gctx.fill();
+
+    // Labels
     if(gZoom>0.20&&(isHov||isSel||isNeigh||d>maxDeg*0.07||nodes.length<80)){
-      const fs=Math.max(5,Math.min(12,Math.round((isHov?8:7)*gZoom)));
+      const fs=Math.max(5,Math.min(isSel?14:12,Math.round((isSel?10:isHov?8:7)*gZoom)));
+      gctx.globalAlpha=isBackground?(1-gFocusBlend*0.75):1.0;
       gctx.fillStyle=isSel?'#fff':isHov?'#eeddff':'#ff99ee';
-      gctx.font=`${fs}px "Press Start 2P"`; gctx.textAlign='center';
+      gctx.font=`${isSel?'bold ':''} ${fs}px "Press Start 2P"`; gctx.textAlign='center';
       const lbl=n.length>26?n.slice(0,24)+'\u2026':n;
-      gctx.fillText(lbl,sp.x,sp.y-sr-3);
+      gctx.fillText(lbl,sp.x,sp.y-sr-(isSel?6:3));
     }
+    gctx.globalAlpha=1;
   });
   gctx.fillStyle='#00f7ff33'; gctx.font='7px "Press Start 2P"'; gctx.textAlign='right';
   gctx.fillText(`\u00d7${gZoom.toFixed(2)}  dbl=reset`,gc.width-6,gc.height-4);
@@ -1147,6 +1237,14 @@ function gStopAnimLoop(){
 let gSetup=false;
 function selectConceptNode(name){
   gSelected=name;
+  gSettleIter=0; // restart physics so neighbours cluster in
+  // Smoothly pan+zoom to centre the selected node in the visible area (left of 320px panel)
+  if(gNodePos[name]){
+    const tz=Math.min(2.2, Math.max(gZoom, 1.1));
+    gCamTZ=tz;
+    gCamTX=-gNodePos[name].x - (160/tz); // 160 = half panel width → offsets node into visible centre
+    gCamTY=-gNodePos[name].y;
+  }
   const nd=document.getElementById('node-detail');
   const ndc=document.getElementById('node-detail-content');
   const deg=gDegree[name]||0;
@@ -1175,11 +1273,6 @@ function selectConceptNode(name){
           <div style="color:#cceeffcc;font-size:11px;line-height:1.5;">${m.snippet}</div>
         </div>`).join('');
   });
-  // Scroll node into view if possible
-  if(gNodePos[name]){
-    const gc2=document.getElementById('graph-canvas');
-    if(gc2){ gPanX=-gNodePos[name].x; gPanY=-gNodePos[name].y; }
-  }
 }
 
 function setupGraphInteraction(){
@@ -1190,6 +1283,7 @@ function setupGraphInteraction(){
   const ndc=document.getElementById('node-detail-content');
   document.getElementById('node-detail-close').addEventListener('click',()=>{
     gSelected=null; nd.style.display='none';
+    gCamTX=0; gCamTY=0; gCamTZ=0.55; gSettleIter=0;
   });
   function pos(e){const r=gc.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top};}
   gc.addEventListener('wheel',e=>{
@@ -1226,13 +1320,14 @@ function setupGraphInteraction(){
     if(moved<5){
       const clicked=gHitTest(sx,sy,gc);
       if(clicked){
-        if(gSelected===clicked){ gSelected=null; nd.style.display='none'; }
+        if(gSelected===clicked){ gSelected=null; nd.style.display='none'; gCamTX=0; gCamTY=0; gCamTZ=0.55; gSettleIter=0; }
         else { selectConceptNode(clicked); }
-      } else { gSelected=null; nd.style.display='none'; }
+      } else { gSelected=null; nd.style.display='none'; gCamTX=0; gCamTY=0; gCamTZ=0.55; gSettleIter=0; }
     }
   });
   gc.addEventListener('dblclick',()=>{
-    gZoom=0.55; gPanX=0; gPanY=0; gSelected=null; nd.style.display='none';
+    gCamTX=0; gCamTY=0; gCamTZ=0.55;
+    gSelected=null; nd.style.display='none'; gSettleIter=0;
   });
 }
 
