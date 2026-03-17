@@ -98,6 +98,12 @@ PARAM: <parameter for the action, e.g. idea domain or filename>
 CONTENT: <content to write, if applicable>
 RESPONSE: <your spoken response — in character, excited, idea-spilling, punny, irrepressible>
 
+FILE RULES — CRITICAL:
+- ALL idea files MUST be saved as: library/<slug>.md   (e.g. library/my_cool_idea.md)
+- NEVER write idea files loose in the workspace root — always use the library/ prefix.
+- The only files allowed at the root are: tasks.md, agent_notes.md, octobot_journal.md
+- context/ is for user uploads only — do NOT write there.
+
 In chat mode, respond naturally in character. Be playful, use puns, pitch wild ideas,
 make the user feel like a co-inventor. If you want to perform an action, include an ACTION line.
 
@@ -133,7 +139,7 @@ CRITICAL — response format:
 - OPTIONAL: if you want to do something (generate an idea, read/write a file, update tasks),
   add these lines at the very END of your message, after all reply text:
   ACTION: <research|write_file|read_file|list_files|update_notes|update_tasks>
-  PARAM: <idea domain or filename>
+  PARAM: <for write_file, ALWAYS use library/<slug>.md — e.g. library/my_idea.md>
   CONTENT: <content to write, if writing>
 - If you don't need to act, just reply — no ACTION line needed at all.
 
@@ -253,7 +259,19 @@ def _execute_action(parsed: dict) -> str:
     elif action == "write_file":
         if not param:
             return "write_file action missing PARAM (filename)."
-        return tools.write_file(param, content)
+        # Enforce that all idea/content files go into library/ — never loose in workspace root.
+        # Only a small set of well-known metadata files are allowed at the root level.
+        _ROOT_ONLY = {"tasks.md", "agent_notes.md", "octobot_journal.md",
+                      "chat_log.md", "memory.json", "problem_ideas.txt"}
+        filename = param.strip().lstrip("/\\")
+        # If the filename has no directory component and is not a known root file,
+        # redirect it into library/.
+        if "/" not in filename and "\\" not in filename and filename not in _ROOT_ONLY:
+            filename = f"library/{filename}"
+            # Ensure .md extension for plain library slugs
+            if not filename.endswith(".md"):
+                filename += ".md"
+        return tools.write_file(filename, content)
 
     elif action == "read_file":
         if not param:
