@@ -2,10 +2,6 @@
   <video src="https://private-user-images.githubusercontent.com/25903208/564598082-1196f57c-2e85-4407-afd1-53b577ef48bf.mp4" width="800" controls autoplay loop muted></video>
 </p>
 
-<p align="center">
-  <img src="assets/interface.png" alt="OctoBot Interface" width="800">
-</p>
-
 # OctoBot — Infinite Idea Generator 🐙
 
 <p align="center">
@@ -14,16 +10,20 @@
 
 > *A restless pink octopus inventor AI that never stops generating original ideas. Products, gadgets, services, creative projects, scientific experiments, solutions to problems you didn't know you had — it invents them all.*
 
-**OctoBot** is an autonomous idea-generation machine powered by a local AI agent.
-It runs on your own machine using [Ollama](https://ollama.com), endlessly dreams up
-original inventions, fuses concepts together, and fills an ever-growing idea vault —
-all rendered as a pixel-art game in your browser.
+**OctoBot** lives quietly in a folder on your computer, dreaming up thousands of inventions
+while you get on with your life. It runs entirely on [Ollama](https://ollama.com) local models —
+no cloud, no API keys, no one sniffing your brilliant ideas. Your intellectual property stays
+exactly where it belongs: **on your machine**.
+
+It endlessly fuses concepts together, fills an ever-growing idea vault,
+and renders everything as a pixel-art invention lab in your browser.
 
 Think of it as:
-- An **AI invention engine** that never sleeps
-- A **creative co-pilot** that generates ideas while you're away
+- An **AI invention engine** that never sleeps (unlike you, you fragile human)
+- A **creative co-pilot** quietly generating thousands of ideas while you're making coffee
 - An **infinite brainstorm machine** with eight arms and zero shame
 - A **Tamagotchi for ideas** — the more you interact, the wilder it gets
+- A **totally private genius** running on your own hardware, because great ideas shouldn't leak
 
 ---
 
@@ -66,6 +66,10 @@ OctoBot reads them and responds in `workspace/octobot_journal.md`
 
 **Assign Idea Domains:**
 Edit `workspace/tasks.md` — add lines like `- [ ] Generate idea: tools for chronically overwhelmed people`
+
+<p align="center">
+  <img src="assets/interface.png" alt="OctoBot Interface" width="800">
+</p>
 
 ---
 
@@ -214,6 +218,16 @@ Most find it stressful, boring, or unproductive.
 ```
 
 OctoBot will read it and generate something like a *"Commute Cocoon"* — a wearable pod that creates a private micro-environment on public transport with noise cancelling, aromatherapy, and a built-in podcast that adapts to your stress level.
+
+---
+
+## Your Ideas Stay Yours
+
+OctoBot runs entirely on **local Ollama models** — no cloud, no subscriptions, no servers phoning home.
+It sits in a folder on your computer, invents thousands of ideas over hours and days, and keeps
+every single one locked inside your `workspace/library/`. No one else sees them. Not even OctoBot's creator.
+
+Your IP is safe. Your ideas are yours. OctoBot just helps you have more of them.
 
 ---
 
