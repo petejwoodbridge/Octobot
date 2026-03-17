@@ -17,13 +17,17 @@
 ## Idea Generation Tasks
 
 - [ ] Develop a "Focus Flow" app - a productivity tool incorporating biofeedback (heart rate variability) to optimize work sessions and suggest breaks. (Inspired by user interest in biofeedback and productivity)
-- [ ] Design a modular, customizable exercise machine that adapts to user needs and preferences, potentially incorporating biofeedback data.
-- [ ] Generate ideas for: products that respond to human emotion and promote well-being, particularly leveraging biofeedback.
-- [ ] Design a service that coaches people through complex, unfinished projects, breaking them down into manageable steps and fostering accountability.
-- [ ] Explore the concept of "FishApps" – an app that simulates a natural aquatic environment for relaxation and focus, incorporating soundscapes, visual representations of marine life, and potentially biofeedback integration.
-- [ ] Develop a 'Squirrel Innovation' concept - a thought experiment exploring what a squirrel would design or invent, focusing on resourcefulness, adaptation, and problem-solving. Could inspire new product categories.
-- [ ] Design a system to combat the feeling of overwhelm from email inboxes - explore tools for intelligent filtering, prioritization, and automated response generation. Perhaps with a focus on visual representation of inbox content.
-- [ ] Investigate creating immersive experiences for productivity, meditation, or artistic expression using sound and visual feedback – drawing on the library resource `library/_develop_library-acoustic_resonance_time_perception_visual_representation__investigate_creating_immersive_experiences_for_productivity_meditation_or_artistic_expression_using_sound_and_visual_feedback.md`.
-- [ ] Explore a biofeedback-driven dream weaver app influencing and shaping lucid dreams through subtle auditory and haptic stimuli – leveraging the `library/a_biofeedback-driven_dream_weaver_app_influencing_and_shaping_lucid_dreams_through_subtle_auditory_and_haptic_stimuli.md` resource.
-- [ ] Research and develop a reactive symbiotic core utilizing engineered microbial colonies for processing and adaptation – based on `library/a_reactive_symbiotic_core_utilizing_engineered_microbial_colonies_for_processing_and_adaptation.md`.
-- [ ] Explore a self-assembling data-driven coral reef restoration system utilizing bio-printing and adaptive algorithms – referring to `library/a_self-assembling_data-driven_coral_reef_restoration_system_utilizing_bio-printing_and_adaptive_algorithms.md`.
+- [ ] Design a modular, customizable exercise machine that adapts to user needs and preferences.
+- [ ] Generate ideas for a "Squirrel's Perspective" app - exploring a world through a squirrel’s sensory experience, focusing on observation, foraging, and playful problem-solving. (Inspired by user conversation about "what would a squirrel invent?")
+- [ ] Design a system to measure and amplify positive emotions – potentially integrating biofeedback and sensory stimulation to counteract feelings of despair. (Inspired by user’s focus on optimism and connection between people and nature)
+- [ ] Create an app called “FishApps” – a platform connecting individuals interested in aquatic ecosystems, conservation, and research.  (Inspired by user conversation)
+- [ ] Develop a “Project Completion Assistant” – a service and potential app offering personalized support, accountability, and micro-rewards to help users finish their unfinished projects.
+- [ ] Explore ways to disrupt the meeting space – ideas ranging from holographic projections and shared virtual environments to gamified collaboration tools.
+- [ ] Design a 'Dread Relief' product – a physical or digital object/system to create a sense of control and calm in the face of overwhelming email inboxes (e.g., a smart filter, a guided meditation device, or a physical "out-of-sight" box).
+
+## Idea Generation - Exploration
+
+- [ ] Investigate creating immersive experiences for productivity, meditation, or artistic expression using sound and visual feedback - leveraging acoustic resonance and time perception (Library Index: `library/_develop_library-acoustic_resonance_time_perception_visual_representation__investigate_creating_immersive_experiences_for_productivity_meditation_or_artistic_expression_using_sound_and_visual_feedback.md`)
+- [ ] Explore biofeedback-driven dream weaving apps – influencing and shaping lucid dreams through auditory and haptic stimuli (Library Index: `library/a_biofeedback-driven_dream_weaver_app_influencing_and_shaping_lucid_dreams_through_subtle_auditory_and_haptic_stimuli.md`)
+- [ ] Investigate engineered microbial colonies for processing and adaptation – a reactive symbiotic core concept (Library Index: `library/a_reactive_symbiotic_core_utilizing_engineered_microbial_colonies_for_processing_and_adaptation.md`)
+- [ ] Explore bio-printing and adaptive algorithms for coral reef restoration – a self-assembling data-driven system (Library Index: `library/a_self-assembling_data-driven_coral_reef_restoration_system_utilizing_bio-printing_and_adaptive_algorithms.md`)
