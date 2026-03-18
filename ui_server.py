@@ -180,29 +180,65 @@ def api_library():
     return app.response_class(_lib_cache_json, mimetype="application/json")
 
 
-_file_cache = {}  # filename -> (content, mtime)
+_file_cache = {}   # filename -> (resp_json, content, cache_time)
+_FILE_CACHE_TTL = 600  # 10-minute TTL — no per-request stat() needed
+
+
+def _cache_library_file(safe_name: str):
+    """Read a library file, store in cache, return (resp_json, content) or (None, None)."""
+    import json as _json
+    try:
+        content = tools.read_file(safe_name)
+        resp = _json.dumps({"filename": safe_name, "content": content})
+        _file_cache[safe_name] = (resp, content, time.time())
+        return resp, content
+    except Exception:
+        return None, None
+
 
 @app.route("/api/library/<path:filename>")
 def api_library_file(filename):
-    """Read a specific library file. Cached by mtime."""
+    """Read a specific library file. Cached with TTL — no stat() per request."""
     safe_name = filename.lstrip("/\\")
     if not safe_name.startswith("library/"):
         safe_name = "library/" + safe_name
     try:
-        fpath = tools._safe_path(safe_name)
-        mtime = fpath.stat().st_mtime if fpath.exists() else 0
-        cached = _file_cache.get(safe_name)
-        if cached and cached[1] == mtime:
-            return app.response_class(cached[0], mimetype="application/json")
-        content = tools.read_file(safe_name)
-        import json as _json
-        resp = _json.dumps({"filename": safe_name, "content": content})
-        _file_cache[safe_name] = (resp, mtime)
-        return app.response_class(resp, mimetype="application/json")
-    except FileNotFoundError:
-        return jsonify({"error": "File not found"}), 404
+        tools._safe_path(safe_name)  # security check only
     except ValueError as exc:
         return jsonify({"error": str(exc)}), 403
+    cached = _file_cache.get(safe_name)
+    if cached and time.time() - cached[2] < _FILE_CACHE_TTL:
+        return app.response_class(cached[0], mimetype="application/json")
+    resp, _ = _cache_library_file(safe_name)
+    if resp is None:
+        return jsonify({"error": "File not found"}), 404
+    return app.response_class(resp, mimetype="application/json")
+
+
+@app.route("/api/library_batch", methods=["POST"])
+def api_library_batch():
+    """Fetch up to 150 library files in one shot. Body: {\"files\": [\"library/a.md\", ...]}"""
+    import json as _json
+    body = request.get_json(force=True, silent=True) or {}
+    filenames = body.get("files", [])[:150]
+    result = {}
+    now = time.time()
+    for filename in filenames:
+        safe_name = filename.lstrip("/\\")
+        if not safe_name.startswith("library/"):
+            safe_name = "library/" + safe_name
+        try:
+            tools._safe_path(safe_name)  # security check
+        except ValueError:
+            continue
+        cached = _file_cache.get(safe_name)
+        if cached and now - cached[2] < _FILE_CACHE_TTL:
+            result[filename] = cached[1]
+            continue
+        _, content = _cache_library_file(safe_name)
+        if content is not None:
+            result[filename] = content
+    return app.response_class(_json.dumps(result), mimetype="application/json")
 
 
 # ---------------------------------------------------------------------------
@@ -517,6 +553,25 @@ def api_upload():
 # Launch
 # ---------------------------------------------------------------------------
 
+def _start_library_cache_warmer() -> None:
+    """Background thread: pre-load all library files into _file_cache so first clicks are instant."""
+    import threading
+
+    def _warm():
+        time.sleep(3)  # let server finish starting first
+        try:
+            files = [f for f in tools.list_files("library") if f.endswith(".md")]
+            print(f"  Library cache warmer: loading {len(files)} files...")
+            for f in files:
+                if f not in _file_cache:
+                    _cache_library_file(f)
+            print(f"  Library cache warmer: done ({len(files)} files ready).")
+        except Exception as exc:
+            print(f"  Library cache warmer error: {exc}")
+
+    threading.Thread(target=_warm, daemon=True).start()
+
+
 def launch(port: int = 7860) -> None:
     """Start the Flask web server."""
     # Pre-build the graph response so the first /api/graph call is instant
@@ -528,5 +583,6 @@ def launch(port: int = 7860) -> None:
             print(f"  Graph ready: {len(c['nodes'])} concepts, {len(c['edges'])} connections (of {c['total_nodes']} total)")
     except Exception as exc:
         print(f"  Graph pre-build failed: {exc}")
-    print(f"\n  🐙 OctoBot Game Server running at http://localhost:{port}\n")
+    _start_library_cache_warmer()
+    print(f"\n  OctoBot Game Server running at http://localhost:{port}\n")
     app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False, threaded=True)

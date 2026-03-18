@@ -909,6 +909,22 @@ setInterval(pollAutoMessages, 4000);
 let _libFiles = [];
 let _libRendered = 0;
 const _LIB_PAGE = 80;
+const _previewCache = new Map(); // JS-side content cache: filename -> markdown string
+
+async function _prefetchLibrary(files) {
+  if (!files.length) return;
+  try {
+    const resp = await fetch('/api/library_batch', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({files: files.slice(0, 150)})
+    });
+    const data = await resp.json();
+    for (const [f, content] of Object.entries(data)) {
+      if (content) _previewCache.set(f, content);
+    }
+  } catch(e) {}
+}
 
 async function loadLibrary() {
   const data = await fetchJSON('/api/library');
@@ -928,6 +944,8 @@ async function loadLibrary() {
       _renderLibPage(list);
     }
   };
+  // Pre-fetch first 150 files into JS cache so clicks are instant
+  setTimeout(() => _prefetchLibrary(_libFiles), 600);
 }
 
 function _renderLibPage(list) {
@@ -952,13 +970,22 @@ function _renderLibPage(list) {
 async function previewFile(el, filename) {
   document.querySelectorAll('.lib-item.active').forEach(e => e.classList.remove('active'));
   if (el) el.classList.add('active');
+  const preview = document.getElementById('library-preview');
 
+  // Serve from JS cache instantly — no HTTP round-trip
+  if (_previewCache.has(filename)) {
+    preview.innerHTML = renderMarkdown(_previewCache.get(filename));
+    return;
+  }
+
+  preview.innerHTML = '<div style="color:#bf00ff88;padding:16px;font-size:11px;font-family:Segoe UI,sans-serif;">Loading...</div>';
   const safe = filename.startsWith('library/') ? filename.slice(8) : filename;
   const data = await fetchJSON('/api/library/' + encodeURIComponent(safe));
   if (data && data.content) {
-    document.getElementById('library-preview').innerHTML = renderMarkdown(data.content);
+    _previewCache.set(filename, data.content);
+    preview.innerHTML = renderMarkdown(data.content);
   } else {
-    document.getElementById('library-preview').innerHTML = '<div style="color:#bf00ff88;">Could not load idea.</div>';
+    preview.innerHTML = '<div style="color:#bf00ff88;">Could not load idea.</div>';
   }
 }
 
