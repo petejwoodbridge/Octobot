@@ -21,3 +21,14 @@ Crucially, the vest also maps micro-vibrations – subtle tremors from the groun
 The Echo Weaver isn’t just about recreation; it’s about experiential archaeology. By layering sensory data – sound, vibration, and scent – it creates a far richer, more immersive, and emotionally resonant understanding of the past than any static artifact or photograph ever could. It moves beyond passive observation to active, embodied engagement. It taps into the neurological link between our senses to truly *feel* the history beneath our feet.
 
 **Pitch:** "Imagine walking through ancient Rome and actually smelling the olive oil and hearing the legions marching – that’s the Echo Weaver."
+
+
+---
+
+## Related Ideas
+
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *bio-acoustic mapping*)
+- **develop bio-acoustic translation devices that allow humans to hear the world as animals do mapping sonic landscapes** (shared concept: *micro-vibrations*)
+- **micro-epoch olfactory archiving** (shared concept: *the echo weaver*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *the echo weaver*)
+- **hydroacoustic mapping of subterranean cave systems algorithmic modeling of seismic vibrations atmospheric resonance binaural headphones haptic floor projections** (shared concept: *the echo weaver*)

@@ -20,3 +20,14 @@ EchoBloom isn’t just an exhibit; it’s an emotional conduit. It merges scient
 
 ## Elevator Pitch
 Step inside the Earth’s history and feel it pulse through your skin.
+
+
+---
+
+## Related Ideas
+
+- **geological time distortion cephalopod biofeedback haptic simulation** (shared concept: *real-time geological*)
+- **chimeric olfactory layering** (shared concept: *echobloom*)
+- **chronobiological echo gardening v1** (shared concept: *echobloom*)
+- **chronoscaping prototype concept** (shared concept: *echobloom*)
+- **chronal scent layering device** (shared concept: *echobloom*)

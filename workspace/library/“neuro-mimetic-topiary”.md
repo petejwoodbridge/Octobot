@@ -1,1 +1,11 @@
-“Neuro-Mimetic Topiary: A bio-robotic sculpture system that responds in real-time to a user's emotional state, as measured by subtle physiological signals (heart rate variability, skin conductance, micro-muscle movements). Using a network of miniature, soft-robotic ‘branches’ constructed from shape-memory alloys and embedded with bioluminescent bacteria, the sculpture dynamically ‘grows,’ ‘twists,’ and ‘blooms’ – mimicking the visual and textural representation of the user’s emotional landscape. The core uses advanced EEG analysis to translate brainwave patterns into movement commands for the robotic branches. Think weeping willow trees that weep sadness, or blossoming roses that radiate joy – all crafted from living, responsive metal and light! It’s like a conversation between your soul and a very stylish, slightly unsettling, metal plant.”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **adaptive biomaterials idea 1** (shared concept: *shape-memory alloys*)
+- **mnemonic pollen mapping** (shared concept: *shape-memory alloys*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloys*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloys*)
+- **adaptive material reconstruction - cellular fabrication explore using bio-luminescent self-assembling materials mimicking octopus skin to dynamically repair and reshape damaged structures** (shared concept: *shape-memory alloys*)

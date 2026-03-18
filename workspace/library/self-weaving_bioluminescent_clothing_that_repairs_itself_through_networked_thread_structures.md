@@ -13,3 +13,14 @@
 **## Why It’s Brilliant:** The Thread Weaver blends cutting-edge biotech with traditional textile production. It’s not just self-repairing; it’s a living garment, constantly adapting to its environment and user needs. The bioluminescence adds a beautiful, dynamic aesthetic, transforming clothing into wearable light displays. The networked thread structure offers unparalleled strength and flexibility, far surpassing conventional self-healing materials. The entire system is designed for closed-loop production – damaged threads return to a ‘Spore Factory’ to be re-engineered. 
 
 *Pitch:* “Imagine clothing that not only looks amazing but actually fixes itself and glows – it’s the future of fashion, and it's called the Thread Weaver.”
+
+
+---
+
+## Related Ideas
+
+- **self-repairing clothing constructed from nanobots that utilize discarded thread to create glowing adaptive armor** (shared concept: *the thread weaver*)
+- **bio-integrated basalt structures explore growing living organisms within basalt pores for self-repairing bioluminescent buildings** (shared concept: *photobacterium phosphoreum*)
+- **filament** (shared concept: *the thread weaver*)
+- **self-healing basalt construction materials incorporating bioluminescent bacteria for nighttime infrastructure** (shared concept: *photobacterium phosphoreum*)
+- **phantom limb cartography  self-repairing textiles  olfactory projection** (shared concept: *self-repairing textiles*)

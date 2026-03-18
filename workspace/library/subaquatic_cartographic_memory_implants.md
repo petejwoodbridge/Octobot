@@ -17,3 +17,14 @@ The implant syncs wirelessly with a base station, transmitting aggregated data f
 **Why It’s Brilliant:** It combines the precision of sonar with the intuitive, deeply immersive nature of human perception. It’s a fundamentally different way of experiencing and understanding the underwater world, going beyond simple visualization to offer a truly embodied connection. It has the potential to revolutionize marine biology, search & rescue, and the very nature of underwater exploration.
 
 *Pitch:* "Imagine feeling the ocean floor beneath your feet—the Echo Cartographer allows you to truly *know* the deep."
+
+
+---
+
+## Related Ideas
+
+- **develop self-assembling nutrient-rich shell blends for targeted coral reef restoration incorporating 3d-printed artificial reefs** (shared concept: *three-dimensional*)
+- **and prototype a system for automatically summarizing long email threads prioritizing key information and action items - tackling the email inbox dread** (shared concept: *three-dimensional*)
+- **forest** (shared concept: *three-dimensional*)
+- **seismic olfactory cartography** (shared concept: *three-dimensional*)
+- **vestibular cartography  materials sensors haptic feedback real-time processing wearable interfaces** (shared concept: *three-dimensional*)

@@ -39,3 +39,14 @@ The Weaver itself is a small, bio-luminescent dome constructed from recycled kel
 ---
 *Original notes:*
 ## Chrono-Lichen Weaver - A Temporal Resonance Harmonizer
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Automated “Somatic Echo” Sculpting – Temporal Edition** (shared concept: *temporal calibration dial*)
+- **aquatic lichen cultivation vibrational analysis haptic feedback historical geological events robotic swarms bioluminescence mapping** (shared concept: *chrono-lichen weaver*)
+- **how to leverage our understanding of the nervous system eg vagus nerve stimulation to design products that promote calmness and reduce anxiety** (shared concept: *neural feedback loop*)
+- **Precognitive Gastronomy** (shared concept: *neural feedback loop*)
+- **“Chronal Gastric Mapping”** (shared concept: *museum exhibits*)

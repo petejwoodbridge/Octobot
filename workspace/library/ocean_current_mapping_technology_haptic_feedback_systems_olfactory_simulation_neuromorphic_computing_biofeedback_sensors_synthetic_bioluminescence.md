@@ -15,3 +15,10 @@
 **Why It’s Brilliant:** The Current Echo provides an unparalleled, intuitive understanding of ocean currents. It bypasses the cognitive load of interpreting visual data, letting the user *feel* the water’s movement, anticipate changes, and dramatically improve situational awareness – crucial for safety, navigation, and scientific research. The integration of synthetic bioluminescence adds an aesthetically arresting, data-driven element. 
 
 *Pitch:* "Imagine feeling the ocean’s secrets flowing beneath you – that’s the Current Echo."
+
+
+---
+
+## Related Ideas
+
+- **Ephemeral Gastronomic Echoes** (shared concept: *bio-reactive sensors*)

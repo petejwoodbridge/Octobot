@@ -60,3 +60,14 @@ Game design isn't just about making a fun game; it’s about crafting experience
 
 
 Do you want me to delve deeper into a specific aspect of game design, such as level design, narrative design, or a particular genre’s design principles?
+
+
+---
+
+## Related Ideas
+
+- **gamified sensory deprivation pods** (shared concept: *flow state*)
+- **geological empathy mapping** (shared concept: *flow state*)
+- **“micro chronal moss cultivation”** (shared concept: *flow state*)
+- **idea domain=chronosculpting fungal cognition** (shared concept: *flow state*)
+- **imagine never frantically** (shared concept: *flow state*)

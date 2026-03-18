@@ -19,3 +19,14 @@ Embedded within the dome's structure are thousands of ultra-sensitive, piezoelec
 The Myco-Chorus combines cutting-edge bio-acoustics with miniaturized ecosystems to create a truly immersive and data-rich environment for fungal research. It’s not just passively recording signals; it’s creating a dialogue. The mycelium-based dome itself contributes to the data - its structural changes can be tracked, and it acts as a living component within the observed ecosystem, influencing the fungal communication patterns. The AI component provides unprecedented contextual analysis and adaptive learning, translating complex fungal behavior into accessible visual information. This creates the potential to fundamentally change our understanding of fungal intelligence and their role in complex ecological networks. 
 
 **Pitch:** “Imagine seeing the whispers of the forest – the Myco-Chorus lets you hear what fungi are *really* thinking.”
+
+
+---
+
+## Related Ideas
+
+- **bio-acoustic stress monitoring and fungal response** (shared concept: *bio-acoustic sensors*)
+- **bio-reactive fungal networks spatial scent diffusion dynamic micro-environments anxiety reduction** (shared concept: *psilocybe cubensis*)
+- **neural network cartridges injectable bio-circuits for targeted localized neurological stimulation** (shared concept: *cutting-edge bio*)
+- **seismic empathy matrices** (shared concept: *cutting-edge bio*)
+- **each panel is** (shared concept: *cutting-edge bio*)

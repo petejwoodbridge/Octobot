@@ -20,3 +20,14 @@ The Nautilus Navigator represents a paradigm shift in biofeedback and conservati
 
 ## Elevator Pitch
 Become a sonic guardian of the reef – and find your inner peace doing it.
+
+
+---
+
+## Related Ideas
+
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *bio-acoustic device*)
+- **when a breach** (shared concept: *bio-acoustic device*)
+- **optimism  investigate technologies and systems that promote positive emotions and engagement with nature** (shared concept: *bio-acoustic device*)
+- **olfactory tracking technology ground-penetrating radar spore analysis nostalgia haptic feedback** (shared concept: *bio-acoustic device*)
+- **t about stopping the breach it** (shared concept: *bio-acoustic device*)

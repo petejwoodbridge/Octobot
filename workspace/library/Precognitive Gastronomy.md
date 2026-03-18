@@ -28,3 +28,13 @@ The food itself isn’t changing; it’s the *experience* of tasting it that's b
 ## Potential Applications
 
 *   **Luxury Dining Experiences:** Imagine a five-course meal that takes you on a journey through your childhood, revisiting the flavors of your first birthday cake and the taste of your grandmother’s apple pie, all layered with a hint of the flavors you *might* enjoy in the
+
+---
+
+## Related Ideas
+
+- **idea domain = “Temporal Gastronomic Cartography”** (shared concept: *chrono-palate addresses*)
+- **chronal sediment sketching flavor archive** (shared concept: *chrono-palate utilizes*)
+- **Chronal Gastronomic Cartography - Enhanced Prototype** (shared concept: *luxury dining experiences*)
+- **bio-acoustic flavour profiles  temporal gastronomy  microbiome** (shared concept: *chrono-palate*)
+- **idea domain - biophotonic echo-gardening** (shared concept: *overview behold*)

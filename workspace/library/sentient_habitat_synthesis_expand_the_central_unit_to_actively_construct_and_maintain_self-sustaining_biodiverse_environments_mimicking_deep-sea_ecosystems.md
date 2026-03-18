@@ -39,3 +39,14 @@ The shrimp then, in turn, stimulate the bacteria, which consume organic waste an
 **Why It's Brilliant:** The Coral Chorus eliminates the need for constant human intervention. It leverages the astonishing adaptations of deep-sea life to create a truly self-sustaining environment, dramatically reducing energy consumption and offering unparalleled insights into deep-sea ecology. It’s not just observation; it’s participation.
 
 *Pitch:* “Imagine a miniature, thriving deep-sea ecosystem, entirely self-managed – it’s the future of marine research and a mesmerizing glimpse into the ocean’s hidden harmonies.”
+
+
+---
+
+## Related Ideas
+
+- **designing self-contained mobile ecosystems housing noctiluca and other deep-sea organisms for advanced research and potential terraforming applications** (shared concept: *deep-sea invertebrates*)
+- **develop a bio-luminescent self-repairing suit for deep-sea exploration incorporating octopus camouflage abilities** (shared concept: *deep-sea ecosystems*)
+- **design a modular octopus-inspired underwater drone swarm capable of coordinated object manipulation and data collection** (shared concept: *the abyss weaver*)
+- **“Ephemeral Tactile Reconstruction”** (shared concept: *self-regulating*)
+- **lichen acoustics neuro-feedback soundscapes genetic modification of lichen temporal perception via sound** (shared concept: *self-regulating*)

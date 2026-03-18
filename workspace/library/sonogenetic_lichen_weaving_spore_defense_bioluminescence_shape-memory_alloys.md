@@ -26,3 +26,14 @@ Here’s the breakdown:
 The LuminaGuard combines biological adaptability with advanced materials science. It's a completely self-regulating, preventative system – no chemicals, no constant monitoring, just a beautiful, glowing wall of living defense. The sonogenetic lichen offers a sustainable and powerful mechanism for spore generation and defense, while the SMA ensures rapid, targeted response. It’s a system that evolves *with* the fungal challenge, rather than simply fighting it.
 
 **Pitch:** “Imagine a wall that doesn’t just block fungus, it *communicates* its threat, and then *actively* neutralizes it – that’s the LuminaGuard.”
+
+
+---
+
+## Related Ideas
+
+- **adaptive biomaterials idea 1** (shared concept: *shape-memory alloys*)
+- **mnemonic pollen mapping** (shared concept: *shape-memory alloys*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloys*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloys*)
+- **color psychology temporal perception shape-memory alloys** (shared concept: *shape-memory alloys*)

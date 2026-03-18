@@ -21,3 +21,14 @@ The user wears noise-canceling headphones (standard) and the SomniMapper display
 The SomniMapper moves beyond passive listening and enters a realm of active subconscious manipulation. It transforms a largely intangible, overwhelming feeling into a tangible, navigable space. By directly influencing neural activity through carefully calibrated sound, it offers a novel pathway to self-regulation, enhanced creativity, and a deeper understanding of one's own inner landscape. The combination of EEG, bone conduction, and AI offers unprecedented precision and control over the subconscious.
 
 *Pitch:* “Imagine experiencing your anxieties as a shifting color – we can help you learn to paint them away.”
+
+
+---
+
+## Related Ideas
+
+- **hydroacoustic mapping of subterranean cave systems algorithmic modeling of seismic vibrations atmospheric resonance binaural headphones haptic floor projections** (shared concept: *ultra-low frequency*)
+- **sonospheric topography mapping** (shared concept: *ultra-low frequency*)
+- **temporal distortion effects in plants bioluminescence mechanisms in fungi haptic feedback systems for botanical interaction biospheres and controlled environments** (shared concept: *ultra-low frequency*)
+- **subconscious dream sculpting** (shared concept: *ultra-low frequency*)
+- **create a localized reality distortion field capable of temporarily neutralizing stressors and anxieties within a small controlled personal space** (shared concept: *ultra-low frequency*)

@@ -19,3 +19,14 @@ The swarm is controlled by a decentralized AI – “Poseidon” – that learns
 The HydraNet overcomes the limitations of traditional repair by employing a swarm intelligence and bio-fabrication approach. It’s incredibly adaptable – the swarm can reshape itself to any breach geometry in real-time, vastly reducing repair time and minimizing material waste. The decentralized control system ensures robustness against communication failures, while the sustainable material source reduces environmental impact. It's a fundamentally proactive, rather than reactive, solution to a growing global threat.
 
 **Pitch:** “Imagine a wall that heals itself before the storm even hits – that’s HydraNet: instantly adaptive swarm robotics for protecting our vital infrastructure.”
+
+
+---
+
+## Related Ideas
+
+- **design a swarm of miniature ai-controlled pulse-jets that disrupt and redirect water pressure at breach points** (shared concept: *redirect*)
+- **noctiluca** (shared concept: *redirect*)
+- **design a decentralized ai-controlled network of miniature swarming robotic tentacles to actively block and redirect water flow** (shared concept: *redirect*)
+- **and develop a system for visualizing and understanding human biology data  perhaps a gamified interface for learning about the body** (shared concept: *redirect*)
+- **engineer a swarm of micro-bots capable of self-assembling into temporary pressure-resistant barriers around damaged areas** (shared concept: *instantly*)

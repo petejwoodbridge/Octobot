@@ -25,3 +25,14 @@ The data is wirelessly transmitted to a companion app, offering users a visual r
 **Why It's Brilliant:** The SkinSong bridges the gap between passive microbiome analysis and active therapeutic intervention. It creates a dynamic, responsive system that shifts from observation to intelligent modulation, potentially preventing flare-ups before they begin and drastically reducing reliance on reactive medications. It’s a holistic approach, acknowledging the skin as a vibrant, communicative ecosystem. 
 
 *Pitch:* “Imagine your skin having its own soundtrack – we’re translating its needs into vibrations that keep it balanced and beautiful.”
+
+
+---
+
+## Related Ideas
+
+- **“domestic sound textile”** (shared concept: *micro-vibration actuators*)
+- **“chronal memory loom”** (shared concept: *micro-vibration actuators*)
+- **biofeedback mechanisms and their potential applications in creative activities - could we use heart rate to influence musical composition or painting** (shared concept: *micro-vibration actuators*)
+- **petrichor palimpsest synth** (shared concept: *micro-vibration actuators*)
+- **advanced fungal bioreactors acoustic sensors haptic feedback integration olfactory simulation technology geological weathering models** (shared concept: *micro-vibration actuators*)

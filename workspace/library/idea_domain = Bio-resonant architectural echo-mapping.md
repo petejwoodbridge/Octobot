@@ -1,1 +1,11 @@
-“The Chronos Confection: A Temporal Taste-Mapping Device” - A wearable device that, using advanced bio-acoustic sensors and flavour synthesis technology, recreates the *taste* of a building’s historical usage patterns. Imagine: you stand in a Victorian-era theatre, and the device synthesizes the exact flavour profile – a slightly metallic, vaguely floral, slightly dusty sweetness – that would have been prevalent during a performance! It’s a sensory time machine, one bite at a time! The device would link to a central database of historical usage, identifying flavour profiles from documents, records, and even olfactory analysis of historical materials. It’s…ink-credible!
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **“chronal scent reconstructor”** (shared concept: *ink-credible*)
+- **idea domain=kinesthetic memory palimpsests** (shared concept: *ink-credible*)
+- **idea domain=chronal spore mapping** (shared concept: *ink-credible*)
+- **photic chronesthesia echo system** (shared concept: *ink-credible*)
+- **subconscious olfactory cartography** (shared concept: *ink-credible*)

@@ -35,3 +35,14 @@ Chronos uses a proprietary algorithm – a delightfully complex blend of chaos t
 ---
 *Original notes:*
 ## The Patience Pod: A Biofeedback-Driven Time Distortion Simulator
+
+
+---
+
+## Related Ideas
+
+- **Anemoia Synthesis Pods** (shared concept: *bio-responsive time*)
+- **reactive olfactory projection technology haptic feedback urban archaeology bio-acoustic mapping** (shared concept: *micro-vibrations*)
+- **how to leverage our understanding of the nervous system eg vagus nerve stimulation to design products that promote calmness and reduce anxiety** (shared concept: *micro-vibrations*)
+- **biogenic chemical signatures olfactory projection haptic feedback memory-scapes pet grief biogenic mineral analysis** (shared concept: *micro-vibrations*)
+- **develop a personalized flow state induction system utilizing biometrics and adaptive soundscapes to eliminate distractions** (shared concept: *micro-vibrations*)

@@ -20,3 +20,14 @@ Chronoscent merges biotechnology, wearable technology, and perfumery in a truly 
 
 ## Elevator Pitch
 Experience perfume that adapts to you, one scent at a time.
+
+
+---
+
+## Related Ideas
+
+- **neuro-scent synthesis rem sleep voc analysis microbial scent production bio-luminescent chambers** (shared concept: *bio-luminescent matrix*)
+- **chronal echo weaver pitch** (shared concept: *bio-luminescent matrix*)
+- **anomalous temporal scent layering wormholes olfactory projection neuro-feedback** (shared concept: *neuro-feedback*)
+- **idea domain = “Sensory Archaeology – Bio-Temporal Immersion”** (shared concept: *bio-engineered microbes*)
+- **idea domain=personalized echo loci fabrication** (shared concept: *real-time biometric*)

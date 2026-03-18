@@ -19,3 +19,14 @@ Once detected, the orb initiates a subtle, multi-sensory "soft landing." It proj
 The Dream Weaver 3000 cleverly sidesteps the problem of forced relaxation. It doesn’t try to dictate a routine; it gently shifts the surrounding environment to make the *absence* of activity far more appealing. The use of infrasound, paired with bioluminescence and aromatherapy, creates a deeply immersive and surprisingly effective relaxation technique, tapping into the brain's natural response to visually and sensorially calming environments. It's not about *doing* something calming; it’s about dissolving the urge to do anything at all. 
 
 **Pitch:** “Imagine falling asleep effortlessly, every night, without a second thought – this is the Dream Weaver 3000.”
+
+
+---
+
+## Related Ideas
+
+- **subconscious topography mapping** (shared concept: *the dream weaver*)
+- **t about stopping the breach it** (shared concept: *precisely-controlled burst*)
+- **bloom is paired** (shared concept: *moss-covered orb*)
+- **idea domain=biophotonic dream mapping** (shared concept: *dream weaver*)
+- **subconscious scent layering loomsync** (shared concept: *dream weaver*)

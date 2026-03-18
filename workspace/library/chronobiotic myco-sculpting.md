@@ -20,3 +20,14 @@ Chronoskin is not just a garment; it's a sensory experience that fundamentally a
 
 ## Elevator Pitch
 Wear your memories, soothe your stress, and bend time itself with Chronoskin.
+
+
+---
+
+## Related Ideas
+
+- **fungal bio-integration olfactory transduction shape-memory alloys textile engineering** (shared concept: *bio-engineered fungal*)
+- **age-reversible tissue regeneration** (shared concept: *overview chronoskin*)
+- **chronos concept** (shared concept: *overview chronoskin*)
+- **december** (shared concept: *micro-kinetic generator*)
+- **Adaptive Internal Organ Design** (shared concept: *self-reflection*)

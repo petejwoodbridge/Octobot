@@ -1,1 +1,7 @@
-“The Chrono-Chaos Courier - A miniature automaton designed to experience, and loudly lament, the utterly futile attempt to optimize the delivery of a single, brightly colored rubber duck. It utilizes a complex system of miniature gears, servos, and tiny, aggressively polite verbalizations to… well, to *strive* to make the delivery faster. Each 'delivery' is meticulously documented via a miniature holographic projector showing the duck’s increasingly frantic attempts to reach its destination. The core innovation lies in the *performance* of the failure – a beautiful, robotic embodiment of the human obsession with making the impossible possible.”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **adaptive skin suit choreography** (shared concept: *performance*)

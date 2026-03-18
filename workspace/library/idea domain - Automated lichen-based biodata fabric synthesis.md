@@ -33,3 +33,14 @@ Once the lichen reaches a predetermined density, a robotic “Weaver” – a de
 *   **Environmental Monitoring Fabrics:** Clothing that actively detects and reports on air quality and pollution levels.
 *   **Adaptive Building Materials:** Walls and surfaces that regulate temperature and humidity within a building.
 *   **Luxury Fashion with a Con
+
+
+---
+
+## Related Ideas
+
+- **neuro-resonant lichen cultivation  existing research materials techniques potential applications** (shared concept: *rhizocarpon geographicum*)
+- **symbiotic growth chambers design enclosed ecosystems that cultivate and display bioluminescent flora based on human emotional input** (shared concept: *nutrient-rich substrate*)
+- **idea domain=chronal microbiome mapping** (shared concept: *nutrient-rich substrate*)
+- **if two** (shared concept: *nutrient-rich substrate*)
+- **bio-luminescent shell structures for underwater city lighting and navigation** (shared concept: *closed-loop system*)

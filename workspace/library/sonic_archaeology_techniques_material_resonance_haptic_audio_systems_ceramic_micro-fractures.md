@@ -17,3 +17,14 @@ The micro-fractures *record* these signatures, essentially layering them onto th
 **Why It’s Brilliant:** It bridges the gap between passive analysis and active, intuitive understanding of a site’s history. The ceramic micro-fractures provide a fundamentally new material for capturing and replaying acoustic information, going far beyond the limitations of traditional sensors. The haptic component allows for an emotional connection to the past, offering a richer, more profound experience for archaeologists and historians. 
 
 *Pitch:* “Imagine feeling the roar of a Roman legion marching through a battlefield – that's what the Echo Weaver does.”
+
+
+---
+
+## Related Ideas
+
+- **micro-epoch olfactory archiving** (shared concept: *the echo weaver*)
+- **reactive olfactory projection technology haptic feedback urban archaeology bio-acoustic mapping** (shared concept: *the echo weaver*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *the echo weaver*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *the echo weaver*)
+- **hydroacoustic mapping of subterranean cave systems algorithmic modeling of seismic vibrations atmospheric resonance binaural headphones haptic floor projections** (shared concept: *the echo weaver*)

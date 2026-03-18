@@ -36,3 +36,14 @@ But it doesn't *just* collect data. This is where the ‘Affective Temporal Laye
 ---
 *Original notes:*
 ## The EchoBloom - A Chronal Sensory Reconstruction Device
+
+
+---
+
+## Related Ideas
+
+- **personalized dream induction** (shared concept: *therapy & trauma recovery*)
+- **t about stopping the breach it** (shared concept: *bio-luminescent*)
+- **auditory cartography project** (shared concept: *bio-luminescent*)
+- **idea domain=Symbiotic Memory Weaving** (shared concept: *historical preservation*)
+- **s the chrono-bloom** (shared concept: *bio-luminescent seed*)

@@ -27,3 +27,14 @@ Here's the breakdown:
 The Chronoskin moves beyond passive sensory input. It actively *shapes* the user’s subjective experience, dramatically increasing the likelihood of genuine, deeply embedded memory formation. The temporal drift element is key—acknowledging the fallibility of memory as a core part of the system makes the experience more believable and impactful. Furthermore, its potential extends far beyond simple memory recall; it becomes a tool for therapeutic interventions targeting trauma response, cognitive rehabilitation, and even immersive historical education. 
 
 **Pitch:** “Imagine feeling the battlefield alongside a veteran – that’s the Chronoskin: rewriting memory, one sensation at a time.”
+
+
+---
+
+## Related Ideas
+
+- **“gelatinous chronospheres”** (shared concept: *biofeedback integration*)
+- **create wearable exoskeletons mimicking cephalopod camouflage dynamically shifting texture and color based on surrounding stimuli** (shared concept: *sensory input*)
+- **the taste itself** (shared concept: *sensory input*)
+- **joy manifests as** (shared concept: *sensory input*)
+- **mnemonic hydro-sculpting  bio-acoustic resonance  memory recall  aquatic manipulation** (shared concept: *sensory input*)

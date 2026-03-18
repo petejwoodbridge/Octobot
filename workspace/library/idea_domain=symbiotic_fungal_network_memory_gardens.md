@@ -35,3 +35,14 @@ These fungi don’t just *store* information; they *reconstruct* it. Through a c
 ---
 *Original notes:*
 ## The Myco-Echo Chamber
+
+
+---
+
+## Related Ideas
+
+- **advanced fungal bioreactors acoustic sensors haptic feedback integration olfactory simulation technology geological weathering models** (shared concept: *the myco-echo chamber*)
+- **develop bio-acoustic translation devices that allow humans to hear the world as animals do mapping sonic landscapes** (shared concept: *bio-resonance mapping*)
+- **gadgets** (shared concept: *bio-resonance mapping*)
+- **idea domain=Neuro-Positive Architecture** (shared concept: *bio-resonance mapping*)
+- **idea domain - subconscious echo-cartography** (shared concept: *bioluminescent echoes*)

@@ -23,3 +23,14 @@ The intensity and complexity of the feedback and taste scale directly with the c
 **Why It's Brilliant:** The Chrono-Palate fundamentally transforms scientific data into an immersive, visceral experience. It offers a profoundly intuitive way to understand geological time scales and the role of microbes in shaping our planet’s past, making complex scientific research accessible and engaging to a wider audience. It's a genuinely novel method of ‘smelling’ and ‘tasting’ history. 
 
 *Pitch:* “Imagine experiencing the dawn of life, one bite and vibration at a time – let’s rewrite the textbooks, deliciously.”
+
+
+---
+
+## Related Ideas
+
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *haptic feedback*)
+- **temporal distortion effects in plants bioluminescence mechanisms in fungi haptic feedback systems for botanical interaction biospheres and controlled environments** (shared concept: *haptic feedback*)
+- **cephalopod camouflage scent dispersal microclimate control haptic feedback narrative projection** (shared concept: *haptic feedback*)
+- **acoustic mapping of liminal spaces olfactory synthesis haptic feedback memory triggers uncanny valley transitional zones** (shared concept: *haptic feedback*)
+- **neuro-resonant memory garden v1** (shared concept: *haptic feedback*)

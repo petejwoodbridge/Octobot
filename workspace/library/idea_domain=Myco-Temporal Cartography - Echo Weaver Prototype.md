@@ -1,1 +1,11 @@
-“The Echo Weaver: A bio-acoustic performance instrument designed to interface directly with Myco-Temporal Cartography data. It comprises a network of networked, pressure-sensitive, bioluminescent “fungal eyes” – miniature, engineered fungal colonies encased in responsive, shape-memory alloy shells – arranged in a geodesic dome. These eyes detect and translate the fungal network's vibrational and bioluminescent signatures into real-time, multi-layered sonic and visual performances. Users manipulate the dome’s structure (via haptic controls) to ‘guide’ the fungal network’s response, creating evolving soundscapes and light patterns that represent the perceived historical event. The core algorithm utilizes advanced machine learning to predict and shape the fungal network's behaviour based on user input, creating a feedback loop between the human performer and the echoes of the past. It’s like conducting an orchestra of spores!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain = “geological lullaby synthesis”** (shared concept: *shape-memory alloy*)
+- **bio-acoustic modeling extinct animal vocalizations shape-memory alloy textile haptic projection** (shared concept: *shape-memory alloy*)
+- **sonorous sediment mapping project** (shared concept: *shape-memory alloy*)
+- **micro-epoch olfactory archiving** (shared concept: *shape-memory alloy*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloy*)

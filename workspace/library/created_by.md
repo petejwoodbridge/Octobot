@@ -17,3 +17,14 @@ For example, if you want to dream of successfully presenting a project, you’d 
 **Why It's Brilliant:** The Somnium Weaver cleverly bypasses the limitations of traditional dream recall by directly impacting the very architecture of your dream. It’s a non-invasive, personalized dream-shaping tool that leverages a deep understanding of the body’s subtle responses during sleep, and combines that with AI-driven narrative suggestion. It's about proactively crafting a more meaningful and productive dream experience. 
 
 *Pitch:* "Imagine waking up not just remembering your dreams, but feeling like you’ve actively *solved* the challenges you faced within them – that’s the Somnium Weaver."
+
+
+---
+
+## Related Ideas
+
+- **subconscious dream sculpting** (shared concept: *the somnium weaver*)
+- **these threads are** (shared concept: *the somnium weaver*)
+- **imagine having a** (shared concept: *the somnium weaver*)
+- **the subtle** (shared concept: *the somnium weaver*)
+- **idea domain=Chronobiological Cartography of Domestic Sounds** (shared concept: *the somnium weaver*)

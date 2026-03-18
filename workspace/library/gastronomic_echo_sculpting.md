@@ -35,3 +35,14 @@ The core of Gastronomic Echo Sculpting is the ‘EchoWeave’ – a device I’v
 ---
 *Original notes:*
 ## EchoWeave: The Memory Weaver
+
+
+---
+
+## Related Ideas
+
+- **microbial scent synthesis techniques bio-scaffolding for olfactory delivery temporal scent perception studies** (shared concept: *the memory weaver*)
+- **neuro-architectural resonance chamber prototype** (shared concept: *bio-reactive polymers*)
+- **idea domain=chromatic resonance harvesting** (shared concept: *bio-reactive polymers*)
+- **“Chrono-Topography”** (shared concept: *bio-reactive polymers*)
+- **idea domain = animal-inspired technological solutions** (shared concept: *bio-reactive polymers*)

@@ -22,3 +22,14 @@ The EchoBloom represents a paradigm shift in marine biology research and conserv
 
 ## Elevator Pitch
 “Finally, a way to talk to the whales – and have them listen.”
+
+
+---
+
+## Related Ideas
+
+- **synesthetic geological mapping techniques shape-memory alloy haptic interfaces bio-acoustic data analysis for geological formations neurofeedback integration with geological data** (shared concept: *shape-memory alloy*)
+- **sonic mapping of rock formations shape-memory alloys bio-responsive textiles geological resonance** (shared concept: *shape-memory alloy*)
+- **chimeric olfactory layering** (shared concept: *echobloom*)
+- **chronobiological echo gardening v1** (shared concept: *echobloom*)
+- **Chronal Moss Mapping & Sonification – Detailed Concept** (shared concept: *echobloom*)

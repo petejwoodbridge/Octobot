@@ -21,3 +21,14 @@ Here’s the key: the TAP isn't just about the *type* of scent; it's about the *
 ChronoScent goes beyond simple aromatherapy. It’s a dynamic, personalized temporal assistant, directly interacting with the brain's internal timekeeping mechanisms. By linking scent perception to physiological feedback, it creates a powerful, immersive tool for managing anxiety, improving focus, and ultimately, regaining a stronger sense of time’s flow. The shape-memory alloy sensors are the crucial element, acting as a closed-loop system for truly responsive temporal orchestration. 
 
 **Pitch:** “Imagine feeling the seconds tick by, not just seeing them – ChronoScent lets you *experience* time, one exquisite scent at a time.”
+
+
+---
+
+## Related Ideas
+
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *shape-memory alloy*)
+- **olfactory data analysis geological volatile organic compounds shape-memory alloy scent diffusers haptic feedback olfactory interfaces** (shared concept: *shape-memory alloy*)
+- **“petrichor reconstruction unit”** (shared concept: *shape-memory alloy*)
+- **subconscious scent mapping** (shared concept: *shape-memory alloy*)
+- **and generate ideas based on the library index regarding biofeedback and immersive experiences** (shared concept: *shape-memory alloy*)

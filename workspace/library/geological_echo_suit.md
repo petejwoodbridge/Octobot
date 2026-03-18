@@ -44,3 +44,14 @@ The wearer’s nervous system is then stimulated via a network of micro-needles 
 ---
 *Original notes:*
 ## The Lithosuit - A Geologically-Responsive Bio-Suit
+
+
+---
+
+## Related Ideas
+
+- **idea domain=chromatic resonance harvesting** (shared concept: *bio-reactive polymers*)
+- **engineer a self-assembling bio-luminescent octopus-inspired habitat for deep-sea exploration** (shared concept: *bio-luminescent octopus*)
+- **idea domain=Sonospheric Skin-Symbiosis** (shared concept: *bio-luminescent octopus*)
+- **develop bio-adhesive nets deployed by miniature autonomous octopus drones to physically block underwater pathways** (shared concept: *bio-luminescent octopus*)
+- **instead of building structures engineer colossal mobile coral reefs sculpted by octopus intelligence and capable of terraforming oceans** (shared concept: *bio-luminescent octopus*)

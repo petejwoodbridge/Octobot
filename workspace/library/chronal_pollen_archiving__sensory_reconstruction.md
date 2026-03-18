@@ -23,3 +23,14 @@ Here's the sequence:
 The EchoBloom moves beyond simple recording. It leverages principles of quantum biology and bio-sensing to not just represent an event, but to *re-animate* it, providing a level of immersive recall previously thought impossible. It’s a bridge between objective data and subjective experience, offering a pathway back to authentic memory. The technology also has potential applications beyond personal reminiscence, including therapeutic interventions for trauma recovery and the preservation of cultural heritage – allowing future generations to “smell” the past.
 
 **Pitch:** "Imagine feeling your grandmother's garden again, perfectly recreated, down to the scent of the roses – that’s the EchoBloom."
+
+
+---
+
+## Related Ideas
+
+- **historical scent analysis techniques olfactory memory research haptic feedback technology neuroscience of time perception** (shared concept: *how it felt*)
+- **tactile** (shared concept: *sensory weaver*)
+- **subconscious textile resonance mapping** (shared concept: *sensory weaver*)
+- **sensory stimulation for dementia patients pattern recognition technology personal companion robots** (shared concept: *micro-aromatherapy*)
+- **bio-responsive pigment delivery systems olfactory synthesis technology shape-memory alloy textiles temporal perception neuroscience** (shared concept: *sensory reconstruction*)

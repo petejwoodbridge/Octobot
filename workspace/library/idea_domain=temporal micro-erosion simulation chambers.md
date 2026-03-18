@@ -35,3 +35,14 @@ Each TME SC is a self-contained, pressurized environment roughly the size of a l
 **Why It’s Extraordinary**
 
 This isn’t just another simulation; it’s a *feeling*!  The TMESCs deliver an unbelievably visceral understanding of time's patient, powerful artistry. It’s like bottling the slow, deliberate carving of a mountain, allowing you to hold the very essence of geological change in the palm of your hand!  We
+
+
+---
+
+## Related Ideas
+
+- **olfactory mimicry for geological strata** (shared concept: *educational exhibits*)
+- **idea domain=symbiotic microbiome mood synthesis** (shared concept: *ethically-sourced*)
+- **idea domain - subconscious echo-cartography** (shared concept: *ethically-sourced*)
+- **idea domain = neuro-acoustic lichen cultivation** (shared concept: *ethically-sourced*)
+- **bio-sonorous lichen mapping – devices** (shared concept: *artistic installations*)

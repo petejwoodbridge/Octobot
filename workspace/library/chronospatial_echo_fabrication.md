@@ -45,3 +45,14 @@ Chronospatial Echo Fabrication isn't just about food; it's about *time* itself! 
 ---
 *Original notes:*
 “Chronosymphony: Sensory Echo-Weaving – A Temporal Gastronomy”
+
+
+---
+
+## Related Ideas
+
+- **neuro-paleobotanical synesthesia gardens v2** (shared concept: *amazing*)
+- **idea domain - lithospheric earth ghosts bioreactor** (shared concept: *amazing*)
+- **idea domain=Algorithmic Nostalgia Sculpting** (shared concept: *amazing*)
+- **Symbiotic Olfactory Resonance Chamber** (shared concept: *amazing*)
+- **idea domain – “Synesthetic Rainfall Simulation”** (shared concept: *amazing*)

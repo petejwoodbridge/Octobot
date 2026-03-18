@@ -35,3 +35,14 @@ The core of the CTRS is the “Chrono-Bloom,” a self-contained unit roughly th
 ---
 *Original notes:*
 “## The Chrono-Bloom: Temporal Weaving
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *temporal weaving*)
+- **develop bio-luminescent algae farms within abandoned subway tunnels optimized for octopus consumption and creating a self-sustaining subterranean ecosystem** (shared concept: *self-contained unit*)
+- **idea domain = “Sensory Archaeology – Bio-Temporal Immersion”** (shared concept: *self-contained unit*)
+- **t about stopping the breach it** (shared concept: *self-contained unit*)
+- **neuro-gastronomic synesthesia generation** (shared concept: *self-contained unit*)

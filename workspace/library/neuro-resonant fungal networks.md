@@ -35,3 +35,14 @@ The Neuro Resonant Fungal Networks aren’t just a gadget; they
 ---
 *Original notes:*
 ## The Mycelial Muse - A Neuro-Sonic Symbiosis Device
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent fungal mycelium eeg mapping interactive art installations neurofeedback mycelial architecture** (shared concept: *mycena luxaeterna*)
+- **bio-integrated location anchors create self-contained adaptable ecosystems that establish persistent dynamic presence in remote or unstable environments** (shared concept: *bio-engineered*)
+- **it utilizes bio** (shared concept: *micro-sensors woven*)
+- **idea domain = Ecological Wellbeing Tech** (shared concept: *neuro-rehabilitation*)
+- **optimism  investigate technologies and systems that promote positive emotions and engagement with nature** (shared concept: *responds*)

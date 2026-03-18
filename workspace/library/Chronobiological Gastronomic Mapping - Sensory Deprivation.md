@@ -27,3 +27,14 @@ We’ve mapped the brain’s response to various flavors – strawberry, aged ch
 
 **Potential Applications**
 *   **Therapeutic Memory Recall:** Helping individuals with memory loss or trauma access positive memories linked to food.
+
+
+---
+
+## Related Ideas
+
+- **idea domain=bio luminescent memory moss temporal scent mapping** (shared concept: *therapeutic memory recall*)
+- **“Chronal Aroma Weave”** (shared concept: *therapeutic memory recall*)
+- **memory bloom scentscapes** (shared concept: *therapeutic memory recall*)
+- **neuro-temporal moss cultivation** (shared concept: *therapeutic memory recall*)
+- **idea domain=Ephemeral Tactile Memory Capsules** (shared concept: *therapeutic memory recall*)

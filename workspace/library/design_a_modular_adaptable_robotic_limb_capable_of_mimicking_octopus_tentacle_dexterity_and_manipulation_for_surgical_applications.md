@@ -15,3 +15,14 @@ Crucially, each tentacle is linked to a haptic feedback system. The surgeon wear
 **Why It’s Brilliant:** The Neuro-Mimetic Weaver combines biomimicry with advanced AI and tactile feedback to create a surgical instrument that operates *with* the surgeon’s intention, not *against* it. The dynamically-adhesive skin allows for safe, controlled tissue manipulation without damaging surrounding structures. The modular design allows surgeons to rapidly swap out specialized “tentacles” – one for microsurgery, one for vascular clamping, one for delicate tissue dissection – all seamlessly controlled by the single neural interface. 
 
 *Pitch:* “Imagine performing surgery with the instinct and precision of an octopus – that’s the Neuro-Mimetic Weaver, and it’s about to redefine what’s possible in the operating room.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain = adaptive biomimicry** (shared concept: *real-time adjustments*)
+- **Temporal Gastric Cartography - Prototype Concept** (shared concept: *real-time adjustments*)
+- **chronoscaping slime repair system** (shared concept: *self-healing polymer*)
+- **idea domain - “kinetic lichen mapping”** (shared concept: *self-healing polymer*)
+- **neural network-controlled robotic appendages for complex reconstruction design robotic arms controlled by a neural network capable of intricate multi-stage repairs guided by learned octopus movement patterns** (shared concept: *pre-programmed movements*)

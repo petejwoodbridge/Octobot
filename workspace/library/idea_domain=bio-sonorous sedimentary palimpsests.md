@@ -40,3 +40,14 @@ Crucially, the suit also synthesizes smells! Using a complex system of micro-rea
 ---
 *Original notes:*
 ## EchoStone: The Paleontological Sensory Immersion Suit
+
+
+---
+
+## Related Ideas
+
+- **olfactory mimicry for geological strata** (shared concept: *haptic feedback system*)
+- **idea domain=litho-chronoesthesia** (shared concept: *neural interface*)
+- **investigate novel materials for creating calming sensory experiences** (shared concept: *haptic feedback system*)
+- **geological empathy mapping** (shared concept: *haptic feedback system*)
+- **historical fermentation processes microbial ecology haptic feedback olfactory simulation bioluminescence abandoned breweries** (shared concept: *haptic feedback system*)

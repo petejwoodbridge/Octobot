@@ -21,3 +21,14 @@ The fungal colonies are self-replicating within the sensor array, maintaining co
 **Why It’s Brilliant:** The Chronospora Network fuses biological sensitivity with geological analysis, offering real-time, intuitive data interpretation. It's not just about seeing data; it’s about *experiencing* it, dramatically improving prediction accuracy and mitigating geological risks. 
 
 *Pitch:* “Imagine feeling the earth tremble before it breaks – that’s what the Chronospora Network delivers, transforming raw data into a powerfully intuitive warning system.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “resonant microbial architecture”** (shared concept: *re-tuned*)
+- **idea domain=Symbiotic Chrono-Gardening** (shared concept: *experiencing*)
+- **Ephemeral Memory Cartography** (shared concept: *experiencing*)
+- **light-feeling synesthesia engines  materials sensors haptic feedback biofeedback artistic expression aesthetic perception proprioception** (shared concept: *experiencing*)
+- **“temporal scent echo system”** (shared concept: *experiencing*)

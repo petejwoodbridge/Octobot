@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DreamLab OctoBot — Loading</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0020;
+    color: #ff66cc;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .container { text-align: center; }
+  .octopus {
+    animation: bob 2s ease-in-out infinite;
+  }
+  .octopus img {
+    width: 160px;
+    height: auto;
+    filter: drop-shadow(0 0 30px #ff2d9b88);
+  }
+  @keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  h1 {
+    color: #ff2d9b;
+    font-size: 28px;
+    margin: 20px 0 10px;
+    text-shadow: 0 0 20px #ff2d9b55;
+  }
+  .status {
+    color: #bf00ff;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .dots::after {
+    content: '';
+    animation: dots 1.5s steps(4, end) infinite;
+  }
+  @keyframes dots {
+    0% { content: ''; }
+    25% { content: '.'; }
+    50% { content: '..'; }
+    75% { content: '...'; }
+  }
+  .bar-container {
+    width: 300px;
+    height: 6px;
+    background: #1a0040;
+    border-radius: 3px;
+    margin: 24px auto;
+    overflow: hidden;
+  }
+  .bar {
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(90deg, #ff2d9b, #bf00ff, #00f7ff);
+    border-radius: 3px;
+    animation: slide 1.5s ease-in-out infinite;
+  }
+  @keyframes slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(400%); }
+  }
+  .tip {
+    color: #7744aa;
+    font-size: 11px;
+    margin-top: 30px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="octopus"><img src="file:///D:/VS Code Projects/Octobot/assets/octobot.png" alt="OctoBot"></div>
+  <h1>DreamLab OctoBot</h1>
+  <div class="status"><span class="dots">Warming up the invention lab</span></div>
+  <div class="bar-container"><div class="bar"></div></div>
+  <div class="tip" id="tip"></div>
+</div>
+<script>
+const tips = [
+  "Stretching all eight arms...",
+  "Polishing the idea vault...",
+  "Calibrating the creativity meter...",
+  "Feeding the octopus...",
+  "Sharpening tentacle pencils...",
+  "Loading 1,000+ inventions...",
+  "Connecting neurons across ideas...",
+  "Brewing inspiration ink...",
+];
+let tipIdx = 0;
+const tipEl = document.getElementById('tip');
+tipEl.textContent = tips[0];
+setInterval(() => {
+  tipIdx = (tipIdx + 1) % tips.length;
+  tipEl.textContent = tips[tipIdx];
+}, 3000);
+
+function checkReady() {
+  const img = new Image();
+  img.onload = () => { window.location.href = 'http://localhost:7860'; };
+  img.onerror = () => { setTimeout(checkReady, 1000); };
+  img.src = 'http://localhost:7860/assets/octopus_pixel_art.svg?t=' + Date.now();
+}
+checkReady();
+</script>
+</body>
+</html>

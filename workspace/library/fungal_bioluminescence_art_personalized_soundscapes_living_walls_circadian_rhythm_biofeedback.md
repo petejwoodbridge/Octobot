@@ -23,3 +23,14 @@ Crucially, the entire system is designed to respond in real-time. It adapts not 
 LuminaBloom marries cutting-edge biotechnology with biofeedback technology, creating a truly responsive and aesthetically pleasing solution to mood management. It’s far more engaging and intuitive than traditional light therapy. The living, growing aspect creates a sense of connection with nature and emphasizes the regenerative power of bioluminescence. It’s a beautiful, interactive system that fundamentally alters the way we interact with our environment and our own well-being. 
 
 **Pitch:** “Imagine a wall that understands your mood and responds with a gentle, living light—it’s LuminaBloom, and it's the future of feeling good.”
+
+
+---
+
+## Related Ideas
+
+- **seasonal affective disorder** (shared concept: *seasonal affective disorder*)
+- **idea domain = Personalized “Temporal Resonance” Audio-Haptic Sculpting for Historical Emotional Immersion** (shared concept: *micro-sensors that*)
+- **weaver** (shared concept: *micro-sensors that*)
+- **idea domain – “Synesthetic Cartography of Historical Weather Patterns”** (shared concept: *micro-sensors that*)
+- **bloom doesn** (shared concept: *micro-sensors that*)

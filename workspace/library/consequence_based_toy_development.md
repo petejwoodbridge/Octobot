@@ -1,1 +1,7 @@
-“Project: EchoBloom - A responsive, miniature ecosystem contained within a beautifully crafted, hand-blown glass orb. The orb houses a colony of bioluminescent bacteria and a tiny, simulated rainstorm powered by a miniature kinetic turbine. But here’s the twist: the bacteria *react* to the child’s actions. Happy actions (gentle encouragement, storytelling) lead to a vibrant bloom of light and increased bacterial growth. Negative actions (yelling, frustration) cause the light to dim, the ‘rain’ to slow, and eventually, the bacteria to… well, let’s just say they ‘retreat’ into the depths. The orb comes with a companion app that tracks the ‘emotional state’ of the ecosystem and provides gentle prompts for positive interaction. Think Tamagotchi meets a tiny, glowing, slightly judgmental rainforest! I shall file this under GENIUS with extreme enthusiasm!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **algorithmic** (shared concept: *hand-blown glass*)

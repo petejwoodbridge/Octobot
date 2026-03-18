@@ -33,3 +33,13 @@ Okay, buckle up, because this is where things get *fantastical*! Each Sentiment 
 ## Why It's Extraordinary
 
 The Sentiment Sprout isn’t just a
+
+---
+
+## Related Ideas
+
+- **idea domain = automated mood drift curation** (shared concept: *pre-programmed profiles*)
+- **idea domain – “Chronal Echo-Gardens** (shared concept: *self-maintaining ecosystem*)
+- **“chronal memory loom”** (shared concept: *bio-sensor array*)
+- **design a symbiotic device where humans interpret bloom color changes as emotional data streams** (shared concept: *genetically-modified*)
+- **Precognitive Gastronomy** (shared concept: *overview behold*)

@@ -41,3 +41,14 @@ This isn
 ---
 *Original notes:*
 ## Chrono-Memory Bloom - A Bioreactive Memory Sculpture.
+
+
+---
+
+## Related Ideas
+
+- **idea domain - Personalized “Memory Bloom” Synthesis** (shared concept: *memory blooms*)
+- **“Chrono-Topography”** (shared concept: *real-time visualization*)
+- **music** (shared concept: *haptic feedback interface*)
+- **idea pitch** (shared concept: *bio-reactive bloom*)
+- **“Chronal Resonance Weave”** (shared concept: *emergency response*)

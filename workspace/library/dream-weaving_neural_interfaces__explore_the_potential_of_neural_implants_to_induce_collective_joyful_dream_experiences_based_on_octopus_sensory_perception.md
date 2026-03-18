@@ -26,3 +26,14 @@ Here’s the breakdown:
 The Chroma-Verse moves beyond passive dream stimulation. It creates genuinely shared, immersive environments driven by collective emotion and sensory perception. By mimicking the incredibly complex sensory processing of an octopus, it unlocks a level of dream realism currently unattainable. It addresses the fundamental problem of dream lack of ‘being’ – providing participants with a palpable sense of presence and genuine connection, allowing them to explore fantastical landscapes with all their senses. It’s not just dreaming; it's becoming.
 
 **Pitch:** “Imagine experiencing a sunset with a thousand others, feeling their joy, their awe – that’s the Chroma-Verse.”
+
+
+---
+
+## Related Ideas
+
+- **design a neural interface allowing humans to experience the world through the echolocation of dolphins layering it with augmented reality** (shared concept: *bio-integrated neural*)
+- **develop bio-luminescent self-repairing synthetic skin grafts for burn victims mimicking octopus regeneration** (shared concept: *bio-integrated neural*)
+- **instead of communication devices create neural interfaces allowing direct thought-to-thought transmission between octopuses and humans** (shared concept: *bio-integrated neural*)
+- **Sentient Animal-Human Interfaces** (shared concept: *bio-integrated neural*)
+- **develop a bio-luminescent self-repairing suit for deep-sea exploration mimicking octopus camouflage** (shared concept: *chroma-nodes*)

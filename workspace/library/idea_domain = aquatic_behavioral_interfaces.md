@@ -37,3 +37,13 @@ The Echo-Shell isn’t just a gadget; it's a portal! We're moving beyond simply
 ---
 *Original notes:*
 ## The Echo-Shell: Bio-Acoustic Symbiosis for Marine Conservation & Communication
+
+---
+
+## Related Ideas
+
+- **develop a bio-luminescent self-repairing suit for deep-sea exploration incorporating octopus camouflage abilities** (shared concept: *deep-sea exploration*)
+- **idea domain = “Luminescence Cartography - Phase 2** (shared concept: *marine conservation*)
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *bio-acoustic sensors*)
+- **dermal cartography  bio-acoustic sensors  wearable textiles  memory recall** (shared concept: *bio-acoustic sensors*)
+- **subconscious scent layering loomsync** (shared concept: *bio-acoustic sensors*)

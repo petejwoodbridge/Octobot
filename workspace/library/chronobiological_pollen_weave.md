@@ -18,3 +18,14 @@ The Tempus Bloom transcends simple historical recreation; it’s a powerfully ev
 
 ## Elevator Pitch
 “Wear the past – feel the world as it was.”
+
+
+---
+
+## Related Ideas
+
+- **Chronobiological Cartography of Micro Habitats** (shared concept: *overview the tempus bloom*)
+- **chronoflora temporal seed pod** (shared concept: *overview the tempus bloom*)
+- **explore a symbiotic system utilizing genetically-engineered bioluminescent organisms to detect and rapidly solidify breaches with a self-healing polymer** (shared concept: *cutting-edge biotechnology*)
+- **bio-luminescent warp threads integrated into weaving for dynamic light-reactive patterns** (shared concept: *cutting-edge biotechnology*)
+- **these threads are** (shared concept: *cutting-edge biotechnology*)

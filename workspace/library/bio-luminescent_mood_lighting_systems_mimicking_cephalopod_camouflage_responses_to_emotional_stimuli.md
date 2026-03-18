@@ -23,3 +23,14 @@ The blanket also subtly vibrates, mimicking the gentle pulsing of cephalopod mov
 The Chroma-Mimic goes far beyond simple mood lighting. It's a real-time, biofeedback-driven art installation designed to subtly guide the user towards emotional regulation. By utilizing the incredibly complex and visually striking camouflage behaviours of cephalopods, it provides a non-verbal, deeply engaging way to explore and manage emotions. It leverages the power of association and sensory input to promote self-awareness and create a profoundly calming experience. It’s a beautiful, intelligent, and unexpectedly effective therapeutic tool.
 
 **Pitch:** “Imagine a blanket that not only soothes you, but helps you *understand* exactly what your body is trying to tell you – it’s like having a calm, colourful octopus whispering to your soul.”
+
+
+---
+
+## Related Ideas
+
+- **bio-integrated conductive skins develop flexible self-healing materials mimicking octopus skin for dynamic electrical sensing and control** (shared concept: *the neural weaver*)
+- **quantum conductance mimicry design artificial structures that replicate octopus-level quantum conductance for ultra-fast data transfer and energy manipulation** (shared concept: *the neural weaver*)
+- **the central unit** (shared concept: *bio-sensing*)
+- **sentient material fabrication engineer self-assembling materials capable of adapting to and responding to human emotion and intention** (shared concept: *bio-signals*)
+- **bio-reactive ceramic vessels bioluminescence sound recording environmental data microbial cultures** (shared concept: *bio-sensing*)

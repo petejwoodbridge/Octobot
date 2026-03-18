@@ -33,3 +33,14 @@ This isn't just mapping; it'
 ---
 *Original notes:*
 ## Myco-Chronicles: A Bio-Acoustic Forest Memory Device
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “Bio-resonant Coral Reef Restoration Simulations”** (shared concept: *bio-acoustic resonance mapping*)
+- **retro-sensory pollen mapping** (shared concept: *bio-acoustic resonance mapping*)
+- **neuro-regenerative therapies** (shared concept: *bio-acoustic resonance mapping*)
+- **Chronal Gastronomic Cartography - Enhanced Prototype** (shared concept: *bio-acoustic resonance mapping*)
+- **idea domain - chromatic bio-sonification** (shared concept: *real-time data streaming*)

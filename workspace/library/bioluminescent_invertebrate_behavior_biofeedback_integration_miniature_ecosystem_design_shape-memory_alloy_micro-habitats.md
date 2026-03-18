@@ -26,3 +26,14 @@ The system is housed within a compact, aesthetically pleasing enclosure and conn
 LuminaSync isn’t just observation; it's active participation. By creating a dynamic, responsive environment, we’re bypassing the inherent stress of traditional observation methods and allowing the fireflies to engage in their natural, complex behaviors with a level of precision never before achieved. The SMA alloy creates a novel micro-ecosystem, and the biofeedback integration provides incredibly rich, nuanced data on invertebrate sensory perception and behavioral adaptation. The system could also be adapted for other bioluminescent species, opening doors to understanding entirely new biological processes – and even informing the design of therapeutic environments for patients with sensory processing difficulties.
 
 **Pitch:** “Imagine a tiny, glowing world that learns and responds – it’s revolutionizing how we understand and interact with the beauty of bioluminescence.”
+
+
+---
+
+## Related Ideas
+
+- **adaptive biomaterials idea 1** (shared concept: *real-time biofeedback*)
+- **“paleo-scent weaver”** (shared concept: *real-time biofeedback*)
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *real-time biofeedback*)
+- **idea domain=Ecological Mental Wellness** (shared concept: *real-time biofeedback*)
+- **ultrasound plant stimulation biofeedback topiary cephalopod manipulation shape-memory alloys** (shared concept: *real-time biofeedback*)

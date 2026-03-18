@@ -1,1 +1,11 @@
-“The Temporal Tastebud – A bio-engineered ‘perfume’ device that delivers synthesized flavor profiles linked to specific historical moments. It's a wearable scent-diffusion device combined with micro-haptic feedback, calibrated to evoke not just taste, but the *feeling* of being in a particular era. Imagine experiencing the 'spice trade' of the 15th century – a heady mix of cinnamon, cloves, and… something vaguely unsettling – or the simple, clean flavors of a Roman breakfast! It uses a miniature bio-printer to layer volatile organic compounds, paired with subtle vibrations and temperature shifts to mimic the historical context. Think Victorian tea time, but with *intent*.”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **t about stopping the breach it** (shared concept: *micro-haptic feedback*)
+- **mnemonic pollen mapping** (shared concept: *think victorian*)
+- **“petrified emotion scanner”** (shared concept: *think victorian*)
+- **“chronal olfactory reconstruction device”** (shared concept: *think victorian*)
+- **neuro-resonant fossil pollen embroidery** (shared concept: *think victorian*)

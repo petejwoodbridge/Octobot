@@ -21,3 +21,14 @@ For example, if anxiety is identified, the system might release a nano-dose of c
 The Olfactory Echo combines several cutting-edge technologies – micro-encapsulation, biometric sensing, and scent synthesis – to create a truly personalized and responsive emotional regulator. Unlike broad-spectrum aromatherapy, it doesn’t just mask emotions; it targets the root cause at a neurological level. It's a non-invasive, discreet, and incredibly efficient way to regain control of your emotional state. The system learns and adapts to the individual's unique biometric profile over time, becoming increasingly effective.
 
 **Pitch:** “Imagine feeling truly in control of your mood, instantly – this pendant delivers precisely the right scent to guide you back to calm, focus, or joy, whenever you need it.”
+
+
+---
+
+## Related Ideas
+
+- **joy manifests as** (shared concept: *mood-boosting techniques*)
+- **idea domain = automated mood drift curation** (shared concept: *mood-boosting techniques*)
+- **idea domain = Ecological Wellbeing Tech** (shared concept: *emotional regulation*)
+- **sensory subscriptions for emotional regulation design curated boxes delivering tiny nuanced stimuli  scents textures sounds  to trigger specific emotional responses** (shared concept: *emotional regulation*)
+- **personalized dream induction** (shared concept: *cutting-edge technologies*)

@@ -21,3 +21,14 @@ The core of ChronoBloom is its bio-sensor array. Worn as a discreet wristband (s
 ChronoBloom seamlessly merges biophilic design with cutting-edge sensor technology and personalized aromatherapy. It’s not just masking a problem; it’s using the power of scent to directly influence neurochemistry and restore natural circadian coherence. This offers a uniquely gentle, proactive, and deeply personal approach to wellness, moving beyond passive methods.
 
 **Pitch:** “Imagine a garden that understands your brain and subtly guides you to your best self - ChronoBloom: scent your way to focus, calm, and optimal performance.”
+
+
+---
+
+## Related Ideas
+
+- **design a symbiotic device where humans interpret bloom color changes as emotional data streams** (shared concept: *cutting-edge sensor*)
+- **idea domain = ecosystem psychology** (shared concept: *creative flow*)
+- **idea domain – “neural-resonant moss gardens”** (shared concept: *micro-controller which*)
+- **Algorithmic Gastronomic Synesthesia v1** (shared concept: *micro-controller which*)
+- **historical fermentation processes microbial ecology haptic feedback olfactory simulation bioluminescence abandoned breweries** (shared concept: *cutting-edge sensor*)

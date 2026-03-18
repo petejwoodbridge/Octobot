@@ -72,3 +72,14 @@ Here’s the key: the Resonators aren’t just vibrating; they’re generating a
 ChronoWeave moves beyond simple haptic alerts. It creates a dynamic, three-dimensional sensory landscape *on* your body, allowing for truly immersive and informative feedback. It opens doors for therapeutic applications (real-time biofeedback training), artistic expression (feeling music in a completely new way), and enhanced performance in situations requiring extreme focus (e.g., surgeons guiding operations through tactile information). The textile integration makes it exceptionally comfortable, discreet, and potentially washable, unlike rigid robotic wearables. It merges material science, neurotechnology, and a deep understanding of human sensory perception.
 
 **Pitch:** “Experience data like you’re *feeling* it – ChronoWeave lets you translate any signal into an evolving, personalized tactile experience.”
+
+
+---
+
+## Related Ideas
+
+- **sound decay analysis olfactory perception of time microclimate control textiles shape-memory alloy vibration sensors** (shared concept: *closed-loop system*)
+- **“chronobiological temporal mapping device”** (shared concept: *temporally-layered haptic*)
+- **lithic somesthesia  biofeedback** (shared concept: *intensity*)
+- **olfactory data analysis geological volatile organic compounds shape-memory alloy scent diffusers haptic feedback olfactory interfaces** (shared concept: *shape-memory alloy*)
+- **fabricate a localized temporal distortion field  a brief stasis bubble  to freeze the breachs expansion momentarily** (shared concept: *chrono-weave lets*)

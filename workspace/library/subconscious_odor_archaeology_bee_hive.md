@@ -39,3 +39,14 @@ This pattern is then fed into a central ‘Neural Honeycomb’ – a swirling ma
 ---
 *Original notes:*
 ## The Apiary Archive
+
+
+---
+
+## Related Ideas
+
+- **“temporal myco harmonic resonator”** (shared concept: *forensic investigations*)
+- **neuro-temporal moss cultivation** (shared concept: *forensic investigations*)
+- **Chrono-Palette** (shared concept: *historical reconstruction*)
+- **idea domain=Chronal Texture Synthesis** (shared concept: *historical reconstruction*)
+- **“ChronalScentSynth”** (shared concept: *historical reconstruction*)

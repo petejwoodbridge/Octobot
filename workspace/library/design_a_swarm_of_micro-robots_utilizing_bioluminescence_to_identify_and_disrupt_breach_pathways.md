@@ -15,3 +15,14 @@ Firstly, each Lumen is fitted with a micro-resonator tuned to detect vibrations 
 **Why It’s Brilliant:** The GloomGuard Swarm combines the immediate visual identification of bioluminescence with a novel, reactive material science application. It's self-assembling, adaptable, and provides critical early warning and containment for a wide range of destructive events, dramatically reducing damage and increasing safety. The bacterial component ensures a sustainable, low-energy power source. 
 
 *Pitch:* “Imagine a swarm of tiny lights instantly blocking the path of a flood – that’s GloomGuard, and it's about to change disaster response forever.”
+
+
+---
+
+## Related Ideas
+
+- **create self-assembling modular habitats for marine life inspired by octopus dens incorporating adaptive ecosystem controls** (shared concept: *self-healing polymer*)
+- **creating a self-healing iridescent material replicating dragonfly wing coloration and strength through bio-integrated nanotechnology** (shared concept: *photobacterium phosphoreum*)
+- **t about stopping the breach it** (shared concept: *self-healing polymer*)
+- **develop a bio-luminescent self-repairing suit for deep-sea exploration incorporating octopus camouflage abilities** (shared concept: *self-healing polymer*)
+- **develop bio-luminescent self-repairing synthetic skin grafts for burn victims mimicking octopus regeneration** (shared concept: *photobacterium phosphoreum*)

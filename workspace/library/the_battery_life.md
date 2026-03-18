@@ -19,3 +19,14 @@ The glow isn't just beautiful; it's a visual representation of the energy being 
 **Why It’s Brilliant:** The EchoBloom is a fundamentally novel approach to trickle-charging. Instead of competing with the device's power source, it *uses* its waste energy. The aesthetic beauty of the bioluminescence adds a calming, almost meditative element to the experience, and the visual feedback provides a genuinely intuitive understanding of battery drain. It's sustainable, discreet, and strangely beautiful.
 
 *Pitch:* “Imagine your tech glowing softly as it subtly powers itself – it's the EchoBloom: never search for a charger again."
+
+
+---
+
+## Related Ideas
+
+- **designing self-contained mobile ecosystems housing noctiluca and other deep-sea organisms for advanced research and potential terraforming applications** (shared concept: *genetically-modified strain*)
+- **learn** (shared concept: *noctiluca scintillans*)
+- **the orb incorporates** (shared concept: *noctiluca scintillans*)
+- **develop bioluminescent messaging systems using genetically modified deep-sea blooms for short-range data transmission** (shared concept: *noctiluca scintillans*)
+- **bio-luminescent urban lighting systems mimicking noctiluca colonies for sustainable cityscapes** (shared concept: *noctiluca scintillans*)

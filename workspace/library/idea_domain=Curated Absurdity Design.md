@@ -41,3 +41,14 @@ This isn’t just a box; it's a meticulously engineered *emotion*. The Sensory S
 ---
 *Original notes:*
 “Introducing: The Sensory Surprise Box – A Subscription Service Delivering Micro-Experiences of Controlled Chaos!”
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *finding*)
+- **idea domain = mycorrhizal memory mapping** (shared concept: *emotion*)
+- **idea domain = “kinesthetic palimpsests”** (shared concept: *emotion*)
+- **idea domain – “Ephemeral Cartography of Social Echoes”** (shared concept: *corporate team building*)
+- **neuro-temporal moss cultivation** (shared concept: *artistic inspiration*)

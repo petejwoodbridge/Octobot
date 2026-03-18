@@ -28,3 +28,14 @@ The ChronoBrew is a wearable, haptic and olfactory immersion suit designed to re
 The ChronoBrew doesn’t just *show* fermentation; it *lets* you *feel* and *smell* it. By combining cutting-edge sensor technology, microbiome manipulation, and haptic feedback, it provides an unparalleled immersive understanding of historical brewing practices – unlocking valuable data on microbial ecology and recreating lost sensory experiences. Furthermore, the suit's data collection capabilities can revolutionize our understanding of ancient fermentation and inform modern brewing techniques, preserving cultural heritage and potentially leading to entirely new flavor profiles.
 
 **Pitch:** "Experience the birth of a masterpiece – literally, feel the yeast's rhythm and inhale the history."
+
+
+---
+
+## Related Ideas
+
+- **investigate novel materials for creating calming sensory experiences** (shared concept: *haptic feedback system*)
+- **geological empathy mapping** (shared concept: *haptic feedback system*)
+- **idea domain - sonogenetic memory weaving** (shared concept: *haptic feedback system*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *haptic feedback system*)
+- **Sonospheric Cartography of Transient Emotions** (shared concept: *haptic feedback system*)

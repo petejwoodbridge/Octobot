@@ -31,3 +31,13 @@ The core of A.O.R.S. is the Harmonic Organ Sculptor – a gleaming, bubble-gum p
 *   **Arthritis Relief:**  Realign cartilage and alleviate joint pain through harmonic restructuring.
 
 ## Why
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-acoustic mapping*)
+- **“Ephemeral Tactile Reconstruction”** (shared concept: *bio-acoustic mapping*)
+- **circadian rhythms textile integration moss colonies bio-acoustic output** (shared concept: *bio-acoustic mapping*)
+- **neuro-resonant fossil simulation technology bio-acoustic mapping of fossilized remains haptic feedback systems for geological data** (shared concept: *bio-acoustic mapping*)
+- **bio-acoustic mapping develop a bloom-integrated system that creates 3d sonic maps of environments using echolocation identifying and labeling objects in real-time** (shared concept: *bio-acoustic mapping*)

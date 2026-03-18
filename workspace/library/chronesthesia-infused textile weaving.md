@@ -31,3 +31,14 @@ The weaving itself is done with a ‘chrono-thread’ – a fiber infused with a
 
 *   **Therapeutic Recall:** Helping patients with Alzheimer’s or dementia reconnect with lost memories and improve their quality of life.
 *   **Personalized Comfort Blankets:** Creating unique blankets for individuals with anxiety, offering a grounding and comforting experience based on their happiest memories
+
+
+---
+
+## Related Ideas
+
+- **idea domain - sonogenetic memory weaving** (shared concept: *representations*)
+- **soniferous geological archiving** (shared concept: *micro-resonators*)
+- **vibrational resonance mapping shape-memory alloy bio-integration temporal data compression textiles** (shared concept: *micro-resonators*)
+- **subconscious olfactory archiving** (shared concept: *therapeutic recall*)
+- **chronal olfactory layering prototype** (shared concept: *therapeutic recall*)

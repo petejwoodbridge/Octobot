@@ -25,3 +25,14 @@ The Chronospora allows researchers to *feel* the passage of time within a locati
 The Chronospora uniquely merges bioacoustics, statistical analysis, and haptic technology to offer an unprecedented level of immersion in historical data. It bypasses subjective interpretation and allows researchers to directly experience the ‘memory’ embedded within decayed organic matter. It’s a powerful tool for archaeological reconstruction, forensic science, and even architectural preservation, bringing the past to life in a truly visceral way. 
 
 **Pitch:** “Imagine feeling the moment a building fell apart – that’s what the Chronospora delivers, transforming data into a tangible, historical experience.”
+
+
+---
+
+## Related Ideas
+
+- **ancient stone tool flavor profiles synesthesia haptic feedback gastronomy archaeology** (shared concept: *haptic mapping*)
+- **bio-printing temporal gradients bacterial biofilm mapping olfactory feedback systems haptic rendering of geological strata** (shared concept: *haptic mapping*)
+- **idea domain - “kinesthetic memory archiving with biofeedback”** (shared concept: *texture*)
+- **idea domain=Chrono-Gastric Cartography** (shared concept: *texture*)
+- **idea domain=KinestheticCartography** (shared concept: *texture*)

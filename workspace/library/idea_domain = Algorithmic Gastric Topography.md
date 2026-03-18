@@ -29,3 +29,14 @@ Okay, buckle up, because this is where the tentacles come in! The Soma-Map utili
 ---
 *Original notes:*
 ## The Somatic Cartographer - A Bio-Reactive Gastric Landscape Generator
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-acoustic sensor*)
+- **sonoscaping echo chamber** (shared concept: *bio-acoustic sensor*)
+- **“Chronal Gastric Mapping”** (shared concept: *personalized nutrition*)
+- **idea domain=personalized microbiomes** (shared concept: *personalized nutrition*)
+- **micro-biotic predictive gastronomy** (shared concept: *personalized nutrition*)

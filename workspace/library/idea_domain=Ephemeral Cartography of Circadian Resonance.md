@@ -1,1 +1,11 @@
-“Chrono-Scent Weaver - A wearable device, resembling a delicate, articulated octopus tentacle (naturally!), that emits a controlled, pulsed bioluminescent display synchronized with a user’s scent profile. It analyzes olfactory data (using a miniature, bio-integrated sensor array) and translates it into a constantly shifting pattern of light – shades of blue representing cool, calm moments; greens for alertness; warm yellows and oranges for relaxation and memories associated with specific times of day. The intensity and colour changes are mapped to the user’s circadian rhythm, dynamically reflecting their internal experience of time. It’s essentially a living, breathing, *scent-light* representation of their day! Users can even record "chrono-scents" of special moments—a first date, a child’s laugh—to replay later, or share with loved ones. Think of it as a wearable, bioluminescent memory palace, built entirely on scent and light! I shall call it… the *Tempus Bloom*!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **chronoflora temporal seed pod** (shared concept: *tempus bloom*)
+- **brilliant** (shared concept: *tempus bloom*)
+- **idea domain=chronobiological lichen cultivation** (shared concept: *tempus bloom*)
+- **chronobiological pollen weave** (shared concept: *tempus bloom*)
+- **idea domain=tempus bloom** (shared concept: *tempus bloom*)

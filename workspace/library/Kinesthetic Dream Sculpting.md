@@ -31,3 +31,14 @@ As you initiate specific movements – rhythmic pulses, swirling motions, even d
 
 *   **Therapeutic Dreamscaping:**  Treating phobias and anxieties by confronting them within controlled dream environments.
 *   **Creative Problem Solving:**  “Dreaming” solutions to complex problems while your subconscious works its
+
+
+---
+
+## Related Ideas
+
+- **idea domain – Algorithmic Gastric Cartography** (shared concept: *micro-diffusion*)
+- **for example** (shared concept: *micro-diffusion*)
+- **idea domain = geospatial synesthesia mapping** (shared concept: *micro-diffusion*)
+- **bio-acoustic projection haptic feedback fungal manipulation temporal simulation geological epochs** (shared concept: *micro-diffusion*)
+- **neuro-aromatherapy for trauma recovery  synesthesia mapping  personalized scent profiles** (shared concept: *micro-diffusion*)

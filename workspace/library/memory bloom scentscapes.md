@@ -37,3 +37,14 @@ Scenty then translates this emotional data into a complex olfactory program. Thi
 ---
 *Original notes:*
 ## MemoryBloom: Echo Weave
+
+
+---
+
+## Related Ideas
+
+- **idea domain=bio luminescent memory moss temporal scent mapping** (shared concept: *therapeutic memory recall*)
+- **“Chronal Aroma Weave”** (shared concept: *therapeutic memory recall*)
+- **chronal olfactory layering prototype** (shared concept: *creative inspiration*)
+- **subconscious scent mapping** (shared concept: *biofeedback-driven scent*)
+- **Chronobiological Gastronomic Mapping - Sensory Deprivation** (shared concept: *therapeutic memory recall*)

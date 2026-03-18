@@ -28,3 +28,13 @@ This data is fed into a generative AI we’ve affectionately nicknamed “Archie
 ## Potential Applications
 
 *   **Genealogical
+
+---
+
+## Related Ideas
+
+- **gadgets** (shared concept: *overview behold*)
+- **Chronal Gastric Topography** (shared concept: *vibrations*)
+- **Precognitive Gastronomy** (shared concept: *overview behold*)
+- **idea domain - biophotonic echo-gardening** (shared concept: *overview behold*)
+- **idea pitch** (shared concept: *overview behold*)

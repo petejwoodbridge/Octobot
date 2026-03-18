@@ -22,3 +22,14 @@ EchoBloom represents a truly novel approach to memory and emotional recall. By c
 
 ## Elevator Pitch
 Relive your most cherished memories – feel them again with EchoBloom.
+
+
+---
+
+## Related Ideas
+
+- **synchronized chickens - origins animal behaviour robotics biofeedback** (shared concept: *real-time biofeedback*)
+- **chronoscaping prototype concept** (shared concept: *real-time biofeedback*)
+- **chronal scent layering device** (shared concept: *real-time biofeedback*)
+- **idea domain - biofeedback-integrated mindfulness** (shared concept: *real-time biofeedback*)
+- **chromatic lichen-symbiotic sleep architecture** (shared concept: *non-invasive eeg*)

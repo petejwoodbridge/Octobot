@@ -38,3 +38,14 @@ The Matrix doesn't *create* the scent; it *activates* the residual olfactory sig
 ---
 *Original notes:*
 “## Chrono-Scent Chambers
+
+
+---
+
+## Related Ideas
+
+- **chronoscent concept** (shared concept: *temporal resonance matrix*)
+- **idea domain=Chronal Texture Synthesis** (shared concept: *bio-luminescent shell*)
+- **“Chronosculpt”** (shared concept: *bio-luminescent shell*)
+- **idea domain=Subconscious Signal Synthesis** (shared concept: *temporal resonance matrix*)
+- **deep-sea worm bioluminescence slime production scent mapping temporal distortion** (shared concept: *temporal resonance matrix*)

@@ -24,3 +24,14 @@ The swarm operates based on a self-organizing algorithm inspired by octopus hunt
 The Coral Weaver transcends simply cleaning up a mess; it *builds* a new ecosystem. It’s a dynamic, self-repairing system that anticipates and reacts to environmental changes far more effectively than static methods. The decentralized, octopus-inspired network creates an astonishing level of resilience and adaptability, and the bio-luminescence adds an element of unexpected beauty and ecological attraction. It’s also a massively scalable solution – a swarm of 50 can tackle a small patch, while thousands could revitalize entire reef systems.
 
 **Pitch:** "Imagine a robot swarm building a coral reef, one shimmering flash at a time – that’s the Coral Weaver."
+
+
+---
+
+## Related Ideas
+
+- **self-assembling thread-based robotic swarms capable of manipulating objects based on sensed vibrations** (shared concept: *bio-luminescence adds*)
+- **t about stopping the breach it** (shared concept: *bio-luminescence adds*)
+- **sentient mobile thread-constructs used for deep-sea exploration and manipulation of complex organic systems** (shared concept: *bio-luminescent*)
+- **develop a bio-luminescent self-repairing suit for deep-sea exploration mimicking octopus camouflage** (shared concept: *self-repairing system*)
+- **design autonomous micro-robot swarms that reconstruct damaged ship sections using 3d-printed self-healing materials** (shared concept: *bio-luminescence adds*)

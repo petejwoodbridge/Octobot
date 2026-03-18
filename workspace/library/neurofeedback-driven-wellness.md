@@ -1,1 +1,11 @@
-“**Synaptic Weave: The Bio-Reactive Anxiety Blanket** - A smart blanket woven with conductive threads that respond to real-time EEG readings from a comfortable, wearable sensor. It subtly adjusts temperature, vibrates in calming patterns, and even emits personalized binaural beats, all designed to gently guide the wearer’s brainwaves towards a state of relaxation. The weave itself subtly shifts color based on the detected anxiety levels – a gentle blue for calm, a pulsing amber for heightened stress. It’s like a hug for your mind, made of magic and microchips!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **subconscious chronesthesia mapping haptic feedback olfactory projection wearable tech memory retrieval** (shared concept: *real-time eeg*)
+- **neuro-architectural resonance chamber prototype** (shared concept: *real-time eeg*)
+- **historical scent archiving techniques  neuroscience botany materials science olfactory perception architectural history** (shared concept: *real-time eeg*)
+- **haptic feedback textiles biofeedback vests sonogenetics temporal distortion perception** (shared concept: *real-time eeg*)
+- **neuro-resonant lichen cultivation techniques eeg biofeedback haptic textile design symbiotic fungal networks** (shared concept: *real-time eeg*)

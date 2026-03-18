@@ -22,3 +22,14 @@ The Chrono-Palate is a handheld device utilizing a combination of bio-sensor tec
 The Chrono-Palate moves beyond simply identifying *that* bacteria was present. It creates a functioning, digitally reconstructed flavor profile. This is a monumental leap forward in understanding extinct hominid diets and allows us to move beyond educated guesses and engage with the sensory experience of the past in a quantifiable way. The device could even be adapted for modern applications like artisan food production, allowing producers to recreate historically accurate flavors or explore novel combinations.
 
 **Pitch:** “Imagine tasting a meal from 10,000 years ago – that’s the Chrono-Palate, bringing the past to your palate.”
+
+
+---
+
+## Related Ideas
+
+- **chronal sediment sketching flavor archive** (shared concept: *chrono-palate moves*)
+- **bio-acoustic flavour profiles  temporal gastronomy  microbiome** (shared concept: *chrono-palate moves*)
+- **Chronobiological Memory Palimpsest Prototype** (shared concept: *bio-sensor technology*)
+- **advanced bio-sensor technology for volatile organic compound voc analysis combined with shape-memory alloy textile construction** (shared concept: *bio-sensor technology*)
+- **idea domain = “Temporal Gastronomic Cartography”** (shared concept: *chrono-palate*)

@@ -36,3 +36,14 @@ Then, a bespoke algorithm – lovingly nicknamed “BloomBot” – analyzes thi
 ---
 *Original notes:*
 **Project: ChronoFlora – The Temporal Bloom Patch**
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-acoustic sensor*)
+- **idea domain = automated moss cultivation & atmospheric manipulation for personalized ‘memory gardens’** (shared concept: *chromatic feedback loop*)
+- **subconscious textile resonance mapping** (shared concept: *chromatic feedback loop*)
+- **chronobiological cartography** (shared concept: *chromatic feedback loop*)
+- **haptic storytelling techniques geospatial data analysis volatile organic compound identification ancient lullaby research** (shared concept: *bio-acoustic sensor*)

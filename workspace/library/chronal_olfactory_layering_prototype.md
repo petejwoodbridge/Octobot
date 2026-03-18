@@ -30,3 +30,14 @@ The COLO-P isn’t your average diffuser, oh no. It’s a shimmering, iridescent
 *   **Therapeutic Recall:** Helping patients with Alzheimer’s or PTSD revisit positive memories.
 *   **Creative Inspiration:**  Artists and writers could use it to evoke specific atmospheres and sensory details.
 *   **Historical Immersion:**  Museums could offer ‘smell-scapes’ of historical periods.
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *temporal resonance field*)
+- **idea domain=subconscious cartography of forgotten smells** (shared concept: *creative inspiration*)
+- **idea domain - “kinesthetic memory archiving with biofeedback”** (shared concept: *creative inspiration*)
+- **micro-seasonal olfactory archiving  playback - related sensors voc capture technology diffusion methods shape-memory alloy integration human olfactory perception research** (shared concept: *micro-fluidic system*)
+- **idea domain=personalized chronesthesia generation** (shared concept: *historical immersion*)

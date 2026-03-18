@@ -29,3 +29,13 @@ But here's the kicker: integrated biosensors – tiny, almost invisible, octopus
 *   **Enhanced Creative Workspaces:** “Creative Spark” profile – think citrus and pine – to unlock innovative thinking.
 *   **Personalized Sleep Enhancement:** Gentle chamomile and sandalwood to lull you into a blissful slumber.
 *   **Therapeutic
+
+---
+
+## Related Ideas
+
+- **idea pitch** (shared concept: *pre-programmed profiles*)
+- **Zenith Cinema - Interactive Meditation Films** (shared concept: *stress reduction*)
+- **Algorithmic Joyful Culinary Design** (shared concept: *stress reduction*)
+- **subconscious scent weaving** (shared concept: *stress reduction*)
+- **idea domain = “Sensory Archaeology – Bio-Temporal Immersion”** (shared concept: *bio-reactive scent*)

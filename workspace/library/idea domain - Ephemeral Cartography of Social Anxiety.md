@@ -32,3 +32,14 @@ Crucially, Scylla isn’t just reacting; it’s *responding*. As the user experi
 ---
 *Original notes:*
 ## The Anxietropolis Navigator
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Ephemeral Cartography of Lost Echoes - Dream Weaver** (shared concept: *ephemeral cartography*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *ephemeral cartography*)
+- **idea domain – “Ephemeral Cartography of Social Echoes”** (shared concept: *ephemeral cartography*)
+- **idea domain - Ephemeral Cartography of Acoustic Residue** (shared concept: *ephemeral cartography*)
+- **ephemeral cartography of transient urban micro-ecosystems** (shared concept: *ephemeral cartography*)

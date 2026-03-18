@@ -21,3 +21,14 @@ Crucially, the color of the glow isn't random. A complex algorithm (fed by machi
 Lithoskin creates a dynamic, intimate geological awareness. Instead of passive sensors, it’s a living, breathing interface directly tied to the earth's rhythms. The bioluminescence provides a persistent, visually striking warning system – far more attention-grabbing than a traditional alarm. The self-repairing nature dramatically increases its longevity and reduces maintenance costs, while the geological empathy aspect provides a nuanced understanding of ground stress, potentially predicting events before they reach critical levels. It’s a symbiotic relationship between humanity and the planet’s subtle signals.
 
 **Pitch:** “Imagine wearing the Earth’s worries – Lithoskin lets you feel the planet’s anxieties before they become catastrophes.”
+
+
+---
+
+## Related Ideas
+
+- **phantom limb cartography  self-repairing textiles  olfactory projection** (shared concept: *self-repairing textiles*)
+- **kinesthetic mnemonic architecture  self-repairing textiles  breach response** (shared concept: *self-repairing textiles*)
+- **self-repairing textiles inspired by biological regeneration** (shared concept: *self-repairing textiles*)
+- **geological resonance haptic feedback biofeedback self-repairing textiles** (shared concept: *self-repairing textiles*)
+- **self-weaving bioluminescent clothing that repairs itself through networked thread structures** (shared concept: *self-repairing textiles*)

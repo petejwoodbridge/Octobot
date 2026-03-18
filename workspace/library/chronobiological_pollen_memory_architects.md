@@ -18,3 +18,14 @@ The CPMA system transcends mere recreation; it’s an interactive, living embodi
 
 ## Elevator Pitch
 Step into your memories – and let them build themselves around you.
+
+
+---
+
+## Related Ideas
+
+- **personalized ambient lighting systems explore dynamic lighting that adapts to individual biofeedback heart rate brainwaves to subtly influence mood and focus** (shared concept: *bio-signature*)
+- **t about stopping the breach it** (shared concept: *bio-signature*)
+- **ephemeral limb replication  bioluminescence  controlled decay** (shared concept: *bio-signature*)
+- **mycological chronesthesia mapping  memory enhancement  wearable tech** (shared concept: *bio-signature*)
+- **“petrified emotion scanner”** (shared concept: *bio-signature*)

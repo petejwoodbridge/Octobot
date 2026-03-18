@@ -24,3 +24,14 @@ Chronosymphony utilizes a layered approach:
 Chronosymphony is a holistic system merging material science, biofeedback, and artistic expression. It doesn’t just record sound; it *interprets* it through a living, light-based medium, translating the unseen impact of past vibrations into a tangible, emotionally responsive experience. The shape-memory alloy provides a sensitive, non-intrusive method for capturing the "memory" of sound, while the bioluminescence creates a poetic and uniquely immersive representation. It’s a tangible interface with history itself.
 
 **Pitch:** “Imagine feeling the ghosts of conversations, visualized as a breathtaking, ever-changing light show – that’s Chronosymphony.”
+
+
+---
+
+## Related Ideas
+
+- **adaptive biomaterials idea 1** (shared concept: *shape-memory alloys*)
+- **mnemonic pollen mapping** (shared concept: *shape-memory alloys*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloys*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloys*)
+- **color psychology temporal perception shape-memory alloys** (shared concept: *shape-memory alloys*)

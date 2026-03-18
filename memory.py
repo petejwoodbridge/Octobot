@@ -268,6 +268,15 @@ def increment_game_stat(key: str, delta: int = 1) -> None:
         _save_raw(data)
 
 
+def set_game_stat(key: str, value) -> None:
+    """Set a game stat to an absolute value."""
+    with _lock:
+        data = _load_raw()
+        stats = data.setdefault("game_stats", dict(_EMPTY_MEMORY["game_stats"]))
+        stats[key] = value
+        _save_raw(data)
+
+
 def adjust_curiosity(delta: int) -> int:
     """Adjust curiosity level by *delta*, clamped 0–100. Returns new value."""
     with _lock:

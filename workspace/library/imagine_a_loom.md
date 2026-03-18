@@ -23,3 +23,14 @@ Here’s the process: The user wears a thin, flexible biosensor patch that conti
 The Chromatic Weaver fuses biological technology with artistic creation. It’s a tangible representation of internal states, a living piece of wearable art, and a completely sustainable textile production method. It offers a revolutionary approach to emotional communication, wellbeing, and bespoke fabric design. 
 
 **Pitch:** “Imagine clothing that literally glows with your feelings – the Chromatic Weaver lets you wear your heart on your sleeve, quite literally.”
+
+
+---
+
+## Related Ideas
+
+- **develop bio-luminescent self-repairing synthetic skin grafts for burn victims mimicking octopus regeneration** (shared concept: *photobacterium phosphoreum*)
+- **idea domain - “biometric echo-gardening”** (shared concept: *mood palette*)
+- **bio-reactive ceramic vessels bioluminescence sound recording environmental data microbial cultures** (shared concept: *photobacterium phosphoreum*)
+- **bio-integrated basalt structures explore growing living organisms within basalt pores for self-repairing bioluminescent buildings** (shared concept: *photobacterium phosphoreum*)
+- **bio-luminescent thread networks for personalized environmental sensing and feedback** (shared concept: *photobacterium phosphoreum*)

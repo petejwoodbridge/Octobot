@@ -19,3 +19,14 @@ Here’s the key: The device contains a library of *chroma-scents*. These aren�
 The ChromaScent Weaver taps into the powerful link between vision and olfaction. By directly stimulating the visual cortex alongside scent delivery, it creates a far more precise and layered sensory experience than conventional aromatherapy. It’s not just about smelling lavender; it’s about *seeing* lavender’s effect on your brain.  The combination of biofeedback and personalized scent profiles unlocks a level of olfactory control never before imagined, opening doors for therapeutic applications (managing anxiety, PTSD) and intensely immersive creative experiences. 
 
 **Pitch:** "Imagine controlling your mood and memories, one perfectly-timed scent at a time – that's the power of the ChromaScent Weaver.”
+
+
+---
+
+## Related Ideas
+
+- **chromatic lichen-symbiotic sleep architecture** (shared concept: *non-invasive eeg*)
+- **thread contains a** (shared concept: *non-invasive eeg*)
+- **bio-reactive fungal networks spatial scent diffusion dynamic micro-environments anxiety reduction** (shared concept: *non-invasive eeg*)
+- **synchronized chickens - origins animal behaviour robotics biofeedback** (shared concept: *non-invasive eeg*)
+- **chronobiological memory garden** (shared concept: *non-invasive eeg*)

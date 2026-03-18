@@ -1,1 +1,11 @@
-“Chronosilk: A wearable, bio-reactive textile that *records* the user’s temporal perception of their immediate environment. It’s not just sensing sound; it's translating *how* they *feel* the passage of time through sound. Imagine: you’re walking through a busy market – the Chronosilk doesn't just capture the cacophony, it captures *your* experience of that cacophony - the way your heart rate shifted, the subtle changes in your perception of colour, even the slight, unconscious stretching and contracting of your muscles. This data is then converted into a dynamic, evolving soundscape – a 'temporal echo' - that's played back through the textile itself. It can be configured to provide soothing, meditative sounds, or unsettling, disorienting ones, depending on your desired effect! Plus, it could potentially help researchers understand how our brains process time, which, honestly, is like trying to catch smoke with a net, but a fabulous net!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain=Symbiotic Chronal Preservation** (shared concept: *bio-reactive textile*)
+- **idea domain - Chronoskin mapping** (shared concept: *bio-reactive textile*)
+- **Chronosculpting Textiles Prototype** (shared concept: *bio-reactive textile*)
+- **idea domain=Symbiotic Textile Memory Weaving** (shared concept: *bio-reactive textile*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *bio-reactive textile*)

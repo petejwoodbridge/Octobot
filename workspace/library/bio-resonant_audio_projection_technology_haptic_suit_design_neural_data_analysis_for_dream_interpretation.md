@@ -23,3 +23,14 @@ The Somnium Weaver is a haptic suit integrated with bio-resonant audio projectio
 The Somnium Weaver moves beyond passive observation of dreams to an active, embodied exploration. It bridges the gap between the subjective experience of dreaming and objective neurological data, offering a truly immersive and actionable approach to dream interpretation. The bio-resonant projection primes the dream state, while the haptic feedback creates a visceral, emotional map of the subconscious. It's a system designed to not just tell you *what* you dreamed, but *feel* it.
 
 **Pitch:** “Imagine understanding your deepest fears, not through words, but through the gentle touch of your own subconscious - with the Somnium Weaver, you’ll finally know what your dreams are *really* trying to tell you.”
+
+
+---
+
+## Related Ideas
+
+- **many people struggle** (shared concept: *the somnium weaver*)
+- **subconscious dream sculpting** (shared concept: *the somnium weaver*)
+- **these threads are** (shared concept: *the somnium weaver*)
+- **imagine having a** (shared concept: *the somnium weaver*)
+- **the subtle** (shared concept: *the somnium weaver*)

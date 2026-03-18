@@ -30,3 +30,14 @@ Here's the brilliantly bonkers bit! The system begins with a specially designed 
 *   **Therapeutic Music Sessions:**  Patients with sensory processing disorders could experience music in a deeply immersive, tactile way.
 *   **Musical Education:** Students could literally *see* and *feel* the structure and dynamics of a piece of music.
 *   **Live Performance Installations:** Imagine a concert where the audience isn
+
+
+---
+
+## Related Ideas
+
+- **and prototype a system for personalized music generation based on emotional state and activity levels  ideal for studying relaxation or creative work** (shared concept: *responds*)
+- **and generate ideas based on the library index regarding biofeedback and immersive experiences** (shared concept: *responds*)
+- **kinesthetic mnemonic architecture  self-repairing textiles  breach response** (shared concept: *responds*)
+- **“Chronal Gastric Mapping”** (shared concept: *becomes*)
+- **bioluminescent lichen movement soundscapes rhythmic textiles** (shared concept: *becomes*)

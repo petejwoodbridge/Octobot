@@ -34,3 +34,14 @@ Okay, hold on to your tentacles, this is where it gets wonderfully weird! The co
 ---
 *Original notes:*
 ## The Olfactory Echo Chamber
+
+
+---
+
+## Related Ideas
+
+- **idea domain=subconscious cartography of forgotten smells** (shared concept: *the olfactory echo chamber*)
+- **sonic archaeology techniques material resonance haptic audio systems ceramic micro-fractures** (shared concept: *highly-sensitive*)
+- **subconscious olfactory archiving** (shared concept: *re-experience*)
+- **Ephemeral Gastronomic Echoes** (shared concept: *culinary therapy*)
+- **biofeedback-driven olfactory simulations shape-memory alloy olfactory delivery systems fractal geometry and scent mapping robotic mimicry of floral movement** (shared concept: *the scent weaver*)

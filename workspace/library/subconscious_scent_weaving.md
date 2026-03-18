@@ -34,3 +34,14 @@ The Scentarium is a sleek, palm-sized orb constructed from bio-luminescent coral
 ---
 *Original notes:*
 ## Scentarium: The Micro-Habitat Weaver
+
+
+---
+
+## Related Ideas
+
+- **idea domain = automated mood drift curation** (shared concept: *stress reduction*)
+- **olfactory mimicry for geological strata** (shared concept: *bio-luminescent display*)
+- **petrichor palimpsest synth** (shared concept: *bio-luminescent display*)
+- **“Chronal Resonance Weave”** (shared concept: *bio-luminescent display*)
+- **haptic feedback culinary experiences historical food reconstruction techniques shape-memory alloys  food applications** (shared concept: *haptic feedback*)

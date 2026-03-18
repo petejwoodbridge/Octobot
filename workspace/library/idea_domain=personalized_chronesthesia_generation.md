@@ -35,3 +35,14 @@ The ChronoShell operates on a principle I call “Sensory Echo Mapping.” It ut
 ---
 *Original notes:*
 ## ChronoShell: The Sensory Time Capsule
+
+
+---
+
+## Related Ideas
+
+- **“Chronal Resonance Weave”** (shared concept: *genetically-modified*)
+- **chronal olfactory layering prototype** (shared concept: *historical immersion*)
+- **fungal neural interfaces and bio-architectural design** (shared concept: *genetically-modified*)
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *re-experiencing*)
+- **idea domain - “kinesthetic memory archiving with biofeedback”** (shared concept: *re-experiencing*)

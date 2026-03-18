@@ -21,3 +21,14 @@ For example, to ‘de-age’ a cracked porcelain doll, the Chronosculptor would 
 The Chronosculptor isn't just about restoration; it’s about controlled experimentation and extending lifespan. Imagine accelerating the testing of a new alloy to determine its long-term strength, then reversing the process to restore it to its pristine state. It combines quantum physics, acoustics, and materials science into a genuinely revolutionary tool. Furthermore, the data collected during the process – the object’s “age signature” – provides invaluable insights into material degradation, informing future designs and conservation strategies. 
 
 *Pitch:* “Let me show you how to resurrect the past and future of any object, one perfectly-preserved moment at a time.”
+
+
+---
+
+## Related Ideas
+
+- **Chrono-resonance Textile Weaver - Concept** (shared concept: *de-aging*)
+- **develop bio-adhesive mimics mimicking cephalopod camouflage instantly sealing punctures in structures** (shared concept: *long-term durability*)
+- **structural** (shared concept: *real-time via*)
+- **idea domain=Ecological Optimism Design** (shared concept: *real-time via*)
+- **algorithmic dust cartography - refinement  expansion** (shared concept: *real-time via*)

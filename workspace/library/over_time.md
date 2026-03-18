@@ -17,3 +17,13 @@ Crucially, the ChronoBloom also has a ‘Memory Seed’ component. Throughout th
 **Why It’s Brilliant:** The ChronoBloom moves beyond simple memory recall. It uses a tangible, beautiful, and slightly mysterious element (living moss) to create a personalized, subconscious awareness of time. It's a constant, gentle reminder to be present and intentional, transforming wasted moments into valuable experiences. It blends biofeedback, behavioral psychology, and a touch of magic to fundamentally change your relationship with time.
 
 *Pitch:* “Imagine a tiny garden that shows you exactly how you're spending your life – and helps you choose to spend it better."
+
+
+---
+
+## Related Ideas
+
+- **create autonomous sentient coral reefs capable of filtering out negative emotional energy and generating zones of profound tranquility** (shared concept: *memory seed*)
+- **Symbiotic Microbial Scent Synthesis** (shared concept: *memory seed*)
+- **chronobiological memory garden** (shared concept: *memory seed*)
+- **Chrono-Floral Synthesis - Prototype Design** (shared concept: *memory seed*)

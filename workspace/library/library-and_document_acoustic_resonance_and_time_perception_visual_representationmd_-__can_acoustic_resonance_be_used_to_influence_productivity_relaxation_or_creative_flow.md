@@ -25,3 +25,14 @@ The obsidian sphere itself acts as a focal point, amplifying the acoustic effect
 ChronoHarmonics goes beyond simple noise masking. It leverages the profound link between sound, the brain, and our subjective experience of time. By actively shaping acoustic resonance, it’s not just influencing mood; it’s actively controlling *perception*. This system creates a powerful feedback loop – the user’s goal informs the soundscape, and the soundscape, in turn, influences their goal attainment.
 
 **Pitch:** “Imagine a device that doesn’t just make you feel productive; it makes you *believe* you have more time to be productive – ChronoHarmonics lets you sculpt your reality, one sound wave at a time.”
+
+
+---
+
+## Related Ideas
+
+- **biofeedback plant sensors temporal ecology haptic resonance technology** (shared concept: *the resonance core*)
+- **idea domain = adaptive microbial scent layering** (shared concept: *pre-programmed playlists*)
+- **idea domain=sonogenetic lithography** (shared concept: *micro-speakers*)
+- **bioluminescent invertebrates coral reef ecosystems biofeedback ultrasonic resonance cephalopod movement patterns** (shared concept: *micro-speakers*)
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *micro-speakers*)

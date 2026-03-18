@@ -15,3 +15,14 @@ The core technology is the “Tension Matrix.” Each thread is linked to a micr
 **Why It’s Brilliant:** The Weaver’s Archive fundamentally alters data storage. It's simultaneously incredibly dense (a single, perfectly woven thread could hold petabytes of data), resistant to electromagnetic interference (the data is encoded in physical entanglement), and allows for dynamic updates – adding new knot patterns effectively ‘writes’ new information onto the archive. Furthermore, the act of weaving itself becomes part of the archival process, creating a tangible, aesthetically beautiful record of information. 
 
 *Pitch:* “Imagine storing your life's memories, or the world's knowledge, in a single, breathtaking tapestry – that’s the Weaver’s Archive.”
+
+
+---
+
+## Related Ideas
+
+- **neuro-linked personal microclimates capable of proactively adjusting temperature humidity and even scent based on emotional state** (shared concept: *micro-sensor array*)
+- **ancient stone tool flavor profiles synesthesia haptic feedback gastronomy archaeology** (shared concept: *micro-sensor array*)
+- **idea domain = “Ephemeral Cartography of Tactile Nostalgia”** (shared concept: *micro-sensor array*)
+- **resonant fungal echo-gardens - concept refinement** (shared concept: *micro-sensor array*)
+- **design a symbiotic device where humans interpret bloom color changes as emotional data streams** (shared concept: *micro-sensor array*)

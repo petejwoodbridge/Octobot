@@ -39,3 +39,14 @@ Essentially, the Chronal Resonator ‘scans’ the environment for residual temp
 ---
 *Original notes:*
 “## The Echo-Skin: Temporal Tactility”
+
+
+---
+
+## Related Ideas
+
+- **idea domain – “kinesthetic cartography of phantom limb sensation”** (shared concept: *echo-skin isn*)
+- **chronal pollen archiving concept** (shared concept: *echo-location system*)
+- **chronesthesia-infused textile weaving** (shared concept: *haptic feedback matrix*)
+- **“echo skin mapping prototype”** (shared concept: *echo-skin*)
+- **idea domain - “Temporal Echo Weavers”** (shared concept: *multi-layered tactile*)

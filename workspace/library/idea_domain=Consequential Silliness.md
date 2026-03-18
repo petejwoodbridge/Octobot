@@ -43,3 +43,14 @@ The Serenity Strand isn
 ---
 *Original notes:*
 ## The Serenity Strand
+
+
+---
+
+## Related Ideas
+
+- **idea domain - micro-ritual orchestration** (shared concept: *corporate stress reduction*)
+- **idea domain – Ephemeral Tactile Archaeology** (shared concept: *bio-luminescent octopi*)
+- **“Chronal Aroma Synthesis”** (shared concept: *bio-luminescent octopi*)
+- **idea domain – “geo-sensory weaving** (shared concept: *bio-luminescent octopi*)
+- **chronoscaping project proposal** (shared concept: *bio-luminescent octopi*)

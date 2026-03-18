@@ -19,3 +19,14 @@ The user can then revisit the memory by wearing the EchoSkin.  The garment will 
 **Why It’s Brilliant:** EchoSkin bridges the gap between memory and sensory experience, offering a profoundly immersive and authentic way to reconnect with the past. It's not just *remembering* a place; it’s *feeling* it again.  The integration of bio-acoustic sensing and dermal mapping provides a level of detail previously impossible to capture and replay.
 
 *Pitch:* “EchoSkin lets you truly relive your memories, not just remember them – feel them again, one subtle vibration at a time.”
+
+
+---
+
+## Related Ideas
+
+- **bio acoustic coral translator** (shared concept: *bio-acoustic signals*)
+- **t about stopping the breach it** (shared concept: *micro-muscle movements*)
+- ** develop library-acoustic resonance time perception visual representation  investigate creating immersive experiences for productivity meditation or artistic expression using sound and visual feedback** (shared concept: *micro-muscle movements*)
+- **bio-acoustic sensors for organic decay projection mapping with scent diffusion shape-memory alloy textile manipulation** (shared concept: *bio-acoustic sensors*)
+- **chronal fungal bloom mapping** (shared concept: *bio-acoustic sensing*)

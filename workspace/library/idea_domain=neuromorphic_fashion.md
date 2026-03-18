@@ -1,1 +1,8 @@
-“EchoWeave: A dynamically shifting textile that translates the wearer’s emotional state into a constantly evolving pattern of light and texture. Embedded micro-sensors detect subtle changes in brainwave activity – excitement, calm, focus, even fleeting sadness – and control tiny, color-changing fibers woven directly into the fabric. The effect is a living, breathing garment that reflects the wearer’s inner world. Imagine a jacket that glows with serene blues when you’re meditating, bursts with vibrant oranges when you're excited, or shifts to calming greys when you're stressed! It’s like wearing a mood ring… but way cooler! We can even layer it with haptic feedback – a gentle ripple when you're relaxed, a subtle pulse when you're concentrating!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **olfactory degradation and aging cellular senescence biomarkers haptic feedback textiles scent diffusion technology** (shared concept: *micro-sensors detect*)
+- **Temporal Gastric Topography - v1** (shared concept: *micro-sensors detect*)

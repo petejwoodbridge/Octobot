@@ -19,3 +19,14 @@ Calyx employs a decentralized, octopus-like manipulation system. Thousands of mi
 The Morpho-Shell represents a paradigm shift in architectural design. It merges biophilic design principles (responding to nature) with advanced robotics and AI, creating a symbiotic relationship between building and inhabitant. It moves beyond simply adjusting temperature or lighting – it actively shapes the space to optimize wellbeing, productivity, and even emotional state. The decentralized control system ensures resilience – a localized system failure doesn't compromise the entire building's functionality.  Furthermore, the bio-polymer skin offers a sustainable, self-regulating facade, drastically reducing energy consumption.
 
 **Pitch:** “Imagine a home that anticipates your every need – the Morpho-Shell: Buildings that breathe with you.”
+
+
+---
+
+## Related Ideas
+
+- **the immense frustration** (shared concept: *shape-memory alloy*)
+- **idea domain=Symbiotic echo-mapping of urban decay** (shared concept: *micro-robotic actuators*)
+- **kinesthetic palimpsest concept** (shared concept: *shape-memory alloy*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloy*)
+- **“chronal bloom weaver”** (shared concept: *shape-memory alloy*)

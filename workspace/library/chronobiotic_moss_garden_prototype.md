@@ -18,3 +18,14 @@ ChronoBloom is a genuinely novel experience. It’s not just about recreating a 
 
 ## Elevator Pitch
 “Hear the dawn of life – one vibrating moss bloom at a time.”
+
+
+---
+
+## Related Ideas
+
+- **bio-acoustic temporal mapping techniques  specifically how animals perceive and utilize time through sound** (shared concept: *bio-acoustic monitoring*)
+- **the algae** (shared concept: *bio-acoustic monitoring*)
+- **t about stopping the breach it** (shared concept: *bio-acoustic monitoring*)
+- **aquatic interface design** (shared concept: *bio-acoustic monitoring*)
+- **chronobiological bioluminescent terrarium** (shared concept: *chronobloom*)

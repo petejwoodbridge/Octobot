@@ -28,3 +28,14 @@ A companion app allows parents to customize scenarios, track progress, and intro
 LuminaLedger combines the power of visual learning, tactile play, and bioluminescence – an inherently captivating natural phenomenon – to create a genuinely engaging and memorable educational experience. It bridges the gap between theoretical knowledge and practical application, fostering a lifelong understanding of financial wellbeing in a way no spreadsheet ever could.  It’s neuroscientifically proven effective, utilizing color association and interactive feedback to create strong, lasting memories.
 
 **Pitch:** “Introducing LuminaLedger – let’s light up their financial future, one glowing block at a time!”
+
+
+---
+
+## Related Ideas
+
+- **neuro-linked personal microclimates capable of proactively adjusting temperature humidity and even scent based on emotional state** (shared concept: *bio-luminescent polymer*)
+- **idea domain=Ephemeral Resonance Sculpting** (shared concept: *bio-luminescent polymer*)
+- **subconscious sensory habitat chronospatial weaver** (shared concept: *bio-luminescent polymer*)
+- **design a neural network-controlled morphing robotic appendage capable of dynamically patching and reinforcing compromised vessel structures** (shared concept: *bio-luminescent polymer*)
+- **chronobiological textile embroidery prototype** (shared concept: *deep-sea algae*)

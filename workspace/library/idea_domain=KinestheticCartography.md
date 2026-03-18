@@ -36,3 +36,14 @@ The user wears a specialized stylus that interacts with a holographic projector.
 ---
 *Original notes:*
 ## The Chronosculptor
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “Chronal Echo Mapping of Abandoned Infrastructure”** (shared concept: *architectural design*)
+- **idea domain=Chronobiological Cartography of Domestic Sounds** (shared concept: *architectural design*)
+- **“synesthetic cartography app”** (shared concept: *architectural design*)
+- **idea domain=Subconscious urban resonance mapping** (shared concept: *architectural design*)
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *haptic feedback*)

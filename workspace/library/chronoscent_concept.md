@@ -31,3 +31,13 @@ The user selects a target time period – let’s say, the coronation of Queen E
 *   **Therapeutic Applications:**  Help individuals with memory loss or trauma by triggering positive memories through scent. (Potentially *very* powerful, requires careful ethical consideration, of course!).
 *   **Museum Exhibits:**  Revolutionize museum experiences by allowing visitors to literally *smell* the artifacts they’re viewing.
 *   **Luxury Sensory Experiences:** Exclusive Chronoscent collections designed around historical events
+
+---
+
+## Related Ideas
+
+- **“Chrono-Scent Chambers”** (shared concept: *temporal resonance matrix*)
+- **idea domain=litho-chronoesthesia** (shared concept: *therapeutic applications*)
+- **“ChronalScentSynth”** (shared concept: *therapeutic applications*)
+- **“Chronosculpt”** (shared concept: *therapeutic applications*)
+- **neuro-resonant memory garden v1** (shared concept: *echo log*)

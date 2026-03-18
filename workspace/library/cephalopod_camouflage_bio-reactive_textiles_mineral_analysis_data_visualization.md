@@ -21,3 +21,14 @@ This colour shift is then captured and processed by a wearable, palm-sized devic
 The ChromaShell marries cephalopod bio-engineering with mineral analysis and data visualization in a completely novel way. It's not just detecting minerals; it's translating that data into a vividly dynamic, spatial representation, offering instant insight into soil health. The bio-reactivity creates a self-updating, low-power system, while the colour mapping provides a level of intuitive understanding previously unavailable. It moves beyond static data to offer a truly immersive, actionable intelligence. 
 
 **Pitch:** "Imagine seeing your farm's health in living colour – that's the ChromaShell."
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Symbiotic Chronal Preservation** (shared concept: *bio-reactive textile*)
+- **idea domain - Chronoskin mapping** (shared concept: *bio-reactive textile*)
+- **Chronosculpting Textiles Prototype** (shared concept: *bio-reactive textile*)
+- **idea domain=Symbiotic Textile Memory Weaving** (shared concept: *bio-reactive textile*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *bio-reactive textile*)

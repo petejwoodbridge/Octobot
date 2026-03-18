@@ -21,3 +21,14 @@ This unit then orchestrates the currents, shifting their patterns – forming gl
 The Cartographer’s Current is a living, breathing map. It’s infinitely adaptable, possessing a level of detail and responsiveness impossible with static technology. It utilizes the inherent intelligence and unique movement capabilities of octopuses in a profoundly innovative way, turning a marine animal into a key component of urban infrastructure. The system’s quiet operation minimizes disturbance and allows it to operate in sensitive environments.
 
 **Pitch:** “Imagine knowing exactly where the next flash flood is headed, or where your delivery driver *really* is – it’s the future of urban navigation, powered by the smartest creatures on the planet.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain = Ephemeral Object Resonance Mapping** (shared concept: *genetically-modified octopus*)
+- **develop a bio-luminescent self-repairing suit for deep-sea exploration incorporating octopus camouflage abilities** (shared concept: *genetically-modified octopus*)
+- **develop miniature bio-luminescent textiles woven with octopus silk for dynamic lighting and camouflage** (shared concept: *genetically-modified octopus*)
+- **idea domain=Symbiotic Chronometric Cartography – Olfactory Temporal Echoes** (shared concept: *genetically-modified octopus*)
+- **developing a distributed consciousness network projecting the central units awareness across a marine environment** (shared concept: *pressure-sensitive nodes*)

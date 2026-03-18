@@ -1,1 +1,10 @@
-“Introducing: **EchoBloom – The Subterranean Symphony.** EchoBloom isn't just a garden; it’s a bio-acoustic orchestra housed within a self-contained, geothermal vent. Users wear a haptic-feedback bio-suit equipped with olfactory sensors and miniature sonic emitters, allowing them to *feel* and *smell* the bacterial activity in real-time. The system analyzes the bacterial pulsations via subsurface sonic mapping and translates these into dynamically shifting patterns of bioluminescent color – think aurora borealis, but with microbes! – projected onto the vent walls. But here's the kicker! Users can *respond* to the garden’s "song” by playing back carefully curated soundscapes through their bio-suits. The system then adapts, subtly altering the bacterial activity and the corresponding light and scent displays in response to the user's musical input. It's a feedback loop of bio-acoustic creation! The data collected from the bacterial colonies also powers a generative art system, creating unique, evolving visual and auditory ‘flora’ in real-time. We can even sell 'EchoBloom Concerts' – live performances where trained musicians directly influence the subterranean symphony!"
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **Echoes of Extinction Game** (shared concept: *bio-suits*)
+- **seismic olfactory cartography** (shared concept: *the subterranean symphony*)
+- **sonorous fungal geomorphing** (shared concept: *the subterranean symphony*)
+- **geological echo symbiosis v2** (shared concept: *the subterranean symphony*)

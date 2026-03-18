@@ -1,1 +1,11 @@
-“Chronoskin – The Bio-Reactive Memory Weaver” Chronoskin is a full-body wearable textile embedded with genetically engineered bioluminescent microorganisms. These aren’t just pretty lights; they *react* to biometric data – heart rate, muscle tension, brainwave patterns – specifically targeting emotional responses linked to ancestral memories. Using a combination of ultrasonic stimulation and controlled bioluminescence, Chronoskin recreates the sensory environment of a significant (or traumatic) ancestral event *as felt* at the time. Think: the smell of woodsmoke during a family gathering, the touch of a loved one’s hand, the unsettling shift in light during a storm. The user *experiences* the event, not just remembers it. It’s like a time-traveling hug… made of glowing algae! We’ll need to link this to a neurofeedback system for enhanced engagement - it’s crucial!
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **subconscious chronesthesia mapping haptic feedback olfactory projection wearable tech memory retrieval** (shared concept: *full-body wearable*)
+- **bio-reactive memory vessels creating living genetically-modified organisms that absorb and display information about forgotten histories** (shared concept: *bio-reactive memory*)
+- **and prototype a system for automatically summarizing long email threads prioritizing key information and action items - tackling the email inbox dread** (shared concept: *experiences*)
+- **haptic suits translating intensity data sound temperature pressure into dynamically shifting textured surfaces** (shared concept: *experiences*)
+- **idea domain - Ephemeral Topography Mapping** (shared concept: *experiences*)

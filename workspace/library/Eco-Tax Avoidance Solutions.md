@@ -35,3 +35,14 @@ ETAS utilizes a network of bio-reactors – affectionately nicknamed “Coral Ca
 **Why It’s Extraordinary**
 
 ETAS isn’t just another carbon offset; it's a closed-loop system that *actively* removes pollutants
+
+
+---
+
+## Related Ideas
+
+- **bone density scanning technology pulsed light therapy vibrational resonance shape memory alloys** (shared concept: *real-time monitoring*)
+- **self-assembling microfauna structures creating dynamic living architectural systems for underwater habitats** (shared concept: *genetically-modified*)
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *closed-loop system*)
+- **idea domain – “Ephemeral Cartography of Social Echoes”** (shared concept: *genetically-modified algae*)
+- **personal flight augmentation devices design wearable exoskeletons incorporating dragonfly wing principles for controlled short-distance human flight** (shared concept: *bio-mimicking*)

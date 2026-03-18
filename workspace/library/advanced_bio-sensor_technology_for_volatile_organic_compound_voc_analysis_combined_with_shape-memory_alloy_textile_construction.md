@@ -21,3 +21,14 @@ Crucially, the third layer is a biofeedback system. As the sensors detect specif
 The Sentient Skin merges environmental sensing with personalized wellbeing in a seamless, wearable form. It's more than just a VOC detector; it's a proactive guardian against environmental stressors and an intelligent tool for understanding and managing emotional responses. The SMA mesh adds a dynamic layer of interaction, creating a truly responsive and intuitive experience. The technology bridges the gap between passive monitoring and active intervention, potentially revolutionizing fields from occupational health and safety to mental wellness and even criminal investigations (tracing the source of a panic attack).
 
 **Pitch:** “Imagine a garment that doesn’t just tell you what’s in the air, but helps you *feel* better – it’s the future of personalized wellbeing, woven into your clothes.”
+
+
+---
+
+## Related Ideas
+
+- **Chrono-Floral Synthesis - Prototype Design** (shared concept: *shape-memory alloy*)
+- **idea domain = “liminal scent mapping with reactive alloy scent fields”** (shared concept: *shape-memory alloy*)
+- **haptic memory weaving  existing research materials science neuro-textiles sensory input technologies memory encoding techniques textile manufacturing processes** (shared concept: *shape-memory alloy*)
+- **bio-acoustic mapping of flavor compounds temporal gastronomy research shape-memory alloy culinary vessels controlled molecular diffusion** (shared concept: *shape-memory alloy*)
+- **kinesthetic palimpsest concept** (shared concept: *shape-memory alloy*)

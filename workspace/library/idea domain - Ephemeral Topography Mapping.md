@@ -30,3 +30,14 @@ Here’s the sequence: OctoBot 7 wanders the terrain, sniffing furiously. The se
 **Potential Applications**
 
 *   **Archaeological Surveying:**  Loc
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “sensory echo-mapping of fungal mycelial networks”** (shared concept: *whisper mode*)
+- **data is constantly** (shared concept: *real-time as*)
+- **auditory cartography project** (shared concept: *dynamic mapping*)
+- **idea domain=Kinesthetic Archaeology Interfaces** (shared concept: *idea document*)
+- **idea domain – “kinesthetic cartography of phantom limb sensation”** (shared concept: *idea document*)

@@ -21,3 +21,14 @@ For example, a low-frequency vibration creates a slow, building warmth, while a 
 The ChromaWeave transcends simple sensory substitution. It provides *direct* control over the experience of gradients. This isn't just about feeling warmth; it's about sculpting a tactile environment, offering unprecedented control for artists, therapists (imagine aiding phantom limb pain management with precisely modulated pressure gradients), or even just enhancing the simple pleasure of a warm bath. The interwoven biofeedback loop – the fabric reacting to the neural signal and the user adjusting their desired intensity – creates a truly symbiotic, fully-immersive sensory experience. It’s about turning the physical world into an instrument for direct perception.
 
 **Pitch:** “Experience reality in a whole new dimension – feel the future, one gradient at a time.”
+
+
+---
+
+## Related Ideas
+
+- **micro-chronal scent-mapping sleep cycle analysis olfactory reconstruction biofeedback integration personalized aroma diffusion** (shared concept: *intensity*)
+- **“chronobiological temporal mapping device”** (shared concept: *intensity*)
+- **soniferous geomorphology wearable interfaces bioluminescence geological data** (shared concept: *intensity*)
+- **sound decay analysis olfactory perception of time microclimate control textiles shape-memory alloy vibration sensors** (shared concept: *intensity*)
+- **engineered microbial colonies for processing and adaptation  based on library-a reactive symbiotic core utilizing engineered microbial coloniesmd** (shared concept: *intensity*)

@@ -39,3 +39,14 @@ Now, here’s the kicker: the fungi *respond* to the light.  They release neurot
 ---
 *Original notes:*
 ## The Myco-Weave: A Bioreactive Tapestry for Emotional Regulation
+
+
+---
+
+## Related Ideas
+
+- **neuro-resonant fungal networks** (shared concept: *neuro-rehabilitation*)
+- **shell instantly emits** (shared concept: *thinking*)
+- **subconscious tactile mapping lost skills recall** (shared concept: *thinking*)
+- **Philosophical Paradox Design** (shared concept: *thinking*)
+- **Chronal Gastric Resonance Mapping - Detailed Concept** (shared concept: *thinking*)

@@ -37,3 +37,13 @@ Honestly, this isn’t just a pod; it’s an *emotional hug* delivered by a bril
 ---
 *Original notes:*
 “The Dampening Kelp – Personalized Bio-Feedback Sensory Pod”
+
+---
+
+## Related Ideas
+
+- **subconscious microbiome mapping app** (shared concept: *creative block busting*)
+- **Adaptive Biomechanical Support Systems** (shared concept: *corporate wellness programs*)
+- **Gastronomic Somatosensory Mapping – Device Design** (shared concept: *sensory symphony*)
+- **idea domain = “kinesthetic palimpsests”** (shared concept: *sensory symphony*)
+- **edible sensory experiences/stress cake prototype** (shared concept: *corporate wellness programs*)

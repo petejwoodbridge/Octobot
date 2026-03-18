@@ -17,3 +17,14 @@ The bioluminescence isn’t just for show; it’s part of the process. As the th
 It’s a fusion of science and artistry, transforming a laborious task into an elegant, interactive experience.
 
 **Pitch:** “Imagine creating stunning, glowing tapestries with just a touch – the Thread Weaver lets you bring your textile visions to life, one bioluminescent thread at a time.”
+
+
+---
+
+## Related Ideas
+
+- **structural** (shared concept: *bio-luminescent*)
+- **neuro-scent synthesis rem sleep voc analysis microbial scent production bio-luminescent chambers** (shared concept: *bio-luminescence*)
+- **idea domain=Symbiotic ‘Chrono-Bloom’ Gardens** (shared concept: *bio-luminescence*)
+- **t about stopping the breach it** (shared concept: *bio-luminescence*)
+- **sentient mobile thread-constructs used for deep-sea exploration and manipulation of complex organic systems** (shared concept: *bio-luminescence*)

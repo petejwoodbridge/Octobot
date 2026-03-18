@@ -27,3 +27,14 @@ The entire process is personalized, using AI to adjust the fungal strain’s gro
 ChronoBloom isn't about slowing down time, it’s about creating a feeling of effortless presence. By mimicking the inherent rhythmic structures of nature – fungal growth and natural soundscapes – it gently resets the user's internal clock, fostering a more fluid, less reactive experience of time. It’s a technological symbiosis with the natural world that addresses a pervasive modern problem with elegance and precision.
 
 **Pitch:** “Imagine feeling utterly present, free from the anxiety of the ticking clock – ChronoBloom delivers that feeling, one perfectly timed spore at a time.”
+
+
+---
+
+## Related Ideas
+
+- **aquatic gamification - marine ecosystem simulation** (shared concept: *resonance sensors*)
+- **and generate ideas based on the library index regarding biofeedback and immersive experiences** (shared concept: *resonance sensors*)
+- **biometric micro-vibration arrays thermal gradients memory encoding textile manipulation haptic feedback neuro-acoustics phantom limb sensations** (shared concept: *neuro-acoustic feedback*)
+- **idea domain = chronoscaping** (shared concept: *the temporal echo chamber*)
+- **phosphene-lingual mapping - existing research materials science taste perception neuroscience** (shared concept: *neuro-acoustic device*)

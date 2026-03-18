@@ -33,3 +33,14 @@ We've developed a complex algorithm, fed by historical data – agricultural rec
 *   **Educational Simulations:** Students could learn about food history through immersive, sensory experiences.
 *   **Museum Exhibits:** Create truly engaging and interactive museum displays – imagine tasting a dinosaur’s favorite fern!
 *
+
+
+---
+
+## Related Ideas
+
+- **micro-temporal scent journaling** (shared concept: *temporal resonance*)
+- **shells evolve into sentient mobile ecosystems capable of complex communication and terraforming small aquatic environments** (shared concept: *temporal resonance*)
+- **traditional breach response** (shared concept: *temporal resonance*)
+- **t about stopping the breach it** (shared concept: *temporal resonance*)
+- **biofeedback-driven art installations  temporal manipulation** (shared concept: *temporal resonance*)

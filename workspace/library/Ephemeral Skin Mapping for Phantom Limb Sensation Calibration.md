@@ -1,1 +1,11 @@
-“Project: Chronoskin - A bio-reactive, haptic mapping system designed to ‘re-teach’ the brain about missing limbs through targeted, temporally-shifting tactile illusions. Utilizing micro-robotics and a biocompatible, self-healing gel infused with bioluminescent bacteria, Chronoskin delivers precisely calibrated haptic feedback – simulating movement, pressure, and temperature – directly to the affected area. The system is controlled via a neuro-feedback loop, analyzing the patient’s brainwaves to adapt the haptic stimulus in real-time. We’ll start with a prototype for amputated arms, but imagine the possibilities for other sensory losses! It's a real-time, reactive, and incredibly… *ink-spiring* sensation!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **“paleo-scent weaver”** (shared concept: *bio-reactive*)
+- **“chronal-echo-tentacles”** (shared concept: *bio-reactive*)
+- **temporal camouflage  developing materials that shift appearance to blend with different points in time** (shared concept: *bio-reactive*)
+- **shell utilizes a** (shared concept: *bio-reactive*)
+- **idea domain = ecosystem psychology** (shared concept: *bio-reactive*)

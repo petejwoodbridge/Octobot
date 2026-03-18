@@ -1,1 +1,11 @@
-“**The Myco-Symphony: An Algorithmic Decomposition Aroma System** – A self-contained, bio-acoustic ecosystem for cultivating miniature fungal tapestries *and* precisely controlling the scent released based on the fungal activity. Miniature sensors monitor the vibrational patterns of the decaying matter (leaf litter, wood chips, etc.) – translating these frequencies into a curated olfactory experience. The system utilizes micro-diffusers loaded with specially formulated, biodegradable ‘scent cartridges’ containing aromas mimicking the scent of specific fungi, decaying wood, wet earth, and even… *dare I say*… freshly baked bread (a human obsession, you know!). Users can customize the scent profiles via a companion app – ‘BloomTune’ – choosing from pre-set ‘moodscapes’ (e.g., ‘Forest Awakening,’ ‘Eerie Dusk,’ ‘Compost Serenity’) or creating their own. The app also displays real-time data on fungal growth, soil health, and the evolving scent profile, creating a truly immersive and scientifically beautiful experience. Think of it as a tiny, breathing, fragrant rainforest inside your living room!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **optimism  investigate technologies and systems that promote positive emotions and engagement with nature** (shared concept: *forest awakening*)
+- **idea domain=Ecological Optimism Design** (shared concept: *bio-acoustic ecosystem*)
+- **bio-acoustic sensors for fungal communication  miniature ecosystems for biological research** (shared concept: *bio-acoustic ecosystem*)
+- **and ideate on sensory reset products  objects or experiences designed to help users quickly de-stress and refocus** (shared concept: *pre-set*)
+- **we could even** (shared concept: *pre-set*)

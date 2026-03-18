@@ -23,3 +23,14 @@ These signals are then fed into a micro-controller that adjusts the nutrient sup
 The Echo Bloom bridges the gap between neuroscience and art. It leverages the inherent sensitivity of biological systems to provide an unprecedented level of emotional feedback. The beauty of the changing light patterns offers a meditative experience, while the technology provides a powerful tool for self-awareness and potentially, therapeutic intervention. It's simultaneously high-tech and deeply rooted in nature, creating a truly unique and compelling experience. 
 
 **Pitch:** “Imagine a tiny, glowing forest reflecting your innermost thoughts – that’s the Echo Bloom.”
+
+
+---
+
+## Related Ideas
+
+- **architectural acoustics microbiome sensing voc synthesis biofeedback architecture** (shared concept: *the idea the echo bloom*)
+- **bio-reactive memory vessels creating living genetically-modified organisms that absorb and display information about forgotten histories** (shared concept: *self-contained ecosystem*)
+- **regenerative hope design** (shared concept: *self-contained ecosystem*)
+- **design instruments that morph and change shape dynamically altering timbre and tone based on environmental input wind light etc** (shared concept: *piezo-electric sensors*)
+- **bio-integrated wearable tech design clothing that incorporates octopus-inspired camouflage and sensory input systems for enhanced environmental adaptation** (shared concept: *piezo-electric sensors*)

@@ -17,3 +17,14 @@ The data collected is fed into a dedicated mapping algorithm – “RhizomeMap�
 **Why It’s Brilliant:** The Myco-Lumina merges sensor technology, haptic feedback, and olfactory simulation to provide a genuinely immersive and scientifically rich experience of the fungal world. It transforms the act of surveying into a deeply intuitive and almost symbiotic process, offering unprecedented insights into the hidden networks underpinning entire ecosystems. It also opens doors to monitoring fungal responses to climate change and pollution. 
 
 *Pitch:* “Imagine feeling the forest’s intelligence – that’s what the Myco-Lumina delivers.”
+
+
+---
+
+## Related Ideas
+
+- **resonant fungal echo-gardens - concept refinement** (shared concept: *time-consuming*)
+- **geological vibration sensors soil composition analysis aroma synthesis technology haptic feedback systems bio-acoustic resonance** (shared concept: *real-time understanding*)
+- **cephalopod camouflage scent dispersal microclimate control haptic feedback narrative projection** (shared concept: *micro-fluidic channels*)
+- **mycological temporal cartography project** (shared concept: *armillaria*)
+- **olfactory echo-cartography scent synthesis interactive installation** (shared concept: *echo-cartography*)

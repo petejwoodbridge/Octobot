@@ -21,3 +21,14 @@ But the brilliance lies in the colony's behaviour. Each colony is programmed wit
 The Lumina-Coral marries cutting-edge biotechnology with materials science for a truly symbiotic solution. It’s self-sustaining, aesthetically stunning, and offers intelligent, reactive illumination. Unlike static LED systems, it reacts to its environment, providing dynamic navigation and reducing light pollution for sensitive marine species. The modular design allows for scaling – from small research stations to vast underwater cities. The system doesn’t *need* the LEDs constantly running; the colonies are primarily self-powered by their bioluminescence, creating a closed-loop system within a beautiful, living structure. 
 
 *Pitch:* "Imagine underwater cities glowing with the intelligent beauty of a coral reef – let’s build them, one pulsing Lumina-Coral at a time.”
+
+
+---
+
+## Related Ideas
+
+- **personalized bio-luminescence clothing design garments that shift color and pattern based on the wearers mood and biometric data utilizing genetically engineered bioluminescent bacteria** (shared concept: *bio-luminescent technologies*)
+- **t about stopping the breach it** (shared concept: *bio-engineered*)
+- **biodegradable cartridges for seed dispersal  mimicking natural dispersal methods with customizable seed mixes** (shared concept: *energy-intensive*)
+- **cultivating algae to produce self-healing concrete incorporating photosynthetic properties for structural repair** (shared concept: *closed-loop system*)
+- **self-healing basalt construction materials incorporating bioluminescent bacteria for nighttime infrastructure** (shared concept: *closed-loop system*)

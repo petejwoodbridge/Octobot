@@ -31,3 +31,14 @@ This data is then fed into a “Kinetic Algorithm” – a gloriously messy, sel
 ---
 *Original notes:*
 **Project: The Echo Weaver**
+
+
+---
+
+## Related Ideas
+
+- **neuro-geological synesthesia engines** (shared concept: *data logging*)
+- **idea domain=chronal microbiome mapping** (shared concept: *biometric integration*)
+- **micro-epoch olfactory archiving** (shared concept: *the echo weaver*)
+- **reactive olfactory projection technology haptic feedback urban archaeology bio-acoustic mapping** (shared concept: *the echo weaver*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *the echo weaver*)

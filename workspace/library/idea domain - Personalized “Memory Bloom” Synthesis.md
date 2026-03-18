@@ -34,3 +34,14 @@ Okay, so here’s the delightfully chaotic bit. The Memory Bloom is a bio-engine
 ---
 *Original notes:*
 ## EchoWeave: The Emotional Sculptor
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Symbiotic Temporal Cartography** (shared concept: *memory blooms*)
+- **neuro-temporal moss cultivation** (shared concept: *therapeutic memory recall*)
+- **micro-seasonal olfactory archiving  playback - related sensors voc capture technology diffusion methods shape-memory alloy integration human olfactory perception research** (shared concept: *the memory bloom*)
+- **chronoscaping algorithmic reconstruction of lost sensory experiences via targeted micro-temporal stasis** (shared concept: *the memory bloom*)
+- **microbial scent reconstruction techniques advanced bio-scaffolding for olfactory simulations weather data integration for micro-climate simulation artificial insect activity systems neuro-scent technology** (shared concept: *the memory bloom*)

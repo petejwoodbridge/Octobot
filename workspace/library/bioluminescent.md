@@ -23,3 +23,14 @@ The fungi themselves actively respond to the light, increasing their bioluminesc
 LuminaBloom blends the calming power of nature with cutting-edge biofeedback technology. It’s more than just a light source; it's a living, responsive system that adapts to your emotional needs, offering a genuinely restorative and aesthetically pleasing experience. The use of bioluminescence adds a sense of wonder and novelty, moving beyond the sterile effects of traditional lighting. The connection to a living ecosystem adds an element of mindfulness and promotes a deeper connection with nature, even indoors. 
 
 **Pitch:** "Imagine a light that understands your mood and responds – LuminaBloom: where science and bioluminescence create your perfect, personalized atmosphere."
+
+
+---
+
+## Related Ideas
+
+- **crucially** (shared concept: *mycena luxaeterna*)
+- **fungal bioluminescence biofeedback terrarium design symbiotic relationships human emotion mapping** (shared concept: *panellus stipticus*)
+- **it leverages biofeedback** (shared concept: *mycena luxaeterna*)
+- **bio-luminescent fungal mycelium eeg mapping interactive art installations neurofeedback mycelial architecture** (shared concept: *mycena luxaeterna*)
+- **neuro-resonant fungal networks** (shared concept: *mycena luxaeterna*)

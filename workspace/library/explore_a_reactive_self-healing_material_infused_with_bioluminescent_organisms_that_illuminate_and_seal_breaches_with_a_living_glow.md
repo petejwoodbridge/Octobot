@@ -21,3 +21,14 @@ The entire system is biodegradable, naturally returning its components to the en
 LuminaWeave combines cutting-edge biomimicry with advanced materials science. It offers a proactive, self-regulating solution to infrastructure decay, dramatically reducing repair costs, minimizing downtime, and, crucially, providing a dynamic, visual indication of structural health. The bioluminescence isn't just for show; it's the core of the healing mechanism, and the use of dormant bacterial spores introduces a truly self-sustaining repair cycle. It’s a living, glowing bandage for the planet’s arteries and bones.
 
 *Pitch:* “Imagine a world where infrastructure repairs itself – LuminaWeave is the blueprint for a future where leaks don’t just get patched, they *glow*.”
+
+
+---
+
+## Related Ideas
+
+- **developing a neural network trained on noctiluca bioluminescence patterns to create dynamic responsive art installations** (shared concept: *noctiluca scintillans*)
+- **learn** (shared concept: *noctiluca scintillans*)
+- **explore a symbiotic system utilizing genetically-engineered bioluminescent organisms to detect and rapidly solidify breaches with a self-healing polymer** (shared concept: *noctiluca scintillans*)
+- **designing self-contained mobile ecosystems housing noctiluca and other deep-sea organisms for advanced research and potential terraforming applications** (shared concept: *noctiluca scintillans*)
+- **the orb incorporates** (shared concept: *noctiluca scintillans*)

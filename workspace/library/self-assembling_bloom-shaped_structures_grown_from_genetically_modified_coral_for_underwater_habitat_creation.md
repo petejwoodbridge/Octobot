@@ -21,3 +21,14 @@ The BloomNet offers a revolutionary approach by harnessing the inherent growth p
 Plus, the entire process generates oxygen as a byproduct, contributing to the overall health of the ocean.
 
 **Pitch:** “Imagine underwater cities grown from light, breathing coral – BloomNet: Where architecture blossoms with the ocean itself.”
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent urban lighting systems mimicking deep-sea anglerfish patterns for energy efficiency** (shared concept: *deep-sea anglerfish*)
+- **idea domain=Neuromodulation for Enhanced Cognition** (shared concept: *deep-sea anglerfish*)
+- **develop bio-adhesive skin for ships mimicking octopus camouflage to instantly seal hull breaches** (shared concept: *deep-sea anglerfish*)
+- **t about stopping the breach it** (shared concept: *deep-sea anglerfish*)
+- **idea domain = Algorithmic Gastric Topography** (shared concept: *deep-sea anglerfish*)

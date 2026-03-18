@@ -20,3 +20,14 @@ The Echo Weaver transcends simple memory recall; it offers a visceral, emotional
 
 ## Elevator Pitch
 "Finally, experience your memories, not just remember them – feel them.
+
+
+---
+
+## Related Ideas
+
+- **chronesthesia sculptor** (shared concept: *overview the echo weaver*)
+- **lithic somesthesia  biofeedback** (shared concept: *palm-sized obsidian*)
+- **extinct insect communication olfactory projection bioluminescence wearable tech paleo-entomology** (shared concept: *micro-kinetic energy*)
+- **design a swarm of miniature autonomous robotic octopuses programmed for rapid structural reinforcement and blockage deployment** (shared concept: *micro-kinetic energy*)
+- **idea domain - “kinesthetic memory archiving with biofeedback”** (shared concept: *re-experiencing*)

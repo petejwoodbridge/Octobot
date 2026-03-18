@@ -24,3 +24,14 @@ Chrono-Reef Echoes combines advanced bio-acoustics, haptic technology, and holog
 
 ## Elevator Pitch
 Dive into the past and shape the future of coral reefs with a truly immersive, sensory experience.
+
+
+---
+
+## Related Ideas
+
+- **decentralized charitable innovation** (shared concept: *bio-acoustic sensors*)
+- **mycological temporal cartography project** (shared concept: *bio-acoustic data*)
+- **and prototype a system for automatically summarizing long email threads prioritizing key information and action items - tackling the email inbox dread** (shared concept: *bio-acoustic data*)
+- **synesthetic geological mapping techniques shape-memory alloy haptic interfaces bio-acoustic data analysis for geological formations neurofeedback integration with geological data** (shared concept: *bio-acoustic data*)
+- **neurological manipulation of proprioception  gravity perception temperature airflow  combined with haptic feedback and biofeedback monitoring** (shared concept: *form-fitting suit*)

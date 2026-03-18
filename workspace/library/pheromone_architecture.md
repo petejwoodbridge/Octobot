@@ -37,3 +37,14 @@ The Scent Matrix is controlled by a Quantum Neuro-Harmonizer – a device that a
 ---
 *Original notes:*
 ## Pheromone Palaces: The Architect of Emotion
+
+
+---
+
+## Related Ideas
+
+- **Symbiotic Microbial Scent Synthesis** (shared concept: *pre-programmed scent*)
+- **idea domain = adaptive olfactory layering** (shared concept: *pre-programmed scent*)
+- **solves** (shared concept: *neuro-harmonizer*)
+- **idea domain=Symbiotic Chronometric Cartography – Olfactory Temporal Echoes** (shared concept: *dynamic scent profiles*)
+- **idea domain – “chronal scent-weaving for extinct cultural rituals”** (shared concept: *scent matrix*)

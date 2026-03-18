@@ -17,3 +17,14 @@ The robots themselves are programmed with pre-determined movement algorithms, al
 **Why It’s Brilliant:** The Echo Flock represents a paradigm shift in animal behavior research. It's not just observing chickens; it’s *orchestrating* their responses with unparalleled precision and data richness. The real-time biofeedback loop enables researchers to study the neurological roots of complex social behaviors in a way never before possible, moving beyond passive observation to active control. The robotic chickens are also incredibly adaptable - their programming can be modified to simulate a huge range of environments and conditions, from open pastures to crowded roosts. 
 
 *Pitch:* "Imagine understanding exactly *why* your chickens are behaving the way they are – we're giving science the ultimate chicken whisperer."
+
+
+---
+
+## Related Ideas
+
+- **chronal pollen archive** (shared concept: *real-time biofeedback*)
+- **ultrasonic pigment etching  music synchronization  biofeedback integration** (shared concept: *non-invasive eeg*)
+- **chromatic lichen-symbiotic sleep architecture** (shared concept: *non-invasive eeg*)
+- **thread contains a** (shared concept: *non-invasive eeg*)
+- **bio-reactive fungal networks spatial scent diffusion dynamic micro-environments anxiety reduction** (shared concept: *non-invasive eeg*)

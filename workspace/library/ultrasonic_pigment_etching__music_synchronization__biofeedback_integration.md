@@ -23,3 +23,14 @@ Here’s the breakdown:
 ChromaSonata is more than just a tool; it’s a collaborative creation process. It bridges the gap between intention and expression, offering a profoundly immersive and intuitive pathway for artistic exploration. It's a system that doesn’t *tell* you what to create, but rather *responds* to your internal landscape, unlocking hidden creative potential through the unique marriage of sound, touch, and visual transformation. The unpredictability of the process, governed by both human and machine, creates genuinely novel and surprising results.
 
 **Pitch:** “Imagine sculpting your emotions into a living masterpiece - ChromaSonata lets you do exactly that."
+
+
+---
+
+## Related Ideas
+
+- **thread contains a** (shared concept: *non-invasive eeg*)
+- **synchronized chickens - origins animal behaviour robotics biofeedback** (shared concept: *non-invasive eeg*)
+- **and generate ideas based on the library index regarding biofeedback and immersive experiences** (shared concept: *non-invasive eeg*)
+- **optimism  investigate technologies and systems that promote positive emotions and engagement with nature** (shared concept: *in real-time*)
+- **bio-acoustic skin weaving proprioception shape-memory alloy textiles atmospheric sound mapping neurofeedback textiles** (shared concept: *full-body suit*)

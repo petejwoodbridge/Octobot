@@ -1,1 +1,7 @@
-“Project: Symbiotic Echoes – A bio-synthetic tapestry that weaves together remembered experiences with the vibrational and chemical communication of plants. The ‘Memory-Weave’ itself is grown using a bio-reactive substrate seeded with genetically engineered moss capable of ‘recording’ and replaying data gleaned from human neural activity via wearable biosensors. The moss then responds to the processed neural data by emitting distinct resonant frequencies and releasing specific volatile organic compounds (VOCs) – each VOC linked to a corresponding memory fragment. This creates a living, breathing textile that shifts and changes in response to the user’s recollections, reflecting not just the *feeling* of the memory, but its very essence, as perceived through the lens of the plant’s perception. We’ll call it… *The ChronoFlora*!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain=chronobiological echo sculpting** (shared concept: *bio-reactive substrate*)

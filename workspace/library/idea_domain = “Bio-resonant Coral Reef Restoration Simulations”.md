@@ -39,3 +39,14 @@ AquaSync isn't just a gadget; it's a conversation starter with
 ---
 *Original notes:*
 “**Project: AquaSync – The Bio-Synchronized Coral Restoration Suit**
+
+
+---
+
+## Related Ideas
+
+- **retro-sensory pollen mapping** (shared concept: *bio-acoustic resonance mapping*)
+- **neuro-regenerative therapies** (shared concept: *bio-acoustic resonance mapping*)
+- **idea domain = “sensory echo-mapping of fungal mycelial networks”** (shared concept: *bio-acoustic resonance mapping*)
+- **Chronal Gastronomic Cartography - Enhanced Prototype** (shared concept: *bio-acoustic resonance mapping*)
+- **idea domain=Ephemeral Cartography of Lost Echoes - Dream Weaver** (shared concept: *bio-acoustic resonance*)

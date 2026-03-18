@@ -1,1 +1,11 @@
-“The Volcanic Echo – A wearable olfactory reconstruction device. It’s a bio-synthetic ‘lung’ – a miniature, self-contained ecosystem housing genetically engineered microbes that, when stimulated by data from a geological scanner, synthesize and release the scent profile of a volcanic eruption in real-time. The user wears a sleek, exoskeletal shell, and the microbes create a layered olfactory experience – from the initial sulfurous haze to the cooling lava flow. Includes haptic feedback – subtle vibrations mimicking the tremor of the earth – and a visual display showing a shifting, heat-map-like representation of the volcanic plume. The device learns the user’s preferences, adapting the intensity and complexity of the scent profile over time. Think ‘Jurassic Park’ meets a really, *really* sophisticated perfume!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **bio-integrated conductive skins develop flexible self-healing materials mimicking octopus skin for dynamic electrical sensing and control** (shared concept: *bio-synthetic*)
+- **design a neural network-controlled morphing robotic appendage capable of dynamically patching and reinforcing compromised vessel structures** (shared concept: *bio-synthetic*)
+- **lullaby cartography project** (shared concept: *bio-synthetic*)
+- **idea pitch** (shared concept: *self-contained ecosystem*)
+- **idea domain=neural-resonance gardening** (shared concept: *self-contained ecosystem*)

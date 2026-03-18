@@ -36,3 +36,14 @@ Here's the crazy part: When you move, the Chronoskin vibrates at a frequency cor
 ---
 *Original notes:*
 ## Chronoskin: The Temporal Tapestry
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-reactive skin*)
+- **idea domain=Sonospheric Skin-Symbiosis** (shared concept: *self-repairing*)
+- **geological echo symbiosis v2** (shared concept: *biometric feedback loop*)
+- **kinesthetic mnemonic architecture  self-repairing textiles  breach response** (shared concept: *self-repairing polymer*)
+- **programmable weave can that morphs into complex tools and structures on demand** (shared concept: *self-repairing polymer*)

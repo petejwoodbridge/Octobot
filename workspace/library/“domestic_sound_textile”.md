@@ -37,3 +37,14 @@ Okay, so here’s the brilliantly bonkers bit! The DST is woven with micro-vibra
 **Why It's Extraordinary**
 
 The Domestic Sound Textile isn’t just a product; it'
+
+
+---
+
+## Related Ideas
+
+- **“chronal memory loom”** (shared concept: *micro-vibration actuators*)
+- **biofeedback mechanisms and their potential applications in creative activities - could we use heart rate to influence musical composition or painting** (shared concept: *micro-vibration actuators*)
+- **petrichor palimpsest synth** (shared concept: *micro-vibration actuators*)
+- **advanced fungal bioreactors acoustic sensors haptic feedback integration olfactory simulation technology geological weathering models** (shared concept: *micro-vibration actuators*)
+- **idea domain - Symbiotic Skin Grafts - Moodscape** (shared concept: *micro-vibration actuators*)

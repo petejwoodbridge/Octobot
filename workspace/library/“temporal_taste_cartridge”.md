@@ -1,1 +1,10 @@
-“Temporal Taste Cartridge – A bioprinted, micro-encapsulated algae suspension designed to induce a localized, temporary distortion of the user’s perception of time through targeted neurological and physiological effects. The cartridge, delivered via a micro-injector, contains a proprietary strain of *Chrono-Algae*, genetically engineered to respond to specific biofeedback signals – primarily EEG patterns associated with anxiety, boredom, or heightened focus. The algae’s bioluminescence, calibrated to the user’s temporal state, is the key – a rapid, pulsing glow signifies accelerated time, a slow, shimmering haze indicates deceleration, and a chaotic, fractured pattern represents temporal fragmentation. The taste itself is a subtly shifting blend of oceanic minerals and intensely sweet, almost hallucinatory fruit flavors, dictated by the algae's bio-chemical cocktail. Side effects may include brief disorientation, vivid dreams, and a profound sense of existential curiosity. WARNING: Do not operate heavy machinery while experiencing temporal distortion. Consult your chronophysician before use.”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain = chromatic empathy interfaces** (shared concept: *micro-injector*)
+- **Adaptive Microbiome Scent Layering** (shared concept: *micro-injector*)
+- **memetic resonance mapping technology olfactory transduction haptic feedback simulation  viral spread** (shared concept: *micro-injector*)
+- **Precognitive Gastronomy** (shared concept: *chrono-algae*)

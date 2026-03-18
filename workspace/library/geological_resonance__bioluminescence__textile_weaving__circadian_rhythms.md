@@ -27,3 +27,14 @@ The Chrono-Loom is a large-scale, hand-woven textile creation system combined wi
 The Chrono-Loom creates a profoundly intimate, multi-sensory connection to the earth’s energy. It’s more than just lighting; it’s a living, breathing textile that adapts to and harmonizes with the user's internal and external environment, leveraging the inherent restorative power of geological resonance and bioluminescence to fundamentally shift one's relationship with time and space.
 
 **Pitch:** “Imagine a blanket that understands your body’s rhythms as well as the Earth itself – it’s the Chrono-Loom: sleep smarter, live deeper.”
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent algae-based street lighting systems optimizing for efficiency and natural color palettes** (shared concept: *genetically-modified*)
+- **chronophonic lichen synth concept** (shared concept: *multi-sensory connection*)
+- **filament** (shared concept: *hand-woven textile*)
+- **idea domain=Subconscious Fungal Network Mapping - Time Perception** (shared concept: *hand-woven textile*)
+- **Chronal Moss Mapping & Sonification – Detailed Concept** (shared concept: *real-time geological*)

@@ -40,3 +40,14 @@ This isn't just pretty; the holographic projections react *directly* to the pati
 ---
 *Original notes:*
 ## The Somnium Scanner
+
+
+---
+
+## Related Ideas
+
+- **subconscious textile resonance mapping** (shared concept: *chromatic feedback loop*)
+- **subconscious topography mapping** (shared concept: *holographic projection system*)
+- **t about stopping the breach it** (shared concept: *temporal resonance mapping*)
+- **Sonorous Cartography of Ephemeral Emotions** (shared concept: *micro-muscle movements*)
+- **memory bloom scentscapes** (shared concept: *micro-muscle movements*)

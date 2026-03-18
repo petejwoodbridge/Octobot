@@ -38,3 +38,14 @@ The STW operates on a delightfully complicated blend of neuro-acoustic resonance
 ---
 *Original notes:*
 ## Subconscious Topography Weaver (STW)
+
+
+---
+
+## Related Ideas
+
+- **subconscious dream sculpting** (shared concept: *creative inspiration*)
+- **olfactory layering** (shared concept: *bio-engineered octopus*)
+- **idea domain - subconscious echo-cartography** (shared concept: *creative inspiration*)
+- **idea domain=biophotonic dream mapping** (shared concept: *creative inspiration*)
+- **Ephemeral Memory Cartography** (shared concept: *creative inspiration*)

@@ -17,3 +17,14 @@ Crucially, the coral reef itself ‘responds’ to the patient’s bio-acoustic 
 **Why It’s Brilliant:** EchoBloom bridges the gap between regenerative medicine and holistic wellbeing. It’s not just a skin graft; it's a living, breathing, audible connection to the patient’s own body, a miniature ocean of personalized sensory feedback, and a constantly evolving work of art. The incorporation of bio-acoustics allows for proactive therapeutic interventions, while the visually dynamic coral reef fosters a sense of wonder and connection. 
 
 *Pitch:* “Imagine a skin graft that not only heals your scars but actively responds to your emotions – it's EchoBloom: living art, personalized sound, and the future of wellbeing.”
+
+
+---
+
+## Related Ideas
+
+- **decentralized charitable innovation** (shared concept: *bio-acoustic sensors*)
+- **chronobiological coral reef synthesis** (shared concept: *bio-acoustic sensors*)
+- **blooms communicate with** (shared concept: *micro-acoustic sensors*)
+- **chronophonic lichen synth concept** (shared concept: *micro-acoustic sensors*)
+- **chimeric olfactory layering** (shared concept: *echobloom*)

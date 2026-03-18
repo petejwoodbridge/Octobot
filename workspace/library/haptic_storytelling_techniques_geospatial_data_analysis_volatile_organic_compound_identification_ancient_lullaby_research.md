@@ -17,3 +17,14 @@ For example, at a Roman villa, the vibrations might initially represent the stea
 **Why It’s Brilliant:** Chronosong bridges the gap between scientific data and human experience. It creates a truly embodied understanding of a place's history by leveraging the brain's natural response to vibration – a fundamental sensory input directly linked to our understanding of texture, movement, and emotion. It moves beyond static representation to a dynamic, felt narrative.
 
 *Pitch:* “Imagine feeling the ghost of a civilization through your fingertips – Chronosong lets you.”
+
+
+---
+
+## Related Ideas
+
+- **personalized dream induction** (shared concept: *micro-vibrations delivered*)
+- **chronesthesia layering device** (shared concept: *micro-vibrations delivered*)
+- **Algorithmic Echo-Botanical Resonance – Chrono-Bloom Integration** (shared concept: *bio-acoustic sensor*)
+- **shell is a** (shared concept: *bio-acoustic sensor*)
+- **t about stopping the breach it** (shared concept: *bio-acoustic sensor*)

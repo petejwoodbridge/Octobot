@@ -17,3 +17,14 @@ This data isn’t just recorded; it’s translated. The fungal network responds 
 **Why It’s Brilliant:** The Chronoscape bridges the gap between abstract geological time and human perception. It provides an embodied experience, utilizing biological systems and sensory integration to convey the immense scale and dynamism of the Earth’s history. It’s a tool for geological research, exploration, and even art, fundamentally shifting our relationship with the landscape.
 
 *Pitch:* “Imagine feeling the birth of mountains, experiencing the slow creep of erosion, all through your skin – it's like holding the planet’s memory.”
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent fungal mycelium eeg mapping interactive art installations neurofeedback mycelial architecture** (shared concept: *bio-luminescent fungal*)
+- **idea domain - lithospheric earth ghosts bioreactor** (shared concept: *multi-sensory experience*)
+- **it leverages biofeedback** (shared concept: *mycena luxaeterna*)
+- **bioluminescent** (shared concept: *mycena luxaeterna*)
+- **crucially** (shared concept: *mycena luxaeterna*)

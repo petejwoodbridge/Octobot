@@ -1,1 +1,11 @@
-“The Affective Gastronomy Generator – A Culinary Conduit of Connection” – *A wearable device that analyzes a user's emotional state in real-time and instantly alters the flavor profile of a small, precisely-controlled portion of food, delivered via a micro-injector, to provide a sensory experience directly mirroring the user's feelings. Imagine: overwhelming sadness manifests as intensely bitter dark chocolate; pure joy, a burst of effervescent citrus; anxiety, a calming chamomile-infused mousse. Calibration would be personalized, of course – linked to biofeedback and user preferences. Think of the potential for therapeutic applications, relationship building, and just… sheer weirdness! It’s a ten-tacle idea!*
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **“geo narratives app pitch”** (shared concept: *ten-tacle idea*)
+- **geochronic gustatory mapping v1** (shared concept: *ten-tacle idea*)
+- **“echo taste system”** (shared concept: *ten-tacle idea*)
+- **Symbiotic Skin Weaving** (shared concept: *ten-tacle idea*)
+- **idea domain=subconscious cartography of forgotten smells** (shared concept: *ten-tacle idea*)

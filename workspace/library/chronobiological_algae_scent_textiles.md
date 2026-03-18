@@ -20,3 +20,14 @@ The Chrono-Weave transcends simple aromatherapy, offering a truly personalized a
 
 ## Elevator Pitch
 “Wear your emotions – and have them sculpted by a living, breathing fabric.”
+
+
+---
+
+## Related Ideas
+
+- **chronobiological echo gardens v2** (shared concept: *chrono-weave transcends*)
+- **temporal perception neuroscience vestibular illusion haptic feedback integration phosphene stimulation** (shared concept: *chrono-weave utilizes*)
+- **idea domain=Symbiotic Textile Weathering Prediction** (shared concept: *closed-loop system*)
+- **chrono-shifting materials engineer substances capable of momentarily altering their own age or state  briefly reverting to a younger form or accelerating decay** (shared concept: *closed-loop system*)
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *closed-loop system*)

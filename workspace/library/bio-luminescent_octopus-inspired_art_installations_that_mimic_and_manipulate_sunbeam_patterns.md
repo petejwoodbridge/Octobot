@@ -21,3 +21,14 @@ Crucially, the octopus’s natural jet propulsion system is integrated. Tiny mic
 Luminaweave transcends mere art; it’s a living, breathing ecosystem of light. It's the first time light manipulation has been achieved through controlled biological mimicry at scale. The energy consumption is dramatically reduced – the octopuses only require minimal nutrient input – and the aesthetic impact is far more believable and captivating than any static projection.  It’s also inherently sustainable, leveraging a self-replicating and adaptable technology. Furthermore, the data harvested from the Sunbeam Controller about atmospheric conditions opens doors to environmental monitoring.
 
 **Pitch:** “Imagine art that feels like sunlight – Luminaweave creates dynamic, living light installations that will utterly transform any space.”
+
+
+---
+
+## Related Ideas
+
+- **instead of traditional transportation design self-assembling bio-luminescent octopus-powered vehicles for aquatic exploration** (shared concept: *bio-luminescent octopus*)
+- **idea domain=Sonospheric Skin-Symbiosis** (shared concept: *bio-luminescent octopus*)
+- **sentient shell communication devices create a system where complex shell structures vibrate and shift to transmit information forming a novel organic communication interface** (shared concept: *low-energy*)
+- **neuro-scent technology haptic feedback textiles weather perception psychology artificial atmospheres** (shared concept: *real-time weather*)
+- **ephemeral art installations designing temporary light-based sculptures that vanish naturally through weather or programmed decay** (shared concept: *real-time weather*)

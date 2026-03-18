@@ -25,3 +25,14 @@ The data feeds into a tiny, low-power processor which, based on pre-programmed a
 ChronoJelly combines cutting-edge bioluminescence technology with the proven techniques of biofeedback and temporal psychology. It’s far more than a novelty; it’s a personalized temporal regulator, adapting to the user’s internal state to actively shape their experience of time, promoting both mental wellbeing and optimized performance. The jellyfish itself is a beautiful, living component, offering a genuinely unique and engaging interaction.
 
 **Pitch:** “Imagine controlling your experience of time, one shimmering pulse at a time – ChronoJelly lets you master your moments.”
+
+
+---
+
+## Related Ideas
+
+- **services** (shared concept: *anxiety reduction*)
+- **idea domain - biofeedback-integrated mindfulness** (shared concept: *real-time biofeedback*)
+- **adaptive biomaterials idea 1** (shared concept: *real-time biofeedback*)
+- **neuroacoustic stimulation haptic feedback olfactory layering myth archetype wearable device biofeedback** (shared concept: *real-time biofeedback*)
+- **“paleo-scent weaver”** (shared concept: *real-time biofeedback*)

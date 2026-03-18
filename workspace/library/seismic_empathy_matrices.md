@@ -22,3 +22,14 @@ The Resonator is a wearable device – a flexible, bioluminescent patch – desi
 The Resonator moves beyond simply *knowing* someone is sad; it allows you to *feel* a fraction of their sorrow. This provides a layer of empathy impossible to achieve through traditional methods, fostering deeper understanding, trust, and effective communication, particularly in emotionally charged environments. It leverages cutting-edge bio-acoustics, AI, and bioluminescence in a way that directly bridges the gap between subjective experience. 
 
 *Pitch:* "Imagine truly understanding someone's pain – the Resonator lets you feel it with them, building connections like never before.”
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-acoustic resonance*)
+- **subconscious scent layering loomsync** (shared concept: *bio-acoustic resonance*)
+- **automated moss cultivation and sensory interpretation** (shared concept: *bio-acoustic resonance*)
+- **idea domain=Ephemeral Cartography of Lost Echoes - Dream Weaver** (shared concept: *bio-acoustic resonance*)
+- **cephalopod olfaction bio-acoustic mapping scent memory temporal resonance haptic feedback burial site analysis lullaby reconstruction** (shared concept: *bio-acoustic resonance*)

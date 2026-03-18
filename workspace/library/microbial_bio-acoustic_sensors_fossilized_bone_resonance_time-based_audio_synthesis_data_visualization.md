@@ -21,3 +21,14 @@ The resulting soundscape isn't a static recording. The EchoChamber dynamically e
 The EchoChamber bridges a critical gap in our understanding of prehistoric human experience. It moves beyond simple bone dating and provides a pathway to ‘hear’ the past. By leveraging the natural resonance of fossilized bone, combined with advanced sonic reconstruction and data visualization, we can create truly immersive and scientifically grounded interpretations of ancient soundscapes – painting a richer, more emotionally resonant picture of early human lives. The continuous, evolving soundscape reflects the constant, imperceptible shifts in the past, capturing a sense of temporal dynamism rarely experienced in archaeological research.
 
 **Pitch:** “Imagine hearing the echoes of ancient voices, sculpted from the very bones of our ancestors – it’s not just archaeology, it’s sonic time travel.”
+
+
+---
+
+## Related Ideas
+
+- **new idea** (shared concept: *bio-acoustic sensors*)
+- **circadian rhythms textile integration moss colonies bio-acoustic output** (shared concept: *bio-acoustic sensors*)
+- **chronobiological coral reef synthesis** (shared concept: *bio-acoustic sensors*)
+- **neutral** (shared concept: *bio-acoustic sensors*)
+- **bio-acoustic sensors for fungal communication  miniature ecosystems for biological research** (shared concept: *bio-acoustic sensors*)

@@ -17,3 +17,14 @@ The Bloom connects wirelessly to a central hub where the user can review past in
 **Why It’s Brilliant:** The Echo Bloom moves beyond passive smart home technology by creating a genuinely empathetic and engaging companion. It leverages the calming power of nature combined with personalized AI to combat loneliness and promote wellbeing, offering a tangible, beautiful, and deeply comforting sensory experience. 
 
 *Pitch:* "Meet Echo Bloom – it’s like having a tiny, glowing friend that remembers exactly what you need, when you need it."
+
+
+---
+
+## Related Ideas
+
+- **the patterns aren** (shared concept: *the echo bloom*)
+- **the biggest frustration** (shared concept: *meet echo bloom*)
+- **haptic exoskeletons motor skill refinement injury rehabilitation embodied experience neurological feedback loops sensor fusion** (shared concept: *ai-powered*)
+- **sentinel is a** (shared concept: *ai-powered*)
+- **design a decentralized ai-controlled network of miniature robotic tentacles capable of autonomously patching and reinforcing damaged vessels** (shared concept: *ai-powered*)

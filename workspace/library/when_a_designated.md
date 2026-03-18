@@ -19,3 +19,14 @@ Furthermore, the Chrono-Bloom is paired with a companion app that allows users t
 **Why It’s Brilliant:** The Chrono-Bloom isn’t simply a light source; it’s a gentle, aesthetically-driven reminder of the daily cycle of light and warmth. Its bio-mimicry – using a living organism to communicate seasonal changes – creates a more engaging and emotionally resonant experience than traditional light therapy. The subtle, shifting colors gently nudge users towards a more positive mindset and encourage a connection with the natural world, combating lethargy through subliminal influence and beautiful design. 
 
 *Pitch:* "Imagine a tiny, glowing flower that whispers sunshine into your soul – that's the Chrono-Bloom."
+
+
+---
+
+## Related Ideas
+
+- **each panel is** (shared concept: *chrono-bloom*)
+- **variability** (shared concept: *chrono-bloom isn*)
+- **the central unit** (shared concept: *chrono-bloom isn*)
+- **increasing or decreasing** (shared concept: *chrono-bloom isn*)
+- **s the chrono-bloom** (shared concept: *chrono-bloom isn*)

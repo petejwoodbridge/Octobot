@@ -54,3 +54,14 @@ The swarm is deployed in a degraded reef area. The Chromatic Sensors continuousl
 The Bloom Weaver isn't simply placing coral; it’s leveraging the intelligence of a swarm to understand and respond to the reef’s own biological rhythms. By mimicking a natural bloom, it bypasses the limitations of human intervention and offers a truly autonomous, adaptable solution for reef restoration. The decentralized control system also ensures resilience – damage to a few robots won't halt the entire process. It’s a symbiotic system, learning and evolving with the reef itself. 
 
 **Pitch:** “Imagine a robot army, not of destruction, but of creation – rebuilding our oceans one stunning coral bloom at a time.”
+
+
+---
+
+## Related Ideas
+
+- **design autonomous swarm-based robotic repair octopi capable of self-assembling defenses and proactively sealing breaches** (shared concept: *bio-degradable polymer*)
+- **the algae** (shared concept: *ultra-low frequency*)
+- **kinetic weaving robots design robotic systems that mimic weaving movements capable of creating complex patterns autonomously** (shared concept: *bio-inspired robots*)
+- **“EphemeralTerrainEcho”** (shared concept: *bio-acoustic emitters*)
+- **idea domain = “Bio-resonant Coral Reef Restoration Simulations”** (shared concept: *labor-intensive*)

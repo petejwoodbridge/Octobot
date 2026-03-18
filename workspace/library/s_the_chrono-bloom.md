@@ -77,3 +77,14 @@ Once the Resonator is activated, it's placed near the Echo-Petal. The Petal, uti
 **Why It's Brilliant:** The Echo-Petal sidesteps the limitations of traditional memory aids by directly stimulating the brain’s emotional pathways through bio-resonance. It’s not just about recalling *what* happened, but truly *feeling* it again, creating a deeper, more authentic connection to our personal history. It leverages the organic connection between nature and human emotion in a profoundly innovative way. 
 
 **Pitch:** “Imagine experiencing your favorite childhood moments with a renewed sense of wonder – the Echo-Petal lets you bloom back into your past.”
+
+
+---
+
+## Related Ideas
+
+- **increasing or decreasing** (shared concept: *wrist-worn sensor*)
+- **each panel is** (shared concept: *cutting-edge bio*)
+- **variability** (shared concept: *chrono-bloom isn*)
+- **when a designated** (shared concept: *chrono-bloom isn*)
+- **the central unit** (shared concept: *chrono-bloom isn*)

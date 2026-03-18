@@ -19,3 +19,14 @@ The terrarium itself is crafted from recycled ocean plastic, and the Bloom fungi
 It’s also inherently social – conversations overheard become tiny, pulsing stories within the Bloom. 
 
 Pitch: "Imagine experiencing the world’s noise in a way that actually *calms* you – let me show you the Echo Bloom."
+
+
+---
+
+## Related Ideas
+
+- **Ephemeral Memory Cartography** (shared concept: *the echo bloom*)
+- **soniferous algae emotion resonance** (shared concept: *the echo bloom*)
+- **memetic resonance mapping technology olfactory transduction haptic feedback simulation  viral spread** (shared concept: *the echo bloom*)
+- **interactive memorial experiences  augmented reality  biofeedback** (shared concept: *experiencing*)
+- **bluetooth** (shared concept: *the echo bloom*)

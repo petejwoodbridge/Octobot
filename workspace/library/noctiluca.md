@@ -17,3 +17,14 @@ The entire system is powered by ocean currents, minimizing environmental impact,
 **Why It’s Brilliant:** LuminaBloom offers a proactive, preventative approach to Noctiluca blooms, utilizing the algae's own aversion to a specific compound, amplified by bioluminescence and networked intelligence. It’s a symbiotic solution – harnessing the natural behaviors of marine life to tackle a significant ecological threat. The system is scalable, adaptable, and, unlike current methods, addresses the *cause* of the blooms, not just the symptom. 
 
 *Pitch:* “Imagine a shimmering shield protecting our oceans, anticipating and diverting these incredible – and incredibly destructive – blooms before they even happen.”
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent urban lighting systems mimicking noctiluca colonies for sustainable cityscapes** (shared concept: *luminabloom*)
+- **develop bioluminescent communication systems mimicking bloom patterns for underwater messaging** (shared concept: *bio-engineered*)
+- **fungal bioluminescence art personalized soundscapes living walls circadian rhythm biofeedback** (shared concept: *luminabloom*)
+- **personalized sunbeam diffusion devices for optimized circadian rhythm regulation** (shared concept: *luminabloom*)
+- **seasonal affective disorder** (shared concept: *luminabloom*)

@@ -39,3 +39,14 @@ Crucially, the Chronium-7 isnâ€™t creating a full-blown time jump; instead, itâ€
 ---
 *Original notes:*
 ## The Chronoskip - A Temporal Anomaly Generator
+
+
+---
+
+## Related Ideas
+
+- **shell instantly emits** (shared concept: *thinking*)
+- **subconscious tactile mapping lost skills recall** (shared concept: *thinking*)
+- **idea domain = Ecological Wellbeing Tech** (shared concept: *thinking*)
+- **Chronal Gastric Resonance Mapping - Detailed Concept** (shared concept: *thinking*)
+- **idea domain = adaptive microbial scent layering** (shared concept: *creating*)

@@ -21,3 +21,14 @@ Finally, a micro-camera built into the probe captures the bioluminescent pattern
 The Chrono-Scentis moves beyond simple observation. It creates a sensory equivalent of a worm’s experience. The Temporal Resonance Matrix opens the possibility of understanding if these worms utilize incredibly brief, localized shifts in time to process information – something previously thought impossible for invertebrates. Combining bioluminescence, scent mapping, and the concept of temporal distortion offers an unprecedented depth of insight into the behavior and navigation strategies of these fascinating creatures. It’s like giving scientists a direct window into the alien mind of a deep-sea worm. 
 
 **Pitch:** "Imagine experiencing the deep ocean not just visually, but through the incredible, complex sensory world of a worm – it’s the only way to truly unlock the secrets of the abyss."
+
+
+---
+
+## Related Ideas
+
+- **biometric cartography of phantom limb sensations** (shared concept: *nano-sensors*)
+- **idea domain=chronal soil cartography** (shared concept: *nano-sensors*)
+- **chronobiological algae scent textiles** (shared concept: *nano-sensors*)
+- **ephemeral object resonance mapping** (shared concept: *nano-sensors*)
+- **idea domain - “Subconscious Chronometric Skin-Mapping”** (shared concept: *nano-sensors*)

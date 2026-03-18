@@ -26,3 +26,14 @@ The entire system is wirelessly controlled and adjusted by a central AI, allowin
 ChronoWeave bypasses the limitations of traditional materials by leveraging nanotechnology and adaptive intelligence. Its rapid deployment, dynamic reshaping, and automated operation represent a paradigm shift in structural integrity, offering unparalleled protection against catastrophic events. The temporal phasing allows for the illusion of “time stopping” the breach – a critical advantage in these situations.
 
 **Pitch:** "Imagine a future where disasters don’t just damage structures, they’re instantly, seamlessly, and permanently resolved – ChronoWeave makes that a reality."
+
+
+---
+
+## Related Ideas
+
+- **kinesthetic palimpsest concept** (shared concept: *shape-memory alloy*)
+- **bio-acoustic modeling extinct animal vocalizations shape-memory alloy textile haptic projection** (shared concept: *shape-memory alloy*)
+- **self-assembling thread-based robotic swarms capable of manipulating objects and constructing miniature environments** (shared concept: *shape-memory alloy*)
+- **instead of building structures engineer colossal mobile coral reefs sculpted by octopus intelligence and capable of terraforming oceans** (shared concept: *bio-concrete matrix*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloy*)

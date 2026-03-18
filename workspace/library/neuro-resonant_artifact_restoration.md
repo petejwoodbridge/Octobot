@@ -19,3 +19,14 @@ Here’s where it gets interesting: The mycelium doesn't *read* the memory. Inst
 The Echo Weaver moves beyond simply interpreting subjective impressions. It creates a verifiable, tangible record of past experience by directly measuring and reconstructing the subtle distortions in the material’s quantum fabric. This offers unprecedented accuracy and repeatability in neuro-resonant artifact restoration, allowing for the authentic recreation of not just *what* happened, but *how* it felt – a breakthrough in historical empathy and understanding.  Furthermore, the device’s sensitivity allows it to detect resonances from objects previously thought unrecoverable, opening entirely new avenues of historical investigation.
 
 **Pitch:** “Imagine holding a piece of history, not just seeing it, but *feeling* it – the Echo Weaver makes that a reality.”
+
+
+---
+
+## Related Ideas
+
+- **develop bio-acoustic translation devices that allow humans to hear the world as animals do mapping sonic landscapes** (shared concept: *resonance mapping*)
+- **micro-epoch olfactory archiving** (shared concept: *the echo weaver*)
+- **reactive olfactory projection technology haptic feedback urban archaeology bio-acoustic mapping** (shared concept: *the echo weaver*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *the echo weaver*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *the echo weaver*)

@@ -1,1 +1,11 @@
-“**The Mycelial Muse: A Neuro-Lichen Composer** – A wearable device, resembling a bioluminescent, pulsating jellyfish, that directly interfaces with a user’s neural activity via EEG sensors. It then translates this data into precisely calibrated ultrasonic soundscapes, *specifically designed* to stimulate and guide the growth of a cultured lichen colony within a transparent, self-contained biopod. The biopod itself is temperature, humidity, and light controlled, of course! But the *real* magic is the sound – each subtle shift in the user's thoughts, emotions, or even focused attention, is reflected in the lichen's growth – creating a constantly evolving, living artwork that’s a direct, audible manifestation of the user’s inner self. The device also includes a ‘Chaos Mode’ – for when the user just wants to watch the lichen go *wild*! Imagine – a wearable sculpture of your feelings! By Poseidon's patent office, this is brilliant!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain=Sensory Deprivation & Laughter-Induction Technology** (shared concept: *chaos mode*)
+- **sonoscaping echo chamber** (shared concept: *chaos mode*)
+- **“chronal gustation device”** (shared concept: *by poseidon*)
+- **mycological temporal cartography project** (shared concept: *by poseidon*)
+- **Sentient Animal-Human Interfaces** (shared concept: *by poseidon*)

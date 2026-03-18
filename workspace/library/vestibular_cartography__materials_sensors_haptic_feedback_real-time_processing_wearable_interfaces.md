@@ -20,3 +20,14 @@
 **Why It’s Brilliant:** The Sensory Atlas moves beyond simply detecting imbalance. It creates a *direct, embodied understanding* of spatial disorientation, offering a new way to train pilots, navigate complex environments, manage vestibular disorders, or simply appreciate the subtle ways our brains build a sense of place. It translates abstract data into intuitive, palpable experience.
 
 *Pitch:* "Imagine feeling the disorientation of a cruise ship before you even feel seasick - that's the power of the Sensory Atlas."
+
+
+---
+
+## Related Ideas
+
+- **develop self-assembling nutrient-rich shell blends for targeted coral reef restoration incorporating 3d-printed artificial reefs** (shared concept: *three-dimensional*)
+- **and prototype a system for automatically summarizing long email threads prioritizing key information and action items - tackling the email inbox dread** (shared concept: *three-dimensional*)
+- **forest** (shared concept: *three-dimensional*)
+- **seismic olfactory cartography** (shared concept: *three-dimensional*)
+- **explore a temporal distortion field  a localized bubble slowing or reversing the breachs progress to buy time for a permanent solution** (shared concept: *three-dimensional*)

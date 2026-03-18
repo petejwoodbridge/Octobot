@@ -26,3 +26,14 @@ Here’s the core:
 The Myco-Echo Chamber isn't just a bioreactor; it’s a living, responding environment. By translating fungal activity into audible and tactile information, we gain unprecedented control and understanding. This system dramatically reduces reliance on complex modelling, leading to faster, more efficient, and targeted material degradation while simultaneously creating an engaging, educational experience. It transforms a potentially dull scientific process into a captivating sensory journey. 
 
 **Pitch:** "Imagine turning waste into a beautiful, sonorous symphony – that’s the Myco-Echo Chamber, the future of sustainable material breakdown."
+
+
+---
+
+## Related Ideas
+
+- **idea domain=symbiotic fungal network memory gardens** (shared concept: *the myco-echo chamber*)
+- **cephalopod bio-acoustics plant vibrational resonance immersive audio-visual experiences haptic feedback** (shared concept: *acoustic sensing*)
+- **personalized ambient soundscapes tailored to user mood and location responding in real-time to environmental data** (shared concept: *acoustic sensing*)
+- **neuro-resonant fungal networks** (shared concept: *haptic feedback integration*)
+- **“synesthetic cartography app”** (shared concept: *haptic feedback integration*)

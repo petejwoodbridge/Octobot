@@ -33,3 +33,13 @@ The core of Symbiotic Bloom is a bio-reactive, pH-sensitive, pink-tinted gel cap
 ## Why It's Extraordinary
 
 This isn
+
+---
+
+## Related Ideas
+
+- **idea domain = adaptive biomimicry** (shared concept: *extraordinary this*)
+- **adaptive skin suit choreography** (shared concept: *bio-reactive gel*)
+- **idea domain=Symbiotic Chrono-Cartography - Wearable Time-Signature Device** (shared concept: *bio-sensitive sensors*)
+- **Precognitive Gastronomy** (shared concept: *overview behold*)
+- **idea domain - biophotonic echo-gardening** (shared concept: *overview behold*)

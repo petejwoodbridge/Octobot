@@ -18,3 +18,14 @@ This project uniquely combines the captivating potential of bio-art with the cut
 
 ## Elevator Pitch
 Experience art that truly *feels* – where your emotions shape the winning bio-garden.
+
+
+---
+
+## Related Ideas
+
+- **biometric-driven fungal network modulation predictive mycelial algorithms haptic-feedback temporal simulation** (shared concept: *bio-art installations*)
+- **biometric moss cultivation  psychological effects of moss  geodesic dome design  haptic feedback systems  bioluminescent algae  personalized micro-ecosystems** (shared concept: *bio-art installations*)
+- **large-scale modular weaving can structures built by swarms of micro-robots creating shifting living tapestries** (shared concept: *bio-art installations*)
+- **chronobiological echo gardens v2** (shared concept: *chronobiological echo gardens*)
+- **translation** (shared concept: *micro-expressions*)

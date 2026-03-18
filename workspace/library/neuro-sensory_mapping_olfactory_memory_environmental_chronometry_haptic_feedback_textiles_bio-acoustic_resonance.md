@@ -17,3 +17,14 @@ Crucially, the bio-acoustic resonance core is pre-programmed with a vast library
 **Why It's Brilliant:** EchoWeave doesn’t just *relive* a memory; it actively reconstructs the sensory backdrop, leveraging bio-acoustic resonance to fill in the gaps in our recall, creating a richer, more authentic, and emotionally powerful experience. It’s a tangible link to the past, built on the fundamental principles of how our brains initially encode and store memories.
 
 *Pitch:* “Imagine stepping back into your childhood, not just remembering it, but *feeling* it – with EchoWeave, you’re not just reminiscing, you're reliving.”
+
+
+---
+
+## Related Ideas
+
+- **neural-resonance landscaping** (shared concept: *bio-acoustic resonance*)
+- **the study of pointless enhancements** (shared concept: *bio-acoustic resonance*)
+- **bio-acoustic resonance mapping of personal objects micro-haptic feedback technology temperature modulation textiles** (shared concept: *bio-acoustic resonance*)
+- **lithospheric dream weaver** (shared concept: *bio-acoustic resonance*)
+- **olfactory memory mapping device** (shared concept: *bio-acoustic resonance*)

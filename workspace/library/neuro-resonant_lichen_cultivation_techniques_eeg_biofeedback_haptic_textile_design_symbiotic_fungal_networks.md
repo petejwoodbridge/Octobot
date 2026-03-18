@@ -23,3 +23,14 @@ Furthermore, the lichen colonies are cultured within a matrix of symbiotic funga
 The Myco-Muse moves beyond simply displaying EEG data. It creates a reciprocal loop – the brain influences the lichen, which then influences the brain through combined sensory input. This represents a dramatically more intuitive and deeply engaging method of biofeedback, leveraging the inherent connection between living organisms and neurological states. It’s a personalized, dynamically-shifting artistic landscape sculpted by the wearer's own mind.
 
 **Pitch:** “Imagine feeling your ideas literally blossom – the Myco-Muse helps you unlock your most creative self, one bioluminescent pulse at a time.”
+
+
+---
+
+## Related Ideas
+
+- **neuro-resonant lichen cultivation  research papers patents existing bio-acoustic experiments eeg mapping lichen metabolism** (shared concept: *neuro-resonant lichen*)
+- **neuro-resonant lichen cultivation  existing research materials techniques potential applications** (shared concept: *neuro-resonant lichen*)
+- **neuro-resonant lichen cultivation brainwave visualization bioluminescence** (shared concept: *neuro-resonant lichen*)
+- **neuro-resonant lichen cultivation brainwave monitoring biofeedback three-dimensional sonic-visual representation meditative awareness** (shared concept: *neuro-resonant lichen*)
+- **wearable biofeedback scent layering extinct invertebrate biomes olfactory projection** (shared concept: *genetically-engineered*)

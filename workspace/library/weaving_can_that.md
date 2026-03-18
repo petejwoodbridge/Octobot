@@ -26,3 +26,14 @@ Here’s the breakdown:
 LoomBloom bridges the gap between internal experience and external communication. It’s a non-verbal, constantly-updating mood ring that's aesthetically beautiful and inherently empathetic. It promotes self-awareness, facilitates communication with those around you (showing them *how* you're feeling, rather than just *telling* them), and provides a grounding, meditative experience through the hypnotic effect of the light. The algae are sustainably grown and biodegradable, adding an ecological benefit.
 
 **Pitch:** "Imagine wearing your emotions as a living, breathing work of art – LoomBloom allows you to finally express yourself in a way that’s both profoundly personal and universally understood."
+
+
+---
+
+## Related Ideas
+
+- **joy manifests as** (shared concept: *algorithmic translation*)
+- **create a chromatophore-based emotional regulation system allowing humans to dynamically control their outward appearance** (shared concept: *self-awareness*)
+- **create wearable exoskeletons mimicking cephalopod camouflage dynamically shifting texture and color based on surrounding stimuli** (shared concept: *sensory input*)
+- **the taste itself** (shared concept: *sensory input*)
+- **mnemonic hydro-sculpting  bio-acoustic resonance  memory recall  aquatic manipulation** (shared concept: *sensory input*)

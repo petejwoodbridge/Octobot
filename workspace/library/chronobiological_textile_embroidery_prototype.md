@@ -22,3 +22,14 @@ ChronoWeave is a completely novel sensory experience, merging bio-luminescence, 
 
 ## Elevator Pitch
 Experience serenity and adapt to your world – one exquisitely shifting garment at a time.
+
+
+---
+
+## Related Ideas
+
+- **developing a subterranean bio-luminescent habitat network utilizing geothermal energy and genetically engineered mineral-extracting organisms** (shared concept: *bio-luminescence*)
+- **Kinesthetic Dream Sculpting** (shared concept: *micro-haptic sensors*)
+- **develop bio-adhesive nanobots that instantly seal structural weaknesses in hulls mimicking octopus camouflage** (shared concept: *deep-sea algae*)
+- **bioluminescent financial literacy tools for children** (shared concept: *deep-sea algae*)
+- **filament** (shared concept: *bio-luminescence*)

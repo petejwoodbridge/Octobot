@@ -35,3 +35,14 @@ The graft itself is a delicate, almost gelatinous structure, shimmering with a s
 ---
 *Original notes:*
 “ChromaSkin – The Bio-Harmonic Skin Graft”
+
+
+---
+
+## Related Ideas
+
+- **bio-sonorous lichen mapping – devices** (shared concept: *bio-harmonic resonance*)
+- **Personalized Phantom Limb Augmentation** (shared concept: *bio-harmonic resonance*)
+- **adjustments** (shared concept: *bio-harmonic resonance*)
+- **auditory cartography project** (shared concept: *bio-harmonic resonance*)
+- **Kinesthetic Cartography of Forgotten Skills – Idea Pitch** (shared concept: *data logging*)

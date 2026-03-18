@@ -36,3 +36,14 @@ This data is then fed into a miniature, bio-integrated quantum processor – I c
 ---
 *Original notes:*
 “**The Lithoskin – A Bio-Reactive Geological Memory Suit**
+
+
+---
+
+## Related Ideas
+
+- **idea domain – “geo-sensory weaving** (shared concept: *environmental monitoring*)
+- **investigate novel materials for creating calming sensory experiences** (shared concept: *haptic feedback system*)
+- **historical fermentation processes microbial ecology haptic feedback olfactory simulation bioluminescence abandoned breweries** (shared concept: *haptic feedback system*)
+- **idea domain - sonogenetic memory weaving** (shared concept: *haptic feedback system*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *haptic feedback system*)

@@ -36,3 +36,14 @@ This data then feeds into a ‘Sonic Weaver’ – a miniature quantum processor
 ---
 *Original notes:*
 ## The Echo Chamber: Bio-Sonic Reverberation Device
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-acoustic sensor*)
+- **Sonorous Cartography of Ephemeral Emotions** (shared concept: *echo chamber*)
+- **idea domain = pet emotional regulation** (shared concept: *bio-acoustic sensor*)
+- **chronal olfactory layering prototype** (shared concept: *echo chamber*)
+- **idea domain = Algorithmic Gastric Topography** (shared concept: *bio-acoustic sensor*)

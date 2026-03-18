@@ -18,3 +18,14 @@ The Chronal Moss Time Weaver isn’t just a beautiful device; it’s a sophistic
 
 ## Elevator Pitch
 Experience your time, literally, with a living tapestry woven from your very being.
+
+
+---
+
+## Related Ideas
+
+- **develop bio-adhesive mimicry  create a rapidly deployable self-healing sealant based on octopus adhesive cells to physically block breaches** (shared concept: *bio-luminescent pigment*)
+- **idea domain=Ephemeral Cartography of Sensory Ghosts + Cephalopod Camouflage** (shared concept: *bio-luminescent pigments*)
+- **idea domain=sonogenetic lithography** (shared concept: *three-dimensional patterns*)
+- **chronobiotic moss garden prototype** (shared concept: *bryum chronos*)
+- **chronoflora temporal seed pod** (shared concept: *bryum chronos*)

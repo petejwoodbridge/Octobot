@@ -19,3 +19,14 @@ The entire process is passive, undetectable, and designed to minimize disruption
 **Why It’s Brilliant:** The Somnium Weaver bridges the gap between neuroscience and sound design. It acknowledges the power of the subconscious and uses sound, a universally recognized trigger, to reshape the emotional impact of a traumatic dream experience. It's a gentle, personalized solution that doesn’t rely on forcing a change, but coaxing a new interpretation. 
 
 *Pitch:* “Imagine waking up from a terrifying dream and feeling completely calm - the Somnium Weaver subtly re-writes your nightmares, one beautiful, sonic thread at a time.”
+
+
+---
+
+## Related Ideas
+
+- **many people struggle** (shared concept: *bio-acoustic device*)
+- **idea domain=Chronobiological Cartography of Domestic Sounds** (shared concept: *the somnium weaver*)
+- **these threads are** (shared concept: *the somnium weaver*)
+- **t about stopping the breach it** (shared concept: *bio-acoustic device*)
+- **subconscious dream sculpting** (shared concept: *the somnium weaver*)

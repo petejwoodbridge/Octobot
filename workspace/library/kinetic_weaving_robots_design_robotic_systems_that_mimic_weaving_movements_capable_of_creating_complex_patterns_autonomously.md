@@ -43,3 +43,14 @@ Initially, Chorus is fed a “seed pattern” – a basic weave – but it rapid
 The Loom Weaver isn't just about creating beautiful textiles; it's about unlocking a new level of generative design. The decentralized AI allows for truly unpredictable and evolving patterns, creating textures and forms impossible for a human weaver to conceive. The robotic swarm approach eliminates the precision issues associated with individual robotic arms, fostering complex interactions and self-correction. Finally, the use of resin as the weaving medium creates inherently dynamic textiles that subtly shift and change over time, reacting to light and temperature. 
 
 **Pitch:** "Imagine fabrics that tell stories, that evolve with your environment – the Loom Weaver creates bespoke textiles with a soul, one spontaneous pattern at a time."
+
+
+---
+
+## Related Ideas
+
+- **shell-based robotic exoskeletons develop wearable robotic armor utilizing a network of interconnected articulated shells for enhanced strength and movement** (shared concept: *micro-hydraulic actuators*)
+- **traditional weaving can** (shared concept: *the loom weaver*)
+- **design autonomous swarm-based robotic repair octopi capable of self-assembling defenses and proactively sealing breaches** (shared concept: *bio-inspired robots*)
+- **create an autonomous bloom-inspired swarm of robotic pollinators that reshape coral reefs based on collective bloom signals** (shared concept: *bio-inspired robots*)
+- **bio-luminescent shell structures for underwater city lighting and navigation** (shared concept: *closed-loop system*)

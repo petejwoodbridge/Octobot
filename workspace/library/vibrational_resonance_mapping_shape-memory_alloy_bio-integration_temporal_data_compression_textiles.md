@@ -23,3 +23,14 @@ ChronoWeave utilizes three key technologies:
 ChronoWeave represents a fundamental shift in medical diagnostics. It’s not just about recording data; it’s about capturing the *story* of a patient’s health, allowing for proactive intervention based on subtle, evolving patterns. The temporal data compression achieved through the resonant mapping dramatically reduces the volume of data transmitted and stored, while simultaneously providing far richer diagnostic information. It’s also adaptable – different weave patterns could be tailored to specific body areas or conditions.
 
 **Pitch:** "Imagine knowing your body’s deepest signals before you even feel them – ChronoWeave gives you that power."
+
+
+---
+
+## Related Ideas
+
+- **fungal bio-integration olfactory transduction shape-memory alloys textile engineering** (shared concept: *shape-memory alloy*)
+- **idea domain=neuro-geological chronesthesia synthesis** (shared concept: *shape-memory alloy*)
+- **bioluminescent invertebrate behavior biofeedback integration miniature ecosystem design shape-memory alloy micro-habitats** (shared concept: *shape-memory alloy*)
+- **color psychology temporal perception shape-memory alloys** (shared concept: *shape-memory alloy*)
+- **haptic feedback moss cultivation biophony mapping geological time perception shape-memory alloy moss affective resonance** (shared concept: *shape-memory alloy*)

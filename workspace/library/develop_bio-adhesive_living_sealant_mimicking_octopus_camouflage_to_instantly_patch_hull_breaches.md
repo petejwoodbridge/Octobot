@@ -18,3 +18,14 @@
 **Why It’s Brilliant:** ChromaWeave eliminates the need for manual patching. It’s reactive, instantaneous, incredibly strong, and completely self-healing. The color-matching element adds a layer of advanced camouflage, potentially diverting attention from the damage itself. The reliance on biological processes results in a truly sustainable and virtually limitless sealant source. It’s essentially a living, breathing shield for your vessel. 
 
 Pitch: "Imagine a hull breach vanishing before your eyes – ChromaWeave uses living anemones to build impenetrable, self-repairing patches in seconds, guaranteeing your vessel’s survival."
+
+
+---
+
+## Related Ideas
+
+- **develop bio-adhesive living sealant mimicking octopus camouflage instantly patching structural weaknesses** (shared concept: *bio-adhesive sealant*)
+- **develop bio-adhesive living sealant mimicking octopus camouflage instantly patching breaches with organic material** (shared concept: *bio-adhesive*)
+- **develop bio-adhesive living seals utilizing modified octopus tissue to instantly patch and reinforce structural weaknesses** (shared concept: *bio-adhesive*)
+- **develop bio-adhesive smart skins for ships that instantly seal breaches with a self-healing pressure-sensitive polymer** (shared concept: *bio-adhesive*)
+- **develop bio-adhesive living sealant mimicking octopus camouflage for immediate self-repairing hull breaches** (shared concept: *bio-adhesive sealant*)

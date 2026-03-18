@@ -18,3 +18,14 @@ The Chronal Weave is revolutionary because it doesn't just treat the symptoms of
 
 ## Elevator Pitch
 Reclaim your moment: The Chronal Weave lets you erase the feeling of a bad experience before it even fully forms.
+
+
+---
+
+## Related Ideas
+
+- **chronal echoes  creating devices to record and replay faint temporal distortions as auditory or visual phenomena** (shared concept: *chronal signature*)
+- **adaptive biomaterials idea 1** (shared concept: *shape-memory alloys*)
+- **mnemonic pollen mapping** (shared concept: *shape-memory alloys*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloys*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloys*)

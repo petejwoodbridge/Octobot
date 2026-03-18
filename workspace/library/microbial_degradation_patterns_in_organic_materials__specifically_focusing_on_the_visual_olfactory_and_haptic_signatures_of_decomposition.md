@@ -25,3 +25,14 @@ Data is wirelessly transmitted to a central processing unit for analysis, creati
 The BioSense Weaver moves beyond simply *observing* decomposition. It creates a dynamic, real-time 'conversation' with the decay process. The integrated sensor array allows for unparalleled precision in monitoring microbial activity, generating data far beyond current methods’ capabilities. It integrates visual, olfactory, and haptic feedback, providing a richer, more intuitive understanding of decomposition patterns than ever before. Furthermore, the modular design allows for swapping out bacterial consortia for specific materials and environments, continuously refining its sensitivity. 
 
 **Pitch:** “Imagine knowing exactly how long a piece of evidence will remain before transforming—it’s the BioSense Weaver: predicting decomposition, one vibration, scent, and color at a time.”
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent coral genetics sound frequency manipulation memory encoding** (shared concept: *bio-integrated device*)
+- **idea domain – “Subconscious geological echo-weaving”** (shared concept: *bio-integrated device*)
+- **microbial scent mapping technology bio-sensing olfactory systems historical scent reconstruction** (shared concept: *bio-integrated device*)
+- **idea domain=neuro-geological scent-cartography of fungal communication networks** (shared concept: *bio-integrated device*)
+- **extinct insect communication olfactory projection bioluminescence wearable tech paleo-entomology** (shared concept: *bio-integrated device*)

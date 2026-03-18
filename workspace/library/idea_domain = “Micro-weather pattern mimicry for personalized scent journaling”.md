@@ -40,3 +40,14 @@ This data then feeds into a miniature, 3D-printed ‘reactor’ housed within th
 *   **Therapeutic Memory Recall:**  Helps patients with Alzheimer’s or dementia reconnect with lost memories.
 *   **Travel Journaling:**  Captures the feeling of a specific place, allowing you to revisit it through scent long after you’ve left.
 *   **Creative Inspiration:**
+
+
+---
+
+## Related Ideas
+
+- **subconscious dream sculpting** (shared concept: *creative inspiration*)
+- **idea domain=bio luminescent memory moss temporal scent mapping** (shared concept: *therapeutic memory recall*)
+- **memory bloom scentscapes** (shared concept: *therapeutic memory recall*)
+- **idea domain=chromatic resonance harvesting** (shared concept: *top secret*)
+- **idea domain=Ephemeral Echo Synthesis** (shared concept: *top secret*)

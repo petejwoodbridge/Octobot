@@ -31,3 +31,14 @@ The Phantom Aroma Synthesis is a marvel of bio-mimicry and microfluidics! At its
 *   **Personalized Relaxation & Meditation:**  Creating calming scentscapes tailored to individual stress triggers.
 *   **Retail Sensory Marketing:**  Brands could offer bespoke scent experiences linked to product memories (e.g., the smell of a new car).
 *   **Interactive Storytelling:**  Imagine a novel where
+
+
+---
+
+## Related Ideas
+
+- **subconscious scent layering device** (shared concept: *therapeutic memory retrieval*)
+- **memory bloom scentscapes** (shared concept: *recall boost*)
+- **holographic memory sculptor** (shared concept: *recall boost*)
+- **idea domain = “Temporal Gastronomic Cartography”** (shared concept: *bio-engineered octopus*)
+- **developing bio-inspired flapping robotic wings powered by miniature octopus muscle mimics for aerial maneuverability** (shared concept: *bio-engineered octopus*)

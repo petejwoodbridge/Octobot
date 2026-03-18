@@ -1,1 +1,11 @@
-“Lithophonic Lullaby Moss – Project Genesis\n\n**Concept:** A genetically engineered moss capable of actively responding to and replicating the vibrational signatures of specific geological formations, translating them into a mesmerizing display of bioluminescence. \n\n**Functionality:**\n*   **Lithophonic Sensors:** Embedded within the moss’s cellular structure are ultra-sensitive piezoelectric sensors that capture and analyze the vibrational frequency of external geological sources (riverbeds, volcanoes, ice formations). These sensors are linked to a micro-controller.\n*   **Bioluminescent
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **lithovibro-cartography stone sculptor** (shared concept: *project genesis*)
+- **lithospheric dream weaver** (shared concept: *project genesis*)
+- **osmotic memory mapping device** (shared concept: *functionality*)
+- **idea domain – “Synesthetic Cartography of Historical Weather Patterns”** (shared concept: *functionality*)
+- **“bio-harmonic lichenscapes – personalized responsiveness”** (shared concept: *functionality*)

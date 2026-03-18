@@ -34,3 +34,14 @@ The Temporal Echo Weaver (that’s what I’m calling the core component!) utili
 ---
 *Original notes:*
 ## Temporal Echo Weaver - A Sensory Chronesthesia Device
+
+
+---
+
+## Related Ideas
+
+- **furthermore** (shared concept: *micro-sensors that*)
+- **Chronal Gastronomic Cartography - Enhanced Prototype** (shared concept: *three-dimensional representation*)
+- **idea domain - Chronoskin mapping** (shared concept: *three-dimensional map*)
+- **Chronobiological Cartography** (shared concept: *three-dimensional representation*)
+- **geological grief mapping bio-acoustic resonance mine shafts experiential recall** (shared concept: *three-dimensional representation*)

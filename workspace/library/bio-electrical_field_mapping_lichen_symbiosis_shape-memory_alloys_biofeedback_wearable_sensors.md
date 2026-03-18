@@ -17,3 +17,14 @@ The mesh, woven with conductive polymers, acts as an antenna, amplifying the fun
 **Why It’s Brilliant:** The Myco-Sense bridges the gap between human biofeedback and the silent, sophisticated communication happening beneath our feet. It creates a symbiotic feedback loop, offering unprecedented insight into how human stress impacts fungal networks, and how fungal networks react to environmental threats. This allows for proactive monitoring of ecosystem health and potentially, personalized stress management strategies rooted in the earth’s own electrical rhythms. It’s a powerful tool for conservation, urban ecology, and even mindfulness training. 
 
 *Pitch:* “Imagine feeling the earth’s pulse, literally – it’s like a silent alarm system for your well-being and the planet’s health.”
+
+
+---
+
+## Related Ideas
+
+- **adaptive biomaterials idea 1** (shared concept: *shape-memory alloys*)
+- **mnemonic pollen mapping** (shared concept: *shape-memory alloys*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloys*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloys*)
+- **adaptive material reconstruction - cellular fabrication explore using bio-luminescent self-assembling materials mimicking octopus skin to dynamically repair and reshape damaged structures** (shared concept: *shape-memory alloys*)

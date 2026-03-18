@@ -21,3 +21,14 @@ For example, if a user wants to recall their grandmother's apple pie, ChronoBite
 ChronoBites goes beyond simple nostalgia. By directly targeting temporal memory pathways, it offers a unique blend of therapeutic potential (for treating PTSD, dementia, or simply reconnecting with lost moments) and an unparalleled culinary adventure. The system’s adaptive learning capability – continuously refining its profile based on the user’s brainwave responses – makes it profoundly personalized and exceptionally effective. It’s a convergence of neuroscience, gastronomy, and sound design, all driven by the extraordinary power of memory. 
 
 *Pitch:* "Imagine tasting your childhood again, with perfect clarity and feeling – ChronoBites makes that a delicious reality."
+
+
+---
+
+## Related Ideas
+
+- **resonant fungal network cartography** (shared concept: *bio-acoustic mapping*)
+- **chromatic lichen-symbiotic sleep architecture** (shared concept: *non-invasive eeg*)
+- **thread contains a** (shared concept: *non-invasive eeg*)
+- **bio-reactive fungal networks spatial scent diffusion dynamic micro-environments anxiety reduction** (shared concept: *non-invasive eeg*)
+- **synchronized chickens - origins animal behaviour robotics biofeedback** (shared concept: *non-invasive eeg*)

@@ -21,3 +21,14 @@ For example, if the operator *thinks* “connect the wire,” the Nano-Tendrils 
 The Micro-Mender bridges the gap between human intuition and robotic precision. It bypasses traditional repair processes entirely, reacting instantaneously to damage. The neuro-link offers unparalleled control, far exceeding the dexterity of a human hand. The self-assembling nature of the Nano-Tendrils minimizes reliance on pre-fabricated parts and drastically reduces material waste. Furthermore, the system can be programmed to recognize and repair a vast range of damage types, from electrical faults to structural weaknesses – it’s repair on a fundamental, microscopic level.
 
 **Pitch:** “Introducing the Micro-Mender – instantly fix anything, anytime, with just your thoughts and a cloud of tiny robots.”
+
+
+---
+
+## Related Ideas
+
+- **develop bio-adhesive polymers mimicking octopus suckers to create instantaneous self-sealing barriers for leaks** (shared concept: *bio-adhesive polymers*)
+- **develop bio-integrated prosthetics mimicking octopus limb regeneration for seamless human healing** (shared concept: *shape-memory alloy*)
+- **deployable insect-scale wingsuits enabling dragonfly drones to perform rapid agile aerial maneuvers and short-distance human transport** (shared concept: *hard-to*)
+- **kinesthetic palimpsest concept** (shared concept: *shape-memory alloy*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloy*)

@@ -28,3 +28,13 @@ Think of it like a tiny, internal orchestra! The tACS, delivered via a discreet,
 *   **Peak Performance Training:** Athletes, musicians, and professionals could use InkShift to sharpen their skills and reaction times.
 *   **Creative Block Busting:** Artists, writers, and inventors could unlock new levels of inspiration and innovation.
 *   **
+
+---
+
+## Related Ideas
+
+- **subconscious fungal network mapping** (shared concept: *creative block busting*)
+- **t about stopping the breach it** (shared concept: *deep-sea anglerfish*)
+- **neuro-geological scent therapy  personalized temporal simulations** (shared concept: *neuro-feedback loop*)
+- **develop bio-adhesive skin for ships mimicking octopus camouflage to instantly seal hull breaches** (shared concept: *bio-luminescent ink*)
+- **idea domain = personalized olfactory memory grafting** (shared concept: *wrist-worn device*)

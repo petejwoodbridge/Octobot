@@ -19,3 +19,14 @@ Over time, the cage will build up a complex, layered resonance, preserving not j
 **Why It's Brilliant:** The Resonant Archive doesn’t just record sound; it attempts to capture and preserve *memory* itself, translating the emotional and vibrational complexity of human voice into a tangible, evolving resonance. It leverages bioluminescence and advanced material science to create a unique, tactile representation of a voice’s history. 
 
 *Pitch:* "Imagine holding the echo of your grandmother's laughter – it’s not just a recording, it's a living, breathing fragment of her soul.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain - Chronoskin mapping** (shared concept: *three-dimensional map*)
+- **instead of traditional transportation design self-assembling bio-luminescent octopus-powered vehicles for aquatic exploration** (shared concept: *three-dimensional map*)
+- **Ephemeral Memory Cartography** (shared concept: *three-dimensional map*)
+- **bio-luminescent subterranean fungi cultivation  depth-mapping via olfactory projection - research potential technologies and existing projects** (shared concept: *three-dimensional map*)
+- **algorithmic dust cartography - refinement  expansion** (shared concept: *three-dimensional map*)

@@ -20,3 +20,14 @@
 **Why It’s Brilliant:** The Consensus Coral combines the tangible engagement of a biological system with the analytical power of data science. It forces participants to *see* the collective emotional landscape in a way that traditional methods can’t. The bioluminescence isn’t just pretty; it’s a direct, immediate representation of group dynamics, fostering empathy and promoting truly collaborative solutions. It’s a gamified, emotionally-intelligent approach to complex strategic thinking.
 
 *Pitch:* “Imagine unlocking your team’s true potential through the silent wisdom of a living, breathing coral – it's the future of getting things done.”
+
+
+---
+
+## Related Ideas
+
+- **neuro-scent synthesis rem sleep voc analysis microbial scent production bio-luminescent chambers** (shared concept: *non-invasive sensors*)
+- **the light** (shared concept: *non-invasive sensors*)
+- **t about stopping the breach it** (shared concept: *bio-luminescent*)
+- **predictive dietary recommendations for marine life based on real-time ocean current and biological data** (shared concept: *non-invasive sensors*)
+- **self-assembling organic pods that mimic coral reef structures for habitat restoration** (shared concept: *genetically-modified coral*)

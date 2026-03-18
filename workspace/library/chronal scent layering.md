@@ -20,3 +20,14 @@ EchoBloom’s brilliance lies in its combination of cutting-edge scientific meth
 
 ## Elevator Pitch
 Experience the last moments of a lost world – one scientifically-precise scent and sound at a time.
+
+
+---
+
+## Related Ideas
+
+- **chimeric olfactory layering** (shared concept: *echobloom*)
+- **chronobiological echo gardening v1** (shared concept: *echobloom*)
+- **Chronal Moss Mapping & Sonification – Detailed Concept** (shared concept: *echobloom*)
+- **chronoscaping prototype concept** (shared concept: *echobloom*)
+- **chronal scent layering device** (shared concept: *echobloom*)

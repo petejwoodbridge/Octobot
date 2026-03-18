@@ -36,3 +36,14 @@ This data is fed into a sophisticated AI – nicknamed “Chronos” – which t
 ---
 *Original notes:*
 ## EchoChamber: Sculpting Time Itself
+
+
+---
+
+## Related Ideas
+
+- **subconscious textile resonance mapping** (shared concept: *therapeutic art*)
+- **micro-chronal olfactory archiving** (shared concept: *personal memory preservation*)
+- **idea domain=bio acoustic lichen lullabies** (shared concept: *temporal calibration dial*)
+- **“Chronal Gastric Mapping”** (shared concept: *museum exhibits*)
+- **idea domain=Sonospheric Skin-Symbiosis** (shared concept: *performance art*)

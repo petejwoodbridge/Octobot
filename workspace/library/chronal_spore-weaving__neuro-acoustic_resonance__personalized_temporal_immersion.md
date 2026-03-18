@@ -21,3 +21,14 @@ Then, the chronal spores are released. They don't *transport* the user. Instead,
 The Chronosymphony moves beyond passive memory recall. It offers a form of personalized temporal immersion, utilizing the latest advancements in microbiology, neuro-acoustics, and quantum resonance theory (a currently theoretical field, naturally) to provide a uniquely powerful therapeutic tool and a profound, emotionally resonant journey into one's own history. It’s not about changing the past, but about understanding it with unprecedented depth, offering a pathway to healing, acceptance, and a richer appreciation of the present. 
 
 **Pitch:** “Imagine feeling your grandmother’s laughter again, perfectly, for just a moment – that's what the Chronosymphony delivers."
+
+
+---
+
+## Related Ideas
+
+- **biophotonic fractal journaling** (shared concept: *real-time physiological*)
+- **geological grief mapping bio-acoustic resonance mine shafts experiential recall** (shared concept: *real-time physiological*)
+- **idea domain – “The Temporal Bloom** (shared concept: *transport*)
+- **wearable biofeedback scent layering extinct invertebrate biomes olfactory projection** (shared concept: *genetically-engineered*)
+- **explore a symbiotic system utilizing genetically-engineered bioluminescent organisms to detect and rapidly solidify breaches with a self-healing polymer** (shared concept: *genetically-engineered*)

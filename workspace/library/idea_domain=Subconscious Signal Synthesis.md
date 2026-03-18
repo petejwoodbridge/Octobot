@@ -41,3 +41,14 @@ The Chronosynth isn’t just another meditation app or brainwave entrainer; it's
 ---
 *Original notes:*
 ## The Chronosynth – A Temporal Sensory Navigator
+
+
+---
+
+## Related Ideas
+
+- **idea domain=temporal mycelial chronosuit** (shared concept: *temporally-shifted sensory*)
+- **“paleo echo suite”** (shared concept: *temporally-shifted sensory*)
+- **idea domain = “Personalized Sensory Memory Cocoon”** (shared concept: *temporally-shifted sensory*)
+- **chrono** (shared concept: *pre-set profiles*)
+- **a biofeedback-driven dream weaver app influencing and shaping lucid dreams through subtle auditory and haptic stimuli** (shared concept: *telling*)

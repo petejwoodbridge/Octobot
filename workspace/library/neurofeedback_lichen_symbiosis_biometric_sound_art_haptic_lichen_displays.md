@@ -21,3 +21,14 @@ As the user enters a state of relaxation, the lichen blooms into complex, fracta
 The MycoEcho creates a deeply intuitive and profoundly calming experience. The symbiosis between the human body and a biological organism – the lichen and slime mold – offers a tangible and mesmerizing way to understand and interact with internal states. It’s a closed-loop system; the user’s emotional response *shapes* the sensory experience, promoting self-awareness and promoting a meditative state unlike any other. The ceramic bowl grounds the technology, creating a tactile connection, and the inherent fragility of the lichen display encourages a slower, more contemplative pace. 
 
 **Pitch:** “Experience your calm, visualized – and sonified – by the living intelligence of nature itself.”
+
+
+---
+
+## Related Ideas
+
+- **bone resonance tuning haptic feedback acoustic therapy proprioception body size perception** (shared concept: *low-level*)
+- **olfactory reconstruction technology biometric scent mapping shape memory alloy scent diffusers** (shared concept: *low-level*)
+- **mnemosyne cartography - historical precedents biophoretic research olfactory perception haptic feedback technologies mapping techniques crowd psychology** (shared concept: *low-level*)
+- **self-healing weave can for automated repairs on spacecraft hulls** (shared concept: *low-level*)
+- **idea domain = chronostasis gardens** (shared concept: *low-level*)

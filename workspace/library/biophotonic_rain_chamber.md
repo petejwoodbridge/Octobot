@@ -18,3 +18,14 @@ Nimbus isn't just a sensory experience; it's a personalized physiological modula
 
 ## Elevator Pitch
 Experience your body’s calm, perfectly orchestrated by a personalized rainstorm.
+
+
+---
+
+## Related Ideas
+
+- **create a symbiotic ai-octopus network capable of anticipating and resolving discomfort through anticipatory physical adjustments and therapeutic stimuli** (shared concept: *calm current*)
+- **idea domain - biofeedback-integrated mindfulness** (shared concept: *real-time biofeedback*)
+- **adaptive biomaterials idea 1** (shared concept: *real-time biofeedback*)
+- **neuroacoustic stimulation haptic feedback olfactory layering myth archetype wearable device biofeedback** (shared concept: *real-time biofeedback*)
+- **“paleo-scent weaver”** (shared concept: *real-time biofeedback*)

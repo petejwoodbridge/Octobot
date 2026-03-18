@@ -29,3 +29,14 @@ The system utilizes a combination of the provided technologies:
 ChronoScent moves beyond passive historical education. By dynamically adjusting the scent and audio based on the wearer's emotional state, it creates a truly personalized and empathic experience. The system doesn't *tell* you about the past; it *shows* you, triggering powerful, involuntary memories and emotional responses, fostering a deeper, more intuitive understanding of historical events. It’s a profoundly intimate way to connect with our ancestors.
 
 **Pitch:** “Imagine experiencing the terror of the Battle of Hastings, or the serenity of a Roman bath, not through a textbook, but directly through your senses - ChronoScent: Feel the past.”
+
+
+---
+
+## Related Ideas
+
+- **fungal bio-integration olfactory transduction shape-memory alloys textile engineering** (shared concept: *shape-memory alloy*)
+- **litho-chronesthesia mapping v1** (shared concept: *bio-integrated sensors*)
+- **predictive maintenance via bio-integrated sensors develop miniature octopus-inspired sensors that monitor structural integrity in real-time anticipating potential issues before they arise** (shared concept: *bio-integrated sensors*)
+- **kinesthetic palimpsest concept** (shared concept: *shape-memory alloy*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloy*)

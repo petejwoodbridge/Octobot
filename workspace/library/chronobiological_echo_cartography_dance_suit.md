@@ -22,3 +22,14 @@ The Chrono-Motion Suit goes beyond simply visualizing the past; it creates a vis
 
 ## Elevator Pitch
 Step into history and feel the Earth move beneath your feet.
+
+
+---
+
+## Related Ideas
+
+- **tactile** (shared concept: *micro-actuators embedded*)
+- **Kinesthetic Memory Anchors - The Chronoskin** (shared concept: *micro-actuators embedded*)
+- **kinesthetic memory weaving techniques neuro-sensory stimulation haptic feedback design biomechanical resonance** (shared concept: *micro-actuators embedded*)
+- **Sonospheric Cartography of Transient Emotions** (shared concept: *movement*)
+- **algorithmic dust cartography - refinement  expansion** (shared concept: *movement*)

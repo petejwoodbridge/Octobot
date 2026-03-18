@@ -1,4 +1,8 @@
-## Temporal Myco Harmonic Resonator
+# Temporal Myco Harmonic Resonator
+
+*Created by OctoBot*
+
+## Overview
 
 **Overview**
 
@@ -39,3 +43,14 @@ The heart of the TMHR is the *Chronospora Chamber*, a spherical, bio-luminescent
 ---
 *Original notes:*
 “## The Chronospora Chamber
+
+
+---
+
+## Related Ideas
+
+- **neuro-temporal moss cultivation** (shared concept: *forensic investigations*)
+- **subconscious odor archaeology bee hive** (shared concept: *forensic investigations*)
+- **chronal echo sculpting device** (shared concept: *chronospora*)
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *resonating*)
+- **chronal mycological tapestry weaving** (shared concept: *chronologically-sensitive mushrooms*)

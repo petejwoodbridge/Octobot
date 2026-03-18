@@ -17,3 +17,14 @@ The Echo Bloom’s intelligent system adapts in real-time, learning and refining
 **Why It's Brilliant:** It combines advanced marine bioacoustics with robotic autonomy and a deep understanding of coral physiology. The Echo Bloom isn’t just mimicking the sound of a healthy reef; it’s actively *re-tuning* it, potentially accelerating reef recovery rates and building resilience against future stressors. The intelligent adaptation element makes it far more effective than static, broadcast soundscapes. 
 
 *Pitch:* "We’re not just planting coral; we're giving them a conversation starter – a chance to bloom again."
+
+
+---
+
+## Related Ideas
+
+- **adaptive organ regeneration systems** (shared concept: *counter-frequency*)
+- **bio acoustic coral translator** (shared concept: *bio-acoustic coral*)
+- **investigate novel materials for creating calming sensory experiences** (shared concept: *re-tuning*)
+- **temporal acoustic influence  historical sound manipulation biofeedback** (shared concept: *counter-frequency*)
+- **these frequencies are** (shared concept: *counter-frequency*)

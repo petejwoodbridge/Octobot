@@ -25,3 +25,14 @@ The LuminaFlora merges art, bio-sensing, and sound design in a completely novel 
 
 
 **Pitch:** “Imagine experiencing the vibrant conversation of a bioluminescent ecosystem, translated into sound and light – it's the future of bio-art and scientific discovery.”
+
+
+---
+
+## Related Ideas
+
+- **creating a self-healing iridescent material replicating dragonfly wing coloration and strength through bio-integrated nanotechnology** (shared concept: *photobacterium phosphoreum*)
+- **and ideate on sensory reset products  objects or experiences designed to help users quickly de-stress and refocus** (shared concept: *bio-reactive ceramic*)
+- **holographic olfactory maps that allow users to smell and feel locations remotely** (shared concept: *bio-reactive ceramic*)
+- **sonosomatic mapping device** (shared concept: *visualize*)
+- **microbial bioluminescence resonant ceramics biofeedback sensors fractal geometry fractal soundscapes** (shared concept: *vibrio fischeri*)

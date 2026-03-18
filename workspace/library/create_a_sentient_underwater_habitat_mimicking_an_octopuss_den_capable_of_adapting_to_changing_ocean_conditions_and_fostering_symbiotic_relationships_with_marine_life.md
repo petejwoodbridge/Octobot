@@ -21,3 +21,14 @@ Want a calmer current? The Den subtly alters its form to deflect it. A predator 
 The Morphus Den transcends a simple habitat. It’s a living, breathing ecosystem, a dynamic laboratory capable of generating unparalleled data on marine adaptation and resilience. It’s a step towards truly understanding and protecting our oceans, offering unprecedented levels of immersive, collaborative research. It also just *looks* incredible – a shifting, glowing coral reef built by an intelligent machine.
 
 **Pitch:** "Imagine observing the ocean’s secrets in a habitat that’s not just studying them, but *becoming* them – the Morphus Den: intelligent, adaptive, and utterly breathtaking."
+
+
+---
+
+## Related Ideas
+
+- **circadian rhythms textile integration moss colonies bio-acoustic output** (shared concept: *bio-acoustic sensors*)
+- **develop a bio-adhesive sealant mimicking octopus skin instantly bonding to porous materials to physically block leaks** (shared concept: *self-healing*)
+- **developing a distributed consciousness network projecting the central units awareness across a marine environment** (shared concept: *pressure-sensitive nodes*)
+- **chronobiological echo gardening v1** (shared concept: *bio-ceramic*)
+- **subconscious olfactory archiving** (shared concept: *bio-ceramic*)

@@ -29,3 +29,14 @@ Okay, brace yourselves – this gets wonderfully weird. The EchoBloom utilizes a
 ---
 *Original notes:*
 ## EchoBloom: The Temporal Coral Weaver
+
+
+---
+
+## Related Ideas
+
+- **olfactory time capsules** (shared concept: *historical immersion*)
+- **chronal olfactory layering prototype** (shared concept: *historical immersion*)
+- **idea domain=personalized chronesthesia generation** (shared concept: *historical immersion*)
+- **idea domain=Symbiotic Textile Memory Weaving** (shared concept: *three-dimensional projection*)
+- **Chronal Gastronomy – Temporal Tasting Device** (shared concept: *chronal stabilizer*)

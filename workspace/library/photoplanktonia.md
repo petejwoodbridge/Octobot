@@ -23,3 +23,14 @@ LuminaBloom creates a self-reporting, distributed sensor network. It overcomes t
 Plus, the Bloomlets themselves can be programmed to respond to pollution events, creating a living early-warning system.
 
 - Pitch: “Imagine a world where we can literally see the ocean’s food chain – LuminaBloom makes that a reality.”
+
+
+---
+
+## Related Ideas
+
+- **personalized sunbeam diffusion devices for optimized circadian rhythm regulation** (shared concept: *each bloomlet*)
+- **bio-luminescent urban lighting systems mimicking noctiluca colonies for sustainable cityscapes** (shared concept: *noctiluca scintillans*)
+- **the bioluminescence adds** (shared concept: *solar-powered micro*)
+- **neuro-textiles haptic feedback arrays biological sensors mythological symbolism** (shared concept: *self-reporting*)
+- **synesthetic mapping techniques biofeedback sensors sound design for architectural spaces material science concrete degradation rust analysis** (shared concept: *self-reporting*)

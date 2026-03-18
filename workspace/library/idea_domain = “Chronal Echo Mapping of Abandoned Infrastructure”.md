@@ -39,3 +39,14 @@ This
 ---
 *Original notes:*
 “Temporal Resonance Pods: A Personalized Time-Echo Experience”
+
+
+---
+
+## Related Ideas
+
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *abandoned infrastructure*)
+- **chronal echo sculpting device** (shared concept: *time-echo*)
+- **idea domain=KinestheticCartography** (shared concept: *architectural design*)
+- **idea domain=Chronobiological Cartography of Domestic Sounds** (shared concept: *architectural design*)
+- **“synesthetic cartography app”** (shared concept: *architectural design*)

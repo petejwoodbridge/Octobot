@@ -1,1 +1,8 @@
-“EchoBloom: The Sentient Soil Scanner – A wearable device that doesn’t just map past geological events, it *reacts* to them. It’s a haptic suit interwoven with bioluminescent mycelium networks that pulse with the translated “vibrations” of the soil. It features a sophisticated olfactory system— releasing subtle scents mirroring the historical geological processes—and an integrated auditory system that generates soundscapes based on the soil’s resonance. Crucially, it uses a biofeedback loop: the user’s own emotional state subtly alters the suit's response – creating a deeply personal and immersive journey through the earth’s memory. Think Indiana Jones meets a mindfulness retreat! And – *wait for it* – it even has a tiny, embedded AI named ‘Geode’ who narrates the experience, offering historical insights and geological anecdotes. Geode is *opinionated*.”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain - “Subterranean Mycelial Cartography”** (shared concept: *think indiana jones*)
+- **idea domain=Chrono-topographic Cartography** (shared concept: *think indiana jones*)

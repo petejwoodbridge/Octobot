@@ -35,3 +35,14 @@ The heart of the operation is, of course, the Echo-Pulse Resonator – a gloriou
 ---
 *Original notes:*
 ```## The Echo-Pulse Resonator
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-acoustic mapping*)
+- **circadian rhythms textile integration moss colonies bio-acoustic output** (shared concept: *bio-acoustic sensors*)
+- **idea domain - “Bio-acoustic geomorphological empathy chambers”** (shared concept: *bio-acoustic sensors*)
+- **“Ephemeral Tactile Reconstruction”** (shared concept: *bio-acoustic mapping*)
+- **neuro-resonant fossil simulation technology bio-acoustic mapping of fossilized remains haptic feedback systems for geological data** (shared concept: *bio-acoustic mapping*)

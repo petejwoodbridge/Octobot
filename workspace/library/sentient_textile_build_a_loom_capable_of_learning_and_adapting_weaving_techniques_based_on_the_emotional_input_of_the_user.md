@@ -47,3 +47,14 @@ The Loom of Lumina isn't just a weaving machine; it's a therapeutic tool and an 
 Furthermore, the resulting fabrics have a measurable “emotional signature” – detectable via specialized scanners – potentially opening doors for applications in sensory design and therapeutic textiles.
 
 **Pitch:** “Imagine weaving your feelings into a tangible masterpiece – the Loom of Lumina lets you do just that.”
+
+
+---
+
+## Related Ideas
+
+- **“geo narratives app pitch”** (shared concept: *custom-built ai*)
+- **chronobiological echo gardens v2** (shared concept: *self-discovery*)
+- **idea domain=LUDIC AI COMPANIONSHIP** (shared concept: *real-time emotional*)
+- **idea domain – “chronal seed-drift analysis & affective temporal layering”** (shared concept: *real-time emotional*)
+- **idea domain=Chronobiological Cartography of Domestic Sounds** (shared concept: *real-time emotional*)

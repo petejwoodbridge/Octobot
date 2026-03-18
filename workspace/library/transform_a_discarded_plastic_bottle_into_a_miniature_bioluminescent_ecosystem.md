@@ -27,3 +27,14 @@ The BloomBottle is a self-contained, bioluminescent terrarium constructed entire
 The BloomBottle isn't just a beautiful object; it’s a miniature, functioning ecosystem demonstrating the principles of bioremediation and bioluminescence. It tackles plastic waste by repurposing a common material, while simultaneously educating users about symbiotic relationships and sustainable practices. The fluctuating bioluminescence provides a mesmerizing visual display, making it a captivating conversation starter. It's also a low-maintenance, educational tool that can be housed in almost any environment. 
 
 **Pitch:** “Imagine a bottle that glows, cleans up the planet, and teaches you about the magic of nature – that’s the BloomBottle.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Ecological Optimism Design** (shared concept: *nutrient-rich solution*)
+- **idea domain=Symbiotic Pattern Weaving** (shared concept: *nutrient-rich solution*)
+- **idea domain - “micro-resonance archiving”** (shared concept: *nutrient-rich solution*)
+- **“temporal myco harmonic resonator”** (shared concept: *nutrient-rich solution*)
+- **the orb incorporates** (shared concept: *nutrient-rich solution*)

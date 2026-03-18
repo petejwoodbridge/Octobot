@@ -19,3 +19,14 @@ Beyond octopus feed, the algae farm generates oxygen, filters water, and creates
 **Why It’s Brilliant:** The Biolume Burrow creates a completely bespoke, immersive environment for octopus enrichment, directly addressing their nutritional and psychological needs. It transforms derelict infrastructure into a thriving, self-sustaining ecosystem demonstrating closed-loop resource management, providing a high-quality, ethically sourced food source, and offering a fascinating window into cephalopod intelligence. 
 
 *Pitch:* “Imagine a sushi restaurant powered by the ocean’s own light – we’re growing bioluminescent algae to feed the smartest creatures on Earth, one delicious bite at a time.”
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent urban lighting systems mimicking noctiluca colonies for sustainable cityscapes** (shared concept: *self-sustaining ecosystem*)
+- **explore utilizing targeted bio-luminescent algae blooms to create impenetrable shifting barriers disrupting breach pathways** (shared concept: *noctiluca scintillans*)
+- **mnemonic algae bloom synth v1** (shared concept: *noctiluca scintillans*)
+- **adaptive microclimate suits incorporating bio-luminescent algae for personalized light and temperature regulation** (shared concept: *noctiluca scintillans*)
+- **bio-luminescent algae-based street lighting systems optimizing for efficiency and natural color palettes** (shared concept: *noctiluca scintillans*)

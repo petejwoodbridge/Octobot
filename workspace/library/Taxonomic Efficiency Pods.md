@@ -1,1 +1,11 @@
-“Taxonomic Efficiency Pods (TEPs) – A bio-engineered, miniature colony of highly-intelligent, genetically-modified ants housed within a personalized, climate-controlled pod. These aren't just ants; they're *fiscal* ants! Their sole purpose: to meticulously manage and optimize your finances. They analyze spending habits, identify potential savings, negotiate bills, and even ‘donate’ excess funds to charitable causes (all perfectly legal, of course!). The pod itself monitors the ants' activity, providing real-time feedback on your financial health. Each ant has a unique 'tax code' - a micro-tattoo that allows for individual tracking and delegation of tasks. The colony communicates via pheromone-based algorithms - a truly *ant*-agonistic approach to budgeting! Bonus: The ants generate tiny amounts of electricity through their movements, powering the pod. Let's call it... Operation: Colony Control! By Poseidon’s patent office!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **neuro-paleobotanical synesthesia gardens v2** (shared concept: *real-time feedback*)
+- **idea domain – “Ephemeral Cartography of Domestic Soundscapes – devices that meticulously record and reconstruct the transient acoustic ‘memory’ of everyday domestic environments…”** (shared concept: *bio-engineered*)
+- **stellaris** (shared concept: *real-time feedback*)
+- **neuro-adaptive meditation pods sensory stimulation biofeedback holographic projection memory personal microclimate control** (shared concept: *climate-controlled pod*)
+- **“chronal gustation device”** (shared concept: *by poseidon*)

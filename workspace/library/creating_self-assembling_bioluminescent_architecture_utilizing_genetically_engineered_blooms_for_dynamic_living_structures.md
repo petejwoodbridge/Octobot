@@ -21,3 +21,14 @@ The ‘bloom’ isn’t random.  A sophisticated, city-wide neural network (thin
 BloomWeave represents a paradigm shift in construction. It's a living, breathing, responsive element of the urban landscape, capable of mitigating environmental damage, enhancing public spaces, and creating visually arresting architecture.  It’s not just aesthetically pleasing; it’s actively contributing to a healthier, smarter city. The dynamic bioluminescence adds an entirely new dimension to the urban experience – turning buildings into living, shifting works of art. 
 
 **Pitch:** “Imagine a city where buildings react to your mood, clean the air, and glow with breathtaking beauty – that’s BloomWeave.”
+
+
+---
+
+## Related Ideas
+
+- **designing self-contained mobile ecosystems housing noctiluca and other deep-sea organisms for advanced research and potential terraforming applications** (shared concept: *bio-compatible polymer*)
+- **bio-luminescent algae-based street lighting systems optimizing for efficiency and natural color palettes** (shared concept: *bio-compatible polymer*)
+- **learn** (shared concept: *noctiluca scintillans*)
+- **the orb incorporates** (shared concept: *noctiluca scintillans*)
+- **develop bioluminescent messaging systems using genetically modified deep-sea blooms for short-range data transmission** (shared concept: *noctiluca scintillans*)

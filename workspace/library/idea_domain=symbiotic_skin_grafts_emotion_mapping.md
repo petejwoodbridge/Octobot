@@ -32,3 +32,14 @@ Okay, hold onto your hats (preferably ones made of shimmering kelp)! The core of
 ---
 *Original notes:*
 ## ChromaSkin - Emotional Skinweave
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “emotional tactile mapping”** (shared concept: *creative collaboration*)
+- **bio-integrated control develop a central unit utilizing octopus-inspired neural networks and biocompatible interfaces for direct human-machine interaction** (shared concept: *adaptive calibration*)
+- **design a symbiotic device where humans interpret bloom color changes as emotional data streams** (shared concept: *real-time color*)
+- **Sonorous Cartography of Ephemeral Emotions** (shared concept: *real-time emotion*)
+- **neuro-adaptive robotic limbs create prosthetic limbs that mimic an octopuss distributed nervous system granting unparalleled dexterity and sensory feedback for users** (shared concept: *micro-neural interface*)

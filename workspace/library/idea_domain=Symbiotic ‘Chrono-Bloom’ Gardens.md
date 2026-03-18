@@ -36,3 +36,14 @@ When a user interacts with the garden (via a personalized bio-feedback wristband
 ---
 *Original notes:*
 ## Chrono-Bloom: Rhizomatic Resonance - A Bio-Temporal Art Installation & Sensory Augmentation System
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-luminescence*)
+- **filament** (shared concept: *bio-luminescence*)
+- **neuro-scent synthesis rem sleep voc analysis microbial scent production bio-luminescent chambers** (shared concept: *bio-luminescence*)
+- **idea domain=Symbiotic Memory Weaving** (shared concept: *bio-luminescent*)
+- **sentient mobile thread-constructs used for deep-sea exploration and manipulation of complex organic systems** (shared concept: *bio-luminescence*)

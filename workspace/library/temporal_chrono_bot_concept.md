@@ -1,1 +1,7 @@
-“The Chrono-Bot: A Miniature Temporal Scent Weaver - A bio-robotic device designed to physically manifest and translate ‘temporal scent-threads’ into interactive visual art. Utilizing a network of miniature olfactory sensors, the Chrono-Bot ‘samples’ the decaying scent profiles of forgotten objects, generating a complex data stream. This data is then processed by a micro-AI, interpreting the scent’s potential emotional resonance and historical context. The AI then directs a swarm of nano-robotics to construct a constantly evolving, 3D holographic sculpture – a ‘temporal echo’ – that visually represents the scent’s experience. The sculpture is projected and dynamically shifted in real-time, responding to changes in the surrounding environment (weather, time of day, user interaction). The Chrono-Bot is controlled via a haptic interface, allowing the user to ‘feel’ the flow of the temporal scent-thread. It’s like having a tiny, obsessive time-traveling curator of forgotten smells, creating art from the ghosts of scent! I’m ink-spitting with excitement!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **“petrichor reconstruction unit”** (shared concept: *bio-robotic device*)

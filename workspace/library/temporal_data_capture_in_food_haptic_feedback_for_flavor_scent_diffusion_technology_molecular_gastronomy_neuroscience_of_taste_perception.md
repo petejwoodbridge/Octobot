@@ -21,3 +21,14 @@ The user selects a “memory meal” from their stored profile, and the system a
 **Why It’s Brilliant:** The Flavor Echo bridges the gap between memory, scent, and haptic sensation with neurological precision. It isn't just about smelling something familiar; it's about triggering a deeply-rooted, emotionally-rich recollection, potentially even influencing mood and reducing stress associated with longing. It taps into the fundamental neurobiology of emotion and taste.
 
 *Pitch:* "Imagine experiencing your grandmother’s apple pie, not just smelling it, but *feeling* it again – that’s the Flavor Echo: taste memory, perfected."
+
+
+---
+
+## Related Ideas
+
+- **biometric food sensors olfactory mapping haptic feedback microbial cultures taste synthesis temporal data compression** (shared concept: *the flavor echo*)
+- **pheromone architecture** (shared concept: *scent matrix*)
+- **idea domain – “chronal scent-weaving for extinct cultural rituals”** (shared concept: *scent matrix*)
+- **subconscious chronesthesia mapping haptic feedback olfactory projection wearable tech memory retrieval** (shared concept: *real-time neurofeedback*)
+- **idea domain - “Petrified Dream Cartography – Sensory Immersion Pod”** (shared concept: *real-time neurofeedback*)

@@ -43,3 +43,14 @@ The Chronoskip Pocket utilizes a proprietary blend of miniaturized quantum entan
 ---
 *Original notes:*
 ## The Chronoskip Pocket - A Temporal Buffer for Regret!
+
+
+---
+
+## Related Ideas
+
+- **“ChronalScentSynth”** (shared concept: *chronal dampening field*)
+- **idea domain=Hyper-Specific Anomaly Detection** (shared concept: *controlled*)
+- **“phantom limb scent synth”** (shared concept: *patent pending*)
+- **“microbiome symphony”** (shared concept: *patent pending*)
+- **idea domain – “The Temporal Bloom** (shared concept: *patent pending*)

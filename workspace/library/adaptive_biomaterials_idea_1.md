@@ -20,3 +20,14 @@ Chrono-Roots offer a genuinely novel approach to urban design, creating a living
 
 ## Elevator Pitch
 Experience the city’s mood – and your own – with Chrono-Roots, the living topiary that blooms with emotion.
+
+
+---
+
+## Related Ideas
+
+- **ultrasound plant stimulation biofeedback topiary cephalopod manipulation shape-memory alloys** (shared concept: *real-time biofeedback*)
+- **“paleo-scent weaver”** (shared concept: *real-time biofeedback*)
+- **bioluminescent invertebrate behavior biofeedback integration miniature ecosystem design shape-memory alloy micro-habitats** (shared concept: *real-time biofeedback*)
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *real-time biofeedback*)
+- **idea domain=Ecological Mental Wellness** (shared concept: *real-time biofeedback*)

@@ -19,3 +19,14 @@ The battery life is optimized using kinetic energy – movement powers the Threa
 **Why It's Brilliant:** LoomSync elegantly bridges the gap between the physical and digital worlds, tackling a seemingly trivial but deeply frustrating problem with a technologically sophisticated, seamlessly integrated solution. It’s about more than just matching socks; it’s about reclaiming control over your appearance and eliminating wardrobe-related stress.  It utilizes bio-luminescence for a beautiful, unobtrusive visual cue and combines data analysis with passive sensing for a truly intelligent system.
 
 *Pitch:* “Imagine never frantically searching for matching socks again – LoomSync brings textile harmony to your life.”
+
+
+---
+
+## Related Ideas
+
+- **filament** (shared concept: *bio-luminescent*)
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *bio-luminescent*)
+- **the piezoelectric sensors** (shared concept: *bio-luminescent*)
+- **idea domain – Ephemeral Tactile Archaeology** (shared concept: *bio-luminescent*)
+- **soniferous algae emotion resonance** (shared concept: *bio-luminescent*)

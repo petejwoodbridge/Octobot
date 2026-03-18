@@ -21,3 +21,14 @@ When the wearer enters a designated “archaeological zone” (a site selected f
 ChronoMycelia merges cutting-edge biofeedback technology with the remarkable regenerative capabilities of fungal networks. It’s not just about experiencing history; it's about *feeling* it in a profoundly intimate way, bridging the gap between the present and the past through a symbiotic, living interface. The integration with urban archaeology adds a crucial element of context, ensuring the sensory echoes are rooted in tangible historical evidence, bolstering their credibility and impact. The system’s dynamic adjustment based on individual biofeedback creates a uniquely personalized and therapeutic experience, opening up entirely new avenues for treating trauma and fostering deeper human connection to place. 
 
 **Pitch:** "Imagine walking through a city and *feeling* the ghosts of its past—Chronomycelia lets you literally walk through time."
+
+
+---
+
+## Related Ideas
+
+- **bone resonance tuning haptic feedback acoustic therapy proprioception body size perception** (shared concept: *bio-compatible mesh*)
+- **kinesthetic memory weaving techniques neuro-sensory stimulation haptic feedback design biomechanical resonance** (shared concept: *bio-compatible mesh*)
+- **interspecies dream mapping animal neuroscience biosensors ai dream interpretation sensory simulation** (shared concept: *bio-compatible mesh*)
+- **phosphene calligraphy neurological darkness visual cortex light sculptures subconscious expression** (shared concept: *bio-compatible mesh*)
+- **micro-epoch olfactory archiving** (shared concept: *the echo weaver*)

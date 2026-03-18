@@ -35,3 +35,14 @@ The EchoPlate™ uses a revolutionary combination of bio-acoustic sensors and mi
 ---
 *Original notes:*
 ## EchoPlate™ - The Last Bite Reimagined
+
+
+---
+
+## Related Ideas
+
+- **subconscious scent layering loomsync** (shared concept: *bio-acoustic resonance*)
+- **Ephemeral Gastronomic Cartography** (shared concept: *culinary therapy*)
+- **temporal anomaly detection sensors bio-acoustic resonance analysis pheromonal decay modeling shape-memory alloy vibration dampeners microclimate simulation chambers** (shared concept: *bio-acoustic resonance*)
+- **retro-sensory pollen mapping** (shared concept: *bio-acoustic resonance*)
+- **Chronal Gastronomic Cartography - Enhanced Prototype** (shared concept: *bio-acoustic resonance*)

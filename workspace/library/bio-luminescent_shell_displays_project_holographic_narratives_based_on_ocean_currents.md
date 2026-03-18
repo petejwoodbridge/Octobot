@@ -21,3 +21,14 @@ These projections aren’t static; they dynamically shift and morph, creating br
 The Current Weaver elegantly combines biotechnology, kinetic energy harvesting, and holographic projection technology for a truly immersive and informative experience. It transforms raw data into a beautiful, intuitive representation of the ocean's dynamic nature, providing a level of understanding simply impossible with existing tools. It also offers a uniquely beautiful aesthetic – the shells themselves glow with an ethereal light, punctuated by mesmerizing holographic displays, creating a spectacle worthy of the marine environment.
 
 **Pitch:** "Imagine experiencing the ocean's currents as a living, breathing story - that's what the Current Weaver delivers."
+
+
+---
+
+## Related Ideas
+
+- **self-assembling living shell constructs capable of manipulating ocean currents** (shared concept: *the current weaver*)
+- **bio-luminescent shell structures for underwater city lighting and navigation** (shared concept: *bio-luminescent shell*)
+- **bio-luminescent shell housing  exploring organic light generation for dynamic camouflage and communication** (shared concept: *bio-luminescent shell*)
+- **idea domain=Chronal Texture Synthesis** (shared concept: *bio-luminescent shell*)
+- **bio-luminescent shell habitats design self-contained miniature ecosystems within intricately crafted shells using bioluminescent organisms for light and potentially food** (shared concept: *bio-luminescent shell*)

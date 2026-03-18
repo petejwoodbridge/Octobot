@@ -22,3 +22,14 @@ The Somnium Palate uniquely bridges the gap between the conscious and subconscio
 
 ## Elevator Pitch
 Taste your dreams and unlock the secrets of your subconscious.
+
+
+---
+
+## Related Ideas
+
+- **personalized ambient lighting systems explore dynamic lighting that adapts to individual biofeedback heart rate brainwaves to subtly influence mood and focus** (shared concept: *bio-sensing technology*)
+- **osmotic memory mapping device** (shared concept: *bio-sensing technology*)
+- **dynamic ui morphing explore interfaces that physically reshape themselves based on user interaction and inferred needs** (shared concept: *bio-sensing technology*)
+- **personalized micro-terrain sculpting for tactile exploration** (shared concept: *bio-sensing technology*)
+- **sentient material fabrication engineer self-assembling materials capable of adapting to and responding to human emotion and intention** (shared concept: *bio-sensing technology*)

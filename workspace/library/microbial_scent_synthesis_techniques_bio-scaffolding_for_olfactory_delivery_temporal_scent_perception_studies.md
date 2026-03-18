@@ -21,3 +21,14 @@ Crucially, ChronoScent doesn’t simply reproduce a scent; it recreates the *tem
 ChronoScent merges bio-scaffolding, microbial scent synthesis, and neuro-sensor technology to offer unprecedented control over olfactory experience. It's not just about smelling something; it's about *remembering* something, with unnerving accuracy and emotional fidelity. This has potential applications in therapy (treating PTSD, facilitating reminiscence therapy), creative industries (immersive storytelling, musical composition), and even personal well-being – providing a pathway to intentionally revisit and reconnect with positive memories. 
 
 **Pitch:** "Imagine experiencing your most treasured moments, not just as you remember them, but as they truly felt – ChronoScent makes that a reality.”
+
+
+---
+
+## Related Ideas
+
+- **temporal olfactory mapping textile biosensors sonic vibration analysis scent synthesis algorithms** (shared concept: *chronoscent: the memory weaver*)
+- **Symbiotic Microbial Scent Synthesis** (shared concept: *chronoscent: the memory weaver*)
+- **gastronomic echo sculpting** (shared concept: *the memory weaver*)
+- **Adaptive Microbiome Scent Layering** (shared concept: *chronoscent: the memory weaver*)
+- **idea domain = adaptive olfactory layering** (shared concept: *chronoscent: the memory weaver*)

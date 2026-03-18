@@ -41,3 +41,14 @@ This isn’t just a fancy food memory
 ---
 *Original notes:*
 ## Chrono-Palate: Sensory Echoes
+
+
+---
+
+## Related Ideas
+
+- **retro-sensory pollen mapping** (shared concept: *bio-acoustic resonance mapping*)
+- **idea domain = “Bio-resonant Coral Reef Restoration Simulations”** (shared concept: *bio-acoustic resonance mapping*)
+- **neuro-regenerative therapies** (shared concept: *bio-acoustic resonance mapping*)
+- **idea domain = “sensory echo-mapping of fungal mycelial networks”** (shared concept: *bio-acoustic resonance mapping*)
+- **idea domain=temporal gastronomy** (shared concept: *bio-acoustic resonance*)

@@ -1,1 +1,11 @@
-“## Chronal Memory Loom\n\n**The Problem It Solves:** The poignant loss of cherished memories attached to physical objects – a worn scarf, a beloved blanket, a grandfather’s tweed jacket. The desire to not just preserve the *object*, but the *feeling* it evokes.\n\n**The Idea:** The Chronal Memory Loom is a bio-reactive weaving device that actively records and replays the emotional resonance associated with a textile. It utilizes a network of nano-sensors embedded within the weave to capture subtle bio-signals – heart rate variability, skin conductance, even minute muscle movements – associated with moments of emotional significance experienced while interacting with the textile. These signals are then translated into complex vibrational patterns, subtly altering the loom's woven structure to *re-manifest* the emotional landscape.  Wearing the Loom – essentially draping it around oneself – induces a tactile ‘re-experience’ of the stored memory, allowing the user to relive the moment with surprising vividness. The Loom dynamically adjusts its complexity and intensity based on the user's current state, essentially creating a personalized, evolving echo of the past. It’s like a wearable, tactile time capsule!\n\n**Technical Details:** Micro-vibration actuators, bio-sensor array, AI-powered memory translation algorithms, shape-memory alloy fibers for dynamic weaving, haptic feedback system.  Requires a small, wearable ‘resonance core’ that houses the AI.\n\n**Potential Applications:** Therapy for trauma, reminiscence therapy, artistic expression, preserving family history, creating interactive museum exhibits.”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **olfactory memory neuroscience shape-memory alloy scent diffusion bio-resonant frequency mapping** (shared concept: *nano-sensors embedded*)
+- **neuro-gastronomic-chronosensory-reconstructor** (shared concept: *shape-memory alloy*)
+- **Phantom Limb Gastronomy - Prototype** (shared concept: *shape-memory alloy*)
+- **idea pitch** (shared concept: *bio-sensor array*)
+- **“domestic sound textile”** (shared concept: *micro-vibration actuators*)

@@ -22,3 +22,14 @@ The device includes a basic, adjustable ‘weave’ pattern library to help guid
 **Why It’s Brilliant:** The Mender Weaver represents a fundamental shift in repair. It’s not patching; it’s *regeneration*. It minimizes waste, reduces reliance on new material production, and allows anyone to effectively repair almost anything with the right material cartridge. The bio-luminescence adds a beautiful, interactive element to the process, turning repair into a captivating skill. It leverages advancements in mycology, nanotechnology, and ultrasonic technology to create a genuinely sustainable and remarkably elegant solution.
 
 *Pitch:* “Imagine fixing your broken chair with a little living light – let’s grow it back together!”
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-luminescent fungal*)
+- **filament** (shared concept: *time-consuming*)
+- **structural** (shared concept: *time-consuming*)
+- **rapid assessment** (shared concept: *time-consuming*)
+- **resonant fungal echo-gardens - concept refinement** (shared concept: *time-consuming*)

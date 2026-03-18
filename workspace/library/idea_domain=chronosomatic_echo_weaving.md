@@ -38,3 +38,14 @@ The machine then uses a process we’ve dubbed “Echo Extraction.” It doesn�
 ---
 *Original notes:*
 ## The Somatic Echo Chamber - "Resonance Bloom"
+
+
+---
+
+## Related Ideas
+
+- **cephalopod bio-acoustics plant vibrational resonance immersive audio-visual experiences haptic feedback** (shared concept: *resonance bloom*)
+- **neuro-resonant artifact restoration** (shared concept: *resonance bloom*)
+- **idea domain=Sonospheric Skin-Symbiosis** (shared concept: *fantastically*)
+- **idea domain=Ephemeral Resonance Sculpting** (shared concept: *fantastically*)
+- **subconscious topography mapping** (shared concept: *fantastically*)

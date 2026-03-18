@@ -21,3 +21,14 @@ Crucially, the network doesn’t *dictate* the light; it *interprets* and amplif
 LuminaWeave represents a genuine synthesis of artificial intelligence and living systems. It’s not just creating light; it’s facilitating an *experience* of dynamic, emergent beauty, mimicking the breathtaking, unpredictable nature of bioluminescence. The network’s constant learning and adaptation creates truly unique performances every time, offering infinite visual possibilities. The use of genetically engineered *Noctiluca* guarantees a self-sustaining, inherently organic light source – eliminating the energy consumption and maintenance concerns of traditional projection mapping. The scale allows for immersive, truly transformative artistic encounters. 
 
 **Pitch:** "Prepare to witness art that breathes, reacts, and feels utterly alive – LuminaWeave is the future of immersive bioluminescent experiences."
+
+
+---
+
+## Related Ideas
+
+- **bio-reactive memory vessels creating living genetically-modified organisms that absorb and display information about forgotten histories** (shared concept: *noctiluca scintillans*)
+- **explore a reactive self-healing material infused with bioluminescent organisms that illuminate and seal breaches with a living glow** (shared concept: *noctiluca scintillans*)
+- **bioluminescent algae symbiotic relationships sound-reactive materials neurofeedback wristbands historical resonance mapping** (shared concept: *bio-reactive*)
+- **learn** (shared concept: *noctiluca scintillans*)
+- **explore a symbiotic system utilizing genetically-engineered bioluminescent organisms to detect and rapidly solidify breaches with a self-healing polymer** (shared concept: *noctiluca scintillans*)

@@ -1,1 +1,11 @@
-“The Echo Weaver: A wearable, bioluminescent cartographer for experiencing historical silence. It’s a haptic suit interwoven with shape-memory alloy fibers that react to minute atmospheric changes, reconstructing 'silent' locations through shifting patterns of pressure, temperature, and light. The bioluminescence mimics the ghostly presence of sound – faint pulses that respond to the data, creating a tactile and visual representation of the *absence* of sound. It’s like feeling the ghost of a battle, or the echoes of a forgotten song. It also generates a faint, personalized scent profile – designed to resonate with the geological composition of the location, enhancing the evocative experience.”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **micro-epoch olfactory archiving** (shared concept: *shape-memory alloy*)
+- **idea domain=Myco-Temporal Cartography - Echo Weaver Prototype** (shared concept: *shape-memory alloy*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloy*)
+- **bio-acoustic modeling extinct animal vocalizations shape-memory alloy textile haptic projection** (shared concept: *shape-memory alloy*)
+- **noise-canceling collaborative workspaces** (shared concept: *the echo weaver*)

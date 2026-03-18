@@ -40,3 +40,14 @@ The Bloom then translates this data into a complex 3D mapping system. It doesn't
 ---
 *Original notes:*
 “The Echo Bloom: A Personal Chrono-Resonance Chamber”
+
+
+---
+
+## Related Ideas
+
+- **the threads subtly** (shared concept: *the echo bloom*)
+- **soniferous algae emotion resonance** (shared concept: *the echo bloom*)
+- **memetic resonance mapping technology olfactory transduction haptic feedback simulation  viral spread** (shared concept: *the echo bloom*)
+- **idea domain - Symbiotic Chrono-Mycological Cartography** (shared concept: *three-dimensional map*)
+- **idea domain - subconscious echo-cartography** (shared concept: *creative inspiration*)

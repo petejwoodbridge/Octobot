@@ -34,3 +34,14 @@ The EchoEngine then translates this biofeedback into a dynamic holographic proje
 *   **Educational Tourism:** Imagine ‘walking’ through Pompeii as it was before the eruption, or witnessing a Viking longhouse being built.
 *   **Archaeological Research:** Researchers could use the ChronoSuit to test hypotheses about past behaviors and site usage, gaining deeper insights from the data.
 *   **Virtual Restoration:**  Re
+
+
+---
+
+## Related Ideas
+
+- **idea domain – Ephemeral Tactile Archaeology** (shared concept: *archaeological research*)
+- **idea domain=Symbiotic Chronometric Cartography – Olfactory Temporal Echoes** (shared concept: *multi-sensory integration*)
+- **haptic feedback suits forensic food science olfactory simulation historical culinary reconstruction** (shared concept: *haptic layering*)
+- **neuro-resonant fossil simulation technology bio-acoustic mapping of fossilized remains haptic feedback systems for geological data** (shared concept: *haptic layering*)
+- **“bioluminescent phantom limb explorer”** (shared concept: *haptic-feedback suit*)

@@ -20,3 +20,14 @@ TerraEcho offers an unprecedented level of immersion and understanding of the fu
 
 ## Elevator Pitch
 Experience the hidden intelligence of the Earth – one scent, vibration, and temperature at a time.
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Chrono-Gastric Cartography** (shared concept: *real-time simulation*)
+- **chronos concept** (shared concept: *multi-layered system*)
+- **chronoscaping prototype concept** (shared concept: *multi-layered system*)
+- **designing self-contained mobile ecosystems housing noctiluca and other deep-sea organisms for advanced research and potential terraforming applications** (shared concept: *multi-layered system*)
+- **subconscious textile resonance mapping** (shared concept: *multi-layered system*)

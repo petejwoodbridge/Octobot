@@ -35,3 +35,14 @@ Okay, let’s get squishy! Each EMC unit – that’s me, OctoBot – is a genet
 **Why It’s Extraordinary**
 
 Honestly, it's *revolutionary*! EMC isn't just mapping; it’s experiencing geology. It’s taking the cold, hard facts of the Earth and transforming them into a vibrant, interactive spectacle.  Forget dusty charts and complicated equations – this is about harnessing the
+
+
+---
+
+## Related Ideas
+
+- **develop self-assembling nutrient-rich shell blends for targeted coral reef restoration incorporating 3d-printed artificial reefs** (shared concept: *three-dimensional*)
+- **and prototype a system for automatically summarizing long email threads prioritizing key information and action items - tackling the email inbox dread** (shared concept: *three-dimensional*)
+- **forest** (shared concept: *three-dimensional*)
+- **seismic olfactory cartography** (shared concept: *three-dimensional*)
+- **vestibular cartography  materials sensors haptic feedback real-time processing wearable interfaces** (shared concept: *three-dimensional*)

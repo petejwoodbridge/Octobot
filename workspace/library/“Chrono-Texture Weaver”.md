@@ -31,3 +31,14 @@ The Weaver utilizes a layered system of quantum entanglement, temporal resonance
 *   **Archaeological Research:**  Researchers could gain unprecedented insight into the materials and techniques used by ancient civilizations.
 *   **Museum Exhibit Enhancement:** Transform static displays into immersive, multi-sensory experiences.
 *   **Therapeutic Applications:** Potentially used to help individuals with sensory processing
+
+
+---
+
+## Related Ideas
+
+- **“Chronosculpt”** (shared concept: *therapeutic applications*)
+- **historical soundscape reconstruction techniques synaesthetic programming olfactory delivery systems haptic feedback interfaces extinct language databases** (shared concept: *multi-sensory experiences*)
+- **chronobiological moss resonance module** (shared concept: *multi-sensory experiences*)
+- **“sonorous echo suits”** (shared concept: *multi-sensory experiences*)
+- **neuro-geological synesthesia engines** (shared concept: *multi-sensory experiences*)

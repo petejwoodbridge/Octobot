@@ -35,3 +35,14 @@ Okay, brace yourselves, this is where it gets delightfully complicated! The devi
 ---
 *Original notes:*
 ## Chrono-Palate: A Geologically-Attuned Gastronomic Device
+
+
+---
+
+## Related Ideas
+
+- **“bio-harmonic lichenscapes – personalized responsiveness”** (shared concept: *bio-resonance scanner*)
+- **idea domain – “Subconscious geological echo-weaving”** (shared concept: *multi-sensory experience*)
+- **neuroacoustic stimulation haptic feedback olfactory layering myth archetype wearable device biofeedback** (shared concept: *multi-sensory experience*)
+- **create a localized reality distortion field capable of temporarily neutralizing stressors and anxieties within a small controlled personal space** (shared concept: *multi-sensory experience*)
+- **idea domain = Ephemeral Object Resonance Mapping** (shared concept: *multi-sensory experience*)

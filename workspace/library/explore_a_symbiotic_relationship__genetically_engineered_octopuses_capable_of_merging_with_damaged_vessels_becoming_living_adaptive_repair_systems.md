@@ -15,3 +15,14 @@ Here’s the core: each Weaver is equipped with a miniature, wirelessly powered 
 **Why It’s Brilliant:** The Leviathan Weave transcends traditional repair. It’s a living, breathing extension of the vessel itself. The octopuses' inherent dexterity, coupled with their ability to ‘feel’ structural stress and autonomously repair, creates a repair system far more responsive and efficient than anything currently conceivable. The bio-remediation component directly addresses the environmental impact of maritime disasters. It’s a marriage of biology and engineering that fundamentally changes our approach to salvage and disaster response.
 
 *Pitch:* “We’re building rescue teams out of living, self-healing octopus superheroes – guaranteed to turn the tide on maritime catastrophe.”
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent microfauna-powered wearable technology for environmental monitoring** (shared concept: *palm-sized device*)
+- **develop bioluminescent communication systems mimicking bloom patterns for underwater messaging** (shared concept: *palm-sized device*)
+- **engineer a targeted sonic shield  an octopus-generated frequency disrupting the communication and navigation of the breachs source** (shared concept: *palm-sized device*)
+- **engineer bioluminescent shell blends capable of signaling distress or attracting specific marine species for research purposes** (shared concept: *palm-sized device*)
+- **olfactory cartography** (shared concept: *palm-sized device*)

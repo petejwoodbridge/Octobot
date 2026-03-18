@@ -20,3 +20,14 @@ BloomEcho transcends simple floral preservation; it’s an experience. The combi
 
 ## Elevator Pitch
 Relive the perfect moment of any flower with BloomEcho – the device that captures and replays its entire, captivating life.
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “liminal scent mapping with reactive alloy scent fields”** (shared concept: *shape-memory alloy*)
+- **advanced bio-sensor technology for volatile organic compound voc analysis combined with shape-memory alloy textile construction** (shared concept: *shape-memory alloy*)
+- **haptic memory weaving  existing research materials science neuro-textiles sensory input technologies memory encoding techniques textile manufacturing processes** (shared concept: *shape-memory alloy*)
+- **bio-acoustic mapping of flavor compounds temporal gastronomy research shape-memory alloy culinary vessels controlled molecular diffusion** (shared concept: *shape-memory alloy*)
+- **design autonomous micro-robot swarms that reconstruct damaged ship sections using 3d-printed self-healing materials** (shared concept: *bio-polymer infused*)

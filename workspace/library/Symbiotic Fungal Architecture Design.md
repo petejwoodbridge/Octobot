@@ -39,3 +39,14 @@ But here's the secret sauce: *mycelial memory*. The mycelium doesn’t just grow
 ---
 *Original notes:*
 ```## Mycelial Memory Palace
+
+
+---
+
+## Related Ideas
+
+- **develop a bio-adhesive sealant mimicking octopus skin instantly bonding to porous materials to physically block leaks** (shared concept: *self-healing capabilities*)
+- **weaving can that autonomously repairs itself using embedded shape-memory alloy fibers** (shared concept: *large-scale architectural*)
+- **aquatic user interface ideas** (shared concept: *dreadful*)
+- **micro-epoch olfactory archiving** (shared concept: *breathe*)
+- **idea domain=Chronal Texture Synthesis** (shared concept: *breathe*)

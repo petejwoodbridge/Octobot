@@ -35,3 +35,14 @@ The Chrono-Gust processor then synthesizes this data, translating it into a ‘g
 ---
 *Original notes:*
 ## Chrono-Gust: The Atmospheric Palate
+
+
+---
+
+## Related Ideas
+
+- **subconscious dream sculpting** (shared concept: *octopus-shaped device*)
+- **subconscious microbiome mapping app** (shared concept: *octopus-shaped device*)
+- **idea domain=Subconscious Architectural Mimicry - Haptic Amplification** (shared concept: *octopus-shaped device*)
+- **“Chronal Aroma Weave”** (shared concept: *octopus-shaped device*)
+- **temporal micro-habitats circadian rhythms responsive environments neuro-acoustic stimulation biofeedback haptic feedback light manipulation** (shared concept: *micro-currents*)

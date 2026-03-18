@@ -20,3 +20,12 @@ Chronosilk isn’t just about viewing memories; it’s about *feeling* them agai
 
 ## Elevator Pitch
 Relive your most precious moments with Chronosilk – the wearable that lets you step back into your memories.
+
+
+---
+
+## Related Ideas
+
+- **age-reversal-loom** (shared concept: *overview chronosilk*)
+- **biometric textiles  time-sensitive material analysis  historical weather data  magnetic field fluctuations  textile aging** (shared concept: *bio-luminescent fibers*)
+- **chronoskin prototype** (shared concept: *bio-luminescent fibers*)

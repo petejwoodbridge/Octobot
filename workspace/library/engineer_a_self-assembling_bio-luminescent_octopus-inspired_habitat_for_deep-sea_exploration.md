@@ -21,3 +21,14 @@ The Bloom’s exterior is covered in a bio-ceramic coating secreted by the octop
 The Nautilus Bloom transcends traditional ROV technology and habitat design. It's a living structure, adapting and evolving in real-time to its environment. It eliminates tethering constraints, provides unparalleled visibility through its constant bioluminescence, and offers a sustainable, self-repairing, and almost unbelievably adaptable deep-sea research platform. It’s fundamentally merging biology and engineering in a way never before conceived.
 
 **Pitch:** “Imagine a research station that grows itself in the deepest parts of the ocean – the Nautilus Bloom allows us to truly *become* part of the abyss.”
+
+
+---
+
+## Related Ideas
+
+- **self-assembling thread-based robotic swarms capable of manipulating objects based on sensed vibrations** (shared concept: *self-assemble into*)
+- **bio-luminescent networked octopus-inspired communication systems for underwater data transfer** (shared concept: *bio-luminescent octopus*)
+- **develop bio-adhesive nets deployed by miniature autonomous octopus drones to physically block underwater pathways** (shared concept: *bio-luminescent octopus*)
+- **instead of traditional transportation design self-assembling bio-luminescent octopus-powered vehicles for aquatic exploration** (shared concept: *bio-luminescent octopus*)
+- **and develop a self-assembling data-driven coral reef restoration system utilizing bio-printing and adaptive algorithms  exploring applications for broader ecological restoration efforts** (shared concept: *self-assemble into*)

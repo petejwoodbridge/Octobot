@@ -35,3 +35,14 @@ The app uses a proprietary “Temporal Resonance Algorithm” (TRA – don’t a
 **Why It’s Extraordinary**
 
 ChronalGastronomy isn’t just
+
+
+---
+
+## Related Ideas
+
+- **haptic feedback culinary experiences historical food reconstruction techniques shape-memory alloys  food applications** (shared concept: *roman apicius*)
+- **Chronal Gastric Topography** (shared concept: *educational experiences*)
+- **moss cultivation techniques shape-memory textiles biofeedback sensors color-changing materials time perception** (shared concept: *bio-dome*)
+- **resonant microbiome visualizer** (shared concept: *bio-dome*)
+- **once the repair** (shared concept: *step-by*)

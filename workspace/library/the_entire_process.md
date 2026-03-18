@@ -22,3 +22,14 @@ ChronoBloom is a biofeedback-driven, miniature terrarium housed within a sleek, 
 ChronoBloom isn’t just a novelty item. It’s a tangible, real-time representation of your mental state. The constant, gentle feedback loop – the color, the vibration – creates a heightened awareness of your attention. It's a miniature embodiment of mindfulness, gently nudging you back to flow without judgment. It transforms a passive experience of time into an active, engaging one. It leverages the inherently calming and restorative properties of moss – coupled with advanced biofeedback – to build genuine, sustainable focus.
 
 **Pitch:** “Imagine having a tiny, living clock that tells you exactly when you're *really* working, and rewards your attention with a soothing touch – ChronoBloom helps you bloom your most productive moments.”
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *micro-muscle movements*)
+- **chrono** (shared concept: *micro-muscle movements*)
+- **temporal distortion field generator  miniature biofeedback-driven** (shared concept: *biofeedback-driven*)
+- **and document acoustic resonance and time perception for potential creative applications  visualizing temporal concepts see library index** (shared concept: *biofeedback-driven*)
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *temporal echo*)

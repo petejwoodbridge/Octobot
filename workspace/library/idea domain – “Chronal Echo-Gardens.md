@@ -33,3 +33,14 @@ These Echo Flowers aren't just plants; they're bio-sensors! They react to the te
 *   **Historical Site Preservation:**  Recreating key moments in history, offering immersive educational experiences.
 *   **Therapeutic Environments:** Utilizing the gardens to help individuals process trauma and grief through controlled, evocative replays.
 *   **Artistic Installations:** Imagine galleries filled with constantly shifting, emotional landscapes – pure, blossoming chaos
+
+
+---
+
+## Related Ideas
+
+- **idea pitch** (shared concept: *self-maintaining ecosystem*)
+- **bio-sonorous lichen mapping – devices** (shared concept: *artistic installations*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *artistic installations*)
+- **idea domain=temporal micro-erosion simulation chambers** (shared concept: *artistic installations*)
+- **idea domain = “Luminescence Cartography - Phase 2** (shared concept: *artistic installations*)

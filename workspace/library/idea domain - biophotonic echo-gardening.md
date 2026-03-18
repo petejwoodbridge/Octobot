@@ -24,3 +24,13 @@ This data feeds into a miniature AI – affectionately nicknamed “Coral” –
 *   **Therapeutic Horticulture:**  Utilize LuminaEcho in hospitals and mental health facilities to aid in patient relaxation and emotional regulation.
 *   **Interactive Art Installations:**  Transform public spaces into breathtaking, living art pieces that react to the emotions of passersby.
 *   **Luxury Home Design:**  Integrate LuminaEcho into high-end residences,
+
+---
+
+## Related Ideas
+
+- **neuro-echo flora - prototype** (shared concept: *non-invasive neural*)
+- **idea domain - “biometric echo-gardening”** (shared concept: *interactive art installations*)
+- **SymbioticSkinWeaving EchoChamber** (shared concept: *interactive art installations*)
+- **cephalopod camouflage bioluminescence temporal distortion moss cultivation fungal growth biometric data haptic feedback chamber design** (shared concept: *bio-reactive chamber*)
+- **Precognitive Gastronomy** (shared concept: *overview behold*)

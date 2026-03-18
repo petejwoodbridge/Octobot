@@ -20,3 +20,14 @@ The Chrono-Palate moves beyond simple historical recreation. It’s a scientific
 
 ## Elevator Pitch
 Taste history – one perfectly recreated bite at a time.
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “Temporal Gastronomic Cartography”** (shared concept: *chrono-palate utilizes*)
+- **Precognitive Gastronomy** (shared concept: *chrono-palate utilizes*)
+- **microbial analysis of ancient pottery shards flavor reconstruction terroir-specific flavor extracts olfactory stimuli extinct hominid diets** (shared concept: *chrono-palate moves*)
+- **bio-acoustic flavour profiles  temporal gastronomy  microbiome** (shared concept: *chrono-palate moves*)
+- **idea domain=temporal gastronomy** (shared concept: *overview the chrono*)

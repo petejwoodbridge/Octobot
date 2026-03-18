@@ -21,3 +21,14 @@ The system learns your unique neurological “dream signature” over time. Init
 **Why It’s Brilliant:** The Somnium Weaver combines cutting-edge neuro-sensing with proactive haptic feedback and color stimulation in a way that’s far beyond simple dream recording. It’s not just observing; it’s participating, offering unprecedented control over the subconscious mind within the most vivid state of human experience. It merges the fields of neuroscience, textile engineering, and psycho-sensory design.
 
 *Pitch:* “Imagine experiencing your dreams as an interactive, personalized adventure – we’re turning sleep into your ultimate creative playground.”
+
+
+---
+
+## Related Ideas
+
+- **neuro-textiles haptic feedback arrays biological sensors mythological symbolism** (shared concept: *neuro-textiles*)
+- **algorithmic dream weaving neuro-textiles lucid dreaming competitive gaming** (shared concept: *neuro-textiles*)
+- **haptic memory weaving  existing research materials science neuro-textiles sensory input technologies memory encoding techniques textile manufacturing processes** (shared concept: *neuro-textiles*)
+- **neuro-textiles haptic memory bio-responsive yarns micro-robotics weaving** (shared concept: *neuro-textiles*)
+- **neuro-textiles temporal perception bio-feedback silk worm genetics** (shared concept: *neuro-textiles*)

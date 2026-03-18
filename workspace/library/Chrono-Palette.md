@@ -33,3 +33,14 @@ Okay, hold onto your hats! The pigment itself is cultivated from genetically mod
 *   **Artistic Expression:**  Artists could create dynamic, multi-layered paintings that literally change over time.
 *   **Therapeutic Applications:**  Patients could revisit positive memories in a controlled and immersive environment.
 *   **Forensic Analysis:**  Precisely documenting crime scenes by capturing the energy of the event
+
+
+---
+
+## Related Ideas
+
+- **“ChronalScentSynth”** (shared concept: *historical reconstruction*)
+- **idea domain=Chronal Texture Synthesis** (shared concept: *historical reconstruction*)
+- **subconscious odor archaeology bee hive** (shared concept: *historical reconstruction*)
+- **“Chronosculpt”** (shared concept: *therapeutic applications*)
+- **“chronal gustation device”** (shared concept: *recreate*)

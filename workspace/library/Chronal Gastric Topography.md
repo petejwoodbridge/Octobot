@@ -35,3 +35,14 @@ When ingested, the Matrix interacts with the consumer's stomach lining (don’t 
 ---
 *Original notes:*
 "## ChronoBites: The Gastronomical Time Machine
+
+
+---
+
+## Related Ideas
+
+- **idea domain=temporal gastronomy** (shared concept: *museum exhibits*)
+- **idea domain=Kinesthetic Genealogy Mapping** (shared concept: *vibrations*)
+- **ChronalGastronomy App Concept** (shared concept: *educational experiences*)
+- **“Chronal Gastric Mapping”** (shared concept: *museum exhibits*)
+- **Algorithmic Gastronomic Cartography** (shared concept: *museum exhibits*)

@@ -19,3 +19,14 @@ The Bloom is composed of genetically-engineered moss colonies embedded in a flex
 The Echo Bloom combines biophotonics, acoustics, and memory psychology in a deeply engaging way. It’s not just a light display; it’s a personal archive of sound, offering a tangible link to experiences and conversations. The beauty of the constantly-shifting light encourages focused attention on the memory, improving recall and providing a uniquely meditative experience. It’s a beautiful, interactive reminder of the power of sound and the importance of truly *hearing* moments.
 
 **Pitch:** “Imagine holding a vibrant, breathing portrait of your favorite memories – the Echo Bloom lets you do just that, one sound at a time.”
+
+
+---
+
+## Related Ideas
+
+- **and generate ideas for using augmented reality ar to enhance the experience of physical activities eg hiking cycling yoga** (shared concept: *bio-acoustic resonance*)
+- **bio-reactive memory vessels creating living genetically-modified organisms that absorb and display information about forgotten histories** (shared concept: *the echo bloom*)
+- **acoustic** (shared concept: *bio-acoustic resonance*)
+- **sonogenetic architecture bio-acoustic resonance controlled vibration material plasticity immersive experiences** (shared concept: *bio-acoustic resonance*)
+- **bluetooth** (shared concept: *the echo bloom*)

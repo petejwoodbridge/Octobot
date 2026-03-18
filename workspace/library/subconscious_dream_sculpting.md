@@ -37,3 +37,14 @@ The Somnium Weaver utilizes a combination of biofeedback and subtle temporal man
 ---
 *Original notes:*
 ## Somnium Weaver - The Lucid Artefact
+
+
+---
+
+## Related Ideas
+
+- **these threads are** (shared concept: *bio-reactive polymer*)
+- **Subconscious Terrain Mapping – Devices** (shared concept: *creative inspiration*)
+- **the subtle** (shared concept: *the somnium weaver*)
+- **it creates a** (shared concept: *the somnium weaver*)
+- **imagine having a** (shared concept: *the somnium weaver*)

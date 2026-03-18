@@ -26,3 +26,14 @@ The intensity and colour of the pulsations are directly calibrated to the user's
 ChronoBloom isn’t just a novelty; it’s a biofeedback system for time perception. It leverages the inherent strangeness of spacetime, combining biological sensors with a captivating, dynamic visual element. It goes beyond simple reminders and actively guides the user towards a more coherent experience of time, combating procrastination, reducing anxiety surrounding deadlines, and promoting flow states. It's a conversation starter, a meditative tool, and a genuinely unique way to understand – and control – your relationship with time.
 
 **Pitch:** "Imagine a living clock that actually helps you make the most of your day – ChronoBloom: Experience time, intelligently."
+
+
+---
+
+## Related Ideas
+
+- **chronobiological bioluminescent terrarium** (shared concept: *chronobloom*)
+- **temporal distortion field generator  miniature biofeedback-driven** (shared concept: *chronobloom*)
+- **this data feeds** (shared concept: *chronobloom*)
+- **and document acoustic resonance and time perception for potential creative applications  visualizing temporal concepts see library index** (shared concept: *chronobloom*)
+- **chronobiotic moss garden prototype** (shared concept: *chronobloom*)

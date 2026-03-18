@@ -17,3 +17,11 @@ The BioBloom’s exterior shell is constructed from a bio-luminescent material, 
 **Why It’s Brilliant:** It’s not just cleaning; it's a symbiotic, biological air purification system. It actively destroys pollutants instead of merely containing them, creating a genuinely healthier indoor environment, and adds a captivating, living element to any space.  The beauty of the terrarium provides a calming aesthetic while tackling a seriously irritating problem. 
 
 *Pitch:* “Imagine breathing air that’s not just clean, but actively flourishing – the BioBloom transforms your home into a miniature, self-sustaining oasis of purity.”
+
+
+---
+
+## Related Ideas
+
+- **subterranean basalt coral habitats construct vast illuminated basalt ecosystems mimicking deep-sea coral reefs for marine life conservation** (shared concept: *closed-loop nutrient*)
+- **chronobiological bioluminescent terrarium** (shared concept: *self-regulating terrarium*)

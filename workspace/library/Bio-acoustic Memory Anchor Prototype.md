@@ -35,3 +35,14 @@ Once Pip has identified the emotional ‘fingerprint,’ it transmits this data 
 ---
 *Original notes:*
 ## Bio-Acoustic Memory Anchors: “EchoBloom”
+
+
+---
+
+## Related Ideas
+
+- **idea domain - “Subconscious Chronometric Skin-Mapping”** (shared concept: *bio-electrical activity*)
+- **idea domain - subconscious echo-cartography** (shared concept: *creative inspiration*)
+- **olfactory time capsules** (shared concept: *personal legacy creation*)
+- ** develop library-acoustic resonance time perception visual representation  investigate creating immersive experiences for productivity meditation or artistic expression using sound and visual feedback** (shared concept: *bio-acoustic sensor*)
+- **subconscious scent layering device** (shared concept: *creative inspiration*)

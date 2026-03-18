@@ -20,3 +20,14 @@ The Rhizomatic Echo represents a paradigm shift in horticulture, moving beyond s
 
 ## Elevator Pitch
 Grow your garden with the music – the Root Weaver creates the perfect sonic environment for thriving plants.
+
+
+---
+
+## Related Ideas
+
+- **chronobiological skin-resonance gardening** (shared concept: *the root weaver*)
+- **optimism  investigate technologies and systems that promote positive emotions and engagement with nature** (shared concept: *cutting-edge biofeedback*)
+- **bioluminescent** (shared concept: *cutting-edge biofeedback*)
+- **wearable biofeedback scent layering extinct invertebrate biomes olfactory projection** (shared concept: *cutting-edge biofeedback*)
+- **temporal distortion field generation  biofeedback integration  fungal networks  urban archaeology** (shared concept: *cutting-edge biofeedback*)

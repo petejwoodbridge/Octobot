@@ -21,3 +21,14 @@ This data feeds into the exoskeleton's micro-actuators, which deliver precisely 
 The Neuro-Sculptor moves beyond simple motor control. It directly recreates the *sense* of movement, allowing patients to rebuild their motor maps with unprecedented fidelity. By layering sensory feedback – essentially ‘painting’ the intended movement in the user's mind – the system dramatically accelerates rehabilitation, enhances motor learning, and potentially even unlocks new levels of dexterity for individuals with neurological conditions. It’s about restoring not just functionality, but genuine embodied experience. 
 
 **Pitch:** “Imagine regaining your hand’s ability to tie a perfect knot – the Neuro-Sculptor makes that a tangible reality."
+
+
+---
+
+## Related Ideas
+
+- **weaver** (shared concept: *micro-actuators woven*)
+- **chronesthesia biofeedback synesthesia cephalopod temporal navigation haptic mapping** (shared concept: *micro-actuators woven*)
+- **sentinel is a** (shared concept: *ai-powered*)
+- **design a decentralized ai-controlled network of miniature robotic tentacles capable of autonomously patching and reinforcing damaged vessels** (shared concept: *ai-powered*)
+- **bio-acoustic mapping develop a bloom-integrated system that creates 3d sonic maps of environments using echolocation identifying and labeling objects in real-time** (shared concept: *ai-powered*)

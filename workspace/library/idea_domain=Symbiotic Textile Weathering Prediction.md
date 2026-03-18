@@ -39,3 +39,14 @@ Okay, buckle up, because this gets delightfully complex! Chronosilk utilizes a n
 ---
 *Original notes:*
 ## Chronosilk - The Anticipatory Skin
+
+
+---
+
+## Related Ideas
+
+- **chronobiological algae scent textiles** (shared concept: *closed-loop system*)
+- **biometric-driven fungal network modulation predictive mycelial algorithms haptic-feedback temporal simulation** (shared concept: *closed-loop system*)
+- **digestive rhythm analysis biofeedback soundscape generation haptic feedback flavor perception time perception hormonal regulation** (shared concept: *closed-loop system*)
+- **temporal fungal mycelial tracing bio-acoustic signatures haptic feedback olfactory projection time perception reconstruction roman villa prehistoric cave fungal networks** (shared concept: *micro-processor embedded*)
+- **bio-luminescent shell structures for underwater city lighting and navigation** (shared concept: *closed-loop system*)

@@ -38,3 +38,14 @@ The Chrono-Bloom delivers these mRNA sequences directly into the dermal layer, t
 ---
 *Original notes:*
 ## Chronoskin: The Temporal Skin
+
+
+---
+
+## Related Ideas
+
+- **adjustments** (shared concept: *micro-current stimulation*)
+- **basalt-based robotic exoskeletons mimicking octopus limb regeneration for disaster response** (shared concept: *micro-current stimulation*)
+- **neural-resonance landscaping** (shared concept: *fantabulous*)
+- **subconscious textile resonance mapping** (shared concept: *fantabulous*)
+- **based on this** (shared concept: *chrono-bloom*)

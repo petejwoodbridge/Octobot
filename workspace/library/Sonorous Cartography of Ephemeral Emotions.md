@@ -37,3 +37,14 @@ As you experience an emotion, Pip translates the biofeedback data and stimulates
 **Why It's Extraordinary**
 
 The Sonorous Cartography of Ephemeral Emotions isn't
+
+
+---
+
+## Related Ideas
+
+- **these fibers aren** (shared concept: *micro-muscle movements*)
+- **Ephemeral Memory Cartography** (shared concept: *creative inspiration*)
+- **sonoscaping echo chamber** (shared concept: *echo chamber*)
+- **chronal olfactory layering prototype** (shared concept: *creative inspiration*)
+- **t about stopping the breach it** (shared concept: *micro-muscle movements*)

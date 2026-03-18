@@ -35,3 +35,14 @@ Okay, buckle up, because this is where it gets wonderfully weird! Each pod is es
 ---
 *Original notes:*
 ## Olfactory Echoes: Bio-Scent Regeneration Pods
+
+
+---
+
+## Related Ideas
+
+- **design autonomous swarm-based mural robots that create a complex impenetrable barrier using projected bioluminescence and disruptive sensory illusions** (shared concept: *bio-feedback loop*)
+- **explore generating a reactive cellular scaffold within the hull that rapidly self-repairs via bio-luminescent engineered octopus cells** (shared concept: *bio-feedback loop*)
+- **chronobiological skin-resonance gardening** (shared concept: *bio-feedback loop*)
+- **“Chronal Aroma Synthesis”** (shared concept: *bio-feedback loop*)
+- **thread in the** (shared concept: *bio-feedback loop*)

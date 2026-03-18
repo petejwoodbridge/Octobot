@@ -37,3 +37,14 @@ The EchoWeave operates on a delightfully convoluted principle: temporal resonanc
 
 *   **Archaeological Research:**  Researchers can now experience the environments where ancient civilizations lived, gaining invaluable insights into their daily lives.
 *   **Museum Exhibits:** Imagine stepping *into* a Roman bathhouse or a medieval marketplace – truly immersive educational experiences.
+
+
+---
+
+## Related Ideas
+
+- **idea domain=subconscious cartography of forgotten smells** (shared concept: *biofeedback integration*)
+- **Chronal Gastronomic Cartographer - Prototype Design** (shared concept: *archaeological research*)
+- **pheromone architecture** (shared concept: *scent matrix*)
+- **temporal data capture in food haptic feedback for flavor scent diffusion technology molecular gastronomy neuroscience of taste perception** (shared concept: *scent matrix*)
+- **idea domain=chronal scent layering for ancestral trauma resolution** (shared concept: *spice-laden air*)

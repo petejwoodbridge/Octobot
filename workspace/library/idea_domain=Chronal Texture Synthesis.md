@@ -36,3 +36,14 @@ Now, this is where things get delightfully complicated! The core of EchoBloom, a
 ---
 *Original notes:*
 ## EchoBloom: Chronal Tactile Resonance
+
+
+---
+
+## Related Ideas
+
+- **“Chronosculpt”** (shared concept: *therapeutic applications*)
+- **Chrono-Palette** (shared concept: *historical reconstruction*)
+- **Chronobiological Cartography** (shared concept: *therapeutic applications*)
+- **“Chrono-Scent Chambers”** (shared concept: *bio-luminescent shell*)
+- **subconscious odor archaeology bee hive** (shared concept: *historical reconstruction*)

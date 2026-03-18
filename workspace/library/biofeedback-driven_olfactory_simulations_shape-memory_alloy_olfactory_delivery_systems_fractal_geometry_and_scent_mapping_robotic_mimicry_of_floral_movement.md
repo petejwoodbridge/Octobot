@@ -19,3 +19,14 @@ The system creates a personalized "scent map" of the wearer’s emotional respon
 **Why It’s Brilliant:** The Scent Weaver combines cutting-edge neurotechnology with the evocative power of scent to provide a far more nuanced and effective approach to anxiety and trauma treatment than traditional methods. It's not about overwhelming the senses; it's about gently guiding the brain towards a state of equilibrium. 
 
 *Pitch:* "Imagine silencing your fears with a whisper of fragrance – that's what the Scent Weaver delivers."
+
+
+---
+
+## Related Ideas
+
+- **“paleo-scent weaver”** (shared concept: *shape-memory alloy*)
+- **idea domain=olfactory memory recovery** (shared concept: *the scent weaver*)
+- **Ephemeral Gastronomic Cartography** (shared concept: *the scent weaver*)
+- **engineered microbial voc emission control systems biometric-driven scent modulation micro-environmental scent sculpting** (shared concept: *the scent weaver*)
+- **human scent associations olfactory psychology architectural design biometric data analysis** (shared concept: *the scent weaver*)

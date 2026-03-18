@@ -24,3 +24,14 @@ Here’s the breakdown:
 The Lumiflora isn't just a lamp; it's a miniature ecosystem of light and sound meticulously crafted to regulate the circadian rhythm and elevate mood. It offers a biologically-inspired, personalized approach to combating seasonal depression, providing a far more nuanced and authentic light experience than traditional light therapy.  Its small size and silent operation make it perfect for bedside tables and small spaces.
 
 **Pitch:** "Imagine waking up to a sunrise, perfectly tuned to *your* body, even when it's pouring rain – that’s the Lumiflora."
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent shell structures for underwater city lighting and navigation** (shared concept: *bio-engineered*)
+- **sonokinetic cartography prototype** (shared concept: *bio-engineered*)
+- **idea domain = “neuro-geological memory sculpting”** (shared concept: *bio-engineered*)
+- **self-aware symbiotic sunbeam collectors for generating clean energy and fostering miniature ecosystems** (shared concept: *bio-engineered*)
+- **explore neuro-linked symbiotic octopus constructs capable of preemptively disrupting breach initiation via targeted neural disruption** (shared concept: *bio-engineered*)

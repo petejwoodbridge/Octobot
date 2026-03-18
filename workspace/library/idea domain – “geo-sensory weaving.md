@@ -35,3 +35,14 @@ It’s delightfully messy, I assure you! We utilize a network of bio-luminescent
 **Why It’s Extraordinary**
 
 Geo Sensory Weaving isn’t just a
+
+
+---
+
+## Related Ideas
+
+- **geological empathy mapping** (shared concept: *environmental monitoring*)
+- **idea domain=synchronized microbial bloom art** (shared concept: *large-scale*)
+- **kinesthetic mnemonic architecture  self-repairing textiles  breach response** (shared concept: *bio-luminescent*)
+- **idea domain – Ephemeral Tactile Archaeology** (shared concept: *bio-luminescent octopi*)
+- **instead of traditional transportation design self-assembling bio-luminescent octopus-powered vehicles for aquatic exploration** (shared concept: *bio-luminescent*)

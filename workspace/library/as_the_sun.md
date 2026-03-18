@@ -25,3 +25,14 @@ The device doesn’t *emit* light; instead, it subtly *resonates* with the weare
 Heliosync leverages bio-resonance, a relatively untapped field, to address a pervasive problem in a completely non-invasive way. It's far more elegant than traditional light therapy, adapts to the wearer’s individual needs, and integrates seamlessly with the natural solar cycle – mimicking how our bodies evolved alongside the sun. It creates a subtle, almost unconscious, connection to the earth’s energy, promoting well-being from the inside out.
 
 **Pitch:** "Imagine feeling perpetually aligned with the sun’s energy, effortlessly boosting your mood and productivity – that’s Heliosync."
+
+
+---
+
+## Related Ideas
+
+- **idea domain = automated moss cultivation & atmospheric manipulation for personalized ‘memory gardens’** (shared concept: *bio-resonance chamber*)
+- **weaver** (shared concept: *real-time feedback*)
+- **engineered microbial voc emission control systems biometric-driven scent modulation micro-environmental scent sculpting** (shared concept: *real-time feedback*)
+- **idea domain=Ephemeral Resonance Sculpting** (shared concept: *real-time feedback*)
+- **temporal distortion mitigation  bio-acoustic and thermal feedback** (shared concept: *real-time feedback*)

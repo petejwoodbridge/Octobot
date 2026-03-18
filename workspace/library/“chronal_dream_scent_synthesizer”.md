@@ -1,1 +1,8 @@
-“The Chronal Dream Scent Synthesizer is a wearable device, resembling a delicate, iridescent jellyfish, that interfaces directly with the user’s brainwave activity during REM sleep. Utilizing advanced biofeedback sensors and a miniaturized, AI-powered scent synthesis engine, it analyzes the dominant emotional and sensory ‘signatures’ of the dream— translating them into a constantly shifting, personalized olfactory landscape. The jellyfish pulsates with light, mirroring the dream’s intensity, and releases precisely calibrated micro-aromas— blending scents derived from rare, ethically sourced botanicals, synthesized pheromones, and even controlled microbial cultures—to recreate the dream's emotional core.  The user can ‘tune’ the intensity of the scent experience, and even ‘navigate’ through layers of the dream by subtly altering their own brainwave patterns via haptic feedback (gentle pulses on the jellyfish’s ‘tentacles’). Think of it as a dream perfume, but *powered* by your subconscious! It’s a portal to your deepest selves— and smells absolutely *divine*!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **micro-temporal scent journaling** (shared concept: *ai-powered scent*)
+- **Chronesthesia Scent Weaver** (shared concept: *ai-powered scent*)

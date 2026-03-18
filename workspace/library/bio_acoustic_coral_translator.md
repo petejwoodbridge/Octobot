@@ -20,3 +20,14 @@ The Bio-Acoustic Coral Translator represents a paradigm shift in underwater expl
 
 ## Elevator Pitch
 Dive into history – literally – and experience the echoes of the past through the voices of the coral itself.
+
+
+---
+
+## Related Ideas
+
+- **dermal cartography  bio-acoustic sensors  wearable textiles  memory recall** (shared concept: *bio-acoustic signals*)
+- **idea domain=Kinesthetic Archeology** (shared concept: *haptic-feedback suit*)
+- **“bioluminescent phantom limb explorer”** (shared concept: *haptic-feedback suit*)
+- **geological memory moss** (shared concept: *haptic-feedback suit*)
+- **bio-acoustic coral reef manipulation techniques coral reef resonance frequency artificial reef soundscapes marine bioacoustics** (shared concept: *bio-acoustic coral*)

@@ -40,3 +40,14 @@ Crucially, the unit reconstructs sensory data – sight, sound, smell, touch, ev
 ---
 *Original notes:*
 ## ChronoBloom - Temporal Sensory Reconstruction Device
+
+
+---
+
+## Related Ideas
+
+- **idea domain – Ephemeral Tactile Archaeology** (shared concept: *archaeological research*)
+- **“Chronosculpt”** (shared concept: *archaeological research*)
+- **ChronalGastricTopography** (shared concept: *bio-compatible headset*)
+- **neuro-geological embroidery - taste of time** (shared concept: *educational programs*)
+- **idea domain=Eco-Monastic Innovation** (shared concept: *educational programs*)

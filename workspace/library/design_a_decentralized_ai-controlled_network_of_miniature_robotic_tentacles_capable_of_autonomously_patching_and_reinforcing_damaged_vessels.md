@@ -21,3 +21,14 @@ Each Chrysalis utilizes a localized bio-cement secretion – produced through a 
 The Bio-Weave represents a paradigm shift in hull maintenance. It’s infinitely scalable, dramatically reduces response times, eliminates human risk, and offers a truly proactive defense against structural damage. The self-assembling bio-cement offers unparalleled adhesion across diverse materials, and the swarm intelligence ensures adaptability and resilience unlike anything currently available. Furthermore, it subtly integrates with the vessel's energy systems, creating a self-sustaining repair ecosystem.
 
 **Pitch:** “Imagine a fleet of microscopic builders tirelessly guarding your ship, ensuring a safe passage across any ocean – that’s the Bio-Weave.”
+
+
+---
+
+## Related Ideas
+
+- **develop a bio-adhesive sealant mimicking octopus skin instantly bonding to porous materials to physically block leaks** (shared concept: *bio-weave represents*)
+- **adaptive biomaterials idea 1** (shared concept: *shape-memory alloys*)
+- **mnemonic pollen mapping** (shared concept: *shape-memory alloys*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloys*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloys*)

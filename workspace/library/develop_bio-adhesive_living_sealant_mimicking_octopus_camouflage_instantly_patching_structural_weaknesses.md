@@ -21,3 +21,14 @@ Chroma-Skin Patch combines the incredible adhesive properties of octopus slime w
 The initial gel is tinted a neutral grey, and the bio-pixels shift to match the surface - rust on metal, weathered concrete, even the iridescent sheen of a submarine hull. 
 
 **Pitch:** "Imagine a repair that fixes itself *and* disappears – that's Chroma-Skin Patch: the future of structural integrity, one shimmering patch at a time."
+
+
+---
+
+## Related Ideas
+
+- **develop bio-adhesive living sealant mimicking octopus camouflage to instantly patch hull breaches** (shared concept: *bio-adhesive sealant*)
+- **develop bio-adhesive living sealant mimicking octopus camouflage instantly patching breaches with organic material** (shared concept: *bio-adhesive*)
+- **develop bio-adhesive living seals utilizing modified octopus tissue to instantly patch and reinforce structural weaknesses** (shared concept: *bio-adhesive*)
+- **develop bio-adhesive smart skins for ships that instantly seal breaches with a self-healing pressure-sensitive polymer** (shared concept: *bio-adhesive*)
+- **develop bio-adhesive living sealant mimicking octopus camouflage for immediate self-repairing hull breaches** (shared concept: *bio-adhesive sealant*)

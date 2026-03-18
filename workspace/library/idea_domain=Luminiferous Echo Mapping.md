@@ -37,3 +37,14 @@ Each Echo Harvester emits a focused beam of light – a "Luminiferous Pulse" –
 ---
 *Original notes:*
 ## EchoWeave: The Luminescent Memory Mapper
+
+
+---
+
+## Related Ideas
+
+- **lithic empathy mapping concept** (shared concept: *forensic archaeology*)
+- **sonospheric topography mapping** (shared concept: *echo harvesters*)
+- **idea domain – Symbiotic chronesthesia augmentation** (shared concept: *chronal resonance*)
+- **temporal camouflage  developing materials that shift appearance to blend with different points in time** (shared concept: *chronal resonance*)
+- **Chronal Gastric Echoes** (shared concept: *chronal resonance*)

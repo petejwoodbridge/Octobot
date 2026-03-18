@@ -20,3 +20,14 @@ Here’s the core mechanism:
 **Why It’s Brilliant:** The EchoBloom moves beyond static AR overlays by creating a deeply engaging, multi-sensory experience. It leverages the power of haptic feedback and directional audio to trigger emotional responses and foster a genuine connection between the user and their environment, creating a personal, layered narrative that’s both informative and profoundly beautiful. It merges historical data with artistic interpretation in a way never before imagined.
 
 *Pitch:* “Imagine experiencing the past – and the beauty around you – with every step, wouldn’t that be amazing?”
+
+
+---
+
+## Related Ideas
+
+- **geological grief mapping bio-acoustic resonance mine shafts experiential recall** (shared concept: *bone-conduction headphones*)
+- **geological echo-resonance chambers  dream weaving  biofeedback** (shared concept: *bone-conduction headphones*)
+- **bio-acoustics moss genetic modification sonic landscape user interface** (shared concept: *bone-conduction headphones*)
+- **haptic exoskeletons motor skill refinement injury rehabilitation embodied experience neurological feedback loops sensor fusion** (shared concept: *ai-powered*)
+- **sentinel is a** (shared concept: *ai-powered*)

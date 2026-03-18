@@ -20,3 +20,14 @@ MossMind goes beyond simple relaxation by creating a genuinely adaptive and pers
 
 ## Elevator Pitch
 “Find your calm with MossMind – the living, breathing oasis that adapts to your anxiety.”
+
+
+---
+
+## Related Ideas
+
+- **circadian rhythms textile integration moss colonies bio-acoustic output** (shared concept: *dynamic lighting*)
+- **bloom is a** (shared concept: *bryum argenteum*)
+- **moss cultivation techniques shape-memory textiles biofeedback sensors color-changing materials time perception** (shared concept: *bryum argenteum*)
+- **chronobiological memory garden** (shared concept: *bryum argenteum*)
+- **personalized dreamscapes neurolinguistic programming biofeedback moss cultivation time perception** (shared concept: *bryum argenteum*)

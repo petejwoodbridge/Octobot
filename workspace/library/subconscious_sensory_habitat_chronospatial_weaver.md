@@ -36,3 +36,14 @@ Here’s the messy part:  Users wear a neural interface suit – think shimmerin
 ---
 *Original notes:*
 “Chronosilk: A Temporal Weaving System” – Initial concept draft.
+
+
+---
+
+## Related Ideas
+
+- **“Chrono-Topography”** (shared concept: *bio-feedback integration*)
+- **osmotic memory mapping device** (shared concept: *bio-feedback integration*)
+- **“Chronosculpt”** (shared concept: *historical tourism*)
+- **idea domain - subconscious echo-cartography** (shared concept: *experiential*)
+- **bio-acoustic temporal mapping techniques  specifically how animals perceive and utilize time through sound** (shared concept: *experiential*)

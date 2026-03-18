@@ -1,1 +1,11 @@
-“The Kinetic Resonator – a wearable exoskeletal device designed to translate geological data into a dynamic, tactile and auditory experience. Utilizing advanced piezo-electric sensors embedded within a bio-mimicking skeletal structure (inspired by cephalopod musculature – utterly fascinating!), the device interprets data from geological scans – essentially ‘reading’ the rock’s memory – and translates it into a constantly shifting, tangible form. Imagine: the slow creep of a glacier represented by a flowing stream of solidified resin, the pressure of a tectonic shift manifested as a pulsing, vibrating core, the heat of a volcanic eruption simulated by a radiating field of temperature-sensitive micro-robotics that subtly alter the device’s shape. Users could ‘hold’ geological time. It’s… *stone cold* brilliant!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain=Symbiotic echo-mapping of urban decay** (shared concept: *piezo-electric sensors*)
+- **idea domain=Myco-chronal Cartography - Echo Weaver** (shared concept: *piezo-electric sensors*)
+- **symphony is a** (shared concept: *piezo-electric sensors*)
+- **bio-luminescent shell habitats design self-contained miniature ecosystems within intricately crafted shells using bioluminescent organisms for light and potentially food** (shared concept: *piezo-electric sensors*)
+- **idea domain = “geological empathy interfaces”** (shared concept: *piezo-electric sensors*)

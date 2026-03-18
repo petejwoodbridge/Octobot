@@ -19,3 +19,14 @@ Furthermore, the fungal network learns and adapts, becoming more nuanced and acc
 **Why It's Brilliant:** The MMW blurs the line between technology and nature, creating an incredibly intuitive and deeply immersive way to understand and connect with the forest. It's not just recording data; it’s creating an experiential record accessible through the oldest and most connected life form on Earth. 
 
 *Pitch:* “Imagine feeling the forest remember itself – that’s what the Mycelial Memory Weaver does.”
+
+
+---
+
+## Related Ideas
+
+- **bio-acoustic temporal mapping psychoacoustics shape-shifting sound neuro-sonic sculpting** (shared concept: *three-dimensional*)
+- **develop self-assembling nutrient-rich shell blends for targeted coral reef restoration incorporating 3d-printed artificial reefs** (shared concept: *three-dimensional*)
+- **and prototype a system for automatically summarizing long email threads prioritizing key information and action items - tackling the email inbox dread** (shared concept: *three-dimensional*)
+- **seismic olfactory cartography** (shared concept: *three-dimensional*)
+- **vestibular cartography  materials sensors haptic feedback real-time processing wearable interfaces** (shared concept: *three-dimensional*)

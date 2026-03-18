@@ -15,3 +15,11 @@ The AI then ‘translates’ these vibrations into a series of audible, layered 
 **Why It's Brilliant:** The EchoBloom bridges the gap between the plant world and human perception, offering a direct pathway to understanding plant communication. It moves beyond simply detecting VOCs to interpreting their nuanced meanings, potentially revolutionizing fields like agriculture (optimizing crop health and pest resistance) and ecology (revealing complex plant networks and their impact on ecosystems). The device also fosters a deeper connection between people and the natural world through this audible, surprising dialogue.
 
 *Pitch:* "Imagine hearing the flowers tell you what they need – it’s like unlocking the secret language of the garden.”
+
+
+---
+
+## Related Ideas
+
+- **sonogenetic skin grafts  living sculpture  bio-acoustics** (shared concept: *micro-acoustic sensors*)
+- **chronophonic lichen synth concept** (shared concept: *micro-acoustic sensors*)

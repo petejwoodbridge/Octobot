@@ -15,3 +15,11 @@
 **Why It's Brilliant:** BloomSense merges quantum biology with drone technology, offering unprecedented insight into plant communication and response. It’s a tool that transforms observation into precise, actionable data, facilitating rapid diagnosis of plant issues and, ultimately, revolutionizing horticultural practices. It's also beautiful – a tiny, glowing poppy silently unraveling the secrets of the floral world. 
 
 *Pitch:* “Imagine knowing *exactly* what’s making your roses bloom—BloomSense does that, and it looks gorgeous doing it.”
+
+
+---
+
+## Related Ideas
+
+- **ephemeral cartography of transient urban micro-ecosystems** (shared concept: *bio-luminescent drone*)
+- **algorithmic dust cartography - refinement  expansion** (shared concept: *bio-luminescent drone*)

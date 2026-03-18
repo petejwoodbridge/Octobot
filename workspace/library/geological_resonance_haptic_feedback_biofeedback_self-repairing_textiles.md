@@ -15,3 +15,14 @@ The processor translates these geological readings into a personalized haptic fe
 **Why It’s Brilliant:** The Geo-Weave doesn’t just tell you there’s pollution; it *makes you feel* its unsettling influence. It provides an unprecedented level of direct sensory connection to the planet's rhythms, fostering greater awareness and potentially mitigating anxiety by providing a tangible, controllable response to external stressors. It bridges the gap between geological data and human experience, leveraging haptic feedback for a fundamentally new form of environmental intelligence. 
 
 *“Experience the planet’s pulse – and take control of your calm.”*
+
+
+---
+
+## Related Ideas
+
+- **bio-integrated sensory layering systems dynamic textile adaptation haptic feedback environmental shifts emotional responses cognitive responses** (shared concept: *bio-integrated textile*)
+- **idea domain=chronal embroidery** (shared concept: *bio-integrated textile*)
+- **phantom limb cartography  self-repairing textiles  olfactory projection** (shared concept: *self-repairing textiles*)
+- **self-repairing textiles inspired by biological regeneration** (shared concept: *self-repairing textiles*)
+- **geological empathy interfaces self-repairing textiles bio-luminescence** (shared concept: *self-repairing textiles*)

@@ -25,3 +25,14 @@ Here’s the core process:
 Lumiflora merges biophilic design (the human connection to nature) with cutting-edge neurotechnology. It’s not just about seeing pretty lights; it’s about actively training your brain to recognize and embrace joyful states.  The symbiotic relationship between the human and the flora creates a profoundly calming and empowering experience. It’s personalized, adaptable, and truly taps into the biological roots of happiness. 
 
 **Pitch:** “Imagine stepping into a world where your emotions literally glow – Lumiflora transforms your space into a personal sanctuary of joy, one beautiful light pulse at a time.”
+
+
+---
+
+## Related Ideas
+
+- **weaving can that** (shared concept: *algorithmic translation*)
+- **create wearable exoskeletons mimicking cephalopod camouflage dynamically shifting texture and color based on surrounding stimuli** (shared concept: *sensory input*)
+- **the taste itself** (shared concept: *sensory input*)
+- **mnemonic hydro-sculpting  bio-acoustic resonance  memory recall  aquatic manipulation** (shared concept: *sensory input*)
+- **cephalopod camouflage shape-memory alloys olfactory synthesis wearable micro-climate** (shared concept: *sensory input*)

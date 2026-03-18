@@ -35,3 +35,14 @@ The core of SCSM is the "Chronoscape Weaver," a shimmering, bio-luminescent fabr
 ---
 *Original notes:*
 ## Chronoscape Weaver - The Temporal Textile
+
+
+---
+
+## Related Ideas
+
+- **Bio-acoustic Memory Anchor Prototype** (shared concept: *bio-electrical activity*)
+- **Sonospheric Cartography of Transient Emotions** (shared concept: *creative inspiration*)
+- **light-feeling synesthesia engines  materials sensors haptic feedback biofeedback artistic expression aesthetic perception proprioception** (shared concept: *bio-reactive textile*)
+- **threads subtly register** (shared concept: *bio-reactive textile*)
+- **chronal olfactory layering prototype** (shared concept: *creative inspiration*)

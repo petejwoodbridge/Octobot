@@ -17,3 +17,14 @@
 **## Why It’s Brilliant:** The Ephemeral Echo bridges the gap between memory and sensory experience in a profoundly personal way. It’s not just about smelling something; it’s about triggering a genuine, believable emotional response. The use of bio-engineered algae and targeted neural stimulation allows for unparalleled accuracy and intensity. It’s a delicate dance between science and nostalgia, offering a truly unique way to connect with the past.
 
 **Pitch:** "Imagine experiencing your grandmother’s garden, the exact moment you met your first love – all in a single, dissolving breath."
+
+
+---
+
+## Related Ideas
+
+- **neuro-scent technology olfactory memory mapping eeg olfactory stimulation microbiome scent profiles shape-memory alloy olfactory delivery** (shared concept: *capsule creation*)
+- **subconscious sensory habitat chronospatial weaver** (shared concept: *re-live*)
+- **idea domain=olfactory memory recovery** (shared concept: *re-live*)
+- **idea domain=Symbiotic ‘Chrono-Bloom’ Gardens** (shared concept: *re-live*)
+- **idea domain – “Chronal Echo-Gardens** (shared concept: *re-live*)

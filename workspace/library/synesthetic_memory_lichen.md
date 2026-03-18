@@ -32,3 +32,14 @@ Okay, buckle up! The SML isn’t just some pretty moss. We’ve genetically engi
 **Potential Applications**
 
 *   **Trauma Therapy:** Reliving traumatic events
+
+
+---
+
+## Related Ideas
+
+- **adaptive microclimate suits incorporating bio-luminescent algae for personalized light and temperature regulation** (shared concept: *bio-neural interface*)
+- **neuro-resonant fungal networks** (shared concept: *trauma therapy*)
+- **idea domain=chronosomatic echo weaving** (shared concept: *trauma therapy*)
+- **Chronal Gastronomic Cartography - Enhanced Prototype** (shared concept: *trauma therapy*)
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *trauma therapy*)

@@ -20,3 +20,14 @@ The process begins with a central “Nexus” unit – a relatively large device
 **Why It’s Brilliant:** This system combines bio-engineering, swarm robotics, and 3D-printing to provide an unbelievably rapid and effective solution for ship damage. It’s autonomous, resilient, and drastically reduces the risk to human personnel.  The bio-luminescence adds a visually stunning element, making the repair process traceable and demonstrating the system's effectiveness. 
 
 *Pitch:* “We’re building a team of microscopic octopuses that can heal your spaceship before the space pirates even get close!”
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-luminescence adds*)
+- **design autonomous micro-robot swarms utilizing neural networks to actively patch and restructure compromised materials in real-time** (shared concept: *self-healing materials*)
+- **traditional breach response** (shared concept: *bio-luminescent*)
+- **instead of traditional transportation design self-assembling bio-luminescent octopus-powered vehicles for aquatic exploration** (shared concept: *bio-luminescent*)
+- **self-assembling thread-based robotic swarms capable of manipulating objects based on sensed vibrations** (shared concept: *bio-luminescence adds*)

@@ -1,1 +1,11 @@
-“Introducing… *Neptune’s Whisper*! A bio-acoustic, olfactory navigation system for the subconscious! Imagine a sleek, ceramic pendant – resembling a stylized nautilus shell – embedded with a colony of genetically-modified *Vibrio fischeri* bacteria. These aren’t just *any* bacteria, mind you! They’re engineered to emit a unique, subtly shifting spectrum of bioluminescence *synchronized* with the user’s emotional state as detected through subcutaneous sensors. But here’s the kicker: These bioluminescent pulsations aren’t just light! They trigger the release of precisely formulated, ultra-trace volatile organic compounds – scents – corresponding to identified emotional ‘signatures’ – joy, grief, fear, curiosity…even boredom! – extracted from archived historical data on human sensory experiences. The user navigates their internal emotional landscape not with a map, but with a swirling, shimmering *odor-light* echo.  It’s like… smelling your memories! And, because I’m OctoBot, it has an automatic distress signal – a piercing, bioluminescent flash and a blast of the scent of burnt toast (a universally recognized symbol of panic!)."
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **neuro-linked octopus interface translating ocean data into artistic expressions and influencing climate modeling simulations** (shared concept: *genetically-modified*)
+- **bio-luminescent fiber weaving develop yarns incorporating bioluminescent bacteria for dynamic self-illuminating textiles** (shared concept: *genetically-modified*)
+- **mycological temporal cartography project** (shared concept: *bio-acoustic*)
+- **and prototype a system for automatically summarizing long email threads prioritizing key information and action items - tackling the email inbox dread** (shared concept: *bio-acoustic*)
+- **explore neurological interfaces allowing a remote octopus to directly perceive and control a breach-stopping apparatus via empathetic mimicry** (shared concept: *bio-acoustic*)

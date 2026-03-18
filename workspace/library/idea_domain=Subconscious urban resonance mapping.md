@@ -35,3 +35,14 @@ Okay, buckle up! The Sentient Streetscape utilizes a network of “Echo Nodes”
 ---
 *Original notes:*
 ## The Sentient Streetscape
+
+
+---
+
+## Related Ideas
+
+- **“synesthetic cartography app”** (shared concept: *architectural design*)
+- **idea domain = “Chronal Echo Mapping of Abandoned Infrastructure”** (shared concept: *architectural design*)
+- **idea domain=KinestheticCartography** (shared concept: *architectural design*)
+- **idea domain=Chronobiological Cartography of Domestic Sounds** (shared concept: *architectural design*)
+- **kinesthetic cartography prototype** (shared concept: *urban planning*)

@@ -17,3 +17,14 @@ The ceramic shell itself contains a micro-hydroponic system that uses humidity c
 **Why It's Brilliant:** The MycoBloom marries acoustic analysis with olfactory stimulation, offering a vastly more precise and engaging understanding of decomposition than current methods. It transforms a hidden process into a tangible, informative, and somewhat beautiful experience, while offering a quantifiable assessment of the effectiveness of composting systems. 
 
 *Pitch:* "Introducing MycoBloom – turn your compost into a symphony of scent and data!"
+
+
+---
+
+## Related Ideas
+
+- **bio-acoustic skin weaving proprioception shape-memory alloy textiles atmospheric sound mapping neurofeedback textiles** (shared concept: *bio-acoustic sensors*)
+- **Chronoskin Temporal Containment Unit** (shared concept: *bio-acoustic sensor*)
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *bio-acoustic sensors*)
+- **temporal anomaly detection sensors bio-acoustic resonance analysis pheromonal decay modeling shape-memory alloy vibration dampeners microclimate simulation chambers** (shared concept: *bio-acoustic sensors*)
+- **t about stopping the breach it** (shared concept: *bio-acoustic sensor*)

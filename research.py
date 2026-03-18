@@ -101,7 +101,11 @@ def conduct_research(topic: str) -> str:
     # Strip leading/trailing quotes the LLM sometimes wraps output in
     notes = notes.strip().strip('"').strip()
 
-    filename = tools.save_research(topic, notes)
+    try:
+        filename = tools.save_research(topic, notes)
+    except ValueError as exc:
+        mem.log_event("error", f"Research rejected for '{topic}': {exc}")
+        return f"Research rejected: {exc}"
     mem.log_event("action", f"Research saved to {filename}")
 
     # Update knowledge graph with the new research

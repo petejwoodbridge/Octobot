@@ -34,3 +34,14 @@ It’s brilliantly bonkers, I assure you. The core of the system is the EchoWeav
 ---
 *Original notes:*
 ```## EchoWeave: Predictive Fabric
+
+
+---
+
+## Related Ideas
+
+- **design a neural interface that allows a human operator to feel the breachs pressure and flow directing a directed energy beam for precise instantaneous solidification** (shared concept: *micro-sensors that*)
+- **“litho-sonographic dream weaver”** (shared concept: *physical*)
+- **idea domain = Episodic Mineral Cartography** (shared concept: *physical*)
+- **“Chrono-Topography”** (shared concept: *physical*)
+- **idea domain=bio acoustic lichen lullabies** (shared concept: *tentacular*)

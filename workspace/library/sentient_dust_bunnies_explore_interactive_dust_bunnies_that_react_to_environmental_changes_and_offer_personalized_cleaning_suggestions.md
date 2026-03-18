@@ -17,3 +17,14 @@ The user interacts via a dedicated app, which visualizes the bunnies’ "mood" �
 **Why It’s Brilliant:** It's not just about cleaning; it's about a mindful, personalized approach to environmental management, interwoven with subtle psychological support. It leverages the inherent fascination with cute creatures and turns a mundane chore into an interactive, emotionally intelligent experience. It’s a blend of bio-sensing technology, AI behavioral analysis, and gentle, aesthetic intervention – a truly novel approach to promoting a more organized and relaxed life.
 
 *Pitch:* "Imagine having a fluffy, tiny army of dust bunnies that not only clean your home, but actually *understand* why it needs cleaning – 'Let’s bring a little zen to your mess, shall we?'"
+
+
+---
+
+## Related Ideas
+
+- **sentient material fabrication engineer self-assembling materials capable of adapting to and responding to human emotion and intention** (shared concept: *bio-sensing technology*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *understand*)
+- **bio-luminescent mood lighting systems mimicking cephalopod camouflage responses to emotional stimuli** (shared concept: *understand*)
+- **rem sleep architecture and auditory-vibrational resonance** (shared concept: *understand*)
+- **sensory** (shared concept: *understand*)

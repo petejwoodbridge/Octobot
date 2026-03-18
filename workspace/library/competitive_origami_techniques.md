@@ -21,3 +21,14 @@ Crucially, the FoldFlow doesn’t *do* the fold. It’s a coaching system. It su
 The FoldFlow transcends simple assistance. It leverages the brain’s proprioceptive feedback system—our sense of where our limbs are in space—to optimize motor skills in origami. It pushes the boundaries of the art form, demanding a new level of both physical and mental precision. It introduces a metric for assessing origami complexity, allowing for true competitive ranking based on the difficulty of execution, not just visual aesthetics. It also has huge potential for training aspiring origami artists, accelerating skill acquisition. 
 
 **Pitch:** “FoldFlow lets you finally prove your origami mastery—and win, guaranteed.”
+
+
+---
+
+## Related Ideas
+
+- **chronal fungal bloom mapping** (shared concept: *heads-up display*)
+- **it blends geology** (shared concept: *heads-up display*)
+- **fungal bio-integration olfactory transduction shape-memory alloys textile engineering** (shared concept: *heads-up display*)
+- **“chronobiological palimpsest gardening suit”** (shared concept: *heads-up display*)
+- **develop bio-responsive textiles that subtly shift shape and temperature to preemptively alleviate postural strain** (shared concept: *micro-actuators*)

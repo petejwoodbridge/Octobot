@@ -31,3 +31,13 @@ We’ve layered this with a ‘Bio-Synthesizer’ – a 3D bioprinting system th
 *   **Personal Culinary Exploration:** Imagine tasting your great-grandmother’s apple pie... or discovering a lost recipe!
 
 ## Why
+
+---
+
+## Related Ideas
+
+- **idea domain=temporal gastronomy** (shared concept: *culinary education*)
+- **idea domain – “chronal scent-weaving for extinct cultural rituals”** (shared concept: *archaeological research*)
+- **Precognitive Gastronomy** (shared concept: *overview behold*)
+- **idea domain - biophotonic echo-gardening** (shared concept: *overview behold*)
+- **idea pitch** (shared concept: *overview behold*)

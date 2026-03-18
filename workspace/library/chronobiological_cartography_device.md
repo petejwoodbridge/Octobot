@@ -20,3 +20,14 @@ The BloomEcho merges biotechnology, holographic projection, and bio-acoustics in
 
 ## Elevator Pitch
 See, hear, and understand the hidden pulse of our city’s waterways with the BloomEcho – your personal, glowing ocean in the palm of your hand.
+
+
+---
+
+## Related Ideas
+
+- **idea domain - chromatic bio-sonification** (shared concept: *bio-acoustic transducer*)
+- **memory bloom concept** (shared concept: *bio-acoustic transducer*)
+- **idea domain - Symbiotic Skin Grafts - Moodscape** (shared concept: *bio-acoustic transducer*)
+- **idea domain=chronophonic moss terrariums** (shared concept: *bio-acoustic transducer*)
+- **idea domain=symbiotic microbiome mood synthesis** (shared concept: *bio-acoustic transducer*)

@@ -38,3 +38,14 @@ This algorithm translates the sound data into a complex series of light pulses, 
 ---
 *Original notes:*
 “EchoBloom – The Transient Sculpture Generator”
+
+
+---
+
+## Related Ideas
+
+- **sonosomatic mapping device** (shared concept: *real-time feedback loop*)
+- **idea domain=Sonospheric Skin-Symbiosis** (shared concept: *performance art*)
+- **idea domain=Kinetic Echo Chamber** (shared concept: *interactive art installations*)
+- **idea domain=synchronized microbial bloom art** (shared concept: *pre-programmed sequences*)
+- **sonoscaping echo chamber** (shared concept: *sonic weaver algorithm*)

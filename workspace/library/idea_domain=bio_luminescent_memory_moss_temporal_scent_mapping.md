@@ -35,3 +35,14 @@ But the real trick is the scent. The Scent-Echo receptors analyze the *original*
 ---
 *Original notes:*
 “Chronoscents: Echoes in Bloom - A Personalized Temporal Olfactory Experience” - *Detailed pitch follows...*
+
+
+---
+
+## Related Ideas
+
+- **memory bloom scentscapes** (shared concept: *therapeutic memory recall*)
+- **chronal olfactory layering prototype** (shared concept: *creative inspiration*)
+- **idea domain=biophotonic dream mapping** (shared concept: *creative inspiration*)
+- **Chronobiological Gastronomic Mapping - Sensory Deprivation** (shared concept: *therapeutic memory recall*)
+- **“Chronal Aroma Weave”** (shared concept: *therapeutic memory recall*)

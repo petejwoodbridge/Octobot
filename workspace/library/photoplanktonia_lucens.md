@@ -24,3 +24,14 @@ The drones are deployed in pre-programmed formations, responding in real-time to
 The Bloom Weaver represents the first truly scalable and controllable method of harnessing bioluminescence. It’s not just about collecting light; it’s about sculpting it.  The use of bio-acoustic stimulation offers a gentle, environmentally benign method of increasing light production, unlike chemical methods. The network's adaptability allows for dynamic, evolving light shows – imagine a living, breathing aurora borealis in the ocean, powered by nature itself.  Furthermore, the collected light could be used for deep-sea imaging, marine research, or even eco-tourism.
 
 **Pitch:** “Imagine directing the ocean’s own light show – we’re literally weaving a symphony of bioluminescence, unlocking the secrets of the deep.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Eco-Monastic Innovation** (shared concept: *eco-tourism*)
+- **symbiotic robotic ecosystems design self-organizing robotic collectives mimicking octopus social structures for complex environmental remediation** (shared concept: *nutrient delivery system*)
+- **weaving can that** (shared concept: *photoplanktonia lucens*)
+- **poseidon** (shared concept: *bio-acoustic stimulation*)
+- **developing bio-inspired flapping robotic wings powered by miniature octopus muscle mimics for aerial maneuverability** (shared concept: *bio-compatible polymer*)

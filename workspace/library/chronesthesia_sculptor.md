@@ -24,3 +24,14 @@ The Echo Weaver transcends mere nostalgia; it’s a therapeutic tool leveraging 
 
 ## Elevator Pitch
 Feel your childhood again, and heal your present.
+
+
+---
+
+## Related Ideas
+
+- **reactive olfactory projection technology haptic feedback urban archaeology bio-acoustic mapping** (shared concept: *micro-vibrations*)
+- **develop bio-acoustic translation devices that allow humans to hear the world as animals do mapping sonic landscapes** (shared concept: *micro-vibrations*)
+- **anamnesis cartography** (shared concept: *overview the echo weaver*)
+- ** develop library-acoustic resonance time perception visual representation  investigate creating immersive experiences for productivity meditation or artistic expression using sound and visual feedback** (shared concept: *temporal calibration*)
+- **idea domain=chronobiological echo gardening** (shared concept: *temporal calibration*)

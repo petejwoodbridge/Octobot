@@ -15,3 +15,14 @@ Think of it like a microscopic, contained earthquake. The Resonator’s pulses a
 **Why It’s Brilliant:** The Resonator goes beyond brute force stabilization. It’s adaptive, intelligent, and utilizes a fundamental physics principle – resonant frequency – to fundamentally alter the collapse’s behavior. Unlike concrete barriers or temporary supports, the Resonator integrates *into* the structure, becoming a part of its defense. It anticipates, it responds, and it minimizes damage. Furthermore, the bio-luminescent aspect provides an immediate visual representation of the system’s effectiveness.
 
 *Pitch:* "We’re not just building stronger structures; we're teaching them to control their own collapse.”
+
+
+---
+
+## Related Ideas
+
+- **design instruments that morph and change shape dynamically altering timbre and tone based on environmental input wind light etc** (shared concept: *bio-luminescent aspect*)
+- **resonant artifact acupuncture** (shared concept: *micro-piezoelectric transducers*)
+- **filament** (shared concept: *bio-luminescent*)
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *bio-luminescent*)
+- **the piezoelectric sensors** (shared concept: *bio-luminescent*)

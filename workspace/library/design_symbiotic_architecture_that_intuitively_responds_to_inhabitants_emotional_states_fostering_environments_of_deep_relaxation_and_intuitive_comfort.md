@@ -17,3 +17,14 @@ Crucially, the fungi *learn* the individual’s emotional “signature” over t
 **Why It’s Brilliant:** The Echo Bloom creates a profoundly intimate and adaptive environment, merging biology with architecture to genuinely understand and respond to human emotional needs. It’s not just automation; it’s emotional resonance, transforming a building from a static structure into a living, breathing extension of the occupant's wellbeing. It goes beyond simply making a room *feel* good, actively fostering a state of effortless calm and intuitive comfort.
 
 *Pitch:* “Imagine a home that actually *knows* how you feel – and gently guides you to serenity.”
+
+
+---
+
+## Related Ideas
+
+- **sound sculpture techniques biofeedback integration art haptic feedback design algorithmic sculpture** (shared concept: *micro-sensors that*)
+- **idea domain=Chronoshell - Symbiotic Chronesthesia Mapping** (shared concept: *bio-electromagnetic fields*)
+- **idea domain = Personalized “Temporal Resonance” Audio-Haptic Sculpting for Historical Emotional Immersion** (shared concept: *micro-sensors that*)
+- **weaver** (shared concept: *micro-sensors that*)
+- **idea domain – “Synesthetic Cartography of Historical Weather Patterns”** (shared concept: *micro-sensors that*)

@@ -13,3 +13,12 @@
 **Why It’s Brilliant:** ChronoWeave offers near-instantaneous damage mitigation. The 60-second window buys the repair team invaluable time, dramatically reducing the likelihood of catastrophic hull failure. It’s incredibly precise, avoiding collateral damage to the surrounding structure. Furthermore, its compact design and reliance on phased-array technology make it significantly lighter and more energy-efficient than existing stasis solutions. It’s also adaptable to various hull materials and breach types thanks to the dynamic resonance tuning.
 
 *Pitch:* “Imagine winning a fight against a collapsing ship – ChronoWeave lets you slow down the destruction just long enough to rebuild, it’s the ultimate defensive upgrade.”
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *stopping*)
+- **when a breach** (shared concept: *stopping*)
+- **fabricate a localized temporal distortion field  a brief stasis bubble  to freeze the breachs expansion momentarily** (shared concept: *high-density kinetic*)

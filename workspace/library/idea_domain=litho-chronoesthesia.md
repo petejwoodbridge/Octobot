@@ -39,3 +39,14 @@ The magic happens with our "Resonance Gloves." These gloves are lined with micro
 ---
 *Original notes:*
 ## The Geochron Textures: A Temporal Fabric
+
+
+---
+
+## Related Ideas
+
+- **“ChronalScentSynth”** (shared concept: *therapeutic applications*)
+- **idea domain=bio-sonorous sedimentary palimpsests** (shared concept: *neural interface*)
+- **chronoscent concept** (shared concept: *therapeutic applications*)
+- **idea domain=temporal micro-erosion simulation chambers** (shared concept: *geological research*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *geological research*)

@@ -37,3 +37,14 @@ The synthesizer then generates a complex, constantly shifting sonic pattern, tai
 **Why It's Extraordinary**
 
 The Litho Sonographic Dream Weaver isn’t just a machine
+
+
+---
+
+## Related Ideas
+
+- **idea domain = Episodic Mineral Cartography** (shared concept: *physical*)
+- **“Chrono-Topography”** (shared concept: *physical*)
+- **idea domain – “kinesthetic premonition mapping”** (shared concept: *physical*)
+- **gadgets for making bedtime routines actually work** (shared concept: *the dream weaver*)
+- **subconscious topography mapping** (shared concept: *the dream weaver*)

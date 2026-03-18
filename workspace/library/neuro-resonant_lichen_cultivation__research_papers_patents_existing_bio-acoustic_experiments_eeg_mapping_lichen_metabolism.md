@@ -19,3 +19,14 @@ The entire process is monitored via a holographic projection system, displaying 
 **Why It’s Brilliant:** The Myco-Harmonia moves beyond passive observation, creating a reciprocal interaction between lichen and human research. It’s a closed-loop system that allows scientists to not just record the lichen's responses, but to actively shape them, drastically increasing the depth and accuracy of neuro-resonant research and paving the way for novel applications in neurotherapy and cognitive enhancement.
 
 *Pitch:* “Imagine a world where we can harness the silent language of plants to treat anxiety, boost focus, and unlock the very secrets of the human mind – that’s what the Myco-Harmonia makes possible.”
+
+
+---
+
+## Related Ideas
+
+- **neuro-resonant lichen cultivation  existing research materials techniques potential applications** (shared concept: *neuro-resonant lichen*)
+- **bio-acoustic mapping of flavor compounds temporal gastronomy research shape-memory alloy culinary vessels controlled molecular diffusion** (shared concept: *real-time mapping*)
+- **circadian rhythms textile integration moss colonies bio-acoustic output** (shared concept: *bio-acoustic output*)
+- **bio-acoustic stress monitoring and fungal response** (shared concept: *bio-acoustic output*)
+- **develop bio-acoustic translation devices that allow humans to hear the world as animals do mapping sonic landscapes** (shared concept: *bio-acoustic research*)

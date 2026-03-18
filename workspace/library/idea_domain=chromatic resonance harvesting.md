@@ -34,3 +34,14 @@ These colors aren’t just pretty; they're converted into electrical energy thro
 ---
 *Original notes:*
 ## Bio-Harmonic Shimmers – The Somatic Echo Suit
+
+
+---
+
+## Related Ideas
+
+- **geological echo suit** (shared concept: *bio-reactive polymers*)
+- **Behavioral Economics Innovation** (shared concept: *genetically-modified bioluminescent*)
+- **neural-resonance landscaping** (shared concept: *translate*)
+- **“chronal memory synth”** (shared concept: *translate*)
+- **idea domain - Ephemeral Cartography of Acoustic Residue** (shared concept: *translate*)

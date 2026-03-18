@@ -33,3 +33,14 @@ Here's the key: the vibrations mimic the subtle seismic activity within a health
 The MycoSync creates a closed-loop system, amplifying the plant's own resilience and optimizing its growth potential.
 
 *Pitch:* “Imagine plants that thrive on a fraction of the water and nutrients, effortlessly reaching their full potential – that’s the MycoSync.”
+
+
+---
+
+## Related Ideas
+
+- **adaptive material reconstruction - cellular fabrication explore using bio-luminescent self-assembling materials mimicking octopus skin to dynamically repair and reshape damaged structures** (shared concept: *nano-scale*)
+- **algorithmic dust cartography - refinement  expansion** (shared concept: *nano-scale*)
+- **bio-reactive infrastructure design buildings and urban spaces that autonomously respond to weather traffic and human activity through fluid organic adjustments** (shared concept: *nano-scale*)
+- **geolinguistic skin maps v1** (shared concept: *nano-scale*)
+- **bio-luminescent shell structures for underwater city lighting and navigation** (shared concept: *closed-loop system*)

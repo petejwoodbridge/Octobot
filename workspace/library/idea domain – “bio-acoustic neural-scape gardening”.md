@@ -37,3 +37,14 @@ It’s delightfully complicated, of course! At the heart of it is the “Sentien
 ---
 *Original notes:*
 ## Mycelial Echoes: The Sentient Spore Weaver
+
+
+---
+
+## Related Ideas
+
+- **design a symbiotic camouflage system where an octopus alters its skin to instantly neutralize the chemical signatures triggering the breach** (shared concept: *bio-neural processor*)
+- **biometric-driven adaptive environments create fully responsive spaces altering temperature music and even scent profiles based on real-time user physiology** (shared concept: *orchestrating*)
+- **idea domain=symbiotic skin grafts noise pollution** (shared concept: *orchestrating*)
+- **synchronized chickens - origins animal behaviour robotics biofeedback** (shared concept: *orchestrating*)
+- **neural-resonance landscaping** (shared concept: *interactive art installations*)

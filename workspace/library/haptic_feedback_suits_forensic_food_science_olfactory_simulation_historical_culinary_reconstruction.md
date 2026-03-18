@@ -22,3 +22,14 @@ The Chrono-Palate is a personalized haptic feedback suit integrated with a minia
 The Chrono-Palate bridges the gap between historical research and genuine sensory experience. It moves beyond simply *knowing* about a dish to *feeling* it. This level of immersion elevates culinary reconstruction to a profoundly insightful and educational experience, offering a true "time travel" for the palate. It combines cutting-edge technology with the meticulousness of forensic food science, creating something utterly unique.
 
 Pitch: “Imagine tasting history – that’s what the Chrono-Palate does.”
+
+
+---
+
+## Related Ideas
+
+- **neuro-resonant fossil simulation technology bio-acoustic mapping of fossilized remains haptic feedback systems for geological data** (shared concept: *haptic layering*)
+- **idea domain=Kinesthetic Archeology** (shared concept: *haptic layering*)
+- **micro-chronal scent-mapping sleep cycle analysis olfactory reconstruction biofeedback integration personalized aroma diffusion** (shared concept: *intensity*)
+- **neural interfaces allowing direct perception and manipulation of intensity gradients across physical environments** (shared concept: *intensity*)
+- **“chronobiological temporal mapping device”** (shared concept: *intensity*)

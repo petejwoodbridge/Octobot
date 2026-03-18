@@ -25,3 +25,14 @@ The entire process simulates the controlled, natural decay that occurs in aging 
 ChronoBites fundamentally re-writes the relationship between food and memory. It's not just about taste; it’s about activating a specific point in the brain’s historical record, offering a tangible link to our past and a profoundly moving sensory experience. Combining food science, bio-engineering and personalized data processing creates something truly novel.
 
 **Pitch:** “Imagine tasting your childhood again, perfectly preserved – ChronoBites let you unlock the flavors of your memories.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain - micro-ritual orchestration** (shared concept: *micro-sensory delivery system*)
+- **subconscious scent layering** (shared concept: *pre-programmed memory*)
+- **idea domain=sonogenetic lithography** (shared concept: *massive*)
+- **design autonomous swarm-based robotic muscle systems capable of physically plugging holes and redirecting water flow** (shared concept: *massive*)
+- **Adaptive Biomechanical Support Systems** (shared concept: *massive*)

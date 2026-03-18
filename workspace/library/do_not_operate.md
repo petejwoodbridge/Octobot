@@ -17,3 +17,14 @@ Critically, the Chrono-Bloom isn’t just a visual cue. It's connected via a dis
 **Why It’s Brilliant:** The Chrono-Bloom leverages the natural power of biophilic design and brainwave technology to literally *feel* the value of your ideas, providing a tangible, immediate motivator. It combats procrastination not through guilt, but through the beautiful, organic rhythm of the mushroom's light. It’s a personalized, visually rewarding system for capturing fleeting brilliance before it vanishes.
 
 Pitch: "Imagine a silent alarm for your best ideas – the Chrono-Bloom transforms regret into action."
+
+
+---
+
+## Related Ideas
+
+- **increasing or decreasing** (shared concept: *chrono-bloom begins*)
+- **variability** (shared concept: *chrono-bloom begins*)
+- **when a designated** (shared concept: *chrono-bloom isn*)
+- **the central unit** (shared concept: *chrono-bloom isn*)
+- **s the chrono-bloom** (shared concept: *chrono-bloom isn*)

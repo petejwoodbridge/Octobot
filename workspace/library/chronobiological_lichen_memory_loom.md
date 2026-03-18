@@ -18,3 +18,14 @@ The Lichenweave isn’t just displaying the past; it’s *feeling* it. By harnes
 
 ## Elevator Pitch
 Experience the past, not just observe it – feel the echoes of those who came before.
+
+
+---
+
+## Related Ideas
+
+- **idea domain - “kinetic lichen mapping”** (shared concept: *genetically-engineered lichen*)
+- **idea domain=precognitive symbiotic skin mapping time distortion** (shared concept: *genetically-engineered lichen*)
+- **idea domain = geological olfactory palimpsest mapping & biophotonic storytelling** (shared concept: *multi-sensory immersion*)
+- **reactive olfactory projection technology haptic feedback urban archaeology bio-acoustic mapping** (shared concept: *micro-scents*)
+- **idea domain – “Subconscious geological echo-weaving”** (shared concept: *multi-sensory experience*)

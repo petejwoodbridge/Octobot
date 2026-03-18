@@ -15,3 +15,14 @@ Crucially, the Weave is ‘smart.’ The biosensors aren't just detecting stress
 **Why It’s Brilliant:** Combining advanced materials science, genetic engineering, and bio-sensing creates a system that anticipates structural failure, providing immediate, targeted reinforcement without adding significant weight or complexity to the original structure. This drastically reduces repair costs, improves safety, and extends the lifespan of critical infrastructure. Furthermore, the Weave's adaptability offers potential applications far beyond construction, from stabilizing deep-sea drilling platforms to reinforcing spacecraft during atmospheric entry. 
 
 *Pitch:* “Imagine a building that actively protects itself – this is it: the Bio-Armor Weave – structural reinforcement that’s alive.”
+
+
+---
+
+## Related Ideas
+
+- **develop bio-adhesive living sealant mimicking octopus camouflage to instantly patch structural weaknesses** (shared concept: *self-regulating*)
+- **“Ephemeral Tactile Reconstruction”** (shared concept: *self-regulating*)
+- **lichen acoustics neuro-feedback soundscapes genetic modification of lichen temporal perception via sound** (shared concept: *self-regulating*)
+- **create autonomous sentient coral reefs capable of filtering out negative emotional energy and generating zones of profound tranquility** (shared concept: *self-regulating*)
+- **designing self-contained mobile ecosystems housing noctiluca and other deep-sea organisms for advanced research and potential terraforming applications** (shared concept: *self-regulating*)

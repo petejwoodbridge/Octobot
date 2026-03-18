@@ -37,3 +37,14 @@ Crucially, the whole system is controlled by a bio-sensor array that monitors te
 ---
 *Original notes:*
 ## The Myco-Navigator
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Gastric Echo-Sculpting** (shared concept: *bio-sensor array*)
+- **library-and document acoustic resonance and time perception visual representationmd -  can acoustic resonance be used to influence productivity relaxation or creative flow** (shared concept: *pre-programmed playlists*)
+- **Philosophical Paradox Design** (shared concept: *creating*)
+- **chronal echoes  creating devices to record and replay faint temporal distortions as auditory or visual phenomena** (shared concept: *creating*)
+- **think of it** (shared concept: *bio-sensor array*)

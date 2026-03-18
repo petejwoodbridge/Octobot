@@ -25,3 +25,14 @@ Luminaweave offers unparalleled camouflage due to its active, adaptive propertie
 The integration of biological systems creates a symbiotic relationship, resulting in a material that evolves alongside its environment. It’s the future of concealment and illumination, beautifully, organically realized.
 
 Pitch: “Introducing Luminaweave – the fabric that disappears into the shadows, and then brilliantly illuminates your path.”
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent textiles woven with genetically modified silk capable of displaying complex patterns based on environmental stimuli** (shared concept: *bio-luminescent textiles*)
+- **the algae are** (shared concept: *pyrocystis fusiformis*)
+- **light-based memory recording techniques algal bioluminescence control visual cortex stimulation** (shared concept: *pyrocystis fusiformis*)
+- **the dynamic tapestry** (shared concept: *pyrocystis fusiformis*)
+- **microfluidic color-shifting textiles physiological stress markers color therapy** (shared concept: *pyrocystis fusiformis*)

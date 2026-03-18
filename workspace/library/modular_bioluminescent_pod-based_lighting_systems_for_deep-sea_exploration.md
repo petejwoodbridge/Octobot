@@ -13,3 +13,14 @@
 ## Why It's Brilliant: EchoBloom merges bioluminescence with advanced sonar technology, creating a truly intuitive and gentle way to explore the deep. The light *guides* the sonar, allowing for unparalleled 3D mapping and a symbiotic relationship with the deep-sea environment. The system minimizes disturbance, provides dynamic visuals, and offers unparalleled data collection capabilities - it’s a living, light-based map of the abyss.
 
 Pitch: "Imagine painting the darkest depths with sound and light – that’s LuminaVerse: EchoBloom, giving you the most intimate and insightful view of the ocean's hidden wonders."
+
+
+---
+
+## Related Ideas
+
+- **“geo narratives app pitch”** (shared concept: *interact*)
+- **idea domain=biophotonic dream mapping** (shared concept: *interact*)
+- **algorithmic dust cartography - refinement  expansion** (shared concept: *interact*)
+- **bio-acoustic phantom limb mapping olfactory projection haptic feedback wearable interfaces neuroscience** (shared concept: *interact*)
+- **Chronobiological Cartography** (shared concept: *interact*)

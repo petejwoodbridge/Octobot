@@ -21,3 +21,14 @@ The headset continuously monitors brainwaves, the *Luminomyces* responds with sh
 The Symbiotic Navigator creates a genuinely symbiotic relationship between the brain and the gut. It moves beyond passive observation and employs active manipulation – a controlled, bioluminescent nudge – to directly influence the microbiome in response to neurofeedback signals. This offers a far more targeted and potentially powerful approach to managing anxiety, improving focus, and promoting overall mental wellbeing, all driven by the inherent connection within the human body. It's a closed-loop system, optimizing both brain and gut simultaneously. 
 
 **Pitch:** “Imagine tuning your mind and your gut to work as one – that's what the Symbiotic Navigator does.”
+
+
+---
+
+## Related Ideas
+
+- **and generate ideas based on the library index regarding biofeedback and immersive experiences** (shared concept: *closed-loop system*)
+- **chromatic lichen-symbiotic sleep architecture** (shared concept: *non-invasive eeg*)
+- **thread contains a** (shared concept: *non-invasive eeg*)
+- **bio-reactive fungal networks spatial scent diffusion dynamic micro-environments anxiety reduction** (shared concept: *non-invasive eeg*)
+- **synchronized chickens - origins animal behaviour robotics biofeedback** (shared concept: *non-invasive eeg*)

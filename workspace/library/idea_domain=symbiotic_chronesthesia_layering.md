@@ -41,3 +41,14 @@ The core of the SCL is the “Chronoplast,” a bio-luminescent, genetically-eng
 ---
 *Original notes:*
 ## Temporal Tapestry - A Bio-Reactive Chronesthesia Weaver
+
+
+---
+
+## Related Ideas
+
+- **subconscious olfactory archiving** (shared concept: *personal legacy preservation*)
+- **idea domain=Symbiotic Memory Weaving** (shared concept: *therapeutic trauma recovery*)
+- **idea domain - “kinesthetic memory archiving with biofeedback”** (shared concept: *therapeutic trauma recovery*)
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *creative inspiration*)
+- **Ephemeral Memory Cartography** (shared concept: *creative inspiration*)

@@ -17,3 +17,14 @@ Crucially, the system utilizes biofeedback, monitoring the performer’s muscle 
 **Why It's Brilliant:** The Resonance Weaver moves beyond simple vibration mapping. It achieves *temporal* mapping – capturing and recreating the *time-based* nuances of musical expression. It offers an unprecedented level of realism and intuitive control, unlocking a new dimension in musical training, performance, and even therapeutic applications for musicians with motor impairments.
 
 *Pitch:* “Imagine feeling the music – not just hearing it, but actually *being* the instrument.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain=sonospheric topiary** (shared concept: *shape-memory alloy*)
+- **explore instrument interfaces controlled by biofeedback  translating muscle movements or brainwaves into musical output** (shared concept: *the resonance weaver*)
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *shape-memory alloy*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloy*)
+- **bio-acoustic mapping of flavor compounds temporal gastronomy research shape-memory alloy culinary vessels controlled molecular diffusion** (shared concept: *shape-memory alloy*)

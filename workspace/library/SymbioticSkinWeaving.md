@@ -36,3 +36,13 @@ Next, these silk threads are cultivated within a bio-reactor filled with a genet
 ---
 *Original notes:*
 ## Symbiotic Skin Weaving: The Chronoskin
+
+---
+
+## Related Ideas
+
+- **idea domain = animal-inspired technological solutions** (shared concept: *self-cleaning nanobots*)
+- **Symbiotic Skin Weaving – Project** (shared concept: *symbiotic skin weaving*)
+- **the pervasive feeling** (shared concept: *bio-polymer that*)
+- **haptic feedback biometric data loss grief acceptance creative exploration** (shared concept: *bio-polymer that*)
+- **a self-aware fractal map system predicting and adapting to shifting landscapes in real-time** (shared concept: *bio-polymer that*)

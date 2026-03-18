@@ -37,3 +37,14 @@ This data is then relayed wirelessly to a small, palm-sized “Harmonizer” uni
 ---
 *Original notes:*
 ## The Hen-ergy Harmonizer: A Chick-Powered Biofeedback System
+
+
+---
+
+## Related Ideas
+
+- **petrified wood acoustics vibrational mapping immersive audio haptic feedback suits bone conduction headphones** (shared concept: *micro-sensors that*)
+- **“domestic sound textile”** (shared concept: *stress reduction*)
+- **Zenith Cinema - Interactive Meditation Films** (shared concept: *stress reduction*)
+- **subconscious scent weaving** (shared concept: *stress reduction*)
+- **subdermal mood mapping** (shared concept: *stress reduction*)

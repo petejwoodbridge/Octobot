@@ -19,3 +19,10 @@ Chronoscapes utilizes three core components. First, specialized LED panels emit 
 Chronoscapes bridges the gap between objective biological measurement and subjective temporal experience. The moss acts as a sensitive biological barometer, while the haptic suit provides a direct, personalized channel for perceiving changes in that rate. The AI allows for unprecedented analysis, identifying correlations between specific environmental stimuli, emotional states, and the user’s perception of time. It’s a dynamic, interactive experiment, creating a truly immersive and scientifically valuable understanding of how we experience the fourth dimension.
 
 **Pitch:** “Imagine experiencing time itself, visualized and felt – Chronoscapes lets you paint a portrait of your temporal reality.”
+
+
+---
+
+## Related Ideas
+
+- **develop bio-acoustic translation devices that allow humans to hear the world as animals do mapping sonic landscapes** (shared concept: *micro-vibration sensors*)

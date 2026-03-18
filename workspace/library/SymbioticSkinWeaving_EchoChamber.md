@@ -41,3 +41,14 @@ This isn’t
 ---
 *Original notes:*
 ## EchoChamber: A Bio-Acoustic Symbiosis Device
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent fungal mycelium eeg mapping interactive art installations neurofeedback mycelial architecture** (shared concept: *closed-loop system*)
+- **geological scent-chronesthesia mapping cephalopod bio-integration time compression** (shared concept: *closed-loop system*)
+- **public transport anxiety relief  sensory stimulation  biofeedback** (shared concept: *adaptive soundscapes*)
+- **idea domain - biophotonic echo-gardening** (shared concept: *interactive art installations*)
+- **decentralized bio-integrated hubs for ecological monitoring and response** (shared concept: *integrated*)

@@ -44,3 +44,14 @@ Okay, buckle up, because this gets wonderfully weird. The GEW utilizes a miniatu
 ---
 *Original notes:*
 “## Gastric Echo Weaver - The Chronal Culinary Companion
+
+
+---
+
+## Related Ideas
+
+- **idea domain – chrono-taste mapping** (shared concept: *personalized nutrition*)
+- **idea domain=Automated “Somatic Echo” Sculpting – Temporal Edition** (shared concept: *museum exhibits*)
+- **bioluminescent lichen movement soundscapes rhythmic textiles** (shared concept: *becomes*)
+- **and prototype a system for personalized music generation based on emotional state and activity levels  ideal for studying relaxation or creative work** (shared concept: *becomes*)
+- **circadian rhythms textile integration moss colonies bio-acoustic output** (shared concept: *becomes*)

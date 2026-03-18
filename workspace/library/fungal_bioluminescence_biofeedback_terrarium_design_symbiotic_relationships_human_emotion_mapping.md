@@ -26,3 +26,14 @@ Here’s the breakdown:
 LuminaHeart bridges the gap between the natural world and human experience. It’s not just a beautiful terrarium; it's a highly sensitive instrument for self-exploration, offering immediate visual feedback on emotional states. The biophilic nature of the terrarium – incorporating living organisms and a natural environment – has proven therapeutic benefits. By visualizing emotions through a captivating display of light and fungal growth, it promotes mindfulness and emotional awareness in a uniquely engaging way. 
 
 **Pitch:** “Imagine experiencing your feelings as a living, glowing forest – that’s LuminaHeart.”
+
+
+---
+
+## Related Ideas
+
+- **bioluminescent** (shared concept: *panellus stipticus*)
+- **optimism  investigate technologies and systems that promote positive emotions and engagement with nature** (shared concept: *biofeedback sensors*)
+- **idea domain = “kinesthetic chronal mapping”** (shared concept: *self-exploration*)
+- **Adaptive Internal Organ Design** (shared concept: *self-exploration*)
+- **it leverages biofeedback** (shared concept: *mycena luxaeterna*)

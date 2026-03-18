@@ -15,3 +15,14 @@ The core of the system is the “ChromaFlow” – a network of microfluidic cha
 **Why It’s Brilliant:** The Lumiflora transcends simple light therapy. It's a genuinely biomimetic experience, directly tapping into the natural rhythms of life. By utilizing a living, reactive system, it avoids the staticness of traditional SAD lamps and offers a far more nuanced and restorative impact on mood and circadian health. The modular design allows for customization and expansion, growing with the user's needs. 
 
 *Pitch:* "Imagine a wall of stars responding to *you* – it’s not just light therapy, it's a living mood regulator.”
+
+
+---
+
+## Related Ideas
+
+- **the orb incorporates** (shared concept: *seasonal affective disorder*)
+- **neuro-scent technology haptic feedback textiles weather perception psychology artificial atmospheres** (shared concept: *seasonal affective disorder*)
+- **explore a symbiotic system utilizing genetically-engineered bioluminescent organisms to detect and rapidly solidify breaches with a self-healing polymer** (shared concept: *genetically-engineered*)
+- **these threads are** (shared concept: *genetically-engineered*)
+- **learn** (shared concept: *noctiluca scintillans*)

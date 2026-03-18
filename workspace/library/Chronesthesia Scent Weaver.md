@@ -22,3 +22,12 @@ The Chronesthesia Scent Weaver transcends simple aromatherapy, offering a tangib
 
 ## Elevator Pitch
 “Step into history – one scent at a time.”
+
+
+---
+
+## Related Ideas
+
+- **design a neural network-controlled morphing robotic appendage capable of dynamically patching and reinforcing compromised vessel structures** (shared concept: *cutting-edge ai*)
+- **micro-temporal scent journaling** (shared concept: *ai-powered scent*)
+- **“chronal dream scent synthesizer”** (shared concept: *ai-powered scent*)

@@ -29,3 +29,13 @@ The resulting capsule isn’t just a container; it’s a miniature, self-contain
 *   **Educational Simulations:** Bringing historical events to life in a profoundly immersive way – imagine feeling the heat of a Roman battle!
 *   **Personal Legacy Creation:** Families can create capsules for future generations, offering a tangible connection to their ancestors.
 *   **Artistic
+
+---
+
+## Related Ideas
+
+- **idea domain=Ephemeral Echo Synthesis** (shared concept: *re-experience positive*)
+- **idea domain=subconscious fungal network empathy mapping** (shared concept: *resonance harmonizer*)
+- **idea domain=Bio-integrated mindfulness technology** (shared concept: *re-experience*)
+- **neuro-gastronomic-chronosensory-reconstructor** (shared concept: *re-experience*)
+- **anomalous temporal scent layering wormholes olfactory projection neuro-feedback** (shared concept: *re-experience*)

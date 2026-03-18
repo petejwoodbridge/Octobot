@@ -30,3 +30,14 @@ The vessel itself is partially transparent, allowing the user to visually track 
 ChronoBite merges culinary history, material science, and haptic feedback to provide an utterly immersive and educational experience. It isn’t just about *tasting* historical food; it’s about *feeling* it, building a deeper connection to the past and potentially unlocking new insights into flavor development. It caters to historians, food enthusiasts, chefs seeking inspiration, and anyone genuinely curious about how our ancestors experienced food.
 
 **Pitch:** “Imagine tasting the Roman Empire – literally feeling the heat and texture of their finest dishes, a truly revolutionary culinary journey.”
+
+
+---
+
+## Related Ideas
+
+- **ChronalGastronomy App Concept** (shared concept: *roman apicius*)
+- **“Chrono-Topography”** (shared concept: *shape-memory alloys*)
+- **subconscious scent weaving** (shared concept: *haptic feedback*)
+- **adaptive biomaterials idea 1** (shared concept: *shape-memory alloys*)
+- **mnemonic pollen mapping** (shared concept: *shape-memory alloys*)

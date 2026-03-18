@@ -20,3 +20,14 @@ The Shell Navigator goes beyond simple chatbot interactions by actively respondi
 
 ## Elevator Pitch
 Conquer your social fears with the world’s first AI-powered social simulator that adapts to *your* anxiety.
+
+
+---
+
+## Related Ideas
+
+- **filament** (shared concept: *time-consuming*)
+- **structural** (shared concept: *time-consuming*)
+- **rapid assessment** (shared concept: *time-consuming*)
+- **resonant fungal echo-gardens - concept refinement** (shared concept: *time-consuming*)
+- **explore a symbiotic system utilizing genetically-engineered bioluminescent organisms to detect and rapidly solidify breaches with a self-healing polymer** (shared concept: *time-consuming*)

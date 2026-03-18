@@ -39,3 +39,14 @@ This isn’t just armor; it’s a *conversation*! Sonospheric Skin Symbiosis mer
 ---
 *Original notes:*
 ## Bio-Echo Armor: The Symbiotic Sensory Shield
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Ephemeral Resonance Sculpting** (shared concept: *performance art*)
+- **idea domain - Vestibular Echo-Cartography** (shared concept: *self-repairing*)
+- **engineer a self-assembling bio-luminescent octopus-inspired habitat for deep-sea exploration** (shared concept: *bio-luminescent octopus*)
+- **develop bio-adhesive nets deployed by miniature autonomous octopus drones to physically block underwater pathways** (shared concept: *bio-luminescent octopus*)
+- **design autonomous swarming repair octopi capable of physically rebuilding damaged defenses with 3d-printed materials** (shared concept: *bio-luminescent octopus*)

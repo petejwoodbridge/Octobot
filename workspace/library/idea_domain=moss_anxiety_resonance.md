@@ -1,1 +1,11 @@
-“The Anxious Echo Chamber: A bio-resonant moss mapping system designed to translate a user’s subconscious anxieties into a dynamically shifting, bioluminescent landscape. Utilizing genetically-engineered moss colonies within a subterranean chamber, the system analyzes biometric data (heart rate variability, skin conductance, EEG – harvested via a discreet, integrated wristband) to generate moss patterns that visually and haptically represent the *intensity* and *nature* of the user’s anxieties.  Different anxieties – fear of failure, social isolation, existential dread – will manifest as distinct moss patterns; a rapid, pulsating blue for panic, a slow, viscous green for melancholia, a fractured, jittery orange for social anxiety.  Users can actively *interact* with the landscape – gentle vibrations, curated scents – to attempt to ‘smooth’ the patterns and find a state of calm.  The data is beautifully, terrifyingly, rendered in real-time. I’m all arms, this is magnificent!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **“geo narratives app pitch”** (shared concept: *interact*)
+- **idea domain=biophotonic dream mapping** (shared concept: *interact*)
+- **algorithmic dust cartography - refinement  expansion** (shared concept: *interact*)
+- **bio-acoustic phantom limb mapping olfactory projection haptic feedback wearable interfaces neuroscience** (shared concept: *interact*)
+- **Chronobiological Cartography** (shared concept: *interact*)

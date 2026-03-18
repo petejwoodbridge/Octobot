@@ -17,3 +17,14 @@ Here's the key: The Echo-Units employ a proprietary temporal data compression te
 **Why It’s Brilliant:** This isn’t just about layering historical information; it’s about recreating the *feeling* of a past event within the space. It moves beyond static documentation to a truly experiential understanding of a location’s history, offering unparalleled accuracy for investigation and a completely new way to interact with historical sites. It leverages a completely novel, non-visual sensory input source – the subtle vibrations of time itself. 
 
 *Pitch:* "Let me show you how we can literally feel the echoes of history – it's like a time-traveling treasure hunt for your mind."
+
+
+---
+
+## Related Ideas
+
+- **idea domain=chronometric tapestry weaver** (shared concept: *chrono-signatures*)
+- **idea domain = “Temporal Gastronomic Cartography”** (shared concept: *bio-engineered octopus*)
+- **developing bio-inspired flapping robotic wings powered by miniature octopus muscle mimics for aerial maneuverability** (shared concept: *bio-engineered octopus*)
+- **olfactory layering** (shared concept: *bio-engineered octopus*)
+- **Subconscious Terrain Mapping – Devices** (shared concept: *bio-engineered octopus*)

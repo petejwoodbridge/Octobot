@@ -22,3 +22,14 @@ The Scent Weaver is a wearable device – a sleek, bio-integrated wristband – 
 The Scent Weaver bridges the gap between architectural design, olfactory psychology, and biometric data. It moves beyond generic “pleasant” space design and creates spaces profoundly tailored to *individual* wellbeing. It’s not just about aesthetics; it’s about actively modulating emotional responses through a precise, scientifically-driven olfactory experience. Furthermore, it provides architects with actionable data, radically improving the design process and leading to truly empathetic and effective spatial environments.
 
 **Pitch:** “Imagine designing spaces that actually *feel* right, intuitively tailored to every individual – that’s the power of the Scent Weaver.”
+
+
+---
+
+## Related Ideas
+
+- **biofeedback-driven olfactory simulations shape-memory alloy olfactory delivery systems fractal geometry and scent mapping robotic mimicry of floral movement** (shared concept: *the scent weaver*)
+- **idea domain=olfactory memory recovery** (shared concept: *the scent weaver*)
+- **Ephemeral Gastronomic Cartography** (shared concept: *the scent weaver*)
+- **engineered microbial voc emission control systems biometric-driven scent modulation micro-environmental scent sculpting** (shared concept: *the scent weaver*)
+- **design autonomous swarming repair octopi capable of physically rebuilding damaged defenses with 3d-printed materials** (shared concept: *micro-capsule system*)

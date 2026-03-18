@@ -17,3 +17,14 @@ The bioluminescent *Armillaria* provides visual feedback – a gentle, pulsing g
 **Why It's Brilliant:** The MycoPulse combines cutting-edge bioacoustics, advanced sensor technology, and the inherent vibrational properties of fungi to create a truly dynamic, responsive, and accessible echo-garden. It removes the guesswork and laboriousness of traditional methods, offering unparalleled control over the sonic output and allowing for a deeper understanding of fungal communication. It’s a miniature, self-regulating ecosystem for sound, bringing the forest floor into your home.
 
 *Pitch:* “Imagine experiencing the vibrant, hidden music of the earth, perfectly orchestrated in real-time – that’s what the MycoPulse delivers.”
+
+
+---
+
+## Related Ideas
+
+- **decentralized bio-integrated hubs for ecological monitoring and response** (shared concept: *micro-sensor array*)
+- **mycological echo-cartography  specific materials fungal species sensor tech haptic feedback methods mapping algorithms olfactory simulation techniques** (shared concept: *time-consuming*)
+- **neuro-linked personal microclimates capable of proactively adjusting temperature humidity and even scent based on emotional state** (shared concept: *micro-sensor array*)
+- **ancient stone tool flavor profiles synesthesia haptic feedback gastronomy archaeology** (shared concept: *micro-sensor array*)
+- **idea domain = “Ephemeral Cartography of Tactile Nostalgia”** (shared concept: *micro-sensor array*)

@@ -41,3 +41,14 @@ Barnaby doesn't just play a generic "plant music" track. He crafts a dynamic sou
 ---
 *Original notes:*
 ## The Rhizomatic Resonance Chamber
+
+
+---
+
+## Related Ideas
+
+- **chronobiological coral reef synesthesia** (shared concept: *multi-sensory experience*)
+- **Consequential Nonsense Design** (shared concept: *art installations*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *art installations*)
+- **idea domain – “geo-sensory weaving** (shared concept: *art installations*)
+- **idea domain – “Ephemeral geomorphological mimicry”** (shared concept: *art installations*)

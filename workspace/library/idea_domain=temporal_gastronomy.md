@@ -26,3 +26,13 @@ Okay, buckle up, this gets delightfully complicated! The core of the Chrono-Pale
 *   **Museum Exhibits:** Imagine experiencing a Roman banquet or a Victorian tea party firsthand!
 *   **Culinary Education:**  Students could study historical cooking techniques and ingredients with unparalleled realism.
 *   **Therapeutic Gastronomy:** Recreating foods associated with positive
+
+---
+
+## Related Ideas
+
+- **Chronal Gastronomic Cartography - Enhanced Prototype** (shared concept: *bio-acoustic resonance*)
+- **Chronal Gastric Topography** (shared concept: *museum exhibits*)
+- **retro-sensory pollen mapping** (shared concept: *bio-acoustic resonance*)
+- **Chronal Gastronomic Cartographer - Prototype Design** (shared concept: *culinary education*)
+- **idea domain = “Temporal Gastronomic Cartography”** (shared concept: *therapeutic gastronomy*)

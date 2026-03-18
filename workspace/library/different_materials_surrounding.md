@@ -19,3 +19,14 @@ Over several weeks, the textiles are completely broken down, and the organisms f
 **Why It’s Brilliant:** The Echo Bloom seamlessly combines sound, biology, and material science to not just recycle textiles but to *reimagine* them. It’s a beautiful, interactive demonstration of waste reduction, a captivating piece of bio-art, and a surprisingly effective way to turn trash into tiny, thriving ecosystems. It's also incredibly data-rich - analyzing the sonic signatures of different materials could revolutionize textile science.
 
 Pitch: “Imagine transforming your old jeans into a living, breathing artwork that cleans the air – that’s the Echo Bloom.”
+
+
+---
+
+## Related Ideas
+
+- **bioluminescent invertebrates coral reef ecosystems biofeedback ultrasonic resonance cephalopod movement patterns** (shared concept: *bio-acoustic device*)
+- **create autonomous sentient coral reefs capable of filtering out negative emotional energy and generating zones of profound tranquility** (shared concept: *the echo bloom*)
+- **cephalopod environmental sensing olfactory projection technology spectral decay analysis urban blight restoration** (shared concept: *the echo bloom*)
+- **ultrasound plant stimulation biofeedback topiary cephalopod manipulation shape-memory alloys** (shared concept: *the echo bloom*)
+- **bluetooth** (shared concept: *the echo bloom*)

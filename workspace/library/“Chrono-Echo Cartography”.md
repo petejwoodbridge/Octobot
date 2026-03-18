@@ -35,3 +35,14 @@ The Chrono-Resonance Tapestry is built around a core principle: every event, eve
 ---
 *Original notes:*
 “## The Chrono-Resonance Tapestry
+
+
+---
+
+## Related Ideas
+
+- **geological echo symbiosis v2** (shared concept: *holographic echo projection*)
+- **bioengineered slime mold memory recall** (shared concept: *replaying*)
+- **idea domain=Sonospheric Skin-Symbiosis** (shared concept: *fantastically*)
+- **idea domain=Ephemeral Resonance Sculpting** (shared concept: *fantastically*)
+- **idea domain=chronosomatic echo weaving** (shared concept: *fantastically*)

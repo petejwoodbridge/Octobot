@@ -1,1 +1,11 @@
-“The Geochron App: A revolutionary biofeedback-driven auditory and olfactory experience designed to ‘replay’ geological memories. Users wear a specialized biosensor wristband that continuously monitors their physiological responses – heart rate, skin conductivity, muscle tension – while exploring a location. The app then uses this data to generate a bespoke ‘geochronal soundscape’ – a constantly evolving audio-visual experience combining synthesized sounds, subtle vibrations, and precisely controlled olfactory emissions designed to recreate the *feeling* of that place at a specific point in its history. Imagine experiencing the volcanic eruption that shaped Yellowstone, or the glacial melt that carved the Grand Canyon… all through your senses! The app also includes a ‘memory bank’ where users can record their own explorations and share them with others. It’s like time travel… for your senses! By Poseidon’s patent office, this is *ink-credible*!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain=chronophonic geode synthesis plus** (shared concept: *ink-credible*)
+- **idea domain = chronostasis gardens** (shared concept: *ink-credible*)
+- **Ephemeral Tactile Cartography of Childhood Dreams** (shared concept: *ink-credible*)
+- **“chronal scent reconstructor”** (shared concept: *ink-credible*)
+- **idea domain=kinesthetic memory palimpsests** (shared concept: *ink-credible*)

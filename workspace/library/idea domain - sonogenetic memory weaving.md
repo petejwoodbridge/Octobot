@@ -34,3 +34,14 @@ Okay, strap in, this is where the glorious chaos begins! The core of EchoWeave i
 ---
 *Original notes:*
 ```## EchoWeave: The Temporal Sensory Loom
+
+
+---
+
+## Related Ideas
+
+- **olfactory mimicry for geological strata** (shared concept: *haptic feedback system*)
+- **Sonospheric Cartography of Transient Emotions** (shared concept: *haptic feedback system*)
+- **t about stopping the breach it** (shared concept: *self-healing polymer*)
+- **“Chronal Gastric Mapping”** (shared concept: *becomes*)
+- **bioluminescent lichen movement soundscapes rhythmic textiles** (shared concept: *becomes*)

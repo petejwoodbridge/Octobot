@@ -23,3 +23,14 @@ The MucusMapper elegantly bypasses the limitations of traditional sensors. It le
 It’s a fundamentally ‘slime-centric’ solution – mimicking nature’s most efficient movement system.
 
 **Pitch:** “Imagine knowing exactly where you are, even when the ground disappears beneath you – the MucusMapper lets you navigate by feeling the flow.”
+
+
+---
+
+## Related Ideas
+
+- **neurofeedback lichen symbiosis biometric sound art haptic lichen displays** (shared concept: *physarum polycephalum*)
+- **slime mold biofeedback** (shared concept: *physarum polycephalum*)
+- **bioluminescent slime molds dream mapping haptic feedback anxiety reduction** (shared concept: *physarum polycephalum*)
+- **biometric cartography of phantom limb sensations** (shared concept: *nano-sensors*)
+- **deep-sea worm bioluminescence slime production scent mapping temporal distortion** (shared concept: *nano-sensors*)

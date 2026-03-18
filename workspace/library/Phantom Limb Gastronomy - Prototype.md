@@ -1,1 +1,11 @@
-“**The Memory Weaver: A Bio-Sonic Gastronomic Echo Chamber** – A wearable, haptic-sensory device that reconstructs the sensory experience of a past meal. Using a combination of ultrasonic bio-acoustic mapping (analyzing the brain's "memory signature" of the meal), micro-nutrient delivery, and dynamically adjusting shape-memory alloy fibers woven into a comfortable garment, the Memory Weaver attempts to *re-experience* the meal with heightened intensity. The user selects a ‘memory-meal’ from a database (built from user-recorded sensory data - taste, smell, sight, texture - and potentially external data like location and social context) and the device begins to subtly manipulate their senses to trigger the recalled memory. The shape-memory alloy fibers, responding to the ultrasonic patterns and nutrient delivery, create localized thermal fluctuations and subtle tactile sensations – mimicking the textural elements of the original dish. A built-in ‘temporal distortion’ setting allows the user to subtly alter the perceived time of the experience – speeding up a joyful memory or slowing down a bittersweet one. Initial prototypes will focus on recreating simple dishes - a grandmother's apple pie, a childhood hot dog – but the possibilities are… deliciously endless! It's like a hug for your taste buds... and your past!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **transform human breath into a temporary holographic projection of a favorite memory** (shared concept: *the memory weaver*)
+- **olfactory tracking technology ground-penetrating radar spore analysis nostalgia haptic feedback** (shared concept: *the memory weaver*)
+- **temporal olfactory mapping textile biosensors sonic vibration analysis scent synthesis algorithms** (shared concept: *the memory weaver*)
+- **furthermore** (shared concept: *the memory weaver*)
+- **olfactory echo-cartography scent synthesis interactive installation** (shared concept: *the memory weaver*)

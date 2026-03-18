@@ -36,3 +36,14 @@ But here's the *really* wild part:  Nimbus isn’t just responding to brainwaves
 ---
 *Original notes:*
 ## Synesthetic Rainfall Simulation – Project: "Nimbus"
+
+
+---
+
+## Related Ideas
+
+- **fungal gastronomy temporal perception personalized flavour profiles biofeedback** (shared concept: *biofeedback-driven device*)
+- **flock management mindfulness biofeedback** (shared concept: *biofeedback-driven device*)
+- **idea domain=temporal scent layering fault lines** (shared concept: *biofeedback-driven device*)
+- **idea domain = “Ephemeral Cartography of Transient Urban Soundscapes”** (shared concept: *biofeedback-driven device*)
+- **biofeedback-driven origami crane design bioluminescent fungal growth patterns brainwave-controlled spore release temporal distortion technologies** (shared concept: *biofeedback-driven device*)

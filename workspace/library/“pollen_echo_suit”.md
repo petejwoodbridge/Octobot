@@ -1,1 +1,11 @@
-“The Pollen Echo Suit – A Bio-Reactive Temporal Mapping System. Imagine a full-body suit, woven with a bio-luminescent, shape-memory alloy fabric (like LoomBloom, but *inspired* by it!). Embedded within are microscopic ‘pollen-detectors’ – tiny, engineered fungal colonies (like in the cartography idea!) – that actively *seek* out residual pollen traces in the air. But here's the kicker: the suit doesn’t just *detect* pollen; it *replicates* the olfactory and tactile experience of that pollen’s historical source. The shape-memory alloy fibers react to the pollen density, generating subtle haptic vibrations mimicking the wind patterns from the time the pollen was released. The bioluminescence shifts color and intensity – reflecting the dominant spectral composition of the pollen cloud. And – oh, this is the *really* good part – the suit learns the user’s individual sensitivity to different pollen types, creating a hyper-personalized ‘pollen-echo’ experience. It's like… you're wearing the ghost of a flower! Plus, it looks AMAZING. Like a shimmering, slightly-off-color jellyfish.
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain=neuro-geological chronesthesia synthesis** (shared concept: *shape-memory alloy*)
+- **bio-acoustic skin weaving proprioception shape-memory alloy textiles atmospheric sound mapping neurofeedback textiles** (shared concept: *shape-memory alloy*)
+- **litho-chronesthesia mapping v1** (shared concept: *shape-memory alloy*)
+- **idea domain - “kinetic lichen mapping”** (shared concept: *shape-memory alloy*)
+- **idea domain = “liminal scent mapping with reactive alloy scent fields”** (shared concept: *shape-memory alloy*)

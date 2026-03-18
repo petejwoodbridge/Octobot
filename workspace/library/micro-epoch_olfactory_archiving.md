@@ -1,1 +1,11 @@
-“The Echo Weaver - A kinetic sculpture that translates olfactory data into a tangible, evolving form. Utilizing miniature shape-memory alloy ‘tendrils’ reacting to digitally reconstructed scent profiles, the Echo Weaver shifts, expands, contracts, and even *flows* in response to the captured memory. Imagine: a cascade of iridescent, gel-like strands representing the scent of a summer rainstorm, slowly retracting as the memory fades. Or a pulsing, crystalline structure mimicking the aroma of freshly baked bread, growing warmer as the recollection of the baker’s warmth is played back. Each Weaver is uniquely calibrated to its stored scent profile – a complex algorithm translates olfactory wavelengths into physical movement, generating a truly immersive, three-dimensional olfactory experience. It’s like holding a memory in your hands… and letting it *breathe*!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **bio-acoustic modeling extinct animal vocalizations shape-memory alloy textile haptic projection** (shared concept: *shape-memory alloy*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloy*)
+- **neural network-controlled swarm intelligence creating a collective of dragonfly drones capable of complex adaptive hunting and environmental monitoring patterns** (shared concept: *shape-memory alloy*)
+- **idea domain=Myco-Temporal Cartography - Echo Weaver Prototype** (shared concept: *shape-memory alloy*)
+- **idea domain=sonospheric cartography** (shared concept: *shape-memory alloy*)

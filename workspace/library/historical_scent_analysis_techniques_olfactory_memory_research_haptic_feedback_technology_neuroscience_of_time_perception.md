@@ -23,3 +23,14 @@ The device utilizes a combination of advanced technologies:
 ChronoScent moves beyond passive scent reconstruction. It creates a deeply personal, embodied experience of the past. By linking scent to physiological response, it taps into the neuroscience of time perception, allowing users to not just remember *when* something happened, but *how it felt* in that specific temporal window. This could revolutionize historical research, therapeutic interventions (recreating calming memories during anxiety), and even creative endeavors (allowing artists to ‘smell’ the inspiration behind a masterpiece). 
 
 **Pitch:** “Imagine revisiting your first kiss, not just remembering it, but *feeling* the warmth and anticipation – ChronoScent makes that possible.”
+
+
+---
+
+## Related Ideas
+
+- **chronal pollen archiving  sensory reconstruction** (shared concept: *how it felt*)
+- **olfactory memory sculpting for lost pets** (shared concept: *scent synthesis*)
+- **neuro-geological scent therapy  personalized temporal simulations** (shared concept: *scent synthesis*)
+- **the piezoelectric sensors** (shared concept: *micro-muscle movements*)
+- **“EphemeralTerrainEcho”** (shared concept: *micro-muscle movements*)

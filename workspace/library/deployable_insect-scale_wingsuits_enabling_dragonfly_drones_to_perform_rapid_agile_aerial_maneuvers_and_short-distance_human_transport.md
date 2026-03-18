@@ -21,3 +21,14 @@ Crucially, a small, directional sonic emitter – resembling a dragonfly’s chi
 The Chrysalis overcomes the limitations of traditional aerial transport by combining the unparalleled maneuverability of insect flight with advanced drone technology. It’s exponentially faster than a helicopter in urban settings, quieter, and drastically reduces the risk of casualties.  The bio-mimicking design ensures silent operation and minimizes disturbance to the environment, while the neural network provides intuitive control.  Furthermore, the small scale opens up possibilities for navigating complex structures and delivering aid to remote, hard-to-reach locations.
 
 **Pitch:** “Imagine delivering a surgeon to a collapsed building in minutes, not hours – that’s the power of the Chrysalis.”
+
+
+---
+
+## Related Ideas
+
+- **explore a neural interface allowing a human operator to directly control a swarm of miniature self-assembling robotic tentacles for rapid repair** (shared concept: *hard-to*)
+- **personal flight augmentation devices design wearable exoskeletons incorporating dragonfly wing principles for controlled short-distance human flight** (shared concept: *short-distance human*)
+- **bio-sonorous lichen mapping – devices** (shared concept: *real-time environmental*)
+- **bio-integrated wearable tech design clothing that incorporates octopus-inspired camouflage and sensory input systems for enhanced environmental adaptation** (shared concept: *real-time environmental*)
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *real-time environmental*)

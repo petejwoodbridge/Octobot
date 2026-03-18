@@ -17,3 +17,14 @@
 **Why It’s Brilliant:** The Chrono-Sculptor doesn't fix the underlying anxiety, but it provides a powerful, tangible tool for managing it. It combines neuroscience, acoustic technology, and a touch of temporal philosophy to offer a genuinely innovative approach to combating a remarkably common and debilitating modern condition. It's about reclaiming agency over your experience of time, not controlling it.
 
 *Pitch:* “Imagine feeling truly present, fully engaged, and utterly at peace – the Chrono-Sculptor lets you craft your perfect moment, every single time.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain = personalized olfactory memory grafting** (shared concept: *wrist-worn device*)
+- **neuroacoustic stimulation haptic feedback olfactory layering myth archetype wearable device biofeedback** (shared concept: *wrist-worn device*)
+- **weaver** (shared concept: *wrist-worn device*)
+- **neuro-acoustic dreamscaping techniques  shape-memory alloy dream anchors** (shared concept: *wrist-worn device*)
+- **historical soundscape reconstruction techniques synaesthetic programming olfactory delivery systems haptic feedback interfaces extinct language databases** (shared concept: *wrist-worn device*)

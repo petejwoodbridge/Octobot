@@ -18,3 +18,14 @@ The Palatine Paradox isn't simply about eating; it’s about sensory resurrectio
 
 ## Elevator Pitch
 Taste history – and maybe question everything you thought you knew.
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *cutting-edge technology*)
+- **haptic feedback suits forensic food science olfactory simulation historical culinary reconstruction** (shared concept: *cutting-edge technology*)
+- **chronal echoes  creating devices to record and replay faint temporal distortions as auditory or visual phenomena** (shared concept: *cutting-edge technology*)
+- **chronobiological echo cartography dance suit** (shared concept: *cutting-edge technology*)
+- **lichen symbiosis historical weather data wearable textiles** (shared concept: *cutting-edge technology*)

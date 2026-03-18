@@ -20,3 +20,14 @@ The EchoBloom represents a paradigm shift in therapeutic and experiential design
 
 ## Elevator Pitch
 “Reclaim your memories – one perfect scent at a time.”
+
+
+---
+
+## Related Ideas
+
+- **chronobiological echo gardening v1** (shared concept: *echobloom*)
+- **Chronal Moss Mapping & Sonification – Detailed Concept** (shared concept: *echobloom*)
+- **chronoscaping prototype concept** (shared concept: *echobloom*)
+- **chronal scent layering device** (shared concept: *echobloom*)
+- **chronal scent layering** (shared concept: *echobloom*)

@@ -18,3 +18,12 @@ The Myco-Lumen Navigator isn't just a biofeedback device; it’s a captivating, 
 
 ## Elevator Pitch
 Become a living, glowing champion of your emotions.
+
+
+---
+
+## Related Ideas
+
+- **lithospheric synesthesia** (shared concept: *luminomyces*)
+- **neuro-feedback integration with microbial colony mapping** (shared concept: *luminomyces*)
+- **biogenic chemical signatures olfactory projection haptic feedback memory-scapes pet grief biogenic mineral analysis** (shared concept: *luminomyces*)

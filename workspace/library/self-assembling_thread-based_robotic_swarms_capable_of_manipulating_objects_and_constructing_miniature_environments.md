@@ -19,3 +19,14 @@ The final environment is even 3D-printable, meaning the NanoWeave creates a perf
 **Why It’s Brilliant:** The NanoWeave combines advanced materials science, swarm robotics, and sophisticated control algorithms to dramatically simplify the process of building complex robotic systems. It opens up a whole new world of personalized robotics, allowing anyone to create bespoke solutions with intuitive control, eliminating the need for traditional assembly. The ability to 3D-print molds from the assembled environment adds another layer of functionality and practicality. 
 
 *Pitch:* “Imagine building a robot entirely from thread – that’s the NanoWeave: assemble anything, instantly.”
+
+
+---
+
+## Related Ideas
+
+- **kinesthetic palimpsest concept** (shared concept: *shape-memory alloy*)
+- **bio-acoustic modeling extinct animal vocalizations shape-memory alloy textile haptic projection** (shared concept: *shape-memory alloy*)
+- **design a reactive self-assembling mesh of nanobots capable of physically blocking and reshaping the breach in real-time** (shared concept: *shape-memory alloy*)
+- **design a decentralized ai-controlled network of miniature robotic tentacles capable of autonomously patching and reinforcing damaged vessels** (shared concept: *shape-memory alloy*)
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *shape-memory alloy*)

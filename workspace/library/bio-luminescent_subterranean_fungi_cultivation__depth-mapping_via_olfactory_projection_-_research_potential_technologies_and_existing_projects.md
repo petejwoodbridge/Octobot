@@ -19,3 +19,14 @@ The data isn’t just spatial; it's also temporal, reflecting the fungal network
 **Why It’s Brilliant:** EchoBloom combines the natural bioluminescence of fungi with advanced olfactory mapping technology, creating a non-destructive, incredibly detailed, and dynamic view of subterranean ecosystems. It’s orders of magnitude faster and less invasive than traditional methods, offering unparalleled insights into the hidden world beneath our feet. It’s also a beautiful, surreal experience - visualizing a fungal network through scent and light. 
 
 *Pitch:* “Imagine seeing the heartbeat of the Earth – literally, through a shimmering cloud of scent.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain - Chronoskin mapping** (shared concept: *three-dimensional map*)
+- **instead of traditional transportation design self-assembling bio-luminescent octopus-powered vehicles for aquatic exploration** (shared concept: *three-dimensional map*)
+- **Ephemeral Memory Cartography** (shared concept: *three-dimensional map*)
+- **algorithmic dust cartography - refinement  expansion** (shared concept: *three-dimensional map*)
+- **echoes** (shared concept: *three-dimensional map*)

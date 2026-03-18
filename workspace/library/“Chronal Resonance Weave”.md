@@ -39,3 +39,14 @@ Okay, buckle up, because this gets delightfully complicated! The Weave itself is
 ---
 *Original notes:*
 “## Chronal Resonance Weave
+
+
+---
+
+## Related Ideas
+
+- **fungal neural interfaces and bio-architectural design** (shared concept: *genetically-modified*)
+- **idea domain=personalized chronesthesia generation** (shared concept: *genetically-modified*)
+- **olfactory mimicry for geological strata** (shared concept: *bio-luminescent display*)
+- **petrichor palimpsest synth** (shared concept: *bio-luminescent display*)
+- **subconscious scent weaving** (shared concept: *bio-luminescent display*)

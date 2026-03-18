@@ -18,3 +18,12 @@ Nautilus Assist distinguishes itself through its seamless integration of dynamic
 
 ## Elevator Pitch
 Experience the effortless flow of movement with an exoskeleton that looks like a shifting aurora.
+
+
+---
+
+## Related Ideas
+
+- **geochronic gustatory mapping v1** (shared concept: *ai-powered system*)
+- **idea domain = Algorithmic Gastric Topography** (shared concept: *bio-luminescent gel*)
+- **bio-luminescent gel shape-memory alloys real-time crystal growth human bio-sensor data pressure-controlled chambers** (shared concept: *bio-luminescent gel*)

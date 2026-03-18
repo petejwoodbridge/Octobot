@@ -36,3 +36,14 @@ This data is then fed into the core of the Chronoscent – a quantum entanglemen
 ---
 *Original notes:*
 ## Chronoscent: The Temporal Scent Weaver
+
+
+---
+
+## Related Ideas
+
+- **Bio-acoustic Memory Anchor Prototype** (shared concept: *personal legacy creation*)
+- **chronal olfactory layering prototype** (shared concept: *historical immersion*)
+- **idea domain = Ephemeral Object Resonance Mapping** (shared concept: *quantum entanglement processor*)
+- **neural network cartridges injectable bio-circuits for targeted localized neurological stimulation** (shared concept: *cutting-edge bio*)
+- **seismic empathy matrices** (shared concept: *cutting-edge bio*)

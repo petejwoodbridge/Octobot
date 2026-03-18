@@ -26,3 +26,13 @@ The device's shell houses a bio-luminescent panel that glows brighter as it appr
 The Current Shepherd combines advanced sonar technology with targeted EMP delivery, offering unparalleled precision and minimizing environmental impact. It moves beyond blunt-force deterrents, addressing the root neurological vulnerabilities of breaching aquatic species.  The localized nature of the pulses avoids collateral damage to the surrounding ecosystem, and the temporary immobilization allows for safe retrieval or redirection of the animal. The aesthetic design—a glowing oyster—subverts the terrifying image of a weapon, projecting an impression of intelligent guardianship.
 
 **Pitch:** “Imagine a world where rogue marine giants simply…drift with the current, allowing us to protect our coastlines and the incredible creatures who call them home.”
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent camouflage systems mimicking flower petal patterns for dynamic object concealment** (shared concept: *low-light conditions*)
+- **programmable weave can that morphs into complex tools and structures on demand** (shared concept: *low-light conditions*)
+- **basalt-based robotic exoskeletons mimicking octopus limb regeneration for disaster response** (shared concept: *low-light conditions*)
+- **“kinesthetic cartography device prototype”** (shared concept: *re-maps*)

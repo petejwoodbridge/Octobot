@@ -36,3 +36,14 @@ Okay, buckle up! At the heart of the Mossscape is “Chronosync,” a miniaturiz
 ---
 *Original notes:*
 “## Chronosync: The Black Hole Mossscape – A Temporal Distortion Experience!
+
+
+---
+
+## Related Ideas
+
+- **Symbiotic Olfactory Resonance Chamber** (shared concept: *therapeutic memory retrieval*)
+- **Personalized “Phantom Aroma Synthesis”** (shared concept: *therapeutic memory retrieval*)
+- **subconscious scent layering device** (shared concept: *therapeutic memory retrieval*)
+- **idea domain = automated moss cultivation & atmospheric manipulation for personalized ‘memory gardens’** (shared concept: *therapeutic memory retrieval*)
+- **sentient bloom-like bio-robots capable of artistic expression and symbiotic interaction with marine life** (shared concept: *ever-changing patterns*)

@@ -25,3 +25,14 @@ Here’s the sequence:
 ChromaSense creates a powerful, embodied connection to your emotions. It’s not just a visualization; it’s a dynamic, responsive skin that literally *shows* you what you’re feeling. The fractal patterns provide a visually stimulating, almost hypnotic feedback loop, allowing for immediate recognition and a subtle, corrective action. The combination of color and haptic feedback creates a richer, more intuitive experience than a simple notification or visual graph. This leverages a sophisticated understanding of sensory perception to aid emotional regulation in a way never before attempted.
 
 **Pitch:** “Imagine your emotions becoming a beautiful, shifting artwork – ChromaSense allows you to *feel* your feelings, and finally understand them.”
+
+
+---
+
+## Related Ideas
+
+- **low-frequency sonic bone regeneration haptic simulations biofeedback temporal perception** (shared concept: *micro-haptic actuators*)
+- **olfactory temporal layering** (shared concept: *high-tech*)
+- **idea domain=personalized echo loci fabrication** (shared concept: *real-time biometric*)
+- **biometric resonance mapping combined with olfactory projection and shape-memory alloy micro-sculpting** (shared concept: *real-time biometric*)
+- **neuro-acoustic temporal distortion fields  biometric landscape projection** (shared concept: *real-time biometric*)

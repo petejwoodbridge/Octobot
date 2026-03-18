@@ -58,6 +58,18 @@ def index():
     return send_file(_STATIC_DIR / "index.html")
 
 
+@app.route("/loading")
+def loading():
+    """Loading screen shown while server starts up."""
+    return send_file(_STATIC_DIR / "loading.html")
+
+
+@app.route("/api/ping")
+def api_ping():
+    """Lightweight health check — instant response."""
+    return "ok"
+
+
 @app.route("/static/<path:filename>")
 def static_files(filename):
     """Serve static files (CSS, JS, images)."""
@@ -74,13 +86,29 @@ def asset_files(filename):
 # API — Game State
 # ---------------------------------------------------------------------------
 
+_state_lib_count = 0
+_state_lib_time = 0
+
 @app.route("/api/state")
 def api_state():
     """Return the current game state as JSON for frontend polling."""
+    global _state_lib_count, _state_lib_time
     stats = mem.get_game_stats()
     log_lines = list(game_loop.activity_log)[-30:]
     agent_log = list(agent.loop_log)[-20:]
-    level_info = scoring.get_library_level()
+
+    # Cache library count (expensive list_files call) for 15s
+    now = time.time()
+    if now - _state_lib_time > 15:
+        _state_lib_count = len(_lib_cache) if _lib_cache else tools.get_knowledge_count()
+        _state_lib_time = now
+
+    # Use real library count if stats haven't synced yet
+    lib_count = _state_lib_count
+    research_count = max(stats.get("research_count", 0), lib_count)
+    knowledge_count = max(stats.get("knowledge_count", 0), lib_count)
+    score = stats.get("knowledge_score", 0)
+    level_info = scoring.get_library_level(max(score, lib_count * 5))
 
     return jsonify({
         "action": game_loop.current_action,
@@ -88,11 +116,11 @@ def api_state():
         "thought": agent.last_thought[:200] if agent.last_thought else "",
         "last_action": agent.last_action or "idle",
         "stats": {
-            "knowledge_score": stats.get("knowledge_score", 0),
-            "knowledge_count": stats.get("knowledge_count", 0),
+            "knowledge_score": max(score, lib_count * 5),
+            "knowledge_count": knowledge_count,
             "curiosity_level": stats.get("curiosity_level", 50),
             "comments_read": stats.get("comments_read", 0),
-            "research_count": stats.get("research_count", 0),
+            "research_count": research_count,
             "total_cycles": stats.get("total_cycles", 0),
             "discoveries": stats.get("discoveries", 0),
             "cross_refs": stats.get("cross_refs", 0),
@@ -100,7 +128,7 @@ def api_state():
         },
         "level": level_info,
         "log": log_lines + agent_log,
-        "library_count": tools.get_knowledge_count(),
+        "library_count": lib_count,
         "last_idea_topic": agent.last_research_topic or "",
         "loop_status": agent.loop_status or "",
     })
@@ -133,23 +161,44 @@ def api_chat():
 # API — Library
 # ---------------------------------------------------------------------------
 
+_lib_cache = None
+_lib_cache_time = 0
+_lib_cache_json = None
+
 @app.route("/api/library")
 def api_library():
-    """List library files."""
-    files = [f for f in tools.list_files("library") if f.endswith(".md")]
-    topics = research.list_researched_topics()
-    return jsonify({"files": sorted(files), "topics": topics})
+    """List library files. Cached for 10s."""
+    global _lib_cache, _lib_cache_time, _lib_cache_json
+    now = time.time()
+    if _lib_cache_json and now - _lib_cache_time < 10:
+        return app.response_class(_lib_cache_json, mimetype="application/json")
+    files = sorted(f for f in tools.list_files("library") if f.endswith(".md"))
+    _lib_cache = files
+    _lib_cache_time = now
+    import json as _json
+    _lib_cache_json = _json.dumps({"files": files, "topics": []})
+    return app.response_class(_lib_cache_json, mimetype="application/json")
 
+
+_file_cache = {}  # filename -> (content, mtime)
 
 @app.route("/api/library/<path:filename>")
 def api_library_file(filename):
-    """Read a specific library file."""
+    """Read a specific library file. Cached by mtime."""
     safe_name = filename.lstrip("/\\")
     if not safe_name.startswith("library/"):
         safe_name = "library/" + safe_name
     try:
+        fpath = tools._safe_path(safe_name)
+        mtime = fpath.stat().st_mtime if fpath.exists() else 0
+        cached = _file_cache.get(safe_name)
+        if cached and cached[1] == mtime:
+            return app.response_class(cached[0], mimetype="application/json")
         content = tools.read_file(safe_name)
-        return jsonify({"filename": safe_name, "content": content})
+        import json as _json
+        resp = _json.dumps({"filename": safe_name, "content": content})
+        _file_cache[safe_name] = (resp, mtime)
+        return app.response_class(resp, mimetype="application/json")
     except FileNotFoundError:
         return jsonify({"error": "File not found"}), 404
     except ValueError as exc:
@@ -184,117 +233,124 @@ def api_score():
 # ---------------------------------------------------------------------------
 
 _graph_resp_cache = None   # cached JSON-serialisable dict
-_graph_resp_time  = 0      # time.time() of last computation
+_graph_resp_json  = None   # pre-serialised JSON bytes
 _graph_resp_ncount = 0     # node count at cache time (invalidation key)
 
-@app.route("/api/graph")
-def api_graph():
-    """Return a filtered knowledge graph for visualization.
-    Caches the result for 30s to avoid expensive recomputation."""
-    global _graph_resp_cache, _graph_resp_time, _graph_resp_ncount
+_MAX_GRAPH_NODES = 150
+_MAX_GRAPH_EDGES = 800
 
-    max_nodes = request.args.get("max", 120, type=int)
-    max_nodes = min(max_nodes, 2000)  # hard cap
+
+def _build_graph_response():
+    """Pre-compute a lightweight graph payload for the frontend."""
+    global _graph_resp_cache, _graph_resp_json, _graph_resp_ncount
 
     graph = scoring.get_knowledge_graph()
     all_nodes = graph.get("nodes", [])
     all_edges = graph.get("edges", [])
-    now = time.time()
 
-    # Return cache if fresh (same node count and < 30s old)
-    if (_graph_resp_cache is not None
-            and now - _graph_resp_time < 30
-            and len(all_nodes) == _graph_resp_ncount):
-        return jsonify(_graph_resp_cache)
+    # Build degree map
+    degree = {}
+    for e in all_edges:
+        degree[e["from"]] = degree.get(e["from"], 0) + 1
+        degree[e["to"]] = degree.get(e["to"], 0) + 1
 
-    if len(all_nodes) <= max_nodes:
-        # Cap edges to 5000 for response size — frontend draws 4000 max anyway
-        edges_to_send = all_edges
-        if len(edges_to_send) > 5000:
-            degree = {}
-            for e in edges_to_send:
-                degree[e["from"]] = degree.get(e["from"], 0) + 1
-                degree[e["to"]] = degree.get(e["to"], 0) + 1
-            edges_to_send = sorted(edges_to_send, key=lambda e: degree.get(e["from"], 0) + degree.get(e["to"], 0), reverse=True)[:5000]
-        result = {"nodes": all_nodes, "edges": edges_to_send,
-                  "total_nodes": len(all_nodes), "total_edges": len(all_edges)}
-    else:
-        # Rank nodes by edge count (degree)
-        degree = {}
-        for e in all_edges:
-            degree[e["from"]] = degree.get(e["from"], 0) + 1
-            degree[e["to"]] = degree.get(e["to"], 0) + 1
+    # Take top N nodes by degree
+    top = sorted(all_nodes, key=lambda n: degree.get(n, 0), reverse=True)[:_MAX_GRAPH_NODES]
+    top_set = set(top)
 
-        top = sorted(all_nodes, key=lambda n: degree.get(n, 0), reverse=True)[:max_nodes]
-        top_set = set(top)
-        filtered_edges = [e for e in all_edges if e["from"] in top_set and e["to"] in top_set]
+    # Filter edges — only between top nodes, limit per node to avoid hairballs
+    edge_count = {}  # per-node edge count in output
+    filtered = []
+    for e in all_edges:
+        if e["from"] in top_set and e["to"] in top_set:
+            ca = edge_count.get(e["from"], 0)
+            cb = edge_count.get(e["to"], 0)
+            if ca < 12 and cb < 12:  # max 12 edges per node
+                filtered.append({"from": e["from"], "to": e["to"]})
+                edge_count[e["from"]] = ca + 1
+                edge_count[e["to"]] = cb + 1
+                if len(filtered) >= _MAX_GRAPH_EDGES:
+                    break
 
-        # Cap edges to 5000 — frontend only draws 4000 max anyway
-        if len(filtered_edges) > 5000:
-            # Keep edges connecting highest-degree nodes
-            filtered_edges.sort(key=lambda e: degree.get(e["from"], 0) + degree.get(e["to"], 0), reverse=True)
-            filtered_edges = filtered_edges[:5000]
-
-        result = {"nodes": top, "edges": filtered_edges,
-                  "total_nodes": len(all_nodes), "total_edges": len(all_edges)}
-
+    result = {"nodes": top, "edges": filtered,
+              "total_nodes": len(all_nodes), "total_edges": len(all_edges)}
     _graph_resp_cache = result
-    _graph_resp_time = now
+    _graph_resp_json = json.dumps(result)
     _graph_resp_ncount = len(all_nodes)
-    return jsonify(result)
 
 
-@app.route("/api/concept")
-def api_concept():
-    """Search library files for ideas related to a concept node.
-    ?q=<concept name> — returns up to 5 matching ideas with title + content snippet."""
-    query = request.args.get("q", "").strip().lower()
-    if not query:
-        return jsonify({"matches": []})
+@app.route("/api/graph")
+def api_graph():
+    """Return a lightweight knowledge graph for visualization."""
+    graph = scoring.get_knowledge_graph()
+    all_nodes = graph.get("nodes", [])
 
-    # Tokenise the concept into significant words (3+ chars)
-    words = [w for w in query.split() if len(w) >= 3]
+    # Rebuild if cache is stale (node count changed)
+    if _graph_resp_json is None or len(all_nodes) != _graph_resp_ncount:
+        _build_graph_response()
 
-    library_files = [f for f in tools.list_files("library") if f.endswith(".md")]
+    return app.response_class(_graph_resp_json, mimetype="application/json")
 
-    scored = []
-    for rel in library_files:
+
+_concept_index = {}  # word -> set of filenames
+_concept_index_time = 0
+_concept_titles = {}  # filename -> title
+
+def _build_concept_index():
+    """Build a word->files index for fast concept search."""
+    global _concept_index, _concept_index_time, _concept_titles
+    _concept_index = {}
+    _concept_titles = {}
+    files = _lib_cache if _lib_cache else sorted(f for f in tools.list_files("library") if f.endswith(".md"))
+    for rel in files:
         fname_lower = rel.lower().replace("_", " ").replace("-", " ")
-        # Score: how many concept words appear in the filename
-        score = sum(1 for w in words if w in fname_lower)
-        if score > 0:
-            scored.append((score, rel))
-
-    # Fall back to content search if filename hits are sparse
-    if len(scored) < 3:
-        for rel in library_files:
-            if any(rel == s[1] for s in scored):
-                continue
-            try:
-                content = tools.read_file(rel)
-                content_lower = content.lower()
-                cscore = sum(1 for w in words if w in content_lower)
-                if cscore >= max(2, len(words) // 2):
-                    scored.append((cscore * 0.5, rel))
-            except Exception:
-                continue
-
-    scored.sort(key=lambda x: x[0], reverse=True)
-    top = scored[:5]
-
-    matches = []
-    for _, rel in top:
+        title = rel.split("/")[-1].replace(".md", "").replace("_", " ").replace("-", " ").strip()
         try:
             content = tools.read_file(rel)
-            # Extract title from first heading line
-            title = rel.split("/")[-1].replace(".md", "").replace("_", " ").replace("-", " ").strip()
             for line in content.splitlines():
                 if line.startswith("# "):
                     title = line[2:].strip()
                     break
-            # First ~600 chars of body (skip heading + created line)
+            text = fname_lower + " " + content.lower()
+        except Exception:
+            text = fname_lower
+        _concept_titles[rel] = title
+        for word in set(text.split()):
+            if len(word) >= 3:
+                _concept_index.setdefault(word, set()).add(rel)
+    _concept_index_time = time.time()
+
+
+@app.route("/api/concept")
+def api_concept():
+    """Search library files for ideas related to a concept node."""
+    query = request.args.get("q", "").strip().lower()
+    if not query:
+        return jsonify({"matches": []})
+
+    # Rebuild index every 60s
+    if not _concept_index or time.time() - _concept_index_time > 60:
+        _build_concept_index()
+
+    words = [w for w in query.split() if len(w) >= 3]
+    if not words:
+        return jsonify({"matches": []})
+
+    # Score files by how many query words they contain
+    file_scores = {}
+    for w in words:
+        for rel in _concept_index.get(w, []):
+            file_scores[rel] = file_scores.get(rel, 0) + 1
+
+    top = sorted(file_scores.items(), key=lambda x: x[1], reverse=True)[:5]
+
+    matches = []
+    for rel, _ in top:
+        try:
+            content = tools.read_file(rel)
+            title = _concept_titles.get(rel, rel.split("/")[-1].replace(".md", ""))
             body_lines = [l for l in content.splitlines() if not l.startswith("#") and not l.startswith("*Created")]
-            snippet = " ".join(" ".join(body_lines).split())[:600]
+            snippet = " ".join(" ".join(body_lines).split())[:800]
             matches.append({"title": title, "file": rel, "snippet": snippet})
         except Exception:
             continue
@@ -463,5 +519,14 @@ def api_upload():
 
 def launch(port: int = 7860) -> None:
     """Start the Flask web server."""
+    # Pre-build the graph response so the first /api/graph call is instant
+    try:
+        scoring._init_graph_cache()
+        _build_graph_response()
+        if _graph_resp_cache:
+            c = _graph_resp_cache
+            print(f"  Graph ready: {len(c['nodes'])} concepts, {len(c['edges'])} connections (of {c['total_nodes']} total)")
+    except Exception as exc:
+        print(f"  Graph pre-build failed: {exc}")
     print(f"\n  🐙 OctoBot Game Server running at http://localhost:{port}\n")
-    app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False)
+    app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False, threaded=True)

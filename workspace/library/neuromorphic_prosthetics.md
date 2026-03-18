@@ -17,3 +17,14 @@ Crucially, a miniature, low-power bio-sensor integrated into the prosthetic’s 
 **Why It’s Brilliant:** The Echo Limb bridges the gap between robotic precision and genuine human sensation. By mimicking the body’s own internal sensory mechanisms, it allows amputees to re-learn natural movements, develop intuitive control, and experience the world through their prosthetic hand with a level of fidelity previously unattainable. The use of bioluminescence is a remarkably elegant and biocompatible method for delivering complex sensory information. It’s not just about *doing* with the limb, it’s about *feeling* with it.
 
 *Pitch:* “Imagine feeling the texture of a flower petal, or the weight of a tool – that’s the Echo Limb, giving amputees back the lost sense of touch.”
+
+
+---
+
+## Related Ideas
+
+- **chronosomatic scent weaver** (shared concept: *bio-luminescent algae*)
+- **“Ephemeral Tactile Reconstruction”** (shared concept: *bio-luminescent algae*)
+- **geological grief mapping prototype** (shared concept: *bio-luminescent algae*)
+- **develop bio-integrated prosthetics mimicking octopus limb regeneration for seamless human healing** (shared concept: *bio-integrated prosthetic*)
+- **bio-luminescent algae-based street lighting systems optimizing for efficiency and natural color palettes** (shared concept: *bio-luminescent algae*)

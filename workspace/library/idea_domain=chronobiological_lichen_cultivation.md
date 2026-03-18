@@ -35,3 +35,14 @@ The chamber isn't just a tank; it's a carefully modulated environment. We use a 
 ---
 *Original notes:*
 “**Project: Tempus Bloom - The Bio-Rhythm Harmonizer**
+
+
+---
+
+## Related Ideas
+
+- **Chronobiological Gastric Echo Mapping** (shared concept: *bio-luminescent algae*)
+- **light-based memory recording techniques algal bioluminescence control visual cortex stimulation** (shared concept: *directly correlated*)
+- **fungal bioluminescence art personalized soundscapes living walls circadian rhythm biofeedback** (shared concept: *low-level bioluminescence*)
+- **chronosomatic scent weaver** (shared concept: *bio-luminescent algae*)
+- **imagine a city** (shared concept: *bio-luminescent algae*)

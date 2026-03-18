@@ -30,3 +30,14 @@ Okay, buckle up! ScentTrace utilizes a miniature, biocompatible device, we’re 
 *   **Lost Pet Recovery:** The primary application, obviously! Guiding lost dogs, cats, and even smaller pets back to their owners.
 *   **Rehabilitation for Anxious Pets:**  Using familiar scents to create a calming and reassuring environment for pets recovering from trauma or separation anxiety.
 *
+
+
+---
+
+## Related Ideas
+
+- **sunbeam** (shared concept: *sculpts*)
+- **“litho-sonographic dream weaver”** (shared concept: *sculpts*)
+- **engineered microbial voc emission control systems biometric-driven scent modulation micro-environmental scent sculpting** (shared concept: *sculpts*)
+- **idea domain=Kinesthetic Archaeology Interfaces** (shared concept: *idea document*)
+- **idea domain – “kinesthetic cartography of phantom limb sensation”** (shared concept: *idea document*)

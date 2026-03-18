@@ -25,3 +25,14 @@ The MycoSync is a wearable haptic glove integrated with a bio-acoustic transceiv
 The MycoSync isn’t just about controlling fungi; it’s about creating a symbiotic partnership. It moves beyond passive manipulation and into active, bidirectional communication. By translating the mycelial network's intrinsic “language” into a form we understand, and vice-versa, we open up a world of possibilities for designing and interacting with biological systems in entirely new ways.  This creates a closed-loop system of feedback, allowing for unparalleled precision and adaptability. 
 
 **Pitch:** “Imagine building structures that literally grow themselves, responding to their environment in real-time – that's the power of MycoSync.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Symbiotic Textile Weathering Prediction** (shared concept: *closed-loop system*)
+- **digestive rhythm analysis biofeedback soundscape generation haptic feedback flavor perception time perception hormonal regulation** (shared concept: *closed-loop system*)
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *haptic feedback*)
+- **temporal distortion effects in plants bioluminescence mechanisms in fungi haptic feedback systems for botanical interaction biospheres and controlled environments** (shared concept: *haptic feedback*)
+- **cephalopod camouflage scent dispersal microclimate control haptic feedback narrative projection** (shared concept: *haptic feedback*)

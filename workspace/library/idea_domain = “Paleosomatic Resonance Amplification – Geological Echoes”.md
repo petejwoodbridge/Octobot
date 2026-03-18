@@ -1,1 +1,11 @@
-“The Lithoskin – A bio-reactive garment that translates geological vibrational data into a dynamic, tactile and auditory experience. Imagine wearing a layer of interwoven, bio-luminescent mycelium, cultivated on a substrate of bio-printed, shape-memory alloy mesh – each strand subtly responding to the detected resonance patterns of a targeted geological formation. The garment displays a visual representation of the data through shifting bioluminescence and a corresponding audioscape of ‘geological echoes’ - rumbling bass, subtle clicks, whispering winds – all dynamically adjusting based on the geological input. It’s like wearing a piece of the Earth’s memory!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain - chronal scent-skin layering + weaving repair** (shared concept: *bio-reactive garment*)
+- **geological empathy perfume synthesizer** (shared concept: *bio-luminescent mycelium*)
+- **ephemeral object resonance mapping** (shared concept: *bio-luminescent mycelium*)
+- **bio-luminescent textiles olfactory projection cephalopod camouflage dream interpretation haptic feedback sleep analysis** (shared concept: *bio-luminescent mycelium*)
+- **“EchoSkin”** (shared concept: *bio-printed*)

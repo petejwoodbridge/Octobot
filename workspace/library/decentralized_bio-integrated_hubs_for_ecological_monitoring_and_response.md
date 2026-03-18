@@ -17,3 +17,14 @@ Furthermore, the fungal network itself acts as a “living cable.” Changes in 
 **Why It’s Brilliant:** The Mycelial Sentinel bridges the gap between passive monitoring and proactive response, utilizing nature’s own networking capabilities to create a dynamic, self-reporting, and environmentally-sensitive system. It’s not just observing; it’s actively *participating* in the ecosystem’s defense.
 
 **Pitch:** “Imagine a forest that tells you when it’s hurting, and a system that actually does something about it – that’s the Mycelial Sentinel.”
+
+
+---
+
+## Related Ideas
+
+- **resonant fungal echo-gardens - concept refinement** (shared concept: *micro-sensor array*)
+- **design a symbiotic device where humans interpret bloom color changes as emotional data streams** (shared concept: *micro-sensor array*)
+- **biodegradable cartridges for seed dispersal  mimicking natural dispersal methods with customizable seed mixes** (shared concept: *micro-sensor array*)
+- **neuro-linked personal microclimates capable of proactively adjusting temperature humidity and even scent based on emotional state** (shared concept: *micro-sensor array*)
+- **ancient stone tool flavor profiles synesthesia haptic feedback gastronomy archaeology** (shared concept: *micro-sensor array*)

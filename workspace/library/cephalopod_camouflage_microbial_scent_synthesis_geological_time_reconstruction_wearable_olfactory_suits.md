@@ -15,3 +15,14 @@
 **Why It’s Brilliant:** ChronoScent marries cutting-edge microbiology, geological science, and wearable technology to provide a profoundly immersive and scientifically grounded experience of the past. It moves beyond mere recreation and offers an active, dynamic reconstruction of time through scent – truly a multi-sensory time machine. 
 
 *Pitch:* “Imagine stepping into Pompeii and actually *feeling* the scent of the sea and volcanic ash, dynamically shifting with the simulated shifts in the eruption’s power – it's history, inhaled.”
+
+
+---
+
+## Related Ideas
+
+- **temporal camouflage  developing materials that shift appearance to blend with different points in time** (shared concept: *bio-reactive*)
+- **shell utilizes a** (shared concept: *bio-reactive*)
+- **“paleo-scent weaver”** (shared concept: *bio-reactive*)
+- **idea domain = ecosystem psychology** (shared concept: *bio-reactive*)
+- **t about stopping the breach it** (shared concept: *bio-reactive*)

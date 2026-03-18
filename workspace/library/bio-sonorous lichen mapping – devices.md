@@ -30,3 +30,14 @@ Each BSLM Device is built around a “Bio-Harmonic Resonance Chamber” – a mi
 *   **Ecological Monitoring:** Track lichen populations and health in national parks and wilderness areas, providing early warnings about environmental changes.
 *   **Urban Green Space Assessment:**  Evaluate the health and biodiversity of city parks and green roofs, identifying areas needing revitalization.
 *   **Artistic Installations:**  Create immersive, interactive soundscapes inspired by lichen communities – imagine a concert hall filled with the “music”
+
+
+---
+
+## Related Ideas
+
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *artistic installations*)
+- **idea domain=temporal micro-erosion simulation chambers** (shared concept: *artistic installations*)
+- **idea domain = “Luminescence Cartography - Phase 2** (shared concept: *artistic installations*)
+- **idea domain - Ephemeral Cartography of Acoustic Residue** (shared concept: *artistic installations*)
+- **idea domain – “Chronal Echo-Gardens** (shared concept: *artistic installations*)

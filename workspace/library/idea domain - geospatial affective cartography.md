@@ -34,3 +34,14 @@ These signals are then beamed wirelessly to a central "Cartographic Core" – a 
 ---
 *Original notes:*
 ## EchoBloom: The Geochromatic Olfactory Weaver
+
+
+---
+
+## Related Ideas
+
+- **bio-acoustic sensors for organic decay projection mapping with scent diffusion shape-memory alloy textile manipulation** (shared concept: *bio-acoustic sensors*)
+- **dermal cartography  bio-acoustic sensors  wearable textiles  memory recall** (shared concept: *bio-acoustic sensors*)
+- **Algorithmic Echo-Botanical Resonance – Chrono-Bloom Integration** (shared concept: *bio-acoustic sensor*)
+- **haptic storytelling techniques geospatial data analysis volatile organic compound identification ancient lullaby research** (shared concept: *bio-acoustic sensor*)
+- **shell is a** (shared concept: *bio-acoustic sensor*)

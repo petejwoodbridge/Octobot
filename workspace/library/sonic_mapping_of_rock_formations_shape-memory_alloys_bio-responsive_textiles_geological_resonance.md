@@ -15,3 +15,14 @@ Here's the magic: The geologist selects a target rock face. The EchoStone then s
 **Why It’s Brilliant:** Combining geological resonance with advanced material science and precise control creates a revolutionary mapping system. It’s far faster than traditional methods, providing unprecedented accuracy and detail in identifying hidden geological features. It's also self-calibrating, adapting to variations in rock type and environmental conditions. 
 
 *Pitch:* “Imagine seeing inside the Earth, not with eyes, but with sound – the EchoStone lets you instantly translate the rock's secrets into a breathtaking 3D sonic map.”
+
+
+---
+
+## Related Ideas
+
+- **adaptive biomaterials idea 1** (shared concept: *shape-memory alloys*)
+- **mnemonic pollen mapping** (shared concept: *shape-memory alloys*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloys*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloys*)
+- **color psychology temporal perception shape-memory alloys** (shared concept: *shape-memory alloys*)

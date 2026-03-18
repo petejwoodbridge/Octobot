@@ -35,3 +35,14 @@ Okay, hold onto your hats! The system centers around a custom-grown, bioluminesc
 ---
 *Original notes:*
 ## Mycelial Muse - The Bio-Resonance Creative Catalyst
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Neuromodulation for Enhanced Cognition** (shared concept: *creative block busting*)
+- **neural echo communication explore a bloom network where octopuses communicate through precisely modulated sonic echoes forming a decentralized immersive thought web** (shared concept: *genetically-modified*)
+- **neuro-geological scent therapy  personalized temporal simulations** (shared concept: *neuro-feedback loop*)
+- **Chronobiological Cartography** (shared concept: *three-dimensional representation*)
+- **neural-resonance landscaping** (shared concept: *bio-acoustic resonance*)

@@ -24,3 +24,14 @@ The pods communicate with a surface station via a low-frequency acoustic modem, 
 The Echo Weaver combines bioluminescence with sophisticated AI and adaptive robotics to create a genuinely *intelligent* mapping solution. The symbiotic sonar offers vastly superior echo interpretation compared to conventional sonar, dramatically increasing mapping accuracy. The pod’s maneuverability overcomes the limitations of human divers, and the AI learns and adapts, constantly improving its performance. It’s not just a robot; it’s an explorer.
 
 Pitch: “Imagine instantly knowing the secrets hidden beneath the waves – the Echo Weaver builds 3D maps of underwater caves, revealing treasures and protecting divers, all through the power of light and intelligent sonar.”
+
+
+---
+
+## Related Ideas
+
+- **memory bloom concept** (shared concept: *the echo weaver*)
+- **micro-epoch olfactory archiving** (shared concept: *the echo weaver*)
+- **reactive olfactory projection technology haptic feedback urban archaeology bio-acoustic mapping** (shared concept: *the echo weaver*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *the echo weaver*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *the echo weaver*)

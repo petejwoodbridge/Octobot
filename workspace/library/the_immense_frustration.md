@@ -15,3 +15,14 @@
 **Additional Features:** The orb includes a wireless charging base and a cloud-based database constantly updated with new knot patterns. 
 
 **Pitch:** “Imagine a world without tangled frustration – the Knot Resolver lets you reclaim your sanity, one perfect untangling at a time.”
+
+
+---
+
+## Related Ideas
+
+- **adaptive architectural interfaces design buildings that organically shift and reshape based on inhabitant needs and external stimuli utilizing octopus-like manipulation** (shared concept: *shape-memory alloy*)
+- **osmotic memory mapping device** (shared concept: *additional features*)
+- **kinesthetic palimpsest concept** (shared concept: *shape-memory alloy*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloy*)
+- **“chronal bloom weaver”** (shared concept: *shape-memory alloy*)

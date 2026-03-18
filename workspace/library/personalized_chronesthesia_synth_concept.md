@@ -39,3 +39,14 @@ Crucially, the sound isn’t just *generated*; it’s *manipulated* in real-time
 ---
 *Original notes:*
 # Chronosync: The Temporal Tailor
+
+
+---
+
+## Related Ideas
+
+- **subconscious topography mapping** (shared concept: *holographic projection system*)
+- **chronobiological cartography** (shared concept: *holographic projection system*)
+- **chronobiological coral reef synthesis** (shared concept: *holographic projection system*)
+- **idea domain – “Subconscious geological echo-weaving”** (shared concept: *multi-sensory experience*)
+- **neuroacoustic stimulation haptic feedback olfactory layering myth archetype wearable device biofeedback** (shared concept: *multi-sensory experience*)

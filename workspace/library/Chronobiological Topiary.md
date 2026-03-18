@@ -37,3 +37,14 @@ Once a trigger event is detected – say, the signing of the Magna Carta – the
 ---
 *Original notes:*
 “## Temporal Echo Bloom
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Ephemeral Skin Mapping** (shared concept: *nano-sensors that*)
+- **idea domain=chronobiological echo sculpting** (shared concept: *nano-sensors that*)
+- **idea domain=Symbiotic Textile Memory Weaving** (shared concept: *nano-sensors that*)
+- **interspecies dream mapping animal neuroscience biosensors ai dream interpretation sensory simulation** (shared concept: *nano-sensors that*)
+- **fabricate a reactive organic immune system for infrastructure capable of self-repair and aggressive containment** (shared concept: *nano-sensors that*)

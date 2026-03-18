@@ -20,3 +20,14 @@ The Tempus Bloom transcends simple relaxation; it offers a genuinely novel way t
 
 ## Elevator Pitch
 “Take control of your time – literally – with the Tempus Bloom.”
+
+
+---
+
+## Related Ideas
+
+- **chronoflora temporal seed pod** (shared concept: *overview the tempus bloom*)
+- **chronobiological pollen weave** (shared concept: *overview the tempus bloom*)
+- **neuro-scent synthesis rem sleep voc analysis microbial scent production bio-luminescent chambers** (shared concept: *bio-compatible polymer*)
+- **olfactory layering** (shared concept: *bio-acoustic frequencies*)
+- **“trauma pet project”** (shared concept: *bio-acoustic frequencies*)

@@ -17,3 +17,14 @@ These vibrations are then fed into a proprietary algorithm – “Chronosync” 
 **Why It’s Brilliant:** The Echo Loom bridges the gap between the scientific observation of decay and the artistic interpretation of natural processes. It produces a perpetually changing, three-dimensional artwork that acts as a living record of decomposition, offering a profound meditation on cycles of life, death, and rebirth. The textile itself becomes a temporal artifact. 
 
 *Pitch:* “Imagine owning a piece of fabric that’s literally listening to the earth – the Echo Loom creates artwork that evolves with nature's most fundamental process.”
+
+
+---
+
+## Related Ideas
+
+- **kinesthetic memory weaving prototype** (shared concept: *the echo loom*)
+- **idea domain=Symbiotic Chronal Preservation** (shared concept: *the echo loom*)
+- **neural-resonance landscaping** (shared concept: *bio-acoustic resonance*)
+- **the study of pointless enhancements** (shared concept: *bio-acoustic resonance*)
+- **bio-acoustic resonance mapping of personal objects micro-haptic feedback technology temperature modulation textiles** (shared concept: *bio-acoustic resonance*)

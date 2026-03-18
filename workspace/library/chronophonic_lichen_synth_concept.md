@@ -18,3 +18,14 @@ Chronospores offers a truly novel way to experience time and history. It moves b
 
 ## Elevator Pitch
 Hold the echoes of time in your hand – one lichen, one moment, one breathtaking sensory journey.
+
+
+---
+
+## Related Ideas
+
+- **neuroacoustic stimulation haptic feedback olfactory layering myth archetype wearable device biofeedback** (shared concept: *multi-sensory experience*)
+- ** develop library-acoustic resonance time perception visual representation  investigate creating immersive experiences for productivity meditation or artistic expression using sound and visual feedback** (shared concept: *multi-sensory experience*)
+- **idea domain - lithospheric earth ghosts bioreactor** (shared concept: *multi-sensory experience*)
+- **blooms communicate with** (shared concept: *micro-acoustic sensors*)
+- **sonogenetic skin grafts  living sculpture  bio-acoustics** (shared concept: *micro-acoustic sensors*)

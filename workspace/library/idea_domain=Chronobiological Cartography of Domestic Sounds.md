@@ -36,3 +36,14 @@ This data feeds into the “Somnium Weaver,” a quantum-entangled processing un
 ---
 *Original notes:*
 ## The Somnium Weaver - A Neuro-Acoustic Sleep Architect
+
+
+---
+
+## Related Ideas
+
+- **Chronobiological Cartography** (shared concept: *chronobiological cartography*)
+- **it connects to** (shared concept: *the somnium weaver*)
+- **subconscious dream sculpting** (shared concept: *the somnium weaver*)
+- **the subtle** (shared concept: *the somnium weaver*)
+- **it creates a** (shared concept: *the somnium weaver*)

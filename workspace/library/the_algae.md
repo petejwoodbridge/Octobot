@@ -19,3 +19,14 @@ The entire system is powered by kinetic energy harvested from the water flow, mi
 **Why It’s Brilliant:** The Bloom Weaver marries acoustic bio-sensing with targeted algal manipulation, offering a proactive, data-driven solution to a globally pressing environmental issue. It moves beyond reactive monitoring to genuinely influence the bloom’s development, offering a preventative layer of protection and drastically reducing the scale of devastating events. It’s also surprisingly elegant – using nature’s own processes to solve a nature problem. 
 
 Pitch: "Imagine a future where we don't just *react* to algal blooms, but prevent them before they even begin – that’s the power of the Bloom Weaver."
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-acoustic monitoring*)
+- **create an autonomous bloom-inspired swarm of robotic pollinators that reshape coral reefs based on collective bloom signals** (shared concept: *ultra-low frequency*)
+- **bloom is paired** (shared concept: *the bloom weaver*)
+- **biofeedback-driven origami crane design bioluminescent fungal growth patterns brainwave-controlled spore release temporal distortion technologies** (shared concept: *the bloom weaver*)
+- **temporal distortion effects in plants bioluminescence mechanisms in fungi haptic feedback systems for botanical interaction biospheres and controlled environments** (shared concept: *ultra-low frequency*)

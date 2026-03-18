@@ -29,3 +29,13 @@ Now, here's the juicy part: These metabolites trigger microscopic bio-luminescen
 
 *   **Personalized Nutrition:** Individuals could use the Chromatic Palate to optimize their diet for maximum microbiome health.
 *   **Clinical Diagnostics:** Doctors
+
+---
+
+## Related Ideas
+
+- **micro-biotic predictive gastronomy** (shared concept: *personalized nutrition*)
+- **chronobiological coral reef synesthesia** (shared concept: *multi-sensory experience*)
+- **Precognitive Gastronomy** (shared concept: *overview behold*)
+- **idea domain - biophotonic echo-gardening** (shared concept: *overview behold*)
+- **idea pitch** (shared concept: *overview behold*)

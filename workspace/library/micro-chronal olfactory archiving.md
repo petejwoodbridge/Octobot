@@ -31,3 +31,14 @@ The Chronoscent Device (formerly "Raindrop Echoes") is the heart of the system. 
 ---
 *Original notes:*
 ## Raindrop Echoes: The Chronoscent Device
+
+
+---
+
+## Related Ideas
+
+- **neuroscience of synesthesia historical scent reconstruction immersive data visualization haptic feedback technology crowd-sourced historical data** (shared concept: *haptic feedback*)
+- **subconscious scent weaving** (shared concept: *haptic feedback*)
+- **neuro-geological sonification subsurface acoustic mapping haptic suits binaural audio geological history** (shared concept: *haptic feedback*)
+- **idea domain=Automated “Somatic Echo” Sculpting – Temporal Edition** (shared concept: *personal memory preservation*)
+- **idea domain=Sonospheric Skin-Symbiosis** (shared concept: *fantastically*)

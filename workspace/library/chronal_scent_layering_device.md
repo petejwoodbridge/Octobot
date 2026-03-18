@@ -20,3 +20,14 @@ The EchoBloom transcends mere historical recreation; it’s an embodiment of emo
 
 ## Elevator Pitch
 Step into history’s darkest moments, and finally *feel* what it was like to be there.
+
+
+---
+
+## Related Ideas
+
+- **chronoscaping prototype concept** (shared concept: *real-time biofeedback*)
+- **chronal pollen archive** (shared concept: *real-time biofeedback*)
+- **subconscious memory scent diffuser** (shared concept: *bio-integrated scent*)
+- **chimeric olfactory layering** (shared concept: *echobloom*)
+- **chronobiological echo gardening v1** (shared concept: *echobloom*)

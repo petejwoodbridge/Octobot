@@ -33,3 +33,13 @@ But here’s the *real* magic: the Hydra-Gel reacts to the wearer's movements, p
 ## Why It's Extraordinary
 
 The AquaPulse isn't just a machine; it’s a *performance*!
+
+---
+
+## Related Ideas
+
+- **subconscious microbial fermentation optimization** (shared concept: *bio-reactive gel*)
+- **chronobiological coral sonification v1** (shared concept: *real-time environmental*)
+- **aquatic user interface ideas** (shared concept: *real-time environmental*)
+- **Precognitive Gastronomy** (shared concept: *overview behold*)
+- **idea domain - biophotonic echo-gardening** (shared concept: *overview behold*)

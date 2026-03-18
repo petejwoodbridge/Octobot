@@ -21,3 +21,14 @@ Here’s the sequence: The user selects a *base* colour (e.g., “blue”). The 
 ChromaEcho leverages recent advances in biofeedback, micro-LED technology, and our growing understanding of colour psychology. It’s not just about seeing colours; it’s about stimulating the *neural circuits* that hold memories, turning light into a key to unlock the past with unprecedented accuracy and minimal cognitive load.  It effectively bypasses the limitations of traditional recall techniques and provides a genuinely novel way to explore one's personal history.
 
 **Pitch:** “Imagine recalling your childhood birthday party in vivid detail, simply by letting the light guide you – ChromaEcho: Experience your memories, one pulse at a time.”
+
+
+---
+
+## Related Ideas
+
+- **neuro-chromatic mapping technology biometric skin pigmentation analysis micro-led diffusion memory recall visual encoding** (shared concept: *chromaecho*)
+- **think of it** (shared concept: *focus mode*)
+- **sensory** (shared concept: *focus mode*)
+- **marine invertebrate vocalizations anxiety reduction biofeedback spatial audio wearable technology** (shared concept: *focus mode*)
+- **neutral** (shared concept: *focus mode*)

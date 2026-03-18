@@ -21,3 +21,14 @@ The fungi, engineered over a decade, possess unique piezoelectric properties. Th
 ChronoBloom moves beyond passive observation. It’s an active, immersive simulation that leverages the remarkable sensitivity of fungal networks and the power of bio-acoustic projection.  By directly engaging multiple senses, ChronoBloom fosters unprecedented understanding and empathy, making geological research profoundly experiential and transforming how we learn about Earth’s history – and potentially, the origins of life itself.
 
 **Pitch:** “Imagine feeling the tremors of a dinosaur’s footfall or experiencing the humidity of a prehistoric jungle – ChronoBloom makes those ancient worlds terrifyingly real.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain = geospatial synesthesia mapping** (shared concept: *bio-acoustic transducers*)
+- **idea domain = Symbiotic Chrono-Mycological Cartography** (shared concept: *bio-acoustic transducers*)
+- **chronobiological memory garden** (shared concept: *bio-acoustic transducers*)
+- **create wearable exoskeletons mimicking cephalopod camouflage dynamically shifting texture and color based on surrounding stimuli** (shared concept: *sensory input*)
+- **the taste itself** (shared concept: *sensory input*)

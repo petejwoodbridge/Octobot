@@ -15,3 +15,14 @@ The initial LoomVerse is a blank slate, capable of forming anything from a minia
 **Why It’s Brilliant:** The LoomVerse fuses material science, robotics, and generative design. It collapses the need for carrying a multitude of specialized tools into a single, adaptable device. It offers unprecedented on-demand fabrication, optimizing workflow and empowering users in a multitude of scenarios – from emergency repairs to creative projects. The constant, dynamic morphing also creates a mesmerizing visual spectacle. 
 
 *Pitch:* “Introducing the LoomVerse – instantly transform your needs into tangible reality, one shimmering thread at a time.”
+
+
+---
+
+## Related Ideas
+
+- **kinesthetic mnemonic architecture  self-repairing textiles  breach response** (shared concept: *self-repairing polymer*)
+- **idea domain - Vestibular Echo-Cartography** (shared concept: *self-repairing polymer*)
+- **self-assembling thread-based robotic swarms capable of manipulating objects based on sensed vibrations** (shared concept: *bio-luminescence allows*)
+- **design autonomous swarm-based robotic muscle systems capable of physically plugging holes and redirecting water flow** (shared concept: *bio-luminescence allows*)
+- **bio-luminescent camouflage systems mimicking flower petal patterns for dynamic object concealment** (shared concept: *low-light conditions*)

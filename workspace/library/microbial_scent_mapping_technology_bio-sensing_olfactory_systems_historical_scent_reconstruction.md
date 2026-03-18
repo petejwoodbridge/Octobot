@@ -21,3 +21,14 @@
 **Why It’s Brilliant:** The EchoBloom bridges the gap between passive observation and active sensory reconstruction. It’s not just about identifying smells; it’s about experiencing the *flavor* of the past, fostering a deeper connection to history through a uniquely immersive bio-sensory technology. It combines cutting-edge microbiome research with sophisticated neural feedback systems, offering a completely novel approach to historical understanding. 
 
 *Pitch:* "Imagine experiencing the world through the senses of someone who lived 200 years ago – that's the EchoBloom."
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent coral genetics sound frequency manipulation memory encoding** (shared concept: *bio-integrated device*)
+- **idea domain – “Subconscious geological echo-weaving”** (shared concept: *bio-integrated device*)
+- **idea domain=neuro-geological scent-cartography of fungal communication networks** (shared concept: *bio-integrated device*)
+- **microbial degradation patterns in organic materials  specifically focusing on the visual olfactory and haptic signatures of decomposition** (shared concept: *bio-integrated device*)
+- **extinct insect communication olfactory projection bioluminescence wearable tech paleo-entomology** (shared concept: *bio-integrated device*)

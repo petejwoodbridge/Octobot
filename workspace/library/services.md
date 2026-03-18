@@ -39,3 +39,14 @@ Sonaris then generates a unique, layered soundscape - think shimmering ambient t
 ---
 *Original notes:*
 “Echo Chamber Concierge – A personalized auditory buffer service.” (Details to follow!)
+
+
+---
+
+## Related Ideas
+
+- **sentinel is a** (shared concept: *designed*)
+- **chronobiological textile design  smart fabrics time manipulation biofeedback loops chromatic patterns haptic vibrations mood regulation productivity restorative sleep 24-hour cycles** (shared concept: *designed*)
+- **idea domain = “Myco-Architectural Temporal Scent Layering – Pet Edition”** (shared concept: *designed*)
+- **t about stopping the breach it** (shared concept: *designed*)
+- **micro-ecosystem cartography ceramic vessels environmental monitoring bioluminescence** (shared concept: *real-time state*)

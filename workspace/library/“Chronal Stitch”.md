@@ -39,3 +39,14 @@ The Chronal Stitch isn’t
 ---
 *Original notes:*
 “## Chronal Stitch: The Temporal Textile Restorer
+
+
+---
+
+## Related Ideas
+
+- **subconscious textile synthesis** (shared concept: *deep-sea jellyfish*)
+- **music** (shared concept: *real-time visualization*)
+- **Chrono-resonance Textile Weaver - Concept** (shared concept: *luxury fashion*)
+- **idea domain=Symbiotic Pattern Weaving** (shared concept: *luxury fashion*)
+- **Symbiotic Skin Weaving – Project** (shared concept: *luxury fashion*)

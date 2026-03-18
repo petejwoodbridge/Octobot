@@ -1,1 +1,11 @@
-“The Stone Echo: A haptic and olfactory immersion device for experiencing ancient tool use. The device consists of a precisely calibrated acoustic scanner that analyzes the vibrational resonance of a selected stone tool (provided by the user or sourced from a museum collection). This data is then translated into a complex haptic feedback pattern – simulating the texture and pressure applied by the tool’s original user – combined with a carefully curated olfactory profile, designed to evoke the environment and materials associated with the tool’s creation and use. The system is controlled via a wrist-worn interface, providing real-time visualization of the vibrational data and allowing the user to ‘tune’ the immersion experience. Initial focus: Obsidian blades used for butchering megafauna during the Upper Paleolithic.”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **“Chronal Stitch”** (shared concept: *real-time visualization*)
+- **predicting localized seismic events through real-time geological stress mapping and ai-driven anomaly detection** (shared concept: *real-time visualization*)
+- **soniferous geomorphology wearable interfaces bioluminescence geological data** (shared concept: *real-time visualization*)
+- **idea domain=chronal microbiome mapping** (shared concept: *real-time visualization*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *real-time visualization*)

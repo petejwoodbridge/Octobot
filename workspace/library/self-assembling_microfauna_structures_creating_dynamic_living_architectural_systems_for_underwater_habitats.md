@@ -21,3 +21,14 @@ Furthermore, the *Halobactera* are programmed to incorporate algae and microscop
 The Coral Chorus isn't just about building structures; it’s about orchestrating a miniature, living city. It leverages existing biological processes, utilizing a self-assembling, intelligent microbiome to create a dynamic, self-regulating habitat that evolves with the ocean, mimicking natural coral reef formation on an unprecedented scale. It’s a closed-loop system – waste products from the bacteria nourish the reef, and the reef provides shelter and nutrients for the bacteria. This creates a beautifully complex, self-sustaining ecosystem, far more resilient than anything we can build artificially. 
 
 **Pitch:** “Imagine a self-building, breathing underwater city – that’s the Coral Chorus: the future of sustainable marine habitats, one bioluminescent note at a time.”
+
+
+---
+
+## Related Ideas
+
+- **develop bio-adhesive mimics mimicking cephalopod camouflage instantly sealing punctures in structures** (shared concept: *self-assembling*)
+- **bio-inspired camouflage systems for drone thermal regulation mimicking dragonfly heat-sensing abilities** (shared concept: *self-assembling*)
+- **sentient bloom-like bio-robots capable of artistic expression and symbiotic interaction with marine life** (shared concept: *self-assembling*)
+- **create self-assembling modular habitats for marine life inspired by octopus dens incorporating adaptive ecosystem controls** (shared concept: *self-assembling*)
+- **creating a self-healing iridescent material replicating dragonfly wing coloration and strength through bio-integrated nanotechnology** (shared concept: *self-assembling*)

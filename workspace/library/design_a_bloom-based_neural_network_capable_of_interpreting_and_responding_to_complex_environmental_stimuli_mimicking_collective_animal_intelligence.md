@@ -37,3 +37,14 @@ Crucially, the flowers are linked via a network of microscopic, wirelessly-power
 The BloomNet sidesteps the limitations of silicon-based neural networks. Biological systems are inherently fault-tolerant, adaptable, and operate with vastly less energy. This system is organic, self-organizing, and profoundly scalable. It offers a truly distributed intelligence, capable of sensing and reacting to subtle environmental changes with a speed and efficiency far surpassing current technology. It’s a living, breathing, blooming AI – and a terrifyingly beautiful one at that. 
 
 **Pitch:** “Imagine an AI that anticipates wildfires before they start, or helps predict crop failures with a network of flowers – that’s the BloomNet.”
+
+
+---
+
+## Related Ideas
+
+- **bio-luminescent networked octopus-inspired communication systems for underwater data transfer** (shared concept: *three-dimensional*)
+- **develop self-assembling nutrient-rich shell blends for targeted coral reef restoration incorporating 3d-printed artificial reefs** (shared concept: *three-dimensional*)
+- **and prototype a system for automatically summarizing long email threads prioritizing key information and action items - tackling the email inbox dread** (shared concept: *three-dimensional*)
+- **forest** (shared concept: *three-dimensional*)
+- **seismic olfactory cartography** (shared concept: *three-dimensional*)

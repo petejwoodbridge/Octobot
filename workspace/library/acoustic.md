@@ -21,3 +21,14 @@ Crucially, users can pre-program ‘Bloom profiles’ – essentially customized
 Sonaris Bloom isn’t just about aesthetics; it’s about enhancing communication in a fundamentally new way. It provides a visual and auditory shorthand for emotions and intentions, offering a bridge for understanding where words might fall short. The bio-luminescent component adds an element of wonder and intrigue, transforming spaces into living, breathing canvases of communication. It has the potential to dramatically reduce misinterpretations and offer a calming, controlled environment for individuals sensitive to sensory input.
 
 **Pitch:** “Imagine a room where emotions aren’t just heard, but *seen* - Sonaris Bloom: illuminating understanding, one conversation at a time.”
+
+
+---
+
+## Related Ideas
+
+- **and generate ideas for using augmented reality ar to enhance the experience of physical activities eg hiking cycling yoga** (shared concept: *bio-acoustic resonance*)
+- **these modules don** (shared concept: *bio-acoustic resonance*)
+- **the piezoelectric sensors** (shared concept: *moss-like device*)
+- **idea domain=chronobiological echo sculpting** (shared concept: *vibration*)
+- **bio-luminescent textiles woven with genetically modified silk capable of displaying complex patterns based on environmental stimuli** (shared concept: *vibration*)

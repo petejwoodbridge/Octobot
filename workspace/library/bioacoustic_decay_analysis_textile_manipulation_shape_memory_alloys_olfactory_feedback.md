@@ -27,3 +27,14 @@ The system learns the user’s individual anxiety markers over time, creating a 
 The Sensory Weaver creates a truly symbiotic relationship between technology and the body. It moves beyond simply *detecting* stress to actively modulating the user’s environment – their clothing – into a state of calm. The combination of bioacoustic analysis, olfactory feedback, and dynamic textile manipulation offers a multi-sensory approach to anxiety management that is both subtle and deeply effective. 
 
 **Pitch:** “Imagine a sweater that understands your worries and gently guides you back to peace.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “Temporal Gastronomic Cartography”** (shared concept: *multi-sensory approach*)
+- **flock management mindfulness biofeedback** (shared concept: *in real-time*)
+- **t about stopping the breach it** (shared concept: *micro-sensors*)
+- **idea domain=olfactory memory recovery** (shared concept: *micro-diffusion system*)
+- **“ocean echo device”** (shared concept: *olfactory feedback*)

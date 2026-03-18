@@ -18,3 +18,14 @@ The Chronobiological Lumen Stone represents a fundamentally new approach to trau
 
 ## Elevator Pitch
 Experience your darkest memories – safely, deliberately, and with the potential to finally find peace.
+
+
+---
+
+## Related Ideas
+
+- **bioluminescent lichen movement soundscapes rhythmic textiles** (shared concept: *genetically-modified lichen*)
+- **idea domain = neuro-acoustic lichen cultivation** (shared concept: *genetically-modified lichen*)
+- **these fibers aren** (shared concept: *re-emergence*)
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *re-experience traumatic*)
+- **cephalopod bio-acoustics plant vibrational resonance immersive audio-visual experiences haptic feedback** (shared concept: *bio-acoustic signature*)

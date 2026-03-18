@@ -17,3 +17,14 @@ Furthermore, the suit utilizes color-shifting micro-pigments within the fibers. 
 **Why It’s Brilliant:** ChromaSkin moves beyond simple data display. It creates a layered, immersive sensory experience that directly addresses emotional and cognitive responses to stimuli. By translating complex information into tangible, controlled sensations, it offers a powerful tool for self-regulation, anxiety reduction, and fostering a deeper connection with one’s environment, paving the way for truly neuro-adaptive clothing. 
 
 Pitch: "Imagine feeling your anxieties melt away with every breath – ChromaSkin creates that reality."
+
+
+---
+
+## Related Ideas
+
+- **mnemosyne cartography - historical precedents biophoretic research olfactory perception haptic feedback technologies mapping techniques crowd psychology** (shared concept: *wrist-mounted device*)
+- **idea domain=chronal embroidery** (shared concept: *bio-integrated textile*)
+- **geological resonance haptic feedback biofeedback self-repairing textiles** (shared concept: *bio-integrated textile*)
+- **chromatic synesthesia mapping  biofeedback  neuro-acoustic resonance** (shared concept: *wrist-mounted device*)
+- **developing bio-inspired flapping robotic wings powered by miniature octopus muscle mimics for aerial maneuverability** (shared concept: *wrist-mounted device*)

@@ -36,3 +36,14 @@ Each glove is constructed from a newly developed bio-polymer interwoven with mic
 ---
 *Original notes:*
 ```## Palimpsest Echoes: The Haptic Memory Glove
+
+
+---
+
+## Related Ideas
+
+- **“kinesthetic cartography device prototype”** (shared concept: *multi-sensory layering*)
+- **subconscious fungal scent-mapping for lost childhood geographies** (shared concept: *historical preservation*)
+- **Sonospheric Cartography of Transient Emotions** (shared concept: *movement*)
+- **chronobiological echo cartography dance suit** (shared concept: *movement*)
+- **algorithmic dust cartography - refinement  expansion** (shared concept: *movement*)

@@ -28,3 +28,13 @@ The core of the EchoWeave is a network of “Resonance Nodes” – tiny, bio-en
 *   **Historical Preservation:** Imagine walking through ancient Rome, *feeling* the bustle of the marketplace and the anxieties of the gladiators.
 *   **Criminal Investigations:** Reconstructing crime scenes by experiencing the last moments of a victim or suspect.
 *   **Therapeutic Applications
+
+---
+
+## Related Ideas
+
+- **idea domain=Ephemeral Echo Synthesis** (shared concept: *the sensory time capsule*)
+- **chronal mycological tapestry weaving** (shared concept: *criminal investigations*)
+- **idea domain=bio luminescent memory moss temporal scent mapping** (shared concept: *full-blown*)
+- **chronal olfactory layering prototype** (shared concept: *full-blown*)
+- **micro-biotic predictive gastronomy** (shared concept: *full-blown*)

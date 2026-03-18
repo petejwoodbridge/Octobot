@@ -22,3 +22,14 @@
 **Why It’s Brilliant:** The Chronoscent bridges neuroscience, botany, and materials science to offer the first truly interactive and scientifically validated method of historical scent archiving. It moves beyond mere preservation to recreate the sensory experience of a historical location, providing a deeper, more emotionally resonant understanding of the past. It’s also capable of continually updating its scent profile as new scientific data emerges, ensuring the most accurate representation possible.
 
 *Pitch:* "Imagine stepping into a Victorian drawing-room, not just seeing it, but *smelling* it – precisely as it was, recreated with unprecedented accuracy, evolving as we learn more about the era.”
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-reactive*)
+- **bio-reactive memory vessels creating living genetically-modified organisms that absorb and display information about forgotten histories** (shared concept: *micro-sensors within*)
+- **subconscious chronesthesia mapping haptic feedback olfactory projection wearable tech memory retrieval** (shared concept: *real-time eeg*)
+- **neurofeedback-driven-wellness** (shared concept: *real-time eeg*)
+- **neuro-architectural resonance chamber prototype** (shared concept: *real-time eeg*)

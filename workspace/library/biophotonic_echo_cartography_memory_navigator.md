@@ -22,3 +22,14 @@ The Memory Navigator goes beyond passive observation of history; it creates an a
 
 ## Elevator Pitch
 Step into the feelings of the past with a device that lets you literally *feel* history.
+
+
+---
+
+## Related Ideas
+
+- **biogenic chemical signatures olfactory projection haptic feedback memory-scapes pet grief biogenic mineral analysis** (shared concept: *memory-scape*)
+- **chronosomatic scent weaver** (shared concept: *form-fitting vest*)
+- **idea domain=Ephemeral Tactile Memory Capsules** (shared concept: *overview imagine*)
+- **chronal gustatory layering prototype** (shared concept: *overview imagine*)
+- **chronoscent concept** (shared concept: *overview imagine*)

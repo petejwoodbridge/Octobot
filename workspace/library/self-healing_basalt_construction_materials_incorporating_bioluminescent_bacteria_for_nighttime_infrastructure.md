@@ -21,3 +21,14 @@ Crucially, the *Bacillus subtilis* feeds on trace minerals within the basalt, ge
 LuminaStone is a self-repairing, self-illuminating infrastructure material. It eliminates the need for external streetlights, dramatically reduces energy consumption, and actively improves the structural integrity of buildings and roads. The bioluminescence isn't just aesthetic; it passively monitors the material’s health, signaling potential problems before they become critical. The biomineralization process creates a stronger, denser basalt composite than standard construction. It's a closed-loop system – the bacteria thrive, heal, and light, all powered by the basalt itself.
 
 *Pitch:* “Imagine streets that heal themselves and glow with a gentle, natural light – LuminaStone is the future of infrastructure.”
+
+
+---
+
+## Related Ideas
+
+- **neurofeedback terrariums engineered microbial colonies bioluminescent symbiosis temporal perception haptic feedback** (shared concept: *photobacterium phosphoreum*)
+- **and prototype a reactive symbiotic core utilizing engineered microbial colonies for processing and adaptation  a potentially disruptive technology for various applications** (shared concept: *photobacterium phosphoreum*)
+- **engineered microbial colonies for processing and adaptation  based on library-a reactive symbiotic core utilizing engineered microbial coloniesmd** (shared concept: *bacillus subtilis*)
+- **chrono-shifting materials engineer substances capable of momentarily altering their own age or state  briefly reverting to a younger form or accelerating decay** (shared concept: *low-frequency vibrational*)
+- **bio-luminescent shell structures for underwater city lighting and navigation** (shared concept: *closed-loop system*)

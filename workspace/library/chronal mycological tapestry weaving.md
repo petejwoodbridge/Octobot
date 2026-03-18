@@ -45,3 +45,14 @@ As the tapestry grows, it shifts color, emits subtle temperature changes, and ev
 ---
 *Original notes:*
 # Chronal Memory Weave – The Mnemosyne Loom
+
+
+---
+
+## Related Ideas
+
+- **idea domain = Ephemeral Object Resonance Mapping** (shared concept: *criminal investigations*)
+- **design a chrono-bloom capable of selectively aging-de-aging specific objects within a contained environment** (shared concept: *temporal stabilizer*)
+- **idea domain – “Chronal-Texture Mapping”** (shared concept: *historical tourism*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *historical tourism*)
+- **subconscious sensory habitat chronospatial weaver** (shared concept: *historical tourism*)

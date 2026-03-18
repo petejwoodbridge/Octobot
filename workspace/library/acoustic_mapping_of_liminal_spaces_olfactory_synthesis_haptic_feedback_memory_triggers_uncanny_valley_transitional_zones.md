@@ -21,3 +21,14 @@ Crucially, the system includes "memory trigger” algorithms; users can input pe
 **Why It’s Brilliant:** The Chronosynth isn't just about creating a creepy experience; it’s about understanding and controlling the human response to the uncanny. By combining acoustic mapping, olfactory synthesis, and haptic feedback, it delivers a deeply immersive, multi-sensory simulation of liminal spaces—a tool for architects, designers, therapists (to treat anxiety related to transitional spaces), and artists exploring the intersection of reality and perception.
 
 Pitch: “Imagine feeling the cold floor of an empty airport terminal, smelling the lingering ozone, and hearing whispers in the silence—it’s the closest you’ll ever get to truly inhabiting a memory.”
+
+
+---
+
+## Related Ideas
+
+- **temporal distortion effects in plants bioluminescence mechanisms in fungi haptic feedback systems for botanical interaction biospheres and controlled environments** (shared concept: *micro-haptic actuators*)
+- **biofeedback temporal rhythms synesthesia weather patterns olfactory stimulation haptic feedback color therapy** (shared concept: *haptic feedback*)
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *haptic feedback*)
+- **cephalopod camouflage scent dispersal microclimate control haptic feedback narrative projection** (shared concept: *haptic feedback*)
+- **neuro-resonant memory garden v1** (shared concept: *haptic feedback*)

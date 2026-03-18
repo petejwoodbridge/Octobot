@@ -21,3 +21,14 @@ Second, the scanner translates these vibrational patterns into a complex dataset
 The Palynological Echo moves beyond passive observation. It transforms fossilized remains into active, experiential data. It combines principles of bioacoustics, AI, and holographic projection to provide unprecedented insight into extinct ecosystems. This is far more accurate than current methods, offering nuanced data about paleo-environments and animal behavior. It's also inherently fascinating – bringing the past to life through smell.
 
 **Pitch:** “Imagine stepping back in time and *smelling* the world as a dinosaur did – that's the Palynological Echo.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Subconscious Architectural Mimicry - Haptic Amplification** (shared concept: *bio-acoustic resonance*)
+- **“chronal echo suit”** (shared concept: *actual smells*)
+- **neural-resonance landscaping** (shared concept: *bio-acoustic resonance*)
+- **the study of pointless enhancements** (shared concept: *bio-acoustic resonance*)
+- **bio-acoustic resonance mapping of personal objects micro-haptic feedback technology temperature modulation textiles** (shared concept: *bio-acoustic resonance*)

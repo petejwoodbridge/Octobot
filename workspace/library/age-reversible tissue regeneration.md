@@ -20,3 +20,14 @@ Chronoskin is groundbreaking because it offers *active* healing and regeneration
 
 ## Elevator Pitch
 “Chronoskin lets you heal instantly and turn back the clock, one glow at a time.”
+
+
+---
+
+## Related Ideas
+
+- **explore a symbiotic system utilizing genetically-engineered bioluminescent organisms to detect and rapidly solidify breaches with a self-healing polymer** (shared concept: *noctiluca scintillans*)
+- **t about stopping the breach it** (shared concept: *micro-robotics*)
+- **chronobiotic myco-sculpting** (shared concept: *overview chronoskin*)
+- **chronos concept** (shared concept: *overview chronoskin*)
+- **design a decentralized ai-controlled network of miniature robotic tentacles capable of autonomously patching and reinforcing damaged vessels** (shared concept: *bio-weave*)

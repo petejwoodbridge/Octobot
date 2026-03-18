@@ -37,3 +37,14 @@ This data feeds into a sophisticated AI, affectionately nicknamed “Coral,” w
 ---
 *Original notes:*
 ## The Echo Chamber: Personalized Temporal Ambient Design
+
+
+---
+
+## Related Ideas
+
+- **develop bio-acoustic translation devices that allow humans to hear the world as animals do mapping sonic landscapes** (shared concept: *bio-resonance mapping*)
+- **gadgets** (shared concept: *bio-resonance mapping*)
+- **idea domain=symbiotic fungal network memory gardens** (shared concept: *bio-resonance mapping*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *understand*)
+- **bio-luminescent mood lighting systems mimicking cephalopod camouflage responses to emotional stimuli** (shared concept: *understand*)

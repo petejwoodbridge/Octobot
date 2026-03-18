@@ -36,3 +36,14 @@ As a subject sleeps, Percy monitors their brainwaves, heart rate, and even subtl
 ---
 *Original notes:*
 ## The Somnium Weaver
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Chronobiological Cartography of Domestic Sounds** (shared concept: *chronobiological cartography*)
+- **t about stopping the breach it** (shared concept: *bio-acoustic dampening*)
+- **idea domain=Chronal Texture Synthesis** (shared concept: *therapeutic applications*)
+- **subconscious dream sculpting** (shared concept: *the somnium weaver*)
+- **the subtle** (shared concept: *the somnium weaver*)

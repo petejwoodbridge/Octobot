@@ -35,3 +35,14 @@ Okay, buckle up, because this is where the tentacles really come out! The core o
 ---
 *Original notes:*
 “Project: ChromaGut - A Bio-Harmonic Mood Weaver”
+
+
+---
+
+## Related Ideas
+
+- **idea domain - subconscious echo-cartography** (shared concept: *ethically-sourced*)
+- **idea domain = neuro-acoustic lichen cultivation** (shared concept: *ethically-sourced*)
+- **idea domain=temporal micro-erosion simulation chambers** (shared concept: *ethically-sourced*)
+- **idea domain - chromatic bio-sonification** (shared concept: *bio-acoustic transducer*)
+- **memory bloom concept** (shared concept: *bio-acoustic transducer*)

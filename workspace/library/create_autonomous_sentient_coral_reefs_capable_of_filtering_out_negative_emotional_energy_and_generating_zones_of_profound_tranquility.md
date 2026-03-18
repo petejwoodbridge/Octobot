@@ -23,3 +23,14 @@ Furthermore, each Bloom incorporates a ‘Memory Seed’ - a small, biodegradabl
 The Echo Bloom represents a radical shift from passive coping mechanisms to active emotional correction. It’s a self-regulating, decentralized system leveraging the power of biology and acoustics to address a fundamental, often unseen, aspect of human suffering. By actively filtering emotional negativity, it creates pockets of genuine tranquility, promoting mental health and fostering a sense of calm. The aesthetic of glowing coral adds a visually stunning element to these restorative spaces.
 
 *Pitch:* “Imagine a world where stress just… fades away – that’s what the Echo Bloom delivers, one beautiful, calming wave at a time.”
+
+
+---
+
+## Related Ideas
+
+- **lichen acoustics neuro-feedback soundscapes genetic modification of lichen temporal perception via sound** (shared concept: *self-regulating*)
+- **symbiotic sound sculpting engineer a bloom capable of subtly altering its own internal resonance to manipulate surrounding soundscapes  creating localized echoes and harmonic distortions** (shared concept: *self-regulating*)
+- **stellaris** (shared concept: *bio-engineered*)
+- **bio-integrated location anchors create self-contained adaptable ecosystems that establish persistent dynamic presence in remote or unstable environments** (shared concept: *bio-engineered*)
+- **haptic feedback biometric data loss grief acceptance creative exploration** (shared concept: *bio-engineered*)

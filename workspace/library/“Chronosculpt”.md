@@ -33,3 +33,14 @@ The core of Chronosculpt is a ‘Resonance Matrix’ – a swirling, iridescent 
 *   **Archaeological Research:**  Gain insights into the daily lives of ancient civilizations by experiencing their environments.
 *   **Artistic Expression:** Sculptors could utilize Chronosculpt to create incredibly dynamic installations, constantly shifting with temporal echoes.
 *   **Therapeutic Applications:** Reliving positive memories (with careful calibration, of course!) for individuals struggling
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Chronal Texture Synthesis** (shared concept: *therapeutic applications*)
+- **subconscious sensory habitat chronospatial weaver** (shared concept: *historical tourism*)
+- **“Chrono-Texture Weaver”** (shared concept: *therapeutic applications*)
+- **chronoscaping project proposal** (shared concept: *archaeological research*)
+- **“Chrono-Scent Chambers”** (shared concept: *bio-luminescent shell*)

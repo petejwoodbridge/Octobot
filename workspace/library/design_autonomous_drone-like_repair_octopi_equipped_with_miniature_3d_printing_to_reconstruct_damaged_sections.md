@@ -19,3 +19,14 @@ Each Shellshock drone is equipped with a miniature, high-resolution 3D printer u
 Shellshock combines biomimicry (the octopus’s incredible dexterity and regenerative abilities) with cutting-edge 3D printing technology and AI-driven swarm intelligence. It's a self-healing ecosystem, dramatically reducing environmental impact compared to traditional repair methods and offering unparalleled adaptability to dynamic marine conditions. Furthermore, the use of algal-based bio-concrete is carbon-negative and sustainable. 
 
 **Pitch:** “Imagine a future where broken piers and damaged pipelines simply… fix themselves – Shellshock makes that a reality.”
+
+
+---
+
+## Related Ideas
+
+- **design a swarm of miniature ai-controlled repair octopi capable of autonomously patching breaches and reinforcing weakened areas** (shared concept: *shellshock shellshock*)
+- **deployable octopus-inspired hydraulic limbs for rapid damage assessment and targeted reinforcement in unstable zones** (shared concept: *time-consuming manual*)
+- **idea domain = Personalized “Temporal Resonance” Audio-Haptic Sculpting for Historical Emotional Immersion** (shared concept: *micro-sensors that*)
+- **weaver** (shared concept: *micro-sensors that*)
+- **idea domain – “Synesthetic Cartography of Historical Weather Patterns”** (shared concept: *micro-sensors that*)

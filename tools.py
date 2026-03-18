@@ -172,9 +172,16 @@ def save_research(topic: str, summary: str) -> str:
     Save a research summary to workspace/library/<topic_slug>.md.
     Appends to the file if it already exists.
     Returns the relative filename (e.g. "library/my_topic.md").
+    Rejects empty or structureless content.
     """
     # Strip leading/trailing quotes the LLM sometimes wraps output in
-    summary = summary.strip().strip('"').strip()
+    summary = summary.strip().strip('"').strip('\u201c').strip('\u201d').strip()
+
+    # Reject if content is too short or has no real substance
+    if len(summary) < 100:
+        raise ValueError(f"Research content too short ({len(summary)} chars) — not saving")
+    if "## " not in summary:
+        raise ValueError("Research content lacks heading structure — not saving")
 
     slug = topic.lower().replace(" ", "_").replace("/", "-")
     slug = "".join(c for c in slug if c.isalnum() or c in "_-")

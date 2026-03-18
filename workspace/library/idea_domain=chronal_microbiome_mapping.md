@@ -28,3 +28,14 @@ Okay, hold onto your seaweed hats! CMM utilizes genetically modified *Luminospor
 *   **Historical Health Tracking:**  Understanding the impact of past dietary habits or environmental exposures on current health.
 
 **Why It’
+
+
+---
+
+## Related Ideas
+
+- **idea domain - litho-sonification, textile integration** (shared concept: *real-time visualization*)
+- **sentient material fabrication engineer self-assembling materials capable of adapting to and responding to human emotion and intention** (shared concept: *bio-luminescent*)
+- **idea domain = “kinesthetic chronal mapping”** (shared concept: *real-time visualization*)
+- **Kinesthetic Cartography of Forgotten Skills – Idea Pitch** (shared concept: *biometric integration*)
+- **predicting localized seismic events through real-time geological stress mapping and ai-driven anomaly detection** (shared concept: *real-time visualization*)

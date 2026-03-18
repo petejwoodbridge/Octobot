@@ -23,3 +23,14 @@ Furthermore, the terracotta itself acts as a thermal mass, passively regulating 
 LuminaTerra combines beautiful, handcrafted artistry with cutting-edge environmental monitoring. It offers a tangible, captivating method of visualizing complex ecological interactions, providing a far richer understanding of biodiversity than traditional methods. The bioluminescent map is not just visually stunning; it’s dynamically updating, reflecting the real-time state of the micro-ecosystem and acting as a subtle, elegant alert system if imbalances occur. The ceramic vessels can be deployed in schools, research labs, or even private collections, offering a unique blend of scientific observation and aesthetic appreciation.
 
 *Pitch:* “Imagine a tiny, glowing rainforest in your hand – it’s LuminaTerra, and it’s showing you the future of ecological understanding.”
+
+
+---
+
+## Related Ideas
+
+- **neuro gastronomic fabric** (shared concept: *pressure-sensitive sensors*)
+- **bio-integrated control explore using genetically modified octopus neurons to directly translate thought into core commands bypassing traditional input methods** (shared concept: *pressure-sensitive sensors*)
+- **bioluminescent invertebrate behavior biofeedback integration miniature ecosystem design shape-memory alloy micro-habitats** (shared concept: *micro-ecosystem*)
+- **micro geological echo resonance gardening concept** (shared concept: *micro-ecosystem*)
+- **ephemeral cartography of transient urban micro-ecosystems** (shared concept: *micro-ecosystem*)

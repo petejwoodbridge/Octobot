@@ -22,3 +22,14 @@ The Mnemosyne Bloom transcends simple memory recall; it’s an active engagement
 
 ## Elevator Pitch
 Unlock your memories and relive your past with the living archive of the Mnemosyne Bloom.
+
+
+---
+
+## Related Ideas
+
+- **moss cultivation techniques shape-memory textiles biofeedback sensors color-changing materials time perception** (shared concept: *genetically-modified*)
+- **circadian rhythms textile integration moss colonies bio-acoustic output** (shared concept: *bryum argenteum*)
+- **automated moss cultivation and sensory interpretation** (shared concept: *bryum argenteum*)
+- **bloom is a** (shared concept: *bryum argenteum*)
+- **idea domain = symbiotic moss architectural regulators** (shared concept: *genetically-modified*)

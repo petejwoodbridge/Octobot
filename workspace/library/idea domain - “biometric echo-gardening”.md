@@ -39,3 +39,14 @@ Crucially, the plants aren’t just pretty; they’re *symbiotic*. The projected
 ---
 *Original notes:*
 ## EchoBloom: The Symbiotic Projection Pod
+
+
+---
+
+## Related Ideas
+
+- **idea domain - biophotonic echo-gardening** (shared concept: *interactive art installations*)
+- **investigate novel materials for creating calming sensory experiences** (shared concept: *haptic feedback system*)
+- **geological empathy mapping** (shared concept: *haptic feedback system*)
+- **historical fermentation processes microbial ecology haptic feedback olfactory simulation bioluminescence abandoned breweries** (shared concept: *haptic feedback system*)
+- **idea domain - sonogenetic memory weaving** (shared concept: *haptic feedback system*)

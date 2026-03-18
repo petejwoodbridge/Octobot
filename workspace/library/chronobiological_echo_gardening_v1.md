@@ -22,3 +22,14 @@ EchoBloom isn't just a display; it’s a profoundly experiential technology. By 
 
 ## Elevator Pitch
 Step into the past and *feel* the legacy of extinct flora with EchoBloom.
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *micro-muscle movements*)
+- **mycological chronesthesia mapping  memory enhancement  wearable tech** (shared concept: *micro-muscle movements*)
+- **subconscious olfactory archiving** (shared concept: *bio-ceramic*)
+- **lithic anamnesis chronometric handbook** (shared concept: *bio-ceramic*)
+- **subconscious scent layering device** (shared concept: *bio-ceramic*)

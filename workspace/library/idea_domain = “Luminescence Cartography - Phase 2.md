@@ -37,3 +37,14 @@ This echo is then processed by a central hub, which uses advanced AI – affecti
 **Why It's Extraordinary**
 
 Luminescence Cartography Phase 2 isn’t just an invention; it’s a portal
+
+
+---
+
+## Related Ideas
+
+- **idea domain - chromatic bio-sonification** (shared concept: *real-time data streaming*)
+- **idea domain = “sensory echo-mapping of fungal mycelial networks”** (shared concept: *real-time data streaming*)
+- **idea domain = aquatic behavioral interfaces** (shared concept: *marine conservation*)
+- **bio-sonorous lichen mapping – devices** (shared concept: *artistic installations*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *artistic installations*)

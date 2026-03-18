@@ -29,3 +29,13 @@ These echoes are then translated into synesthetic data – color, sound, scent, 
 
 *   **Urban Archeology Expeditions:**  Instead of painstakingly sifting through rubble, explorers directly experience the past.
 *   **Historical Tourism:** Imagine strolling through a haunted alleyway and *feeling
+
+---
+
+## Related Ideas
+
+- **adaptive microclimate suits incorporating bio-luminescent algae for personalized light and temperature regulation** (shared concept: *genetically-modified*)
+- **idea domain = Ephemeral Object Resonance Mapping** (shared concept: *bio-luminescent*)
+- **idea domain – “Ephemeral Cartography of Social Echoes”** (shared concept: *genetically-modified*)
+- **“Chronosculpt”** (shared concept: *historical tourism*)
+- **chromatic heartbeat  cephalopod camouflage  biofeedback textiles  emotional expression through bioluminescence** (shared concept: *glow-in*)

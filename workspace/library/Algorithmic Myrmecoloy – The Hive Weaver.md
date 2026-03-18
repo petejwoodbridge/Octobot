@@ -20,3 +20,14 @@ The Hive Weaver represents a truly novel form of ecological research and empathe
 
 ## Elevator Pitch
 Experience the mind of an ant colony – and help them stay safe – with the Hive Weaver.
+
+
+---
+
+## Related Ideas
+
+- **each panel is** (shared concept: *bio-integrated processor*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *bio-integrated processor*)
+- **develop miniature bio-luminescent textiles woven with octopus silk for dynamic lighting and camouflage** (shared concept: *bio-integrated processor*)
+- **smart fabric integration explore patches that dynamically adjust to environmental conditions  color-changing for camouflage temperature regulation or even generating small amounts of energy** (shared concept: *bio-integrated processor*)
+- **large-scale modular weaving can structures built by swarms of micro-robots creating shifting living tapestries** (shared concept: *real-time sonic*)

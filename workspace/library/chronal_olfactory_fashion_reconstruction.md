@@ -18,3 +18,14 @@ Threadtime transcends simple fragrance replication. It’s a fully immersive sen
 
 ## Elevator Pitch
 Step into history – one breathtaking scent at a time.
+
+
+---
+
+## Related Ideas
+
+- **pressure sensor technology combined with micro-climate control systems** (shared concept: *micro-climate control*)
+- **filament** (shared concept: *bio-luminescence*)
+- **chronobiological textile embroidery prototype** (shared concept: *bio-luminescence*)
+- **neuro-scent synthesis rem sleep voc analysis microbial scent production bio-luminescent chambers** (shared concept: *bio-luminescence*)
+- **idea domain=Symbiotic ‘Chrono-Bloom’ Gardens** (shared concept: *bio-luminescence*)

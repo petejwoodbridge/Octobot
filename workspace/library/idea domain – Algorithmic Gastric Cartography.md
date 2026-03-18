@@ -1,1 +1,11 @@
-“The Somnambulist’s Atlas – A Bio-Responsive Scent-Sculpture” – *A wearable device, resembling a stylized, iridescent jellyfish, that creates a shifting, three-dimensional olfactory landscape based on the user’s real-time physiological data. Utilizing advanced microfluidics and biofeedback sensors, it translates subtle shifts in gastric muscle contractions and salivary composition into a curated sequence of scents, projected via precisely controlled micro-diffusion. The jellyfish 'atlas’ responds to the user’s emotional state, triggering calming lavender during anxiety, invigorating citrus during focus, or even a nostalgic blend of childhood memories during moments of reflection. The intensity and complexity of the scentscape can be dynamically adjusted through haptic feedback – gentle pulsations mimicking the rhythmic contractions of the stomach. Includes a companion app for users to explore the correlations between their internal states and the generated scent profiles, encouraging a deeper understanding of their own emotional landscape.*
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **for example** (shared concept: *micro-diffusion*)
+- **Kinesthetic Dream Sculpting** (shared concept: *micro-diffusion*)
+- **idea domain = geospatial synesthesia mapping** (shared concept: *micro-diffusion*)
+- **bio-acoustic projection haptic feedback fungal manipulation temporal simulation geological epochs** (shared concept: *micro-diffusion*)
+- **neuro-aromatherapy for trauma recovery  synesthesia mapping  personalized scent profiles** (shared concept: *micro-diffusion*)

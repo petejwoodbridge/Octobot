@@ -110,7 +110,11 @@ def _check_knowledge() -> list[str]:
             summary = _summarise_knowledge(rel_path, content)
             title = rel_path.split("/")[-1].replace(".md", "").replace(".txt", "").replace(".json", "")
             title = title.replace("_", " ").replace("-", " ").strip()
-            tools.save_research(title, summary)
+            try:
+                tools.save_research(title, summary)
+            except ValueError as exc:
+                _log(f"⚠️ Rejected summary for {title}: {exc}")
+                continue
             _log(f"📚 Saved knowledge summary: {title}")
 
             # Score: summary created
@@ -495,8 +499,28 @@ def _loop_worker() -> None:
         chains = scoring.get_all_chains()
         achievements = scoring.get_achievements()
         score = stats.get("knowledge_score", 0)
+        research_count = stats.get("research_count", 0)
+
+        # Sync stats with actual library if they've drifted
+        if research_count < lib_count:
+            mem.set_game_stat("research_count", lib_count)
+        if stats.get("knowledge_count", 0) < lib_count:
+            mem.set_game_stat("knowledge_count", lib_count)
+        # Recalculate score from library size if it seems too low
+        expected_score = lib_count * scoring.SCORE_SUMMARY
+        if score < expected_score // 2:
+            scoring.add_score(expected_score - score, f"Score sync: {lib_count} ideas in vault")
+            score = scoring.get_score()
+            _log(f"📊 Score synced to match {lib_count} ideas in vault: {score}")
+
+        # Check achievements against corrected stats
+        newly = scoring.check_achievements()
+        if newly:
+            for a in newly:
+                _log(f"🏆 Achievement unlocked: {a['name']} — {a['desc'][:60]}")
+
         _log(f"🐙 OctoBot wakes up — restored {lib_count} ideas in the vault, "
-             f"{len(chains)} chains, {len(achievements)} badges, score={score}")
+             f"{len(chains)} chains, {len(achievements) + len(newly)} badges, score={score}")
     except Exception:
         _log("🐙 OctoBot wakes up and stretches all eight arms. The idea machine is ONLINE!")
 

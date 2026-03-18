@@ -37,3 +37,14 @@ The data source – a topographical map, a 3D scan of an environment, or even se
 ---
 *Original notes:*
 “## The Null-Touch: A Somatosensory Echo Chamber
+
+
+---
+
+## Related Ideas
+
+- **idea domain - kinesthetic palimpsests** (shared concept: *multi-sensory layering*)
+- **biodegradable cartridges for seed dispersal  mimicking natural dispersal methods with customizable seed mixes** (shared concept: *micro-climates*)
+- **explore utilizing targeted localized electromagnetic pulses to disrupt and temporarily immobilize breaching aquatic lifeforms offering a non-lethal intervention** (shared concept: *re-maps*)
+- **neural plasticity phantom limb therapy haptic feedback micro-vibrations temperature regulation neurostimulation biofeedback artificial intelligence personalized medicine** (shared concept: *temperature modulation*)
+- **chronal scent archiving techniques fractal scent mapping biofeedback integration extinct species voc analysis** (shared concept: *micro-sensors*)

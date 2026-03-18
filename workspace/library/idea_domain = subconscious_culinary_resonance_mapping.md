@@ -33,3 +33,14 @@ Okay, buckle up! It’s delightfully complicated, of course! The core of ChromaT
 
 *   **Personalised Nutrition:** Tailoring meals to *your* specific emotional and physiological needs – feeling glum? ChromaTaste will recommend a vibrant, mood-boosting meal!
 *   **
+
+
+---
+
+## Related Ideas
+
+- **idea domain - “Bio-acoustic geomorphological empathy chambers”** (shared concept: *resonance engine*)
+- **“Chronal Aroma Synthesis”** (shared concept: *something*)
+- **design a neural interface that allows a human operator to feel the breachs pressure and flow directing a directed energy beam for precise instantaneous solidification** (shared concept: *something*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *understand*)
+- **bio-luminescent mood lighting systems mimicking cephalopod camouflage responses to emotional stimuli** (shared concept: *understand*)

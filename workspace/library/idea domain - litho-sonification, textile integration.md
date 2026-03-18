@@ -39,3 +39,14 @@ Now, the magic: the data from the geophones is fed into a tiny, bio-integrated p
 ---
 *Original notes:*
 ```## EchoStone: The Geophone Garment
+
+
+---
+
+## Related Ideas
+
+- **music** (shared concept: *real-time visualization*)
+- **olfactory mimicry for geological strata** (shared concept: *haptic feedback system*)
+- **idea domain – “Ephemeral geomorphological mimicry”** (shared concept: *art installations*)
+- **idea domain = “kinesthetic chronal mapping”** (shared concept: *real-time visualization*)
+- **idea domain - “Bio-acoustic geomorphological empathy chambers”** (shared concept: *understand*)

@@ -18,3 +18,14 @@ Gastric Echo bridges the gap between science and sensation, offering a profoundl
 
 ## Elevator Pitch
 “Taste your memories – literally.”
+
+
+---
+
+## Related Ideas
+
+- **“chronal memory synth”** (shared concept: *multi-sensory experience*)
+- **“stochastic somatosensory mimicry project”** (shared concept: *multi-sensory experience*)
+- **chronal echo sculpting device** (shared concept: *multi-sensory experience*)
+- **neural-resonance landscaping** (shared concept: *translate*)
+- **idea domain=chromatic resonance harvesting** (shared concept: *translate*)

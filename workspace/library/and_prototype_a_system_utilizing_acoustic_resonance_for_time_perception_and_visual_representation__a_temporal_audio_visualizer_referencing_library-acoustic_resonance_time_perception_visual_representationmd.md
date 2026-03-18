@@ -24,3 +24,11 @@ Chronosync is a personal temporal audio-visualizer comprised of three core compo
 Chronosync bypasses the limitations of traditional timekeeping by directly translating subjective temporal experience into a visual and auditory form. It provides immediate, intuitive feedback on how our bodies *actually* perceive time, offering a way to consciously influence our experience. It's not just a clock; it’s a personal time interpreter, empowering the user to recognize their emotional triggers that distort time perception and practice mindfulness techniques to realign. The beauty lies in the deeply personal and non-verbal data feedback.
 
 **Pitch:** "Imagine seeing time slow down when you need it to – Chronosync lets you master your perception, one resonant pulse at a time."
+
+
+---
+
+## Related Ideas
+
+- **temporal distortion mitigation  bio-acoustic and thermal feedback** (shared concept: *chronosync*)
+- **idea domain=chronal soil cartography** (shared concept: *chronosync*)

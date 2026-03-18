@@ -23,3 +23,14 @@ Furthermore, the dome maintains a dynamically controlled micro-environment: humi
 The MycoSerene Pod combines cutting-edge bio-engineering with established anxiety reduction techniques. It moves beyond passive scent diffusion by creating an *active*, responsive environment.  The bio-reactive fungal network isn't just releasing aromas; it’s fundamentally influencing the user’s physiological state in real-time. This synergistic approach leverages the natural calming properties of fungi alongside advanced sensor technology and AI, offering a uniquely personalized and deeply restorative experience. It taps into the primal human connection to nature, while simultaneously incorporating futuristic technology. 
 
 **Pitch:** "Imagine stepping into a space that not only reduces your anxiety but actually learns to soothe you, one breath at a time – that’s the MycoSerene Pod."
+
+
+---
+
+## Related Ideas
+
+- **chromatic lichen-symbiotic sleep architecture** (shared concept: *non-invasive eeg*)
+- **temporal color psychology chromatic resonance hydrogel kinetics biofeedback color modulation** (shared concept: *non-invasive eeg*)
+- **bio-acoustic stress monitoring and fungal response** (shared concept: *pleurotus ostreatus*)
+- **bio-acoustic sensors for fungal communication  miniature ecosystems for biological research** (shared concept: *psilocybe cubensis*)
+- **Ephemeral Tactile Cartography of Childhood Dreams** (shared concept: *micro-sensors monitors*)

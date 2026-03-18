@@ -20,3 +20,14 @@ ChronoScent is a completely novel approach to memory retrieval, leveraging the e
 
 ## Elevator Pitch
 “Relive your past, one scent at a time – ChronoScent unlocks your memories, powered by your own gut.”
+
+
+---
+
+## Related Ideas
+
+- **temporal olfactory mapping textile biosensors sonic vibration analysis scent synthesis algorithms** (shared concept: *chronoscent: the memory weaver*)
+- **microbial scent synthesis techniques bio-scaffolding for olfactory delivery temporal scent perception studies** (shared concept: *chronoscent: the memory weaver*)
+- **Symbiotic Microbial Scent Synthesis** (shared concept: *chronoscent: the memory weaver*)
+- **idea domain = adaptive olfactory layering** (shared concept: *chronoscent: the memory weaver*)
+- **“Chronal Aroma Synthesis”** (shared concept: *the memory weaver*)

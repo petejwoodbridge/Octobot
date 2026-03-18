@@ -33,3 +33,14 @@ The scanner detects subtle shifts in your brainwaves, heart rate variability, an
 *   **Creative Inspiration:** Artists and writers can use it to unlock hidden themes and imagery from their subconscious.
 *   **Personal Development:**  Users can identify and address negative thought patterns by literally ‘mapping’ their emotional landscapes.
 *   **Advanced Research:** Studying the neural correlates of consciousness and exploring the nature of
+
+
+---
+
+## Related Ideas
+
+- **Ephemeral Memory Cartography** (shared concept: *creative inspiration*)
+- **Bio-acoustic Memory Anchor Prototype** (shared concept: *creative inspiration*)
+- **idea domain=biophotonic dream mapping** (shared concept: *creative inspiration*)
+- **subconscious dream sculpting** (shared concept: *creative inspiration*)
+- **Subconscious Terrain Mapping – Devices** (shared concept: *creative inspiration*)

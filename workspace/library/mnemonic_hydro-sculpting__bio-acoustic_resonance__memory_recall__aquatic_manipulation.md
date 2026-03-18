@@ -22,3 +22,14 @@ The combination of these elements creates a deeply immersive, multi-sensory expe
 **Why It's Brilliant:** The Memory Reef seamlessly blends neuroscience, hydrodynamics, and bio-acoustics to create a fundamentally new approach to memory recall. It’s not just about associating information; it’s about recreating the *experience* of the memory itself, unlocking vivid and detailed recollections with unprecedented effectiveness and offering a profoundly calming, meditative experience.
 
 *Pitch:* “Imagine instantly recalling your childhood summers, not just remembering them, but *feeling* them again – that's the Memory Reef.”
+
+
+---
+
+## Related Ideas
+
+- **lithospheric dream weaver** (shared concept: *multi-sensory experience*)
+- **subconscious scent layering loomsync** (shared concept: *bio-acoustic resonance*)
+- **automated moss cultivation and sensory interpretation** (shared concept: *bio-acoustic resonance*)
+- **idea domain=Ephemeral Cartography of Lost Echoes - Dream Weaver** (shared concept: *bio-acoustic resonance*)
+- **seismic empathy matrices** (shared concept: *bio-acoustic resonance*)

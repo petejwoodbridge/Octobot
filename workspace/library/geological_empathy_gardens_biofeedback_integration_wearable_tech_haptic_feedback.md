@@ -17,3 +17,14 @@ When your biofeedback indicates stress or a disconnect with the environment, the
 **Why It’s Brilliant:** The StoneSong creates a profound and visceral connection to the planet’s past. It transforms learning about geology into an embodied experience, reducing anxiety and promoting mindful engagement with the natural world. The use of natural materials and gentle haptic feedback makes the technology feel deeply integrated and organic, rather than sterile and clinical. The system’s adaptability, fueled by AI, makes it accessible and valuable for diverse environments – from urban gardens to remote wilderness areas. 
 
 *Pitch:* "Imagine feeling the ancient heartbeat of the Earth – that’s what the StoneSong delivers."
+
+
+---
+
+## Related Ideas
+
+- **auditory cartography project** (shared concept: *custom-fitted*)
+- **sonorous fungal geomorphing** (shared concept: *custom-fitted*)
+- **cephalopod camouflage scent dispersal microclimate control haptic feedback narrative projection** (shared concept: *custom-fitted*)
+- **temporal gastrophysics prototype** (shared concept: *custom-fitted*)
+- **geological echo scent layering** (shared concept: *custom-fitted*)

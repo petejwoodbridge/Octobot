@@ -21,3 +21,14 @@ Crucially, the system integrates with the city’s existing drainage network. Th
 LuminaBloom isn’t just lighting; it's an ecological artwork. It transforms urban waterways and surfaces into breathtaking displays of natural light while simultaneously addressing energy consumption and reducing plastic waste. The *Noctiluca* colonies are completely harmless and self-regulating, and the entire system operates on minimal energy. Furthermore, the project fosters a deeper connection between citizens and the natural world, promoting awareness of marine ecosystems and sustainable practices. 
 
 **Pitch:** “Imagine a city that glows with the magic of the ocean – LuminaBloom turns our streets into living constellations.”
+
+
+---
+
+## Related Ideas
+
+- **designing self-contained mobile ecosystems housing noctiluca and other deep-sea organisms for advanced research and potential terraforming applications** (shared concept: *noctiluca scintillans*)
+- **bio-reactive memory vessels creating living genetically-modified organisms that absorb and display information about forgotten histories** (shared concept: *genetically-engineered strain*)
+- **develop bioluminescent messaging systems using genetically modified deep-sea blooms for short-range data transmission** (shared concept: *noctiluca scintillans*)
+- **bio-luminescent algae-based street lighting systems optimizing for efficiency and natural color palettes** (shared concept: *noctiluca scintillans*)
+- **developing a subterranean bio-luminescent habitat network utilizing geothermal energy and genetically engineered mineral-extracting organisms** (shared concept: *self-regulating*)

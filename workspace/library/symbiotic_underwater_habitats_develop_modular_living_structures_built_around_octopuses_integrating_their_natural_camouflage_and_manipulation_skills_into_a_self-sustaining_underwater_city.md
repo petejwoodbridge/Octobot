@@ -15,3 +15,14 @@ The Weaver’s primary task is to manipulate the Bio-Weave, extending and contra
 **Why It's Brilliant:** The Bio-Weave transforms habitat construction from a destructive process into a collaborative, self-sustaining ecosystem. It leverages the octopus's innate abilities in a genuinely useful way, creating a structure that is both incredibly strong and aesthetically beautiful. The symbiotic relationship provides structural integrity, light, and generates a unique, living urban landscape. It’s a marriage of biomimicry, advanced robotics, and a little bit of octopus magic.
 
 *Pitch:* “Imagine a city built by intelligent octopuses – it’s the future of underwater living, and frankly, it’s *astonishing*.”
+
+
+---
+
+## Related Ideas
+
+- **adaptive microclimate suits incorporating bio-luminescent algae for personalized light and temperature regulation** (shared concept: *bio-polymer mesh*)
+- **sentient bloom-like bio-robots capable of artistic expression and symbiotic interaction with marine life** (shared concept: *bio-polymer mesh*)
+- **idea domain=lithovore sensory symbiosis wearable** (shared concept: *bio-polymer mesh*)
+- **chronobiological algae scent textiles** (shared concept: *bio-polymer mesh*)
+- **bio-luminescent weave can for underwater navigation and artistic displays** (shared concept: *bio-polymer mesh*)

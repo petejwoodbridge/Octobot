@@ -25,3 +25,14 @@ ETA utilizes a network of miniaturized, bio-luminescent “Chronosensors” – 
 *   **Educational Tourism:** Imagine students *feeling* the construction of Stonehenge or the weight of a pharaoh’s sarcophagus!
 *   **Archaeological Research:** Providing researchers with unprecedented tactile data for detailed analysis and reconstruction.
 *   **Restoration & Preservation:** Allows experts to precisely replicate the feel of damaged artifacts
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Kinesthetic Archeology** (shared concept: *archaeological research*)
+- **idea domain – “geo-sensory weaving** (shared concept: *bio-luminescent octopi*)
+- **chronoscaping project proposal** (shared concept: *archaeological research*)
+- **t about stopping the breach it** (shared concept: *temporal resonance mapping*)
+- **idea domain = “Temporal Gastronomic Cartography”** (shared concept: *educational tourism*)

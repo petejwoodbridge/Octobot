@@ -1,1 +1,7 @@
-“The Echo Stone – A wearable device that translates subterranean seismic activity into a personalized symphony of haptic vibration and curated olfactory experiences. Imagine: a sudden tremor beneath your feet triggering a cascade of pulsing vibrations across your skin, accompanied by a phantom scent of ancient moss and volcanic minerals. The Echo Stone doesn't just *show* you the earth's movements; it makes you *feel* them – a visceral, evolving narrative of geological time. It’s like having a grumpy, rumbling planet whispering secrets directly into your bones! The device analyzes data from subsurface sensors—gravimetric fluctuations, piezoelectric resonance—and then maps these readings to both haptic patterns and synthetic scents. We could even add a subtle temperature shift!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **idea domain=Photic Osteo-Cartography** (shared concept: *the echo stone*)

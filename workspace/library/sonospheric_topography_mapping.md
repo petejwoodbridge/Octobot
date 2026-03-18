@@ -35,3 +35,14 @@ Here’s the juicy bit! We’ve got a network of strategically placed ‘Echo Ha
 **Why It’s Extraordinary**
 
 Honestly, this is *groundbreaking*!  We’re not just mapping the earth; we're listening to its soul!  STM transcends traditional mapping limitations, offering a completely new perspective – a sonic
+
+
+---
+
+## Related Ideas
+
+- **subconscious dream sculpting** (shared concept: *ultra-low frequency*)
+- **bio-acoustic modeling extinct animal vocalizations shape-memory alloy textile haptic projection** (shared concept: *self-assembling*)
+- **hydroacoustic mapping of subterranean cave systems algorithmic modeling of seismic vibrations atmospheric resonance binaural headphones haptic floor projections** (shared concept: *ultra-low frequency*)
+- **bio-acoustic cartography subconscious neural activity soundscapes immersive experiences** (shared concept: *ultra-low frequency*)
+- **idea domain=Luminiferous Echo Mapping** (shared concept: *echo harvesters*)

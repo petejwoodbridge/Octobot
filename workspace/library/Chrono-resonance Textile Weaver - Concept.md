@@ -37,3 +37,14 @@ This isn’t
 ---
 *Original notes:*
 **Project: TempusTextiles – The Chrono-Resonance Weaver**
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Symbiotic Pattern Weaving** (shared concept: *bio-luminescent weaving*)
+- **Symbiotic Skin Weaving – Project** (shared concept: *therapeutic textiles*)
+- **subconscious textile synthesis** (shared concept: *luxury fashion*)
+- **“Chronal Stitch”** (shared concept: *luxury fashion*)
+- **idea domain - Automated lichen-based biodata fabric synthesis** (shared concept: *luxury fashion*)

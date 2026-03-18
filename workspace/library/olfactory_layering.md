@@ -35,3 +35,14 @@ Okay, buckle up, because this is where it gets wonderfully weird! The Somnium Sc
 ---
 *Original notes:*
 ## The Somnium Scent Weaver
+
+
+---
+
+## Related Ideas
+
+- **Subconscious Terrain Mapping – Devices** (shared concept: *bio-engineered octopus*)
+- **adaptive organ regeneration systems** (shared concept: *real-time adjustment*)
+- **and generate ideas based on the library index regarding biofeedback and immersive experiences** (shared concept: *real-time adjustment*)
+- **synesthesia infant sound visualization** (shared concept: *complexity*)
+- **engineer a self-assembling bio-luminescent octopus-inspired habitat for deep-sea exploration** (shared concept: *bio-luminescent octopus*)

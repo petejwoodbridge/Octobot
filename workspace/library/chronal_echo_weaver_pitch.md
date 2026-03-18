@@ -18,3 +18,14 @@ The Chrono-Bloom Weaver transcends passive observation, offering a truly interac
 
 ## Elevator Pitch
 Re-live your most cherished moments – and understand why you feel the way you do – with the Chrono-Bloom Weaver.
+
+
+---
+
+## Related Ideas
+
+- **chronobiological perfume garden** (shared concept: *bio-luminescent matrix*)
+- **“fungi art engine”** (shared concept: *real-time biometric*)
+- **neuro-scent synthesis rem sleep voc analysis microbial scent production bio-luminescent chambers** (shared concept: *bio-luminescent matrix*)
+- **idea domain=personalized echo loci fabrication** (shared concept: *real-time biometric*)
+- **biometric resonance mapping combined with olfactory projection and shape-memory alloy micro-sculpting** (shared concept: *real-time biometric*)

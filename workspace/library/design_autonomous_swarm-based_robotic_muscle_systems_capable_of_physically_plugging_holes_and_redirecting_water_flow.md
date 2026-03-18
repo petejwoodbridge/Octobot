@@ -21,3 +21,14 @@ Nereus can then manipulate the weave's density and direction, creating a tempora
 The Aquarian Weave moves beyond reactive water management. It’s a completely adaptable, localized defense system. The swarm’s intelligence allows it to learn and react to the specific topography and pressure dynamics of the affected area, creating a dynamic, self-repairing barrier. The use of biocompatible materials minimizes environmental impact, and the visual feedback offers unparalleled situational awareness. The combination of gecko-inspired adhesion and pneumatic expansion is a novel approach to physical closure, dramatically accelerating response times and mitigating damage. 
 
 **Pitch:** "Imagine a network of tiny, glowing threads instantly sealing your flood damage – it’s the Aquarian Weave, and it's about to rewrite disaster response."
+
+
+---
+
+## Related Ideas
+
+- **design autonomous swarm-based robotic eels equipped with sonic disruptors to disorient and repel marine intruders** (shared concept: *swarm-based robotic*)
+- **t about stopping the breach it** (shared concept: *self-sealing polymer*)
+- **self-assembling thread-based robotic swarms capable of manipulating objects based on sensed vibrations** (shared concept: *bio-luminescence allows*)
+- **programmable weave can that morphs into complex tools and structures on demand** (shared concept: *bio-luminescence allows*)
+- **design autonomous swarm-based robotic repair octopi capable of self-assembling defenses and proactively sealing breaches** (shared concept: *swarm-based robotic*)

@@ -20,3 +20,14 @@ Crucially, the neural network learns from every event, continually refining its 
 **Why It’s Brilliant:** This isn’t just a repair system; it’s a living, breathing extension of the ship itself, offering continuous protection and eliminating the reliance on bulky, slow-response equipment. The decentralized neural network makes it incredibly resilient, and the adaptive morphing capability provides unprecedented flexibility in hostile environments. 
 
 *Pitch:* “Imagine a spaceship that heals itself, learns from every challenge, and anticipates danger – that’s the Bio-Weave.”
+
+
+---
+
+## Related Ideas
+
+- **design a decentralized ai-controlled network of miniature robotic tentacles capable of autonomously patching and reinforcing damaged vessels** (shared concept: *bio-weave*)
+- **age-reversible tissue regeneration** (shared concept: *bio-weave*)
+- **develop a bio-adhesive sealant mimicking octopus skin instantly bonding to porous materials to physically block leaks** (shared concept: *bio-weave*)
+- **symbiotic underwater habitats develop modular living structures built around octopuses integrating their natural camouflage and manipulation skills into a self-sustaining underwater city** (shared concept: *bio-weave*)
+- **develop bio-adhesive living sealant mimicking octopus camouflage to instantly patch structural weaknesses** (shared concept: *bio-weave*)

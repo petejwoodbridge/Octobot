@@ -32,3 +32,14 @@ It’s wonderfully complicated, of course! We start with the EchoJelly – you�
 ---
 *Original notes:*
 ## EchoJelly: The Sentient Memory Weaver
+
+
+---
+
+## Related Ideas
+
+- **seismic empathy mapping** (shared concept: *multi-sensory experience*)
+- **idea domain=emotional chronesthesia** (shared concept: *multi-sensory experience*)
+- **develop a bio-luminescent self-repairing suit for deep-sea exploration incorporating octopus camouflage abilities** (shared concept: *genetically-modified octopus*)
+- **idea domain=Precognitive Synesthetic Cartography of Urban Decay** (shared concept: *bio-luminescent*)
+- **olfactory time capsules** (shared concept: *quantum entanglement processor*)

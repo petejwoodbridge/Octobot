@@ -33,3 +33,13 @@ It's like a conversation between the user and the moss, guided by the echoes of 
 
 *   **Therapeutic Memory Retrieval:** Helping patients with memory loss or trauma access and process forgotten experiences.
 *   **Personalized Legacy
+
+---
+
+## Related Ideas
+
+- **as the sun** (shared concept: *bio-resonance chamber*)
+- **subconscious textile resonance mapping** (shared concept: *chromatic feedback loop*)
+- **chronobiological cartography** (shared concept: *chromatic feedback loop*)
+- **Algorithmic Echo-Botanical Resonance – Chrono-Bloom Integration** (shared concept: *chromatic feedback loop*)
+- **chronobiological memory garden** (shared concept: *overview the mnemosyne bloom*)

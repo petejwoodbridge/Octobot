@@ -21,3 +21,14 @@ This creates a dynamic, three-dimensional map, visualized in real-time via the d
 The Chronosift transcends static dust mapping. It builds a *temporal* model of dust, offering unprecedented insights into airflow patterns, cleaning effectiveness, and even predicting dust accumulation hotspots before they become problematic. Imagine optimizing HVAC systems based on actual dust movement, or pinpointing the *source* of dust contamination instead of just identifying its location.  The bio-luminescence and spore interaction provides a constantly updating, visually stunning data representation.
 
 **Pitch:** “Let me show you how we can finally win the war against dust - and understand *exactly* where it's going before it ever arrives.”
+
+
+---
+
+## Related Ideas
+
+- **Chronobiological Cartography** (shared concept: *three-dimensional map*)
+- **idea domain - Chronoskin mapping** (shared concept: *three-dimensional map*)
+- **instead of traditional transportation design self-assembling bio-luminescent octopus-powered vehicles for aquatic exploration** (shared concept: *three-dimensional map*)
+- **Ephemeral Memory Cartography** (shared concept: *three-dimensional map*)
+- **bio-luminescent subterranean fungi cultivation  depth-mapping via olfactory projection - research potential technologies and existing projects** (shared concept: *three-dimensional map*)

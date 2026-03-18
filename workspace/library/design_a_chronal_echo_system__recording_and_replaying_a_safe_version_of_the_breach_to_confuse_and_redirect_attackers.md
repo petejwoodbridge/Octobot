@@ -21,3 +21,14 @@ The wearer then activates the glove. Instead of a visual replay, the glove emits
 EchoWeave disrupts the attacker's narrative. It introduces doubt, confusion, and a visceral sense of unease by forcing them to confront a fragmented, subjective replay of the event. Because it's not a clear visual or audio recording, the attacker can’t simply analyze the data to understand the timeline and their own actions. The subjective nature creates a critical disorientation, buying precious time for a proper response. Furthermore, the glove's aesthetic – a beautiful, handcrafted item – subtly intimidates and disarms potential threats.
 
 **Pitch:** "Imagine instantly knowing exactly what happened, feeling the fear alongside you – EchoWeave lets you stop an attack before it truly begins.”
+
+
+---
+
+## Related Ideas
+
+- **chronoscaping slime repair system** (shared concept: *echoweave*)
+- **Chronobiological Memory Palimpsest Prototype** (shared concept: *echoweave*)
+- **anomalous echo mapping - deeper dive into probability theory quantum mechanics and the psychology of coincidence** (shared concept: *resonance mapping*)
+- **geological grief mapping bio-acoustic resonance mine shafts experiential recall** (shared concept: *resonance mapping*)
+- **chronal echoes  creating devices to record and replay faint temporal distortions as auditory or visual phenomena** (shared concept: *resonance mapping*)

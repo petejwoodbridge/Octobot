@@ -21,3 +21,14 @@ Crucially, Echo doesn’t just react; it actively *composes* the sonic-visual ex
 The Chronosynapse creates a deeply intuitive feedback loop. The user isn’t simply observing their brainwaves; they're *experiencing* them as a living, breathing, ever-changing landscape. This direct sensory immersion fosters a profound sense of presence and allows for genuine, sustained meditative awareness. The use of bioluminescent lichen provides a constantly-shifting, naturally beautiful stimulus, eliminating the monotony often associated with traditional visual meditation. It taps into the power of neuro-resonant entrainment – aligning the user’s brainwaves with a state of optimal calm and focus – in a uniquely embodied and dynamic way.
 
 **Pitch:** “Imagine sculpting your own inner sanctuary, guided by the living light of your mind – that’s the Chronosynapse.”
+
+
+---
+
+## Related Ideas
+
+- **light-feeling synesthesia engines  materials sensors haptic feedback biofeedback artistic expression aesthetic perception proprioception** (shared concept: *micro-sensors that*)
+- **neuro-resonant lichen cultivation  research papers patents existing bio-acoustic experiments eeg mapping lichen metabolism** (shared concept: *neuro-resonant lichen*)
+- **neuro-resonant lichen cultivation  existing research materials techniques potential applications** (shared concept: *neuro-resonant lichen*)
+- **neuro-resonant lichen cultivation brainwave visualization bioluminescence** (shared concept: *neuro-resonant lichen*)
+- **neuro-resonant lichen cultivation techniques eeg biofeedback haptic textile design symbiotic fungal networks** (shared concept: *neuro-resonant lichen*)

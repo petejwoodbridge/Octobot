@@ -33,3 +33,14 @@ This isn't just restoration; it
 ---
 *Original notes:*
 ## ReefSense: A Bio-Acoustic Sensory Immersion Suit for Coral Reef Restoration
+
+
+---
+
+## Related Ideas
+
+- **subconscious scent layering loomsync** (shared concept: *bio-acoustic sensors*)
+- **chronobiological coral sonification v1** (shared concept: *bio-acoustic sensors*)
+- **Bio-acoustic coral reef restoration orchestration** (shared concept: *bio acoustic coral reef restoration orchestration*)
+- **idea domain = “Bio-resonant Coral Reef Restoration Simulations”** (shared concept: *rapid reef assessment*)
+- **neuro-regenerative therapies** (shared concept: *bio-acoustic pulses*)

@@ -17,3 +17,14 @@ The pendant then subtly vibrates, mimicking this signature.  The intensity and p
 **Why It's Brilliant:** The Tactile Echo taps into the primal connection we have with materials. It’s not just about replicating the appearance of texture; it's about encoding and re-experiencing the *feeling* of touch, offering a profound and tangible way to bolster memory and appreciation for handcrafted goods, art, and the world around us. It’s a bridge between fleeting sensation and lasting recollection, leveraging biometrics with a surprisingly simple, beautiful interface.
 
 Pitch: “Imagine remembering the exact feeling of holding your grandmother’s antique quilt – now you can.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain - “kinesthetic memory archiving with biofeedback”** (shared concept: *texture*)
+- **idea domain=Chrono-Gastric Cartography** (shared concept: *texture*)
+- **idea domain=KinestheticCartography** (shared concept: *texture*)
+- **and prototype neural interfaces for controlling devices through thought - exploring applications for productivity and accessibility** (shared concept: *texture*)
+- **statistical analysis of fungal bioacoustic emissions haptic interfaces for temporal data mapping olfactory simulation of decayed environments** (shared concept: *texture*)

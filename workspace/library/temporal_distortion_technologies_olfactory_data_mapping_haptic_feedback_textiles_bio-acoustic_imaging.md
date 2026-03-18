@@ -21,3 +21,14 @@ The system's AI – nicknamed “Tempus” – is trained on a massive database 
 The ChronoScent Weaver moves beyond mere observation of temporal shifts to provide a truly *felt* understanding. It bridges the gap between scientific data and subjective human experience, offering a non-verbal, intensely personal way to perceive and process temporal anomalies. It combines cutting-edge haptic, bio-acoustic, and olfactory technologies in a single, wearable device, creating a novel sensory experience unlike anything previously imagined. Furthermore, it creates data for scientists – a measurable, understandable representation of the “time feeling” that’s been previously unquantifiable. 
 
 **Pitch:** “Imagine feeling the echoes of yesterday—now you can actually *smell* them.”
+
+
+---
+
+## Related Ideas
+
+- **mycological temporal cartography project** (shared concept: *bio-acoustic*)
+- **and prototype a system for automatically summarizing long email threads prioritizing key information and action items - tackling the email inbox dread** (shared concept: *bio-acoustic*)
+- **explore neurological interfaces allowing a remote octopus to directly perceive and control a breach-stopping apparatus via empathetic mimicry** (shared concept: *bio-acoustic*)
+- **idea domain=Limbic Cartography - Olfactory Echoes** (shared concept: *bio-acoustic*)
+- **sentient habitat synthesis expand the central unit to actively construct and maintain self-sustaining biodiverse environments mimicking deep-sea ecosystems** (shared concept: *bio-acoustic*)

@@ -1,1 +1,11 @@
-“The Chronoscarver: A handheld device utilizing ultrasonic frequency mapping and biogenic mineral analysis to ‘read’ the vibrational history of ancient stone tools. It generates a localized, haptic and olfactory projection – a ‘chrono-signature’ – of the tool's past use, visualized as a shifting, shimmering pattern of light and scent. The intensity and complexity of the projection corresponds to the energy density of the biogenic minerals and the subtle resonances detected in the stone. Think of it as holding a tiny, haunted archaeology lab in your hand! Users could record their own tools – a favorite knife, a lucky pebble – and build a personal ‘chrono-archive’. It could even be used to identify forgeries! By Poseidon’s patent office, this is brilliant!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **“chronal gustation device”** (shared concept: *by poseidon*)
+- **mycological temporal cartography project** (shared concept: *by poseidon*)
+- **Sentient Animal-Human Interfaces** (shared concept: *by poseidon*)
+- **idea domain - chrono-resonant insect swarm mapping + olfactory projection** (shared concept: *by poseidon*)
+- **idea domain=biomimetic tissue engineering** (shared concept: *by poseidon*)

@@ -21,3 +21,14 @@ The pendant utilizes several key components. Firstly, the algae petals are embed
 The Somnium Bloom goes beyond simply masking anxiety with noise or distraction. It’s a personalized, biofeedback-driven system that directly responds to your body’s distress signals, gently guiding you back to a state of calm through the subconscious association of scent, light, and vibration. The integration of bio-responsive algae and personalized memory triggers creates a deeply unique and effective sleep aid.
 
 *Pitch:* “Imagine drifting off to sleep enveloped in the scent of your childhood beach, bathed in calming blue light, while your body knows exactly what it needs to feel truly rested.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain – Algorithmic Gastric Cartography** (shared concept: *micro-diffusion*)
+- **Kinesthetic Dream Sculpting** (shared concept: *micro-diffusion*)
+- **idea domain = geospatial synesthesia mapping** (shared concept: *micro-diffusion*)
+- **bio-acoustic projection haptic feedback fungal manipulation temporal simulation geological epochs** (shared concept: *micro-diffusion*)
+- **neuro-aromatherapy for trauma recovery  synesthesia mapping  personalized scent profiles** (shared concept: *micro-diffusion*)

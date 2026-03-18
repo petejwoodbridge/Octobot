@@ -33,3 +33,13 @@ Each Lumie is equipped with miniature hydrophones that detect subtle changes in 
 ## Why It's Extraordinary
 
 AquaMuse isn’t just a navigation system
+
+---
+
+## Related Ideas
+
+- **bio-integrated wearable tech design clothing that incorporates octopus-inspired camouflage and sensory input systems for enhanced environmental adaptation** (shared concept: *real-time environmental*)
+- **chronobiological coral sonification v1** (shared concept: *real-time environmental*)
+- **adaptive skin suit choreography** (shared concept: *real-time environmental*)
+- **optimism  investigate technologies and systems that promote positive emotions and engagement with nature** (shared concept: *specially-bred*)
+- **Symbiotic Olfactory Resonance Chamber** (shared concept: *specially-bred*)

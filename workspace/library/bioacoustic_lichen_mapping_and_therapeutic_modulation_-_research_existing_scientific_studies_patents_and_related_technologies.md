@@ -15,3 +15,14 @@ The key is *resonant modulation*. The MRS doesn’t simply play back lichen soun
 **Why It’s Brilliant:** The MRS bridges the gap between the ancient wisdom of lichen’s bioacoustic capabilities and modern, precise therapeutic technology. It’s not just replicating sounds; it's facilitating a direct, biophysically-informed conversation with a remarkably resilient organism, leveraging its unique vibrational signature to restore balance and wellbeing. The drone-based lichen mapping adds a crucial element of environmental context – meaning the therapeutic effect isn't dependent on a single recorded signature, but on the *local* sonic landscape. 
 
 *Pitch:* "Imagine experiencing a natural calm tailored by the silent wisdom of a lichen – it's the future of personalized bio-resonance."
+
+
+---
+
+## Related Ideas
+
+- **idea domain = adaptive organ response technology** (shared concept: *modulating*)
+- **neuro-resonant lichen cultivation  existing research materials techniques potential applications** (shared concept: *rhizocarpon geographicum*)
+- **chronophonic lichen synth concept** (shared concept: *rhizocarpon geographicum*)
+- **idea domain - Automated lichen-based biodata fabric synthesis** (shared concept: *rhizocarpon geographicum*)
+- **idea domain = subdermal bioluminescent lichen cultivation** (shared concept: *xanthoria parietina*)

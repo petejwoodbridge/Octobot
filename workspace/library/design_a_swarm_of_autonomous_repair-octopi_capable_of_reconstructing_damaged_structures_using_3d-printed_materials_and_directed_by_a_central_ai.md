@@ -21,3 +21,14 @@ Once the damage is mapped, the Echoes begin 3D-printing bespoke repair materials
 Chronosync offers a truly restorative approach, mirroring the original building’s material properties and employing a swarm intelligence strategy for maximum efficiency.  The bio-resin ensures minimal environmental impact, and the system learns from each reconstruction, becoming exponentially more effective over time. It’s a proactive, intelligent, and beautifully artistic method of preserving our shared history.
 
 **Pitch:** “Imagine a building subtly healing itself, brick by bio-brick, guided by an army of tiny, glowing octopi – that’s Chronosync.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain = Symbiotic Chrono-Mycological Cartography** (shared concept: *materials*)
+- **“Chrono-Topography”** (shared concept: *materials*)
+- **litho-mnemonic algae gardens** (shared concept: *materials*)
+- **“Petrichor Memory Garden”** (shared concept: *materials*)
+- **idea domain = “kinesthetic chronal mapping”** (shared concept: *materials*)

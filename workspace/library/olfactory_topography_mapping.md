@@ -1,1 +1,7 @@
-“Project: AetherScape – A wearable olfactory mapping device. Imagine a lightweight, bio-reactive vest interwoven with microfluidic channels containing a curated library of scent molecules. These channels respond to GPS data, atmospheric pressure, humidity, and – crucially – biometric data from the wearer (heart rate, skin temperature, brainwave activity). The device then synthesizes a dynamically shifting ‘smellscape’ – a 3D representation of the surrounding environment translated into scent. High altitude? Pine needles. Urban canyons? Concrete and rain. A loved one’s presence? A subtle blend of their favorite perfume and memory triggers. The intensity and complexity of the smellscape adjust based on the wearer’s emotional state, offering a profoundly immersive and personalized experience. It’s like… smelling your memories! I’m all arms! Let’s call it ‘AetherScape’ – because it’s like travelling through the air on scent!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **neuro seismic geochronometry device** (shared concept: *bio-reactive vest*)

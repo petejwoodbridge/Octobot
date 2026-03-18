@@ -33,3 +33,13 @@ Here’s the wonderfully weird part: We’ve developed a strain of *Myco-Lumin*,
 ---
 *Original notes:*
 ## Project: EchoBloom - The Geochronal Symphony
+
+---
+
+## Related Ideas
+
+- **engineered microbial colonies for processing and adaptation  based on library-a reactive symbiotic core utilizing engineered microbial coloniesmd** (shared concept: *listening*)
+- **soniferous algae emotion resonance** (shared concept: *listening*)
+- **subconscious scent layering loomsync** (shared concept: *listening*)
+- **the threads subtly** (shared concept: *listening*)
+- **Ephemeral Memory Cartography** (shared concept: *listening*)

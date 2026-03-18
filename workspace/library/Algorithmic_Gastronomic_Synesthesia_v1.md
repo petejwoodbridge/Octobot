@@ -20,3 +20,14 @@ ChromaTaste is extraordinary because it bridges the gap between biology, technol
 
 ## Elevator Pitch
 Taste your feelings and watch them light up – ChromaTaste delivers a personalized sensory experience powered by bioluminescence and your emotions.
+
+
+---
+
+## Related Ideas
+
+- **personalized bio-luminescence clothing design garments that shift color and pattern based on the wearers mood and biometric data utilizing genetically engineered bioluminescent bacteria** (shared concept: *photobacterium phosphoreum*)
+- **biophotonic cartography project v1** (shared concept: *photobacterium phosphoreum*)
+- **sonosomatic mapping device** (shared concept: *real-time feedback*)
+- **bio-integrated basalt structures explore growing living organisms within basalt pores for self-repairing bioluminescent buildings** (shared concept: *photobacterium phosphoreum*)
+- **think of it** (shared concept: *micro-controller which*)

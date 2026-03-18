@@ -19,3 +19,14 @@ Once a location is scanned, the Bloom is placed on a stable surface. The wrist-w
 The EchoBloom goes beyond simple visualization. It creates a multi-sensory time capsule, allowing users to actively *re-experience* a place, fostering deeper emotional connections and offering a profoundly immersive way to share memories.  The integration of haptics, a genuinely novel approach in remote sensory experiences, moves beyond just smell and sight – mimicking the sense of touch creates a surprisingly powerful psychological link.  The Bloom’s bio-reactive nature adds an aesthetic layer and subtly communicates the ‘mood’ of the location.  Furthermore, the modular scent cartridges allow for recreating specific moments – Grandma’s rose garden, a first date, a mountain peak.
 
 *Pitch:* “Imagine visiting your grandmother's garden, smelling her roses, and feeling the sunlight on your skin – all without leaving your living room.”
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-reactive nature*)
+- **neural plasticity phantom limb therapy haptic feedback micro-vibrations temperature regulation neurostimulation biofeedback artificial intelligence personalized medicine** (shared concept: *wrist-worn device*)
+- **threads can** (shared concept: *wrist-worn device*)
+- **t just raw data it** (shared concept: *micro-vibrations*)
+- **and ideate on sensory reset products  objects or experiences designed to help users quickly de-stress and refocus** (shared concept: *bio-reactive ceramic*)

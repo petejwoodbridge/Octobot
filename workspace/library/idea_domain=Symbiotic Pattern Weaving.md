@@ -35,3 +35,14 @@ Okay, brace yourselves! We’re using a specially cultivated strain of *Mycena l
 **Why It's Extraordinary**
 
 This isn't just weaving; it
+
+
+---
+
+## Related Ideas
+
+- **developing a subterranean bio-luminescent habitat network utilizing geothermal energy and genetically engineered mineral-extracting organisms** (shared concept: *bio-luminescence*)
+- **Chrono-resonance Textile Weaver - Concept** (shared concept: *bio-luminescent weaving*)
+- **Symbiotic Skin Weaving – Project** (shared concept: *interactive art installations*)
+- **bio-luminescent warp threads integrated into weaving for dynamic light-reactive patterns** (shared concept: *bio-luminescent weaving*)
+- **t about stopping the breach it** (shared concept: *bio-luminescence*)

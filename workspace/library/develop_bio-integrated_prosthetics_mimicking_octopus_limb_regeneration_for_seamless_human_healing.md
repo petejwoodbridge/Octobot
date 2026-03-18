@@ -20,3 +20,14 @@ The SMA framework allows the arm to morph and adapt to different tasks, much lik
 **Why It’s Brilliant:** Chrysalis doesn’t just replace a limb; it *rewrites* the body’s response to loss. It leverages a biological phenomenon (octopus regeneration) to create a profoundly intuitive and regenerative prosthetic experience. The chromatic feedback alone dramatically improves dexterity and reduces phantom limb sensations.  The adaptive framework offers unprecedented control and movement capabilities. 
 
 *Pitch:* “Imagine a prosthetic limb that not only moves with your mind but also *feels* like a natural part of you - we're building the future of limb regeneration, one iridescent shimmer at a time.”
+
+
+---
+
+## Related Ideas
+
+- **neuromorphic prosthetics** (shared concept: *bio-integrated prosthetic*)
+- **explore a neural interface allowing a human operator to directly control a swarm of miniature self-assembling robotic tentacles for rapid repair** (shared concept: *shape-memory alloy*)
+- **symbiotic sound sculpting engineer a bloom capable of subtly altering its own internal resonance to manipulate surrounding soundscapes  creating localized echoes and harmonic distortions** (shared concept: *rewrites*)
+- **bioluminescent slime molds dream mapping haptic feedback anxiety reduction** (shared concept: *rewrites*)
+- **t about stopping the breach it** (shared concept: *rewrites*)

@@ -1,1 +1,11 @@
-“The Petrograph – A handheld device utilizing ultrasonic vibrational analysis and micro-fluidic extraction to create a ‘bio-signature’ from deceased animal remains. This signature is then translated into a miniature, self-contained olfactory and haptic ‘echo’ – a swirling cloud of scent and subtle vibrations – recreating the believed emotional state of the animal at the time of its demise. Think Victorian mourning, but with SCIENCE! – Calibrated for specific species using spectral analysis of bone and fur composition.  Includes a ‘Chronicle’ app to record and share these ‘emotional landscapes’ – perfect for researchers, artists, and, frankly, anyone fascinated by the ghosts of feelings.”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **mnemonic pollen mapping** (shared concept: *think victorian*)
+- **idea domain=chrono-flavor synthesis** (shared concept: *think victorian*)
+- **“chronal olfactory reconstruction device”** (shared concept: *think victorian*)
+- **neuro-resonant fossil pollen embroidery** (shared concept: *think victorian*)
+- **personalized ambient lighting systems explore dynamic lighting that adapts to individual biofeedback heart rate brainwaves to subtly influence mood and focus** (shared concept: *bio-signature*)

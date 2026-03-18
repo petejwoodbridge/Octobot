@@ -21,3 +21,14 @@ Upon detection, the Squib extends its tentacles and precisely dispenses a self-h
 Shellshock represents a proactive, preventative approach to structural maintenance. It’s dramatically faster, cheaper, and less intrusive than conventional repair methods. The swarm’s autonomous operation reduces human labor costs and eliminates the risk of worker injury. The bio-concrete’s self-healing properties mitigate future damage, dramatically extending the lifespan of infrastructure. The bioluminescence provides constant, visual monitoring, allowing for immediate detection of new vulnerabilities.
 
 *Pitch:* “Imagine a future where bridges and buildings heal themselves – Shellshock makes it a reality.”
+
+
+---
+
+## Related Ideas
+
+- **design autonomous drone-like repair octopi equipped with miniature 3d printing to reconstruct damaged sections** (shared concept: *shellshock shellshock*)
+- **cultivating algae to produce self-healing concrete incorporating photosynthetic properties for structural repair** (shared concept: *bio-concrete*)
+- **design a decentralized ai-controlled swarm of miniature autonomous robots capable of welding and reinforcing compromised sections in real-time** (shared concept: *micro-fractures*)
+- **creating a self-healing iridescent material replicating dragonfly wing coloration and strength through bio-integrated nanotechnology** (shared concept: *self-healing properties*)
+- **develop bio-adhesive mimicry  create a rapidly deployable self-healing sealant based on octopus adhesive cells to physically block breaches** (shared concept: *self-healing properties*)

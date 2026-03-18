@@ -26,3 +26,14 @@ Here's the sequence:
 ChronoMycelia goes beyond simply recreating a scene; it generates a subjective experience of time. The mycelial network acts as a living, biological sensor, bridging the gap between the physical remnants of the past and the human ability to perceive and understand.  It's a fusion of biotechnology, neuroscience, and archaeology, offering an unprecedented level of historical immersion.
 
 Pitch: “Imagine stepping into the past, not just seeing it, but *feeling* it – ChronoMycelia lets you live a moment of history.”
+
+
+---
+
+## Related Ideas
+
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *haptic feedback*)
+- **lithic resonance chronoscope** (shared concept: *olfactory projection*)
+- **idea domain=Symbiotic Textile Weathering Prediction** (shared concept: *micro-processor embedded*)
+- **bio-acoustic mapping of flavor compounds temporal gastronomy research shape-memory alloy culinary vessels controlled molecular diffusion** (shared concept: *bio-acoustic signatures*)
+- **temporal distortion effects in plants bioluminescence mechanisms in fungi haptic feedback systems for botanical interaction biospheres and controlled environments** (shared concept: *haptic feedback*)

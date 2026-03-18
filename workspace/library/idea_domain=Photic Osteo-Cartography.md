@@ -33,3 +33,14 @@ Imagine a network of miniature, bio-reactive “Echo Stones” – tiny, grapefr
 ---
 *Original notes:*
 ## EchoStone: A Bio-Resonance Tactile Archive
+
+
+---
+
+## Related Ideas
+
+- **sonic mapping of rock formations shape-memory alloys bio-responsive textiles geological resonance** (shared concept: *micro-fractures*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *real-time visualization*)
+- **t about stopping the breach it** (shared concept: *bio-reactive*)
+- **idea domain – “geosensory somatics”** (shared concept: *the echo stone*)
+- **sonic archaeology techniques material resonance haptic audio systems ceramic micro-fractures** (shared concept: *micro-fractures*)

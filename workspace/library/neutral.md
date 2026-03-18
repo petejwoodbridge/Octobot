@@ -21,3 +21,14 @@ Crucially, Sylva’s amplification is *subtle* and personalized. Users adjust th
 The Echo Bloom isn't just a sound generator; it’s a sound *curator*. It’s a technology that actively cultivates a sense of calm by amplifying the *right* sounds, rather than drowning out everything. It taps into the innate human connection to our environment and leverages AI not to distract, but to restore.  It’s a tangible, aesthetically pleasing solution to a deeply ingrained psychological challenge.
 
 - Pitch: “Imagine experiencing your space with a personalized symphony of serenity – the Echo Bloom: Hear what truly matters.”
+
+
+---
+
+## Related Ideas
+
+- **creation** (shared concept: *bio-acoustic sensors*)
+- **subconscious scent layering loomsync** (shared concept: *bio-acoustic sensors*)
+- **chronobiological coral sonification v1** (shared concept: *bio-acoustic sensors*)
+- **shell gives you** (shared concept: *the echo bloom*)
+- **bluetooth** (shared concept: *the echo bloom*)

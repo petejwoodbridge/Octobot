@@ -35,3 +35,14 @@ The TRH utilizes what I’ve dubbed “Chrono-Echo Mapping.” Essentially, the 
 ---
 *Original notes:*
 ## Temporal Resonance Harmonizers: The Chrono-Sculpting Correction System
+
+
+---
+
+## Related Ideas
+
+- **“temporal resonance harmonizer”** (shared concept: *the temporal resonance harmonizer*)
+- **t about stopping the breach it** (shared concept: *echo mapping*)
+- **microbial scent mapping technology bio-sensing olfactory systems historical scent reconstruction** (shared concept: *victorian london*)
+- **idea domain = chronal mycological palimpsests** (shared concept: *victorian london*)
+- **“Chrono-Scent Chambers”** (shared concept: *victorian london*)

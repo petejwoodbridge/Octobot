@@ -21,3 +21,14 @@ This network, built on data from the fossil record, comparative animal vocalizat
 The Echo Weaver bridges the gap between physical evidence and auditory understanding. It’s not just a simulation; it's a tangible, interactive experience. The shape-memory alloy provides a direct physical manifestation of the sound, creating a level of immersion never before possible. Furthermore, the system learns and refines its reconstructions over time, incorporating new data and improving the accuracy of the recreated vocalizations. The textile itself becomes a dynamic archive of lost sound. 
 
 **Pitch:** "Imagine holding the call of a vanished giant – the Echo Weaver brings extinct voices back to life, one vibration at a time."
+
+
+---
+
+## Related Ideas
+
+- **micro-epoch olfactory archiving** (shared concept: *shape-memory alloy*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *shape-memory alloy*)
+- **neural network-controlled swarm intelligence creating a collective of dragonfly drones capable of complex adaptive hunting and environmental monitoring patterns** (shared concept: *shape-memory alloy*)
+- **reactive olfactory projection technology haptic feedback urban archaeology bio-acoustic mapping** (shared concept: *the echo weaver*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *the echo weaver*)

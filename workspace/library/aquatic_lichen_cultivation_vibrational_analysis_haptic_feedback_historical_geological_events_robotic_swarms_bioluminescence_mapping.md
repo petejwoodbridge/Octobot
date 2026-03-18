@@ -26,3 +26,14 @@ The swarm continuously maps the bioluminescence of the lichen colonies while sim
 The Chrono-Lichen Weaver moves beyond passive observation. It transforms ancient lichen into a living, responsive archive. By combining vibrational analysis with bioluminescence and haptic feedback, we can ‘read’ the past in a visceral and incredibly detailed way, offering unprecedented insights into the Earth’s dynamic history and potentially predicting future seismic events with increased accuracy.
 
 **Pitch:** “Imagine experiencing the rumble of a prehistoric earthquake, all thanks to a glowing, underwater garden – it’s the future of geological understanding.”
+
+
+---
+
+## Related Ideas
+
+- **develop bio-adhesive nanobots that instantly seal hull breaches with a self-healing organic matrix** (shared concept: *each chrysalis unit*)
+- **idea domain=bio acoustic lichen lullabies** (shared concept: *chrono-lichen weaver*)
+- **gastronomic echo sculpting** (shared concept: *haptic feedback module*)
+- **idea domain – “kinesthetic premonition mapping”** (shared concept: *haptic feedback module*)
+- **idea domain – “geo-sensory weaving** (shared concept: *haptic feedback module*)

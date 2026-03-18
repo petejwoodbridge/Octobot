@@ -21,3 +21,14 @@ The OLED displays are calibrated to translate specific bio-signal thresholds int
 BloomSense combines the fascinating, almost magical, properties of plant biofeedback with cutting-edge sensor technology and OLED display innovation. It's a tangible, visually arresting way to connect with your emotions, offering a level of self-awareness previously unattainable. The plant-based nature creates a truly novel and calming experience – watching the BloomSense “respond” to your feelings is inherently meditative. It's also highly customizable, offering personalized emotional mapping unlike anything else.
 
 **Pitch:** “BloomSense: Let your feelings blossom – it’s the first wearable that *actually* sees what you're feeling.”
+
+
+---
+
+## Related Ideas
+
+- **develop bio-adhesive mimics for instant localized hull sealing triggered by breach detection** (shared concept: *cutting-edge sensor*)
+- **decentralized bio-integrated hubs for ecological monitoring and response** (shared concept: *micro-sensor array*)
+- **Chronobiological Cartography** (shared concept: *genetically-modified*)
+- **idea domain=symbiotic skin grafts emotion mapping** (shared concept: *real-time color*)
+- **think of it** (shared concept: *cutting-edge sensor*)

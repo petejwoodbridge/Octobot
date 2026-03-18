@@ -19,3 +19,14 @@ The Echo Weaver utilizes three key technologies. Firstly, it contains eight mini
 The Echo Weaver merges geology, acoustics, and advanced algorithms to create a fundamentally new way of understanding subterranean environments. The ULF pulses allow penetration of tight formations where traditional sonar fails, while the bio-ceramic hydrophones capture echoes lost to noise. The interactive visual representation allows for intuitive navigation and immediate identification of potential hazards.  It’s also dramatically faster than existing methods, providing a near-instantaneous 3D acoustic profile. 
 
 **Pitch:** "Imagine seeing the sound of a cave – the Echo Weaver lets you map, explore, and conquer the dark."
+
+
+---
+
+## Related Ideas
+
+- **sonospheric topography mapping** (shared concept: *ultra-low frequency*)
+- **bio-acoustic cartography subconscious neural activity soundscapes immersive experiences** (shared concept: *ultra-low frequency*)
+- **micro-epoch olfactory archiving** (shared concept: *the echo weaver*)
+- **reactive olfactory projection technology haptic feedback urban archaeology bio-acoustic mapping** (shared concept: *the echo weaver*)
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *the echo weaver*)

@@ -21,3 +21,13 @@ Okay, buckle up, because this gets delightfully complicated! Each LithoEcho unit
 *   **Archaeological Site Investigation:** Uncovering the emotional landscape of ancient settlements – were they thriving with joy or gripped by fear?
 *   **Historical Tourism:** Allowing visitors to “experience” pivotal moments in history through the lens of the people who lived through them.
 *   **Forensic Archaeology:** Determining the emotional state of victims or perpetrators at crime scenes, offering
+
+---
+
+## Related Ideas
+
+- **idea domain=Luminiferous Echo Mapping** (shared concept: *forensic archaeology*)
+- **bio-sonorous lichen mapping – devices** (shared concept: *singing*)
+- **idea pitch** (shared concept: *singing*)
+- **Chronal Gastric Echoes** (shared concept: *bio-resonant*)
+- **bioluminescent lichen symbiosis  circadian rhythm manipulation  biometric feedback  dynamic wall panels** (shared concept: *bio-resonant*)

@@ -29,3 +29,14 @@ Okay, buckle up! ChronoWalls operates on three core principles. First, we employ
 ---
 *Original notes:*
 ## ChronoWalls - The Sensory Echo Chamber
+
+
+---
+
+## Related Ideas
+
+- **olfactory simulation technology megafauna dietary reconstruction geological analysis of fossilized teeth** (shared concept: *bio-acoustic resonance*)
+- **rapid assessment** (shared concept: *bio-acoustic scanner*)
+- **“Subterranean Temporal Cartography – Myco-Echo”** (shared concept: *bio-acoustic scanner*)
+- **“ChronoBloom Device Pitch”** (shared concept: *bio-acoustic scanner*)
+- **chronoscaping algorithmic reconstruction of lost sensory experiences via targeted micro-temporal stasis** (shared concept: *chrono-sync*)

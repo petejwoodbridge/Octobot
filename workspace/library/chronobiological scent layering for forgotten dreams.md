@@ -22,3 +22,14 @@ The Somnium Weaver represents a paradigm shift in dream exploration, moving beyo
 
 ## Elevator Pitch
 Unlock the full, fragrant potential of your dreams with the device that paints your subconscious in scent.
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *micro-sensors*)
+- **translation** (shared concept: *translation*)
+- **chronal scent archiving techniques fractal scent mapping biofeedback integration extinct species voc analysis** (shared concept: *micro-sensors*)
+- **idea domain=litho-mnemonic scent layering** (shared concept: *micro-sensors*)
+- **Ephemeral Memory Cartography** (shared concept: *micro-sensors*)

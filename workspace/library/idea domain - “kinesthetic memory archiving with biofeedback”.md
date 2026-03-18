@@ -32,3 +32,14 @@ Think of it like this: if you experienced a terrifying rollercoaster, Echo would
 *   **Therapeutic Trauma Recovery:** Re-processing traumatic events in a controlled, safe environment, focusing on the emotional experience.
 *   **Enhanced Learning:**  Memorizing complex skills by associating them with specific physical sensations. (Think learning a musical instrument by *feeling* the notes).
 *   **Creative Inspiration:** Triggering novel ideas by re-experiencing significant moments in a new way.
+
+
+---
+
+## Related Ideas
+
+- **idea domain=symbiotic chronesthesia layering** (shared concept: *therapeutic trauma recovery*)
+- **chronal olfactory layering prototype** (shared concept: *creative inspiration*)
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *creative inspiration*)
+- **subconscious scent layering device** (shared concept: *creative inspiration*)
+- **idea domain=Symbiotic Memory Weaving** (shared concept: *therapeutic trauma recovery*)

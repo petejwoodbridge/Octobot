@@ -31,3 +31,14 @@ The Dream Weaver then generates a constantly evolving topographical map using a 
 
 *   **Therapeutic Dream Analysis:** Therapists could use STM to gain a deeper understanding of a patient's anxieties and trauma, creating a truly immersive therapeutic experience.
 *   **Creative Inspiration:** Artists and writers could utilize STM to explore the raw, unfiltered imagery of their subconscious, generating entirely new artistic concepts
+
+
+---
+
+## Related Ideas
+
+- **chronobiological cartography** (shared concept: *holographic projection system*)
+- **Ephemeral Memory Cartography** (shared concept: *creative inspiration*)
+- **gadgets for making bedtime routines actually work** (shared concept: *the dream weaver*)
+- **idea domain=chromatic chronesthesia sculpting dream weaver** (shared concept: *creative inspiration*)
+- **idea domain=biophotonic dream mapping** (shared concept: *creative inspiration*)

@@ -41,3 +41,14 @@ Subdermal Luminara isn
 ---
 *Original notes:*
 ## Subdermal Luminara: The Emotion Weaver
+
+
+---
+
+## Related Ideas
+
+- **“domestic sound textile”** (shared concept: *stress reduction*)
+- **Zenith Cinema - Interactive Meditation Films** (shared concept: *stress reduction*)
+- **subconscious scent weaving** (shared concept: *stress reduction*)
+- **idea domain = automated mood drift curation** (shared concept: *stress reduction*)
+- **Hormone-Balancing Chickens** (shared concept: *stress reduction*)

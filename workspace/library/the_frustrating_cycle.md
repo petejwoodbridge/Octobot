@@ -19,3 +19,14 @@ Crucially, the orb also subtly *plays* a counter-narrative – a carefully curat
 It's a gentle reminder that you're not alone and that shifting your internal narrative is within reach. 
 
 **Pitch:** “Imagine a beautiful, pulsing light that actually listens to your worries and helps you bloom into a stronger, more confident you.”
+
+
+---
+
+## Related Ideas
+
+- **the system is** (shared concept: *bio-engineered algae*)
+- **additionally** (shared concept: *counter-narrative*)
+- **idea domain - Ephemeral Cartography of Social Anxiety** (shared concept: *counter-narrative*)
+- **it connects to** (shared concept: *counter-narrative*)
+- **many people struggle** (shared concept: *counter-narrative*)

@@ -20,3 +20,14 @@ The CEG-NFS transcends simple biofeedback; it’s a genuine attempt to re-experi
 
 ## Elevator Pitch
 “Feel the ancient pulse of a springtail – experience time itself.”
+
+
+---
+
+## Related Ideas
+
+- **cephalopod camouflage shape-memory alloys olfactory synthesis wearable micro-climate** (shared concept: *micro-climate*)
+- **microbial scent reconstruction techniques advanced bio-scaffolding for olfactory simulations weather data integration for micro-climate simulation artificial insect activity systems neuro-scent technology** (shared concept: *micro-climate*)
+- **kinesthetic memory weaving prototype** (shared concept: *neuro-sensory feedback*)
+- **idea domain = “micro-temporal tastebud archiving”** (shared concept: *neuro-sensory feedback*)
+- **biometric resonance mapping combined with olfactory projection and shape-memory alloy micro-sculpting** (shared concept: *multi-sensory feedback*)

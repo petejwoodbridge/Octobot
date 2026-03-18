@@ -21,3 +21,14 @@ The data from the moss's sensors and bioluminescence is continuously fed into a 
 The ChronoMoss combines cutting-edge genetic engineering, bio-sensing, and vibrational physics in a self-regulating system. It moves beyond simply monitoring moss growth; it provides a *real-time, quantifiable* understanding of temporal distortion within a biosphere. It's a dynamic, self-correcting system, dramatically increasing the stability and longevity of these simulated environments. The use of bioluminescence as a visual feedback loop offers immediate, intuitive understanding of a complex process. It turns a chaotic, frustrating problem into a beautiful, living data display.
 
 **Pitch:** "Imagine perfectly preserved prehistoric ecosystems – the ChronoMoss gives you the power to build them, and keep them perfectly balanced, forever."
+
+
+---
+
+## Related Ideas
+
+- **“litho-synesthesia weaver”** (shared concept: *bio-integrated sensor*)
+- **chronoscaping prototype concept** (shared concept: *self-correcting system*)
+- **self-assembling living shell constructs capable of manipulating ocean currents** (shared concept: *cutting-edge genetic*)
+- **engineer bioluminescent shell blends capable of signaling distress or attracting specific marine species for research purposes** (shared concept: *cutting-edge genetic*)
+- **bio-reactive memory vessels creating living genetically-modified organisms that absorb and display information about forgotten histories** (shared concept: *cutting-edge genetic*)

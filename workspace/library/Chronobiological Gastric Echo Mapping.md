@@ -44,3 +44,14 @@ These Glow-Bugs are programmed to react to specific wavelengths of sound emitted
 ---
 *Original notes:*
 ```## Gastric Chronometer
+
+
+---
+
+## Related Ideas
+
+- **idea domain=chronobiological lichen cultivation** (shared concept: *bio-luminescent algae*)
+- **adaptive microclimate suits incorporating bio-luminescent algae for personalized light and temperature regulation** (shared concept: *bio-luminescent algae*)
+- **bio-luminescent algae-based street lighting systems optimizing for efficiency and natural color palettes** (shared concept: *bio-luminescent algae*)
+- **“Chronal Gastric Mapping”** (shared concept: *personalized nutrition*)
+- **idea domain=personalized microbiomes** (shared concept: *personalized nutrition*)

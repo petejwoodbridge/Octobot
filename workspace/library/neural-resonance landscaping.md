@@ -37,3 +37,14 @@ Here’s the juicy bit: We use a sophisticated AI – nicknamed ‘Coral’ – 
 ---
 *Original notes:*
 “EchoBloom: A Bio-Sonic Terrain Sculptor”
+
+
+---
+
+## Related Ideas
+
+- **neuro-regenerative therapies** (shared concept: *bio-acoustic transducers*)
+- **cephalopod olfaction bio-acoustic mapping scent memory temporal resonance haptic feedback burial site analysis lullaby reconstruction** (shared concept: *low-frequency vibrations*)
+- **and prototype neural interfaces for controlling devices through thought - exploring applications for productivity and accessibility** (shared concept: *bio-acoustic resonance*)
+- **subconscious fungal network mapping** (shared concept: *bio-acoustic resonance*)
+- **idea domain=chromatic resonance harvesting** (shared concept: *translate*)

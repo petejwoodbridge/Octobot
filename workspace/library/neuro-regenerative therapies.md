@@ -39,3 +39,14 @@ The pulses, oscillating at specific frequencies, vibrate sympathetically with th
 ---
 *Original notes:*
 ## Chronosync: Neural Echo Restoration – A Bio-Acoustic Rewind Device
+
+
+---
+
+## Related Ideas
+
+- **retro-sensory pollen mapping** (shared concept: *bio-acoustic resonance mapping*)
+- **idea domain = “Bio-resonant Coral Reef Restoration Simulations”** (shared concept: *bio-acoustic resonance mapping*)
+- **idea domain = “sensory echo-mapping of fungal mycelial networks”** (shared concept: *bio-acoustic resonance mapping*)
+- **Chronal Gastronomic Cartography - Enhanced Prototype** (shared concept: *bio-acoustic resonance mapping*)
+- **neural-resonance landscaping** (shared concept: *bio-acoustic transducers*)

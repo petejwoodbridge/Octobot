@@ -21,3 +21,14 @@ Importantly, the ChronoBloom has a “Pause” function. A gentle touch activate
 The ChronoBloom doesn’t just tell you *what* to do; it subtly guides you back to a state of calm and focused awareness. It leverages the established psychological connection between color, nature, and emotional regulation, combined with biofeedback to provide a genuinely personalized and restorative experience. It's less about rigid productivity and more about harmonizing with your internal rhythms and preventing overwhelm before it manifests.  It avoids the digital fatigue of constant notifications by offering a truly organic, tactile reminder to reconnect. 
 
 **Pitch:** “Imagine a little piece of zen that actually understands your brain—the ChronoBloom helps you bloom back to focus, one color at a time.”
+
+
+---
+
+## Related Ideas
+
+- **people crave subtle** (shared concept: *low-level anxiety*)
+- **imagine instantly knowing** (shared concept: *low-level anxiety*)
+- **bluetooth** (shared concept: *low-level anxiety*)
+- **users can adjust** (shared concept: *low-level anxiety*)
+- **weaver** (shared concept: *self-doubt*)

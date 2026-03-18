@@ -18,3 +18,14 @@ The COP-Gen combines cutting-edge bio-sensing technology with historical data to
 
 ## Elevator Pitch
 Smell history – one fleeting, perfectly reconstructed scent at a time.
+
+
+---
+
+## Related Ideas
+
+- **neural network cartridges injectable bio-circuits for targeted localized neurological stimulation** (shared concept: *cutting-edge bio*)
+- **seismic empathy matrices** (shared concept: *cutting-edge bio*)
+- **bio-acoustic stress monitoring and fungal response** (shared concept: *cutting-edge bio*)
+- **each panel is** (shared concept: *cutting-edge bio*)
+- **bioluminescent slime molds dream mapping haptic feedback anxiety reduction** (shared concept: *cutting-edge bio*)

@@ -21,3 +21,14 @@ When a weakness is identified, the Root calculates the optimal repair strategy. 
 The BioWeave isn’t just a repair system; it's preventative maintenance on a molecular level. It moves beyond reactive patching by utilizing intelligent robotics, bio-materials, and a constantly learning AI, creating a self-regulating, resilient material structure. This has implications for infrastructure, aerospace, medical implants, and even clothing – offering unparalleled durability and longevity.
 
 **Pitch:** “Imagine a world where buildings and bridges literally heal themselves – that’s the BioWeave.”
+
+
+---
+
+## Related Ideas
+
+- **design a decentralized ai-controlled swarm of miniature autonomous robots capable of welding and reinforcing compromised sections in real-time** (shared concept: *self-healing materials*)
+- **designing self-contained mobile ecosystems housing noctiluca and other deep-sea organisms for advanced research and potential terraforming applications** (shared concept: *bio-compatible polymer*)
+- **extremophile plant metabolic cycles time perception micro-robotics symbiotic relationships horticultural biofeedback** (shared concept: *self-regulating*)
+- **design autonomous micro-robot swarms that reconstruct damaged ship sections using 3d-printed self-healing materials** (shared concept: *self-healing materials*)
+- **design a decentralized ai-controlled network of miniature robotic tentacles capable of autonomously patching and reinforcing damaged vessels** (shared concept: *micro-robots*)

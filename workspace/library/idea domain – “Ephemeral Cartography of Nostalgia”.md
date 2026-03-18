@@ -37,3 +37,14 @@ This Signature isn't just a location; it's a *feeling*. The Echo Weaver then use
 **Why It’s Extraordinary**
 
 This isn’t just mapping; it's
+
+
+---
+
+## Related Ideas
+
+- **idea domain - Ephemeral Cartography of Acoustic Residue** (shared concept: *artistic installations*)
+- **idea domain – “Ephemeral Cartography of Social Echoes”** (shared concept: *the ephemeral cartography*)
+- **micro-epoch olfactory archiving** (shared concept: *the echo weaver*)
+- **reactive olfactory projection technology haptic feedback urban archaeology bio-acoustic mapping** (shared concept: *the echo weaver*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *the echo weaver*)

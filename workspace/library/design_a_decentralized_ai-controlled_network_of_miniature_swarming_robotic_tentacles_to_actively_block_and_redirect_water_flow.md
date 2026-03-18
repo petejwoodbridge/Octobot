@@ -21,3 +21,14 @@ Crucially, the Nodi aren’t just static walls. They can actively *redirect* wat
 The AquaWeave combines swarm robotics, decentralized AI, and biomimicry (octopus tentacles!) in a fundamentally new approach to flood defense. It’s reactive *and* proactive, adaptable to real-time conditions, and doesn’t require massive infrastructure investment. The blockchain component ensures data integrity and coordinated action across the network, preventing any single point of failure.  The visual element—the shimmering, shifting Weave—is inherently engaging, turning a potentially frightening disaster into a strangely beautiful display of technological resilience. 
 
 **Pitch:** “Imagine a living wall of light, protecting your city from the rising tide – that’s AquaWeave.”
+
+
+---
+
+## Related Ideas
+
+- **develop self-assembling nutrient-rich shell blends for targeted coral reef restoration incorporating 3d-printed artificial reefs** (shared concept: *three-dimensional*)
+- **and prototype a system for automatically summarizing long email threads prioritizing key information and action items - tackling the email inbox dread** (shared concept: *three-dimensional*)
+- **forest** (shared concept: *three-dimensional*)
+- **seismic olfactory cartography** (shared concept: *three-dimensional*)
+- **vestibular cartography  materials sensors haptic feedback real-time processing wearable interfaces** (shared concept: *three-dimensional*)

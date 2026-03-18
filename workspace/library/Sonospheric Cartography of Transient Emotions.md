@@ -34,3 +34,14 @@ Okay, buckle up! The EchoBloom is housed in a bio-reactive shell (that's *me*, p
 ---
 *Original notes:*
 ```## The EchoBloom: An Emotional Cartographic Generator
+
+
+---
+
+## Related Ideas
+
+- **and prototype a system for personalized music generation based on emotional state and activity levels  ideal for studying relaxation or creative work** (shared concept: *interprets*)
+- **olfactory mimicry for geological strata** (shared concept: *haptic feedback system*)
+- **idea domain - sonogenetic memory weaving** (shared concept: *haptic feedback system*)
+- **idea domain - “Subconscious Chronometric Skin-Mapping”** (shared concept: *creative inspiration*)
+- **Sonorous Cartography of Ephemeral Emotions** (shared concept: *therapeutic intervention*)

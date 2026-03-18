@@ -24,3 +24,14 @@ The Mycelia swarm operates on a decentralized, bio-mimicking network. Each unit 
 BloomShift combines the resilience of tardigrades, the biodegrading power of fungi, and the efficiency of swarm intelligence to create a truly dynamic and adaptable response to fuel spills. Unlike static barriers, BloomShift actively consumes the threat, mitigating damage *before* it spreads and causing long-term ecological harm. The bioluminescent feedback loop provides invaluable data and a visually stunning demonstration of the cleanup in action. It’s a self-healing, self-replicating, and relentlessly efficient solution. 
 
 **Pitch:** "Imagine a silent, living army of fungi that eats oil – that’s BloomShift, and we’re turning disaster zones into thriving marine habitats.”
+
+
+---
+
+## Related Ideas
+
+- **design autonomous swarm-based mural robots that create a complex impenetrable barrier using projected bioluminescence and disruptive sensory illusions** (shared concept: *swarm-based*)
+- **design autonomous swarm-based patching robots utilizing miniature tentacle-like manipulators for complex repair** (shared concept: *swarm-based*)
+- **design autonomous swarm-based clean-up octopuses that physically block and neutralize leakage points** (shared concept: *swarm-based*)
+- **design a swarm of micro-robots utilizing bioluminescence to identify and disrupt breach pathways** (shared concept: *self-replicating*)
+- **deploy autonomous miniature nutrient disruptors  organisms that consume and neutralize the breachs fueling source** (shared concept: *self-replicating*)

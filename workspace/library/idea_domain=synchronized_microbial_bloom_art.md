@@ -33,3 +33,14 @@ Chromatic Symbiosis isn’t just art; it's a living, breathing conversation betw
 ---
 *Original notes:*
 “**Chromatic Symbiosis: The Bio-Sculpting Studio**”
+
+
+---
+
+## Related Ideas
+
+- **and develop a concept for a sensory escape pod - a small enclosed space designed to provide immediate relief from sensory overload utilizing customizable lighting soundscapes and tactile elements** (shared concept: *pre-programmed sequences*)
+- **idea domain=Ephemeral Resonance Sculpting** (shared concept: *pre-programmed sequences*)
+- **idea domain – “geo-sensory weaving** (shared concept: *large-scale*)
+- **large-scale modular weaving can structures built by swarms of micro-robots creating shifting living tapestries** (shared concept: *pre-programmed sequences*)
+- **neuro-gastronomic synesthesia generation** (shared concept: *sonic sculpting*)

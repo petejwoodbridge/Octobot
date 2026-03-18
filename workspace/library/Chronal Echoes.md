@@ -20,3 +20,14 @@ Chronal Echoes transcends mere food reproduction; it’s a gateway to experienci
 
 ## Elevator Pitch
 Taste history itself – one ghost-flavored bite at a time.
+
+
+---
+
+## Related Ideas
+
+- **self-aware symbiotic sunbeam collectors for generating clean energy and fostering miniature ecosystems** (shared concept: *grapefruit-sized*)
+- **if two** (shared concept: *grapefruit-sized*)
+- **“petrichor reconstruction unit”** (shared concept: *real-time atmospheric*)
+- **idea domain=chronal mycological cartography** (shared concept: *real-time atmospheric*)
+- **“Petrichor Memory Garden”** (shared concept: *real-time atmospheric*)

@@ -30,3 +30,14 @@ The Somnium Spark isn’t just pretty pink; it’s brilliantly bonkers. It combi
 *   **Therapy & Trauma Recovery:** Gently guide patients through controlled dream scenarios to process and overcome traumatic memories.
 *   **Creative Inspiration:**  "Wake up" with brilliant ideas after a dream session designed to stimulate creativity.
 *   **Personalized Relaxation & Escapism:**  Simply escape into a world of your choosing – a serene beach, a
+
+
+---
+
+## Related Ideas
+
+- **idea domain – “chronal seed-drift analysis & affective temporal layering”** (shared concept: *therapy & trauma recovery*)
+- **idea domain=chromatic chronesthesia sculpting dream weaver** (shared concept: *pre-programmed dreamscapes*)
+- **chronesthesia sculpting haptic feedback olfactory micro-bursts psychological profiles emotional states** (shared concept: *cutting-edge technologies*)
+- **subconscious scent layering device** (shared concept: *personalized relaxation*)
+- **initial** (shared concept: *galactic adventure*)

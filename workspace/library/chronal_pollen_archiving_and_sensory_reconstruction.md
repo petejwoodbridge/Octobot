@@ -22,3 +22,14 @@ The Chronoscent goes beyond simple scent diffusion. It’s a scientifically grou
 
 ## Elevator Pitch
 “Experience history’s smells – and finally, truly remember it.”
+
+
+---
+
+## Related Ideas
+
+- **chronoscent concept** (shared concept: *deep-seated human*)
+- **gamified sensory deprivation pods** (shared concept: *non-invasive neural*)
+- **idea domain - biophotonic echo-gardening** (shared concept: *non-invasive neural*)
+- **neuro-seismic dream mapping  cephalopod biofeedback** (shared concept: *non-invasive neural*)
+- **neuro-echo flora - prototype** (shared concept: *non-invasive neural*)

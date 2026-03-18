@@ -51,3 +51,14 @@ The EchoWeave isn’t just about replacing
 ---
 *Original notes:*
 “The EchoWeave - A Bio-Harmonic Sensory Scaffold” – *Detailed pitch follows…*
+
+
+---
+
+## Related Ideas
+
+- **bio-sonorous lichen mapping – devices** (shared concept: *bio-harmonic resonance*)
+- **idea domain=symbiotic skin grafts** (shared concept: *bio-harmonic resonance*)
+- **adjustments** (shared concept: *bio-harmonic resonance*)
+- **auditory cartography project** (shared concept: *bio-harmonic resonance*)
+- **olfactory mimicry for geological strata** (shared concept: *luxury sensory experiences*)

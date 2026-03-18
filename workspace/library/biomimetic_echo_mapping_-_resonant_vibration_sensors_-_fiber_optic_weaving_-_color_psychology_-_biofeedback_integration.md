@@ -21,3 +21,14 @@ When an anxious state is detected, the micro-vibrators within the fiber optic fa
 The ChromaPulse isn’t just providing data; it's crafting an *emotional landscape* for the wearer. The combination of biofeedback integration, color psychology, and resonant vibration offers a far more intuitive and potentially transformative approach to managing anxiety than traditional methods. It allows the user to *feel* their anxiety, not just see it, leading to greater self-awareness and a pathway to regulation through controlled sensory input. The fiber optic weaving creates a beautiful, almost meditative aesthetic, turning anxiety management into an engaging, artistic experience. 
 
 **Pitch:** “Imagine feeling your anxiety melt away with a gentle, shimmering pulse – that’s the ChromaPulse.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain - biofeedback-integrated mindfulness** (shared concept: *real-time biofeedback*)
+- **adaptive biomaterials idea 1** (shared concept: *real-time biofeedback*)
+- **neuroacoustic stimulation haptic feedback olfactory layering myth archetype wearable device biofeedback** (shared concept: *real-time biofeedback*)
+- **“paleo-scent weaver”** (shared concept: *real-time biofeedback*)
+- **bioluminescent invertebrate behavior biofeedback integration miniature ecosystem design shape-memory alloy micro-habitats** (shared concept: *real-time biofeedback*)

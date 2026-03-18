@@ -37,3 +37,14 @@ When the user consciously chooses to ‘archive’ a memory, the Scent-Net activ
 **Why It’s Extraordinary**
 
 This isn’t just about smelling a memory; it's about *
+
+
+---
+
+## Related Ideas
+
+- **idea domain=symbiotic chronesthesia layering** (shared concept: *personal legacy preservation*)
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *neuro-sync calibration*)
+- **Ephemeral Gastronomic Cartography** (shared concept: *re-experience*)
+- **subconscious scent layering device** (shared concept: *creative inspiration*)
+- **idea domain=Symbiotic ‘Chrono-Bloom’ Gardens** (shared concept: *creative inspiration*)

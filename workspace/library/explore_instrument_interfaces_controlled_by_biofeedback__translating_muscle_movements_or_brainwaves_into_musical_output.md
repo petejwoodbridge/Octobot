@@ -21,3 +21,14 @@ During operation, the device translates these biofeedback signals into a rich, e
 The Resonance Weaver sidesteps the frustrating “mapping” problem by recognizing that biofeedback isn’t just data, but a story. It's about translating the *feeling* of music directly. The glove’s tactile feedback – gentle vibrations and subtle temperature changes – further enhances the experience, grounding the user in the sound and amplifying the connection between their internal state and the evolving music.  It's simultaneously accessible to beginners and capable of producing incredibly expressive and sophisticated compositions.
 
 *Pitch:* “Imagine composing a symphony with your emotions – the Resonance Weaver lets you.”
+
+
+---
+
+## Related Ideas
+
+- **haptic musical performance capture technology vibration mapping shape-memory alloy haptic devices biofeedback haptic interfaces temporal mapping** (shared concept: *the resonance weaver*)
+- **Chrono-resonance Textile Weaver - Concept** (shared concept: *resonance weaver*)
+- **Algorithmic Echo-Botanical Resonance – Chrono-Bloom Integration** (shared concept: *resonance weaver*)
+- **idea domain=sonospheric topiary** (shared concept: *resonance weaver*)
+- **idea domain=sonogenetic lithography** (shared concept: *without*)

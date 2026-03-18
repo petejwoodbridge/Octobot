@@ -40,3 +40,14 @@ These frequencies are then beamed back to a central processing unit – a gorgeo
 ---
 *Original notes:*
 ## Bio-Harmonic Resonance Mapping System (BHRS)
+
+
+---
+
+## Related Ideas
+
+- **idea domain – “chronal seed-drift analysis & affective temporal layering”** (shared concept: *bio-luminescent*)
+- **t about stopping the breach it** (shared concept: *bio-luminescent*)
+- **“synesthetic cartography app”** (shared concept: *bio-luminescent*)
+- **geolinguistic skin maps v1** (shared concept: *bio-luminescent*)
+- **bio-sonorous lichen mapping – devices** (shared concept: *bio-harmonic resonance*)

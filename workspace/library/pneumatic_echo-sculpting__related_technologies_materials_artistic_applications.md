@@ -15,3 +15,14 @@ Here’s the magic: As the Sonaris analyzes the audio, it modulates the internal
 **Why It’s Brilliant:** The Resonant Bloom transcends static sculpting. It’s a living, breathing representation of sound, offering a genuinely new medium for artistic expression and a unique scientific tool for studying acoustics and psychoacoustics. It moves beyond simply reproducing sound visually; it captures its *essence*.
 
 *Pitch:* “Imagine a sculpture that literally pulses with the music – this is how you finally bring sound to three dimensions.”
+
+
+---
+
+## Related Ideas
+
+- **sonorous sediment mapping project** (shared concept: *three-dimensional sculpture*)
+- **idea domain=Ephemeral Resonance Sculpting** (shared concept: *essence*)
+- **Kinesthetic Cartography of Forgotten Skills – Idea Pitch** (shared concept: *essence*)
+- **Ephemeral Gastronomic Cartography** (shared concept: *essence*)
+- **idea domain=Chronal Texture Synthesis** (shared concept: *essence*)

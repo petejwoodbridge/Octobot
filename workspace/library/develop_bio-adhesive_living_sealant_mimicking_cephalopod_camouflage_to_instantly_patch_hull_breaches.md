@@ -26,3 +26,14 @@ The entire process takes less than 30 seconds, creating a seamless, structurally
 The ChromaSeal leverages the incredible biological adhesive properties of cephalopods – arguably the *best* adhesive in nature – combined with the structural integrity of bacterial cellulose. It’s an entirely self-assembling, self-regulating system, eliminating human error and drastically reducing response times. Unlike traditional sealants, it doesn't rely on external curing agents or specific environmental conditions; it *becomes* the solution. The colour-changing aspect adds a critical visual feedback loop, allowing for immediate assessment of repair success. It's a symbiotic, self-healing hull patch.
 
 **Pitch:** "Imagine a breach disappears before you even finish shouting ‘brace for impact’ – that’s the ChromaSeal."
+
+
+---
+
+## Related Ideas
+
+- **develop bio-adhesive seals mimicking octopus camouflage for immediate hull patching incorporating adaptive material response to water pressure** (shared concept: *bio-adhesive*)
+- **develop a bio-adhesive sealant mimicking octopus skin instantly bonding to porous materials to physically block leaks** (shared concept: *bio-adhesive sealant*)
+- **develop bio-adhesive living seals utilizing modified octopus tissue to instantly patch and reinforce structural weaknesses** (shared concept: *bio-adhesive*)
+- **develop bio-adhesive living sealant mimicking octopus camouflage for immediate self-repairing hull breaches** (shared concept: *bio-adhesive sealant*)
+- **develop bio-adhesive living sealant mimicking octopus camouflage instantly patching structural weaknesses** (shared concept: *bio-adhesive sealant*)

@@ -23,3 +23,14 @@ This data feeds into a generative musical engine, trained on a massive database 
 The Chorolith bridges the gap between scientific observation and deeply personal experience. It’s not just about *knowing* about a rock formation; it's about *feeling* its story, understanding its ancient rhythms, and becoming profoundly connected to the Earth’s geological history. The combined sensory input creates a uniquely powerful meditative and potentially therapeutic experience, offering a novel approach to geological research, environmental awareness, and artistic expression. 
 
 **Pitch:** “Imagine hearing the heartbeat of the planet – it's the Chorolith, and it's about to change the way you see the world.”
+
+
+---
+
+## Related Ideas
+
+- **light-feeling synesthesia engines  materials sensors haptic feedback biofeedback artistic expression aesthetic perception proprioception** (shared concept: *ai-powered*)
+- **haptic exoskeletons motor skill refinement injury rehabilitation embodied experience neurological feedback loops sensor fusion** (shared concept: *ai-powered*)
+- **sentinel is a** (shared concept: *ai-powered*)
+- **design a decentralized ai-controlled network of miniature robotic tentacles capable of autonomously patching and reinforcing damaged vessels** (shared concept: *ai-powered*)
+- **bio-acoustic mapping develop a bloom-integrated system that creates 3d sonic maps of environments using echolocation identifying and labeling objects in real-time** (shared concept: *ai-powered*)

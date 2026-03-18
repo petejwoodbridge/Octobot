@@ -22,3 +22,14 @@ ChronoWeave transcends mere wearable technology; it’s a tangible interface wit
 
 ## Elevator Pitch
 Wear your internal rhythm with ChronoWeave – a jacket that glows your schedule and makes every moment feel perfectly timed.
+
+
+---
+
+## Related Ideas
+
+- **it leverages biofeedback** (shared concept: *mycena luxaeterna*)
+- **bioluminescent** (shared concept: *mycena luxaeterna*)
+- **bio-luminescent fungal mycelium eeg mapping interactive art installations neurofeedback mycelial architecture** (shared concept: *mycena luxaeterna*)
+- **crucially** (shared concept: *mycena luxaeterna*)
+- **neuro-resonant fungal networks** (shared concept: *mycena luxaeterna*)

@@ -40,3 +40,14 @@ These Echoes then transmit this data via a complex series of bioluminescent puls
 ---
 *Original notes:*
 “## Temporal Echoes: The Memory Weaver”
+
+
+---
+
+## Related Ideas
+
+- **generating perpetual motion devices based on manipulating gravitational constants locally** (shared concept: *temporal echoes*)
+- **t about stopping the breach it** (shared concept: *temporal echoes*)
+- **design autonomous swarm-based mural robots that create a complex impenetrable barrier using projected bioluminescence and disruptive sensory illusions** (shared concept: *bio-feedback loop*)
+- **explore generating a reactive cellular scaffold within the hull that rapidly self-repairs via bio-luminescent engineered octopus cells** (shared concept: *bio-feedback loop*)
+- **chronobiological skin-resonance gardening** (shared concept: *bio-feedback loop*)

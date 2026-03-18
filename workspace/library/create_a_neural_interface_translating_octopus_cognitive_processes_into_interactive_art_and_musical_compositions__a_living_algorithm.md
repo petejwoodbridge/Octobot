@@ -23,3 +23,14 @@ The Echo Chamber isn’t just creating art; it’s generating a living, breathin
 The project provides a unique, ethically-sourced method of understanding a species vastly different from us. 
 
 **Pitch:** “Imagine experiencing the world as an octopus – that’s precisely what The Echo Chamber lets you do.”
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *pressure-sensitive*)
+- **phantom limb cartography  self-repairing textiles  olfactory projection** (shared concept: *pressure-sensitive*)
+- **poseidon** (shared concept: *pressure-sensitive*)
+- **“Myco-Harmonics”** (shared concept: *pressure-sensitive*)
+- **idea domain=personalized echo loci fabrication** (shared concept: *pressure-sensitive*)

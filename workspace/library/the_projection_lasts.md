@@ -22,3 +22,14 @@ It’s powered by kinetic energy harvested from the user’s movements.
 **Why It’s Brilliant:** Chronoskin isn’t just about marking time; it’s about acknowledging and processing the emotional impact of ephemeral experiences. It transforms the feeling of loss into a tangible, visually evocative reminder, fostering a greater appreciation for the fleeting beauty of the present moment.  It’s a fusion of biofeedback, data tracking, and artistic light design – turning a frustrating sensation into a meditative tool.
 
 **Pitch:** "Chronoskin lets you truly savor every last second of the things you love – and then beautifully remembers why you loved them so much."
+
+
+---
+
+## Related Ideas
+
+- **idea domain=ochre-echo resonance expanded** (shared concept: *bio-reactive skin*)
+- **biometric cartography of phantom limb sensations** (shared concept: *bio-reactive skin*)
+- **create a chromatophore-based emotional regulation system allowing humans to dynamically control their outward appearance** (shared concept: *bio-reactive skin*)
+- **idea domain - Vestibular Echo-Cartography** (shared concept: *bio-reactive skin*)
+- **idea domain - Symbiotic Skin Grafts - Moodscape** (shared concept: *bio-reactive skin*)

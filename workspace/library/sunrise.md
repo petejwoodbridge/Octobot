@@ -23,3 +23,14 @@ ChromaBloom bypasses the shocking sensory overload of a traditional alarm. It ta
 Furthermore, the dinoflagellate culture is self-sustaining, requiring only minimal maintenance, and the entire process is entirely sustainable. 
 
 **Pitch:** “Imagine waking up to the ocean’s glow, gently guiding you into a better, brighter day – ChromaBloom brings that experience directly to your bedside.”
+
+
+---
+
+## Related Ideas
+
+- **designing self-contained mobile ecosystems housing noctiluca and other deep-sea organisms for advanced research and potential terraforming applications** (shared concept: *noctiluca scintillans*)
+- **bio-luminescent shell habitats design self-contained miniature ecosystems within intricately crafted shells using bioluminescent organisms for light and potentially food** (shared concept: *noctiluca scintillans*)
+- **people crave subtle** (shared concept: *noctiluca scintillans*)
+- **micro-seasonal synesthesia amplification** (shared concept: *chromabloom*)
+- **learn** (shared concept: *noctiluca scintillans*)

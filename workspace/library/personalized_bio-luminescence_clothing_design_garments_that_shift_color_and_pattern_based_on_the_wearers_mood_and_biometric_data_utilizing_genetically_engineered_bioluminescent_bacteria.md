@@ -26,3 +26,14 @@ The bacteria, fed by a micro-nutrient solution absorbed through the fabric’s p
 ChromaWeave transcends simple mood-reactive clothing. It's a dynamic, living skin that offers real-time feedback on our internal state, transforming emotional data into a breathtaking, ever-changing visual spectacle. It blends cutting-edge biotechnology with sustainable materials, offering a fundamentally new way to understand and express ourselves. It also has potential applications in therapeutic settings, aiding in emotional regulation and stress management.
 
 **Pitch:** “Imagine wearing your emotions – ChromaWeave lets you literally see what you’re feeling, beautifully and intuitively.”
+
+
+---
+
+## Related Ideas
+
+- **weaver** (shared concept: *heart rate variability (hrv)*)
+- **t about stopping the breach it** (shared concept: *heart rate variability (hrv)*)
+- **Algorithmic Gastronomic Synesthesia v1** (shared concept: *photobacterium phosphoreum*)
+- **bio-luminescent shell structures for underwater city lighting and navigation** (shared concept: *bio-luminescent technologies*)
+- **noise-canceling collaborative workspaces** (shared concept: *non-verbal communication*)

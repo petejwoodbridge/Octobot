@@ -17,3 +17,14 @@ The textile itself is woven using a robotic loom guided by this pattern. Initial
 **Why It’s Brilliant:** ChronoThread doesn't just *suggest* a memory; it *recreates* a portion of the sensory environment that was present when the memory was originally formed, bypassing the cognitive filters and triggering a deeply visceral, emotionally authentic experience. The constantly shifting texture provides a dynamic, engaging pathway back to the past, far surpassing the limitations of static memory aids. It's a symbiotic relationship between technology and the human brain, guided by the very fabric of experience.
 
 Pitch: “Imagine feeling the sun on your skin again, perfectly replicated through a scarf that remembers how you felt.”
+
+
+---
+
+## Related Ideas
+
+- **neuro-gastronomic-chronosensory-reconstructor** (shared concept: *shape-memory alloy*)
+- **Chrono-Floral Synthesis - Prototype Design** (shared concept: *shape-memory alloy*)
+- **idea domain = “liminal scent mapping with reactive alloy scent fields”** (shared concept: *shape-memory alloy*)
+- **advanced bio-sensor technology for volatile organic compound voc analysis combined with shape-memory alloy textile construction** (shared concept: *shape-memory alloy*)
+- **mnemonic pollen mapping** (shared concept: *shape-memory alloy*)

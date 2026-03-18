@@ -23,3 +23,14 @@
 **Why It’s Brilliant:** The EchoStone bridges the gap between physical archaeology and sensory experience, offering a fundamentally new way to understand ancient tools. It leverages established techniques like haptic feedback and aroma delivery, but combines them with advanced neuroscience and archaeological data to create a genuinely immersive, intuitive, and verifiable interpretation of past culinary practices – shifting archaeological analysis from deduction to direct, felt experience.
 
 Pitch: "Imagine tasting history – the EchoStone lets you truly *feel* what ancient humans were eating, revealing secrets lost to time."
+
+
+---
+
+## Related Ideas
+
+- **statistical analysis of fungal bioacoustic emissions haptic interfaces for temporal data mapping olfactory simulation of decayed environments** (shared concept: *haptic mapping*)
+- **bio-printing temporal gradients bacterial biofilm mapping olfactory feedback systems haptic rendering of geological strata** (shared concept: *haptic mapping*)
+- **neuro-linked personal microclimates capable of proactively adjusting temperature humidity and even scent based on emotional state** (shared concept: *micro-sensor array*)
+- **idea domain = “Ephemeral Cartography of Tactile Nostalgia”** (shared concept: *micro-sensor array*)
+- **resonant fungal echo-gardens - concept refinement** (shared concept: *micro-sensor array*)

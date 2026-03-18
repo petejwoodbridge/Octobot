@@ -20,3 +20,14 @@ TempusFlora combines cutting-edge bio-robotics, bioluminescence, and sensory tec
 
 ## Elevator Pitch
 Witness the death of an object—transformed into a breathtaking, bioluminescent symphony.
+
+
+---
+
+## Related Ideas
+
+- **chronal echo sculpting device** (shared concept: *multi-sensory experience*)
+- **neural network cartridges injectable bio-circuits for targeted localized neurological stimulation** (shared concept: *cutting-edge bio*)
+- **seismic empathy matrices** (shared concept: *cutting-edge bio*)
+- **bio-acoustic stress monitoring and fungal response** (shared concept: *cutting-edge bio*)
+- **each panel is** (shared concept: *cutting-edge bio*)

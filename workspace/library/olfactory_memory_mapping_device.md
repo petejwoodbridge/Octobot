@@ -1,1 +1,11 @@
-“The EchoBloom: A neuro-scent synthesizer for extinct animal encounters. This device, resembling a polished, iridescent seashell, uses advanced bio-acoustic resonance and micro-robotic diffusion technology to recreate the scent profile of an extinct animal based on scientific reconstruction. Users wear a discreet neural interface that translates their memories (triggered by visual or auditory cues – a hologram, a recording, a 3D model) into a corresponding scent signature. The EchoBloom then delivers this bespoke olfactory experience directly to the user’s olfactory bulb, creating an incredibly vivid and immersive ‘encounter.’  It also includes a ‘memory bank’ – a library of scent profiles of extinct animals accessible via a neural interface.  Furthermore, it tracks user responses to the scent – physiological data (heart rate, brainwave activity) – to refine and personalize the experience.  Finally, a companion app allows users to contribute their own memories and scent preferences to the growing ‘EchoBloom’ database!  It’s like time travel… via smell! In-ink-credible!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **neural-resonance landscaping** (shared concept: *bio-acoustic resonance*)
+- **the study of pointless enhancements** (shared concept: *bio-acoustic resonance*)
+- **bio-acoustic resonance mapping of personal objects micro-haptic feedback technology temperature modulation textiles** (shared concept: *bio-acoustic resonance*)
+- **lithospheric dream weaver** (shared concept: *bio-acoustic resonance*)
+- **idea domain=Ephemeral Echo Synthesis** (shared concept: *bio-acoustic resonance*)

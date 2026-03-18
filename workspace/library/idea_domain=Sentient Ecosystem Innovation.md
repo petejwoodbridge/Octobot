@@ -1,1 +1,11 @@
-“EchoBloom: A Bio-Acoustic Memory Garden” - *A self-cultivating miniature garden system that records and re-plays the sensory experiences associated with a specific memory. Utilizing biofeedback from the user, combined with ultrasonic stimulation of the plants’ root systems, the garden ‘learns’ the emotional and sensory data linked to a chosen memory – a first kiss, a childhood home, a favorite song. The plants then subtly ‘re-play’ those sensations via a carefully orchestrated sequence of blooming, scent release (using integrated, bio-engineered micro-flora), and gentle ultrasonic vibrations. A connected app allows the user to curate and share their 'Memory Gardens'.*
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **neuro resonant fungal terraforming concept** (shared concept: *memory gardens*)
+- **developing a subterranean bio-luminescent habitat network utilizing geothermal energy and genetically engineered mineral-extracting organisms** (shared concept: *memory gardens*)
+- **idea domain=Ephemeral Echo Mapping** (shared concept: *bio-acoustic memory*)
+- **subconscious scent layering device** (shared concept: *bio-acoustic memory*)
+- **Bio-acoustic Memory Anchor Prototype** (shared concept: *bio-acoustic memory*)

@@ -23,3 +23,14 @@ Furthermore, the device records the scent profile at the moment of activation, c
 The Memory Current taps into the powerfully associative nature of olfaction. Unlike visual or auditory cues, smell is directly linked to the amygdala, the brain’s emotional center, creating a far more vivid and emotionally resonant memory. By precisely controlling the scent composition, we’re not just triggering a memory; we're sculpting it – rebuilding the sensory experience with unparalleled accuracy and depth. It’s a fundamentally new approach to memory enhancement, leveraging the ocean's richest sensory dimension.
 
 **Pitch:** "Imagine vividly reliving your most incredible underwater moments - the Memory Current lets you do just that, creating a tangible, scented snapshot of your deepest ocean memories."
+
+
+---
+
+## Related Ideas
+
+- **biometric moss cultivation  neural lace integration  synthetic memory** (shared concept: *long-term memory*)
+- **bio-luminescent coral genetics sound frequency manipulation memory encoding** (shared concept: *long-term memory*)
+- **bio-resonant memory amplifiers  neurological stimulation holographic projection olfactory synthesis** (shared concept: *long-term memory*)
+- **bio-luminescent shell displays project holographic narratives based on ocean currents** (shared concept: *current weaver*)
+- **self-assembling living shell constructs capable of manipulating ocean currents** (shared concept: *current weaver*)

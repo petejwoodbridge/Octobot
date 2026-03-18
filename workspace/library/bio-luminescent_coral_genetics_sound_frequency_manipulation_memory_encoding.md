@@ -24,3 +24,14 @@ Here’s the process:
 The EchoBloom merges cutting-edge genetics, acoustic engineering, and neuro-linguistics. It’s not just a memory storage device; it’s a living archive, intrinsically linked to a beautiful, thriving organism. It offers a potential solution to memory loss and trauma by directly interfacing with the body's innate biological mechanisms. Preserving coral genetics simultaneously offers scientific breakthroughs and a stunning artistic experience.
 
 **Pitch:** “Imagine recalling a cherished childhood memory with the shimmering light of a living coral – it’s the future of memory, and it’s breathtaking.”
+
+
+---
+
+## Related Ideas
+
+- **the system is** (shared concept: *sonic resonance*)
+- **idea domain – “Subconscious geological echo-weaving”** (shared concept: *bio-integrated device*)
+- **microbial scent mapping technology bio-sensing olfactory systems historical scent reconstruction** (shared concept: *bio-integrated device*)
+- **idea domain=neuro-geological scent-cartography of fungal communication networks** (shared concept: *bio-integrated device*)
+- **microbial degradation patterns in organic materials  specifically focusing on the visual olfactory and haptic signatures of decomposition** (shared concept: *bio-integrated device*)

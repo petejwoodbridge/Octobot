@@ -37,3 +37,14 @@ This field interacts with the rock’s inherent crystalline structure. Minerals,
 ---
 *Original notes:*
 ## GeoSonics: The Earth’s Echo Chamber
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *echo chamber*)
+- **sonorous petrification  materials acoustics crystallization geological markers** (shared concept: *three-dimensional acoustic*)
+- **bio-acoustic mapping of subterranean cave systems  shape-memory alloys  temporal distortion** (shared concept: *three-dimensional acoustic*)
+- **chronal echo sculpting device** (shared concept: *three-dimensional acoustic*)
+- **acoustic cartography bone augmentation biofeedback temporal perception** (shared concept: *three-dimensional acoustic*)

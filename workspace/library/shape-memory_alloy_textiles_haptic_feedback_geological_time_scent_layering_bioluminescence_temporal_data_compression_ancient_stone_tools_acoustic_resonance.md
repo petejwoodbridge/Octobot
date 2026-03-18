@@ -17,3 +17,14 @@ When activated by a wearable sensor (a simple wristband) that detects temporal d
 **Why It’s Brilliant:** Chrono-Weave bridges the gap between visual recall and genuine sensory immersion. It isn’t just about seeing a place; it’s about *feeling* it again, experiencing the layered, authentic sensory echoes of the past, offering a profoundly more powerful and emotionally resonant pathway to memory. It utilizes a previously untapped intersection of bioluminescence, haptic feedback, and scent layering, guided by geological data for unparalleled accuracy.
 
 Pitch: “Imagine feeling the chill of your childhood bedroom, the scent of your grandmother’s baking, and seeing the exact light filtering through the trees – Chrono-Weave brings your memories back to life, one incredible sensation at a time.”
+
+
+---
+
+## Related Ideas
+
+- **textile-based micro-robotics for creating wearable feedback devices - investigate textile micro-robotics for enhanced haptic and temporal feedback library library-textile m** (shared concept: *shape-memory alloy*)
+- **idea domain - temporal mycological cartography** (shared concept: *shape-memory alloy*)
+- **kinesthetic palimpsest concept** (shared concept: *shape-memory alloy*)
+- **plant bio-acoustics shape-memory alloys haptic feedback olfactory projection temporal distortion** (shared concept: *shape-memory alloy*)
+- **“chronal bloom weaver”** (shared concept: *shape-memory alloy*)

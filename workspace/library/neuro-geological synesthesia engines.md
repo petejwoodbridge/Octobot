@@ -31,3 +31,14 @@ The NGSE is built around a core principle: geology vibrates. Every rock, every f
 *   **Tourism & Education:**  Imagine tourists *experiencing* the formation of a glacier or the birth of a volcano – truly immersive learning!
 *   **Art & Design:** Artists could use the NGSE to translate geological data into stunning, interactive installations.
 *   **Therapy:**  The calming, rhythmic sensory input could be
+
+
+---
+
+## Related Ideas
+
+- **Kinesthetic Cartography of Forgotten Skills – Idea Pitch** (shared concept: *data logging*)
+- **biogenic chemical signatures olfactory projection haptic feedback memory-scapes pet grief biogenic mineral analysis** (shared concept: *multi-sensory experience*)
+- **“chronal echo engine”** (shared concept: *multi-sensory experience*)
+- **geological whisper weaving** (shared concept: *multi-sensory experience*)
+- **idea domain - “Bio-acoustic geomorphological empathy chambers”** (shared concept: *multi-sensory experience*)

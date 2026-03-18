@@ -17,3 +17,14 @@ Crucially, the mycelial scaffold itself is pre-seeded with microscopic “memory
 **Why It’s Brilliant:**  It moves beyond generalized scent association to create a genuinely *accurate* olfactory representation of a past experience, stimulating a complete, multisensory recall. The bio-scaffolding aspect ensures sustained, precise delivery, while the AI and microbial system offer unparalleled adaptability and personalization. It’s a deeply immersive, biologically-grounded approach to memory retrieval. 
 
 Pitch: “Imagine stepping back into your wedding day, not just remembering it, but *feeling* it again – we’re building the ultimate olfactory time machine.”
+
+
+---
+
+## Related Ideas
+
+- **neuro-scent synthesis rem sleep voc analysis microbial scent production bio-luminescent chambers** (shared concept: *lactobacillus brevis*)
+- **microbial scent synthesis techniques bio-scaffolding for olfactory delivery temporal scent perception studies** (shared concept: *bio-scaffolding device*)
+- **neuro-scent technology olfactory memory mapping eeg olfactory stimulation microbiome scent profiles shape-memory alloy olfactory delivery** (shared concept: *neuro-scent technology*)
+- **micro-seasonal olfactory archiving  playback - related sensors voc capture technology diffusion methods shape-memory alloy integration human olfactory perception research** (shared concept: *the memory bloom*)
+- **chronoscaping algorithmic reconstruction of lost sensory experiences via targeted micro-temporal stasis** (shared concept: *the memory bloom*)

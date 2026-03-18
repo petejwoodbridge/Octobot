@@ -20,3 +20,14 @@ The Chronosiphon offers a profoundly intimate and scientifically novel way to ac
 
 ## Elevator Pitch
 Capture your memories, bottle your emotions, and relive your life with the Chronosiphon.
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *neuro-acoustic technology*)
+- **idea domain - “kinesthetic memory archiving with biofeedback”** (shared concept: *re-experiencing*)
+- **furthermore** (shared concept: *re-experiencing*)
+- **chronoscaping chronometer** (shared concept: *re-experiencing*)
+- **cephalopod olfaction bio-acoustic mapping scent memory temporal resonance haptic feedback burial site analysis lullaby reconstruction** (shared concept: *re-experiencing*)

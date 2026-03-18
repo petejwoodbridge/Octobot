@@ -468,7 +468,6 @@
         <button class="tab-btn" data-tab="journal">📖 JOURNAL</button>
         <button class="tab-btn" data-tab="graph">🕸️ GRAPH</button>
         <button class="tab-btn" data-tab="achievements">🏅 BADGES</button>
-        <button class="tab-btn" data-tab="chains">⛓️ CHAINS</button>
         <button class="tab-btn" data-tab="help">❓ HELP</button>
       </div>
     </div>
@@ -907,6 +906,10 @@ setInterval(pollAutoMessages, 4000);
 // =====================================================================
 // LIBRARY
 // =====================================================================
+let _libFiles = [];
+let _libRendered = 0;
+const _LIB_PAGE = 80;
+
 async function loadLibrary() {
   const data = await fetchJSON('/api/library');
   if (!data) return;
@@ -915,16 +918,38 @@ async function loadLibrary() {
     list.innerHTML = '<div style="color:#bf00ff88;font-size:10px;padding:8px;font-family:Segoe UI,sans-serif;">(Idea vault is empty — time to invent!)</div>';
     return;
   }
-  list.innerHTML = data.files.map(f => {
+  _libFiles = data.files;
+  _libRendered = 0;
+  list.innerHTML = '';
+  _renderLibPage(list);
+  // Load more on scroll
+  list.onscroll = () => {
+    if (list.scrollTop + list.clientHeight >= list.scrollHeight - 40) {
+      _renderLibPage(list);
+    }
+  };
+}
+
+function _renderLibPage(list) {
+  const end = Math.min(_libRendered + _LIB_PAGE, _libFiles.length);
+  if (_libRendered >= end) return;
+  const frag = document.createDocumentFragment();
+  for (let i = _libRendered; i < end; i++) {
+    const f = _libFiles[i];
     const raw = f.replace('library/','').replace('.md','');
-    // Convert slug to readable name: underscores/hyphens to spaces, capitalize words, truncate
     const name = raw.replace(/[_-]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase()).slice(0, 60);
-    return `<div class="lib-item" data-file="${f.replace(/"/g,'&quot;')}" onclick="previewFile(this, '${f.replace(/'/g,"\\'")}')">${name}</div>`;
-  }).join('');
+    const div = document.createElement('div');
+    div.className = 'lib-item';
+    div.setAttribute('data-file', f);
+    div.textContent = name;
+    div.addEventListener('click', () => previewFile(div, f));
+    frag.appendChild(div);
+  }
+  list.appendChild(frag);
+  _libRendered = end;
 }
 
 async function previewFile(el, filename) {
-  // Highlight active card
   document.querySelectorAll('.lib-item.active').forEach(e => e.classList.remove('active'));
   if (el) el.classList.add('active');
 
@@ -932,6 +957,8 @@ async function previewFile(el, filename) {
   const data = await fetchJSON('/api/library/' + encodeURIComponent(safe));
   if (data && data.content) {
     document.getElementById('library-preview').innerHTML = renderMarkdown(data.content);
+  } else {
+    document.getElementById('library-preview').innerHTML = '<div style="color:#bf00ff88;">Could not load idea.</div>';
   }
 }
 
@@ -1021,17 +1048,40 @@ function gBuildLayout(nodes, edges, gc){
   gGraphBuilt=true; gSettleIter=0;
 }
 
+// Spatial grid for O(n) repulsion instead of O(n²)
+let _grid={}, _gridSize=100;
+function _gridKey(x,y){ return ((x/_gridSize|0)*10000+(y/_gridSize|0)); }
+function _buildGrid(nodes){
+  _grid={};
+  nodes.forEach(n=>{
+    const p=gNodePos[n]; if(!p) return;
+    const k=_gridKey(p.x,p.y);
+    (_grid[k]=_grid[k]||[]).push(n);
+  });
+}
+function _nearbyNodes(x,y){
+  const gx=x/_gridSize|0, gy=y/_gridSize|0, result=[];
+  for(let dx=-1;dx<=1;dx++) for(let dy=-1;dy<=1;dy++){
+    const cell=_grid[(gx+dx)*10000+(gy+dy)];
+    if(cell) result.push(...cell);
+  }
+  return result;
+}
+
 function gForceStep(nodes, edges){
   const KR=1200, KS=0.03, KC=0.0015, DAMP=0.82, MIN_D=20, IDEAL=80;
   nodes.forEach(n=>{ const p=gNodePos[n]; if(p){p.fx=0;p.fy=0;} });
-  // Repulsion — skip pairs > 400 world-units apart for perf
+  // Repulsion via spatial grid — O(n) instead of O(n²)
+  _buildGrid(nodes);
   for(let i=0;i<nodes.length;i++){
-    const pi=gNodePos[nodes[i]]; if(!pi) continue;
-    for(let j=i+1;j<nodes.length;j++){
-      const pj=gNodePos[nodes[j]]; if(!pj) continue;
+    const ni=nodes[i], pi=gNodePos[ni]; if(!pi) continue;
+    const nearby=_nearbyNodes(pi.x,pi.y);
+    for(let j=0;j<nearby.length;j++){
+      const nj=nearby[j]; if(nj<=ni) continue; // avoid double-counting
+      const pj=gNodePos[nj]; if(!pj) continue;
       let dx=pi.x-pj.x, dy=pi.y-pj.y;
       let d=Math.sqrt(dx*dx+dy*dy)||0.01;
-      if(d>420) continue;
+      if(d>_gridSize*2) continue;
       if(d<MIN_D){dx=(Math.random()-0.5)*MIN_D;dy=(Math.random()-0.5)*MIN_D;d=MIN_D;}
       const f=KR/(d*d);
       pi.fx+=(dx/d)*f; pi.fy+=(dy/d)*f;
@@ -1039,7 +1089,7 @@ function gForceStep(nodes, edges){
     }
   }
   // Edge spring attraction
-  const edgeCap=Math.min(edges.length,2000);
+  const edgeCap=Math.min(edges.length,1500);
   for(let i=0;i<edgeCap;i++){
     const e=edges[i], a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
     const dx=b.x-a.x, dy=b.y-a.y, d=Math.sqrt(dx*dx+dy*dy)||0.01;
@@ -1062,17 +1112,14 @@ function gForceStep(nodes, edges){
         const dx=p.x-sp.x, dy=p.y-sp.y;
         const d=Math.sqrt(dx*dx+dy*dy)||0.01;
         if(selNeigh.has(n)){
-          // Pull toward short orbit distance
           const orbit=60+(p.r+sp.r)*1.8;
           const f=0.14*bl*(d-orbit);
           p.fx-=(dx/d)*f; p.fy-=(dy/d)*f;
         } else {
-          // Push non-neighbours away from selected
           const f=700*bl/(d*d+10);
           p.fx+=(dx/d)*f; p.fy+=(dy/d)*f;
         }
       });
-      // Anchor the selected node — strongly dampen its movement
       sp.vx*=0.15; sp.vy*=0.15;
     }
   }
@@ -1133,7 +1180,7 @@ function drawGraphFrame(){
   const maxDeg=Math.max(1,...Object.values(gDegree));
 
   // ── Draw edges ─────────────────────────────────────────────────────
-  const ecap=Math.min(edges.length,4000);
+  const ecap=Math.min(edges.length,1500);
 
   // Pass 1: background (dim) edges
   for(let i=0;i<ecap;i++){
@@ -1252,12 +1299,12 @@ function gStopAnimLoop(){
 let gSetup=false;
 function selectConceptNode(name){
   gSelected=name;
-  gSettleIter=0; // restart physics so neighbours cluster in
-  // Smoothly pan+zoom to centre the selected node in the visible area (left of 320px panel)
+  gSettleIter=0;
+  // Centre the selected node on screen
   if(gNodePos[name]){
     const tz=Math.min(2.2, Math.max(gZoom, 1.1));
     gCamTZ=tz;
-    gCamTX=-gNodePos[name].x - (160/tz); // 160 = half panel width → offsets node into visible centre
+    gCamTX=-gNodePos[name].x;
     gCamTY=-gNodePos[name].y;
   }
   const nd=document.getElementById('node-detail');
@@ -1268,10 +1315,13 @@ function selectConceptNode(name){
   ))].slice(0,40);
   document.getElementById('node-detail-title').textContent=name;
   ndc.innerHTML=`<div style="color:#00f7ff;margin-bottom:8px;font-size:11px;"><strong>${deg}</strong> connections</div>`+
-    `<div id="concept-ideas-section"><div style="color:#bf00ffaa;font-size:11px;">Searching ideas\u2026</div></div>`+
+    `<div id="concept-ideas-section"><div style="color:#bf00ffaa;font-size:11px;">Loading ideas\u2026</div></div>`+
     `<div style="margin-top:12px;"><div style="color:#bf00ffaa;font-size:11px;margin-bottom:6px;">Connected concepts:</div>`+
-    (nbrs.length?nbrs.map(n=>`<span class="nbr-chip" onclick="selectConceptNode('${n.replace(/'/g,"\\'")}')"
-      style="display:inline-block;background:#1a003a;border:1px solid #bf00ff55;color:#00f7ff;font-size:10px;padding:2px 7px;margin:2px;border-radius:3px;cursor:pointer;">${n}</span>`).join('')
+    (nbrs.length?nbrs.map(n=>{
+      const escaped=n.replace(/'/g,"\\'").replace(/"/g,'&quot;');
+      return `<span class="nbr-chip" onclick="selectConceptNode('${escaped}')"
+        style="display:inline-block;background:#1a003a;border:1px solid #bf00ff55;color:#00f7ff;font-size:10px;padding:2px 7px;margin:2px;border-radius:3px;cursor:pointer;">${n}</span>`;
+    }).join('')
     :'<span style="color:#bf00ff44;font-size:11px;">(none in view)</span>')+'</div>';
   nd.style.display='block';
   fetchJSON('/api/concept?q='+encodeURIComponent(name)).then(data=>{
@@ -1281,14 +1331,38 @@ function selectConceptNode(name){
       sec.innerHTML='<div style="color:#bf00ff66;font-size:11px;">No ideas found for this concept.</div>';
       return;
     }
-    sec.innerHTML='<div style="color:#ff66cc;font-size:11px;margin-bottom:8px;">Related ideas:</div>'+
+    sec.innerHTML='<div style="color:#ff66cc;font-size:11px;margin-bottom:8px;">Ideas containing this concept:</div>'+
       data.matches.map(m=>`
-        <div style="background:#10003055;border:1px solid #bf00ff44;border-radius:4px;padding:8px;margin-bottom:8px;">
-          <div style="color:#ff99ee;font-size:11px;font-weight:bold;margin-bottom:5px;">${m.title}</div>
+        <div style="background:#10003055;border:1px solid #bf00ff44;border-radius:4px;padding:8px;margin-bottom:8px;cursor:pointer;"
+             onclick="window._graphShowIdea('${m.file.replace(/'/g,"\\'")}')">
+          <div style="color:#ff99ee;font-size:12px;font-weight:bold;margin-bottom:5px;">${m.title}</div>
           <div style="color:#cceeffcc;font-size:11px;line-height:1.5;">${m.snippet}</div>
+          <div style="color:#bf00ff88;font-size:9px;margin-top:6px;">Click to read full idea</div>
         </div>`).join('');
   });
 }
+
+// Show full idea content in a modal overlay from the graph panel
+window._graphShowIdea = async function(filename) {
+  const safe = filename.startsWith('library/') ? filename.slice(8) : filename;
+  const data = await fetchJSON('/api/library/' + encodeURIComponent(safe));
+  if (!data || !data.content) return;
+  let overlay = document.getElementById('graph-idea-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.id = 'graph-idea-overlay';
+    overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:#0a0020ee;z-index:200;display:flex;justify-content:center;align-items:center;';
+    overlay.innerHTML = `<div style="background:#0f0030;border:2px solid #bf00ff;border-radius:8px;padding:20px;max-width:700px;width:90%;max-height:85vh;overflow-y:auto;position:relative;">
+      <div id="graph-idea-close" style="position:absolute;top:8px;right:12px;color:#ff2d9b;font-size:20px;cursor:pointer;font-weight:bold;">&times;</div>
+      <div id="graph-idea-body" style="color:#cc99ff;font-size:13px;line-height:1.7;"></div>
+    </div>`;
+    document.body.appendChild(overlay);
+    document.getElementById('graph-idea-close').addEventListener('click', () => overlay.style.display='none');
+    overlay.addEventListener('click', e => { if(e.target===overlay) overlay.style.display='none'; });
+  }
+  document.getElementById('graph-idea-body').innerHTML = renderMarkdown(data.content);
+  overlay.style.display = 'flex';
+};
 
 function setupGraphInteraction(){
   if(gSetup) return; gSetup=true;
@@ -1346,18 +1420,35 @@ function setupGraphInteraction(){
   });
 }
 
+let _graphRetries=0;
 async function loadGraph(){
   document.getElementById('graph-info').textContent='Loading knowledge graph\u2026';
-  const data=await fetchJSON('/api/graph?max=2000'); if(!data) {
+  const data=await fetchJSON('/api/graph?max=250');
+  if(!data) {
     document.getElementById('graph-info').textContent='Failed to load graph \u2014 retrying on next tab switch';
     return;
   }
+  // If graph came back empty but server is still starting up, retry a few times
+  if((!data.nodes||data.nodes.length===0) && _graphRetries<5){
+    _graphRetries++;
+    document.getElementById('graph-info').textContent=`Graph building\u2026 retry ${_graphRetries}/5`;
+    setTimeout(loadGraph, 3000);
+    return;
+  }
+  _graphRetries=0;
   graphData=data; gGraphBuilt=false; gSelected=null; gHoverNode=null;
   const shown=data.nodes.length, total=data.total_nodes||shown;
   document.getElementById('graph-info').textContent=
     `${shown} of ${total} idea concepts \u00b7 ${data.edges.length} idea connections \u00b7 scroll=zoom \u00b7 drag=pan \u00b7 click=select \u00b7 dbl=reset`;
   setupGraphInteraction();
   gStartAnimLoop();
+  // Auto-focus on the most connected node after layout builds
+  if(data.nodes.length>0){
+    const deg={};
+    (data.edges||[]).forEach(e=>{deg[e.from]=(deg[e.from]||0)+1;deg[e.to]=(deg[e.to]||0)+1;});
+    const top=data.nodes.reduce((a,b)=>(deg[a]||0)>=(deg[b]||0)?a:b);
+    setTimeout(()=>selectConceptNode(top), 600);
+  }
 }
 
 // =====================================================================

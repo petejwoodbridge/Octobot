@@ -39,3 +39,14 @@ A central ‘Echo Core’ – a miniaturized quantum processor (don’t ask!) �
 ---
 *Original notes:*
 # Chromatic Anxieties: The Bioluminescent Anxiety Sculptor
+
+
+---
+
+## Related Ideas
+
+- **the system is** (shared concept: *bio-emotional sensing*)
+- **adaptive microclimate suits incorporating bio-luminescent algae for personalized light and temperature regulation** (shared concept: *glow-in*)
+- **chromatic heartbeat  cephalopod camouflage  biofeedback textiles  emotional expression through bioluminescence** (shared concept: *glow-in*)
+- **bio-luminescent textiles woven with genetically modified silk capable of displaying complex patterns based on environmental stimuli** (shared concept: *glow-in*)
+- **idea domain = Ecological Wellbeing Tech** (shared concept: *glow-in*)

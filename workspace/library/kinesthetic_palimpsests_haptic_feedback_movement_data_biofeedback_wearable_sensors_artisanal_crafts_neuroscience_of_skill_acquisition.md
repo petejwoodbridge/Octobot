@@ -21,3 +21,14 @@ The glove is entirely artisanally crafted – each weave is unique, incorporatin
 The EchoWeave leverages neuroscience of skill acquisition, haptic feedback, and artisanal craftsmanship in a genuinely novel way. It bypasses the cognitive limitations of simply watching or reading instructions, directly translating the expert’s embodied experience into the learner’s body. It’s not just about *knowing* how to do something; it’s about *feeling* it. The handcrafted nature adds a unique meditative element, encouraging mindful engagement.
 
 **Pitch:** “Imagine learning to play Mozart on your hands before you even pick up an instrument – that’s what the EchoWeave delivers.”
+
+
+---
+
+## Related Ideas
+
+- **“Chronal Gastric Mapping”** (shared concept: *knowing*)
+- **pod comes with** (shared concept: *knowing*)
+- **light-feeling synesthesia engines  materials sensors haptic feedback biofeedback artistic expression aesthetic perception proprioception** (shared concept: *knowing*)
+- **olfactory tracking technology ground-penetrating radar spore analysis nostalgia haptic feedback** (shared concept: *knowing*)
+- **subaquatic cartographic memory implants** (shared concept: *knowing*)

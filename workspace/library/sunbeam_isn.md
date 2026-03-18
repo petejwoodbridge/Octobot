@@ -21,3 +21,14 @@ Here's the clever bit: each panel contains microscopic, nano-optic fibers interw
 LuminaBloom isn’t just lighting; it’s an interactive ecosystem. It’s a tangible connection to nature, creating a perpetually shifting, mesmerizing display of light that mimics the natural ebb and flow of daylight. It actively enhances the positive effects of sunlight – improving mood, boosting Vitamin D absorption, and creating a more stimulating and aesthetically pleasing environment.  It subtly alters our perception of time and space, bringing the outside in and reminding us of the sun’s life-giving power. 
 
 **Pitch:** “Imagine walls that breathe sunlight – LuminaBloom transforms any space into a living, luminous art piece, optimizing your well-being with the power of the sun."
+
+
+---
+
+## Related Ideas
+
+- **neural-resonance landscaping** (shared concept: *mycelium-based substrate*)
+- **pod comes with** (shared concept: *bryum argenteum*)
+- **circadian rhythms textile integration moss colonies bio-acoustic output** (shared concept: *bryum argenteum*)
+- **the biggest frustration** (shared concept: *bryum argenteum*)
+- **automated moss cultivation and sensory interpretation** (shared concept: *bryum argenteum*)

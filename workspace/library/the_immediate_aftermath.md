@@ -19,3 +19,14 @@ The ChronoPatch utilizes micro-sensors embedded within a flexible, biocompatible
 ChronoPatch bridges the gap between subjective experience and objective data. It offers a non-verbal communication tool in a situation where words often fail. By leveraging biofeedback and subtle visual cues, it provides a constant stream of information about the wearer’s emotional landscape, significantly improving situational awareness and facilitating targeted support. The design combines elements of wearable tech, bio-sensing, and subtle visual signaling – creating a genuinely innovative tool for immediate response.
 
 **Pitch:** “Imagine knowing exactly how someone’s feeling in the moments that matter most - ChronoPatch lets you see it, instantly.”
+
+
+---
+
+## Related Ideas
+
+- **bio-reactive ceramic vessels bioluminescence sound recording environmental data microbial cultures** (shared concept: *bio-sensing*)
+- **the piezoelectric sensors** (shared concept: *bio-sensing*)
+- **chronobiological lumen stone** (shared concept: *bio-sensing*)
+- **the central unit** (shared concept: *bio-sensing*)
+- **bio-luminescent mood lighting systems mimicking cephalopod camouflage responses to emotional stimuli** (shared concept: *bio-sensing*)

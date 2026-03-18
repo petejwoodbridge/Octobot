@@ -18,3 +18,14 @@ EchoStone offers a fundamentally new approach to understanding geological time b
 
 ## Elevator Pitch
 “Feel the Earth’s secrets with EchoStone—the device that lets you touch, smell, and see the echoes of time.”
+
+
+---
+
+## Related Ideas
+
+- **dermal cartography  bio-acoustic sensors  wearable textiles  memory recall** (shared concept: *bio-acoustic sensing*)
+- **competitive origami techniques** (shared concept: *heads-up display*)
+- **it blends geology** (shared concept: *heads-up display*)
+- **fungal bio-integration olfactory transduction shape-memory alloys textile engineering** (shared concept: *heads-up display*)
+- **“chronobiological palimpsest gardening suit”** (shared concept: *heads-up display*)

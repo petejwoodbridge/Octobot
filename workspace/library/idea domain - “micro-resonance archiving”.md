@@ -33,3 +33,14 @@ The crystal, essentially a miniature harmonic resonator, then *remembers* that f
 *   **Historical Preservation:** Museums could recreate historical events with stunning realism, allowing visitors to “step inside” the past.
 *   **Family Legacy Recording:** Families could capture and preserve cherished memories for future generations – imagine reliving your great-grandparents' wedding!
 *   **Creative Inspiration:** Artists
+
+
+---
+
+## Related Ideas
+
+- **chronal olfactory layering prototype** (shared concept: *creative inspiration*)
+- **idea domain=subconscious cartography of forgotten smells** (shared concept: *creative inspiration*)
+- **Bio-acoustic Memory Anchor Prototype** (shared concept: *creative inspiration*)
+- **subconscious olfactory archiving** (shared concept: *creative inspiration*)
+- **idea domain - “Subconscious Chronometric Skin-Mapping”** (shared concept: *creative inspiration*)

@@ -25,3 +25,14 @@ The EchoBloom is a biofeedback-integrated, fractal scent mapping device. It cons
 The EchoBloom goes beyond mere scent archiving. It bridges the gap between olfactory memory, spatial perception, and emotional experience. The fractal mapping provides a visual representation of scent’s temporal journey, and the biofeedback integration allows the user to actively shape and revisit their memories through scent. The use of memory polymer and bioluminescent algae introduces a novel, dynamic method of scent capture, while the VOC analysis, guided by the user's emotional state, offers a far richer, more intuitive reconstruction of extinct species scents than purely chemical analysis. 
 
 **Pitch:** “Imagine experiencing your childhood summers, or understanding the last moments of a vanished creature, simply by *feeling* the scent of time itself.”
+
+
+---
+
+## Related Ideas
+
+- **bone resonance tuning haptic feedback acoustic therapy proprioception body size perception** (shared concept: *real-time using*)
+- **neurogastronomy temporal distortion synesthesia** (shared concept: *real-time using*)
+- **temporal distortion fields bio-acoustic mapping lichen symbiosis haptic feedback technology** (shared concept: *real-time using*)
+- **based on this** (shared concept: *bio-luminescent orb*)
+- **existing solutions** (shared concept: *bio-luminescent orb*)

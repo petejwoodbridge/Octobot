@@ -23,3 +23,14 @@ Finally, the patch incorporates microscopic, iridescent pigment-matching particl
 The Mantis Patch leverages cutting-edge biomimicry, advanced materials science, and ultrasound technology. It's instantly deployable, requires no specialized training, and actively strengthens itself against the elements. Unlike traditional sealant, it doesn't just stick; it *becomes* part of the hull’s structural integrity. Furthermore, the camouflage element buys valuable time for a more permanent fix and potentially prevents secondary environmental damage. 
 
 *Pitch:* “Imagine preventing a devastating spill before it happens – that's the power of the Mantis Patch.”
+
+
+---
+
+## Related Ideas
+
+- **develop bio-adhesive living sealant mimicking cephalopod camouflage to instantly patch hull breaches** (shared concept: *bio-adhesive*)
+- **develop bio-adhesive sea-skin patches mimicking cephalopod camouflage to instantly seal breaches in hulls** (shared concept: *bio-adhesive patch*)
+- **explore a reactive self-healing material infused with bioluminescent organisms that illuminate and seal breaches with a living glow** (shared concept: *cutting-edge biomimicry*)
+- **“Chronal Gastric Mapping”** (shared concept: *becomes*)
+- **bioluminescent lichen movement soundscapes rhythmic textiles** (shared concept: *becomes*)

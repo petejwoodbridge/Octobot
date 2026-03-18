@@ -20,3 +20,14 @@ These BloomWeavers are deployed in pods, initially self-assembling into foundati
 BloomWeavers represent a radical merging of bio-engineering, marine acoustics, and digital art. They aren’t just passively restoring reefs; they’re actively participating in the ecosystem, utilizing communication as a fundamental building block. The dynamic light shows offer a truly novel way to study marine life and create breathtakingly beautiful, ecologically beneficial environments. 
 
 **Pitch:** “Imagine a coral reef that sings – BloomWeavers are transforming underwater soundscapes into living, breathing art, and we’re just beginning to understand what the oceans are trying to tell us.”
+
+
+---
+
+## Related Ideas
+
+- **self-assembling microfauna structures creating dynamic living architectural systems for underwater habitats** (shared concept: *self-assembling*)
+- **instead of traditional transportation design self-assembling bio-luminescent octopus-powered vehicles for aquatic exploration** (shared concept: *bio-engineering*)
+- **adaptive microclimate suits incorporating bio-luminescent algae for personalized light and temperature regulation** (shared concept: *bio-polymer mesh*)
+- **idea domain=lithovore sensory symbiosis wearable** (shared concept: *bio-polymer mesh*)
+- **chronobiological algae scent textiles** (shared concept: *bio-polymer mesh*)

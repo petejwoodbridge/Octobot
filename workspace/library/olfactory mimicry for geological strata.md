@@ -37,3 +37,14 @@ EchoStone operates on a delightfully chaotic blend of scientific principles and,
 **Why It’s Extraordinary**
 
 EchoStone isn’t just another gadget; it's
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “lithic memory palimpsest - wearable temporal echo device”** (shared concept: *smelling*)
+- **idea domain - sonogenetic memory weaving** (shared concept: *haptic feedback system*)
+- **Sonospheric Cartography of Transient Emotions** (shared concept: *haptic feedback system*)
+- **idea domain - litho-sonification, textile integration** (shared concept: *haptic feedback system*)
+- **idea domain=bio-sonorous sedimentary palimpsests** (shared concept: *haptic feedback system*)

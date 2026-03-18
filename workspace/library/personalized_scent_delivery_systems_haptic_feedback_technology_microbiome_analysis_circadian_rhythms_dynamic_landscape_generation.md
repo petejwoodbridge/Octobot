@@ -23,3 +23,14 @@ ChronoScent consists of a small, biocompatible patch worn discreetly behind the 
 ChronoScent uniquely combines microbiome monitoring, real-time circadian tracking, and haptic feedback to create a deeply personalized temporal manipulation tool. It’s not simply masking stress with scent; it’s actively working *with* your body’s natural rhythms to optimize your state of being. The integration of haptic feedback is revolutionary, offering a multi-sensory approach to temporal adjustment that’s far more effective than traditional aromatherapy alone. It leverages cutting-edge tech in a beautiful, practically invisible way.
 
 **Pitch:** “Imagine feeling completely present, effortlessly gliding through your day – ChronoScent lets you engineer your experience of time, one scent and vibration at a time.”
+
+
+---
+
+## Related Ideas
+
+- **chronobiological scent composition** (shared concept: *temporal profiles*)
+- **how to leverage our understanding of the nervous system eg vagus nerve stimulation to design products that promote calmness and reduce anxiety** (shared concept: *micro-vibrations*)
+- **develop a personalized flow state induction system utilizing biometrics and adaptive soundscapes to eliminate distractions** (shared concept: *micro-vibrations*)
+- **noise-canceling collaborative workspaces** (shared concept: *creative flow*)
+- **and ideate on sensory reset products  objects or experiences designed to help users quickly de-stress and refocus** (shared concept: *creative flow*)

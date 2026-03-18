@@ -36,3 +36,14 @@ Okay, buckle up! EchoSkin is built around a bio-reactive gel infused with micros
 ---
 *Original notes:*
 “## EchoSkin – The Emotional Tactile Translator”
+
+
+---
+
+## Related Ideas
+
+- **idea domain=symbiotic skin grafts emotion mapping** (shared concept: *creative collaboration*)
+- **decay simulation technology biometric feedback integration light therapy vibrational resonance** (shared concept: *experiencing*)
+- **Ephemeral Memory Cartography** (shared concept: *experiencing*)
+- **neuro-geological synesthesia engines** (shared concept: *experiencing*)
+- **Sonorous Cartography of Ephemeral Emotions** (shared concept: *real-time emotion*)

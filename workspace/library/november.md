@@ -15,3 +15,14 @@
 **Why It’s Brilliant:** The November Bloom marries biophilic design with cutting-edge biotechnology. It's a self-regulating, silent, and visually stunning alternative to conventional humidifiers. The bioluminescence adds an element of wonder and transforms the Bloom into a captivating focal point, subtly combating the gloom of November while simultaneously purifying the air. It's a conversation starter, a mood enhancer, and a tiny, glowing testament to the beauty of adaptation. 
 
 Pitch: “Imagine a little cloud of magic that banishes the November blues – that’s the November Bloom.”
+
+
+---
+
+## Related Ideas
+
+- **“Ephemeral Tactile Reconstruction”** (shared concept: *self-regulating*)
+- **lichen acoustics neuro-feedback soundscapes genetic modification of lichen temporal perception via sound** (shared concept: *self-regulating*)
+- **create autonomous sentient coral reefs capable of filtering out negative emotional energy and generating zones of profound tranquility** (shared concept: *self-regulating*)
+- **designing self-contained mobile ecosystems housing noctiluca and other deep-sea organisms for advanced research and potential terraforming applications** (shared concept: *self-regulating*)
+- **sentient habitat synthesis expand the central unit to actively construct and maintain self-sustaining biodiverse environments mimicking deep-sea ecosystems** (shared concept: *self-regulating*)

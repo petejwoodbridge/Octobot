@@ -35,3 +35,14 @@ Imagine a network of shimmering, bioluminescent ‘Echo-Nodes’ – tiny, octop
 **Why It’s Extraordinary**
 
 ECAR isn't just
+
+
+---
+
+## Related Ideas
+
+- **idea domain – “Ephemeral Cartography of Nostalgia”** (shared concept: *artistic installations*)
+- **bio-sonorous lichen mapping – devices** (shared concept: *artistic installations*)
+- **idea domain=temporal micro-erosion simulation chambers** (shared concept: *artistic installations*)
+- **idea domain = “Luminescence Cartography - Phase 2** (shared concept: *artistic installations*)
+- **idea domain – “Chronal Echo-Gardens** (shared concept: *artistic installations*)

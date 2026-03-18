@@ -15,3 +15,14 @@ Once activated, the fungal spores rapidly weave themselves into the weakened are
 **Why It's Brilliant:** The Bio-Weave leverages the octopus’s unparalleled camouflage ability—not for visual blending, but for material bonding—and combines it with the robust structural properties of chitin and the rapid growth capabilities of fungi. It's self-healing, self-applying, and dramatically reduces the need for human intervention. Furthermore, the 'wake-up' signal allows for targeted repair, avoiding unnecessary application of sealant to areas without damage. The Bio-Weave essentially becomes a living, breathing patch that anticipates and corrects structural weaknesses in real-time.
 
 *Pitch:* "Imagine a future where bridges and buildings automatically fix themselves – that's the Bio-Weave: smart infrastructure, built by nature."
+
+
+---
+
+## Related Ideas
+
+- **develop a bio-adhesive sealant mimicking octopus skin instantly bonding to porous materials to physically block leaks** (shared concept: *self-healing*)
+- **implement a reactive muscle system  genetically engineered cephalopod tissue  to actively constrict and reinforce compromised sections** (shared concept: *self-regulating*)
+- **develop bio-adhesive living sealant mimicking octopus camouflage instantly patching breaches with organic material** (shared concept: *bio-adhesive*)
+- **develop bio-adhesive living seals utilizing modified octopus tissue to instantly patch and reinforce structural weaknesses** (shared concept: *bio-adhesive*)
+- **develop bio-adhesive smart skins for ships that instantly seal breaches with a self-healing pressure-sensitive polymer** (shared concept: *bio-adhesive*)

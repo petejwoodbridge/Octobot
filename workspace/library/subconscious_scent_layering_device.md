@@ -37,3 +37,14 @@ The device itself is constructed from polished, iridescent bio-ceramic, harveste
 ---
 *Original notes:*
 **The Mnemosyne Weave: A Bio-Scented Memory Loom**
+
+
+---
+
+## Related Ideas
+
+- **subconscious olfactory archiving** (shared concept: *creative inspiration*)
+- **Personalized “Phantom Aroma Synthesis”** (shared concept: *therapeutic memory retrieval*)
+- **idea domain - “kinesthetic memory archiving with biofeedback”** (shared concept: *creative inspiration*)
+- **idea domain=bio luminescent memory moss temporal scent mapping** (shared concept: *creative inspiration*)
+- **memory bloom scentscapes** (shared concept: *creative inspiration*)

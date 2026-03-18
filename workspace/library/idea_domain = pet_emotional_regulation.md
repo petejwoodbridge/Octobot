@@ -34,3 +34,14 @@ Okay, buckle up, because this gets delightfully complex! The core of the Symbiot
 ---
 *Original notes:*
 ## The Symbiotic Sonar – A Bio-Acoustic Pet Therapy System
+
+
+---
+
+## Related Ideas
+
+- **Zenith Cinema - Interactive Meditation Films** (shared concept: *stress reduction*)
+- **t about stopping the breach it** (shared concept: *bio-acoustic sensor*)
+- **sonoscaping echo chamber** (shared concept: *bio-acoustic sensor*)
+- **and generate ideas related to human biology  exploring potential applications of biofeedback biometrics and personalized health technologies inspired by recent user conversations what about human biology** (shared concept: *data-driven approach*)
+- **“domestic sound textile”** (shared concept: *stress reduction*)

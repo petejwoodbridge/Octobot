@@ -21,3 +21,14 @@ When the user’s stress levels increase (indicated by heightened heart rate or 
 The ChronoMoss beautifully merges several seemingly disparate technologies – moss cultivation, shape-memory textiles, biofeedback, and color-changing materials – to create a truly novel experience. It doesn't force a specific action; instead, it offers a gentle, sensory anchor, guiding the user’s awareness of their own subjective time experience. The moss’s visual and tactile feedback provides a tangible representation of flow, interrupting racing thoughts and fostering a deeper connection to the present moment. It’s less about managing time and more about *feeling* it. 
 
 **Pitch:** “Imagine experiencing time not as a relentless rush, but as a beautifully shifting landscape – ChronoMoss: cultivate your presence, one green moment at a time.”
+
+
+---
+
+## Related Ideas
+
+- **chronobiological memory garden** (shared concept: *genetically-modified*)
+- **circadian rhythms textile integration moss colonies bio-acoustic output** (shared concept: *bryum argenteum*)
+- **automated moss cultivation and sensory interpretation** (shared concept: *bryum argenteum*)
+- **bloom is a** (shared concept: *bryum argenteum*)
+- **idea domain = symbiotic moss architectural regulators** (shared concept: *genetically-modified*)

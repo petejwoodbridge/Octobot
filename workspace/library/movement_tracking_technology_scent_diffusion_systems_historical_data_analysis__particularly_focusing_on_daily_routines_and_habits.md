@@ -26,3 +26,14 @@ Here's the sequence:
 Chronoscent goes beyond simple tracking. It combines precise movement data with the potent influence of scent, leveraging historical analysis and AI to create a genuinely responsive system. It’s not just recording data; it’s actively shaping behavior through olfactory cues, tapping into the brain's deeply ingrained associative pathways. This is a truly personalized, dynamic intervention designed to reshape daily habits with the gentle power of scent.
 
 **Pitch:** “Imagine effortlessly breaking bad habits and building positive routines – Chronoscent delivers precisely the right scent nudge, at the precise moment, to get you back on track.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Kinesthetic Archaeology Interfaces** (shared concept: *bio-feedback*)
+- **idea domain = mycorrhizal memory mapping** (shared concept: *bio-feedback*)
+- **dynamic ui morphing explore interfaces that physically reshape themselves based on user interaction and inferred needs** (shared concept: *bio-feedback*)
+- **library-acoustic resonance time perception visual representationmd -  can acoustic resonance be used to enhance creativity or productivity** (shared concept: *bio-feedback*)
+- **sensory immersion meditation suite** (shared concept: *bio-feedback*)

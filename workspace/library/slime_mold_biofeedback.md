@@ -17,3 +17,14 @@ The app then provides gentle auditory cues – tonal shifts mirroring the slime 
 **Why It's Brilliant:** The Mycelial Mind leverages the inherent adaptability and decentralized intelligence of slime mold, creating a profoundly intuitive biofeedback experience. It bypasses the cognitive demands of traditional biofeedback by directly translating physiological signals into a tangible, captivating visual and auditory representation. It's also fundamentally elegant – a living, breathing organism guiding you to calm. 
 
 *Pitch:* "Imagine feeling your anxiety melt away, guided by a tiny, glowing network of intelligent slime – it's the future of mindful living."
+
+
+---
+
+## Related Ideas
+
+- **neurofeedback lichen symbiosis biometric sound art haptic lichen displays** (shared concept: *physarum polycephalum*)
+- **slug navigation slime bio-mimetic navigation systems** (shared concept: *physarum polycephalum*)
+- **bioluminescent slime molds dream mapping haptic feedback anxiety reduction** (shared concept: *physarum polycephalum*)
+- **biometric resonance mapping combined with olfactory projection and shape-memory alloy micro-sculpting** (shared concept: *micro-muscle tension*)
+- **temporal micro-habitats circadian rhythms responsive environments neuro-acoustic stimulation biofeedback haptic feedback light manipulation** (shared concept: *micro-muscle tension*)

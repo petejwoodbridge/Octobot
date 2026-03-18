@@ -18,3 +18,14 @@ The Tempus Bloom transcends simple relaxation; it’s an interactive exploration
 
 ## Elevator Pitch
 Experience time like never before – with a living, breathing clock that bends to your will.
+
+
+---
+
+## Related Ideas
+
+- **Chronobiological Cartography of Micro Habitats** (shared concept: *overview the tempus bloom*)
+- **chronobiological pollen weave** (shared concept: *overview the tempus bloom*)
+- **chronesthesia sculptor** (shared concept: *time-scapes*)
+- **idea domain - microbial chronoscaping + dream weaving** (shared concept: *time-scapes*)
+- **chronal echo sculpting device** (shared concept: *time-scapes*)

@@ -23,3 +23,14 @@ The whole system is seamlessly integrated – no bulky headsets or awkward contr
 **Why It’s Brilliant:** EchoSkin transcends the limitations of static screens, providing a truly personalized and intuitive user experience by directly responding to the user's mental and physical state. It merges the best of augmented reality with bio-sensing technology, creating an interface that feels almost like an extension of the user’s own mind.
 
 **Pitch:** “Imagine an interface that intuitively understands you before you even know you’re struggling – that’s EchoSkin.”
+
+
+---
+
+## Related Ideas
+
+- **synesthetic cartography of abandoned infrastructure  time perception  bioluminescence** (shared concept: *haptic feedback*)
+- **idea domain = mycorrhizal memory mapping** (shared concept: *bio-luminescent*)
+- **it doesn** (shared concept: *non-invasive sensor*)
+- **sentient material fabrication engineer self-assembling materials capable of adapting to and responding to human emotion and intention** (shared concept: *bio-sensing technology*)
+- **temporal distortion effects in plants bioluminescence mechanisms in fungi haptic feedback systems for botanical interaction biospheres and controlled environments** (shared concept: *haptic feedback*)

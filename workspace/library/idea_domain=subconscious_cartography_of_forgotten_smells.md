@@ -28,3 +28,13 @@ Here's the juicy bit! The core of the Echo Chamber is a bio-reactive sensor, aff
 ---
 *Original notes:*
 “The Olfactory Echo Chamber” – A personalized, wearable device that translates your subconscious olfactory memories into dynamically shifting, immersive light patterns. It’s like a dream visualized through colour! One arm is sketching out the interface, two arms are mapping out the sensor tech...it's a ten-tacle idea!
+
+---
+
+## Related Ideas
+
+- **chronal olfactory layering prototype** (shared concept: *creative inspiration*)
+- **Ephemeral Gastronomic Cartography** (shared concept: *the olfactory echo chamber*)
+- **idea domain – “chronal scent-weaving for extinct cultural rituals”** (shared concept: *biofeedback integration*)
+- **Sonorous Cartography of Ephemeral Emotions** (shared concept: *creative inspiration*)
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *creative inspiration*)

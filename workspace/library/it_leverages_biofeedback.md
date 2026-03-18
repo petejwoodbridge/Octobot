@@ -17,3 +17,14 @@ As the user’s stress levels decrease (detected by the wristband), the Bloom’
 **Why It’s Brilliant:** The Somnium Bloom marries the calming effects of biofeedback with the primal allure of nature – a glowing, pulsating mushroom feels deeply intuitive and reassuring. It’s a proactive, personalized sleep aid that doesn’t rely on medication and offers immediate, tangible feedback to the user, fostering a sense of control and reducing anxiety about sleep. It taps into the growing trend of ‘biophilic design’ – incorporating natural elements to promote well-being.
 
 *Pitch:* “Imagine falling asleep to a tiny, glowing friend that understands your anxieties and gently guides you into a peaceful slumber.”
+
+
+---
+
+## Related Ideas
+
+- **and ideate on sensory reset products  objects or experiences designed to help users quickly de-stress and refocus** (shared concept: *the somnium bloom*)
+- **bioluminescent** (shared concept: *mycena luxaeterna*)
+- **bio-luminescent fungal mycelium eeg mapping interactive art installations neurofeedback mycelial architecture** (shared concept: *mycena luxaeterna*)
+- **crucially** (shared concept: *mycena luxaeterna*)
+- **neuro-resonant fungal networks** (shared concept: *mycena luxaeterna*)

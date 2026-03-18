@@ -33,3 +33,14 @@ Okay, buckle up, because this is where it gets delightfully weird!  The core of 
 ---
 *Original notes:*
 ## Mossweave: The Somatic Symbiosis
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Memory-Weave Botanical Resonance** (shared concept: *bio-reactive substrate*)
+- **idea domain = “Chronosculpting for Ephemeral Emotions – Kinetic Edition”** (shared concept: *three-dimensional forms*)
+- **“kinesthetic memory grafting topiary”** (shared concept: *spectacular*)
+- **gadgets** (shared concept: *spectacular*)
+- **idea domain=Ephemeral Skin Mapping** (shared concept: *nano-sensors that*)

@@ -20,3 +20,10 @@ Mycelial Chronoscapes represents a paradigm shift in experiential wellness. Itâ€
 
 ## Elevator Pitch
 Experience your dreams, one delicious, bio-engineered bite at a time.
+
+
+---
+
+## Related Ideas
+
+- **neuro-mycological synesthesia amplification  wearable tech  data analysis** (shared concept: *cordyceps*)

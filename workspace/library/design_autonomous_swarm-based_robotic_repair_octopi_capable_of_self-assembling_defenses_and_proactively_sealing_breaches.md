@@ -17,3 +17,14 @@ Crucially, the Polyps communicate via a low-frequency bioluminescence network, c
 **Why It’s Brilliant:** ReefGuard combines swarm robotics with bio-cement technology, leveraging natural processes for rapid construction and self-repair. Unlike traditional structures, it actively *enhances* the reef’s ecosystem, providing habitat for marine life while simultaneously defending it. The dynamic, adaptable nature of the swarm offers unparalleled resilience against unpredictable coastal threats. 
 
 *Pitch:* “Imagine a coral reef that can actually fight back – ReefGuard is the self-assembling defense system that’s saving our oceans, one polyp at a time.”
+
+
+---
+
+## Related Ideas
+
+- **create an autonomous bloom-inspired swarm of robotic pollinators that reshape coral reefs based on collective bloom signals** (shared concept: *bio-degradable polymer*)
+- **design autonomous swarm-based robotic muscle systems capable of physically plugging holes and redirecting water flow** (shared concept: *swarm-based robotic*)
+- **design autonomous swarm-based robotic eels equipped with sonic disruptors to disorient and repel marine intruders** (shared concept: *swarm-based robotic*)
+- **design a neural network-controlled morphing robotic appendage capable of dynamically patching and reinforcing compromised vessel structures** (shared concept: *rapidly-hardening*)
+- **engineer a swarm of micro-bots capable of self-assembling into temporary pressure-resistant barriers around damaged areas** (shared concept: *rapidly-hardening*)

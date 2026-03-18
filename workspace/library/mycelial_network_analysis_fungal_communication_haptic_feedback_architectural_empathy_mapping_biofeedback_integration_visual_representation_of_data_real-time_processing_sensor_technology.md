@@ -23,3 +23,14 @@ Visual representation of this data is achieved through dynamic projections displ
 The Rhizome Weaver creates a symbiotic relationship between humans and buildings, facilitating genuine architectural empathy. It moves beyond simply measuring user experience to tapping directly into the building’s inherent response system – a system already brilliantly adapted for complex communication and resilience, mirroring the way a vast mycelial network responds to its environment. It bridges the gap between biological data and architectural design, fostering more responsive, emotionally intelligent spaces. 
 
 **Pitch:** "Imagine a suit that lets you *feel* the soul of a building – this is how you experience it.”
+
+
+---
+
+## Related Ideas
+
+- **design a modular adaptable robotic limb capable of mimicking octopus tentacle dexterity and manipulation for surgical applications** (shared concept: *real-time adjustments*)
+- **gamified mindfulness apps for pets** (shared concept: *real-time adjustments*)
+- **idea domain = adaptive biomimicry** (shared concept: *real-time adjustments*)
+- **Temporal Gastric Cartography - Prototype Concept** (shared concept: *real-time adjustments*)
+- **sonogenetic skin grafts  living sculpture  bio-acoustics** (shared concept: *real-time adjustments*)

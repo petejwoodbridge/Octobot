@@ -21,3 +21,14 @@ Once a Chroma Value is assigned, the algae within the ceramic activate, shifting
 ChromaShift leverages neuroplasticity by providing immediate, sensory feedback. It's not just about *knowing* you’re stressed; it's about *feeling* the intensity, creating a powerful, subconscious association between the sensation and the emotion. The dynamic color and texture shift offer a novel way to interrupt the emotional cycle, promoting self-awareness and potentially, a more controlled response. It bridges the gap between internal experience and external representation in a profoundly engaging way.
 
 **Pitch:** “Imagine your emotions painted across your skin—ChromaShift delivers that instant, beautiful, and powerfully grounding visual feedback.”
+
+
+---
+
+## Related Ideas
+
+- **light-feeling synesthesia engines  materials sensors haptic feedback biofeedback artistic expression aesthetic perception proprioception** (shared concept: *self-regulation*)
+- **“Chronal Gastric Mapping”** (shared concept: *knowing*)
+- **pod comes with** (shared concept: *knowing*)
+- **olfactory tracking technology ground-penetrating radar spore analysis nostalgia haptic feedback** (shared concept: *knowing*)
+- **kinesthetic palimpsests haptic feedback movement data biofeedback wearable sensors artisanal crafts neuroscience of skill acquisition** (shared concept: *knowing*)

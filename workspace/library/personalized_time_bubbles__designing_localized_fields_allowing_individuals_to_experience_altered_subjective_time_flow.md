@@ -29,3 +29,14 @@ Chronoshell isn’t just about making time “feel” different; it’s about pr
 It's a response to our modern anxiety of 'time running out' and an opportunity to truly live in the moment, or deliberately shape how we experience it.
 
 **Pitch:** “Chronoshell lets you choose how you experience your life – are you ready to bend time to your will?”
+
+
+---
+
+## Related Ideas
+
+- **sensory stimulation for dementia patients pattern recognition technology personal companion robots** (shared concept: *memory echo*)
+- **acoustic cartography bone augmentation biofeedback temporal perception** (shared concept: *chronoshell*)
+- **“geochronic olfa bloom”** (shared concept: *biofeedback integration*)
+- **micro-chronal scent-mapping sleep cycle analysis olfactory reconstruction biofeedback integration personalized aroma diffusion** (shared concept: *biofeedback integration*)
+- **haptic mapping systems extinct animal tracking technologies biofeedback wearables seismic vibration analysis thermal signature detection pollen distribution analysis immersive experiences** (shared concept: *biofeedback integration*)

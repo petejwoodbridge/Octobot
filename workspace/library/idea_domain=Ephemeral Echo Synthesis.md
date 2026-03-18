@@ -29,3 +29,14 @@ Okay, buckle up, because this gets delightfully complicated! The EchoBloom uses 
 ---
 *Original notes:*
 ## EchoBloom – The Sensory Time Capsule
+
+
+---
+
+## Related Ideas
+
+- **t about stopping the breach it** (shared concept: *bio-acoustic resonance*)
+- **idea domain=Ephemeral Tactile Memory Capsules** (shared concept: *re-experience positive*)
+- **sonogenetic architecture bio-acoustic resonance controlled vibration material plasticity immersive experiences** (shared concept: *bio-acoustic resonance*)
+- **idea domain = Ephemeral Object Resonance Mapping** (shared concept: *the sensory time capsule*)
+- **idea domain=chromatic resonance harvesting** (shared concept: *top secret*)

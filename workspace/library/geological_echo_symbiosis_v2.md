@@ -33,3 +33,14 @@ Okay, buckle up! Each "EchoGeode" – that’s our core unit – is a meticulous
 ---
 *Original notes:*
 "## EchoBloom: The Subterranean Symphony - A Biofeedback-Driven Geologic Time Capsule!
+
+
+---
+
+## Related Ideas
+
+- **idea domain - Vestibular Echo-Cartography** (shared concept: *biometric feedback loop*)
+- **“Chrono-Echo Cartography”** (shared concept: *holographic echo projection*)
+- **olfactory mimicry for geological strata** (shared concept: *geological research*)
+- **seismic olfactory cartography** (shared concept: *the subterranean symphony*)
+- **sonorous fungal geomorphing** (shared concept: *the subterranean symphony*)

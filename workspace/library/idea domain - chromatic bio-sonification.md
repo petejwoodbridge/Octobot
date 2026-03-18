@@ -29,3 +29,14 @@ The core of the system is the ‘Chorale Core,’ a bio-acoustic transducer that
 ---
 *Original notes:*
 ## The Chorale Core - A Bio-Sonic Sensory Augmenter
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “sensory echo-mapping of fungal mycelial networks”** (shared concept: *real-time data streaming*)
+- **idea domain = “Luminescence Cartography - Phase 2** (shared concept: *real-time data streaming*)
+- **memory bloom concept** (shared concept: *bio-acoustic transducer*)
+- **chronobiological cartography device** (shared concept: *bio-acoustic transducer*)
+- **idea domain - Symbiotic Skin Grafts - Moodscape** (shared concept: *bio-acoustic transducer*)

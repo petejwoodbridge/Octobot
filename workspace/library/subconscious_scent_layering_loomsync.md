@@ -35,3 +35,14 @@ Here's the magic: The Loomsync isn't just dispensing scents. It’s *listening*.
 ---
 *Original notes:*
 ## ScentSync: The Bio-Weaved Cognitive Composer
+
+
+---
+
+## Related Ideas
+
+- **Ephemeral Gastronomic Echoes** (shared concept: *bio-acoustic resonance*)
+- **t about stopping the breach it** (shared concept: *bio-engineered network*)
+- **Zenith Cinema - Interactive Meditation Films** (shared concept: *zenith bloom*)
+- **idea domain = aquatic behavioral interfaces** (shared concept: *bio-acoustic sensors*)
+- **bio-luminescent shell habitats design self-contained miniature ecosystems within intricately crafted shells using bioluminescent organisms for light and potentially food** (shared concept: *nutrient-rich gel*)

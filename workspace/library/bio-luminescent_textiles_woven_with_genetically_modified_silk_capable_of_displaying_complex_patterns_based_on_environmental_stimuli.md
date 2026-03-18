@@ -24,3 +24,14 @@ The patterns aren't random; they’re pre-programmed within the bacterial coloni
 ChromaWeave moves beyond simple, reactive lighting. It creates a dynamic, language-like display. People intuitively understand: a steady blue pulse means danger; a rapid, expanding green glow signifies an earthquake; a shifting mosaic of light indicates a chemical spill. The bio-luminescence is subtle yet powerful, blending seamlessly with the environment while immediately conveying critical information. It utilizes the very elements threatening us – heat, pressure, gas – to create a beautiful, intelligent warning system.
 
 **Pitch:** “Imagine a world where nature itself alerts you to danger – that’s ChromaWeave, and it’s about to change how we respond to emergencies forever.”
+
+
+---
+
+## Related Ideas
+
+- **develop miniature bio-luminescent textiles woven with octopus silk for dynamic lighting and camouflage** (shared concept: *bio-luminescent textiles*)
+- **bioluminescence chemical reactions food flavor** (shared concept: *photobacterium phosphoreum*)
+- **idea domain = Personalized “Temporal Resonance” Audio-Haptic Sculpting for Historical Emotional Immersion** (shared concept: *micro-sensors that*)
+- **weaver** (shared concept: *micro-sensors that*)
+- **idea domain – “Synesthetic Cartography of Historical Weather Patterns”** (shared concept: *micro-sensors that*)

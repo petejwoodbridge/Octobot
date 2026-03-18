@@ -23,3 +23,14 @@ The reactor doesn’t simply ‘emit’ scent; it subtly *sculpts* the microenvi
 The Scent Weaver represents a shift from static scent diffusion to intelligent, bio-responsive scent modulation. It’s personalized, adaptable, and operates on a fundamentally healthier level – harnessing the power of microbes for therapeutic and performance enhancement. It merges microbiology, biometrics, and AI in a completely novel way for scent delivery, paving the way for truly bespoke olfactory experiences.
 
 *Pitch:* “Imagine crafting the perfect mood with every breath – that’s the Scent Weaver.”
+
+
+---
+
+## Related Ideas
+
+- **biofeedback-driven olfactory simulations shape-memory alloy olfactory delivery systems fractal geometry and scent mapping robotic mimicry of floral movement** (shared concept: *the scent weaver*)
+- **idea domain=olfactory memory recovery** (shared concept: *the scent weaver*)
+- **Ephemeral Gastronomic Cartography** (shared concept: *the scent weaver*)
+- **human scent associations olfactory psychology architectural design biometric data analysis** (shared concept: *the scent weaver*)
+- **weaver** (shared concept: *real-time feedback*)

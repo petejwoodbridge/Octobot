@@ -22,3 +22,14 @@ The Chromatic Heart moves beyond simple mood tracking, providing a profoundly vi
 
 ## Elevator Pitch
 “Finally, a way to see your feelings bloom before your eyes.”
+
+
+---
+
+## Related Ideas
+
+- **idea domain = “kinesthetic chronal mapping”** (shared concept: *shape-memory alloy*)
+- **idea domain=micro geological memory gardens wearable** (shared concept: *shape-memory alloy*)
+- **and generate ideas based on the library index regarding biofeedback and immersive experiences** (shared concept: *chromatic resonance*)
+- **idea domain - temporal mycological cartography** (shared concept: *shape-memory alloy*)
+- **fungal bioluminescence biofeedback terrarium design symbiotic relationships human emotion mapping** (shared concept: *self-exploration*)

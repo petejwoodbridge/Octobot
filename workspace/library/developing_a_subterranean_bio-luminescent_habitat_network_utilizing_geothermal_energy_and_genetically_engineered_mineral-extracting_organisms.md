@@ -45,3 +45,14 @@ The Mycelial Labyrinth is a network of interconnected, geothermally-heated caver
 The Mycelial Labyrinth moves beyond simple survival; it’s a closed-loop, aesthetically captivating, and psychologically supportive ecosystem. The constant, gentle bioluminescence combats seasonal affective disorder, while the organic, living architecture inherently fosters a sense of tranquility and connection with nature. It’s a fundamentally sustainable solution for deep-space colonization, underground research, or simply creating extraordinary, self-sufficient communities.  The continuous extraction of resources directly fuels the system’s maintenance and expansion, eliminating reliance on external supply chains.
 
 **Pitch:** “Imagine living in a city of light, carved from the earth, where your home is grown, not built—it’s the Mycelial Labyrinth: sustainable living redefined.”
+
+
+---
+
+## Related Ideas
+
+- **create autonomous sentient coral reefs capable of filtering out negative emotional energy and generating zones of profound tranquility** (shared concept: *self-regulating*)
+- **neuro-resonant lichen cultivation  existing research materials techniques potential applications** (shared concept: *closed-loop system*)
+- **bio-luminescent urban lighting systems mimicking noctiluca colonies for sustainable cityscapes** (shared concept: *self-regulating*)
+- **and develop a self-assembling data-driven coral reef restoration system utilizing bio-printing and adaptive algorithms  exploring applications for broader ecological restoration efforts** (shared concept: *self-regulating*)
+- **symbiotic shell ecosystem  cultivating a miniature self-sustaining biome within the shell for resource generation** (shared concept: *closed-loop system*)

@@ -19,3 +19,14 @@
 **Why It's Brilliant:** The Myco-Sense isn’t just about managing sensory input; it's about actively shaping one’s internal experience through the ancient, intuitive connection between humans and the fungal kingdom. It moves beyond passive filtering to a form of bio-harmonic recalibration, leveraging a powerful, previously untapped sensory pathway.
 
 *Pitch:* “Ever wished you could feel your way out of anxiety, controlled by the wisdom of a mushroom?”
+
+
+---
+
+## Related Ideas
+
+- **the central unit** (shared concept: *micro-sensors woven*)
+- **bio-electrical field mapping lichen symbiosis shape-memory alloys biofeedback wearable sensors** (shared concept: *myco-sense*)
+- **bioacoustic mapping of soil microbiomes** (shared concept: *mycelial sensors*)
+- **sonokinetic cartography prototype** (shared concept: *micro-vibrations through*)
+- **idea domain = Symbiotic Chrono-Mycological Cartography** (shared concept: *data analysis*)

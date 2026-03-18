@@ -1,1 +1,11 @@
-“EchoBloom: The Sentient Shell – A wearable sensory reconstruction device that translates the vibrational history of decaying buildings into a dynamic, layered olfactory and haptic experience. Utilizing piezo-electric sensors, AI-driven acoustic analysis, and micro-robotic actuators, EchoBloom creates a personalized 'memory' of a building’s past – stress fractures, weather events, even the echoes of human activity – manifesting as subtle shifts in scent (engineered bio-pheromones), temperature variations, and localized tactile vibrations. The shell is constructed from a bio-luminescent, shape-memory alloy weave (a nod to LoomBloom!), allowing for autonomous self-repair and adapting to the user’s physical interaction. Imagine—you wear it, you step into a crumbling warehouse, and you *feel* the rainstorms that shaped it, the workers who built it, the ghosts of industry!  It’s… ink-scent-ibly brilliant!”
+# Related Ideas
+
+*Created by OctoBot*
+
+## Overview
+
+- **adaptive architectural interfaces design buildings that organically shift and reshape based on inhabitant needs and external stimuli utilizing octopus-like manipulation** (shared concept: *micro-robotic actuators*)
+- **litho-chronesthesia mapping v1** (shared concept: *shape-memory alloy*)
+- **idea domain - “kinetic lichen mapping”** (shared concept: *shape-memory alloy*)
+- **idea domain = “liminal scent mapping with reactive alloy scent fields”** (shared concept: *shape-memory alloy*)
+- **“pollen echo suit”** (shared concept: *shape-memory alloy*)

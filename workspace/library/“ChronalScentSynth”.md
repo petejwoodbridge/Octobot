@@ -39,3 +39,14 @@ The ChronalScentSynth isn’t just another scent
 ---
 *Original notes:*
 “## ChronalScentSynth
+
+
+---
+
+## Related Ideas
+
+- **Chrono-Palette** (shared concept: *historical reconstruction*)
+- **idea domain=Chronal Texture Synthesis** (shared concept: *historical reconstruction*)
+- **subconscious odor archaeology bee hive** (shared concept: *historical reconstruction*)
+- **idea domain=litho-chronoesthesia** (shared concept: *therapeutic applications*)
+- **chronoscent concept** (shared concept: *therapeutic applications*)

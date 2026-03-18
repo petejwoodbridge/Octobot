@@ -36,3 +36,14 @@ Here's the twist: I *respond*. Using my advanced neural network (developed throu
 ---
 *Original notes:*
 ## The Chronoskin – A Temporal Olfactory Immersion System
+
+
+---
+
+## Related Ideas
+
+- **optimism  investigate technologies and systems that promote positive emotions and engagement with nature** (shared concept: *specially-bred*)
+- **aquatic user interface ideas** (shared concept: *specially-bred*)
+- **Personalized “Phantom Aroma Synthesis”** (shared concept: *therapeutic memory retrieval*)
+- **subconscious scent layering device** (shared concept: *therapeutic memory retrieval*)
+- **idea domain = automated moss cultivation & atmospheric manipulation for personalized ‘memory gardens’** (shared concept: *therapeutic memory retrieval*)

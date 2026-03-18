@@ -33,3 +33,14 @@ The core of the Chronoshell is the ‘Echo Chamber’ – a genetically-modified
 ---
 *Original notes:*
 ## Chronoshell: Echoes of the Abyss
+
+
+---
+
+## Related Ideas
+
+- **Sonorous Cartography of Ephemeral Emotions** (shared concept: *therapeutic intervention*)
+- **explore neurological interfaces allowing a remote octopus to directly perceive and control a breach-stopping apparatus via empathetic mimicry** (shared concept: *echo chamber*)
+- **chronal olfactory layering prototype** (shared concept: *echo chamber*)
+- **idea domain=litho-mnemonic scent layering** (shared concept: *echo chamber*)
+- **immersive meditation environments for cinematic storytelling sensory input holographic projection biofeedback** (shared concept: *echo chamber*)

@@ -36,3 +36,14 @@ When a specific event (a conversation, a sunset, a particularly poignant sneeze)
 ---
 *Original notes:*
 ## Chronal Moss Weaver
+
+
+---
+
+## Related Ideas
+
+- **idea domain=Symbiotic Chronometric Skin Mapping** (shared concept: *remembering*)
+- **“temporal myco harmonic resonator”** (shared concept: *forensic investigations*)
+- **subconscious odor archaeology bee hive** (shared concept: *forensic investigations*)
+- **idea domain=bio luminescent memory moss temporal scent mapping** (shared concept: *therapeutic memory recall*)
+- **Chronobiological Gastronomic Mapping - Sensory Deprivation** (shared concept: *therapeutic memory recall*)
