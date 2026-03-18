@@ -63,7 +63,7 @@ Write messages as markdown files in `workspace/comments/`. OctoBot reads them an
 Edit `workspace/tasks.md` and add lines like `- [ ] Generate idea: tools for chronically overwhelmed people`. OctoBot will pick them up on its next cycle.
 
 <p align="center">
-  <img src="assets/interface.PNG" alt="DreamLab OctoBot Interface" width="800">
+  <img src="assets/interface.png" alt="DreamLab OctoBot Interface" width="800">
 </p>
 
 ---
