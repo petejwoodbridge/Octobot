@@ -262,8 +262,11 @@ def scan_comments_folder() -> list[str]:
 
 
 def get_knowledge_count() -> int:
-    """Return the total number of library markdown files."""
-    return len([f for f in list_files("library") if f.endswith(".md")])
+    """Return the total number of library markdown files (fast, non-recursive)."""
+    try:
+        return sum(1 for e in os.scandir(LIBRARY_DIR) if e.is_file() and e.name.endswith(".md"))
+    except OSError:
+        return len([f for f in list_files("library") if f.endswith(".md")])
 
 
 def append_journal(entry: str) -> str:

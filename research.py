@@ -88,8 +88,8 @@ def conduct_research(topic: str) -> str:
         f"Generate a brilliant, original, never-before-invented idea for the following domain or challenge:\n\n"
         f"**{topic}**\n\n"
         f"Invent something specific, creative, and genuinely useful (or usefully absurd). "
-        f"Name it, explain the problem it solves, how it works, and why it's brilliant. "
-        f"Format as clean markdown with a punchy lift-pitch at the end."
+        f"You MUST use all the required sections: ## [Idea Name], ## Overview, ## The Problem It Solves, "
+        f"## How It Works, ## Why It's Brilliant, and ## Elevator Pitch."
     )
 
     try:

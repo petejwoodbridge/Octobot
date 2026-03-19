@@ -15,9 +15,19 @@ Stopping OctoBot: press Ctrl+C in the terminal.
 """
 
 import argparse
+import os
 import signal
 import sys
 from pathlib import Path
+
+# Fix Windows console encoding for emoji/unicode
+if sys.platform == "win32":
+    os.environ.setdefault("PYTHONIOENCODING", "utf-8")
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
 
 # ---------------------------------------------------------------------------
 # Bootstrap the workspace before importing anything else

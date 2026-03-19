@@ -97,11 +97,11 @@ def api_state():
     log_lines = list(game_loop.activity_log)[-30:]
     agent_log = list(agent.loop_log)[-20:]
 
-    # Cache library count (expensive list_files call) for 15s
+    # Cache library count for 15s — update time first to prevent concurrent rescans
     now = time.time()
     if now - _state_lib_time > 15:
-        _state_lib_count = len(_lib_cache) if _lib_cache else tools.get_knowledge_count()
         _state_lib_time = now
+        _state_lib_count = tools.get_knowledge_count()
 
     # Use real library count if stats haven't synced yet
     lib_count = _state_lib_count
@@ -572,17 +572,35 @@ def _start_library_cache_warmer() -> None:
     threading.Thread(target=_warm, daemon=True).start()
 
 
+def _background_warmup():
+    """Background thread: warm up graph, concept index, and file cache."""
+    import threading
+    def _warm():
+        try:
+            scoring._init_graph_cache()
+            _build_graph_response()
+            if _graph_resp_cache:
+                c = _graph_resp_cache
+                print(f"  Graph ready: {len(c['nodes'])} concepts, {len(c['edges'])} connections (of {c['total_nodes']} total)")
+        except Exception as exc:
+            print(f"  Graph pre-build failed: {exc}")
+        try:
+            _build_concept_index()
+            print(f"  Concept index ready: {len(_concept_index)} terms")
+        except Exception:
+            pass
+        _start_library_cache_warmer()
+    threading.Thread(target=_warm, daemon=True).start()
+
+
 def launch(port: int = 7860) -> None:
     """Start the Flask web server."""
-    # Pre-build the graph response so the first /api/graph call is instant
-    try:
-        scoring._init_graph_cache()
-        _build_graph_response()
-        if _graph_resp_cache:
-            c = _graph_resp_cache
-            print(f"  Graph ready: {len(c['nodes'])} concepts, {len(c['edges'])} connections (of {c['total_nodes']} total)")
-    except Exception as exc:
-        print(f"  Graph pre-build failed: {exc}")
-    _start_library_cache_warmer()
+    # Pre-warm library count (fast) so first /api/state isn't zeros
+    global _state_lib_count, _state_lib_time
+    _state_lib_count = tools.get_knowledge_count()
+    _state_lib_time = time.time()
+    print(f"  Library: {_state_lib_count} ideas in vault")
+    # Heavy warmup in background so server starts immediately
+    _background_warmup()
     print(f"\n  OctoBot Game Server running at http://localhost:{port}\n")
     app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False, threaded=True)

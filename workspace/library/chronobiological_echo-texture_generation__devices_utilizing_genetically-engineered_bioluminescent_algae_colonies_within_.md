@@ -1,0 +1,20 @@
+## Chronoskin
+
+## Overview
+Chronoskin isn’t just a suit; it’s a living time machine for your skin. This revolutionary device utilizes genetically-engineered bioluminescent algae colonies within intricately designed resonant chambers to capture and re-emit the vibrational ‘echoes’ of decaying organic material. By immersing yourself in Chronoskin, you’ll experience a constantly evolving, tactile landscape – feeling the lingering energy of a fallen leaf as it returns to the earth, or the slow, deliberate shift of decomposition within a compost pile, offering a profoundly intimate connection with the rhythms of nature and the passage of time itself.
+
+## The Problem It Solves
+We live in a world increasingly disconnected from the natural world. Our senses are bombarded with synthetic stimuli, and the subtle, profound processes of decay – the very foundation of life and renewal – are largely invisible and unheard. Traditional methods of ecological study are observational, often lacking the visceral understanding needed to truly appreciate the complex interplay of life and death. Current biofeedback devices focus on the *present* physiological state, ignoring the rich historical data encoded within the vibrational signatures of decaying matter. Chronoskin directly addresses this gap, providing a novel way to *experience* and understand the ongoing processes of decomposition, fostering a deeper appreciation for the cyclical nature of ecosystems.
+
+## How It Works
+The core of Chronoskin lies in the ‘Algae Resonance Array’ (ARA). Each suit incorporates approximately 300 miniature, pressure-sensitive resonant chambers, constructed from a bio-ceramic composite infused with a conductive polymer. These chambers are meticulously arranged to maximize surface area contact with the user’s skin. Within each chamber lives a colony of *Lux Alga Nova*, a genetically engineered strain of bioluminescent algae. These algae aren’t just pretty; they’re exquisitely sensitive vibration detectors. 
+
+Here's the sequence: First, a decaying organic source – a fallen branch, a pile of leaves, a composting bin – is brought into proximity with the Chronoskin. The resonant chambers detect the subtle vibrational frequencies emitted by the decaying matter – these frequencies are directly related to the rate of cellular breakdown and the release of energy. These vibrations trigger a cascading bioluminescent response within the *Lux Alga Nova* colonies. The algae then *translate* these vibrational frequencies into complex patterns of light emission. 
+
+Crucially, the light isn't simply emitted; it’s channeled through a network of micro-fluidic channels within the suit, directly stimulating the user's cutaneous nerves. The pressure-sensitive chambers act as filters, amplifying specific frequencies and modulating the intensity of the algal bioluminescence, creating a dynamic “echo-texture” – a constantly shifting pattern of warmth and vibration felt across the suit's surface. The entire system is controlled by a micro-processor that allows for real-time adjustment of sensitivity and texture profiles, creating a customizable sensory experience. 
+
+## Why It’s Brilliant
+Chronoskin isn’t just another haptic device; it’s a living, breathing interface with the past. By harnessing the power of bioluminescence and resonant mechanics, we’ve created a technology capable of translating the silent language of decay into a tangible, deeply immersive experience. This allows users to not just *observe* decomposition, but to *feel* its history, offering a truly unprecedented level of ecological awareness. The bio-reactive nature of the suit – constantly evolving with the decaying matter it interacts with – creates an endlessly fascinating and unpredictable sensory landscape, making each interaction uniquely personal and profoundly beautiful.
+
+## Elevator Pitch
+“Imagine feeling the ghost of a leaf as it returns to the earth – that's Chronoskin: a suit

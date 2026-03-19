@@ -1,0 +1,20 @@
+## EchoBloom
+
+## Overview
+EchoBloom is a personal, portable device that generates fleeting, realistic scent “echoes” of extinct plant life, creating momentary, immersive glimpses into lost ecosystems – designed to facilitate trauma therapy and historical empathy. It’s like having a tiny, intelligent garden of the past, blooming with the ghosts of forgotten landscapes. We're not just recreating smells; we’re reconstructing entire sensory experiences, offering a profoundly impactful way to engage with the history of our planet and, crucially, to process deeply held emotional memories.
+
+## The Problem It Solves
+The current methods of trauma therapy often lack the sensory richness needed for complete emotional processing. Traditional therapy relies heavily on verbal accounts, which can be incomplete and struggle to truly resonate with the individual’s subconscious. Furthermore, historical understanding frequently remains purely intellectual, devoid of the visceral connection that truly allows us to empathize with past cultures and environments. The vast majority of our understanding of extinct flora and fauna is based on limited fossil evidence, offering a fragmented and static picture, failing to capture the full sensory experience of these vanished worlds.
+
+## How It Works
+At the heart of EchoBloom lies the ‘Myco-Lumina Chamber,’ a meticulously crafted, spherical chamber constructed from a layered composite of bio-polymer and temperature-regulating aerogel. Within this chamber reside approximately 10,000 colonies of *Lucibacterium antiquus*, a genetically modified strain of bioluminescent bacteria we’ve developed. These aren’t your average glow-in-the-dark bugs! *L. antiquus* has been engineered through CRISPR-Cas9 technology to synthesize volatile organic compounds (VOCs) – the very molecules that constitute scent – based on specific, pre-programmed genetic sequences. 
+
+The temperature within the chamber is precisely controlled by a micro-thermoelectric system, maintained at a constant 22°C. This is crucial – VOC synthesis is temperature-dependent.  Attached to the Myco-Lumina Chamber is a ‘Chronosynth’ – a sophisticated micro-processor connected to a global database of fossil pollen analysis and geological context. The Chronosynth utilizes AI algorithms to translate this data into specific genetic activation sequences for *L. antiquus*. For example, analyzing fossil pollen from a Cretaceous fern might trigger a sequence that prompts the bacteria to produce molecules mimicking the scent profile of that fern, complete with subtle variations reflecting the specific geological conditions of its time. 
+
+The bioluminescence of *L. antiquus* isn’t just for show; it’s integral to the process. The bacteria’s metabolic activity, triggered by the VOC synthesis, generates a faint, shifting glow that subtly influences the scent’s perception – a hint of an ethereal, almost ghostly quality. The scent output is regulated by a miniature, piezo-electric diaphragm valve, allowing for precise control over the duration and intensity of each olfactory “echo,” ranging from a fleeting 5-second burst to a sustained 30-second bloom. 
+
+## Why It's Brilliant
+EchoBloom isn’t just about smelling extinct plants; it’s about temporal immersion. By harnessing the power of genetically modified bioluminescent bacteria to recreate lost scents, we’re offering a radically new approach to sensory therapy and historical exploration. We're building a bridge between the fossil record and human experience, triggering primal memories and fostering a deeper connection to our planet’s astonishing past. The shifting bioluminescence adds an element of magic and mystery, further enhancing the immersive experience and solidifying the feeling of truly encountering a vanished world.
+
+## Elevator Pitch
+“Imagine smelling the last fern that ever existed – EchoBloom lets you experience the
