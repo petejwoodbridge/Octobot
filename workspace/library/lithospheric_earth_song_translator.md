@@ -1,0 +1,1 @@
+## Lithospheric Earth Song Translator - “Echoes of Gaia”

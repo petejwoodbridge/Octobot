@@ -1,0 +1,1 @@
+## The ‘Aura Tide’ – A Bio-Emotional Tidal Synesthesia Generator
