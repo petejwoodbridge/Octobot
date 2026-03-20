@@ -471,22 +471,34 @@ def _rebuild_tasks_from_conversations() -> None:
 
 
 def _topics_from_conversations() -> list[str]:
-    """Extract potential topics from recent user conversations."""
+    """Extract potential topics from recent user conversations.
+    User input creates a new research culture — their messages steer OctoBot's direction."""
     recent = mem.get_recent_conversation(20)
     user_msgs = [t["content"] for t in recent if t.get("role") == "user"]
     if not user_msgs:
         return []
+
+    # Get existing graph concepts for context
+    graph_ctx = _get_graph_context()
+
     # Use the LLM to extract topic ideas from past chats
     combined = "\n".join(user_msgs[-10:])
     try:
         resp = _llm_chat([
             {"role": "system", "content": (
-                "You are an idea domain extractor. Given recent user messages, suggest 3 quirky "
-                "idea domains or problem areas to generate original inventions for, inspired by "
-                "what the user has been talking about. "
+                "You are an idea domain extractor for an octopus inventor AI. "
+                "The user's messages define OctoBot's research culture and direction. "
+                "Given recent user messages, suggest 3 idea domains that:\n"
+                "1. Are directly inspired by what the user has been talking about\n"
+                "2. Connect to OctoBot's existing knowledge graph concepts\n"
+                "3. Create NEW connections between the user's interests and existing ideas\n"
+                "The user's input should STEER the entire research direction — treat their words "
+                "as the north star for what OctoBot explores next. "
                 "Return ONLY a numbered list, one domain per line, nothing else."
             )},
-            {"role": "user", "content": f"Recent user messages:\n{combined[:1500]}"},
+            {"role": "user", "content": (
+                f"Recent user messages:\n{combined[:1500]}\n\n{graph_ctx}"
+            )},
         ])
         topics = []
         for line in resp.strip().splitlines():
@@ -550,14 +562,13 @@ def run_one_cycle() -> str:
 
     fresh_auto = [t for t in AUTO_TOPICS if not _topic_is_used(t, used_topics)]
 
-    # Try to derive fresh topics from past user conversations (50% of cycles)
+    # ALWAYS check user conversations for research direction — user input steers OctoBot
     convo_topics = []
-    if random.random() < 0.5:
-        try:
-            convo_topics = _topics_from_conversations()
-            convo_topics = [t for t in convo_topics if not _topic_is_used(t, used_topics)]
-        except Exception:
-            pass
+    try:
+        convo_topics = _topics_from_conversations()
+        convo_topics = [t for t in convo_topics if not _topic_is_used(t, used_topics)]
+    except Exception:
+        pass
 
     if convo_topics:
         suggested = random.choice(convo_topics)
@@ -634,22 +645,41 @@ def run_one_cycle() -> str:
     return status
 
 
+def _get_graph_context() -> str:
+    """Get a sample of existing concepts from the knowledge graph for topic generation."""
+    try:
+        graph = scoring.get_knowledge_graph()
+        nodes = graph.get("nodes", [])
+        if not nodes:
+            return ""
+        # Pick a random sample of concepts to inspire connected topics
+        import random as _rng
+        sample = _rng.sample(nodes, min(20, len(nodes)))
+        return "Existing concepts in the knowledge graph: " + ", ".join(sample)
+    except Exception:
+        return ""
+
+
 def _generate_fresh_topic(used_topics: set) -> str:
-    """Ask the LLM to invent a completely new research topic OctoBot hasn't explored."""
+    """Ask the LLM to invent a new research topic that connects to OctoBot's existing knowledge."""
     library_index = tools.get_library_index()[:400]
     used_list = ", ".join(list(used_topics)[:30])
+    graph_ctx = _get_graph_context()
     try:
         result = _llm_chat([
             {"role": "system", "content": (
                 "You are a creative idea domain generator for an octopus inventor AI. "
                 "Suggest ONE fresh, specific problem area or product domain that hasn't been explored yet. "
-                "Examples: 'tools for people who cry at adverts', 'gadgets for competitive napping', "
-                "'apps for overthinkers who need to make simple decisions'. "
+                "IMPORTANT: The new topic MUST connect to or build upon the existing concepts in the knowledge graph. "
+                "Combine existing concepts in unexpected ways, or find a new angle on existing themes. "
+                "OctoBot's history should inform its future — every new idea should extend the web of knowledge. "
+                "Examples: 'tools for people who cry at adverts', 'gadgets for competitive napping'. "
                 "Return ONLY the domain description, nothing else."
             )},
             {"role": "user", "content": (
                 f"Ideas already generated for these domains:\n{used_list}\n\n"
-                "Suggest ONE completely new and delightfully specific idea domain:"
+                f"{graph_ctx}\n\n"
+                "Suggest ONE completely new domain that CONNECTS to the existing knowledge graph:"
             )},
         ])
         topic = result.strip().strip('"').strip()

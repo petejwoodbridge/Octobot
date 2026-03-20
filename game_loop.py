@@ -537,17 +537,16 @@ def _loop_worker() -> None:
     except Exception as exc:
         _log(f"⚠️ Reformat error: {exc}")
 
-    # Backfill knowledge graph from existing library files
-    try:
-        graph = scoring.get_knowledge_graph()
-        lib_count = len([f for f in tools.list_files("library") if f.endswith(".md")])
-        if rebuild_graph or len(graph.get("nodes", [])) < lib_count // 2:
-            _log("🕸️ Building idea graph from vault…")
-            current_status = "🕸️ Building idea graph…"
+    # Skip graph backfill here — it's done synchronously in main.py before loops start
+    # to avoid race conditions with concurrent writes to memory.json
+    if rebuild_graph:
+        try:
+            _log("🕸️ Rebuilding idea graph (new files reformatted)…")
+            current_status = "🕸️ Rebuilding idea graph…"
             result = scoring.backfill_graph_from_library()
-            _log(f"🕸️ Graph ready: {result['total_nodes']} concepts, {result['total_edges']} connections from {result['files_processed']} files")
-    except Exception as exc:
-        _log(f"⚠️ Graph backfill error: {exc}")
+            _log(f"🕸️ Graph ready: {result['total_nodes']} concepts from {result.get('total_files', result.get('files_processed', 0))} files")
+        except Exception as exc:
+            _log(f"⚠️ Graph backfill error: {exc}")
 
     while _loop_running:
         try:

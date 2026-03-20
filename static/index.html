@@ -807,6 +807,10 @@ let _gameStatus = '';
 let _lastThought = '';
 let _statusRotateIdx = 0;
 let _speechBubbleText = 'Idea machine warming up...';
+let _prevLibCount = -1;
+let _newIdeaToast = '';       // text shown in the "new idea" banner
+let _newIdeaToastTime = 0;    // timestamp when the toast was triggered
+const _TOAST_DURATION = 6000; // how long the toast is visible (ms)
 
 // Rotate the speech bubble content every 10 seconds
 setInterval(function() {
@@ -832,8 +836,18 @@ async function pollState() {
 
   // Store status info for the rotating speech bubble
   _gameStatus = data.status || '';
-  _lastIdeaTopic = data.last_idea_topic || _lastIdeaTopic;
   _loopStatus = data.loop_status || '';
+
+  // Detect new idea creation
+  const newTopic = data.last_idea_topic || '';
+  const libCount = data.library_count || 0;
+  if (_prevLibCount >= 0 && libCount > _prevLibCount && newTopic) {
+    const topicName = newTopic.replace(/_/g, ' ').replace(/-/g, ' ');
+    _newIdeaToast = 'NEW IDEA: ' + topicName.slice(0, 80);
+    _newIdeaToastTime = Date.now();
+  }
+  _prevLibCount = libCount;
+  _lastIdeaTopic = newTopic || _lastIdeaTopic;
   _lastThought = data.thought || '';
 
   // Show live status immediately in speech bubble when active
@@ -1019,6 +1033,8 @@ async function loadJournal() {
 // KNOWLEDGE GRAPH — Force-directed · Fluid · Interactive
 // =====================================================================
 let graphData = {nodes:[], edges:[], total_nodes:0, total_edges:0};
+let gNodeMap = {};        // id -> {id, title, concepts}
+let gNodeIds = [];        // flat list of node IDs for iteration
 let gZoom = 0.55, gPanX = 0, gPanY = 0;
 let gDragging = false, gDragStart={x:0,y:0}, gPanStart={x:0,y:0};
 let gSelected = null;
@@ -1026,6 +1042,7 @@ let gHoverNode = null;
 let gNodePos = {};        // {x,y,vx,vy,r,baseR}
 let gDegree  = {};
 let gNeighbors = {};      // node -> Set of neighbors
+let gEdgeWeights = {};    // "from|to" -> weight
 let gGraphBuilt = false;
 let gSettleIter = 0;
 const G_SETTLE = 120;     // physics iterations before settling to idle drift
@@ -1035,6 +1052,9 @@ let gAnimRunning = false;
 // Camera animation — lerp toward these targets each frame
 let gCamTX = 0, gCamTY = 0, gCamTZ = 0.55;
 let gFocusBlend = 0;      // 0=normal, 1=fully focused — lerps when node selected
+// Node dragging — drag individual nodes, connected ones follow with springs
+let gDragNode = null;     // node ID being dragged
+let gDragNodeOffset = {x:0, y:0}; // offset from node center to grab point
 
 function gW2S(wx,wy,gc){ return {x:(wx+gPanX)*gZoom+gc.width/2, y:(wy+gPanY)*gZoom+gc.height/2}; }
 function gS2W(sx,sy,gc){ return {x:(sx-gc.width/2)/gZoom-gPanX, y:(sy-gc.height/2)/gZoom-gPanY}; }
@@ -1050,114 +1070,193 @@ function gHitTest(sx,sy,gc){
   return best;
 }
 
-function gBuildLayout(nodes, edges, gc){
-  gDegree={}; gNeighbors={};
-  nodes.forEach(n=>{ gDegree[n]=0; gNeighbors[n]=new Set(); });
+function gGetTitle(id){ return gNodeMap[id]?gNodeMap[id].title:id; }
+
+function gBuildLayout(nodeIds, edges, gc){
+  gDegree={}; gNeighbors={}; gEdgeWeights={};
+  nodeIds.forEach(n=>{ gDegree[n]=0; gNeighbors[n]=new Set(); });
   edges.forEach(e=>{
-    gDegree[e.from]=(gDegree[e.from]||0)+1; gDegree[e.to]=(gDegree[e.to]||0)+1;
+    const w=e.weight||1;
+    gDegree[e.from]=(gDegree[e.from]||0)+w; gDegree[e.to]=(gDegree[e.to]||0)+w;
     if(gNeighbors[e.from]) gNeighbors[e.from].add(e.to);
     if(gNeighbors[e.to])   gNeighbors[e.to].add(e.from);
+    gEdgeWeights[e.from+'|'+e.to]=w;
+    gEdgeWeights[e.to+'|'+e.from]=w;
   });
-  const maxDeg=Math.max(1,...Object.values(gDegree));
-  const sorted=[...nodes].sort((a,b)=>(gDegree[b]||0)-(gDegree[a]||0));
-  const N=sorted.length;
-  // Golden-angle spiral — guarantees even spread with no clumping
+  let maxDeg=1;
+  for(const v of Object.values(gDegree)) if(v>maxDeg) maxDeg=v;
+
+  // ── Cluster detection via BFS — group connected nodes together ──
+  const visited=new Set();
+  const clusters=[];  // array of arrays of node IDs
+  // Start with highest-degree nodes to form cluster centers
+  const sorted=[...nodeIds].sort((a,b)=>(gDegree[b]||0)-(gDegree[a]||0));
+
+  for(const start of sorted){
+    if(visited.has(start)) continue;
+    const cluster=[];
+    const queue=[start];
+    visited.add(start);
+    while(queue.length>0){
+      const node=queue.shift();
+      cluster.push(node);
+      const nbrs=gNeighbors[node];
+      if(nbrs) for(const nb of nbrs){
+        if(!visited.has(nb)){
+          visited.add(nb);
+          queue.push(nb);
+        }
+      }
+    }
+    clusters.push(cluster);
+  }
+
+  // Sort clusters: largest first, then connected ones, then isolated
+  clusters.sort((a,b)=>b.length-a.length);
+
+  const N=nodeIds.length;
   const PHI=Math.PI*(3-Math.sqrt(5));
-  const spreadR=Math.sqrt(N)*34+100;
   gNodePos={}; gScaleCur={};
-  sorted.forEach((n,i)=>{
-    const r = i===0 ? 0 : spreadR*Math.sqrt(i/N);
-    const a = i*PHI;
-    const br=2.5+7*((gDegree[n]||0)/maxDeg);
-    gNodePos[n]={x:r*Math.cos(a)+(Math.random()-0.5)*8, y:r*Math.sin(a)+(Math.random()-0.5)*8, vx:0,vy:0, r:br, baseR:br};
-    gScaleCur[n]=1.0;
-  });
+
+  // Place clusters in a grid-like arrangement with connected nodes clustered tight
+  let clusterIdx=0;
+  const connectedClusters=clusters.filter(c=>c.length>1);
+  const isolatedNodes=clusters.filter(c=>c.length===1).map(c=>c[0]);
+
+  // ── Place connected clusters as tight groups ──
+  const clusterSpacing=200;
+  const cols=Math.max(1,Math.ceil(Math.sqrt(connectedClusters.length)));
+
+  for(let ci=0;ci<connectedClusters.length;ci++){
+    const cluster=connectedClusters[ci];
+    // Cluster center position in a grid
+    const col=ci%cols, row=Math.floor(ci/cols);
+    const cx=(col-(cols-1)/2)*clusterSpacing;
+    const cy=(row-(Math.ceil(connectedClusters.length/cols)-1)/2)*clusterSpacing;
+    // Place nodes within cluster in a tight spiral
+    const cSize=Math.sqrt(cluster.length)*18+20;
+    cluster.sort((a,b)=>(gDegree[b]||0)-(gDegree[a]||0));
+    for(let i=0;i<cluster.length;i++){
+      const n=cluster[i];
+      const r=i===0?0:cSize*Math.sqrt(i/cluster.length);
+      const a=i*PHI;
+      const br=Math.max(2,2+6*((gDegree[n]||0)/maxDeg));
+      gNodePos[n]={x:cx+r*Math.cos(a)+(Math.random()-0.5)*4, y:cy+r*Math.sin(a)+(Math.random()-0.5)*4, vx:0,vy:0, r:br, baseR:br};
+      gScaleCur[n]=1.0;
+    }
+  }
+
+  // ── Place isolated nodes in outer ring ──
+  if(isolatedNodes.length>0){
+    // Find bounding box of connected clusters
+    let maxR=0;
+    for(const v of Object.values(gNodePos)){
+      const d=Math.sqrt(v.x*v.x+v.y*v.y);
+      if(d>maxR) maxR=d;
+    }
+    const isoR=maxR+150; // start isolated nodes beyond the clusters
+    const isoSpread=Math.max(isoR, Math.sqrt(isolatedNodes.length)*12+isoR);
+    for(let i=0;i<isolatedNodes.length;i++){
+      const n=isolatedNodes[i];
+      const r=isoR+isoSpread*0.5*Math.sqrt(i/isolatedNodes.length);
+      const a=i*PHI;
+      const br=1.5;
+      gNodePos[n]={x:r*Math.cos(a)+(Math.random()-0.5)*6, y:r*Math.sin(a)+(Math.random()-0.5)*6, vx:0,vy:0, r:br, baseR:br};
+      gScaleCur[n]=1.0;
+    }
+  }
+
+  // Set initial zoom to fit the connected clusters nicely
+  if(N>500){
+    const clusterExtent=connectedClusters.length>0?cols*clusterSpacing:500;
+    gCamTZ=Math.min(0.55, Math.max(0.08, gc.width/(clusterExtent*2.5)));
+  }
   gGraphBuilt=true; gSettleIter=0;
 }
 
-// Spatial grid for O(n) repulsion instead of O(n²)
-let _grid={}, _gridSize=100;
-function _gridKey(x,y){ return ((x/_gridSize|0)*10000+(y/_gridSize|0)); }
-function _buildGrid(nodes){
-  _grid={};
-  nodes.forEach(n=>{
-    const p=gNodePos[n]; if(!p) return;
-    const k=_gridKey(p.x,p.y);
-    (_grid[k]=_grid[k]||[]).push(n);
-  });
-}
-function _nearbyNodes(x,y){
-  const gx=x/_gridSize|0, gy=y/_gridSize|0, result=[];
-  for(let dx=-1;dx<=1;dx++) for(let dy=-1;dy<=1;dy++){
-    const cell=_grid[(gx+dx)*10000+(gy+dy)];
-    if(cell) result.push(...cell);
+// ── Click effects system — ripples, particles, neighbor pop ──
+let gClickFx=[];      // active effects: {type, x, y, t0, ...}
+let gNeighPop={};     // nodeId -> {scale, targetScale, delay}
+
+function gTriggerClickFx(sx, sy, nodeId){
+  const now=performance.now();
+  // Shockwave ripple
+  gClickFx.push({type:'ripple', x:sx, y:sy, t0:now, dur:800});
+  gClickFx.push({type:'ripple', x:sx, y:sy, t0:now+120, dur:600});
+  // Particle burst
+  for(let i=0;i<18;i++){
+    const angle=Math.PI*2*i/18+(Math.random()-0.5)*0.3;
+    const speed=2+Math.random()*4;
+    const life=400+Math.random()*400;
+    const hue=280+Math.random()*60; // purple-pink range
+    gClickFx.push({type:'particle', x:sx, y:sy, vx:Math.cos(angle)*speed, vy:Math.sin(angle)*speed, t0:now, dur:life, hue:hue, size:1.5+Math.random()*2.5});
   }
-  return result;
+  // Flash
+  gClickFx.push({type:'flash', x:sx, y:sy, t0:now, dur:300});
+  // Neighbor pop-in with stagger
+  gNeighPop={};
+  const nbrs=gNeighbors[nodeId]||new Set();
+  let delay=0;
+  for(const nb of nbrs){
+    gNeighPop[nb]={scale:0.01, targetScale:1.35, delay:delay};
+    delay+=40;
+  }
 }
 
-function gForceStep(nodes, edges){
-  const KR=1200, KS=0.03, KC=0.0015, DAMP=0.82, MIN_D=20, IDEAL=80;
-  nodes.forEach(n=>{ const p=gNodePos[n]; if(p){p.fx=0;p.fy=0;} });
-  // Repulsion via spatial grid — O(n) instead of O(n²)
-  _buildGrid(nodes);
-  for(let i=0;i<nodes.length;i++){
-    const ni=nodes[i], pi=gNodePos[ni]; if(!pi) continue;
-    const nearby=_nearbyNodes(pi.x,pi.y);
-    for(let j=0;j<nearby.length;j++){
-      const nj=nearby[j]; if(nj<=ni) continue; // avoid double-counting
-      const pj=gNodePos[nj]; if(!pj) continue;
-      let dx=pi.x-pj.x, dy=pi.y-pj.y;
-      let d=Math.sqrt(dx*dx+dy*dy)||0.01;
-      if(d>_gridSize*2) continue;
-      if(d<MIN_D){dx=(Math.random()-0.5)*MIN_D;dy=(Math.random()-0.5)*MIN_D;d=MIN_D;}
-      const f=KR/(d*d);
-      pi.fx+=(dx/d)*f; pi.fy+=(dy/d)*f;
-      pj.fx-=(dx/d)*f; pj.fy-=(dy/d)*f;
+function gDrawClickFx(gctx, W, H){
+  const now=performance.now();
+  gClickFx=gClickFx.filter(fx=>{
+    const elapsed=now-fx.t0;
+    if(elapsed>fx.dur) return false;
+    const p=elapsed/fx.dur; // 0→1 progress
+
+    if(fx.type==='ripple'){
+      const r=p*220;
+      const alpha=0.6*(1-p)*(1-p);
+      gctx.globalAlpha=alpha;
+      gctx.strokeStyle=`hsl(300,100%,${60+p*30}%)`;
+      gctx.lineWidth=3*(1-p)+0.5;
+      gctx.beginPath(); gctx.arc(fx.x,fx.y,r,0,Math.PI*2); gctx.stroke();
     }
-  }
-  // Edge spring attraction
-  const edgeCap=Math.min(edges.length,1500);
-  for(let i=0;i<edgeCap;i++){
-    const e=edges[i], a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
-    const dx=b.x-a.x, dy=b.y-a.y, d=Math.sqrt(dx*dx+dy*dy)||0.01;
-    const ideal=IDEAL+(a.r+b.r)*3;
-    const f=KS*(d-ideal);
-    a.fx+=(dx/d)*f; a.fy+=(dy/d)*f;
-    b.fx-=(dx/d)*f; b.fy-=(dy/d)*f;
-  }
-  // Center gravity
-  nodes.forEach(n=>{ const p=gNodePos[n]; if(!p) return; p.fx-=p.x*KC; p.fy-=p.y*KC; });
-  // Focus forces: pull neighbours in close, push others away
-  if(gSelected && gFocusBlend>0.05){
-    const sp=gNodePos[gSelected];
-    if(sp){
-      const selNeigh=gNeighbors[gSelected]||new Set();
-      const bl=gFocusBlend;
-      nodes.forEach(n=>{
-        if(n===gSelected) return;
-        const p=gNodePos[n]; if(!p) return;
-        const dx=p.x-sp.x, dy=p.y-sp.y;
-        const d=Math.sqrt(dx*dx+dy*dy)||0.01;
-        if(selNeigh.has(n)){
-          const orbit=60+(p.r+sp.r)*1.8;
-          const f=0.14*bl*(d-orbit);
-          p.fx-=(dx/d)*f; p.fy-=(dy/d)*f;
-        } else {
-          const f=700*bl/(d*d+10);
-          p.fx+=(dx/d)*f; p.fy+=(dy/d)*f;
-        }
-      });
-      sp.vx*=0.15; sp.vy*=0.15;
+    else if(fx.type==='particle'){
+      fx.x+=fx.vx*(1-p*0.5); fx.y+=fx.vy*(1-p*0.5);
+      fx.vy+=0.04; // slight gravity
+      const alpha=(1-p)*(1-p);
+      const s=fx.size*(1-p*0.5);
+      gctx.globalAlpha=alpha;
+      gctx.fillStyle=`hsl(${fx.hue},100%,70%)`;
+      gctx.beginPath(); gctx.arc(fx.x,fx.y,s,0,Math.PI*2); gctx.fill();
+      // Tiny trail
+      gctx.globalAlpha=alpha*0.3;
+      gctx.beginPath(); gctx.arc(fx.x-fx.vx*0.5,fx.y-fx.vy*0.5,s*0.6,0,Math.PI*2); gctx.fill();
     }
-  }
-  // Integrate
-  nodes.forEach(n=>{
-    const p=gNodePos[n]; if(!p) return;
-    p.vx=(p.vx+p.fx)*DAMP; p.vy=(p.vy+p.fy)*DAMP;
-    p.x+=p.vx; p.y+=p.vy;
+    else if(fx.type==='flash'){
+      const alpha=0.4*(1-p)*(1-p);
+      const r=30+p*60;
+      const g=gctx.createRadialGradient(fx.x,fx.y,0,fx.x,fx.y,r);
+      g.addColorStop(0,`rgba(255,45,155,${alpha})`);
+      g.addColorStop(0.5,`rgba(200,50,255,${alpha*0.5})`);
+      g.addColorStop(1,'transparent');
+      gctx.globalAlpha=1;
+      gctx.fillStyle=g; gctx.beginPath(); gctx.arc(fx.x,fx.y,r,0,Math.PI*2); gctx.fill();
+    }
+    return true;
   });
+
+  // Animate neighbor pop-in
+  for(const [nid, pop] of Object.entries(gNeighPop)){
+    if(pop.delay>0){ pop.delay-=16; continue; }
+    pop.scale+=(pop.targetScale-pop.scale)*0.18;
+    if(Math.abs(pop.scale-pop.targetScale)<0.01){
+      pop.scale=pop.targetScale;
+      if(pop.targetScale===1.35) pop.targetScale=1.0; // settle back to normal
+    }
+    gScaleCur[nid]=pop.scale;
+  }
+  gctx.globalAlpha=1;
 }
 
+// No physics for large graphs — static layout is instant. Only focus forces on selection.
 function drawGraphFrame(){
   const gc=document.getElementById('graph-canvas'); if(!gc||!gc.parentElement) return;
   const pw=gc.parentElement.clientWidth||600;
@@ -1165,142 +1264,204 @@ function drawGraphFrame(){
   if(gc.width!==pw||gc.height!==ph){gc.width=pw;gc.height=ph;}
   const gctx=gc.getContext('2d');
   gctx.clearRect(0,0,gc.width,gc.height);
-  const nodes=graphData.nodes||[], edges=graphData.edges||[];
+  const nodes=gNodeIds, edges=graphData.edges||[];
   if(!nodes.length){
     gctx.fillStyle='#bf00ff44'; gctx.font='11px "Press Start 2P"'; gctx.textAlign='center';
-    gctx.fillText('No concepts yet \u2014 feed OctoBot knowledge!',gc.width/2,gc.height/2); return;
+    gctx.fillText('No ideas yet \u2014 feed OctoBot knowledge!',gc.width/2,gc.height/2); return;
   }
   if(!gGraphBuilt||Object.keys(gNodePos).length!==nodes.length) gBuildLayout(nodes,edges,gc);
 
   // Smooth camera lerp
-  const CL=0.055;
+  const CL=0.07;
   gZoom+=(gCamTZ-gZoom)*CL;
   gPanX+=(gCamTX-gPanX)*CL;
   gPanY+=(gCamTY-gPanY)*CL;
 
-  // Focus blend lerp (0=unfocused, 1=focused)
+  // Focus blend lerp
   const focusTarget=gSelected?1:0;
-  gFocusBlend+=(focusTarget-gFocusBlend)*0.07;
+  gFocusBlend+=(focusTarget-gFocusBlend)*0.1;
 
-  // Physics settling: run longer in focus mode so clustering can complete
-  const settleLimit = gSelected ? G_SETTLE*2 : G_SETTLE;
-  if(gSettleIter<settleLimit){
-    const steps=gSettleIter<30?4:gSettleIter<80?2:1;
-    for(let s=0;s<steps;s++) gForceStep(nodes,edges);
-    gSettleIter+=steps;
+  // ── Spring physics — only active when dragging a node ──
+  if(gDragNode){
+    const DAMPING=0.85, SPRING_K=0.005, SPRING_REST=60, MAX_F=2;
+    // Only compute springs for edges connected to the dragged node (and their neighbors)
+    const affected=new Set([gDragNode]);
+    const nbrs=gNeighbors[gDragNode]||new Set();
+    for(const nb of nbrs) affected.add(nb);
+    for(let i=0;i<edges.length;i++){
+      const e=edges[i];
+      if(!affected.has(e.from)&&!affected.has(e.to)) continue;
+      const a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
+      const dx=b.x-a.x, dy=b.y-a.y, dist=Math.sqrt(dx*dx+dy*dy)||1;
+      let f=Math.max(-MAX_F,Math.min(MAX_F,(dist-SPRING_REST)*SPRING_K));
+      const fx=dx/dist*f, fy=dy/dist*f;
+      if(e.from!==gDragNode){a.vx+=fx;a.vy+=fy;}
+      if(e.to!==gDragNode){b.vx-=fx;b.vy-=fy;}
+    }
+    for(const n of affected){
+      const p=gNodePos[n]; if(!p||n===gDragNode) continue;
+      p.vx*=DAMPING; p.vy*=DAMPING;
+      const spd=Math.sqrt(p.vx*p.vx+p.vy*p.vy);
+      if(spd>4){p.vx*=4/spd;p.vy*=4/spd;}
+      p.x+=p.vx; p.y+=p.vy;
+    }
+  }
+  // Decay any remaining velocity (from after drag release)
+  let anyMoving=false;
+  for(const n of nodes){
+    const p=gNodePos[n]; if(!p) continue;
+    if(Math.abs(p.vx)>0.01||Math.abs(p.vy)>0.01){
+      p.vx*=0.9; p.vy*=0.9; p.x+=p.vx; p.y+=p.vy;
+      anyMoving=true;
+    } else { p.vx=0; p.vy=0; }
   }
 
   const t=performance.now()*0.001;
-  const pulse=0.5+0.5*Math.sin(t*3.5); // 0‒1 oscillation for selected ring
+  const pulse=0.5+0.5*Math.sin(t*3.5);
 
-  // Per-node hover/select scale interpolation
+  // Build neighbor sets (only when selected/hovered)
   const selN=new Set();
   if(gSelected) edges.forEach(e=>{ if(e.from===gSelected) selN.add(e.to); if(e.to===gSelected) selN.add(e.from); });
   const hovNeigh=gHoverNode?(gNeighbors[gHoverNode]||new Set()):new Set();
-  nodes.forEach(n=>{
-    const isSel=n===gSelected, isSelN=selN.has(n), isH=n===gHoverNode, isHN=hovNeigh.has(n);
-    const target=isSel?2.0:isSelN?1.35:isH?1.5:isHN?1.2:1.0;
-    const spd=isSel?0.12:isH?0.20:0.08;
-    gScaleCur[n]=(gScaleCur[n]||1)+(target-(gScaleCur[n]||1))*spd;
-  });
 
-  const maxDeg=Math.max(1,...Object.values(gDegree));
+  let maxDeg=1; for(const v of Object.values(gDegree)) if(v>maxDeg) maxDeg=v;
+  const W=gc.width, H=gc.height;
 
-  // ── Draw edges ─────────────────────────────────────────────────────
-  const ecap=Math.min(edges.length,1500);
-
-  // Pass 1: background (dim) edges
+  // ── BATCHED EDGE DRAWING ──────────────────────────────────────────
+  // Pass 1: all background edges in ONE path (massive perf win)
+  gctx.globalAlpha=0.25;
+  gctx.strokeStyle='#bf00ff';
+  gctx.lineWidth=0.8;
+  gctx.beginPath();
+  const ecap=edges.length;
   for(let i=0;i<ecap;i++){
     const e=edges[i], a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
-    const sa=gW2S(a.x,a.y,gc), sb=gW2S(b.x,b.y,gc);
-    if(Math.max(sa.x,sb.x)<-20||Math.min(sa.x,sb.x)>gc.width+20||
-       Math.max(sa.y,sb.y)<-20||Math.min(sa.y,sb.y)>gc.height+20) continue;
-    const hiS=gSelected&&(e.from===gSelected||e.to===gSelected);
-    const hiH=!gSelected&&gHoverNode&&(e.from===gHoverNode||e.to===gHoverNode);
-    if(hiS) continue; // draw highlighted edges in pass 2
-    const dimmed=gFocusBlend*(1-0.03); // lerp to near-invisible when focused
-    gctx.globalAlpha=hiH?0.55:(0.10-dimmed*0.07);
-    gctx.strokeStyle=hiH?'#cc55ff':'#bf00ff';
-    gctx.lineWidth=hiH?1.1:0.5;
-    gctx.beginPath(); gctx.moveTo(sa.x,sa.y); gctx.lineTo(sb.x,sb.y); gctx.stroke();
+    if(gSelected&&(e.from===gSelected||e.to===gSelected)) continue;
+    const ax=(a.x+gPanX)*gZoom+W/2, ay=(a.y+gPanY)*gZoom+H/2;
+    const bx=(b.x+gPanX)*gZoom+W/2, by=(b.y+gPanY)*gZoom+H/2;
+    if(Math.max(ax,bx)<-20||Math.min(ax,bx)>W+20||Math.max(ay,by)<-20||Math.min(ay,by)>H+20) continue;
+    gctx.moveTo(ax,ay); gctx.lineTo(bx,by);
+  }
+  gctx.stroke();
+
+  // Pass 2: hover edges
+  if(gHoverNode&&!gSelected){
+    gctx.globalAlpha=0.7;
+    gctx.strokeStyle='#cc55ff';
+    gctx.lineWidth=1.8;
+    gctx.beginPath();
+    for(let i=0;i<ecap;i++){
+      const e=edges[i];
+      if(e.from!==gHoverNode&&e.to!==gHoverNode) continue;
+      const a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
+      const ax=(a.x+gPanX)*gZoom+W/2, ay=(a.y+gPanY)*gZoom+H/2;
+      const bx=(b.x+gPanX)*gZoom+W/2, by=(b.y+gPanY)*gZoom+H/2;
+      gctx.moveTo(ax,ay); gctx.lineTo(bx,by);
+    }
+    gctx.stroke();
   }
 
-  // Pass 2: selected / highlighted edges with glow
+  // Pass 3: selected edges with glow (only a few)
   if(gSelected){
+    gctx.globalAlpha=0.9+0.1*pulse;
+    gctx.strokeStyle='#ff66cc';
+    gctx.lineWidth=2.5;
+    gctx.shadowColor='#ff2d9b'; gctx.shadowBlur=8;
+    gctx.beginPath();
     for(let i=0;i<ecap;i++){
-      const e=edges[i], a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
+      const e=edges[i];
       if(e.from!==gSelected&&e.to!==gSelected) continue;
-      const sa=gW2S(a.x,a.y,gc), sb=gW2S(b.x,b.y,gc);
-      if(Math.max(sa.x,sb.x)<-20||Math.min(sa.x,sb.x)>gc.width+20||
-         Math.max(sa.y,sb.y)<-20||Math.min(sa.y,sb.y)>gc.height+20) continue;
-      // Outer glow pass
-      gctx.globalAlpha=0.25+0.15*pulse;
-      gctx.strokeStyle='#ff66cc';
-      gctx.lineWidth=5;
-      gctx.shadowColor='#ff2d9b'; gctx.shadowBlur=8;
-      gctx.beginPath(); gctx.moveTo(sa.x,sa.y); gctx.lineTo(sb.x,sb.y); gctx.stroke();
-      // Inner bright pass
-      gctx.globalAlpha=0.85+0.15*pulse;
-      gctx.strokeStyle='#ffaadd';
-      gctx.lineWidth=1.5;
-      gctx.shadowBlur=0;
-      gctx.beginPath(); gctx.moveTo(sa.x,sa.y); gctx.lineTo(sb.x,sb.y); gctx.stroke();
+      const a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
+      const ax=(a.x+gPanX)*gZoom+W/2, ay=(a.y+gPanY)*gZoom+H/2;
+      const bx=(b.x+gPanX)*gZoom+W/2, by=(b.y+gPanY)*gZoom+H/2;
+      gctx.moveTo(ax,ay); gctx.lineTo(bx,by);
     }
+    gctx.stroke();
     gctx.shadowBlur=0;
   }
   gctx.globalAlpha=1;
 
-  // ── Draw nodes ─────────────────────────────────────────────────────
-  nodes.forEach(n=>{
-    const p=gNodePos[n]; if(!p) return;
-    const hash=n.charCodeAt(0)*7+(n.charCodeAt(n.length-1)||0)*13;
-    const drift=gSettleIter>=G_SETTLE?1.5:0;
-    const ox=Math.sin(t*0.38+hash*0.09)*drift, oy=Math.cos(t*0.27+hash*0.12)*drift;
-    const sp=gW2S(p.x+ox,p.y+oy,gc);
-    if(sp.x<-80||sp.x>gc.width+80||sp.y<-80||sp.y>gc.height+80) return;
-    const sc=gScaleCur[n]||1.0;
-    const sr=Math.max(p.r*sc*gZoom,2);
-    const isSel=n===gSelected, isNeigh=selN.has(n), isHov=n===gHoverNode;
-    const isBackground=gFocusBlend>0.05&&!isSel&&!isNeigh&&!isHov;
+  // ── BATCHED NODE DRAWING ──────────────────────────────────────────
+  // Tier 1: batch all background nodes by color (3 paths instead of 4700 draw calls)
+  const tier_lo=[], tier_mid=[], tier_hi=[];
+  const special=[]; // selected, neighbors, hovered — drawn individually
+  const thr_hi=maxDeg*0.6, thr_mid=maxDeg*0.3;
 
-    gctx.globalAlpha=isBackground?(1-gFocusBlend*0.75):1.0;
+  for(let i=0;i<nodes.length;i++){
+    const n=nodes[i], p=gNodePos[n]; if(!p) continue;
+    const sx=(p.x+gPanX)*gZoom+W/2, sy=(p.y+gPanY)*gZoom+H/2;
+    if(sx<-40||sx>W+40||sy<-40||sy>H+40) continue;
+    const sr=Math.max(p.r*gZoom,1.5);
+    const isSel=n===gSelected, isNeigh=selN.has(n), isHov=n===gHoverNode, isHovN=hovNeigh.has(n);
+    if(isSel||isNeigh||isHov||isHovN){
+      special.push({n,sx,sy,sr,isSel,isNeigh,isHov});
+    } else {
+      const d=gDegree[n]||0;
+      if(d>thr_hi) tier_hi.push({sx,sy,sr});
+      else if(d>thr_mid) tier_mid.push({sx,sy,sr});
+      else tier_lo.push({sx,sy,sr});
+    }
+  }
+
+  // Draw background node tiers (batched — one fill per color)
+  const bgAlpha=gFocusBlend>0.05?(1-gFocusBlend*0.75):1.0;
+  gctx.globalAlpha=bgAlpha;
+
+  const tiers=[
+    {list:tier_lo, color:'#7755bb'},
+    {list:tier_mid, color:'#00ccff'},
+    {list:tier_hi, color:'#ff66cc'},
+  ];
+  for(const tier of tiers){
+    if(!tier.list.length) continue;
+    gctx.fillStyle=tier.color;
+    gctx.beginPath();
+    for(const nd of tier.list){
+      gctx.moveTo(nd.sx+nd.sr,nd.sy);
+      gctx.arc(nd.sx,nd.sy,nd.sr,0,Math.PI*2);
+    }
+    gctx.fill();
+  }
+
+  // Draw special nodes individually (selected, neighbors, hovered)
+  gctx.globalAlpha=1;
+  for(const s of special){
+    const {n,sx,sy,isSel,isNeigh,isHov}=s;
+    let sr=s.sr*(isSel?2.0:isNeigh?1.35:isHov?1.5:1.2);
 
     // Glow halo
-    if(isSel||isNeigh||isHov){
-      const glowR=sr+(isSel?28+10*pulse:isHov?20:14);
-      const g2=gctx.createRadialGradient(sp.x,sp.y,sr*0.3,sp.x,sp.y,glowR);
-      g2.addColorStop(0,(isSel?'#ff2d9b':isHov?'#cc44ff':'#00f7ff')+(isSel?'99':'70'));
-      g2.addColorStop(1,'transparent');
-      gctx.fillStyle=g2; gctx.beginPath(); gctx.arc(sp.x,sp.y,glowR,0,Math.PI*2); gctx.fill();
-    }
+    const glowR=sr+(isSel?28+10*pulse:isHov?20:14);
+    const g2=gctx.createRadialGradient(sx,sy,sr*0.3,sx,sy,glowR);
+    g2.addColorStop(0,(isSel?'#ff2d9b99':isHov?'#cc44ff70':'#00f7ff70'));
+    g2.addColorStop(1,'transparent');
+    gctx.fillStyle=g2; gctx.beginPath(); gctx.arc(sx,sy,glowR,0,Math.PI*2); gctx.fill();
 
-    // Pulsing outer ring for selected node
+    // Ring for selected
     if(isSel){
       const ringR=sr+6+pulse*8;
       gctx.strokeStyle='#ff66cc';
       gctx.lineWidth=1.5+pulse*1.5;
       gctx.globalAlpha=0.55+0.45*pulse;
-      gctx.shadowColor='#ff2d9b'; gctx.shadowBlur=12;
-      gctx.beginPath(); gctx.arc(sp.x,sp.y,ringR,0,Math.PI*2); gctx.stroke();
+      gctx.shadowColor='#ff2d9b'; gctx.shadowBlur=10;
+      gctx.beginPath(); gctx.arc(sx,sy,ringR,0,Math.PI*2); gctx.stroke();
       gctx.shadowBlur=0;
       gctx.globalAlpha=1;
     }
 
-    const d=gDegree[n]||0;
-    gctx.fillStyle=isSel?'#ff2d9b':isHov?'#dd44ff':isNeigh?'#00f7ff':d>maxDeg*0.6?'#ff66cc':d>maxDeg*0.3?'#00ccff':'#7755bb';
-    gctx.beginPath(); gctx.arc(sp.x,sp.y,sr,0,Math.PI*2); gctx.fill();
+    gctx.fillStyle=isSel?'#ff2d9b':isHov?'#dd44ff':isNeigh?'#00f7ff':'#00ccff';
+    gctx.beginPath(); gctx.arc(sx,sy,sr,0,Math.PI*2); gctx.fill();
 
-    // Labels
-    if(gZoom>0.20&&(isHov||isSel||isNeigh||d>maxDeg*0.07||nodes.length<80)){
-      const fs=Math.max(5,Math.min(isSel?14:12,Math.round((isSel?10:isHov?8:7)*gZoom)));
-      gctx.globalAlpha=isBackground?(1-gFocusBlend*0.75):1.0;
-      gctx.fillStyle=isSel?'#fff':isHov?'#eeddff':'#ff99ee';
-      gctx.font=`${isSel?'bold ':''} ${fs}px "Press Start 2P"`; gctx.textAlign='center';
-      const lbl=n.length>26?n.slice(0,24)+'\u2026':n;
-      gctx.fillText(lbl,sp.x,sp.y-sr-(isSel?6:3));
-    }
-    gctx.globalAlpha=1;
-  });
+    // Labels — only for special nodes
+    const title=gGetTitle(n);
+    const fs=Math.max(6,Math.min(isSel?14:11,Math.round((isSel?10:8)*gZoom)));
+    gctx.fillStyle=isSel?'#fff':isHov?'#eeddff':'#ff99ee';
+    gctx.font=`${isSel?'bold ':''} ${fs}px "Press Start 2P"`; gctx.textAlign='center';
+    const lbl=title.length>30?title.slice(0,28)+'\u2026':title;
+    gctx.fillText(lbl,sx,sy-sr-(isSel?6:3));
+  }
+  gctx.globalAlpha=1;
+  // Draw click effects on top of everything
+  gDrawClickFx(gctx, W, H);
   gctx.fillStyle='#00f7ff33'; gctx.font='7px "Press Start 2P"'; gctx.textAlign='right';
   gctx.fillText(`\u00d7${gZoom.toFixed(2)}  dbl=reset`,gc.width-6,gc.height-4);
 }
@@ -1327,45 +1488,82 @@ let gSetup=false;
 function selectConceptNode(name){
   gSelected=name;
   gSettleIter=0;
-  // Centre the selected node on screen
-  if(gNodePos[name]){
+  const gc=document.getElementById('graph-canvas');
+  // Fire the click effect at the node's screen position
+  if(gNodePos[name] && gc){
+    const sp=gW2S(gNodePos[name].x, gNodePos[name].y, gc);
+    gTriggerClickFx(sp.x, sp.y, name);
+
+    // Centre the selected node in the visible area (left of the 320px sidebar)
+    const sidebarW=320;
     const tz=Math.min(2.2, Math.max(gZoom, 1.1));
     gCamTZ=tz;
-    gCamTX=-gNodePos[name].x;
+    // The visible center is offset left by half the sidebar width in world coords
+    const sidebarWorldOffset=(sidebarW/2)/tz;
+    gCamTX=-gNodePos[name].x-sidebarWorldOffset;
     gCamTY=-gNodePos[name].y;
+
+    // Give a gentle "pop" impulse to neighbors so they react visibly
+    const nbrs=gNeighbors[name]||new Set();
+    for(const nb of nbrs){
+      const np=gNodePos[nb]; if(!np) continue;
+      const dx=np.x-gNodePos[name].x, dy=np.y-gNodePos[name].y;
+      const d=Math.sqrt(dx*dx+dy*dy)||1;
+      np.vx+=dx/d*1.5; np.vy+=dy/d*1.5;
+    }
   }
   const nd=document.getElementById('node-detail');
   const ndc=document.getElementById('node-detail-content');
-  const deg=gDegree[name]||0;
-  const nbrs=[...new Set((graphData.edges||[]).flatMap(e=>
-    e.from===name?[e.to]:e.to===name?[e.from]:[]
-  ))].slice(0,40);
-  document.getElementById('node-detail-title').textContent=name;
-  ndc.innerHTML=`<div style="color:#00f7ff;margin-bottom:8px;font-size:11px;"><strong>${deg}</strong> connections</div>`+
-    `<div id="concept-ideas-section"><div style="color:#bf00ffaa;font-size:11px;">Loading ideas\u2026</div></div>`+
-    `<div style="margin-top:12px;"><div style="color:#bf00ffaa;font-size:11px;margin-bottom:6px;">Connected concepts:</div>`+
-    (nbrs.length?nbrs.map(n=>{
-      const escaped=n.replace(/'/g,"\\'").replace(/"/g,'&quot;');
-      return `<span class="nbr-chip" onclick="selectConceptNode('${escaped}')"
-        style="display:inline-block;background:#1a003a;border:1px solid #bf00ff55;color:#00f7ff;font-size:10px;padding:2px 7px;margin:2px;border-radius:3px;cursor:pointer;">${n}</span>`;
+  const nodeInfo=gNodeMap[name];
+  const title=nodeInfo?nodeInfo.title:name;
+  const concepts=nodeInfo?nodeInfo.concepts:[];
+
+  // Find connected ideas with shared concept info
+  const nbrs=[];
+  (graphData.edges||[]).forEach(e=>{
+    if(e.from===name) nbrs.push({id:e.to, shared:e.shared||[], weight:e.weight||1});
+    else if(e.to===name) nbrs.push({id:e.from, shared:e.shared||[], weight:e.weight||1});
+  });
+  nbrs.sort((a,b)=>b.weight-a.weight);
+  const uniqueNbrs=[...new Map(nbrs.map(n=>[n.id,n])).values()].slice(0,30);
+
+  document.getElementById('node-detail-title').textContent=title;
+  ndc.innerHTML=
+    `<div style="color:#00f7ff;margin-bottom:8px;font-size:11px;"><strong>${uniqueNbrs.length}</strong> connected ideas</div>`+
+    `<div id="idea-content-section"><div style="color:#bf00ffaa;font-size:11px;">Loading idea content\u2026</div></div>`+
+    (concepts.length?`<div style="margin-top:12px;"><div style="color:#bf00ffaa;font-size:11px;margin-bottom:6px;">Key concepts:</div>`+
+      concepts.slice(0,12).map(c=>`<span style="display:inline-block;background:#1a003a;border:1px solid #bf00ff55;color:#ff99ee;font-size:9px;padding:2px 6px;margin:2px;border-radius:3px;">${c}</span>`).join('')+'</div>':'')+
+    `<div style="margin-top:12px;"><div style="color:#bf00ffaa;font-size:11px;margin-bottom:6px;">Connected ideas:</div>`+
+    (uniqueNbrs.length?uniqueNbrs.map(n=>{
+      const nTitle=gGetTitle(n.id);
+      const escaped=n.id.replace(/'/g,"\\'").replace(/"/g,'&quot;');
+      const sharedStr=n.shared.length?n.shared.slice(0,3).join(', '):'';
+      return `<div class="nbr-chip" onclick="selectConceptNode('${escaped}')"
+        style="background:#10003055;border:1px solid #bf00ff44;border-radius:4px;padding:6px 8px;margin-bottom:4px;cursor:pointer;">
+        <div style="color:#00f7ff;font-size:10px;font-weight:bold;">${nTitle.length>40?nTitle.slice(0,38)+'\u2026':nTitle}</div>
+        ${sharedStr?`<div style="color:#bf00ff99;font-size:9px;margin-top:2px;">shared: ${sharedStr}</div>`:''}
+      </div>`;
     }).join('')
-    :'<span style="color:#bf00ff44;font-size:11px;">(none in view)</span>')+'</div>';
+    :'<span style="color:#bf00ff44;font-size:11px;">(no connections)</span>')+'</div>';
   nd.style.display='block';
-  fetchJSON('/api/concept?q='+encodeURIComponent(name)).then(data=>{
-    const sec=document.getElementById('concept-ideas-section');
+
+  // Fetch and display idea content
+  const safe=name.startsWith('library/')?name.slice(8):name;
+  fetchJSON('/api/library/'+encodeURIComponent(safe)).then(data=>{
+    const sec=document.getElementById('idea-content-section');
     if(!sec) return;
-    if(!data||!data.matches||!data.matches.length){
-      sec.innerHTML='<div style="color:#bf00ff66;font-size:11px;">No ideas found for this concept.</div>';
+    if(!data||!data.content){
+      sec.innerHTML='<div style="color:#bf00ff66;font-size:11px;">Could not load idea content.</div>';
       return;
     }
-    sec.innerHTML='<div style="color:#ff66cc;font-size:11px;margin-bottom:8px;">Ideas containing this concept:</div>'+
-      data.matches.map(m=>`
-        <div style="background:#10003055;border:1px solid #bf00ff44;border-radius:4px;padding:8px;margin-bottom:8px;cursor:pointer;"
-             onclick="window._graphShowIdea('${m.file.replace(/'/g,"\\'")}')">
-          <div style="color:#ff99ee;font-size:12px;font-weight:bold;margin-bottom:5px;">${m.title}</div>
-          <div style="color:#cceeffcc;font-size:11px;line-height:1.5;">${m.snippet}</div>
-          <div style="color:#bf00ff88;font-size:9px;margin-top:6px;">Click to read full idea</div>
-        </div>`).join('');
+    // Show a snippet of the idea content
+    const lines=data.content.split('\n').filter(l=>!l.startsWith('*Created')&&l.trim());
+    const snippet=lines.slice(0,15).join('\n');
+    sec.innerHTML=
+      `<div style="background:#10003055;border:1px solid #bf00ff44;border-radius:4px;padding:10px;margin-bottom:8px;">
+        <div style="color:#cceeffcc;font-size:11px;line-height:1.6;white-space:pre-wrap;word-break:break-word;">${renderMarkdown(snippet)}</div>
+        ${lines.length>15?`<div style="color:#bf00ff88;font-size:9px;margin-top:8px;cursor:pointer;" onclick="window._graphShowIdea('${name.replace(/'/g,"\\'")}')">Click to read full idea \u2192</div>`:''}
+      </div>`;
   });
 }
 
@@ -1396,51 +1594,121 @@ function setupGraphInteraction(){
   const gc=document.getElementById('graph-canvas');
   const tip=document.getElementById('graph-tooltip');
   const nd =document.getElementById('node-detail');
-  const ndc=document.getElementById('node-detail-content');
   document.getElementById('node-detail-close').addEventListener('click',()=>{
     gSelected=null; nd.style.display='none';
     gCamTX=0; gCamTY=0; gCamTZ=0.55; gSettleIter=0;
   });
-  function pos(e){const r=gc.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top};}
+
+  // Convert mouse event to canvas-local coords (accounts for CSS scaling)
+  function canvasXY(e){
+    const r=gc.getBoundingClientRect();
+    // Scale from CSS pixels to canvas pixels
+    const scaleX=gc.width/r.width, scaleY=gc.height/r.height;
+    return {x:(e.clientX-r.left)*scaleX, y:(e.clientY-r.top)*scaleY};
+  }
+
+  // ── ZOOM (scroll wheel) ──
   gc.addEventListener('wheel',e=>{
-    e.preventDefault();
-    const p=pos(e),wb=gS2W(p.x,p.y,gc);
-    gZoom=Math.max(0.04,Math.min(30,gZoom*(e.deltaY<0?1.15:1/1.15)));
-    const wa=gS2W(p.x,p.y,gc); gPanX+=wa.x-wb.x; gPanY+=wa.y-wb.y;
+    e.preventDefault(); e.stopPropagation();
+    const p=canvasXY(e), wb=gS2W(p.x,p.y,gc);
+    const factor=e.deltaY<0?1.15:1/1.15;
+    gZoom=Math.max(0.04,Math.min(30,gZoom*factor));
+    gCamTZ=gZoom;
+    const wa=gS2W(p.x,p.y,gc);
+    gPanX+=wa.x-wb.x; gPanY+=wa.y-wb.y;
+    gCamTX=gPanX; gCamTY=gPanY;
   },{passive:false});
+
+  // Let detail sidebar scroll without triggering zoom
+  nd.addEventListener('wheel',e=>e.stopPropagation(),{passive:true});
+
+  // ── MOUSE DOWN ──
+  let _mdownXY={x:0,y:0}; // raw screen coords at mousedown
   gc.addEventListener('mousedown',e=>{
-    const p=pos(e); gDragging=true; gDragStart=p; gPanStart={x:gPanX,y:gPanY};
-    gc.style.cursor='grabbing';
-  });
-  window.addEventListener('mousemove',e=>{
-    if(!document.getElementById('panel-graph').classList.contains('active')) return;
-    const r=gc.getBoundingClientRect(),sx=e.clientX-r.left,sy=e.clientY-r.top;
-    if(gDragging){
-      gPanX=gPanStart.x+(sx-gDragStart.x)/gZoom; gPanY=gPanStart.y+(sy-gDragStart.y)/gZoom;
-      tip.style.display='none';
-    } else if(sx>=0&&sy>=0&&sx<=gc.width&&sy<=gc.height){
-      const h=gHitTest(sx,sy,gc);
-      if(h){
-        gHoverNode=h;
-        tip.textContent=`${h} (${gDegree[h]||0} links)`;
-        tip.style.cssText=`display:block;position:absolute;left:${sx+14}px;top:${Math.max(0,sy-10)}px;background:#1a0033ee;border:1px solid #bf00ff;color:#ff99ee;padding:6px 10px;font-size:10px;font-family:'Segoe UI',sans-serif;pointer-events:none;z-index:100;max-width:260px;border-radius:4px;`;
-        gc.style.cursor='pointer';
-      } else { gHoverNode=null; tip.style.display='none'; gc.style.cursor='grab'; }
-    } else { gHoverNode=null; tip.style.display='none'; }
-  });
-  window.addEventListener('mouseup',e=>{
-    if(!gDragging) return;
-    const r=gc.getBoundingClientRect(),sx=e.clientX-r.left,sy=e.clientY-r.top;
-    const moved=Math.hypot(sx-gDragStart.x,sy-gDragStart.y);
-    gDragging=false; gc.style.cursor='grab';
-    if(moved<5){
-      const clicked=gHitTest(sx,sy,gc);
-      if(clicked){
-        if(gSelected===clicked){ gSelected=null; nd.style.display='none'; gCamTX=0; gCamTY=0; gCamTZ=0.55; gSettleIter=0; }
-        else { selectConceptNode(clicked); }
-      } else { gSelected=null; nd.style.display='none'; gCamTX=0; gCamTY=0; gCamTZ=0.55; gSettleIter=0; }
+    e.preventDefault();
+    const p=canvasXY(e);
+    _mdownXY={x:e.clientX, y:e.clientY};
+
+    // Check if clicking on a node
+    const hit=gHitTest(p.x,p.y,gc);
+    if(hit && gNodePos[hit]){
+      gDragNode=hit;
+      const wp=gS2W(p.x,p.y,gc);
+      gDragNodeOffset={x:gNodePos[hit].x-wp.x, y:gNodePos[hit].y-wp.y};
+      gc.style.cursor='grabbing';
+    } else {
+      gDragging=true;
+      gDragStart=p;
+      gPanStart={x:gPanX, y:gPanY};
+      gc.style.cursor='grabbing';
     }
   });
+
+  // ── MOUSE MOVE ──
+  window.addEventListener('mousemove',e=>{
+    if(!document.getElementById('panel-graph').classList.contains('active')) return;
+    const p=canvasXY(e);
+
+    if(gDragNode){
+      const wp=gS2W(p.x,p.y,gc);
+      const np=gNodePos[gDragNode];
+      if(np){
+        np.x=wp.x+gDragNodeOffset.x;
+        np.y=wp.y+gDragNodeOffset.y;
+        np.vx=0; np.vy=0;
+      }
+      tip.style.display='none';
+    } else if(gDragging){
+      gPanX=gPanStart.x+(p.x-gDragStart.x)/gZoom;
+      gPanY=gPanStart.y+(p.y-gDragStart.y)/gZoom;
+      gCamTX=gPanX; gCamTY=gPanY;
+      tip.style.display='none';
+    } else {
+      // Hover detection
+      const r=gc.getBoundingClientRect();
+      const sx=e.clientX-r.left, sy=e.clientY-r.top;
+      if(sx>=0&&sy>=0&&sx<=r.width&&sy<=r.height){
+        const h=gHitTest(p.x,p.y,gc);
+        if(h){
+          gHoverNode=h;
+          tip.textContent=`${gGetTitle(h)} (${(gNeighbors[h]||new Set()).size} connections)`;
+          tip.style.cssText=`display:block;position:absolute;left:${sx+14}px;top:${Math.max(0,sy-10)}px;background:#1a0033ee;border:1px solid #bf00ff;color:#ff99ee;padding:6px 10px;font-size:10px;font-family:'Segoe UI',sans-serif;pointer-events:none;z-index:100;max-width:260px;border-radius:4px;`;
+          gc.style.cursor='pointer';
+        } else { gHoverNode=null; tip.style.display='none'; gc.style.cursor='grab'; }
+      } else { gHoverNode=null; tip.style.display='none'; }
+    }
+  });
+
+  // ── MOUSE UP ──
+  window.addEventListener('mouseup',e=>{
+    const moved=Math.hypot(e.clientX-_mdownXY.x, e.clientY-_mdownXY.y);
+
+    if(gDragNode){
+      const node=gDragNode;
+      gDragNode=null;
+      gc.style.cursor='grab';
+      if(moved<8){
+        // Short drag = click → select/deselect
+        if(gSelected===node){ gSelected=null; nd.style.display='none'; gCamTX=0; gCamTY=0; gCamTZ=0.55; }
+        else { selectConceptNode(node); }
+      }
+      return;
+    }
+    if(gDragging){
+      gDragging=false;
+      gc.style.cursor='grab';
+      if(moved<5){
+        const p=canvasXY(e);
+        const hit=gHitTest(p.x,p.y,gc);
+        if(hit){
+          if(gSelected===hit){ gSelected=null; nd.style.display='none'; gCamTX=0; gCamTY=0; gCamTZ=0.55; }
+          else { selectConceptNode(hit); }
+        } else { gSelected=null; nd.style.display='none'; gCamTX=0; gCamTY=0; gCamTZ=0.55; }
+      }
+    }
+  });
+
+  // ── DOUBLE CLICK = reset view ──
   gc.addEventListener('dblclick',()=>{
     gCamTX=0; gCamTY=0; gCamTZ=0.55;
     gSelected=null; nd.style.display='none'; gSettleIter=0;
@@ -1464,16 +1732,23 @@ async function loadGraph(){
   }
   _graphRetries=0;
   graphData=data; gGraphBuilt=false; gSelected=null; gHoverNode=null;
+  // Build node map: id -> {id, title, concepts}
+  gNodeMap={};
+  gNodeIds=[];
+  (data.nodes||[]).forEach(n=>{
+    gNodeMap[n.id]=n;
+    gNodeIds.push(n.id);
+  });
   const shown=data.nodes.length, total=data.total_nodes||shown;
   document.getElementById('graph-info').textContent=
-    `${shown} of ${total} idea concepts \u00b7 ${data.edges.length} idea connections \u00b7 scroll=zoom \u00b7 drag=pan \u00b7 click=select \u00b7 dbl=reset`;
+    `${shown} ideas \u00b7 ${data.edges.length} connections \u00b7 scroll=zoom \u00b7 drag=pan \u00b7 click=select \u00b7 dbl=reset`;
   setupGraphInteraction();
   gStartAnimLoop();
   // Auto-focus on the most connected node after layout builds
-  if(data.nodes.length>0){
+  if(gNodeIds.length>0){
     const deg={};
-    (data.edges||[]).forEach(e=>{deg[e.from]=(deg[e.from]||0)+1;deg[e.to]=(deg[e.to]||0)+1;});
-    const top=data.nodes.reduce((a,b)=>(deg[a]||0)>=(deg[b]||0)?a:b);
+    (data.edges||[]).forEach(e=>{const w=e.weight||1;deg[e.from]=(deg[e.from]||0)+w;deg[e.to]=(deg[e.to]||0)+w;});
+    const top=gNodeIds.reduce((a,b)=>(deg[a]||0)>=(deg[b]||0)?a:b);
     setTimeout(()=>selectConceptNode(top), 600);
   }
 }
@@ -2824,6 +3099,50 @@ function gameLoop(ts) {
   drawOctoBot(octoX, octoY, frame);
 
   ctx.restore();
+
+  // New idea toast banner (top of canvas, fades out)
+  if (_newIdeaToast && Date.now() - _newIdeaToastTime < _TOAST_DURATION) {
+    ctx.save();
+    const elapsed = Date.now() - _newIdeaToastTime;
+    const fadeIn = Math.min(1, elapsed / 400);
+    const fadeOut = elapsed > _TOAST_DURATION - 1000 ? Math.max(0, (_TOAST_DURATION - elapsed) / 1000) : 1;
+    const alpha = fadeIn * fadeOut;
+    const W = canvas.width;
+
+    ctx.globalAlpha = alpha;
+    ctx.font = '7px "Press Start 2P"';
+    const tw = ctx.measureText(_newIdeaToast).width;
+    const bw = Math.min(W - 8, tw + 24);
+    const bx = W/2 - bw/2;
+    const by = 4;
+    const bh = 22;
+
+    // Glowing background
+    ctx.fillStyle = '#1a003aee';
+    ctx.strokeStyle = '#ff2d9b';
+    ctx.lineWidth = 2;
+    ctx.shadowColor = '#ff2d9b';
+    ctx.shadowBlur = 12 * alpha;
+    ctx.beginPath();
+    ctx.roundRect(bx, by, bw, bh, 4);
+    ctx.fill();
+    ctx.stroke();
+    ctx.shadowBlur = 0;
+
+    // Sparkle icon
+    ctx.fillStyle = '#ffcc00';
+    ctx.font = '9px sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('\u2728', bx + 5, by + 15);
+
+    // Text
+    ctx.fillStyle = '#ff99ee';
+    ctx.font = '6px "Press Start 2P"';
+    ctx.textAlign = 'center';
+    ctx.fillText(_newIdeaToast, W/2, by + 15);
+
+    ctx.restore();
+  }
 
   // Speech bubble HUD (screen space) — shows status/idea updates
   if (_speechBubbleText) {

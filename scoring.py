@@ -21,19 +21,35 @@ import memory as mem
 import tools
 import llm_provider
 
-# In-memory graph cache — avoids re-reading the 100MB+ memory.json on every API call
+# In-memory graph cache — avoids re-reading memory.json on every API call
+# New format: {"nodes": [...], "file_concepts": {filename: [concepts]}}
+# Edges are computed on-the-fly from shared concepts between files.
 _graph_cache: dict | None = None
 
 def _init_graph_cache():
-    """Load graph into memory cache on startup."""
+    """Initialize an empty graph cache. The actual data is populated
+    by backfill_graph_from_library() called from main.py at startup."""
     global _graph_cache
-    data = mem._load_raw()
-    _graph_cache = data.get("knowledge_graph", {"nodes": [], "edges": []})
+    if _graph_cache is None:
+        _graph_cache = {"nodes": [], "file_concepts": {}}
 
 def _update_graph_cache(graph: dict):
     """Update the in-memory graph cache after a write."""
     global _graph_cache
     _graph_cache = graph
+
+def _derive_edges_from_cache() -> list[dict]:
+    """Compute edges on-the-fly from the file_concepts index."""
+    if not _graph_cache:
+        return []
+    fc = _graph_cache.get("file_concepts", {})
+    edges = []
+    for filename, concepts in fc.items():
+        for i, c1 in enumerate(concepts):
+            for c2 in concepts[i+1:]:
+                pair = tuple(sorted([c1, c2]))
+                edges.append({"from": pair[0], "to": pair[1], "source": filename})
+    return edges
 
 # ---------------------------------------------------------------------------
 # Score values
@@ -290,6 +306,15 @@ def _clean_concept(c: str) -> str | None:
     c = re.sub(r"\s+", " ", c).strip().lower()
     # Strip trailing colons/punctuation
     c = c.rstrip(":;,.")
+    # Reject if contains commas, periods, colons, or semicolons (sentence fragments)
+    if "," in c or "." in c or ":" in c or ";" in c:
+        return None
+    # Reject markdown artifacts
+    if c.startswith("---") or c.startswith("concept "):
+        return None
+    # Reject concepts starting with articles (fragments like "a-chip devices")
+    if re.match(r"^(a |an |the |but |yet |nor )", c):
+        return None
     # Reject if too short, too long, or generic
     if len(c) < 4 or len(c) > 60:
         return None
@@ -306,11 +331,19 @@ def _clean_concept(c: str) -> str | None:
     # Reject if it's just a common English word/phrase with no specificity
     if _JUNK_PATTERN.match(c):
         return None
-    # Reject single common words (no spaces, no hyphens = single word)
+    # Reject ALL single words (no spaces, no hyphens) — concepts should be phrases
     if " " not in c and "-" not in c:
-        if len(c) < 7:
-            return None  # Too short for a meaningful single-word concept
-        if c in {
+        return None
+    # For hyphenated-only terms (no spaces), require both parts to be 3+ chars
+    if " " not in c and "-" in c:
+        parts = c.split("-")
+        if any(len(p) < 3 for p in parts):
+            return None
+    # Legacy single-word filter (kept for hyphenated combos that include these)
+    _single_check = c.replace("-", " ").split()
+    if len(_single_check) == 1 and len(c) < 7:
+        return None  # Too short for a meaningful concept
+        _COMMON_SINGLE_WORDS = {
             "feeling", "feel", "feels", "real", "time", "data", "system", "device",
             "user", "users", "idea", "concept", "design", "project", "pitch",
             "technology", "application", "solution", "problem", "feature",
@@ -323,7 +356,36 @@ def _clean_concept(c: str) -> str | None:
             "monitor", "analyze", "generate", "measure", "detect",
             "adjust", "respond", "process", "create", "provide",
             "reading", "tracking", "learning", "growing", "living",
-        }:
+            "imagine", "imagine", "describe", "between", "through",
+            "because", "however", "without", "another", "several",
+            "current", "different", "important", "approach", "various",
+            "potential", "possible", "existing", "recently", "becoming",
+            "material", "materials", "surface", "surfaces", "control",
+            "controlled", "environment", "physical", "digital", "network",
+            "patterns", "pattern", "similar", "changes", "change",
+            "contains", "contain", "surrounding", "precisely", "utilizing",
+            "cultivating", "genetically", "modified", "colonies", "devices",
+            "translating", "stimulating", "attracting", "addresses",
+            "consists", "delivers", "provides", "response", "becomes",
+            "invisible", "contained", "converts", "movement", "movement",
+            "approximately", "researchers", "personnel", "furthermore",
+            "integrated", "crucially", "mimicking", "distribution",
+            "spectrum", "algorithms", "influence", "constantly",
+            "bacterial", "inspiring", "massive", "educates", "intuitive",
+            "predictive", "reconstructs", "combining", "considers",
+            "captures", "connects", "explores", "enhances", "enables",
+            "optimizes", "generates", "imagine", "prepare", "combine",
+            "requires", "operates", "supports", "maintains", "measures",
+            "produces", "receives", "releases", "responds", "searches",
+            "suggests", "triggers", "vibrates", "utilizes", "combines",
+            "invented", "designed", "features", "includes", "involves",
+            "integrates", "describes", "combined", "inspired", "invented",
+            "developed", "brilliant", "challenge", "innovation", "consider",
+            "problems", "solution", "something", "products", "services",
+            "interest", "technique", "possible", "platform", "standard",
+            "proposed", "presence", "discover", "function",
+        }
+        if c in _COMMON_SINGLE_WORDS:
             return None
     # Reject hyphenated common adjectives/phrases that aren't technical concepts
     _COMMON_HYPHENATED = {
@@ -344,6 +406,52 @@ def _clean_concept(c: str) -> str | None:
     # Reject concepts ending with conjunctions/prepositions (broken extractions)
     if c.endswith((" and", " or", " the", " a", " an", " to", " of", " in", " on", " for", " with", " is", " it")):
         return None
+    # Reject concepts starting with common verbs/articles/prepositions (sentence fragments)
+    _FRAG_STARTS = (
+        "become ", "becomes ", "convert ", "approach ", "consist ", "consists ",
+        "address ", "addresses ", "deliver ", "delivers ", "provide ", "provides ",
+        "design ", "between ", "containing ", "almost ", "layer ",
+    )
+    if c.startswith(_FRAG_STARTS):
+        return None
+    # Reject concepts ending with verbs/filler (sentence fragments from bold/heading extraction)
+    _FRAG_ENDS = (
+        " then", " isn't", " isn\u2019t", " doesn't", " doesn\u2019t",
+        " offers", " ensures", " generates", " eliminates",
+        " consists", " unlocks", " analyzes", " activates",
+        " shared", " within", " directly", " instantly",
+    )
+    if any(c.endswith(e) for e in _FRAG_ENDS):
+        return None
+    # Reject concepts containing smart quotes or special unicode
+    if "\u2019" in c or "\u201c" in c or "\u201d" in c or "\u2014" in c or "\ufffd" in c:
+        return None
+    # Reject concepts starting with "overview", "idea domain", "this ", "the "
+    if c.startswith(("overview ", "idea domain", "this ", "related ")):
+        return None
+    # Reject concepts that are just a hyphenated prefix + junk word
+    if re.match(r"^[a-z]+-[a-z]+\s+(isn|doesn|won|can|woven|filled|containing|fluid|core|micro|stuff|feed|battle)$", c):
+        return None
+    # Reject purely temporal/generic hyphenated terms
+    _GENERIC_HYPH = {
+        "mid-afternoon", "mid-morning", "mid-range", "mid-century",
+        "long-lasting", "short-term boost", "self-conscious battle",
+        "pain-free", "ultra-low", "one-of-a-kind",
+    }
+    if c in _GENERIC_HYPH:
+        return None
+    # Reject generic 2-word phrases where both words are very common
+    words = c.split()
+    if len(words) == 2 and "-" not in c:
+        _GENERIC_WORDS_2 = {
+            "system", "control", "based", "level", "effect", "within",
+            "using", "allows", "creates", "broadly", "roughly",
+            "constant", "subtle", "broader", "truly", "seamless",
+            "unparalleled", "think", "focused", "arm", "color",
+            "surrounding", "light", "contained", "100", "microns",
+        }
+        if words[0] in _GENERIC_WORDS_2 or words[1] in _GENERIC_WORDS_2:
+            return None
     return c
 
 
@@ -384,39 +492,32 @@ def _extract_concepts(text: str) -> list[str]:
     return list(raw_concepts)
 
 
+_MAX_CONCEPTS_PER_FILE = 15  # Cap to prevent edge explosion (n^2 edges)
+
+
 def update_knowledge_graph(filename: str, text: str) -> dict:
     """
-    Extract concepts from *text* and update the knowledge graph.
+    Extract concepts from *text* and update the in-memory knowledge graph.
+    The graph is NOT persisted to disk — it's rebuilt from library files on startup.
     Returns {"new_nodes": [...], "new_edges": [...]} for this file.
     """
-    new_concepts = _extract_concepts(text)
+    global _graph_cache
+    new_concepts = _extract_concepts(text)[:_MAX_CONCEPTS_PER_FILE]
     new_nodes = []
-    new_edges = []
 
-    with mem._lock:
-        data = mem._load_raw()
-        graph = data.setdefault("knowledge_graph", {"nodes": [], "edges": []})
-        nodes = set(graph["nodes"])
-        existing_edges = {(e["from"], e["to"]) for e in graph["edges"]}
+    if _graph_cache is None:
+        _graph_cache = {"nodes": [], "file_concepts": {}}
 
-        for concept in new_concepts:
-            if concept not in nodes:
-                nodes.add(concept)
-                new_nodes.append(concept)
+    nodes = set(_graph_cache.get("nodes", []))
+    for concept in new_concepts:
+        if concept not in nodes:
+            nodes.add(concept)
+            new_nodes.append(concept)
 
-        for i, c1 in enumerate(new_concepts):
-            for c2 in new_concepts[i + 1:]:
-                pair = tuple(sorted([c1, c2]))
-                if pair[0] != pair[1] and (pair[0], pair[1]) not in existing_edges:
-                    graph["edges"].append({"from": pair[0], "to": pair[1], "source": filename})
-                    existing_edges.add((pair[0], pair[1]))
-                    new_edges.append({"from": pair[0], "to": pair[1]})
+    _graph_cache["nodes"] = sorted(nodes)
+    _graph_cache.setdefault("file_concepts", {})[filename] = new_concepts
 
-        graph["nodes"] = sorted(nodes)
-        mem._save_raw(data)
-        _update_graph_cache(graph)
-
-    return {"new_nodes": new_nodes, "new_edges": new_edges}
+    return {"new_nodes": new_nodes, "new_edges": []}
 
 
 def find_cross_references(new_concepts: list[str], exclude_file: str = "") -> list[dict]:
@@ -445,20 +546,28 @@ def find_cross_references(new_concepts: list[str], exclude_file: str = "") -> li
 
 
 def get_knowledge_graph() -> dict:
-    """Return the full knowledge graph {nodes: [...], edges: [...]}."""
+    """Return the knowledge graph in {nodes: [...], edges: [...]} format.
+    Edges are derived on-the-fly from the file_concepts index."""
     if _graph_cache is None:
         _init_graph_cache()
-    return dict(_graph_cache)
+    return {
+        "nodes": _graph_cache.get("nodes", []),
+        "edges": _derive_edges_from_cache(),
+    }
 
 
-def backfill_graph_from_library() -> dict:
-    """Scan every library .md file and ensure all concepts are in the graph.
-    Batch-optimized: reads memory once, processes all files, writes once.
-    Returns {"total_nodes": int, "total_edges": int, "files_processed": int}."""
-    data = mem._load_raw()
-    graph = data.setdefault("knowledge_graph", {"nodes": [], "edges": []})
-    nodes = set(graph["nodes"])
-    existing_edges = {(e["from"], e["to"]) for e in graph["edges"]}
+def backfill_graph_from_library(clean: bool = False) -> dict:
+    """Scan every library .md file and build the in-memory knowledge graph.
+    If clean=True, wipe the existing graph first and rebuild from scratch.
+    The graph is NOT persisted to disk — it's purely in-memory.
+    Returns {"total_nodes": int, "total_files": int, "files_processed": int}."""
+    global _graph_cache
+
+    if clean or _graph_cache is None:
+        _graph_cache = {"nodes": [], "file_concepts": {}}
+
+    nodes = set(_graph_cache.get("nodes", []))
+    file_concepts = _graph_cache.get("file_concepts", {})
 
     library_files = [f for f in tools.list_files("library") if f.endswith(".md")]
     files_done = 0
@@ -471,25 +580,17 @@ def backfill_graph_from_library() -> dict:
         except Exception:
             continue
 
-        new_concepts = _extract_concepts(content)
+        new_concepts = _extract_concepts(content)[:_MAX_CONCEPTS_PER_FILE]
         for concept in new_concepts:
             nodes.add(concept)
-
-        for i, c1 in enumerate(new_concepts):
-            for c2 in new_concepts[i + 1:]:
-                pair = tuple(sorted([c1, c2]))
-                if pair[0] != pair[1] and (pair[0], pair[1]) not in existing_edges:
-                    graph["edges"].append({"from": pair[0], "to": pair[1], "source": lib_file})
-                    existing_edges.add((pair[0], pair[1]))
+        file_concepts[lib_file] = new_concepts
         files_done += 1
 
-    graph["nodes"] = sorted(nodes)
-    with mem._lock:
-        mem._save_raw(data)
-    _update_graph_cache(graph)
+    _graph_cache["nodes"] = sorted(nodes)
+    _graph_cache["file_concepts"] = file_concepts
     return {
-        "total_nodes": len(graph["nodes"]),
-        "total_edges": len(graph["edges"]),
+        "total_nodes": len(_graph_cache["nodes"]),
+        "total_files": len(file_concepts),
         "files_processed": files_done,
     }
 

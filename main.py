@@ -155,17 +155,26 @@ def main() -> None:
     res.MODEL = args.model
     print(f"      Model: {args.model}")
 
+    # Build knowledge graph from library (before loops start to avoid races)
+    import scoring
+    print("[2/3] Building knowledge graph…")
+    try:
+        result = scoring.backfill_graph_from_library(clean=True)
+        print(f"      {result['total_nodes']} concepts from {result.get('total_files', result.get('files_processed', 0))} files")
+    except Exception as exc:
+        print(f"      Graph build failed: {exc}")
+
     # Start game loop
     if not args.no_loop:
         import game_loop
-        print("[2/3] Starting knowledge creature game loop…")
+        print("[3/4] Starting knowledge creature game loop…")
         game_loop.start_loop()
         print(f"      Cycle interval: {game_loop.CYCLE_INTERVAL}s")
         # Also start the legacy agent loop (it powers the autonomous research)
         agent.start_loop()
         print(f"      Agent loop interval: {agent.LOOP_INTERVAL}s")
     else:
-        print("[2/3] Autonomous loop disabled (--no-loop).")
+        print("[3/4] Autonomous loop disabled (--no-loop).")
 
     # Graceful shutdown on Ctrl+C
     def _shutdown(sig, frame):
@@ -180,12 +189,12 @@ def main() -> None:
 
     # Launch UI
     if args.gradio:
-        print(f"[3/3] Launching Gradio UI on http://localhost:{args.port} …")
+        print(f"[4/4] Launching Gradio UI on http://localhost:{args.port} …")
         print()
         import ui
         ui.launch(server_port=args.port, share=args.share)
     else:
-        print(f"[3/3] Launching Game UI on http://localhost:{args.port} …")
+        print(f"[4/4] Launching Game UI on http://localhost:{args.port} …")
         print()
         print("  Open your browser to play the knowledge creature game.")
         print("  Feed OctoBot by dropping files into workspace/knowledge/")

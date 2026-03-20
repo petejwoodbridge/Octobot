@@ -54,8 +54,11 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB upload limit
 
 @app.route("/")
 def index():
-    """Serve the main game interface."""
-    return send_file(_STATIC_DIR / "index.html")
+    """Serve the main game interface (no-cache to ensure fresh JS)."""
+    resp = send_file(_STATIC_DIR / "index.html")
+    resp.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    resp.headers['Pragma'] = 'no-cache'
+    return resp
 
 
 @app.route("/loading")
@@ -272,59 +275,118 @@ _graph_resp_cache = None   # cached JSON-serialisable dict
 _graph_resp_json  = None   # pre-serialised JSON bytes
 _graph_resp_ncount = 0     # node count at cache time (invalidation key)
 
-_MAX_GRAPH_NODES = 150
-_MAX_GRAPH_EDGES = 800
+_MAX_GRAPH_EDGES = 3000
+_MAX_GRAPH_NODES = 300  # Cap visible nodes for performance
 
 
 def _build_graph_response():
-    """Pre-compute a lightweight graph payload for the frontend."""
+    """Pre-compute an idea-centric graph: nodes=library ideas, edges=shared concepts."""
     global _graph_resp_cache, _graph_resp_json, _graph_resp_ncount
+    import time as _t
+    _t0 = _t.time()
 
-    graph = scoring.get_knowledge_graph()
-    all_nodes = graph.get("nodes", [])
-    all_edges = graph.get("edges", [])
+    # Use file_concepts directly from cache (compact format)
+    if scoring._graph_cache and "file_concepts" in scoring._graph_cache:
+        raw_fc = scoring._graph_cache["file_concepts"]
+        file_concepts = {f: set(cs) for f, cs in raw_fc.items()}
+    else:
+        file_concepts = {}
 
-    # Build degree map
-    degree = {}
-    for e in all_edges:
-        degree[e["from"]] = degree.get(e["from"], 0) + 1
-        degree[e["to"]] = degree.get(e["to"], 0) + 1
+    print(f"  [graph] step1: {len(file_concepts)} files loaded in {_t.time()-_t0:.1f}s")
 
-    # Take top N nodes by degree
-    top = sorted(all_nodes, key=lambda n: degree.get(n, 0), reverse=True)[:_MAX_GRAPH_NODES]
-    top_set = set(top)
+    # Skip listing all library files — file_concepts from the backfill already covers them
+    # Build concept->files inverted index
+    concept_files = {}
+    for fname, concepts in file_concepts.items():
+        for c in concepts:
+            concept_files.setdefault(c, set()).add(fname)
 
-    # Filter edges — only between top nodes, limit per node to avoid hairballs
-    edge_count = {}  # per-node edge count in output
-    filtered = []
-    for e in all_edges:
-        if e["from"] in top_set and e["to"] in top_set:
-            ca = edge_count.get(e["from"], 0)
-            cb = edge_count.get(e["to"], 0)
-            if ca < 12 and cb < 12:  # max 12 edges per node
-                filtered.append({"from": e["from"], "to": e["to"]})
-                edge_count[e["from"]] = ca + 1
-                edge_count[e["to"]] = cb + 1
-                if len(filtered) >= _MAX_GRAPH_EDGES:
-                    break
+    # Keep only concepts shared by 2-50 files
+    max_cf = min(50, max(10, len(file_concepts) * 0.02))
+    selective = {c: fset for c, fset in concept_files.items()
+                 if 2 <= len(fset) <= max_cf}
 
-    result = {"nodes": top, "edges": filtered,
-              "total_nodes": len(all_nodes), "total_edges": len(all_edges)}
+    # Score each file by how many selective concepts it has (= connectivity)
+    file_score = {}
+    for fname, concepts in file_concepts.items():
+        file_score[fname] = sum(1 for c in concepts if c in selective)
+
+    # Keep only the top N most-connected files for the graph
+    top_files = sorted(file_score, key=lambda f: file_score[f], reverse=True)[:_MAX_GRAPH_NODES]
+    top_set = set(top_files)
+
+    print(f"  [graph] {len(file_concepts)} files -> top {len(top_set)} nodes, {len(selective)} selective concepts in {_t.time()-_t0:.1f}s")
+
+    # Build idea nodes (only top files)
+    idea_nodes = []
+    for fname in sorted(top_files):
+        title = fname.split("/")[-1].replace(".md", "").replace("_", " ").replace("-", " ").strip()
+        if _concept_titles and fname in _concept_titles:
+            title = _concept_titles[fname]
+        if len(title) > 60:
+            title = title[:57] + "..."
+        idea_nodes.append({
+            "id": fname,
+            "title": title,
+            "concepts": sorted(file_concepts.get(fname, set()))[:15],
+        })
+
+    # Find pairs among top files only
+    pair_shared = {}
+    for fname in top_files:
+        file_selective = [c for c in file_concepts.get(fname, set()) if c in selective]
+        for c in file_selective:
+            for neighbor in selective[c]:
+                if neighbor not in top_set or neighbor <= fname:
+                    continue
+                pair = (fname, neighbor)
+                if pair not in pair_shared:
+                    pair_shared[pair] = set()
+                pair_shared[pair].add(c)
+
+    # Build edges sorted by weight
+    raw_edges = sorted(pair_shared.items(), key=lambda x: len(x[1]), reverse=True)
+    idea_edges = []
+    edge_count = {}
+    for (f1, f2), shared in raw_edges:
+        ca = edge_count.get(f1, 0)
+        cb = edge_count.get(f2, 0)
+        if ca < 12 and cb < 12:
+            idea_edges.append({
+                "from": f1,
+                "to": f2,
+                "shared": sorted(shared)[:5],
+                "weight": len(shared),
+            })
+            edge_count[f1] = ca + 1
+            edge_count[f2] = cb + 1
+            if len(idea_edges) >= _MAX_GRAPH_EDGES:
+                break
+
+    print(f"  [graph] {len(idea_nodes)} nodes, {len(idea_edges)} edges in {_t.time()-_t0:.1f}s")
+
+    result = {
+        "nodes": idea_nodes,
+        "edges": idea_edges,
+        "total_nodes": len(idea_nodes),
+        "total_edges": len(idea_edges),
+    }
     _graph_resp_cache = result
     _graph_resp_json = json.dumps(result)
-    _graph_resp_ncount = len(all_nodes)
+    # Track file count for cache invalidation
+    if scoring._graph_cache and "file_concepts" in scoring._graph_cache:
+        _graph_resp_ncount = len(scoring._graph_cache["file_concepts"])
+    else:
+        _graph_resp_ncount = len(file_concepts)
 
 
 @app.route("/api/graph")
 def api_graph():
-    """Return a lightweight knowledge graph for visualization."""
-    graph = scoring.get_knowledge_graph()
-    all_nodes = graph.get("nodes", [])
-
-    # Rebuild if cache is stale (node count changed)
-    if _graph_resp_json is None or len(all_nodes) != _graph_resp_ncount:
+    """Return an idea-centric knowledge graph for visualization.
+    Pass ?rebuild=1 to force a cache refresh."""
+    rebuild = request.args.get("rebuild", "0") == "1"
+    if _graph_resp_json is None or rebuild:
         _build_graph_response()
-
     return app.response_class(_graph_resp_json, mimetype="application/json")
 
 
@@ -573,17 +635,24 @@ def _start_library_cache_warmer() -> None:
 
 
 def _background_warmup():
-    """Background thread: warm up graph, concept index, and file cache."""
-    import threading
+    """Background thread: warm up graph visualization, concept index, and file cache.
+    Note: The graph backfill is done synchronously in main.py before loops start."""
+    import threading, traceback
+    print("  [warmup] Starting background warmup thread...")
     def _warm():
+        print("  [warmup] Thread started")
         try:
             scoring._init_graph_cache()
+            print(f"  [warmup] Graph cache: {len(scoring._graph_cache.get('file_concepts', {}))} files")
             _build_graph_response()
             if _graph_resp_cache:
                 c = _graph_resp_cache
-                print(f"  Graph ready: {len(c['nodes'])} concepts, {len(c['edges'])} connections (of {c['total_nodes']} total)")
+                print(f"  Graph ready: {len(c['nodes'])} ideas, {len(c['edges'])} connections")
+            else:
+                print("  [warmup] WARNING: _graph_resp_cache is None after build")
         except Exception as exc:
             print(f"  Graph pre-build failed: {exc}")
+            traceback.print_exc()
         try:
             _build_concept_index()
             print(f"  Concept index ready: {len(_concept_index)} terms")
