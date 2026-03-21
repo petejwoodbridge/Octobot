@@ -27,7 +27,7 @@ import scoring
 # LLM helper — delegates to the shared provider (Ollama / OpenAI / Anthropic)
 # ---------------------------------------------------------------------------
 
-MODEL = "gemma3:4b"  # synced with agent.MODEL at startup via main.py
+MODEL = "qwen3:4b"  # synced with agent.MODEL at startup via main.py
 
 RESEARCH_SYSTEM_PROMPT = """You are OctoBot's idea generation arm — a wildly creative inventor with eight tentacles full of original concepts.
 When given a problem area, domain, or spark of inspiration, you invent ONE specific, original, never-before-invented idea.
@@ -138,11 +138,30 @@ def conduct_research(topic: str) -> str:
     # Strip leading/trailing quotes the LLM sometimes wraps output in
     notes = notes.strip().strip('"').strip()
 
+    # Try to save — if validation rejects it, retry once with a stronger prompt
     try:
         filename = tools.save_research(topic, notes)
     except ValueError as exc:
-        mem.log_event("error", f"Research rejected for '{topic}': {exc}")
-        return f"Research rejected: {exc}"
+        mem.log_event("warning", f"Research attempt 1 rejected for '{topic}': {exc} — retrying")
+        retry_prompt = (
+            f"Your previous attempt was rejected because: {exc}\n\n"
+            f"Please generate a COMPLETE idea pitch for: **{topic}**\n\n"
+            f"You MUST include ALL of these sections with real content in each:\n"
+            f"## [Idea Name]\n## Overview\n## The Problem It Solves\n"
+            f"## How It Works\n## Why It's Brilliant\n## Elevator Pitch\n\n"
+            f"Write 300-500 words. Be specific and detailed. Start with ## immediately."
+            f"{connection_hint}"
+        )
+        try:
+            notes = _llm(RESEARCH_SYSTEM_PROMPT, retry_prompt)
+            notes = notes.strip().strip('"').strip()
+            filename = tools.save_research(topic, notes)
+        except ValueError as exc2:
+            mem.log_event("error", f"Research rejected after retry for '{topic}': {exc2}")
+            return f"Research rejected: {exc2}"
+        except Exception as exc2:
+            mem.log_event("error", f"Research retry LLM call failed for '{topic}': {exc2}")
+            return f"Research failed on retry: {exc2}"
     mem.log_event("action", f"Research saved to {filename}")
 
     # Update knowledge graph with the new research
@@ -218,14 +237,32 @@ def expand_research(topic: str) -> str:
 
 
 def list_researched_topics() -> list[str]:
-    """Return a list of idea domains that have been explored (library .md files)."""
-    files = [f for f in tools.list_files("library") if f.endswith(".md")]
+    """Return a list of idea domains that have been explored (library .md files).
+    Uses os.scandir for speed on large directories (avoids walking 1M+ files).
+    Returns a sample of up to 1000 topics to avoid memory issues.
+    """
+    import os as _os
     topics = []
-    for f in sorted(files):
-        # Convert slug back to a readable name
-        name = f.replace("library/", "").replace(".md", "").replace("_", " ")
+    count = 0
+    sample_every = 1  # adjusted below if library is huge
+
+    try:
+        total = sum(1 for _ in _os.scandir(tools.LIBRARY_DIR))
+        if total > 1000:
+            sample_every = max(1, total // 1000)
+    except OSError:
+        pass
+
+    for entry in _os.scandir(tools.LIBRARY_DIR):
+        if not entry.name.endswith(".md"):
+            continue
+        count += 1
+        if count % sample_every != 0:
+            continue
+        name = entry.name.replace(".md", "").replace("_", " ")
         topics.append(name)
-    return topics
+
+    return sorted(topics)
 
 
 def already_researched(topic: str) -> bool:
@@ -243,12 +280,12 @@ def synthesise_knowledge(question: str) -> str:
     Read all library files and ask the LLM to answer *question* using
     accumulated knowledge.  Returns the LLM's answer as a string.
     """
-    files = [f for f in tools.list_files("library") if f.endswith(".md")]
+    files = tools.list_library_files(sample=10)
     if not files:
         return "The library is empty — no knowledge to synthesise yet."
 
     context_parts = []
-    for f in files[:10]:  # Limit to avoid context overflow
+    for f in files:  # Already sampled to 10
         try:
             txt = tools.read_file(f)
             context_parts.append(f"### {f}\n{txt[:800]}")  # Truncate long files
@@ -335,7 +372,13 @@ def reformat_library_file(filename: str, use_llm: bool = True) -> bool:
 
     stripped = content.strip().strip('"').strip('\u201c').strip('\u201d').strip()
     if len(stripped) < 50:
-        return False
+        # Too short to reformat — delete the stub
+        try:
+            tools.delete_file(filename)
+            mem.log_event("cleanup", f"Deleted stub file: {filename} ({len(stripped)} chars)")
+        except Exception:
+            pass
+        return True  # Signal that we handled it
 
     title = _title_from_filename(filename)
 
@@ -450,15 +493,30 @@ def _llm_reformat(filename: str, title: str, stripped: str) -> bool:
 def reformat_all_unstructured(use_llm: bool = True, llm_batch_size: int = 20) -> int:
     """
     Scan the library for files that lack proper heading structure and reformat them.
-    Local reformatting is done for all files. LLM reformatting is limited to llm_batch_size
-    files per call to avoid blocking startup forever.
+    Uses os.scandir + file size filtering to avoid reading 1M+ well-structured files.
+    Only inspects files under 2KB (bulk-generated ideas are always >800 bytes and well-structured).
+    Local reformatting is done for all matching files. LLM reformatting is limited to llm_batch_size.
     Returns count of files reformatted.
     """
-    files = [f for f in tools.list_files("library") if f.endswith(".md")]
+    import os as _os
+    library_path = tools.LIBRARY_DIR
+
+    # Fast scan: only check files under 2KB (well-structured bulk ideas are larger)
+    candidates = []
+    for entry in _os.scandir(library_path):
+        if not entry.name.endswith(".md"):
+            continue
+        try:
+            if entry.stat().st_size < 2048:
+                rel = f"library/{entry.name}"
+                candidates.append(rel)
+        except OSError:
+            continue
+
     count = 0
     llm_count = 0
 
-    for f in files:
+    for f in candidates:
         try:
             content = tools.read_file(f)
         except Exception:
@@ -469,6 +527,13 @@ def reformat_all_unstructured(use_llm: bool = True, llm_batch_size: int = 20) ->
 
         stripped = content.strip().strip('"').strip('\u201c').strip('\u201d').strip()
         if len(stripped) < 50:
+            # Too short to reformat — delete the stub
+            try:
+                tools.delete_file(f)
+                mem.log_event("cleanup", f"Deleted stub file: {f} ({len(stripped)} chars)")
+            except Exception:
+                pass
+            count += 1
             continue
 
         title = _title_from_filename(f)

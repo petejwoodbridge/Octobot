@@ -357,7 +357,7 @@ def _run_curiosity_engine() -> str | None:
         return None
 
     # Gather terms from recent library entries
-    library_files = sorted([f for f in tools.list_files("library") if f.endswith(".md")])[-5:]
+    library_files = tools.list_library_recent(5)
     all_terms = []
     for f in library_files:
         try:
@@ -495,7 +495,7 @@ def _loop_worker() -> None:
     # Summarise what was reloaded from persistent memory
     try:
         stats = mem.get_game_stats()
-        lib_count = len([f for f in tools.list_files("library") if f.endswith(".md")])
+        lib_count = tools.get_knowledge_count()
         chains = scoring.get_all_chains()
         achievements = scoring.get_achievements()
         score = stats.get("knowledge_score", 0)

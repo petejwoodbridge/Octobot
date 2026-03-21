@@ -470,10 +470,7 @@ def _build_concept_index():
     global _concept_index, _concept_index_time, _concept_titles
     _concept_index = {}
     _concept_titles = {}
-    files = _lib_cache if _lib_cache else sorted(f for f in tools.list_files("library") if f.endswith(".md"))
-    # Cap to 5000 files for index building performance
-    if len(files) > 5000:
-        files = files[:5000]
+    files = _lib_cache if _lib_cache else tools.list_library_files(sample=5000)
     for rel in files:
         fname_lower = rel.lower().replace("_", " ").replace("-", " ")
         title = rel.split("/")[-1].replace(".md", "").replace("_", " ").replace("-", " ").strip()
@@ -697,9 +694,9 @@ def _start_library_cache_warmer() -> None:
         time.sleep(3)  # let server finish starting first
         _WARM_CAP = 500  # only pre-cache a small number for fast first-click experience
         try:
-            files = [f for f in tools.list_files("library") if f.endswith(".md")]
-            to_warm = files[:_WARM_CAP]
-            print(f"  Library cache warmer: pre-loading {len(to_warm)} of {len(files)} files...")
+            to_warm = tools.list_library_recent(_WARM_CAP)
+            total = tools.get_knowledge_count()
+            print(f"  Library cache warmer: pre-loading {len(to_warm)} of {total} files...")
             for f in to_warm:
                 if f not in _file_cache:
                     _cache_library_file(f)

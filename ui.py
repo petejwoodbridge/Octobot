@@ -1582,7 +1582,7 @@ def build_ui() -> gr.Blocks:
                         lib_preview = gr.Markdown(value="*Select a file to read it.*")
 
                         def load_library():
-                            files = [f for f in tools.list_files("library") if f.endswith(".md")]
+                            files = tools.list_library_recent(200)
                             index = tools.get_library_index()
                             return gr.update(choices=files, value=files[0] if files else None), index
 

@@ -527,10 +527,7 @@ def find_cross_references(new_concepts: list[str], exclude_file: str = "") -> li
     Returns a list of cross-reference dicts.
     """
     cross_refs = []
-    library_files = [f for f in tools.list_files("library") if f.endswith(".md")]
-    # Cap to avoid scanning 1M+ files on every cross-ref check
-    if len(library_files) > 2000:
-        library_files = random.sample(library_files, 2000)
+    library_files = tools.list_library_files(sample=2000)
 
     for lib_file in library_files:
         if lib_file == exclude_file:

@@ -149,6 +149,22 @@ def search_files(query: str) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Library size cap — prevent runaway file creation
+# ---------------------------------------------------------------------------
+MAX_LIBRARY_FILES = 10_000  # hard cap — OctoBot should never exceed this
+
+
+def _check_library_cap() -> None:
+    """Raise ValueError if the library has reached its file cap."""
+    count = get_knowledge_count()
+    if count >= MAX_LIBRARY_FILES:
+        raise ValueError(
+            f"Library has {count:,} files (cap={MAX_LIBRARY_FILES:,}) — "
+            f"refusing to create more. Clean up or raise the cap."
+        )
+
+
+# ---------------------------------------------------------------------------
 # Markdown helpers
 # ---------------------------------------------------------------------------
 
@@ -158,6 +174,8 @@ def create_markdown(title: str, content: str, subdir: str = "library") -> str:
     The filename is derived from the title (slug-ified).
     Returns the relative filename.
     """
+    if subdir == "library":
+        _check_library_cap()
     slug = title.lower().replace(" ", "_").replace("/", "-")
     slug = "".join(c for c in slug if c.isalnum() or c in "_-")
     slug = slug[:120]  # cap to avoid Windows MAX_PATH errors
@@ -178,19 +196,31 @@ def save_research(topic: str, summary: str) -> str:
     summary = summary.strip().strip('"').strip('\u201c').strip('\u201d').strip()
 
     # Reject if content is too short or has no real substance
-    if len(summary) < 100:
-        raise ValueError(f"Research content too short ({len(summary)} chars) — not saving")
+    if len(summary) < 200:
+        raise ValueError(f"Research content too short ({len(summary)} chars, need 200+) — not saving")
     if "## " not in summary:
         raise ValueError("Research content lacks heading structure — not saving")
     # Require at least one real content section (not just Related Ideas)
     _REAL_SECTIONS = ("## Overview", "## How It Works", "## The Problem", "## Elevator")
     if not any(s in summary for s in _REAL_SECTIONS):
         raise ValueError("Research content lacks real idea sections (Overview/How/Problem) — not saving")
+    # Require at least 2 real sections for a proper idea pitch
+    real_section_count = sum(1 for s in _REAL_SECTIONS if s in summary)
+    if real_section_count < 2:
+        raise ValueError(f"Research has only {real_section_count}/4 required sections — not saving")
+    # Count non-heading, non-empty content lines — need at least 5 for a real idea
+    _content_lines = [l for l in summary.split("\n")
+                      if l.strip() and not l.strip().startswith("#") and not l.strip().startswith("*Created")]
+    if len(_content_lines) < 5:
+        raise ValueError(f"Research has only {len(_content_lines)} content lines — not saving")
 
     slug = topic.lower().replace(" ", "_").replace("/", "-")
     slug = "".join(c for c in slug if c.isalnum() or c in "_-")
     slug = slug[:120]  # cap to avoid Windows MAX_PATH errors
     filename = f"library/{slug}.md"
+
+    if not _safe_path(filename).exists():
+        _check_library_cap()
 
     if _safe_path(filename).exists():
         append_file(
@@ -288,6 +318,32 @@ def get_knowledge_count() -> int:
         return _knowledge_count_cache
 
 
+def list_library_files(sample: int = 0) -> list[str]:
+    """Return library .md file paths using fast scandir (no recursive walk).
+    If sample > 0, returns a random sample of that size instead of all files.
+    Each path is relative to WORKSPACE_ROOT (e.g. 'library/my_idea.md').
+    """
+    import random as _rng
+    try:
+        all_names = [f"library/{e.name}" for e in os.scandir(LIBRARY_DIR) if e.name.endswith(".md")]
+    except OSError:
+        return []
+    if sample > 0 and len(all_names) > sample:
+        return _rng.sample(all_names, sample)
+    return all_names
+
+
+def list_library_recent(n: int = 10) -> list[str]:
+    """Return the n most recently modified library .md files (fast scandir)."""
+    try:
+        entries = [(e.name, e.stat().st_mtime)
+                   for e in os.scandir(LIBRARY_DIR) if e.name.endswith(".md")]
+    except OSError:
+        return []
+    entries.sort(key=lambda x: x[1], reverse=True)
+    return [f"library/{name}" for name, _ in entries[:n]]
+
+
 def append_journal(entry: str) -> str:
     """Append an entry to octobot_journal.md with a timestamp."""
     ts = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -322,13 +378,25 @@ def get_local_models() -> list[str]:
 
 
 def get_library_index() -> str:
-    """Return a markdown-formatted list of library files."""
-    files = [f for f in list_files("library") if f.endswith(".md")]
-    if not files:
+    """Return a markdown-formatted sample of library files.
+    Uses scandir for speed on large libraries. Shows up to 50 files.
+    """
+    import random as _rng
+    try:
+        all_names = [e.name for e in os.scandir(LIBRARY_DIR) if e.name.endswith(".md")]
+    except OSError:
         return "(Library is empty — no markdown files yet.)"
-    lines = ["## Library Index", ""]
-    for f in sorted(files):
-        lines.append(f"- `{f}`")
+
+    if not all_names:
+        return "(Library is empty — no markdown files yet.)"
+
+    total = len(all_names)
+    sample = sorted(_rng.sample(all_names, min(50, total)))
+    lines = [f"## Library Index ({total:,} ideas)", ""]
+    for f in sample:
+        lines.append(f"- `library/{f}`")
+    if total > 50:
+        lines.append(f"\n*...and {total - 50:,} more ideas in the vault.*")
     return "\n".join(lines)
 
 

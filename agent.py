@@ -44,7 +44,7 @@ _CHAT_LOG_FILE    = Path(__file__).parent / "workspace" / "chat_log.md"
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-MODEL = "gemma3:4b"         # Ollama model — overridden by UI selector or --model flag
+MODEL = "qwen3:4b"          # Ollama model — overridden by UI selector or --model flag
 LOOP_INTERVAL = 30          # seconds between autonomous cycles
 MAX_LOOP_RETRIES = 3        # retries if Ollama is unavailable
 
@@ -305,7 +305,11 @@ def _execute_action(parsed: dict) -> str:
             return str(e)
 
     elif action == "list_files":
-        files = tools.list_files(param)
+        if param.strip().lower() in ("library", "library/"):
+            # Use fast scandir for library — list_files would walk 1M+ files
+            files = tools.list_library_files(sample=50)
+        else:
+            files = tools.list_files(param)
         return "Files:\n" + "\n".join(files) if files else "No files found."
 
     elif action == "update_notes":
@@ -532,7 +536,7 @@ def _build_loop_prompt(suggested_topic: str = "") -> str:
     already_str = ", ".join(already_done[-20:]) if already_done else "none yet"
 
     # Peek at the 4 most recent library files for context (short excerpts only)
-    library_files = sorted([f for f in tools.list_files("library") if f.endswith(".md")])[-4:]
+    library_files = tools.list_library_recent(4)
     lib_peek = []
     for f in library_files:
         try:
@@ -780,7 +784,7 @@ def _push_idle_quip() -> None:
 def _push_knowledge_comment() -> None:
     """Push a random short comment about something in the library."""
     try:
-        library_files = [f for f in tools.list_files("library") if f.endswith(".md")]
+        library_files = tools.list_library_files(sample=100)
         if not library_files:
             return
         pick = random.choice(library_files)
