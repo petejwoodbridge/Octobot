@@ -276,6 +276,21 @@ def _execute_action(parsed: dict) -> str:
         _p = PurePosixPath(filename)
         if len(_p.stem) > 120:
             filename = str(_p.parent / (_p.stem[:120] + _p.suffix))
+        # For library files, validate content isn't just a stub or code fence
+        if filename.startswith("library/") and content:
+            # Strip markdown code fences the LLM sometimes wraps output in
+            _c = content.strip()
+            if _c.startswith("```"):
+                _c = _c.split("\n", 1)[1] if "\n" in _c else ""
+            if _c.endswith("```"):
+                _c = _c.rsplit("```", 1)[0]
+            _c = _c.strip()
+            if len(_c) < 100:
+                return f"Content too short ({len(_c)} chars) — not saving empty idea to library."
+            _REAL_SECTIONS = ("## Overview", "## How It Works", "## The Problem", "## Elevator")
+            if not any(s in _c for s in _REAL_SECTIONS):
+                return "Content lacks real idea sections (Overview/How/Problem) — not saving."
+            content = _c  # use the cleaned content
         return tools.write_file(filename, content)
 
     elif action == "read_file":

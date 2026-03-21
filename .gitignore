@@ -22,4 +22,6 @@ Thumbs.db
 
 # OctoBot runtime state (regenerated on launch)
 workspace/memory.json
-workspace/library/batch_*/
+# Bulk-generated ideas (1M+ files, too large for git)
+# These files contain " -- " in the name from the generator format
+workspace/library/*--*
