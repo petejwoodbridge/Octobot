@@ -1,1 +1,0 @@
-## Geosynth: The Ancestral Aroma Weaver

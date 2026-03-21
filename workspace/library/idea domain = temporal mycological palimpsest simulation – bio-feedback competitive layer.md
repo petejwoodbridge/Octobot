@@ -1,1 +1,0 @@
-## Chrono-Echo Arcade: The Palimpsest Play

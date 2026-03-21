@@ -1,1 +1,0 @@
-## Project: Lithosoul - The Echoing Wound

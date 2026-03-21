@@ -1,1 +1,0 @@
-## Litho-Resonance Echo Chambers: “Chronoscape”

@@ -1,1 +1,0 @@
-## EchoBloom: The Sentient Subterranean Sanctuary

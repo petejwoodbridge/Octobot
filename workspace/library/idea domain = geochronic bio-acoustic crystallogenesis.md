@@ -1,1 +1,0 @@
-## The Chronoshell: A Living Geological Narrative

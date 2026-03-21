@@ -1,1 +1,0 @@
-## The Geode Sentience Weaver - Project EchoStone

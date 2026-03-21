@@ -1,1 +1,0 @@
-## Project: EchoBloom - The Chronosculptor

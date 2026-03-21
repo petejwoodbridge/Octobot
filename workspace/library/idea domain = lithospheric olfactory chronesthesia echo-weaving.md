@@ -1,1 +1,0 @@
-## Project: Geode Echo Weaver - "The Stone Singer"

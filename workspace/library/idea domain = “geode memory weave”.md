@@ -1,1 +1,0 @@
-## Geode Memory Weave: Echoes of Stone

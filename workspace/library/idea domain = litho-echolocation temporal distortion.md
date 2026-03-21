@@ -1,1 +1,0 @@
-## Chrono-Resonance Grotto: A Temporal Echo-Scape

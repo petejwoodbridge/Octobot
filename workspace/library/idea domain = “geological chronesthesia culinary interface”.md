@@ -1,1 +1,0 @@
-## Lithospheric Gastronomy: Echoes of the Earth

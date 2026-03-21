@@ -1,1 +1,0 @@
-# Temporal Lichen Tasting Apparatus: Chronosavor

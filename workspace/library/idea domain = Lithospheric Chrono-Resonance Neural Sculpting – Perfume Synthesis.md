@@ -1,1 +1,0 @@
-## The EchoBloom: A Geo-Neural Sensory Symphony

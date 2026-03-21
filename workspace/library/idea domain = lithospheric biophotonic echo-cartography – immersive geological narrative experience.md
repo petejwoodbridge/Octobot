@@ -1,1 +1,0 @@
-## “Geodegeist: Echoes of Stone”

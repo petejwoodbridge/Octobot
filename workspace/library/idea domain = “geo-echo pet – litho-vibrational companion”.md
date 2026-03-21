@@ -1,1 +1,0 @@
-## Geo-Echo Pet – Litho-Vibrational Companion

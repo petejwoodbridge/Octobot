@@ -1,1 +1,0 @@
-## Chrono-Emotive Geodes: The Earth’s Therapist

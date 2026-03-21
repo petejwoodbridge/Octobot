@@ -1,1 +1,0 @@
-## Litho-Resonant Myco-Symbiosis: The Echo Weaver

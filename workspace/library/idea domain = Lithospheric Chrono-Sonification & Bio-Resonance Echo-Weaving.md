@@ -1,1 +1,0 @@
-## The Echo Weaver: A Geo-Emotional Time Capsule

@@ -1,1 +1,0 @@
-## “Geosonic Empathy Weaver”

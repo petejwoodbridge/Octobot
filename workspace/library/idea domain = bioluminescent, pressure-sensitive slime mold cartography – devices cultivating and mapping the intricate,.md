@@ -1,1 +1,0 @@
-# Slime Mold Oracle - Project Chronosynth

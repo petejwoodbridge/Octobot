@@ -1,1 +1,0 @@
-## Litho-Echoes: The Subterranean Symphony

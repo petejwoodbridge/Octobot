@@ -1,1 +1,0 @@
-## Litho-Memoria Weave: Chrono-Textiles

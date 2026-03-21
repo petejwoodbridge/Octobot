@@ -1,1 +1,0 @@
-## EchoBloom: Chrono-Memoria Projector

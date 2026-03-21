@@ -1,1 +1,0 @@
-## Geochronal Echoes: The Lithospheric Symphony

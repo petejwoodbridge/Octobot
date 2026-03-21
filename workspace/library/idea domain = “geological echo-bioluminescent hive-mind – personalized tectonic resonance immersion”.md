@@ -1,1 +1,0 @@
-## Litho-Resonance Hive: Project Gaia’s Pulse

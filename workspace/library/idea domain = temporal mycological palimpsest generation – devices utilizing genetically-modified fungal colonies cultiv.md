@@ -1,1 +1,0 @@
-## The Chrono-Kinetic Memorial

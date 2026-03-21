@@ -1,1 +1,0 @@
-## Litho-Temporal Gastronomy: Echoes of Stone

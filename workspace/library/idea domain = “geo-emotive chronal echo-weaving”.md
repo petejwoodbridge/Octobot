@@ -1,1 +1,0 @@
-## Project: "StoneSong - The Memory Geode"

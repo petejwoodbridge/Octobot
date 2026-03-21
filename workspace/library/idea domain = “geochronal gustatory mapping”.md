@@ -1,1 +1,0 @@
-## Geochronal Gustatory Mapping – The Echo-Palate

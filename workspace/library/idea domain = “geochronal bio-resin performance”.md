@@ -1,1 +1,0 @@
-## EchoSculpt: Resonance Ritual

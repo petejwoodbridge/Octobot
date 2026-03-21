@@ -1,1 +1,0 @@
-## Chroma-Sonar: Lithospheric Echo Suit

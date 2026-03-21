@@ -1,1 +1,0 @@
-## Chronal Empathy Sculptures: Echoes of Stone

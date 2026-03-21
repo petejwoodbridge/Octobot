@@ -1,1 +1,0 @@
-## The Geochron Echo Chamber & Resonator

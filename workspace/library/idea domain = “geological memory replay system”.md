@@ -1,1 +1,0 @@
-## Project: Chronoscape Echo – The Stone Speaks

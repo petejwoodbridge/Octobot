@@ -1,1 +1,0 @@
-## EchoBloom: The Geologic Trauma Therapy Device

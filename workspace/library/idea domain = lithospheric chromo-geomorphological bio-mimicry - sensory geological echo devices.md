@@ -1,1 +1,0 @@
-## EchoStone: The Living Fossil Recorder

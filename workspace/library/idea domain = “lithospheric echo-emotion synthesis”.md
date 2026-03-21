@@ -1,1 +1,0 @@
-## Lithospheric Echo-Emotion Synthesis: The Geode Sentinel

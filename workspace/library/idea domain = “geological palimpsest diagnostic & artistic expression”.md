@@ -1,1 +1,0 @@
-## The Chronosynapse: Geothermal Echo Weaver

@@ -1,1 +1,0 @@
-## Geode-Neural Echo Gardens: The Chronoscapes

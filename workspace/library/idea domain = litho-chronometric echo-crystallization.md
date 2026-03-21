@@ -1,1 +1,0 @@
-## Chronosculpt: The Sentient Stone

@@ -1,1 +1,0 @@
-## Geospatial Psychometry Echo-Art: The Chronos Canvas

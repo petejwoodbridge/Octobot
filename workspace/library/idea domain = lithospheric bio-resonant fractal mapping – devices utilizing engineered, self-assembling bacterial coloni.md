@@ -1,1 +1,0 @@
-## Lithospheric Echo-Sculpting Suite: “Geosynth”

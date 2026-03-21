@@ -1,1 +1,0 @@
-## The Rhizome Navigator: A Chronal Echo-Suit

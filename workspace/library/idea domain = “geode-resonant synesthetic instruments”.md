@@ -1,1 +1,0 @@
-## Geode Echo Weaver – A Bio-Acoustic Instrument
