@@ -16,6 +16,7 @@ All persistent state is stored through memory.py so it survives restarts.
 import re
 import random
 from datetime import datetime
+from pathlib import Path
 
 import memory as mem
 import tools
@@ -556,10 +557,14 @@ def get_knowledge_graph() -> dict:
     }
 
 
+_MAX_GRAPH_FILES = 5000  # Cap files processed for graph to keep startup fast
+
 def backfill_graph_from_library(clean: bool = False) -> dict:
-    """Scan every library .md file and build the in-memory knowledge graph.
+    """Scan library .md files and build the in-memory knowledge graph.
     If clean=True, wipe the existing graph first and rebuild from scratch.
     The graph is NOT persisted to disk — it's purely in-memory.
+    For very large libraries (>_MAX_GRAPH_FILES), samples a representative subset
+    to keep startup time reasonable.
     Returns {"total_nodes": int, "total_files": int, "files_processed": int}."""
     global _graph_cache
 
@@ -569,7 +574,23 @@ def backfill_graph_from_library(clean: bool = False) -> dict:
     nodes = set(_graph_cache.get("nodes", []))
     file_concepts = _graph_cache.get("file_concepts", {})
 
-    library_files = [f for f in tools.list_files("library") if f.endswith(".md")]
+    import os as _os
+    # Walk library directory directly for speed (os.walk is faster than list_files for huge dirs)
+    lib_root = tools.LIBRARY_DIR.resolve()
+    library_files = []
+    for root, _dirs, fnames in _os.walk(lib_root):
+        for fn in fnames:
+            if fn.endswith(".md"):
+                rel = str((Path(root) / fn).relative_to(tools.WORKSPACE_ROOT.resolve())).replace("\\", "/")
+                library_files.append(rel)
+    total_files = len(library_files)
+
+    # For very large libraries, sample evenly to keep startup fast
+    if total_files > _MAX_GRAPH_FILES:
+        import random as _rng
+        _rng.seed(42)  # deterministic sample
+        library_files = _rng.sample(library_files, _MAX_GRAPH_FILES)
+
     files_done = 0
 
     for lib_file in library_files:
@@ -591,6 +612,7 @@ def backfill_graph_from_library(clean: bool = False) -> dict:
     return {
         "total_nodes": len(_graph_cache["nodes"]),
         "total_files": len(file_concepts),
+        "total_library_files": total_files,
         "files_processed": files_done,
     }
 

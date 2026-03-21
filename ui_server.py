@@ -170,16 +170,20 @@ _lib_cache_json = None
 
 @app.route("/api/library")
 def api_library():
-    """List library files. Cached for 10s."""
+    """List library files. Cached for 30s. For large libraries, returns count + sample."""
     global _lib_cache, _lib_cache_time, _lib_cache_json
     now = time.time()
-    if _lib_cache_json and now - _lib_cache_time < 10:
+    if _lib_cache_json and now - _lib_cache_time < 30:
         return app.response_class(_lib_cache_json, mimetype="application/json")
     files = sorted(f for f in tools.list_files("library") if f.endswith(".md"))
-    _lib_cache = files
+    total = len(files)
+    # For very large libraries, return a capped list to avoid browser overload
+    _MAX_LIB_LIST = 2000
+    capped = files[:_MAX_LIB_LIST] if total > _MAX_LIB_LIST else files
+    _lib_cache = capped
     _lib_cache_time = now
     import json as _json
-    _lib_cache_json = _json.dumps({"files": files, "topics": []})
+    _lib_cache_json = _json.dumps({"files": capped, "topics": [], "total_count": total})
     return app.response_class(_lib_cache_json, mimetype="application/json")
 
 

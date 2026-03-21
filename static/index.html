@@ -809,8 +809,9 @@ let _statusRotateIdx = 0;
 let _speechBubbleText = 'Idea machine warming up...';
 let _prevLibCount = -1;
 let _newIdeaToast = '';       // text shown in the "new idea" banner
+let _newIdeaToastLine2 = '';  // subtitle line (thought/status)
 let _newIdeaToastTime = 0;    // timestamp when the toast was triggered
-const _TOAST_DURATION = 6000; // how long the toast is visible (ms)
+const _TOAST_DURATION = 20000; // how long the toast is visible (ms)
 
 // Rotate the speech bubble content every 10 seconds
 setInterval(function() {
@@ -843,7 +844,8 @@ async function pollState() {
   const libCount = data.library_count || 0;
   if (_prevLibCount >= 0 && libCount > _prevLibCount && newTopic) {
     const topicName = newTopic.replace(/_/g, ' ').replace(/-/g, ' ');
-    _newIdeaToast = 'NEW IDEA: ' + topicName.slice(0, 80);
+    _newIdeaToast = topicName.slice(0, 120);
+    _newIdeaToastLine2 = (data.thought || '').slice(0, 100);
     _newIdeaToastTime = Date.now();
   }
   _prevLibCount = libCount;
@@ -1271,26 +1273,33 @@ function drawGraphFrame(){
   }
   if(!gGraphBuilt||Object.keys(gNodePos).length!==nodes.length) gBuildLayout(nodes,edges,gc);
 
-  // Smooth camera lerp
-  const CL=0.07;
+  // Smooth camera lerp (snappy centering on selection)
+  const CL=0.12;
   gZoom+=(gCamTZ-gZoom)*CL;
   gPanX+=(gCamTX-gPanX)*CL;
   gPanY+=(gCamTY-gPanY)*CL;
+
+  // Continuously track selected node (keeps it centered even as graph moves)
+  if(gSelected && gNodePos[gSelected] && !gDragging){
+    const sidebarW=320;
+    const sidebarWorldOffset=(sidebarW/2)/gCamTZ;
+    gCamTX=-gNodePos[gSelected].x-sidebarWorldOffset;
+    gCamTY=-gNodePos[gSelected].y;
+  }
 
   // Focus blend lerp
   const focusTarget=gSelected?1:0;
   gFocusBlend+=(focusTarget-gFocusBlend)*0.1;
 
-  // ── Spring physics — only active when dragging a node ──
-  if(gDragNode){
-    const DAMPING=0.85, SPRING_K=0.005, SPRING_REST=60, MAX_F=2;
-    // Only compute springs for edges connected to the dragged node (and their neighbors)
-    const affected=new Set([gDragNode]);
-    const nbrs=gNeighbors[gDragNode]||new Set();
-    for(const nb of nbrs) affected.add(nb);
+  // ── Always-on force-directed physics ──
+  {
+    const DAMPING=0.88, MAX_V=5;
+    const isDragging=!!gDragNode;
+
+    // Edge spring forces — always active
+    const SPRING_K=isDragging?0.02:0.003, SPRING_REST=55, MAX_F=isDragging?3:0.8;
     for(let i=0;i<edges.length;i++){
       const e=edges[i];
-      if(!affected.has(e.from)&&!affected.has(e.to)) continue;
       const a=gNodePos[e.from], b=gNodePos[e.to]; if(!a||!b) continue;
       const dx=b.x-a.x, dy=b.y-a.y, dist=Math.sqrt(dx*dx+dy*dy)||1;
       let f=Math.max(-MAX_F,Math.min(MAX_F,(dist-SPRING_REST)*SPRING_K));
@@ -1298,22 +1307,54 @@ function drawGraphFrame(){
       if(e.from!==gDragNode){a.vx+=fx;a.vy+=fy;}
       if(e.to!==gDragNode){b.vx-=fx;b.vy-=fy;}
     }
-    for(const n of affected){
+
+    // Repulsion — check nearby pairs using spatial grid for performance
+    const REP_DIST=80, REP_K=isDragging?1.2:0.15;
+    const cellSize=REP_DIST;
+    const grid={};
+    for(let i=0;i<nodes.length;i++){
+      const p=gNodePos[nodes[i]]; if(!p) continue;
+      const cx=Math.floor(p.x/cellSize), cy=Math.floor(p.y/cellSize);
+      const key=cx+'|'+cy;
+      if(!grid[key]) grid[key]=[];
+      grid[key].push(i);
+    }
+    for(const key in grid){
+      const [cx,cy]=key.split('|').map(Number);
+      for(let dx=-1;dx<=1;dx++) for(let dy=-1;dy<=1;dy++){
+        const nkey=(cx+dx)+'|'+(cy+dy);
+        const nb=grid[nkey]; if(!nb) continue;
+        const cell=grid[key];
+        for(let ai=0;ai<cell.length;ai++){
+          const nA=nodes[cell[ai]], pA=gNodePos[nA]; if(!pA) continue;
+          const jStart=(key===nkey)?ai+1:0;
+          for(let bi=jStart;bi<nb.length;bi++){
+            const nB=nodes[nb[bi]], pB=gNodePos[nB]; if(!pB) continue;
+            const ddx=pB.x-pA.x, ddy=pB.y-pA.y;
+            const d2=ddx*ddx+ddy*ddy;
+            if(d2>REP_DIST*REP_DIST||d2<0.01) continue;
+            const dist=Math.sqrt(d2);
+            const f=REP_K/dist;
+            const fdx=ddx/dist*f, fdy=ddy/dist*f;
+            if(nA!==gDragNode){pA.vx-=fdx;pA.vy-=fdy;}
+            if(nB!==gDragNode){pB.vx+=fdx;pB.vy+=fdy;}
+          }
+        }
+      }
+    }
+
+    // Apply velocity — damping + speed cap
+    let anyMoving=false;
+    for(const n of nodes){
       const p=gNodePos[n]; if(!p||n===gDragNode) continue;
       p.vx*=DAMPING; p.vy*=DAMPING;
       const spd=Math.sqrt(p.vx*p.vx+p.vy*p.vy);
-      if(spd>4){p.vx*=4/spd;p.vy*=4/spd;}
-      p.x+=p.vx; p.y+=p.vy;
+      if(spd>MAX_V){p.vx*=MAX_V/spd;p.vy*=MAX_V/spd;}
+      if(Math.abs(p.vx)>0.01||Math.abs(p.vy)>0.01){
+        p.x+=p.vx; p.y+=p.vy;
+        anyMoving=true;
+      } else { p.vx=0; p.vy=0; }
     }
-  }
-  // Decay any remaining velocity (from after drag release)
-  let anyMoving=false;
-  for(const n of nodes){
-    const p=gNodePos[n]; if(!p) continue;
-    if(Math.abs(p.vx)>0.01||Math.abs(p.vy)>0.01){
-      p.vx*=0.9; p.vy*=0.9; p.x+=p.vx; p.y+=p.vy;
-      anyMoving=true;
-    } else { p.vx=0; p.vy=0; }
   }
 
   const t=performance.now()*0.001;
@@ -1496,20 +1537,20 @@ function selectConceptNode(name){
 
     // Centre the selected node in the visible area (left of the 320px sidebar)
     const sidebarW=320;
-    const tz=Math.min(2.2, Math.max(gZoom, 1.1));
+    const tz=Math.min(2.5, Math.max(gZoom, 1.2));
     gCamTZ=tz;
     // The visible center is offset left by half the sidebar width in world coords
     const sidebarWorldOffset=(sidebarW/2)/tz;
     gCamTX=-gNodePos[name].x-sidebarWorldOffset;
     gCamTY=-gNodePos[name].y;
 
-    // Give a gentle "pop" impulse to neighbors so they react visibly
+    // Give a "pop" impulse to neighbors so they react visibly
     const nbrs=gNeighbors[name]||new Set();
     for(const nb of nbrs){
       const np=gNodePos[nb]; if(!np) continue;
       const dx=np.x-gNodePos[name].x, dy=np.y-gNodePos[name].y;
       const d=Math.sqrt(dx*dx+dy*dy)||1;
-      np.vx+=dx/d*1.5; np.vy+=dy/d*1.5;
+      np.vx+=dx/d*3; np.vy+=dy/d*3;
     }
   }
   const nd=document.getElementById('node-detail');
@@ -3100,22 +3141,29 @@ function gameLoop(ts) {
 
   ctx.restore();
 
-  // New idea toast banner (top of canvas, fades out)
+  // New idea toast banner (top of canvas, 3-line, fades out)
   if (_newIdeaToast && Date.now() - _newIdeaToastTime < _TOAST_DURATION) {
     ctx.save();
     const elapsed = Date.now() - _newIdeaToastTime;
     const fadeIn = Math.min(1, elapsed / 400);
-    const fadeOut = elapsed > _TOAST_DURATION - 1000 ? Math.max(0, (_TOAST_DURATION - elapsed) / 1000) : 1;
+    const fadeOut = elapsed > _TOAST_DURATION - 2000 ? Math.max(0, (_TOAST_DURATION - elapsed) / 2000) : 1;
     const alpha = fadeIn * fadeOut;
     const W = canvas.width;
 
     ctx.globalAlpha = alpha;
+
+    // Measure widths for sizing
     ctx.font = '7px "Press Start 2P"';
-    const tw = ctx.measureText(_newIdeaToast).width;
-    const bw = Math.min(W - 8, tw + 24);
+    const headerText = '\u2728 NEW IDEA';
+    const hw = ctx.measureText(headerText).width;
+    ctx.font = '6px "Press Start 2P"';
+    const topicW = ctx.measureText(_newIdeaToast).width;
+    const subW = _newIdeaToastLine2 ? ctx.measureText(_newIdeaToastLine2).width : 0;
+    const maxTw = Math.max(hw, topicW, subW);
+    const bw = Math.min(W - 16, maxTw + 32);
     const bx = W/2 - bw/2;
     const by = 4;
-    const bh = 22;
+    const bh = _newIdeaToastLine2 ? 52 : 40;
 
     // Glowing background
     ctx.fillStyle = '#1a003aee';
@@ -3124,22 +3172,30 @@ function gameLoop(ts) {
     ctx.shadowColor = '#ff2d9b';
     ctx.shadowBlur = 12 * alpha;
     ctx.beginPath();
-    ctx.roundRect(bx, by, bw, bh, 4);
+    ctx.roundRect(bx, by, bw, bh, 6);
     ctx.fill();
     ctx.stroke();
     ctx.shadowBlur = 0;
 
-    // Sparkle icon
+    // Line 1: Header
     ctx.fillStyle = '#ffcc00';
-    ctx.font = '9px sans-serif';
-    ctx.textAlign = 'left';
-    ctx.fillText('\u2728', bx + 5, by + 15);
+    ctx.font = '7px "Press Start 2P"';
+    ctx.textAlign = 'center';
+    ctx.fillText(headerText, W/2, by + 14);
 
-    // Text
+    // Line 2: Topic name
     ctx.fillStyle = '#ff99ee';
     ctx.font = '6px "Press Start 2P"';
-    ctx.textAlign = 'center';
-    ctx.fillText(_newIdeaToast, W/2, by + 15);
+    const topicTrunc = _newIdeaToast.length > 70 ? _newIdeaToast.slice(0, 68) + '\u2026' : _newIdeaToast;
+    ctx.fillText(topicTrunc, W/2, by + 28);
+
+    // Line 3: Thought/subtitle
+    if (_newIdeaToastLine2) {
+      ctx.fillStyle = '#bf00ffaa';
+      ctx.font = '5px "Press Start 2P"';
+      const subTrunc = _newIdeaToastLine2.length > 80 ? _newIdeaToastLine2.slice(0, 78) + '\u2026' : _newIdeaToastLine2;
+      ctx.fillText(subTrunc, W/2, by + 42);
+    }
 
     ctx.restore();
   }
