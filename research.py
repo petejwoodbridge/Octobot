@@ -77,12 +77,48 @@ def _llm(system: str, user: str) -> str:
 # Core research functions
 # ---------------------------------------------------------------------------
 
+def _find_related_concepts(topic: str) -> list[str]:
+    """Find existing concepts from the knowledge graph that relate to this topic."""
+    try:
+        graph = scoring.get_knowledge_graph()
+        nodes = graph.get("nodes", [])
+        topic_lower = topic.lower()
+        topic_words = {w for w in topic_lower.split() if len(w) > 3}
+        # Score each concept by word overlap with the topic
+        scored = []
+        for node in nodes:
+            node_words = {w for w in node.lower().split() if len(w) > 3}
+            overlap = len(topic_words & node_words)
+            # Also check substring matches
+            if any(w in node.lower() for w in topic_words if len(w) > 4):
+                overlap += 1
+            if overlap > 0:
+                scored.append((overlap, node))
+        scored.sort(key=lambda x: x[0], reverse=True)
+        return [s[1] for s in scored[:8]]
+    except Exception:
+        return []
+
+
 def conduct_research(topic: str) -> str:
     """
     Ask the LLM to research *topic* and save the result to the library.
+    Always connects new ideas to existing concepts in the knowledge graph.
     Returns a status message.
     """
     mem.log_event("research", f"Starting research on: {topic}")
+
+    # Find related concepts from existing knowledge graph to weave into the new idea
+    related = _find_related_concepts(topic)
+    connection_hint = ""
+    if related:
+        related_str = ", ".join(related[:6])
+        connection_hint = (
+            f"\n\nIMPORTANT: Your idea MUST connect to or build upon at least one of these "
+            f"existing concepts from OctoBot's knowledge graph: {related_str}. "
+            f"Reference them naturally in your idea — show how this new invention relates to, "
+            f"extends, or combines with existing ideas."
+        )
 
     prompt = (
         f"Generate a brilliant, original, never-before-invented idea for the following domain or challenge:\n\n"
@@ -90,6 +126,7 @@ def conduct_research(topic: str) -> str:
         f"Invent something specific, creative, and genuinely useful (or usefully absurd). "
         f"You MUST use all the required sections: ## [Idea Name], ## Overview, ## The Problem It Solves, "
         f"## How It Works, ## Why It's Brilliant, and ## Elevator Pitch."
+        f"{connection_hint}"
     )
 
     try:
