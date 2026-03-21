@@ -17,9 +17,6 @@ echo.
 :: Open loading screen immediately
 start "" "%cd%\loading.html"
 
-:: Launch the progress monitor
-start "DreamLab OctoBot - Progress Monitor" python progress_monitor.py
-
 :: Launch the live viewer in a separate CMD window
 start "DreamLab OctoBot - Live Viewer" cmd /k "color 0D & cd /d "D:\VS Code Projects\Octobot" & python viewer.py"
 

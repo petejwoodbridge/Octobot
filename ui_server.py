@@ -168,23 +168,85 @@ _lib_cache = None
 _lib_cache_time = 0
 _lib_cache_json = None
 
+_lib_scan_running = False
+
+def _scan_library_bg():
+    """Background scan of library files sorted by mtime (newest first).
+    For very large libraries, does a fast scan (no mtime) and sorts by
+    directory/filename instead — batch dirs are numbered so this approximates
+    newest-first without expensive stat() calls on 1M+ files."""
+    global _lib_cache, _lib_cache_time, _lib_scan_running
+    _lib_scan_running = True
+    try:
+        lib_root = tools.LIBRARY_DIR.resolve()
+        ws_root = tools.WORKSPACE_ROOT.resolve()
+        all_files = []
+        for root, _dirs, fnames in os.walk(lib_root):
+            for fn in fnames:
+                if fn.endswith(".md"):
+                    full = os.path.join(root, fn)
+                    rel = os.path.relpath(full, ws_root).replace("\\", "/")
+                    all_files.append(rel)
+
+        total = len(all_files)
+
+        if total > 10000:
+            # For huge libraries: sort by path descending (batch_0999 > batch_0000)
+            # This gives newest-first without expensive stat() calls
+            all_files.sort(reverse=True)
+        else:
+            # For smaller libraries: sort by mtime (accurate newest-first)
+            def _mtime(rel):
+                try:
+                    return os.path.getmtime(os.path.join(str(ws_root), rel.replace("/", os.sep)))
+                except OSError:
+                    return 0
+            all_files.sort(key=_mtime, reverse=True)
+
+        _lib_cache = all_files
+        _lib_cache_time = time.time()
+        print(f"  Library scan complete: {len(_lib_cache):,} files indexed")
+    except Exception as exc:
+        print(f"  Library scan error: {exc}")
+    finally:
+        _lib_scan_running = False
+
+def _ensure_lib_cache():
+    """Trigger a background scan if cache is stale or missing."""
+    import threading
+    if _lib_scan_running:
+        return
+    if _lib_cache is not None and time.time() - _lib_cache_time < 120:
+        return
+    threading.Thread(target=_scan_library_bg, daemon=True).start()
+
 @app.route("/api/library")
 def api_library():
-    """List library files. Cached for 30s. For large libraries, returns count + sample."""
-    global _lib_cache, _lib_cache_time, _lib_cache_json
-    now = time.time()
-    if _lib_cache_json and now - _lib_cache_time < 30:
-        return app.response_class(_lib_cache_json, mimetype="application/json")
-    files = sorted(f for f in tools.list_files("library") if f.endswith(".md"))
-    total = len(files)
-    # For very large libraries, return a capped list to avoid browser overload
-    _MAX_LIB_LIST = 2000
-    capped = files[:_MAX_LIB_LIST] if total > _MAX_LIB_LIST else files
-    _lib_cache = capped
-    _lib_cache_time = now
+    """List library files, newest first. Paginated.
+    Query params:
+      ?limit=N   — return at most N files (default 100)
+      ?offset=N  — skip first N files (for pagination)
+    """
     import json as _json
-    _lib_cache_json = _json.dumps({"files": capped, "topics": [], "total_count": total})
-    return app.response_class(_lib_cache_json, mimetype="application/json")
+
+    limit = min(int(request.args.get("limit", 100)), 500)
+    offset = int(request.args.get("offset", 0))
+
+    # Trigger background scan if needed (non-blocking)
+    _ensure_lib_cache()
+
+    # Return whatever we have (empty list if scan hasn't finished yet)
+    files = _lib_cache or []
+    total = len(files)
+    page = files[offset:offset + limit]
+
+    resp = _json.dumps({
+        "files": page,
+        "total_count": total,
+        "offset": offset,
+        "limit": limit,
+    })
+    return app.response_class(resp, mimetype="application/json")
 
 
 _file_cache = {}   # filename -> (resp_json, content, cache_time)
@@ -387,8 +449,13 @@ def _build_graph_response():
 @app.route("/api/graph")
 def api_graph():
     """Return an idea-centric knowledge graph for visualization.
-    Pass ?rebuild=1 to force a cache refresh."""
+    Pass ?rebuild=1 to force a cache refresh.
+    Auto-rebuilds when the scoring graph cache has grown since last build."""
     rebuild = request.args.get("rebuild", "0") == "1"
+    # Auto-rebuild if graph cache has been populated since we last built
+    current_fc_count = len(scoring._graph_cache.get("file_concepts", {})) if scoring._graph_cache else 0
+    if current_fc_count > 0 and current_fc_count != _graph_resp_ncount:
+        rebuild = True
     if _graph_resp_json is None or rebuild:
         _build_graph_response()
     return app.response_class(_graph_resp_json, mimetype="application/json")
@@ -404,6 +471,9 @@ def _build_concept_index():
     _concept_index = {}
     _concept_titles = {}
     files = _lib_cache if _lib_cache else sorted(f for f in tools.list_files("library") if f.endswith(".md"))
+    # Cap to 5000 files for index building performance
+    if len(files) > 5000:
+        files = files[:5000]
     for rel in files:
         fname_lower = rel.lower().replace("_", " ").replace("-", " ")
         title = rel.split("/")[-1].replace(".md", "").replace("_", " ").replace("-", " ").strip()
@@ -625,13 +695,15 @@ def _start_library_cache_warmer() -> None:
 
     def _warm():
         time.sleep(3)  # let server finish starting first
+        _WARM_CAP = 500  # only pre-cache a small number for fast first-click experience
         try:
             files = [f for f in tools.list_files("library") if f.endswith(".md")]
-            print(f"  Library cache warmer: loading {len(files)} files...")
-            for f in files:
+            to_warm = files[:_WARM_CAP]
+            print(f"  Library cache warmer: pre-loading {len(to_warm)} of {len(files)} files...")
+            for f in to_warm:
                 if f not in _file_cache:
                     _cache_library_file(f)
-            print(f"  Library cache warmer: done ({len(files)} files ready).")
+            print(f"  Library cache warmer: done ({len(to_warm)} files ready).")
         except Exception as exc:
             print(f"  Library cache warmer error: {exc}")
 
@@ -645,15 +717,18 @@ def _background_warmup():
     print("  [warmup] Starting background warmup thread...")
     def _warm():
         print("  [warmup] Thread started")
+        # Start library file scan immediately (runs in background)
+        _scan_library_bg()
+        print(f"  [warmup] Library file index ready: {len(_lib_cache or []):,} files")
+        # Build graph visualization (waits for scoring graph cache, may be empty initially)
         try:
-            scoring._init_graph_cache()
-            print(f"  [warmup] Graph cache: {len(scoring._graph_cache.get('file_concepts', {}))} files")
-            _build_graph_response()
-            if _graph_resp_cache:
-                c = _graph_resp_cache
-                print(f"  Graph ready: {len(c['nodes'])} ideas, {len(c['edges'])} connections")
-            else:
-                print("  [warmup] WARNING: _graph_resp_cache is None after build")
+            fc_count = len(scoring._graph_cache.get('file_concepts', {})) if scoring._graph_cache else 0
+            print(f"  [warmup] Graph cache: {fc_count} files")
+            if fc_count > 0:
+                _build_graph_response()
+                if _graph_resp_cache:
+                    c = _graph_resp_cache
+                    print(f"  Graph ready: {len(c['nodes'])} ideas, {len(c['edges'])} connections")
         except Exception as exc:
             print(f"  Graph pre-build failed: {exc}")
             traceback.print_exc()

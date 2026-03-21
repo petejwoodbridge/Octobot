@@ -155,14 +155,22 @@ def main() -> None:
     res.MODEL = args.model
     print(f"      Model: {args.model}")
 
-    # Build knowledge graph from library (before loops start to avoid races)
+    # Build knowledge graph from library in background (non-blocking for fast startup)
     import scoring
-    print("[2/3] Building knowledge graph…")
-    try:
-        result = scoring.backfill_graph_from_library(clean=True)
-        print(f"      {result['total_nodes']} concepts from {result.get('total_files', result.get('files_processed', 0))} files")
-    except Exception as exc:
-        print(f"      Graph build failed: {exc}")
+    import threading
+    print("[2/3] Building knowledge graph (background)…")
+    scoring._init_graph_cache()  # initialize empty cache immediately
+
+    def _bg_graph_build():
+        try:
+            result = scoring.backfill_graph_from_library(clean=True)
+            total = result.get('total_library_files', result.get('total_files', 0))
+            print(f"      Graph ready: {result['total_nodes']} concepts from "
+                  f"{result.get('files_processed', 0)} sampled files "
+                  f"({total:,} total in library)")
+        except Exception as exc:
+            print(f"      Graph build failed: {exc}")
+    threading.Thread(target=_bg_graph_build, daemon=True).start()
 
     # Start game loop
     if not args.no_loop:

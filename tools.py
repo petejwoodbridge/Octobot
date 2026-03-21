@@ -261,12 +261,27 @@ def scan_comments_folder() -> list[str]:
     return sorted(results)
 
 
+_knowledge_count_cache = 0
+_knowledge_count_time = 0.0
+
 def get_knowledge_count() -> int:
-    """Return the total number of library markdown files (fast, non-recursive)."""
+    """Return the total number of library markdown files (recursive, cached 30s)."""
+    import time as _t
+    global _knowledge_count_cache, _knowledge_count_time
+    now = _t.time()
+    if _knowledge_count_cache > 0 and now - _knowledge_count_time < 30:
+        return _knowledge_count_cache
     try:
-        return sum(1 for e in os.scandir(LIBRARY_DIR) if e.is_file() and e.name.endswith(".md"))
+        count = 0
+        for root, _dirs, fnames in os.walk(LIBRARY_DIR):
+            for fn in fnames:
+                if fn.endswith(".md"):
+                    count += 1
+        _knowledge_count_cache = count
+        _knowledge_count_time = now
+        return count
     except OSError:
-        return len([f for f in list_files("library") if f.endswith(".md")])
+        return _knowledge_count_cache
 
 
 def append_journal(entry: str) -> str:

@@ -528,6 +528,9 @@ def find_cross_references(new_concepts: list[str], exclude_file: str = "") -> li
     """
     cross_refs = []
     library_files = [f for f in tools.list_files("library") if f.endswith(".md")]
+    # Cap to avoid scanning 1M+ files on every cross-ref check
+    if len(library_files) > 2000:
+        library_files = random.sample(library_files, 2000)
 
     for lib_file in library_files:
         if lib_file == exclude_file:
@@ -575,21 +578,27 @@ def backfill_graph_from_library(clean: bool = False) -> dict:
     file_concepts = _graph_cache.get("file_concepts", {})
 
     import os as _os
-    # Walk library directory directly for speed (os.walk is faster than list_files for huge dirs)
+    # Walk library directory with reservoir sampling for huge libraries.
+    # Instead of collecting all 1M+ files first, sample as we go.
     lib_root = tools.LIBRARY_DIR.resolve()
+    ws_root = tools.WORKSPACE_ROOT.resolve()
     library_files = []
+    total_files = 0
+    _rng_inst = random.Random(42)  # deterministic
+
     for root, _dirs, fnames in _os.walk(lib_root):
         for fn in fnames:
-            if fn.endswith(".md"):
-                rel = str((Path(root) / fn).relative_to(tools.WORKSPACE_ROOT.resolve())).replace("\\", "/")
+            if not fn.endswith(".md"):
+                continue
+            total_files += 1
+            rel = str((Path(root) / fn).relative_to(ws_root)).replace("\\", "/")
+            # Reservoir sampling: keep at most _MAX_GRAPH_FILES items
+            if len(library_files) < _MAX_GRAPH_FILES:
                 library_files.append(rel)
-    total_files = len(library_files)
-
-    # For very large libraries, sample evenly to keep startup fast
-    if total_files > _MAX_GRAPH_FILES:
-        import random as _rng
-        _rng.seed(42)  # deterministic sample
-        library_files = _rng.sample(library_files, _MAX_GRAPH_FILES)
+            else:
+                j = _rng_inst.randint(0, total_files - 1)
+                if j < _MAX_GRAPH_FILES:
+                    library_files[j] = rel
 
     files_done = 0
 

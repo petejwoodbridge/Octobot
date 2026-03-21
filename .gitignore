@@ -22,3 +22,4 @@ Thumbs.db
 
 # OctoBot runtime state (regenerated on launch)
 workspace/memory.json
+workspace/library/batch_*/

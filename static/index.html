@@ -610,6 +610,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     const tab = btn.dataset.tab;
     if (tab === 'graph') { loadGraph(); gStartAnimLoop(); }
     else gStopAnimLoop();
+    if (tab === 'library') loadLibrary();
     if (tab === 'achievements') loadAchievements();
     if (tab === 'chains') loadChains();
   });
@@ -924,8 +925,13 @@ setInterval(pollAutoMessages, 4000);
 // =====================================================================
 let _libFiles = [];
 let _libRendered = 0;
-const _LIB_PAGE = 80;
-const _previewCache = new Map(); // JS-side content cache: filename -> markdown string
+let _libTotal = 0;
+let _libOffset = 0;
+let _libLoading = false;
+let _libAllLoaded = false;
+const _LIB_PAGE = 50;           // items rendered per scroll chunk
+const _LIB_FETCH_SIZE = 100;    // items fetched per API call
+const _previewCache = new Map();
 
 async function _prefetchLibrary(files) {
   if (!files.length) return;
@@ -933,7 +939,7 @@ async function _prefetchLibrary(files) {
     const resp = await fetch('/api/library_batch', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({files: files.slice(0, 150)})
+      body: JSON.stringify({files: files.slice(0, 50)})
     });
     const data = await resp.json();
     for (const [f, content] of Object.entries(data)) {
@@ -943,25 +949,57 @@ async function _prefetchLibrary(files) {
 }
 
 async function loadLibrary() {
-  const data = await fetchJSON('/api/library');
-  if (!data) return;
   const list = document.getElementById('library-list');
-  if (!data.files || data.files.length === 0) {
+  // First load — reset everything
+  _libFiles = [];
+  _libRendered = 0;
+  _libOffset = 0;
+  _libAllLoaded = false;
+  list.innerHTML = '';
+
+  await _fetchMoreLibraryFiles();
+
+  if (_libFiles.length === 0) {
     list.innerHTML = '<div style="color:#bf00ff88;font-size:10px;padding:8px;font-family:Segoe UI,sans-serif;">(Idea vault is empty — time to invent!)</div>';
     return;
   }
-  _libFiles = data.files;
-  _libRendered = 0;
-  list.innerHTML = '';
+
+  // Header showing total count
+  const header = document.createElement('div');
+  header.id = 'lib-header';
+  header.style.cssText = 'padding:8px 10px;color:#00f7ff;font-size:10px;font-family:"Press Start 2P",monospace;border-bottom:1px solid #bf00ff44;position:sticky;top:0;background:#0a0020;z-index:1;';
+  header.textContent = _libTotal.toLocaleString() + ' ideas \u00b7 latest first';
+  list.appendChild(header);
+
   _renderLibPage(list);
-  // Load more on scroll
-  list.onscroll = () => {
-    if (list.scrollTop + list.clientHeight >= list.scrollHeight - 40) {
+
+  // Load more on scroll — fetch more from API when near bottom
+  list.onscroll = async () => {
+    if (list.scrollTop + list.clientHeight >= list.scrollHeight - 80) {
+      if (_libRendered >= _libFiles.length && !_libAllLoaded) {
+        await _fetchMoreLibraryFiles();
+      }
       _renderLibPage(list);
     }
   };
-  // Pre-fetch first 150 files into JS cache so clicks are instant
-  setTimeout(() => _prefetchLibrary(_libFiles), 600);
+
+  // Pre-fetch first batch for instant clicks
+  setTimeout(() => _prefetchLibrary(_libFiles), 400);
+}
+
+async function _fetchMoreLibraryFiles() {
+  if (_libLoading || _libAllLoaded) return;
+  _libLoading = true;
+  try {
+    const data = await fetchJSON('/api/library?limit=' + _LIB_FETCH_SIZE + '&offset=' + _libOffset);
+    if (!data || !data.files) return;
+    _libTotal = data.total_count || 0;
+    _libFiles = _libFiles.concat(data.files);
+    _libOffset += data.files.length;
+    if (data.files.length < _LIB_FETCH_SIZE) _libAllLoaded = true;
+  } finally {
+    _libLoading = false;
+  }
 }
 
 function _renderLibPage(list) {
@@ -970,8 +1008,9 @@ function _renderLibPage(list) {
   const frag = document.createDocumentFragment();
   for (let i = _libRendered; i < end; i++) {
     const f = _libFiles[i];
-    const raw = f.replace('library/','').replace('.md','');
-    const name = raw.replace(/[_-]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase()).slice(0, 60);
+    // Strip path: "library/batch_0042/some_idea.md" -> "some idea"
+    const raw = f.replace(/^library\//,'').replace(/^batch_\d+\//,'').replace('.md','');
+    const name = raw.replace(/[_-]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase()).slice(0, 70);
     const div = document.createElement('div');
     div.className = 'lib-item';
     div.setAttribute('data-file', f);
@@ -1905,8 +1944,7 @@ pollState();
 loadAchievements();
 loadChains();
 
-// Periodic refresh
-setInterval(loadLibrary, 15000);
+// Periodic refresh (library refreshes only when tab is active, not on timer)
 setInterval(loadJournal, 10000);
 
 // =====================================================================
