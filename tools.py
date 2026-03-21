@@ -182,6 +182,10 @@ def save_research(topic: str, summary: str) -> str:
         raise ValueError(f"Research content too short ({len(summary)} chars) — not saving")
     if "## " not in summary:
         raise ValueError("Research content lacks heading structure — not saving")
+    # Require at least one real content section (not just Related Ideas)
+    _REAL_SECTIONS = ("## Overview", "## How It Works", "## The Problem", "## Elevator")
+    if not any(s in summary for s in _REAL_SECTIONS):
+        raise ValueError("Research content lacks real idea sections (Overview/How/Problem) — not saving")
 
     slug = topic.lower().replace(" ", "_").replace("/", "-")
     slug = "".join(c for c in slug if c.isalnum() or c in "_-")
